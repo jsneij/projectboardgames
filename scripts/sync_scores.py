@@ -3,9 +3,10 @@ sync_scores.py
 Keeps output/bgg_collection_scores.json in sync with output/bgg_collection.json.
 
 Rules:
-  owned    — all owned games (base games and expansions). Adds placeholders for new
-             games; removes entries for games no longer in the collection.
-  wishlist — all wishlist items. Adds placeholders for new items; removes stale ones.
+  owned      — all owned games (base games and expansions). Adds placeholders for new
+               games; removes entries for games no longer in the collection.
+  wishlist   — all wishlist items. Adds placeholders for new items; removes stale ones.
+  preordered — all preordered items. Same add/remove logic.
 """
 
 import json
@@ -43,6 +44,7 @@ def sync():
 
     owned_scores = scores.get("owned", {})
     wl_scores    = scores.get("wishlist", {})
+    pre_scores   = scores.get("preordered", {})
 
     changes = []
 
@@ -109,6 +111,37 @@ def sync():
 
     scores["wishlist"] = wl_scores
 
+    # ── PREORDERED ─────────────────────────────────────────────────────────────
+    current_pre = {
+        g["name"]: g
+        for g in bgg.get("preordered", [])
+    }
+
+    # Add missing
+    new_preordered = []
+    for bgg_name, g in current_pre.items():
+        if bgg_name not in pre_scores:
+            pre_scores[bgg_name] = {
+                "name":    g["name"],
+                "type":    "competitive",
+                "weight":  0,
+                "M": 0, "T": 0, "G": 0, "F": 0, "Ar": 0,
+                "feeling": None,
+                "mechs":   [],
+            }
+            new_preordered.append(bgg_name)
+            changes.append(f"{GREEN}  ★ SCORES ADDED (new preordered): {bgg_name}{RESET}")
+
+    # Remove stale
+    removed_preordered = []
+    for bgg_name in list(pre_scores.keys()):
+        if bgg_name not in current_pre:
+            del pre_scores[bgg_name]
+            removed_preordered.append(bgg_name)
+            changes.append(f"{RED}  ✕ REMOVED from preordered scores: {bgg_name}{RESET}")
+
+    scores["preordered"] = pre_scores
+
     # ── SAVE ──────────────────────────────────────────────────────────────────
     save(SCORES_PATH, scores)
 
@@ -120,10 +153,14 @@ def sync():
             print(f"\n{GREEN}  → {len(new_owned)} new owned game(s) added: {', '.join(new_owned)}{RESET}")
         if new_wishlist:
             print(f"{GREEN}  → {len(new_wishlist)} new wishlist game(s) added: {', '.join(new_wishlist)}{RESET}")
+        if new_preordered:
+            print(f"{GREEN}  → {len(new_preordered)} new preordered game(s) added: {', '.join(new_preordered)}{RESET}")
         if removed_owned:
             print(f"{RED}  → {len(removed_owned)} owned game(s) removed: {', '.join(removed_owned)}{RESET}")
         if removed_wishlist:
             print(f"{RED}  → {len(removed_wishlist)} wishlist game(s) removed: {', '.join(removed_wishlist)}{RESET}")
+        if removed_preordered:
+            print(f"{RED}  → {len(removed_preordered)} preordered game(s) removed: {', '.join(removed_preordered)}{RESET}")
     else:
         print("Scores already in sync — no changes.")
 
@@ -131,8 +168,10 @@ def sync():
         "changes": changes,
         "new_owned": new_owned,
         "new_wishlist": new_wishlist,
+        "new_preordered": new_preordered,
         "removed_owned": removed_owned,
         "removed_wishlist": removed_wishlist,
+        "removed_preordered": removed_preordered,
     }
 
 

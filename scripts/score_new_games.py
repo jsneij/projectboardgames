@@ -43,7 +43,7 @@ def load_env():
 def find_unscored(scores):
     """Find games with M=0 (placeholders from sync_scores.py)."""
     unscored = []
-    for section in ("owned", "wishlist"):
+    for section in ("owned", "wishlist", "preordered"):
         for name, obj in scores.get(section, {}).items():
             if obj.get("M", 0) == 0 and obj.get("T", 0) == 0:
                 unscored.append((section, name, obj))
