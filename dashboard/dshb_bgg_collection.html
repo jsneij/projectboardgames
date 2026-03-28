@@ -2911,32 +2911,47 @@ function initZoneChart(scored) {
     return { ...g, zoneKey: z.key };
   });
 
+  // Count games per zone and compute proportional widths
+  const zoneCounts = {};
+  zones.forEach(z => zoneCounts[z.key] = 0);
+  games.forEach(g => zoneCounts[g.zoneKey]++);
+  const totalGames = games.length || 1;
+  // Give each zone a minimum width so empty/tiny zones stay visible
+  const minPct = 8;
+  const reservedPct = minPct * zones.length;
+  const distributablePct = 100 - reservedPct;
+  const zoneLayout = [];
+  let cumLeft = 0;
+  zones.forEach(z => {
+    const pctWidth = minPct + (zoneCounts[z.key] / totalGames) * distributablePct;
+    zoneLayout.push({ ...z, left: cumLeft, width: pctWidth, count: zoneCounts[z.key] });
+    cumLeft += pctWidth;
+  });
+
   // Build the strip
   const strip = document.createElement('div');
   strip.className = 'is-zone-strip';
   strip.style.position = 'relative';
 
-  // Zone bands
-  zones.forEach((z, zi) => {
-    const pctLeft = (z.min / maxIS) * 100;
-    const pctWidth = ((Math.min(z.max, maxIS) - z.min) / maxIS) * 100;
+  // Zone bands — widths proportional to game count
+  zoneLayout.forEach((z, zi) => {
     const band = document.createElement('div');
     band.className = 'is-zone-band';
-    band.style.cssText = `position:absolute;left:${pctLeft}%;width:${pctWidth}%;height:100%;background:${z.fill};border:1px solid ${z.stroke}44;`;
+    band.style.cssText = `position:absolute;left:${z.left}%;width:${z.width}%;height:100%;background:${z.fill};border:1px solid ${z.stroke}44;`;
     if (zi === 0) band.style.borderRadius = '8px 0 0 8px';
     if (zi === zones.length - 1) band.style.borderRadius = '0 8px 8px 0';
     const lbl = document.createElement('div');
     lbl.className = 'is-zone-band-label';
     lbl.style.color = z.text;
-    lbl.textContent = z.label;
+    lbl.textContent = `${z.label} (${z.count})`;
     band.appendChild(lbl);
     strip.appendChild(band);
 
     // Boundary line (except first)
-    if (z.min > 0) {
+    if (zi > 0) {
       const boundary = document.createElement('div');
       boundary.className = 'is-zone-boundary';
-      boundary.style.left = pctLeft + '%';
+      boundary.style.left = z.left + '%';
       const val = document.createElement('div');
       val.className = 'is-zone-boundary-val';
       val.textContent = z.min;
@@ -2960,7 +2975,7 @@ function initZoneChart(scored) {
   Object.values(zoneSlots).forEach(arr => arr.sort((a, b) => a.IS - b.IS));
 
   games.forEach(g => {
-    const zone = zones.find(z => z.key === g.zoneKey);
+    const zl = zoneLayout.find(z => z.key === g.zoneKey);
     const zoneArr = zoneSlots[g.zoneKey];
     const idx = zoneArr.indexOf(g);
     const count = zoneArr.length;
@@ -2971,13 +2986,11 @@ function initZoneChart(scored) {
     const gridCol = Math.floor(idx / maxRows);
     const row = idx % maxRows;
 
-    // X: spread evenly across the zone width with padding
-    const zoneLeft = (zone.min / maxIS) * 100;
-    const zoneWidth = ((Math.min(zone.max, maxIS) - zone.min) / maxIS) * 100;
-    const padX = zoneWidth * 0.08;
-    const usableW = zoneWidth - padX * 2;
+    // X: spread evenly across the proportional zone width with padding
+    const padX = zl.width * 0.08;
+    const usableW = zl.width - padX * 2;
     const xStep = cols > 1 ? usableW / (cols - 1) : 0;
-    const xPct = zoneLeft + padX + gridCol * xStep;
+    const xPct = zl.left + padX + gridCol * xStep;
 
     // Y: spread evenly with padding
     const rowsInCol = gridCol < cols - 1 ? maxRows : count - gridCol * maxRows;
