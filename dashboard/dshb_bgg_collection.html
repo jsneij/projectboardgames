@@ -1733,15 +1733,10 @@ function renderMiniScatter(svgId, data, accessor, opts) {
 // ============================================================
 // INSIGHTS
 // ============================================================
-const INSIGHT_FILES = [
-  'ins_weight_vs_enjoyment_2026-03-15.json',
-  'ins_owned_vs_wishlist_profile_2026-03-15.json',
-  'ins_mech_pairs_high_is_2026-03-15.json'
-];
+// ---- Dynamic insight builders ----
 
 function buildPriorityQueue(state) {
   const { owned } = state;
-  // Owned base games with IS scores, sorted by priority score
   const scored = owned.filter(g => g.IS !== null && g.type !== 'expansion');
   const data = scored.map(g => {
     let prio = g.IS;
@@ -1768,31 +1763,117 @@ function buildPriorityQueue(state) {
   };
 }
 
-async function renderInsights() {
-  const container = document.getElementById('insights-container');
+function buildWeightVsEnjoyment(state) {
+  const { owned } = state;
+  const scored = owned.filter(g => g.IS !== null && g.weight > 0);
+  const bands = [
+    { label: 'Light', min: 0, max: 2 },
+    { label: 'Medium-Light', min: 2, max: 3 },
+    { label: 'Medium-Heavy', min: 3, max: 4 },
+    { label: 'Heavy', min: 4, max: 6 }
+  ];
+  const data = bands.map(b => {
+    const games = scored.filter(g => g.weight >= b.min && g.weight < b.max);
+    if (games.length === 0) return null;
+    const avgIS = games.reduce((s, g) => s + g.IS, 0) / games.length;
+    const loves = games.filter(g => g.feeling === 'Loves it').length;
+    const lovesPct = Math.round((loves / games.length) * 1000) / 10;
+    const topGames = games.sort((a, b) => b.IS - a.IS).slice(0, 3).map(g => g.name);
+    const dominantFeeling = lovesPct >= 50 ? 'Loves it' : games.filter(g => g.feeling === 'Likes it').length > games.length / 2 ? 'Likes it' : 'Has it';
+    return {
+      label: b.label, count: games.length,
+      avg_is: Math.round(avgIS * 10) / 10,
+      dominant_feeling: dominantFeeling,
+      loves_pct: lovesPct, top_games: topGames
+    };
+  }).filter(Boolean);
+  const peak = data.reduce((best, d) => d.avg_is > best.avg_is ? d : best, data[0]);
+  return {
+    title: 'Weight-Enjoyment Curve: The Sweet Spot',
+    chart_hint: 'bar',
+    filters_applied: `Owned games with weight data (n=${scored.length})`,
+    generated_at: new Date().toISOString(),
+    summary: `${peak.label} is your sweet spot: avg IS=${peak.avg_is}, ${peak.loves_pct}% Loves-it. Heavier games correlate with higher IS — complexity pays off when theme justifies it.`,
+    data
+  };
+}
 
-  // Dynamic priority queue from live data
-  if (STATE.owned) {
-    const pqInsight = buildPriorityQueue(STATE);
+function buildOwnedVsWishlist(state) {
+  const { owned, wishlist } = state;
+  function profileGroup(games) {
+    const scored = games.filter(g => g.hasScores);
+    const n = scored.length;
+    if (n === 0) return { n: 0, avg_M: 0, avg_T: 0, avg_G: 0, avg_F: 0, avg_Ar: 0, types: {} };
+    const avg = key => Math.round(scored.reduce((s, g) => s + (g[key] || 0), 0) / n * 100) / 100;
+    const types = {};
+    scored.forEach(g => { const t = g.type || 'other'; types[t] = (types[t] || 0) + 1; });
+    return { n, avg_M: avg('M'), avg_T: avg('T'), avg_G: avg('G'), avg_F: avg('F'), avg_Ar: avg('Ar'), types };
+  }
+  const ownedGrp = profileGroup(owned);
+  const wishGrp = profileGroup(wishlist);
+  const tDiff = (ownedGrp.avg_T - wishGrp.avg_T).toFixed(2);
+  return {
+    title: 'Collection DNA: Owned vs Wishlist Profiles',
+    chart_hint: 'radar',
+    filters_applied: 'All scored games',
+    generated_at: new Date().toISOString(),
+    summary: `Owned (n=${ownedGrp.n}) averages T=${ownedGrp.avg_T} vs wishlist (n=${wishGrp.n}) at T=${wishGrp.avg_T}. Gap of ${Math.abs(tDiff)} confirms T as your purchase gatekeeper.`,
+    data: {
+      groups: { owned: ownedGrp, wishlist: wishGrp },
+      axes: [
+        { key: 'avg_M', label: 'Mechanical Depth', max: 5 },
+        { key: 'avg_T', label: 'Thematic Integration', max: 5 },
+        { key: 'avg_G', label: 'Meaningful Agency', max: 5 },
+        { key: 'avg_F', label: 'Friction', max: 5, invert: true },
+        { key: 'avg_Ar', label: 'Art & Production', max: 5 }
+      ]
+    }
+  };
+}
+
+function buildMechPairs(state) {
+  const { owned, wishlist } = state;
+  const allGames = [...owned, ...wishlist].filter(g => g.IS !== null && g.IS >= 80);
+  const pairCounts = {};
+  allGames.forEach(g => {
+    const mechs = (g.mechs || []).sort();
+    for (let i = 0; i < mechs.length; i++) {
+      for (let j = i + 1; j < mechs.length; j++) {
+        const key = mechs[i] + ' + ' + mechs[j];
+        pairCounts[key] = (pairCounts[key] || 0) + 1;
+      }
+    }
+  });
+  const data = Object.entries(pairCounts)
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 12)
+    .map(([label, value]) => ({ label, value }));
+  const topMechs = data.length > 0 ? data.slice(0, 3).map(d => d.label).join(', ') : 'N/A';
+  return {
+    title: 'Mechanical DNA: Top Mechanism Pairs in High-IS Games',
+    chart_hint: 'bar_horizontal',
+    filters_applied: `IS >= 80 (owned + wishlist, n=${allGames.length})`,
+    generated_at: new Date().toISOString(),
+    summary: `Across ${allGames.length} high-IS games, the dominant pairs are: ${topMechs}. Your mechanical DNA favours character-driven narrative campaigns with meaningful decision trees.`,
+    data
+  };
+}
+
+function renderInsights() {
+  const container = document.getElementById('insights-container');
+  if (!STATE.owned) return;
+  const insights = [
+    buildPriorityQueue(STATE),
+    buildWeightVsEnjoyment(STATE),
+    buildOwnedVsWishlist(STATE),
+    buildMechPairs(STATE)
+  ];
+  insights.forEach(ins => {
     const card = document.createElement('div');
     card.className = 'card';
-    card.innerHTML = buildInsightCard(pqInsight);
+    card.innerHTML = buildInsightCard(ins);
     container.appendChild(card);
-  }
-
-  for (const filename of INSIGHT_FILES) {
-    try {
-      const res = await fetch(`../insights/${filename}`);
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const ins = await res.json();
-      const card = document.createElement('div');
-      card.className = 'card';
-      card.innerHTML = buildInsightCard(ins);
-      container.appendChild(card);
-    } catch (e) {
-      console.warn('Could not load insight:', filename, e);
-    }
-  }
+  });
 }
 
 function buildInsightCard(ins) {
