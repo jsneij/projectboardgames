@@ -3108,6 +3108,7 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
 
     document.getElementById('loading').style.display = 'none';
   } catch (err) {
+    console.error('Dashboard init error:', err);
     const loadDiv = document.getElementById('loading');
     loadDiv.innerHTML = `<div style="color:var(--red);font-family:JetBrains Mono,monospace;text-align:center;padding:24px">
       <div style="font-size:16px;margin-bottom:12px">Failed to load data</div>
