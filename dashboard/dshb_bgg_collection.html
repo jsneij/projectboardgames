@@ -2468,8 +2468,9 @@ function getISZone(is) {
 
 function renderISFramework(state) {
   const container = document.getElementById('tab-is-framework');
-  const { owned } = state;
-  const scored = owned.filter(g => g.hasScores && g.IS !== null);
+  const { owned, wishlist } = state;
+  const allGames = [...owned, ...wishlist];
+  const scored = allGames.filter(g => g.hasScores && g.IS !== null);
 
   let html = '';
 
