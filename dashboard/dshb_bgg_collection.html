@@ -1833,22 +1833,30 @@ function buildOwnedVsWishlist(state) {
 
 function buildMechPairs(state) {
   const { owned, wishlist } = state;
-  const allGames = [...owned, ...wishlist].filter(g => g.IS !== null && g.IS >= 80);
+  const ownedGames = owned.filter(g => g.IS !== null && g.IS >= 80);
+  const wlGames = wishlist.filter(g => g.IS !== null && g.IS >= 80);
+  const allGames = [...ownedGames, ...wlGames];
   const stripCode = m => m.replace(/^[A-Z]{2,4}-\d+\s+/, '');
-  const pairCounts = {};
+  const getCode = m => { const match = m.match(/^([A-Z]{2,4}-\d+)/); return match ? match[1] : ''; };
+  // Build pair data with game references
+  const pairMap = {};
   allGames.forEach(g => {
-    const mechs = (g.mechs || []).map(stripCode).sort();
+    const mechs = (g.mechs || []).sort();
     for (let i = 0; i < mechs.length; i++) {
       for (let j = i + 1; j < mechs.length; j++) {
-        const key = mechs[i] + ' + ' + mechs[j];
-        pairCounts[key] = (pairCounts[key] || 0) + 1;
+        const nameA = stripCode(mechs[i]), nameB = stripCode(mechs[j]);
+        const codeA = getCode(mechs[i]), codeB = getCode(mechs[j]);
+        const key = nameA + ' + ' + nameB;
+        if (!pairMap[key]) pairMap[key] = { label: key, value: 0, codeA, codeB, nameA, nameB, owned: [], wishlist: [] };
+        pairMap[key].value++;
+        const src = ownedGames.includes(g) ? 'owned' : 'wishlist';
+        if (!pairMap[key][src].some(x => x.name === g.name)) {
+          pairMap[key][src].push({ name: g.name, IS: g.IS, bgg_id: g.bgg_id });
+        }
       }
     }
   });
-  const data = Object.entries(pairCounts)
-    .sort((a, b) => b[1] - a[1])
-    .slice(0, 10)
-    .map(([label, value]) => ({ label, value }));
+  const data = Object.values(pairMap).sort((a, b) => b.value - a.value).slice(0, 10);
   return {
     title: 'Mechanical DNA: Top Mechanism Pairs in High-IS Games',
     chart_hint: 'bar_horizontal',
@@ -1931,31 +1939,57 @@ function insBarChart(data) {
 
 function insHBarChart(data) {
   const maxVal = Math.max(...data.map(d => d.value));
+  const id = 'mech-pair-' + Date.now();
+  const codeTag = code => code
+    ? `<span style="font-family:'JetBrains Mono',monospace;font-size:8px;padding:1px 4px;border-radius:3px;background:var(--border);color:var(--text3);vertical-align:middle;margin-left:4px">${code}</span>`
+    : '';
+
+  const gameList = (games, label, color) => {
+    if (!games || games.length === 0) return '';
+    const items = games.sort((a, b) => b.IS - a.IS).map(g =>
+      `<a href="https://boardgamegeek.com/boardgame/${g.bgg_id}" target="_blank" style="color:${color};text-decoration:none;font-size:11px;line-height:1.6">${g.name} <span style="color:var(--text3);font-family:'JetBrains Mono',monospace;font-size:10px">IS ${g.IS}</span></a>`
+    ).join('<br>');
+    return `<div style="margin-top:6px"><div style="font-size:9px;color:${color};font-weight:600;margin-bottom:3px;text-transform:uppercase;letter-spacing:0.5px">${label} (${games.length})</div>${items}</div>`;
+  };
+
   const rows = data.map((d, i) => {
     const pct = Math.round((d.value / maxVal) * 100);
     const rank = i + 1;
-    // Top 3 get amber accent, rest get indigo with fading opacity
     const isTop = rank <= 3;
     const barColor = isTop ? 'var(--amber)' : 'var(--indigo)';
     const barOpacity = isTop ? 0.85 : Math.max(0.35, 0.75 - (i - 3) * 0.05);
     const rankColor = isTop ? 'var(--amber)' : 'var(--text3)';
     const labelColor = isTop ? 'var(--text)' : 'var(--text2)';
-    const [mechA, mechB] = d.label.split(' + ');
-    return `<div style="display:flex;align-items:center;gap:10px;padding:5px 0;transition:opacity 0.15s" onmouseenter="this.style.opacity='1';this.style.transform='translateX(2px)'" onmouseleave="this.style.opacity='';this.style.transform=''">
-      <span style="width:20px;text-align:right;font-family:'JetBrains Mono',monospace;font-size:11px;color:${rankColor};font-weight:${isTop ? '700' : '400'};flex-shrink:0">${rank}</span>
-      <div style="flex:1;min-width:0">
-        <div style="font-size:12px;color:${labelColor};font-weight:500;margin-bottom:4px;line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${mechA} <span style="color:var(--text3);font-weight:400">+</span> ${mechB}</div>
-        <div style="display:flex;align-items:center;gap:8px">
-          <div style="flex:1;height:5px;background:var(--bg);border-radius:3px;overflow:hidden">
-            <div style="height:100%;width:${pct}%;background:${barColor};border-radius:3px;opacity:${barOpacity};transition:width 0.4s ease"></div>
+    const nameA = d.nameA || d.label.split(' + ')[0];
+    const nameB = d.nameB || d.label.split(' + ')[1] || '';
+    const hasGames = (d.owned && d.owned.length) || (d.wishlist && d.wishlist.length);
+    const expandId = `${id}-${i}`;
+    const expandHtml = hasGames ? `<div id="${expandId}" style="display:none;padding:6px 0 2px 30px;border-bottom:1px solid var(--border)">
+      ${gameList(d.owned, 'Owned', 'var(--green)')}
+      ${gameList(d.wishlist, 'Wishlist', '#c084fc')}
+    </div>` : '';
+    const cursor = hasGames ? 'cursor:pointer;' : '';
+
+    return `<div>
+      <div style="display:flex;align-items:center;gap:10px;padding:6px 0;transition:all 0.15s;${cursor}border-radius:6px;padding-left:4px;margin-left:-4px" ${hasGames ? `onclick="var e=document.getElementById('${expandId}');e.style.display=e.style.display==='none'?'':'none'"` : ''} onmouseenter="this.style.background='var(--border)'" onmouseleave="this.style.background=''">
+        <span style="width:20px;text-align:right;font-family:'JetBrains Mono',monospace;font-size:11px;color:${rankColor};font-weight:${isTop ? '700' : '400'};flex-shrink:0">${rank}</span>
+        <div style="flex:1;min-width:0">
+          <div style="font-size:12px;color:${labelColor};font-weight:500;margin-bottom:4px;line-height:1.4">
+            ${nameA}${codeTag(d.codeA)} <span style="color:var(--text3);font-weight:400;font-size:10px">+</span> ${nameB}${codeTag(d.codeB)}
           </div>
-          <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:${isTop ? 'var(--amber)' : 'var(--text2)'};font-weight:${isTop ? '600' : '400'};width:24px;text-align:right;flex-shrink:0">${d.value}</span>
+          <div style="display:flex;align-items:center;gap:8px">
+            <div style="flex:1;height:5px;background:var(--bg);border-radius:3px;overflow:hidden">
+              <div style="height:100%;width:${pct}%;background:${barColor};border-radius:3px;opacity:${barOpacity}"></div>
+            </div>
+            <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:${isTop ? 'var(--amber)' : 'var(--text2)'};font-weight:${isTop ? '600' : '400'};width:24px;text-align:right;flex-shrink:0">${d.value}</span>
+          </div>
         </div>
       </div>
+      ${expandHtml}
     </div>`;
   }).join('');
 
-  return `<div style="display:flex;flex-direction:column;gap:2px">${rows}</div>`;
+  return `<div style="display:flex;flex-direction:column;gap:0">${rows}</div>`;
 }
 
 function insDualRadar(data) {
