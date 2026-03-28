@@ -1,7 +1,7 @@
 {
   "metadata": {
     "username": "jsneij",
-    "fetched_at": "2026-03-28T11:32:26.720448+00:00",
+    "fetched_at": "2026-03-28T11:44:10.810222+00:00",
     "total_items": 165,
     "counts": {
       "owned": 40,
@@ -9648,7 +9648,7 @@
         "last_modified": "2026-03-10 17:34:55"
       },
       "wishlist_priority": null,
-      "num_plays": 1,
+      "num_plays": 0,
       "comment": null,
       "stats": {
         "min_players": 1,
@@ -9673,19 +9673,7 @@
         ]
       },
       "private_info": null,
-      "plays": [
-        {
-          "play_id": 111384039,
-          "date": "2025-01-12",
-          "quantity": 1,
-          "length_minutes": 150,
-          "incomplete": false,
-          "no_win_stats": false,
-          "location": null,
-          "comments": "I loved it!",
-          "players": []
-        }
-      ]
+      "plays": []
     }
   ],
   "for_trade": []
