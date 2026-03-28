@@ -4822,26 +4822,56 @@
     "Container": {
       "name": "Container",
       "type": "competitive",
-      "weight": 0,
-      "M": 0,
-      "T": 0,
-      "G": 0,
-      "F": 0,
-      "Ar": 0,
-      "feeling": null,
-      "mechs": []
+      "weight": 3.0,
+      "M": 3,
+      "T": 2,
+      "G": 4,
+      "F": 1,
+      "Ar": 2,
+      "feeling": "On Shelf",
+      "mechs": [
+        "STR-01 Competitive Games",
+        "TRN-01 Turn Order: Sequential",
+        "ACT-05 Auction/Bidding",
+        "ACT-09 Set Prices",
+        "ECO-01 Exchanging",
+        "ECO-02 Market",
+        "ECO-04 Supply and Demand",
+        "ECO-05 Income",
+        "ECO-06 Loans and Interest",
+        "ECO-14 Production",
+        "MOV-01 No Board",
+        "VIC-01 Victory Points as a Resource"
+      ],
+      "description": "An austere economic ballet where every price you set reshapes the entire table's market — pure supply-and-demand abstraction in chunky plastic.",
+      "justification": "M(3): Interlocking production/shipping/auction system, elegant not complex. T(2): Theme is a frame — you're manipulating prices, not experiencing logistics. G(4): Pricing and auction psychology reshape the market for everyone. F(1): Clean rules, fast setup, elegant flow. Ar(2): Jumbo Edition has nice containers but zero aesthetic atmosphere."
     },
     "Miskatonic Tales: Journey to Innsmouth": {
       "name": "Miskatonic Tales: Journey to Innsmouth",
-      "type": "competitive",
-      "weight": 0,
-      "M": 0,
-      "T": 0,
-      "G": 0,
-      "F": 0,
-      "Ar": 0,
-      "feeling": null,
-      "mechs": []
+      "type": "co-op",
+      "weight": 2.5,
+      "M": 3,
+      "T": 4,
+      "G": 3,
+      "F": 3,
+      "Ar": 3,
+      "feeling": "Engaging",
+      "mechs": [
+        "STR-02 Cooperative Games",
+        "STR-04 Solo Games",
+        "STR-08 Scenario/Mission/Campaign Games",
+        "ACT-12 Variable Player Powers",
+        "ACT-18 Narrative Choice",
+        "RES-02 Stat Check",
+        "RES-16 Push Your Luck",
+        "UNC-07 Unknown Information",
+        "UNC-10 Variable Setup",
+        "MOV-03 Map Exploration",
+        "CAR-04 Card Draw, Limits, and Deck Exhaustion",
+        "CAR-08 Multi-Use Cards"
+      ],
+      "description": "A gamebook-driven Lovecraftian investigation where your character deck slowly contaminates with stress and injury — madness is a mechanic, not a flavour text.",
+      "justification": "M(3): Character decks with push-your-luck stat tests and map exploration, interesting but not deeply interlocking. T(4): Deck contamination generates Lovecraftian deterioration mechanically — CYOA page-flipping occasionally breaks immersion. G(3): Meaningful investigation choices but outcomes often dictated by book and card draws. F(3): Three massive scenario books, map tiles, multiple card types, 6+ hours per adventure — bloated. Ar(3): Chaosium Mythos pedigree, decent illustrations, functional not stunning."
     }
   }
 }
