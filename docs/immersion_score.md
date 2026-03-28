@@ -47,14 +47,14 @@ When scoring games for solo play, adjust:
 
 | Game | M | T | G | F | Ar | GS | IS | Feeling |
 |------|---|---|---|---|----|----|-----|---------|
-| Arkham Horror LCG | 4 | 5 | 4 | 2 | 5 | 78 | 195 | Loves it |
-| Gloomhaven: JotL | 4 | 4 | 4 | 2 | 4 | 62 | 124 | Loves it |
-| Nemesis* | 3 | 5 | 4 | 4 | 4 | 56 | 112 | Loves it |
-| The Bloody Inn | 3 | 4 | 3 | 1 | 5 | 35 | 87.5 | Loves it |
-| Sky Team | 3 | 4 | 3 | 1 | 5 | 35 | 87.5 | Loves it |
-| Paperback 10th Ann. | 3 | 3 | 3 | 1 | 3 | 26 | 39 | Likes it |
-| Harmonies | 3 | 2 | 3 | 1 | 4 | 17 | 34 | Likes it |
+| Arkham Horror LCG | 4 | 5 | 4 | 2 | 5 | 78 | 195 | Immersive |
+| Gloomhaven: JotL | 4 | 4 | 4 | 2 | 4 | 62 | 124 | Immersive |
+| Nemesis* | 3 | 5 | 4 | 4 | 4 | 56 | 112 | Immersive |
+| The Bloody Inn | 3 | 4 | 3 | 1 | 5 | 35 | 87.5 | Immersive |
+| Sky Team | 3 | 4 | 3 | 1 | 5 | 35 | 87.5 | Immersive |
+| Paperback 10th Ann. | 3 | 3 | 3 | 1 | 3 | 26 | 39 | Engaging |
+| Harmonies | 3 | 2 | 3 | 1 | 4 | 17 | 34 | Engaging |
 
 **\*Nemesis note:** The miniatures came unpainted and required commissioning someone to paint them. This significantly raised F (from what would otherwise be 3 to 4) and lowered Ar (from a potential 5 to 4, since the out-of-box experience wasn't finished). Nemesis is the case study for the user's hard filter against unpainted miniatures — he loves the game but the friction cost was high enough to establish "no more games with large quantities of unfinished figurines" as a permanent rule.
 
-**Model validation:** All "Loves it" games score IS ≥ 87.5, while "Likes it" games fall in the 34–39 range. The Bloody Inn and Sky Team converge at identical IS (87.5) via different experiential paths — Sky Team through silence-as-mechanic embodiment, The Bloody Inn through dark art direction elevating macabre card mechanics.
+**Model validation:** All "Immersive" games score IS ≥ 87.5, while "Engaging" games fall in the 34–39 range. The Bloody Inn and Sky Team converge at identical IS (87.5) via different experiential paths — Sky Team through silence-as-mechanic embodiment, The Bloody Inn through dark art direction elevating macabre card mechanics.

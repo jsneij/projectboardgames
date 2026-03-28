@@ -58,8 +58,8 @@ https://boardgamegeek.com/boardgame/{bgg_id}
 | `--text` | `#f1f5f9` | Primary text |
 | `--text2` | `#94a3b8` | Secondary text |
 | `--text3` | `#64748b` | Muted / labels |
-| `--red` | `#ef4444` | Loves it / T≥4 highlight |
-| `--amber` | `#f59e0b` | Likes it / IS highlight |
+| `--red` | `#ef4444` | Total / T≥4 highlight |
+| `--amber` | `#f59e0b` | Engaging / IS highlight |
 | `--blue` | `#3b82f6` | Scored / links / accents |
 | `--green` | `#22c55e` | Solo / G axis |
 | `--purple` | `#a855f7` | Wishlist / Ar axis |

@@ -233,13 +233,13 @@ def main():
 
             # Auto-populate feeling from IS zones
             if is_val >= 150:
-                obj["feeling"] = "Breathes it"
+                obj["feeling"] = "Total"
             elif is_val >= 87:
-                obj["feeling"] = "Loves it"
+                obj["feeling"] = "Immersive"
             elif is_val >= 30:
-                obj["feeling"] = "Likes it"
+                obj["feeling"] = "Engaging"
             else:
-                obj["feeling"] = "Has it"
+                obj["feeling"] = "On Shelf"
 
             print(f"    IS={is_val} → {obj['feeling']}")
             print(f"    {obj.get('description', '')[:80]}")

@@ -123,9 +123,10 @@ nav::-webkit-scrollbar { display: none; }
   display: inline-block; padding: 2px 7px; border-radius: 4px;
   font-size: 11px; font-weight: 600; font-family: 'JetBrains Mono', monospace;
 }
-.badge-breathes { background: rgba(220,38,38,0.2); color: #fca5a5; border: 1px solid rgba(220,38,38,0.4); }
-.badge-loves { background: rgba(239,68,68,0.15); color: #f87171; border: 1px solid rgba(239,68,68,0.3); }
-.badge-likes { background: rgba(245,158,11,0.15); color: #fbbf24; border: 1px solid rgba(245,158,11,0.3); }
+.badge-total { background: rgba(239,68,68,0.15); color: #f87171; border: 1px solid rgba(239,68,68,0.3); }
+.badge-immersive { background: rgba(168,85,247,0.15); color: #c4b5fd; border: 1px solid rgba(168,85,247,0.3); }
+.badge-engaging { background: rgba(245,158,11,0.15); color: #fbbf24; border: 1px solid rgba(245,158,11,0.3); }
+.badge-on-shelf { background: rgba(59,130,246,0.15); color: #60a5fa; border: 1px solid rgba(59,130,246,0.3); }
 .badge-scored { background: rgba(59,130,246,0.15); color: #60a5fa; border: 1px solid rgba(59,130,246,0.3); }
 .badge-unscored { background: rgba(100,116,139,0.15); color: #94a3b8; border: 1px solid rgba(100,116,139,0.25); }
 
@@ -931,10 +932,10 @@ nav::-webkit-scrollbar { display: none; }
     </div>
     <div class="scatter-tooltip" id="scatter-tooltip"></div>
     <div style="display:flex;gap:16px;flex-wrap:wrap;font-size:12px;color:var(--text2)">
-      <span><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#dc2626;margin-right:4px"></span>Breathes it</span>
-      <span><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--red);margin-right:4px"></span>Loves it</span>
-      <span><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--amber);margin-right:4px"></span>Likes it</span>
-      <span><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--blue);margin-right:4px"></span>Has it</span>
+      <span><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--red);margin-right:4px"></span>Total</span>
+      <span><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--purple);margin-right:4px"></span>Immersive</span>
+      <span><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--amber);margin-right:4px"></span>Engaging</span>
+      <span><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--blue);margin-right:4px"></span>On Shelf</span>
       <span><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--text3);margin-right:4px"></span>Unscored</span>
       <span><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:none;border:2px dashed var(--purple);margin-right:4px"></span>Wishlist</span>
     </div>
@@ -1061,11 +1062,12 @@ nav::-webkit-scrollbar { display: none; }
 const BGG_LINK = id => `https://boardgamegeek.com/boardgame/${id}`;
 const a = (id, name) => `<a href="${BGG_LINK(id)}" target="_blank" rel="noopener">${name}</a>`;
 
-const FEELING_COLOR = f => f === 'Breathes it' ? '#fca5a5' : f === 'Loves it' ? 'var(--red)' : f === 'Likes it' ? 'var(--amber)' : 'var(--blue)';
+const FEELING_COLOR = f => f === 'Total' ? 'var(--red)' : f === 'Immersive' ? 'var(--purple)' : f === 'Engaging' ? 'var(--amber)' : 'var(--blue)';
 const FEELING_BADGE = f => {
-  if (f === 'Breathes it') return '<span class="badge badge-breathes">Breathes it</span>';
-  if (f === 'Loves it') return '<span class="badge badge-loves">Loves it</span>';
-  if (f === 'Likes it') return '<span class="badge badge-likes">Likes it</span>';
+  if (f === 'Total') return '<span class="badge badge-total">Total</span>';
+  if (f === 'Immersive') return '<span class="badge badge-immersive">Immersive</span>';
+  if (f === 'Engaging') return '<span class="badge badge-engaging">Engaging</span>';
+  if (f === 'On Shelf') return '<span class="badge badge-on-shelf">On Shelf</span>';
   if (f) return `<span class="badge badge-scored">${f}</span>`;
   return '<span class="badge badge-unscored">—</span>';
 };
@@ -1132,9 +1134,9 @@ function radarSVG(scores, size = 180) {
 // IS color
 function isColor(is) {
   if (is >= 150) return '#ef4444';
-  if (is >= 87)  return '#f59e0b';
-  if (is >= 30)  return '#3b82f6';
-  return '#64748b';
+  if (is >= 87)  return '#a855f7';
+  if (is >= 30)  return '#f59e0b';
+  return '#3b82f6';
 }
 
 // Game type icon
@@ -1242,8 +1244,8 @@ function renderOverview(state) {
   const validWt = owned.filter(g => g.weight);
   const avgWt = validWt.length ? (validWt.reduce((s, g) => s + g.weight, 0) / validWt.length) : 0;
   const totalWl = wishlist.length;
-  const breathes = owned.filter(g => g.feeling === 'Breathes it').length;
-  const loves = owned.filter(g => g.feeling === 'Loves it').length;
+  const breathes = owned.filter(g => g.feeling === 'Total').length;
+  const loves = owned.filter(g => g.feeling === 'Immersive').length;
 
   const statGrid = document.getElementById('stat-grid-container');
   statGrid.innerHTML = `<div class="stat-grid">
@@ -1253,7 +1255,7 @@ function renderOverview(state) {
     <div class="stat-card"><div class="label">Avg IS</div><div class="value" style="color:var(--amber)">${avgIS.toFixed(0)}</div><div class="sub">immersion score</div></div>
     <div class="stat-card"><div class="label">Avg Weight</div><div class="value">${avgWt.toFixed(2)}</div><div class="sub">personal estimate</div></div>
     <div class="stat-card"><div class="label">Wishlist</div><div class="value" style="color:var(--blue)">${totalWl}</div><div class="sub">games tracked</div></div>
-    <div class="stat-card"><div class="label">Breathes It</div><div class="value" style="color:#fca5a5">${breathes}</div><div class="sub">of ${totalOwned} owned</div></div>
+    <div class="stat-card"><div class="label">Total</div><div class="value" style="color:var(--red)">${breathes}</div><div class="sub">of ${totalOwned} owned</div></div>
   </div>`;
 
   // Leaderboard — top 12 by IS
@@ -1275,8 +1277,8 @@ function renderOverview(state) {
   const party = owned.filter(g => g.type === 'party').length;
   const semiCoop = owned.filter(g => g.type === 'semi-coop').length;
   const pctSolo = totalOwned ? ((solo + coop) / totalOwned * 100).toFixed(0) : 0;
-  const likes = owned.filter(g => g.feeling === 'Likes it').length;
-  const hasIt = owned.filter(g => g.feeling === 'Has it').length;
+  const likes = owned.filter(g => g.feeling === 'Engaging').length;
+  const hasIt = owned.filter(g => g.feeling === 'On Shelf').length;
   const unrated = owned.filter(g => !g.hasScores).length;
 
   document.getElementById('collection-dna').innerHTML = `
@@ -1287,7 +1289,7 @@ function renderOverview(state) {
         <div class="dna-item"><span class="dna-label">% Solo-ready</span><span class="dna-val" style="color:var(--green)">${pctSolo}%</span></div>
       </div>
       <div>
-        ${[['Breathes it', breathes, '#fca5a5'], ['Loves it', loves, 'var(--red)'], ['Likes it', likes, 'var(--amber)'], ['Has it', hasIt, 'var(--text2)'], ['Unscored', unrated, 'var(--text3)']].map(([l, v, c]) => `
+        ${[['Total', breathes, 'var(--red)'], ['Immersive', loves, 'var(--purple)'], ['Engaging', likes, 'var(--amber)'], ['On Shelf', hasIt, 'var(--blue)'], ['Unscored', unrated, 'var(--text3)']].map(([l, v, c]) => `
         <div class="dna-item"><span class="dna-label">${l}</span><span class="dna-val" style="color:${c}">${v}</span></div>`).join('')}
       </div>
     </div>`;
@@ -1380,9 +1382,9 @@ function renderScatter(state) {
   function feelingFill(g, wl = false) {
     if (wl) return 'none';
     if (!g.hasScores) return '#475569';
-    if (g.feeling === 'Breathes it') return '#dc2626';
-    if (g.feeling === 'Loves it') return '#ef4444';
-    if (g.feeling === 'Likes it') return '#f59e0b';
+    if (g.feeling === 'Total') return '#ef4444';
+    if (g.feeling === 'Immersive') return '#a855f7';
+    if (g.feeling === 'Engaging') return '#f59e0b';
     return '#3b82f6';
   }
 
@@ -1715,7 +1717,7 @@ function renderPatterns(state) {
     label, count: scored.filter(g => (g.IS || 0) >= lo && (g.IS || 0) < hi).length
   }));
   const maxBand = Math.max(...bandCounts.map(b => b.count));
-  const bandColors = ['#64748b', '#3b82f6', '#f59e0b', '#ef4444'];
+  const bandColors = ['#3b82f6', '#f59e0b', '#a855f7', '#ef4444'];
   document.getElementById('is-bands').innerHTML = bandCounts.map((b, i) => `
     <div class="horiz-bar-wrap">
       <div class="horiz-bar-label"><span>${b.label}</span><span class="mono">${b.count}</span></div>
@@ -1727,7 +1729,7 @@ function renderPatterns(state) {
     </div>`).join('');
 
   // Feeling breakdown
-  const fl = [['Breathes it', '#fca5a5'], ['Loves it', 'var(--red)'], ['Likes it', 'var(--amber)'], ['Has it', 'var(--text2)'], ['null', 'var(--text3)']];
+  const fl = [['Total', 'var(--red)'], ['Immersive', 'var(--purple)'], ['Engaging', 'var(--amber)'], ['On Shelf', 'var(--blue)'], ['null', 'var(--text3)']];
   const feelingCounts = fl.map(([f]) => ({
     label: f === 'null' ? 'Unscored' : f,
     count: f === 'null' ? owned.filter(g => !g.hasScores).length : owned.filter(g => g.feeling === f).length,
@@ -1888,10 +1890,10 @@ function buildWeightVsEnjoyment(state) {
     const games = scored.filter(g => g.weight >= b.min && g.weight < b.max);
     if (games.length === 0) return null;
     const avgIS = games.reduce((s, g) => s + g.IS, 0) / games.length;
-    const loves = games.filter(g => g.feeling === 'Loves it').length;
+    const loves = games.filter(g => g.feeling === 'Immersive').length;
     const lovesPct = Math.round((loves / games.length) * 1000) / 10;
     const topGames = games.sort((a, b) => b.IS - a.IS).slice(0, 3).map(g => g.name);
-    const dominantFeeling = lovesPct >= 50 ? 'Loves it' : games.filter(g => g.feeling === 'Likes it').length > games.length / 2 ? 'Likes it' : 'Has it';
+    const dominantFeeling = lovesPct >= 50 ? 'Immersive' : games.filter(g => g.feeling === 'Engaging').length > games.length / 2 ? 'Engaging' : 'On Shelf';
     return {
       label: b.label, count: games.length,
       avg_is: Math.round(avgIS * 10) / 10,
@@ -2187,7 +2189,7 @@ function insDualRadar(data) {
 
 function insRankedList(data) {
   const maxPrio = Math.max(...data.map(d => d.priority_score));
-  const feelingColor = f => f === 'Loves it' ? 'var(--red)' : f === 'Likes it' ? 'var(--amber)' : 'var(--text3)';
+  const feelingColor = f => f === 'Immersive' ? 'var(--red)' : f === 'Engaging' ? 'var(--amber)' : 'var(--text3)';
   const soloTag = solo => solo
     ? `<span style="display:inline-block;padding:1px 6px;border-radius:999px;background:var(--teal)22;color:var(--teal);border:1px solid var(--teal)44;font-size:9px;font-family:'JetBrains Mono',monospace">solo</span>`
     : `<span style="display:inline-block;padding:1px 6px;border-radius:999px;background:var(--border);color:var(--text3);font-size:9px;font-family:'JetBrains Mono',monospace">—</span>`;
@@ -2456,10 +2458,10 @@ function renderMechanisms(state) {
 }
 
 const IS_ZONES = [
-  { label: 'Has it', min: -Infinity, max: 30, color: '#475569', text: '#94a3b8' },
-  { label: 'Likes it', min: 30, max: 87, color: '#f59e0b', text: '#fbbf24' },
-  { label: 'Loves it', min: 87, max: 150, color: '#ef4444', text: '#f87171' },
-  { label: 'Breathes it', min: 150, max: Infinity, color: '#dc2626', text: '#fca5a5' }
+  { label: 'On Shelf', min: -Infinity, max: 30, color: '#3b82f6', text: '#60a5fa' },
+  { label: 'Engaging', min: 30, max: 87, color: '#f59e0b', text: '#fbbf24' },
+  { label: 'Immersive', min: 87, max: 150, color: '#a855f7', text: '#c4b5fd' },
+  { label: 'Total', min: 150, max: Infinity, color: '#ef4444', text: '#f87171' }
 ];
 
 function getISZone(is) {
@@ -2897,10 +2899,10 @@ function initZoneChart(scored) {
   const maxIS = 250;
 
   const zones = [
-    { key: 'has',   label: 'Has it',         min: 0,   max: 30,  fill: 'rgba(71,85,105,0.25)',  stroke: '#475569', text: '#94a3b8',  bg: '#475569' },
-    { key: 'likes', label: 'Likes it',        min: 30,  max: 87,  fill: 'rgba(245,158,11,0.12)', stroke: '#f59e0b', text: '#fbbf24',  bg: '#f59e0b' },
-    { key: 'loves', label: 'Loves it',        min: 87,  max: 150, fill: 'rgba(239,68,68,0.12)',  stroke: '#ef4444', text: '#f87171',  bg: '#ef4444' },
-    { key: 'breathes', label: 'Breathes it', min: 150, max: maxIS, fill: 'rgba(220,38,38,0.2)', stroke: '#dc2626', text: '#fca5a5',  bg: '#dc2626' }
+    { key: 'has',   label: 'On Shelf',         min: 0,   max: 30,  fill: 'rgba(59,130,246,0.15)',  stroke: '#3b82f6', text: '#60a5fa',  bg: '#3b82f6' },
+    { key: 'likes', label: 'Engaging',        min: 30,  max: 87,  fill: 'rgba(245,158,11,0.12)', stroke: '#f59e0b', text: '#fbbf24',  bg: '#f59e0b' },
+    { key: 'loves', label: 'Immersive',        min: 87,  max: 150, fill: 'rgba(168,85,247,0.12)',  stroke: '#a855f7', text: '#c4b5fd',  bg: '#a855f7' },
+    { key: 'breathes', label: 'Total', min: 150, max: maxIS, fill: 'rgba(239,68,68,0.15)', stroke: '#ef4444', text: '#f87171',  bg: '#ef4444' }
   ];
 
   // Assign each game a zone key
