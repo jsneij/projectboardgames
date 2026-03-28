@@ -229,7 +229,7 @@ nav::-webkit-scrollbar { display: none; }
   font-family: 'JetBrains Mono', monospace;
   letter-spacing: 0.05em; border-bottom: 1px solid var(--border);
   white-space: nowrap;
-  position: sticky; top: calc(var(--header-h, 78px) + 40px); z-index: 9; background: var(--bg);
+  position: sticky; top: var(--table-th-top, 118px); z-index: 9; background: var(--bg);
 }
 #game-table td {
   padding: 7px 10px; border-bottom: 1px solid rgba(51,65,85,0.5);
@@ -3064,7 +3064,8 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
   try {
     // Measure sticky header height for CSS sticky offsets
     const hdr = document.getElementById('app-header');
-    if (hdr) document.documentElement.style.setProperty('--header-h', hdr.offsetHeight + 'px');
+    const headerH = hdr ? hdr.offsetHeight : 78;
+    document.documentElement.style.setProperty('--header-h', headerH + 'px');
 
     const { collection, scores, mechanisms } = await loadData();
     STATE = buildState(collection, scores, mechanisms);
@@ -3076,6 +3077,10 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
     renderPatterns(STATE);
     renderInsights();
     renderMechanisms(STATE);
+
+    // Measure sort bar to position table headers below it
+    const sortBar = document.querySelector('.sort-bar');
+    if (sortBar) document.documentElement.style.setProperty('--table-th-top', (headerH + sortBar.offsetHeight) + 'px');
 
     document.getElementById('loading').style.display = 'none';
   } catch (err) {
