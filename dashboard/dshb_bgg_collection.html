@@ -285,9 +285,48 @@ nav::-webkit-scrollbar { display: none; }
 }
 .mech-detail { display: none; margin-top: 8px; }
 .mech-row.open .mech-detail { display: block; }
+.mech-detail-layout { display: flex; gap: 24px; }
+.mech-detail-left { flex: 1; min-width: 0; }
+.mech-detail-right {
+  width: 320px; flex-shrink: 0;
+  max-height: 400px; overflow-y: auto;
+  padding-right: 8px;
+}
+.mech-detail-right::-webkit-scrollbar { width: 4px; }
+.mech-detail-right::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
 .mech-desc {
   font-size: 12px; color: var(--text2); line-height: 1.5;
-  margin-bottom: 8px; max-width: 700px;
+  margin-bottom: 10px; max-width: 700px;
+}
+.mech-discussion {
+  font-size: 11.5px; color: var(--text2); line-height: 1.6;
+  max-height: 300px; overflow-y: auto; padding-right: 8px;
+}
+.mech-discussion::-webkit-scrollbar { width: 4px; }
+.mech-discussion::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+.mech-discussion p { margin: 0 0 8px 0; }
+.mech-section-label {
+  font-size: 10px; color: var(--text3); text-transform: uppercase;
+  letter-spacing: 0.5px; margin: 12px 0 6px 0; font-weight: 600;
+}
+.mech-related { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 10px; }
+.mech-related-tag {
+  font-size: 10px; padding: 2px 7px; border-radius: 4px;
+  background: rgba(139,92,246,0.15); border: 1px solid rgba(139,92,246,0.3);
+  color: #c4b5fd; font-family: 'JetBrains Mono', monospace; cursor: pointer;
+}
+.mech-related-tag:hover { background: rgba(139,92,246,0.3); }
+.mech-sample-list { list-style: none; padding: 0; margin: 0; }
+.mech-sample-list li {
+  font-size: 11px; color: var(--text2); padding: 3px 0;
+  border-bottom: 1px solid rgba(51,65,85,0.3);
+}
+.mech-sample-list li:last-child { border-bottom: none; }
+.mech-sample-title { color: var(--text1); }
+.mech-sample-meta { color: var(--text3); font-size: 10px; }
+@media (max-width: 640px) {
+  .mech-detail-layout { flex-direction: column; }
+  .mech-detail-right { width: 100%; max-height: 250px; }
 }
 .mech-games { display: flex; flex-wrap: wrap; gap: 5px; }
 .mech-game-tag {
@@ -789,44 +828,6 @@ nav::-webkit-scrollbar { display: none; }
   font-size: 10px; color: var(--text3);
   font-family: 'JetBrains Mono', monospace;
 }
-.is-mech-tooltip {
-  position: fixed; background: #131d31f5; border: 1px solid var(--indigo);
-  border-radius: 10px; padding: 14px 16px; font-size: 12px;
-  pointer-events: none; z-index: 200; display: none;
-  max-width: 320px; min-width: 200px;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.5);
-}
-@media (max-width: 640px) {
-  .is-mech-tooltip {
-    position: fixed; left: 8px !important; right: 8px !important; bottom: 8px !important;
-    top: auto !important; max-width: none; width: auto;
-    max-height: 55vh; overflow-y: auto; -webkit-overflow-scrolling: touch;
-    pointer-events: auto; border-radius: 14px;
-    padding: 16px 16px 12px;
-  }
-  .is-mech-tooltip-overlay {
-    position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 199; display: none;
-  }
-}
-.is-mech-tooltip-title {
-  font-family: 'JetBrains Mono', monospace; font-size: 14px;
-  font-weight: 700; color: var(--indigo); margin-bottom: 10px;
-}
-.is-mech-tooltip-item { margin-bottom: 8px; }
-.is-mech-tooltip-item:last-child { margin-bottom: 0; }
-.is-mech-tooltip-mech {
-  font-family: 'JetBrains Mono', monospace; font-size: 11px;
-  color: var(--text); font-weight: 600; margin-bottom: 3px;
-}
-.is-mech-tooltip-games {
-  display: flex; flex-wrap: wrap; gap: 4px;
-}
-.is-mech-tooltip-game {
-  font-size: 10px; color: var(--text2); background: rgba(99,102,241,0.12);
-  border: 1px solid rgba(99,102,241,0.25); border-radius: 4px;
-  padding: 1px 6px;
-}
-
 /* IS Framework responsive */
 @media (max-width: 768px) {
   .is-eq-stages { grid-template-columns: 1fr; }
@@ -1208,7 +1209,12 @@ function buildState(collection, scores, mechanisms) {
   const mechData = (mechanisms?.categories || []).map(cat => ({
     cat: cat.name,
     prefix: cat.prefix,
-    mechs: cat.mechanisms.map(m => ({ c: m.code, n: m.name, d: m.description }))
+    mechs: cat.mechanisms.map(m => ({
+      c: m.code, n: m.name, d: m.description,
+      discussion: m.discussion || '',
+      related: m.relatedMechanisms || [],
+      samples: m.sampleGames || []
+    }))
   }));
 
   return { owned, wishlist, preordered, prevOwned, collection, mechData };
@@ -2306,10 +2312,37 @@ function renderMechanisms(state) {
   const usedMechs = mechData.reduce((s, cat) => s + cat.mechs.filter(m => mechMap[m.c]).length, 0);
   const uniqueGames = new Set(allGames.filter(g => (g.mechs || []).length > 0).map(g => g.name)).size;
 
-  let html = `<div class="mech-stats-bar">
-    <div><span>${totalMechs}</span> mechanisms</div>
-    <div><span>${usedMechs}</span> in your collection</div>
-    <div><span>${uniqueGames}</span> games tagged</div>
+  // Build per-category usage counts
+  const catUsageCounts = {};
+  const allMechs = [...owned, ...wishlist];
+  allMechs.forEach(g => {
+    (g.mechs || []).forEach(m => {
+      const prefix = m.split('-')[0];
+      catUsageCounts[prefix] = (catUsageCounts[prefix] || 0) + 1;
+    });
+  });
+
+  let html = `
+  <div class="card mb20">
+    <div class="is-mech-intro">
+      <p>Based on <em>Building Blocks of Tabletop Game Design: An Encyclopedia of Mechanisms</em>
+      by Geoffrey Engelstein &amp; Isaac Shalev. Each mechanism is coded using the pattern
+      <span class="mono" style="color:var(--indigo)">CAT-## Name</span> across
+      <span style="color:var(--accent);font-weight:600">${mechData.length}</span> categories and
+      <span style="color:var(--accent);font-weight:600">${totalMechs}</span> mechanisms.
+      <span style="color:var(--accent);font-weight:600">${usedMechs}</span> appear in your collection
+      across <span style="color:var(--accent);font-weight:600">${uniqueGames}</span> games.</p>
+    </div>
+    <div class="is-mech-grid">
+      ${mechData.map(cat => {
+        const ct = catUsageCounts[cat.prefix] || 0;
+        return `<div class="is-mech-cat" data-scrollcat="${cat.prefix}" style="cursor:pointer">
+          <div class="is-mech-cat-code">${cat.prefix}</div>
+          <div class="is-mech-cat-name">${cat.cat}</div>
+          <div class="is-mech-cat-count">${ct} use${ct!==1?'s':''} in collection</div>
+        </div>`;
+      }).join('')}
+    </div>
   </div>
   <input type="text" class="mech-search" placeholder="Search mechanisms..." id="mech-search">`;
 
@@ -2325,6 +2358,21 @@ function renderMechanisms(state) {
         `<a href="${BGG_LINK(g.bgg_id)}" target="_blank" rel="noopener" onclick="event.stopPropagation()" class="mech-game-tag ${g.section}">${g.name}</a>`
       ).join('');
 
+      // Build right panel: discussion, related, sample games
+      const discussionHtml = m.discussion
+        ? m.discussion.split('\n\n').map(p => `<p>${p}</p>`).join('')
+        : '';
+      const relatedHtml = m.related.length
+        ? `<div class="mech-section-label">Related Mechanisms</div>
+           <div class="mech-related">${m.related.map(r =>
+             `<span class="mech-related-tag" data-code="${r}">${r}</span>`
+           ).join('')}</div>` : '';
+      const samplesHtml = m.samples.length
+        ? `<div class="mech-section-label">Sample Games (${m.samples.length})</div>
+           <ul class="mech-sample-list">${m.samples.map(s =>
+             `<li><span class="mech-sample-title">${s.title}</span> <span class="mech-sample-meta">${s.designer}${s.year ? ', ' + s.year : ''}</span></li>`
+           ).join('')}</ul>` : '';
+
       html += `<div class="mech-row" data-search="${m.c} ${m.n}">
         <div class="mech-row-head">
           <span class="mech-code">${m.c}</span>
@@ -2334,6 +2382,16 @@ function renderMechanisms(state) {
         <div class="mech-detail">
           <div class="mech-desc">${m.d}</div>
           ${games.length ? `<div class="mech-games">${gameTags}</div>` : ''}
+          ${discussionHtml || relatedHtml || samplesHtml ? `
+          <div class="mech-detail-layout">
+            <div class="mech-detail-left">
+              ${discussionHtml ? `<div class="mech-section-label">Discussion</div><div class="mech-discussion">${discussionHtml}</div>` : ''}
+            </div>
+            <div class="mech-detail-right">
+              ${relatedHtml}
+              ${samplesHtml}
+            </div>
+          </div>` : ''}
         </div>
       </div>`;
     });
@@ -2342,9 +2400,35 @@ function renderMechanisms(state) {
 
   container.innerHTML = html;
 
+  // Click grid card → scroll to category
+  container.querySelectorAll('[data-scrollcat]').forEach(card => {
+    card.addEventListener('click', () => {
+      const prefix = card.dataset.scrollcat;
+      const catName = mechData.find(c => c.prefix === prefix)?.cat;
+      if (!catName) return;
+      const target = container.querySelector(`.mech-category[data-cat="${catName}"]`);
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+
   // Click to expand mechanism detail
   container.querySelectorAll('.mech-row').forEach(row => {
     row.addEventListener('click', () => row.classList.toggle('open'));
+  });
+
+  // Click related mechanism tag → scroll to and open that mechanism
+  container.querySelectorAll('.mech-related-tag').forEach(tag => {
+    tag.addEventListener('click', e => {
+      e.stopPropagation();
+      const code = tag.dataset.code;
+      const target = container.querySelector(`.mech-row[data-search^="${code} "]`);
+      if (target) {
+        // Close current, open target
+        tag.closest('.mech-row')?.classList.remove('open');
+        target.classList.add('open');
+        target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    });
   });
 
   // Search filter
@@ -2368,12 +2452,6 @@ const IS_ZONES = [
   { label: 'Peak Immersion', min: 150, max: Infinity, color: '#dc2626', text: '#fca5a5' }
 ];
 
-function buildMechCats(mechData) {
-  const cats = {};
-  (mechData || []).forEach(cat => { cats[cat.prefix] = cat.cat; });
-  return cats;
-}
-
 function getISZone(is) {
   return IS_ZONES.find(z => is >= z.min && is < z.max) || IS_ZONES[0];
 }
@@ -2381,7 +2459,6 @@ function getISZone(is) {
 function renderISFramework(state) {
   const container = document.getElementById('tab-is-framework');
   const { owned } = state;
-  const MECH_CATS = buildMechCats(state.mechData);
   const scored = owned.filter(g => g.hasScores && g.IS !== null);
 
   let html = '';
@@ -2674,47 +2751,7 @@ function renderISFramework(state) {
     <div class="is-zone-legend" id="is-zone-legend"></div>
   </div>`;
 
-  // === SECTION 7: MECHANICS TAXONOMY ===
-  // Build per-category: which mechanics and which games use them
-  const mechByCat = {};
-  scored.forEach(g => {
-    (g.mechs || []).forEach(m => {
-      const cat = m.split('-')[0];
-      if (!mechByCat[cat]) mechByCat[cat] = {};
-      const mechName = m.replace(/^[A-Z]+-\d+\s*/, '');
-      const mechCode = m.split(' ')[0];
-      const key = mechCode + ' ' + mechName;
-      if (!mechByCat[cat][key]) mechByCat[cat][key] = [];
-      if (!mechByCat[cat][key].includes(g.name)) mechByCat[cat][key].push(g.name);
-    });
-  });
-
-  html += `
-  <div class="card mb20">
-    <div class="section-title">Mechanics Taxonomy</div>
-    <div class="is-mech-intro">
-      <p>Mechanism codes follow the taxonomy from
-      <em>Building Blocks of Tabletop Game Design: An Encyclopedia of Mechanisms</em>
-      by Geoffrey Engelstein &amp; Isaac Shalev. Each code uses the pattern
-      <span class="mono" style="color:var(--indigo)">CAT-## Name</span>.</p>
-      <p>The codes tag each game with its core mechanisms, making it possible to
-      see which design patterns correlate with high immersion.</p>
-    </div>
-    <div class="is-mech-grid" id="is-mech-grid">
-      ${Object.entries(MECH_CATS).map(([code, name]) => {
-        const mechs = mechByCat[code] || {};
-        const ct = Object.values(mechs).reduce((s, arr) => s + arr.length, 0);
-        return `<div class="is-mech-cat" data-mechcat="${code}">
-          <div class="is-mech-cat-code">${code}</div>
-          <div class="is-mech-cat-name">${name}</div>
-          <div class="is-mech-cat-count">${ct} use${ct!==1?'s':''} in collection</div>
-        </div>`;
-      }).join('')}
-    </div>
-  </div>`;
-
-  // Store mechByCat for tooltip init
-  container._mechByCat = mechByCat;
+  // === SECTION 7: MECHANICS TAXONOMY (moved to Mechanisms tab) ===
 
   // === SECTION 8: KEY PRINCIPLES ===
   html += `
@@ -2760,7 +2797,6 @@ function renderISFramework(state) {
   initGKDemo();
   initVarCardToggles();
   initZoneChart(scored);
-  initMechTooltips(container._mechByCat);
 }
 
 function initISCalc(scored) {
@@ -2840,84 +2876,6 @@ function initVarCardToggles() {
   document.querySelectorAll('[data-isvar]').forEach(header => {
     header.addEventListener('click', () => {
       header.closest('.is-var-card').classList.toggle('collapsed');
-    });
-  });
-}
-
-function initMechTooltips(mechByCat) {
-  const tooltip = document.createElement('div');
-  tooltip.className = 'is-mech-tooltip';
-  document.body.appendChild(tooltip);
-
-  const overlay = document.createElement('div');
-  overlay.className = 'is-mech-tooltip-overlay';
-  document.body.appendChild(overlay);
-
-  const isMobile = () => window.innerWidth <= 640;
-
-  function showTooltip(cat, entries) {
-    if (!entries.length) {
-      tooltip.innerHTML = `<div class="is-mech-tooltip-title">${cat} \u2014 ${MECH_CATS[cat]}</div>
-        <div style="color:var(--text3);font-size:11px">No mechanics from this category in your collection</div>`;
-    } else {
-      tooltip.innerHTML = `<div class="is-mech-tooltip-title">${cat} \u2014 ${MECH_CATS[cat]}</div>` +
-        entries.map(([mech, games]) => `
-          <div class="is-mech-tooltip-item">
-            <div class="is-mech-tooltip-mech">${mech}</div>
-            <div class="is-mech-tooltip-games">
-              ${games.map(g => `<span class="is-mech-tooltip-game">${g}</span>`).join('')}
-            </div>
-          </div>
-        `).join('');
-    }
-    tooltip.style.display = 'block';
-    if (isMobile()) overlay.style.display = 'block';
-  }
-
-  function hideTooltip() {
-    tooltip.style.display = 'none';
-    overlay.style.display = 'none';
-  }
-
-  overlay.addEventListener('click', hideTooltip);
-
-  document.querySelectorAll('[data-mechcat]').forEach(card => {
-    const cat = card.dataset.mechcat;
-    const mechs = mechByCat[cat] || {};
-    const entries = Object.entries(mechs).sort((a, b) => b[1].length - a[1].length);
-
-    // Mobile: tap to toggle
-    card.addEventListener('click', e => {
-      if (!isMobile()) return;
-      e.stopPropagation();
-      if (tooltip.style.display === 'block') {
-        hideTooltip();
-      } else {
-        showTooltip(cat, entries);
-      }
-    });
-
-    // Desktop: hover
-    card.addEventListener('mouseenter', e => {
-      if (isMobile()) return;
-      showTooltip(cat, entries);
-    });
-
-    card.addEventListener('mousemove', e => {
-      if (isMobile()) return;
-      const tw = tooltip.offsetWidth;
-      const th = tooltip.offsetHeight;
-      let x = e.clientX + 14;
-      let y = e.clientY - 10;
-      if (x + tw > window.innerWidth - 12) x = e.clientX - tw - 14;
-      if (y + th > window.innerHeight - 12) y = window.innerHeight - th - 12;
-      tooltip.style.left = x + 'px';
-      tooltip.style.top = y + 'px';
-    });
-
-    card.addEventListener('mouseleave', () => {
-      if (isMobile()) return;
-      hideTooltip();
     });
   });
 }
