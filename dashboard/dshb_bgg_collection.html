@@ -1176,7 +1176,7 @@ function mergeGame(game, scoreObj) {
     bggRank,
     hasScores,
     type: sc.type || game.type || '',
-    weight: sc.weight || game.stats.avg_weight || null,
+    weight: game.stats.avg_weight || sc.weight || null,
     feeling: sc.feeling || null,
     mechs: sc.mechs || [],
     bggAvg: game.stats.average || null,

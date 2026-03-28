@@ -59,6 +59,10 @@ RETRY_DELAY_SECONDS = 5
 # Rate limiting: pause between play log requests to avoid hitting BGG limits
 PLAYS_REQUEST_DELAY = 1.5  # seconds between each game's play log fetch
 
+# /thing API batch size (BGG allows up to 20 IDs per request)
+THING_BATCH_SIZE = 20
+THING_REQUEST_DELAY = 1.0  # seconds between /thing batch requests
+
 
 # =============================================================================
 # Authentication & Environment
@@ -247,6 +251,60 @@ def fetch_plays_for_game(bgg_id: int, token: str, session: requests.Session = No
         time.sleep(PLAYS_REQUEST_DELAY)
 
     return all_plays
+
+
+def fetch_thing_data(bgg_ids: list, session: requests.Session = None) -> dict:
+    """Fetch weight and other data from /thing endpoint in batches.
+
+    The collection API does not return averageweight — this endpoint does.
+    BGG allows up to 20 IDs per /thing request.
+    Returns dict of {bgg_id: {"avg_weight": float, ...}}.
+    """
+    http = session if session else requests
+    results = {}
+
+    for i in range(0, len(bgg_ids), THING_BATCH_SIZE):
+        batch = bgg_ids[i:i + THING_BATCH_SIZE]
+        ids_str = ",".join(str(bid) for bid in batch)
+
+        for attempt in range(1, MAX_RETRIES + 1):
+            resp = http.get(
+                f"{BGG_API_BASE}/thing",
+                params={"id": ids_str, "stats": "1"},
+                timeout=30,
+            )
+            if resp.status_code == 200:
+                break
+            elif resp.status_code == 202:
+                time.sleep(RETRY_DELAY_SECONDS)
+            else:
+                break
+        else:
+            continue
+
+        if resp.status_code != 200:
+            continue
+
+        root = ET.fromstring(resp.text)
+        for item in root.findall("item"):
+            bgg_id = int(item.get("id", 0))
+            data = {}
+
+            stats_el = item.find("statistics")
+            if stats_el is not None:
+                ratings_el = stats_el.find("ratings")
+                if ratings_el is not None:
+                    wt_el = ratings_el.find("averageweight")
+                    if wt_el is not None:
+                        val = wt_el.get("value")
+                        data["avg_weight"] = round(float(val), 2) if val and float(val) != 0 else None
+
+            results[bgg_id] = data
+
+        if i + THING_BATCH_SIZE < len(bgg_ids):
+            time.sleep(THING_REQUEST_DELAY)
+
+    return results
 
 
 # =============================================================================
@@ -825,10 +883,26 @@ def main():
             games = list(existing_index.values())
 
         else:
-            print(f"  ✓ {changed_count} item(s) changed")
+            # Also check expansions for changes
+            exp_root = fetch_collection(token, session=session,
+                                        extra_params={"subtype": "boardgameexpansion",
+                                                      "modifiedsince": since_date})
+            exp_changed = int(exp_root.get("totalitems", 0))
+            total_changed = changed_count + exp_changed
+            print(f"  ✓ {changed_count} boardgame(s) + {exp_changed} expansion(s) changed")
 
-            print(f"\n[2/4] Parsing {changed_count} changed item(s)...")
-            changed_games = [parse_item(item) for item in root.findall("item")]
+            print(f"\n[2/4] Parsing {total_changed} changed item(s)...")
+            seen_ids = set()
+            changed_games = []
+            for item in root.findall("item"):
+                g = parse_item(item)
+                seen_ids.add(g["bgg_id"])
+                changed_games.append(g)
+            for item in exp_root.findall("item"):
+                g = parse_item(item)
+                if g["bgg_id"] not in seen_ids:
+                    seen_ids.add(g["bgg_id"])
+                    changed_games.append(g)
             print(f"  ✓ Parsed {len(changed_games)} games")
 
             # Patch play counts from plays API (collection API is unreliable for expansions)
@@ -872,11 +946,31 @@ def main():
         print("\n[1/4] Fetching full collection from BGG...")
         root = fetch_collection(token, session=session)
         total_items = root.get("totalitems", "?")
-        print(f"  ✓ Received {total_items} items")
+        print(f"  ✓ Received {total_items} boardgames")
+
+        # Also fetch expansions (they may not appear under subtype=boardgame)
+        print("  Fetching expansions...")
+        exp_root = fetch_collection(token, session=session,
+                                    extra_params={"subtype": "boardgameexpansion"})
+        exp_count = exp_root.get("totalitems", "0")
+        print(f"  ✓ Received {exp_count} expansions")
 
         print("\n[2/4] Parsing collection data...")
-        games = [parse_item(item) for item in root.findall("item")]
-        print(f"  ✓ Parsed {len(games)} games")
+        seen_ids = set()
+        games = []
+        for item in root.findall("item"):
+            g = parse_item(item)
+            seen_ids.add(g["bgg_id"])
+            games.append(g)
+        # Add expansions not already in the boardgame results
+        exp_added = 0
+        for item in exp_root.findall("item"):
+            g = parse_item(item)
+            if g["bgg_id"] not in seen_ids:
+                seen_ids.add(g["bgg_id"])
+                games.append(g)
+                exp_added += 1
+        print(f"  ✓ Parsed {len(games)} games ({exp_added} expansion-only items added)")
 
         # Patch play counts from plays API (collection API is unreliable for expansions)
         user_plays = fetch_user_play_counts(token, session=session)
@@ -895,8 +989,24 @@ def main():
                 time.sleep(PLAYS_REQUEST_DELAY)
 
     # -------------------------------------------------------------------------
-    # Common: categorize, report changes, write output
+    # Common: fetch weights from /thing API, categorize, write output
     # -------------------------------------------------------------------------
+
+    # Fetch weight from /thing endpoint (collection API doesn't include it)
+    missing_weight = [g["bgg_id"] for g in games
+                      if not g.get("stats", {}).get("avg_weight")]
+    if missing_weight:
+        print(f"\n  Fetching weight data for {len(missing_weight)} games "
+              f"({len(missing_weight) // THING_BATCH_SIZE + 1} batches)...")
+        thing_data = fetch_thing_data(missing_weight, session=session)
+        patched_wt = 0
+        for g in games:
+            td = thing_data.get(g["bgg_id"])
+            if td and td.get("avg_weight") is not None:
+                g.setdefault("stats", {})["avg_weight"] = td["avg_weight"]
+                patched_wt += 1
+        print(f"  ✓ Updated weight for {patched_wt} game(s)")
+
     total_play_entries = sum(len(g["plays"]) for g in games)
 
     collection = categorize_collection(games)
