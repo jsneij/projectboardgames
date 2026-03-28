@@ -54,7 +54,11 @@ a:hover { text-decoration: underline; color: #60a5fa; }
   transition: all 0.15s; letter-spacing: 0.03em;
 }
 .fetch-btn:hover { color: var(--green); border-color: var(--green); text-decoration: none; }
-nav { display: flex; gap: 2px; }
+nav { display: flex; gap: 2px; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+nav::-webkit-scrollbar { display: none; }
+@media (max-width: 640px) {
+  nav { flex-wrap: wrap; gap: 0; }
+}
 .tab-btn {
   background: none; border: none; cursor: pointer;
   color: var(--text3); font-family: 'Outfit', sans-serif;
@@ -63,6 +67,9 @@ nav { display: flex; gap: 2px; }
   border-bottom: 2px solid transparent;
   transition: color 0.15s, border-color 0.15s;
   white-space: nowrap;
+}
+@media (max-width: 640px) {
+  .tab-btn { font-size: 12px; padding: 6px 10px 8px; flex: 0 0 auto; }
 }
 .tab-btn:hover { color: var(--text2); }
 .tab-btn.active { color: var(--text); border-bottom-color: var(--blue); }
