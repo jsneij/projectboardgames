@@ -1,0 +1,39 @@
+name: Fetch BGG Collection
+
+on:
+  schedule:
+    - cron: '0 2 * * *'  # 02:00 UTC = 03:00 CET
+  workflow_dispatch:       # Manual trigger from GitHub UI
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch BGG collection
+        env:
+          BGG_BEARER_TOKEN: ${{ secrets.BGG_BEARER_TOKEN }}
+          BGG_PASSWORD: ${{ secrets.BGG_PASSWORD }}
+        run: python scripts/fetch_bgg_collection.py
+
+      - name: Sync scores
+        run: python scripts/sync_scores.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --staged --quiet || git commit -m "Update BGG collection data $(date -u +%Y-%m-%d)"
+          git push

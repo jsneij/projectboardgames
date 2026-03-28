@@ -45,6 +45,15 @@ a:hover { text-decoration: underline; color: #60a5fa; }
   letter-spacing: 0.05em;
 }
 #app-header h1 span { color: var(--blue); }
+.fetch-btn {
+  display: inline-flex; align-items: center;
+  font-family: 'JetBrains Mono', monospace; font-size: 11px;
+  color: var(--text3); background: var(--bg-card2);
+  border: 1px solid var(--border); border-radius: 6px;
+  padding: 5px 12px; text-decoration: none;
+  transition: all 0.15s; letter-spacing: 0.03em;
+}
+.fetch-btn:hover { color: var(--green); border-color: var(--green); text-decoration: none; }
 nav { display: flex; gap: 2px; }
 .tab-btn {
   background: none; border: none; cursor: pointer;
@@ -396,6 +405,357 @@ nav { display: flex; gap: 2px; }
 /* SECTION SPACING */
 .mb16 { margin-bottom: 16px; }
 .mb20 { margin-bottom: 20px; }
+
+/* IS FRAMEWORK TAB */
+.is-hero { text-align: center; padding: 40px 24px 32px; }
+.is-hero-title {
+  font-family: 'Outfit', sans-serif; font-size: 32px; font-weight: 700;
+  color: var(--text); margin-bottom: 8px; letter-spacing: -0.02em;
+}
+.is-hero-subtitle {
+  font-size: 15px; color: var(--text2); margin-bottom: 28px;
+  max-width: 560px; margin-left: auto; margin-right: auto; line-height: 1.6;
+}
+.is-equation-display { display: flex; flex-direction: column; gap: 12px; align-items: center; }
+.is-eq-line {
+  display: flex; align-items: center; gap: 16px;
+  background: var(--bg-card2); border: 1px solid var(--border);
+  border-radius: 8px; padding: 14px 24px;
+  font-family: 'JetBrains Mono', monospace; font-size: 18px;
+}
+.is-eq-lbl {
+  font-size: 12px; color: var(--text3); text-transform: uppercase;
+  letter-spacing: 0.06em; min-width: 140px; text-align: right;
+}
+.is-eq-formula { font-weight: 600; color: var(--text); }
+.is-var { font-weight: 700; padding: 2px 6px; border-radius: 4px; }
+.is-var-m  { color: #3b82f6; background: rgba(59,130,246,0.15); }
+.is-var-t  { color: #ef4444; background: rgba(239,68,68,0.15); }
+.is-var-g  { color: #22c55e; background: rgba(34,197,94,0.15); }
+.is-var-f  { color: #f59e0b; background: rgba(245,158,11,0.15); }
+.is-var-ar { color: #a855f7; background: rgba(168,85,247,0.15); }
+
+/* Variable definitions grid */
+.is-var-defs { display: flex; flex-direction: column; gap: 10px; }
+.is-var-def {
+  display: grid; grid-template-columns: 56px 1fr;
+  align-items: center; gap: 16px;
+  background: var(--bg-card2); border: 1px solid var(--border);
+  border-radius: 10px; padding: 16px 20px;
+  border-left: 4px solid var(--blue);
+  transition: border-color 0.2s, background 0.2s;
+}
+.is-var-def:hover { background: var(--bg-hover); }
+.is-var-def-code {
+  font-family: 'JetBrains Mono', monospace; font-size: 28px;
+  font-weight: 700; text-align: center; line-height: 1;
+}
+.is-var-def-name {
+  font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 3px;
+}
+.is-var-def-tagline {
+  font-size: 13px; color: var(--text2); line-height: 1.5;
+}
+.is-var-def-note {
+  font-size: 11px; color: var(--text3); margin-top: 4px;
+  font-family: 'JetBrains Mono', monospace; letter-spacing: 0.02em;
+}
+
+/* Equation stages */
+.is-eq-stages { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.is-eq-stage {
+  background: var(--bg-card2); border: 1px solid var(--border);
+  border-radius: 10px; padding: 20px; border-top: 3px solid var(--blue);
+}
+.is-eq-stage:nth-child(2) { border-top-color: var(--amber); }
+.is-eq-stage:nth-child(3) { border-top-color: var(--purple); }
+.is-stage-num {
+  font-family: 'JetBrains Mono', monospace; font-size: 11px;
+  color: var(--text3); margin-bottom: 8px; letter-spacing: 0.08em;
+}
+.is-stage-label { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 8px; }
+.is-stage-formula {
+  font-family: 'JetBrains Mono', monospace; font-size: 20px;
+  font-weight: 700; margin-bottom: 14px; color: var(--text);
+}
+.is-stage-desc { font-size: 13px; color: var(--text2); line-height: 1.6; }
+.is-stage-example {
+  margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--border);
+  font-size: 12px; color: var(--text3); line-height: 1.5;
+}
+.is-stage-example strong { color: var(--text2); }
+
+/* Calculator */
+.is-calc-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; }
+.is-calc-sliders { display: flex; flex-direction: column; gap: 18px; }
+.is-slider-row { display: grid; grid-template-columns: 180px 1fr 36px; align-items: center; gap: 12px; }
+.is-slider-label { font-size: 13px; font-weight: 500; }
+.is-slider-code {
+  font-family: 'JetBrains Mono', monospace; font-weight: 700;
+  font-size: 14px; margin-right: 6px;
+}
+.is-slider-val {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 20px; font-weight: 700; text-align: center;
+}
+.is-range {
+  -webkit-appearance: none; appearance: none;
+  width: 100%; height: 6px; border-radius: 3px;
+  background: var(--border); outline: none; cursor: pointer;
+}
+.is-range::-webkit-slider-thumb {
+  -webkit-appearance: none; appearance: none;
+  width: 20px; height: 20px; border-radius: 50%;
+  background: var(--range-color, var(--blue));
+  border: 2px solid rgba(255,255,255,0.3); cursor: pointer;
+  transition: transform 0.1s;
+}
+.is-range::-webkit-slider-thumb:hover { transform: scale(1.2); }
+.is-range::-moz-range-thumb {
+  width: 20px; height: 20px; border-radius: 50%;
+  background: var(--range-color, var(--blue));
+  border: 2px solid rgba(255,255,255,0.3); cursor: pointer;
+}
+.is-calc-result { text-align: center; }
+.is-calc-scores { display: flex; gap: 16px; justify-content: center; margin-top: 16px; }
+.is-calc-score-item {
+  background: var(--bg-card2); border: 1px solid var(--border);
+  border-radius: 8px; padding: 14px 24px; text-align: center; flex: 1;
+}
+.is-calc-score-label {
+  font-size: 11px; color: var(--text3); text-transform: uppercase;
+  letter-spacing: 0.06em; margin-bottom: 6px; display: block;
+}
+.is-calc-score-val {
+  font-family: 'JetBrains Mono', monospace; font-size: 36px;
+  font-weight: 700; color: var(--text); transition: color 0.3s;
+}
+.is-calc-zone {
+  margin-top: 14px; font-size: 15px; font-weight: 600; transition: color 0.3s;
+}
+.is-calc-comparisons {
+  margin-top: 14px; font-size: 12px; color: var(--text2);
+  background: var(--bg-card2); border-radius: 8px;
+  padding: 10px 14px; border: 1px solid var(--border); line-height: 1.6;
+}
+
+/* Variable cards */
+.is-var-cards { display: flex; flex-direction: column; gap: 8px; }
+.is-var-card {
+  background: var(--bg-card2); border: 1px solid var(--border);
+  border-radius: 8px; border-left: 4px solid var(--blue); overflow: hidden;
+}
+.is-var-card-header {
+  display: flex; align-items: center; gap: 10px;
+  padding: 14px 16px; cursor: pointer; user-select: none; transition: background 0.1s;
+}
+.is-var-card-header:hover { background: var(--bg-hover); }
+.is-var-card-code {
+  font-family: 'JetBrains Mono', monospace; font-size: 16px;
+  font-weight: 700; min-width: 28px;
+}
+.is-var-card-name { font-size: 14px; font-weight: 600; color: var(--text); }
+.is-var-card-summary { font-size: 12px; color: var(--text2); flex: 1; }
+.is-var-card-arrow {
+  font-size: 10px; color: var(--text3); transition: transform 0.2s; margin-left: auto;
+}
+.is-var-card.collapsed .is-var-card-arrow { transform: rotate(-90deg); }
+.is-var-card.collapsed .is-var-card-body { display: none; }
+.is-var-card-body { padding: 0 16px 16px; }
+.is-var-card-desc { font-size: 13px; color: var(--text2); line-height: 1.6; margin-bottom: 16px; }
+
+.is-scale-row {
+  display: grid; grid-template-columns: 1fr 100px 1fr; gap: 12px;
+  align-items: center; margin-bottom: 16px;
+}
+.is-scale-end { font-size: 12px; }
+.is-scale-end:first-child { text-align: right; }
+.is-scale-end:last-child { text-align: left; }
+.is-scale-num { font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 14px; display: block; margin-bottom: 2px; }
+.is-scale-txt { color: var(--text2); display: block; line-height: 1.4; }
+.is-scale-ex { color: var(--text3); font-style: italic; display: block; margin-top: 2px; }
+.is-scale-bar { height: 8px; border-radius: 4px; }
+
+.is-dist-wrap { display: flex; align-items: flex-end; gap: 6px; height: 70px; padding-bottom: 18px; position: relative; }
+.is-dist-col { flex: 1; display: flex; flex-direction: column; align-items: center; position: relative; }
+.is-dist-bar { border-radius: 3px 3px 0 0; width: 100%; transition: height 0.3s; }
+.is-dist-lbl {
+  position: absolute; bottom: -16px;
+  font-size: 10px; font-family: 'JetBrains Mono', monospace; color: var(--text3);
+}
+.is-dist-ct {
+  font-size: 10px; font-family: 'JetBrains Mono', monospace;
+  color: var(--text2); margin-bottom: 2px;
+}
+
+/* Gatekeeper demo */
+.is-gk-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.is-gk-desc { font-size: 13px; color: var(--text2); line-height: 1.7; margin-bottom: 16px; }
+.is-gk-desc p { margin-bottom: 10px; }
+.is-gk-slider-row { display: flex; align-items: center; gap: 16px; margin-bottom: 12px; }
+.is-gk-t-val {
+  font-family: 'JetBrains Mono', monospace; font-size: 28px;
+  font-weight: 700; color: var(--red); min-width: 60px;
+}
+.is-gk-fixed {
+  font-size: 11px; color: var(--text3); font-family: 'JetBrains Mono', monospace;
+  margin-bottom: 16px;
+}
+.is-gk-result {
+  background: var(--bg-card2); border: 1px solid var(--border);
+  border-radius: 10px; padding: 20px; text-align: center;
+}
+.is-gk-is-val {
+  font-family: 'JetBrains Mono', monospace; font-size: 56px;
+  font-weight: 700; transition: all 0.3s; line-height: 1;
+}
+.is-gk-gs-val {
+  font-size: 13px; color: var(--text3); margin-top: 6px;
+  font-family: 'JetBrains Mono', monospace;
+}
+.is-gk-is-label {
+  font-size: 11px; color: var(--text3); text-transform: uppercase;
+  letter-spacing: 0.06em; margin-bottom: 8px;
+}
+
+.is-gk-chart { display: flex; align-items: flex-end; gap: 10px; height: 220px; padding-bottom: 24px; }
+.is-gk-bar {
+  flex: 1; border-radius: 8px 8px 0 0; transition: all 0.4s ease;
+  display: flex; flex-direction: column; align-items: center;
+  padding-top: 10px; position: relative; min-height: 20px; cursor: pointer;
+}
+.is-gk-bar.active { box-shadow: 0 0 24px rgba(239,68,68,0.4); }
+.is-gk-bar-is {
+  font-family: 'JetBrains Mono', monospace; font-size: 14px;
+  font-weight: 700; color: #fff;
+}
+.is-gk-bar-t {
+  position: absolute; bottom: -20px;
+  font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--text2);
+}
+.is-gk-insight {
+  margin-top: 20px; background: var(--bg-card2); border-left: 3px solid var(--red);
+  padding: 12px 14px; border-radius: 0 8px 8px 0;
+  font-size: 13px; color: var(--text2); line-height: 1.6;
+}
+
+/* Zone map */
+.is-zone-desc { font-size: 13px; color: var(--text2); line-height: 1.5; margin-bottom: 16px; }
+.is-zone-strip {
+  position: relative; height: 140px; border-radius: 8px; overflow: visible;
+  display: flex; margin-bottom: 8px;
+}
+.is-zone-band {
+  position: relative; height: 100%; display: flex; align-items: flex-start;
+  justify-content: center; padding-top: 8px;
+}
+.is-zone-band-label {
+  font-family: 'JetBrains Mono', monospace; font-size: 11px;
+  font-weight: 600; pointer-events: none; position: relative; z-index: 2;
+}
+.is-zone-boundary {
+  position: absolute; top: 0; bottom: 0; width: 1px;
+  border-left: 1px dashed var(--text3); z-index: 2; pointer-events: none;
+}
+.is-zone-boundary-val {
+  position: absolute; bottom: -18px; left: 50%; transform: translateX(-50%);
+  font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--text3);
+}
+.is-zone-dot {
+  position: absolute; width: 14px; height: 14px; border-radius: 50%;
+  transform: translate(-50%, -50%); cursor: pointer; z-index: 3;
+  transition: opacity 0.2s, transform 0.2s;
+  border: 2px solid rgba(255,255,255,0.25);
+}
+.is-zone-dot:hover { transform: translate(-50%, -50%) scale(1.4); z-index: 10; }
+.is-zone-strip.has-hover .is-zone-dot { opacity: 0.2; }
+.is-zone-strip.has-hover .is-zone-dot.hovered { opacity: 1; transform: translate(-50%, -50%) scale(1.4); z-index: 10; }
+.is-zone-strip.has-filter .is-zone-dot { opacity: 0.12; }
+.is-zone-strip.has-filter .is-zone-dot.zone-visible { opacity: 1; }
+.is-zone-strip.has-filter.has-hover .is-zone-dot.zone-visible { opacity: 0.25; }
+.is-zone-strip.has-filter.has-hover .is-zone-dot.zone-visible.hovered { opacity: 1; }
+.is-zone-tooltip {
+  position: fixed; background: #1e293bf0; border: 1px solid var(--border);
+  border-radius: 8px; padding: 10px 14px; font-size: 12px;
+  pointer-events: none; z-index: 200; display: none; line-height: 1.7;
+  max-width: 220px;
+}
+.is-zone-tooltip strong { color: var(--text); font-size: 13px; }
+.is-zone-legend {
+  display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px;
+  font-size: 12px; color: var(--text2);
+}
+.is-zone-legend-btn {
+  display: flex; align-items: center; gap: 6px; cursor: pointer;
+  padding: 4px 12px; border-radius: 20px; user-select: none;
+  border: 1px solid var(--border); background: none;
+  color: var(--text2); font-family: 'Outfit', sans-serif; font-size: 12px;
+  transition: all 0.15s;
+}
+.is-zone-legend-btn:hover { border-color: var(--text3); }
+.is-zone-legend-btn.active { color: #fff; }
+.is-zone-swatch {
+  width: 12px; height: 12px; border-radius: 3px; display: inline-block;
+}
+
+/* Mechanics taxonomy */
+.is-mech-intro { font-size: 13px; color: var(--text2); line-height: 1.6; margin-bottom: 16px; }
+.is-mech-intro em { color: var(--text); font-style: italic; }
+.is-mech-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(155px, 1fr)); gap: 8px;
+}
+.is-mech-cat {
+  background: var(--bg-card2); border: 1px solid var(--border);
+  border-radius: 8px; padding: 12px; text-align: center;
+  transition: border-color 0.15s;
+}
+.is-mech-cat:hover { border-color: var(--indigo); }
+.is-mech-cat-code {
+  font-family: 'JetBrains Mono', monospace; font-size: 16px;
+  font-weight: 700; color: var(--indigo); margin-bottom: 4px;
+}
+.is-mech-cat-name { font-size: 12px; color: var(--text2); margin-bottom: 6px; }
+.is-mech-cat-count {
+  font-size: 10px; color: var(--text3);
+  font-family: 'JetBrains Mono', monospace;
+}
+.is-mech-tooltip {
+  position: fixed; background: #131d31f5; border: 1px solid var(--indigo);
+  border-radius: 10px; padding: 14px 16px; font-size: 12px;
+  pointer-events: none; z-index: 200; display: none;
+  max-width: 320px; min-width: 200px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+}
+.is-mech-tooltip-title {
+  font-family: 'JetBrains Mono', monospace; font-size: 14px;
+  font-weight: 700; color: var(--indigo); margin-bottom: 10px;
+}
+.is-mech-tooltip-item { margin-bottom: 8px; }
+.is-mech-tooltip-item:last-child { margin-bottom: 0; }
+.is-mech-tooltip-mech {
+  font-family: 'JetBrains Mono', monospace; font-size: 11px;
+  color: var(--text); font-weight: 600; margin-bottom: 3px;
+}
+.is-mech-tooltip-games {
+  display: flex; flex-wrap: wrap; gap: 4px;
+}
+.is-mech-tooltip-game {
+  font-size: 10px; color: var(--text2); background: rgba(99,102,241,0.12);
+  border: 1px solid rgba(99,102,241,0.25); border-radius: 4px;
+  padding: 1px 6px;
+}
+
+/* IS Framework responsive */
+@media (max-width: 768px) {
+  .is-eq-stages { grid-template-columns: 1fr; }
+  .is-calc-wrap { grid-template-columns: 1fr; }
+  .is-slider-row { grid-template-columns: 1fr 1fr 36px; }
+  .is-gk-wrap { grid-template-columns: 1fr; }
+  .is-eq-line { flex-direction: column; gap: 6px; text-align: center; }
+  .is-scale-row { grid-template-columns: 1fr; gap: 8px; }
+  .is-scale-end, .is-scale-end:first-child { text-align: center; }
+  .is-hero-title { font-size: 24px; }
+}
 </style>
 </head>
 <body>
@@ -406,7 +766,14 @@ nav { display: flex; gap: 2px; }
 </div>
 
 <div id="app-header">
-  <h1>BGG Dashboard &mdash; <span id="username-label">jsneij</span></h1>
+  <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px">
+    <h1 style="margin-bottom:0">BGG Dashboard &mdash; <span id="username-label">jsneij</span></h1>
+    <a href="https://github.com/jsneij/projectboardgames/actions/workflows/fetch-bgg.yml"
+       target="_blank" rel="noopener" class="fetch-btn" title="Run or view the BGG data fetch workflow on GitHub">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" style="vertical-align:-2px;margin-right:5px"><path d="M8 0a8 8 0 100 16A8 8 0 008 0zm3.78 4.22a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06 0L4.22 7.28a.75.75 0 011.06-1.06L7 7.94l3.72-3.72a.75.75 0 011.06 0z"/></svg>
+      Fetch BGG Data
+    </a>
+  </div>
   <nav>
     <button class="tab-btn active" data-tab="overview">Overview</button>
     <button class="tab-btn" data-tab="is-scores">IS Scores</button>
@@ -415,6 +782,7 @@ nav { display: flex; gap: 2px; }
     <button class="tab-btn" data-tab="wishlist">Wishlist</button>
     <button class="tab-btn" data-tab="patterns">Patterns</button>
     <button class="tab-btn" data-tab="insights">Insights</button>
+    <button class="tab-btn" data-tab="is-framework">IS Framework</button>
   </nav>
 </div>
 
@@ -588,6 +956,9 @@ nav { display: flex; gap: 2px; }
     <div id="insights-container" style="display:flex;flex-direction:column;gap:20px"></div>
   </div>
 
+  <!-- TAB 8: IS FRAMEWORK -->
+  <div id="tab-is-framework" class="tab-pane"></div>
+
 </div><!-- /content -->
 
 <div id="scatter-tooltip" class="scatter-tooltip"></div>
@@ -619,7 +990,7 @@ function clamp(min, max, val) { return Math.max(min, Math.min(max, val)); }
 // Radar SVG
 function radarSVG(scores, size = 180) {
   const { M = 0, T = 0, G = 0, F = 0, Ar = 0 } = scores || {};
-  const IF = 5 - (F || 0);
+  const IF = 6 - (F || 1);
   const vals = [M, T, G, IF, Ar];
   const labels = ['M', 'T', 'G', 'IF', 'Ar'];
   const colors = ['#3b82f6', '#ef4444', '#22c55e', '#f59e0b', '#a855f7'];
@@ -703,7 +1074,7 @@ function mergeGame(game, scoreObj) {
   const hasScores = !!(M || T || G || Ar);
   const GS = hasScores ? (M * T * G - F) : null;
   const IS = (GS !== null) ? GS * (Ar / 2) : null;
-  const IF = F ? (5 - F) : null;
+  const IF = F ? (6 - F) : null;
   const bggRank = (game.stats.ranks || []).find(r => r.name === 'boardgame')?.value || null;
   return {
     ...game,
@@ -996,8 +1367,8 @@ function renderTable(state) {
     else if (f === 'weight') { av = a.weight || 0; bv = b.weight || 0; }
     else if (f === 'bggRank') { av = a.bggRank || 99999; bv = b.bggRank || 99999; }
     else if (f === 'plays') { av = a.num_plays || 0; bv = b.num_plays || 0; }
-    if (av < bv) return tableSortDir;
-    if (av > bv) return -tableSortDir;
+    if (av < bv) return -tableSortDir;
+    if (av > bv) return tableSortDir;
     return 0;
   }
 
@@ -1583,9 +1954,719 @@ function insTable(ins) {
 }
 
 // ============================================================
+// TAB 8: IS FRAMEWORK
+// ============================================================
+
+const IS_VARS = [
+  { key: 'M', name: 'Mechanical Depth', color: '#3b82f6', cls: 'is-var-m',
+    tagline: 'Complexity and interlocking systems',
+    desc: 'How many distinct systems does the game have, and how richly do they interact? M measures the structural complexity of the design\u2009\u2014\u2009the gears under the hood.',
+    lo: 'A single mechanic with no interconnected systems. Roll-and-move, match cards\u2009\u2014\u2009you see everything on the first play.',
+    hi: 'Multiple interlocking subsystems that create emergent complexity. Decisions ripple across resource tracks, card engines, and spatial puzzles.',
+    exLo: 'Cards Against Humanity', exHi: 'Spirit Island' },
+  { key: 'T', name: 'Fiction-Mechanic Embodiment', color: '#ef4444', cls: 'is-var-t',
+    tagline: 'How much mechanics <em>generate</em> (not just reference) the thematic experience',
+    desc: 'The non-negotiable variable. T measures how much the mechanics <em>generate</em> the thematic experience, rather than merely referencing it. A mechanic scores high T not by <em>referencing</em> a theme but by <em>generating</em> the thematic experience. Sky Team\'s silence rule doesn\'t describe cockpit pressure\u2009\u2014\u2009it creates it.',
+    lo: 'Theme is pasted on. The mechanics could be about anything\u2009\u2014\u2009swap the art and nothing changes.',
+    hi: 'Mechanics ARE the fiction. Playing the game produces the emotions the theme promises.',
+    exLo: 'Harmonies', exHi: 'Arkham Horror LCG' },
+  { key: 'G', name: 'Meaningful Agency', color: '#22c55e', cls: 'is-var-g',
+    tagline: 'Player decisions that matter and shape outcomes',
+    desc: 'Do your decisions shape the outcome? G measures whether choices create meaningfully different game states or whether the game plays itself.',
+    lo: 'Outcomes are random or predetermined. Choices are cosmetic\u2009\u2014\u2009you\'re along for the ride.',
+    hi: 'Every decision cascades into meaningfully different outcomes. You feel the weight of each choice two turns later.',
+    exLo: 'Snakes & Ladders', exHi: 'Spirit Island' },
+  { key: 'F', name: 'Friction', color: '#f59e0b', cls: 'is-var-f',
+    tagline: 'Setup time, fiddliness, rules overhead, barriers to play',
+    desc: 'Everything that gets between you and the game itself. Unlike the other variables, <strong>high F is bad</strong>\u2009\u2014\u2009it\'s subtracted from the score. Games requiring miniature painting raise F significantly.',
+    lo: 'Instant setup. Minimal rules overhead. Shuffle and play.',
+    hi: 'Massive setup, constant bookkeeping, rules-lawyering, or miniatures that need painting before first play.',
+    exLo: 'Sky Team', exHi: 'Nemesis (unpainted minis)' },
+  { key: 'Ar', name: 'Art & Production Quality', color: '#a855f7', cls: 'is-var-ar',
+    tagline: 'Visual design, component quality, table presence',
+    desc: 'Ar acts as a final multiplier\u2009\u2014\u2009beautiful production amplifies a great game, while poor aesthetics dampen the experience. Ar legitimately excludes games you wouldn\'t enjoy regardless of mechanical quality.',
+    lo: 'Generic or unappealing art, flimsy components. You tolerate the look rather than enjoy it.',
+    hi: 'Stunning art direction, premium components, presence on the table. You want to pick up the cards just to look at them.',
+    exLo: 'Budget abstracts', exHi: 'Arkham Horror LCG' }
+];
+
+const IS_ZONES = [
+  { label: 'Has it', min: -Infinity, max: 30, color: '#475569', text: '#94a3b8' },
+  { label: 'Likes it', min: 30, max: 87, color: '#f59e0b', text: '#fbbf24' },
+  { label: 'Loves it', min: 87, max: 150, color: '#ef4444', text: '#f87171' },
+  { label: 'Peak Immersion', min: 150, max: Infinity, color: '#dc2626', text: '#fca5a5' }
+];
+
+const MECH_CATS = {
+  ACT: 'Actions', ARC: 'Area Control', CAR: 'Cards', ECO: 'Economy',
+  MOV: 'Movement', RES: 'Resolution', SET: 'Set & Pattern',
+  STR: 'Structure', TRN: 'Turn Order', UNC: 'Uncertainty',
+  VIC: 'Victory', WPL: 'Worker Placement'
+};
+
+function getISZone(is) {
+  return IS_ZONES.find(z => is >= z.min && is < z.max) || IS_ZONES[0];
+}
+
+function renderISFramework(state) {
+  const container = document.getElementById('tab-is-framework');
+  const { owned } = state;
+  const scored = owned.filter(g => g.hasScores && g.IS !== null);
+
+  let html = '';
+
+  // === SECTION 1: HERO ===
+  html += `
+  <div class="card mb20 is-hero">
+    <div class="is-hero-title">The Immersion Score</div>
+    <div class="is-hero-subtitle">
+      A personal framework for quantifying what makes a board game worth playing.
+      Not a review system\u2009\u2014\u2009a lens for understanding why some games pull you
+      into their world and others leave you cold.
+    </div>
+    <div class="is-equation-display">
+      <div class="is-eq-line">
+        <span class="is-eq-lbl">Game Score</span>
+        <span class="is-eq-formula">
+          (<span class="is-var is-var-m">M</span> &times;
+          <span class="is-var is-var-t">T</span> &times;
+          <span class="is-var is-var-g">G</span>)
+          &minus; <span class="is-var is-var-f">F</span>
+        </span>
+      </div>
+      <div class="is-eq-line">
+        <span class="is-eq-lbl">Immersion Score</span>
+        <span class="is-eq-formula">
+          GS &times; <span class="is-var is-var-ar">Ar</span> / 2
+        </span>
+      </div>
+    </div>
+  </div>`;
+
+  // === SECTION 1b: VARIABLE DEFINITIONS ===
+  html += `
+  <div class="card mb20">
+    <div class="section-title">The Five Variables &mdash; All scored 1&ndash;5 (integers only)</div>
+    <div class="is-var-defs">
+      ${IS_VARS.map(v => {
+        const isF = v.key === 'F';
+        const note = isF ? 'Subtracted from score \u2014 high F is bad'
+          : v.key === 'Ar' ? 'Final multiplier \u2014 scales GS by 0.5\u20132.5\u00d7'
+          : 'Multiplicative core \u2014 weakness collapses the score';
+        return `
+        <div class="is-var-def" style="border-left-color:${v.color}">
+          <div class="is-var-def-code" style="color:${v.color}">${v.key}</div>
+          <div>
+            <div class="is-var-def-name">${v.name}</div>
+            <div class="is-var-def-tagline">${v.tagline}</div>
+            <div class="is-var-def-note">${note}</div>
+          </div>
+        </div>`;
+      }).join('')}
+    </div>
+  </div>`;
+
+  // === SECTION 2: HOW IT WORKS ===
+  const best = scored.reduce((a, b) => (a.IS > b.IS ? a : b), scored[0]);
+  const worst = scored.reduce((a, b) => (a.IS < b.IS ? a : b), scored[0]);
+
+  html += `
+  <div class="card mb20">
+    <div class="section-title">How the Score Works</div>
+    <div class="is-eq-stages">
+      <div class="is-eq-stage">
+        <div class="is-stage-num">STEP 1</div>
+        <div class="is-stage-label">The Multiplicative Core</div>
+        <div class="is-stage-formula">
+          <span class="is-var is-var-m">M</span> &times;
+          <span class="is-var is-var-t">T</span> &times;
+          <span class="is-var is-var-g">G</span>
+        </div>
+        <div class="is-stage-desc">
+          Mechanical depth, fiction embodiment, and agency <strong>multiply</strong> together.
+          This means a weakness in any variable <em>collapses</em> the entire score.
+          Multiplication is unforgiving\u2009\u2014\u2009you can't compensate for hollow theme
+          with more gears, or for lack of agency with beautiful narrative.
+        </div>
+        <div class="is-stage-example">
+          <strong>${best.name}:</strong> ${best.M}&times;${best.T}&times;${best.G} = ${best.M*best.T*best.G}
+          &nbsp;&bull;&nbsp;
+          <strong>${worst.name}:</strong> ${worst.M}&times;${worst.T}&times;${worst.G} = ${worst.M*worst.T*worst.G}
+        </div>
+      </div>
+      <div class="is-eq-stage">
+        <div class="is-stage-num">STEP 2</div>
+        <div class="is-stage-label">The Friction Penalty</div>
+        <div class="is-stage-formula">
+          Core &minus; <span class="is-var is-var-f">F</span>
+        </div>
+        <div class="is-stage-desc">
+          Friction is <strong>subtractive</strong>, not multiplicative.
+          A fiddly game with brilliant design still keeps most of its score\u2009\u2014\u2009but
+          it pays a flat tax. F=5 only costs 5 points off the core, a deliberate
+          design choice: friction <em>annoys</em>, but doesn't <em>destroy</em>.
+        </div>
+        <div class="is-stage-example">
+          <strong>Nemesis:</strong> Core 60 &minus; F4 = GS 56
+          (amazing design, painful setup)
+          <br><strong>Sky Team:</strong> Core 36 &minus; F1 = GS 35
+          (minimal friction, instant play)
+        </div>
+      </div>
+      <div class="is-eq-stage">
+        <div class="is-stage-num">STEP 3</div>
+        <div class="is-stage-label">The Art Multiplier</div>
+        <div class="is-stage-formula">
+          GS &times; <span class="is-var is-var-ar">Ar</span> / 2
+        </div>
+        <div class="is-stage-desc">
+          Art and production quality is a final <strong>multiplier</strong>, but deliberately
+          <strong>divided by 2</strong> to keep its influence proportional. Since Ar is scored
+          1&ndash;5 like the core variables, a raw multiplier would let aesthetics dominate
+          the equation\u2009\u2014\u2009an Ar=5 game would get 5&times; the score of Ar=1, overwhelming
+          the mechanical core. Dividing by 2 compresses the range to 0.5&ndash;2.5&times;,
+          so art meaningfully shapes the result without overshadowing M, T, and G.
+        </div>
+        <div class="is-stage-example">
+          <strong>Why not &radic;Ar?</strong> The square root was considered as an alternative
+          scaling function. &radic;Ar would compress the range to 1.0&ndash;2.24&times;
+          (&radic;1=1, &radic;5&asymp;2.24), making the difference between great and poor art
+          almost negligible\u2009\u2014\u2009a game with stunning production (Ar=5) would only score
+          2.24&times; vs 1&times; for Ar=1. With values only ranging 1&ndash;5, the square root
+          flattens the curve too aggressively and removes art's ability to meaningfully
+          separate games. Dividing by 2 instead gives a wider, linear spread of 0.5&ndash;2.5&times;,
+          which preserves art as a real <strong>amplifier</strong> without letting it overpower
+          the multiplicative core where T is the gatekeeper.
+        </div>
+        <div class="is-stage-example">
+          <strong>The Bloody Inn:</strong> GS 35 &times; 2.5 = IS 87.5
+          (Ar=5 dark art elevates macabre card play)
+          <br><strong>Cards Against Humanity:</strong> GS 0 &times; 0.5 = IS 0
+          (Ar=1, no visual design effort whatsoever)
+        </div>
+      </div>
+    </div>
+  </div>`;
+
+  // === SECTION 3: CALCULATOR ===
+  html += `
+  <div class="card mb20">
+    <div class="section-title">Interactive Calculator</div>
+    <div class="is-calc-wrap">
+      <div class="is-calc-sliders">
+        ${IS_VARS.map(v => `
+          <div class="is-slider-row">
+            <div class="is-slider-label" style="color:${v.color}">
+              <span class="is-slider-code">${v.key}</span> ${v.name}
+            </div>
+            <input type="range" min="1" max="5" value="3" class="is-range"
+                   id="calc-${v.key}" style="--range-color:${v.color}">
+            <span class="is-slider-val" id="calc-${v.key}-val" style="color:${v.color}">3</span>
+          </div>
+        `).join('')}
+        <div style="font-size:11px;color:var(--text3);margin-top:4px;line-height:1.5">
+          Drag the sliders to explore how each variable affects the final score.
+          The radar chart and zone update in real time.
+        </div>
+      </div>
+      <div class="is-calc-result">
+        <div id="calc-radar"></div>
+        <div class="is-calc-scores">
+          <div class="is-calc-score-item">
+            <span class="is-calc-score-label">Game Score</span>
+            <span class="is-calc-score-val" id="calc-gs">26</span>
+          </div>
+          <div class="is-calc-score-item">
+            <span class="is-calc-score-label">Immersion Score</span>
+            <span class="is-calc-score-val" id="calc-is" style="color:var(--amber)">39</span>
+          </div>
+        </div>
+        <div class="is-calc-zone" id="calc-zone"></div>
+        <div class="is-calc-comparisons" id="calc-comparisons"></div>
+      </div>
+    </div>
+  </div>`;
+
+  // === SECTION 4: VARIABLE DEEP-DIVES ===
+  html += `
+  <div class="card mb20">
+    <div class="section-title">The Five Variables</div>
+    <div class="is-var-cards">
+      ${IS_VARS.map(v => {
+        const dist = [1,2,3,4,5].map(n => scored.filter(g => g[v.key] === n).length);
+        const maxDist = Math.max(...dist, 1);
+        const isF = v.key === 'F';
+        return `
+        <div class="is-var-card collapsed" style="border-left-color:${v.color}">
+          <div class="is-var-card-header" data-isvar>
+            <span class="is-var-card-code" style="color:${v.color}">${v.key}</span>
+            <span class="is-var-card-name">${v.name}</span>
+            <span class="is-var-card-summary">${isF ? 'High = bad (subtracted)' : 'Scored 1\u20135'}</span>
+            <span class="is-var-card-arrow">&#9660;</span>
+          </div>
+          <div class="is-var-card-body">
+            <div class="is-var-card-desc">${v.desc}</div>
+            <div class="is-scale-row">
+              <div class="is-scale-end">
+                <span class="is-scale-num" style="color:${isF ? v.color : 'var(--text3)'}">1</span>
+                <span class="is-scale-txt">${v.lo}</span>
+                <span class="is-scale-ex">${v.exLo}</span>
+              </div>
+              <div class="is-scale-bar" style="background:linear-gradient(to right, ${isF ? v.color : 'var(--text3)'}, ${isF ? 'var(--text3)' : v.color})"></div>
+              <div class="is-scale-end">
+                <span class="is-scale-num" style="color:${isF ? 'var(--text3)' : v.color}">5</span>
+                <span class="is-scale-txt">${v.hi}</span>
+                <span class="is-scale-ex">${v.exHi}</span>
+              </div>
+            </div>
+            <div style="font-size:11px;color:var(--text3);margin-bottom:6px;font-family:'JetBrains Mono',monospace;letter-spacing:0.06em">DISTRIBUTION ACROSS OWNED GAMES</div>
+            <div class="is-dist-wrap">
+              ${[1,2,3,4,5].map((n,i) => {
+                const h = dist[i] ? Math.round((dist[i]/maxDist)*48) : 2;
+                return `<div class="is-dist-col">
+                  <span class="is-dist-ct">${dist[i]}</span>
+                  <div class="is-dist-bar" style="height:${h}px;background:${v.color}${dist[i]?'':'33'}"></div>
+                  <span class="is-dist-lbl">${n}</span>
+                </div>`;
+              }).join('')}
+            </div>
+          </div>
+        </div>`;
+      }).join('')}
+    </div>
+  </div>`;
+
+  // === SECTION 5: T GATEKEEPER ===
+  const gkM = 4, gkG = 4, gkF = 2, gkAr = 5;
+  const gkVals = [1,2,3,4,5].map(t => {
+    const gs = gkM * t * gkG - gkF;
+    return gs * (gkAr / 2);
+  });
+  const gkMax = Math.max(...gkVals);
+
+  html += `
+  <div class="card mb20">
+    <div class="section-title">The T Gatekeeper Principle</div>
+    <div class="is-gk-wrap">
+      <div>
+        <div class="is-gk-desc">
+          <p><strong>T is the non-negotiable variable.</strong> Because it sits inside
+          the multiplicative core, low T <em>collapses</em> the entire score\u2009\u2014\u2009no
+          amount of mechanical depth or agency can rescue a game where mechanics
+          merely <em>decorate</em> a theme rather than <em>embody</em> it.</p>
+          <p>Drag the slider to see T's gatekeeper effect. All other variables are
+          held constant at strong values:</p>
+        </div>
+        <div class="is-gk-fixed">M=${gkM} &middot; G=${gkG} &middot; F=${gkF} &middot; Ar=${gkAr}</div>
+        <div class="is-gk-slider-row">
+          <input type="range" min="1" max="5" value="1" id="gk-t-slider"
+                 class="is-range" style="--range-color:#ef4444;flex:1">
+          <span class="is-gk-t-val" id="gk-t-val">T = 1</span>
+        </div>
+        <div class="is-gk-result" id="gk-result">
+          <div class="is-gk-is-label">Immersion Score</div>
+          <div class="is-gk-is-val" style="color:${isColor(gkVals[0])}">${gkVals[0]}</div>
+          <div class="is-gk-gs-val">GS = ${gkM*1*gkG - gkF}</div>
+        </div>
+      </div>
+      <div>
+        <div class="is-gk-chart">
+          ${[1,2,3,4,5].map((t,i) => {
+            const h = Math.max(24, Math.round((gkVals[i]/gkMax)*190));
+            const opacity = 0.3 + (i * 0.175);
+            return `<div class="is-gk-bar${i===0?' active':''}" data-gkt="${t}"
+                         style="height:${h}px;background:rgba(239,68,68,${opacity})">
+              <span class="is-gk-bar-is">${gkVals[i]}</span>
+              <span class="is-gk-bar-t">T=${t}</span>
+            </div>`;
+          }).join('')}
+        </div>
+        <div class="is-gk-insight">
+          <strong>The Sky Team test:</strong> Its silence rule doesn't <em>describe</em> cockpit
+          pressure\u2009\u2014\u2009it <em>creates</em> it. You feel the tension in your throat because
+          the mechanic <em>is</em> the fiction. That's the difference between T=2
+          (decorative theme) and T=4 (embodied theme).
+        </div>
+      </div>
+    </div>
+  </div>`;
+
+  // === SECTION 6: ZONE MAP ===
+  html += `
+  <div class="card mb20">
+    <div class="section-title">IS Score Zones</div>
+    <div class="is-zone-desc">
+      Where does a game land on the immersion spectrum? Each zone maps to a feeling.
+      Hover over a game to highlight it; use the legend to filter by zone.
+    </div>
+    <div id="is-zone-chart-wrap"></div>
+    <div class="is-zone-legend" id="is-zone-legend"></div>
+  </div>`;
+
+  // === SECTION 7: MECHANICS TAXONOMY ===
+  // Build per-category: which mechanics and which games use them
+  const mechByCat = {};
+  scored.forEach(g => {
+    (g.mechs || []).forEach(m => {
+      const cat = m.split('-')[0];
+      if (!mechByCat[cat]) mechByCat[cat] = {};
+      const mechName = m.replace(/^[A-Z]+-\d+\s*/, '');
+      const mechCode = m.split(' ')[0];
+      const key = mechCode + ' ' + mechName;
+      if (!mechByCat[cat][key]) mechByCat[cat][key] = [];
+      if (!mechByCat[cat][key].includes(g.name)) mechByCat[cat][key].push(g.name);
+    });
+  });
+
+  html += `
+  <div class="card mb20">
+    <div class="section-title">Mechanics Taxonomy</div>
+    <div class="is-mech-intro">
+      <p>Mechanism codes follow the taxonomy from
+      <em>Building Blocks of Tabletop Game Design: An Encyclopedia of Mechanisms</em>
+      by Geoffrey Engelstein &amp; Isaac Shalev. Each code uses the pattern
+      <span class="mono" style="color:var(--indigo)">CAT-## Name</span>.</p>
+      <p>The codes tag each game with its core mechanisms, making it possible to
+      see which design patterns correlate with high immersion.</p>
+    </div>
+    <div class="is-mech-grid" id="is-mech-grid">
+      ${Object.entries(MECH_CATS).map(([code, name]) => {
+        const mechs = mechByCat[code] || {};
+        const ct = Object.values(mechs).reduce((s, arr) => s + arr.length, 0);
+        return `<div class="is-mech-cat" data-mechcat="${code}">
+          <div class="is-mech-cat-code">${code}</div>
+          <div class="is-mech-cat-name">${name}</div>
+          <div class="is-mech-cat-count">${ct} use${ct!==1?'s':''} in collection</div>
+        </div>`;
+      }).join('')}
+    </div>
+  </div>`;
+
+  // Store mechByCat for tooltip init
+  container._mechByCat = mechByCat;
+
+  // === SECTION 8: KEY PRINCIPLES ===
+  html += `
+  <div class="card mb20">
+    <div class="section-title">Key Principles</div>
+    <div class="observation-list">
+      <div class="observation" style="border-left-color:#ef4444">
+        <strong>T Gatekeeper Principle</strong><br>
+        T is multiplicative and acts as a score floor. Low T collapses the entire IS regardless
+        of M or G quality. This is the non-negotiable variable.
+      </div>
+      <div class="observation" style="border-left-color:#ef4444">
+        <strong>Fiction-Mechanic Embodiment vs. Decoration</strong><br>
+        A mechanic scores high T not by <em>referencing</em> a theme but by <em>generating</em>
+        the thematic experience. Example: Sky Team's silence rule doesn't describe cockpit
+        pressure\u2009\u2014\u2009it creates it.
+      </div>
+      <div class="observation" style="border-left-color:#3b82f6">
+        <strong>IS Paths Can Differ</strong><br>
+        Games can reach similar IS scores via different variable profiles. The model distinguishes
+        these as different experiential signatures. The Bloody Inn and Sky Team both score IS 87.5\u2009\u2014\u2009Sky Team through silence-as-mechanic embodiment, The Bloody Inn through dark art direction
+        elevating macabre card mechanics.
+      </div>
+      <div class="observation" style="border-left-color:#a855f7">
+        <strong>Ar Filters Real Preferences</strong><br>
+        Ar legitimately excludes games you wouldn't enjoy regardless of mechanical quality
+        (e.g., Too Many Bones excluded due to Gearloc art style).
+      </div>
+      <div class="observation" style="border-left-color:#22c55e">
+        <strong>Solo-First Scoring Lens</strong><br>
+        When scoring for solo play, adjust <strong>T downward</strong> when solo mode structurally reduces
+        thematic tension (e.g., area control games using an automa instead of real opponents).
+        Adjust <strong>G downward</strong> when solo mode imposes automa-driven constraints that reduce
+        meaningful player agency.
+      </div>
+    </div>
+  </div>`;
+
+  container.innerHTML = html;
+
+  // === INIT INTERACTIVITY ===
+  initISCalc(scored);
+  initGKDemo();
+  initVarCardToggles();
+  initZoneChart(scored);
+  initMechTooltips(container._mechByCat);
+}
+
+function initISCalc(scored) {
+  const keys = ['M', 'T', 'G', 'F', 'Ar'];
+  const sliders = {};
+  keys.forEach(k => { sliders[k] = document.getElementById(`calc-${k}`); });
+
+  function update() {
+    const vals = {};
+    keys.forEach(k => {
+      vals[k] = parseInt(sliders[k].value);
+      document.getElementById(`calc-${k}-val`).textContent = vals[k];
+      const pct = ((vals[k] - 1) / 4) * 100;
+      const col = IS_VARS.find(v => v.key === k).color;
+      sliders[k].style.background = `linear-gradient(to right, ${col} ${pct}%, var(--border) ${pct}%)`;
+    });
+
+    const GS = vals.M * vals.T * vals.G - vals.F;
+    const IS = GS * (vals.Ar / 2);
+
+    document.getElementById('calc-gs').textContent = GS;
+    const isEl = document.getElementById('calc-is');
+    isEl.textContent = IS % 1 === 0 ? IS : IS.toFixed(1);
+    isEl.style.color = isColor(IS);
+
+    document.getElementById('calc-radar').innerHTML = radarSVG(vals, 200);
+
+    const zone = getISZone(IS);
+    const zoneEl = document.getElementById('calc-zone');
+    zoneEl.textContent = zone.label;
+    zoneEl.style.color = zone.text;
+
+    const nearest = [...scored]
+      .map(g => ({ name: g.name, IS: g.IS, diff: Math.abs(g.IS - IS) }))
+      .sort((a, b) => a.diff - b.diff)
+      .slice(0, 3);
+    document.getElementById('calc-comparisons').innerHTML = nearest.length
+      ? `<span style="color:var(--text3)">Closest in your collection:</span> ` +
+        nearest.map(g => `${g.name} <span class="mono" style="color:${isColor(g.IS)}">(${fmt1(g.IS)})</span>`).join(' &middot; ')
+      : '';
+  }
+
+  keys.forEach(k => sliders[k].addEventListener('input', update));
+  update();
+}
+
+function initGKDemo() {
+  const slider = document.getElementById('gk-t-slider');
+  const bars = document.querySelectorAll('.is-gk-bar');
+  const gkM = 4, gkG = 4, gkF = 2, gkAr = 5;
+
+  function update() {
+    const T = parseInt(slider.value);
+    document.getElementById('gk-t-val').textContent = `T = ${T}`;
+
+    const pct = ((T - 1) / 4) * 100;
+    slider.style.background = `linear-gradient(to right, #ef4444 ${pct}%, var(--border) ${pct}%)`;
+
+    const GS = gkM * T * gkG - gkF;
+    const IS = GS * (gkAr / 2);
+
+    const resultEl = document.getElementById('gk-result');
+    resultEl.querySelector('.is-gk-is-val').textContent = IS;
+    resultEl.querySelector('.is-gk-is-val').style.color = isColor(IS);
+    resultEl.querySelector('.is-gk-gs-val').textContent = `GS = ${GS}`;
+
+    bars.forEach(bar => {
+      bar.classList.toggle('active', parseInt(bar.dataset.gkt) === T);
+    });
+  }
+
+  slider.addEventListener('input', update);
+  update();
+}
+
+function initVarCardToggles() {
+  document.querySelectorAll('[data-isvar]').forEach(header => {
+    header.addEventListener('click', () => {
+      header.closest('.is-var-card').classList.toggle('collapsed');
+    });
+  });
+}
+
+function initMechTooltips(mechByCat) {
+  const tooltip = document.createElement('div');
+  tooltip.className = 'is-mech-tooltip';
+  document.body.appendChild(tooltip);
+
+  document.querySelectorAll('[data-mechcat]').forEach(card => {
+    const cat = card.dataset.mechcat;
+    const mechs = mechByCat[cat] || {};
+    const entries = Object.entries(mechs).sort((a, b) => b[1].length - a[1].length);
+
+    card.addEventListener('mouseenter', e => {
+      if (!entries.length) {
+        tooltip.innerHTML = `<div class="is-mech-tooltip-title">${cat} \u2014 ${MECH_CATS[cat]}</div>
+          <div style="color:var(--text3);font-size:11px">No mechanics from this category in your collection</div>`;
+      } else {
+        tooltip.innerHTML = `<div class="is-mech-tooltip-title">${cat} \u2014 ${MECH_CATS[cat]}</div>` +
+          entries.map(([mech, games]) => `
+            <div class="is-mech-tooltip-item">
+              <div class="is-mech-tooltip-mech">${mech}</div>
+              <div class="is-mech-tooltip-games">
+                ${games.map(g => `<span class="is-mech-tooltip-game">${g}</span>`).join('')}
+              </div>
+            </div>
+          `).join('');
+      }
+      tooltip.style.display = 'block';
+    });
+
+    card.addEventListener('mousemove', e => {
+      const tw = tooltip.offsetWidth;
+      const th = tooltip.offsetHeight;
+      let x = e.clientX + 14;
+      let y = e.clientY - 10;
+      if (x + tw > window.innerWidth - 12) x = e.clientX - tw - 14;
+      if (y + th > window.innerHeight - 12) y = window.innerHeight - th - 12;
+      tooltip.style.left = x + 'px';
+      tooltip.style.top = y + 'px';
+    });
+
+    card.addEventListener('mouseleave', () => {
+      tooltip.style.display = 'none';
+    });
+  });
+}
+
+function initZoneChart(scored) {
+  const wrap = document.getElementById('is-zone-chart-wrap');
+  const legendWrap = document.getElementById('is-zone-legend');
+  const maxIS = 250;
+
+  const zones = [
+    { key: 'has',   label: 'Has it',         min: 0,   max: 30,  fill: 'rgba(71,85,105,0.25)',  stroke: '#475569', text: '#94a3b8',  bg: '#475569' },
+    { key: 'likes', label: 'Likes it',        min: 30,  max: 87,  fill: 'rgba(245,158,11,0.12)', stroke: '#f59e0b', text: '#fbbf24',  bg: '#f59e0b' },
+    { key: 'loves', label: 'Loves it',        min: 87,  max: 150, fill: 'rgba(239,68,68,0.12)',  stroke: '#ef4444', text: '#f87171',  bg: '#ef4444' },
+    { key: 'peak',  label: 'Peak Immersion',  min: 150, max: maxIS, fill: 'rgba(220,38,38,0.2)', stroke: '#dc2626', text: '#fca5a5',  bg: '#dc2626' }
+  ];
+
+  // Assign each game a zone key
+  const games = scored.map(g => {
+    const z = zones.find(z => g.IS >= z.min && g.IS < z.max) || zones[zones.length - 1];
+    return { ...g, zoneKey: z.key };
+  });
+
+  // Build the strip
+  const strip = document.createElement('div');
+  strip.className = 'is-zone-strip';
+  strip.style.position = 'relative';
+
+  // Zone bands
+  zones.forEach((z, zi) => {
+    const pctLeft = (z.min / maxIS) * 100;
+    const pctWidth = ((Math.min(z.max, maxIS) - z.min) / maxIS) * 100;
+    const band = document.createElement('div');
+    band.className = 'is-zone-band';
+    band.style.cssText = `position:absolute;left:${pctLeft}%;width:${pctWidth}%;height:100%;background:${z.fill};border:1px solid ${z.stroke}44;`;
+    if (zi === 0) band.style.borderRadius = '8px 0 0 8px';
+    if (zi === zones.length - 1) band.style.borderRadius = '0 8px 8px 0';
+    const lbl = document.createElement('div');
+    lbl.className = 'is-zone-band-label';
+    lbl.style.color = z.text;
+    lbl.textContent = z.label;
+    band.appendChild(lbl);
+    strip.appendChild(band);
+
+    // Boundary line (except first)
+    if (z.min > 0) {
+      const boundary = document.createElement('div');
+      boundary.className = 'is-zone-boundary';
+      boundary.style.left = pctLeft + '%';
+      const val = document.createElement('div');
+      val.className = 'is-zone-boundary-val';
+      val.textContent = z.min;
+      boundary.appendChild(val);
+      strip.appendChild(boundary);
+    }
+  });
+
+  // Tooltip
+  const tooltip = document.createElement('div');
+  tooltip.className = 'is-zone-tooltip';
+  document.body.appendChild(tooltip);
+
+  // Place game dots - distribute vertically within zone to avoid overlap
+  const zoneSlots = {};
+  games.forEach(g => {
+    if (!zoneSlots[g.zoneKey]) zoneSlots[g.zoneKey] = [];
+    zoneSlots[g.zoneKey].push(g);
+  });
+  // Sort within each zone by IS
+  Object.values(zoneSlots).forEach(arr => arr.sort((a, b) => a.IS - b.IS));
+
+  games.forEach(g => {
+    const zoneArr = zoneSlots[g.zoneKey];
+    const idx = zoneArr.indexOf(g);
+    const rows = Math.min(zoneArr.length, 4);
+    const row = idx % rows;
+    const yPct = 28 + (row / Math.max(rows, 1)) * 50;
+    const xPct = (Math.max(0, Math.min(g.IS, maxIS)) / maxIS) * 100;
+
+    const dot = document.createElement('div');
+    dot.className = 'is-zone-dot';
+    dot.dataset.zone = g.zoneKey;
+    const col = FEELING_COLOR(g.feeling);
+    dot.style.cssText = `left:${xPct}%;top:${yPct}%;background:${col};`;
+
+    dot.addEventListener('mouseenter', e => {
+      strip.classList.add('has-hover');
+      dot.classList.add('hovered');
+      tooltip.style.display = 'block';
+      tooltip.innerHTML = `<strong>${g.name}</strong><br>
+        <span style="color:var(--text2)">IS</span> <span class="mono" style="color:${isColor(g.IS)}">${fmt1(g.IS)}</span>
+        &nbsp; <span style="color:var(--text3)">GS ${fmt1(g.GS)}</span><br>
+        <span style="color:#3b82f6">M${g.M}</span>
+        <span style="color:#ef4444">T${g.T}</span>
+        <span style="color:#22c55e">G${g.G}</span>
+        <span style="color:#f59e0b">F${g.F}</span>
+        <span style="color:#a855f7">Ar${g.Ar}</span>
+        ${g.feeling ? '<br>' + FEELING_BADGE(g.feeling) : ''}`;
+    });
+
+    dot.addEventListener('mousemove', e => {
+      tooltip.style.left = (e.clientX + 14) + 'px';
+      tooltip.style.top = (e.clientY - 10) + 'px';
+    });
+
+    dot.addEventListener('mouseleave', () => {
+      strip.classList.remove('has-hover');
+      dot.classList.remove('hovered');
+      tooltip.style.display = 'none';
+    });
+
+    strip.appendChild(dot);
+  });
+
+  wrap.appendChild(strip);
+
+  // Legend with toggle filters
+  const activeZones = new Set();
+
+  function updateFilters() {
+    const hasFilter = activeZones.size > 0;
+    strip.classList.toggle('has-filter', hasFilter);
+    strip.querySelectorAll('.is-zone-dot').forEach(d => {
+      d.classList.toggle('zone-visible', !hasFilter || activeZones.has(d.dataset.zone));
+    });
+  }
+
+  zones.forEach(z => {
+    const btn = document.createElement('button');
+    btn.className = 'is-zone-legend-btn';
+    btn.innerHTML = `<span class="is-zone-swatch" style="background:${z.bg}33;border:1px solid ${z.bg}"></span>${z.label}`;
+    btn.addEventListener('click', () => {
+      if (activeZones.has(z.key)) {
+        activeZones.delete(z.key);
+        btn.classList.remove('active');
+        btn.style.background = '';
+        btn.style.borderColor = 'var(--border)';
+      } else {
+        activeZones.add(z.key);
+        btn.classList.add('active');
+        btn.style.background = z.bg + '33';
+        btn.style.borderColor = z.bg;
+      }
+      updateFilters();
+    });
+    legendWrap.appendChild(btn);
+  });
+}
+
+// ============================================================
 // TAB SWITCHING
 // ============================================================
 let scatterRendered = false;
+let isFrameworkRendered = false;
 
 document.querySelectorAll('.tab-btn').forEach(btn => {
   btn.addEventListener('click', () => {
@@ -1602,6 +2683,10 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
     }
     if (tab === 'scatter' && STATE.owned) {
       renderScatter(STATE);
+    }
+    if (tab === 'is-framework' && STATE.owned && !isFrameworkRendered) {
+      renderISFramework(STATE);
+      isFrameworkRendered = true;
     }
   });
 });

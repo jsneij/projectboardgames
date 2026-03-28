@@ -76,7 +76,7 @@
       "T": 2,
       "G": 1,
       "F": 1,
-      "Ar": 2,
+      "Ar": 3,
       "feeling": "Has it",
       "mechs": [
         "ACT-22 Matching",
@@ -193,7 +193,7 @@
       "T": 2,
       "G": 1,
       "F": 1,
-      "Ar": 3,
+      "Ar": 1,
       "feeling": "Has it",
       "mechs": [
         "UNC-02 Push-Your-Luck",
@@ -292,7 +292,7 @@
       "T": 2,
       "G": 2,
       "F": 1,
-      "Ar": 4,
+      "Ar": 3,
       "feeling": "Has it",
       "mechs": [
         "SET-02 Tile-Laying",
@@ -323,7 +323,7 @@
       "T": 5,
       "G": 5,
       "F": 3,
-      "Ar": 4,
+      "Ar": 5,
       "feeling": "Loves it",
       "mechs": [
         "ACT-12 Variable Player Powers",
@@ -422,7 +422,7 @@
       "T": 2,
       "G": 2,
       "F": 1,
-      "Ar": 4,
+      "Ar": 3,
       "feeling": "Has it",
       "mechs": [
         "ECO-01 Exchanging",
@@ -486,7 +486,7 @@
       "T": 4,
       "G": 4,
       "F": 3,
-      "Ar": 4,
+      "Ar": 5,
       "feeling": null,
       "mechs": [
         "CAR-07 Deck Construction",
