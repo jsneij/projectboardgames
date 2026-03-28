@@ -55,7 +55,7 @@ git clone https://github.com/jsneij/projectboardgames.git
 cd projectboardgames
 python3 -m venv venv
 source venv/bin/activate
-pip install -r requirements.txt
+pip install -r scripts/requirements.txt
 
 # Add credentials
 echo "BGG_BEARER_TOKEN=your_token" > .env
