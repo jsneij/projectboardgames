@@ -737,47 +737,80 @@ def main():
         changed_count = int(root.get("totalitems", 0))
 
         if changed_count == 0:
-            print(f"  {GREEN}✓ Nothing has changed since last fetch.{RESET}")
-            print(f"\n{'=' * 60}")
-            print("Up to date. No files written.")
-            print(f"{'=' * 60}")
-            return
+            # modifiedsince doesn't catch play log changes — check num_plays
+            print(f"  ✓ No collection edits. Checking play counts...")
+            brief_root = fetch_collection(token, session=session, extra_params={"brief": "1"})
+            existing_index = load_existing_games_index()
+            play_changed = []
+            for item in brief_root.findall("item"):
+                bgg_id = int(item.get("objectid"))
+                plays_el = item.find("numplays")
+                num_plays = int(plays_el.text) if plays_el is not None and plays_el.text else 0
+                prev = existing_index.get(bgg_id)
+                prev_count = prev.get("num_plays", 0) if prev else 0
+                if num_plays != prev_count and prev:
+                    play_changed.append((bgg_id, prev, num_plays))
 
-        print(f"  ✓ {changed_count} item(s) changed")
+            if not play_changed:
+                print(f"  {GREEN}✓ Nothing has changed since last fetch.{RESET}")
+                print(f"\n{'=' * 60}")
+                print("Up to date. No files written.")
+                print(f"{'=' * 60}")
+                return
 
-        print(f"\n[2/4] Parsing {changed_count} changed item(s)...")
-        changed_games = [parse_item(item) for item in root.findall("item")]
-        print(f"  ✓ Parsed {len(changed_games)} games")
+            # Patch play counts and fetch new play logs
+            print(f"  ✓ {len(play_changed)} game(s) have new plays")
+            for i, (bgg_id, prev_game, new_count) in enumerate(play_changed, 1):
+                prev_game["num_plays"] = new_count
+                print(f"  [{i}/{len(play_changed)}] {prev_game['name']} ({new_count} plays)...", end="", flush=True)
+                if new_count > 0:
+                    plays = fetch_plays_for_game(bgg_id, token, session=session)
+                    prev_game["plays"] = plays
+                    print(f" ✓ {len(plays)} entries")
+                else:
+                    prev_game["plays"] = []
+                    print(" ✓ cleared")
+                if i < len(play_changed):
+                    time.sleep(PLAYS_REQUEST_DELAY)
 
-        # Load full existing data to merge into
-        existing_index = load_existing_games_index()
+            games = list(existing_index.values())
 
-        # Determine play log fetches needed (only for changed games)
-        games_to_fetch = []
-        for game in changed_games:
-            prev = existing_index.get(game["bgg_id"])
-            prev_plays = prev.get("plays", []) if prev else []
-            prev_count = prev.get("num_plays", 0) if prev else 0
-            if game["num_plays"] == prev_count and prev_plays:
-                game["plays"] = prev_plays  # reuse cached plays
-            elif game["num_plays"] > 0:
-                games_to_fetch.append(game)
+        else:
+            print(f"  ✓ {changed_count} item(s) changed")
 
-        print(f"\n[3/4] Fetching play logs for {len(games_to_fetch)} updated game(s)...")
-        if not games_to_fetch:
-            print("  ✓ No play log changes needed.")
-        for i, game in enumerate(games_to_fetch, 1):
-            print(f"  [{i}/{len(games_to_fetch)}] {game['name']} ({game['num_plays']} plays)...", end="", flush=True)
-            plays = fetch_plays_for_game(game["bgg_id"], token, session=session)
-            game["plays"] = plays
-            print(f" ✓ {len(plays)} entries")
-            if i < len(games_to_fetch):
-                time.sleep(PLAYS_REQUEST_DELAY)
+            print(f"\n[2/4] Parsing {changed_count} changed item(s)...")
+            changed_games = [parse_item(item) for item in root.findall("item")]
+            print(f"  ✓ Parsed {len(changed_games)} games")
 
-        # Merge changed games into the full existing set
-        for game in changed_games:
-            existing_index[game["bgg_id"]] = game
-        games = list(existing_index.values())
+            # Load full existing data to merge into
+            existing_index = load_existing_games_index()
+
+            # Determine play log fetches needed (only for changed games)
+            games_to_fetch = []
+            for game in changed_games:
+                prev = existing_index.get(game["bgg_id"])
+                prev_plays = prev.get("plays", []) if prev else []
+                prev_count = prev.get("num_plays", 0) if prev else 0
+                if game["num_plays"] == prev_count and prev_plays:
+                    game["plays"] = prev_plays  # reuse cached plays
+                elif game["num_plays"] > 0:
+                    games_to_fetch.append(game)
+
+            print(f"\n[3/4] Fetching play logs for {len(games_to_fetch)} updated game(s)...")
+            if not games_to_fetch:
+                print("  ✓ No play log changes needed.")
+            for i, game in enumerate(games_to_fetch, 1):
+                print(f"  [{i}/{len(games_to_fetch)}] {game['name']} ({game['num_plays']} plays)...", end="", flush=True)
+                plays = fetch_plays_for_game(game["bgg_id"], token, session=session)
+                game["plays"] = plays
+                print(f" ✓ {len(plays)} entries")
+                if i < len(games_to_fetch):
+                    time.sleep(PLAYS_REQUEST_DELAY)
+
+            # Merge changed games into the full existing set
+            for game in changed_games:
+                existing_index[game["bgg_id"]] = game
+            games = list(existing_index.values())
 
     # -------------------------------------------------------------------------
     # Full fetch path: first run, no fetch log
