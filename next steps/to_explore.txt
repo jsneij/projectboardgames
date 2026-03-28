@@ -1,33 +1,6 @@
-1.Incremental updates instead of full downloads
-Save the last fetch timestamp and only update games that changed, reducing API calls and speeding up the script.
-
-
-
-2.Automatic BGG “thing” enrichment
+1. Automatic BGG "thing" enrichment
 Fetch extra data from the /thing API endpoint (designers, publishers, mechanics, categories, expansions) to make the dataset much richer for analysis.
 
 
-
-3.Normalized schema for analytics
-Split the JSON into structured datasets (games, rankings, designers, mechanics, categories) so it’s easier to query with SQL, Pandas, or dashboards.
-
-
-
-4. In fetch_bgg_collection.py add all the possible 8 categories as prints (want to buy, want to trade, etc)
-
-
-
- # Categorize
-    collection = categorize_collection(games)
-    counts = collection["metadata"]["counts"]
-    print(f"\n  Summary:")
-    print(f"    Owned:            {counts['owned']}")
-    print(f"    Wishlist (total): {counts['wishlist_total']}")
-    print(f"      P1 Must Have:   {counts['wishlist_p1']}")
-    print(f"      P2 Love to Have:{counts['wishlist_p2']}")
-    print(f"      P3 Like to Have:{counts['wishlist_p3']}")
-    print(f"      P4 Thinking:    {counts['wishlist_p4']}")
-    print(f"      P5 Don't Buy:   {counts['wishlist_p5']}")
-    print(f"    Preordered:       {counts['preordered']}")
-    print(f"    Previously Owned: {counts['previously_owned']}")
-    print(f"    Play log entries: {total_play_entries}")
+2. Normalized schema for analytics
+Split the JSON into structured datasets (games, rankings, designers, mechanics, categories) so it's easier to query with SQL, Pandas, or dashboards.
