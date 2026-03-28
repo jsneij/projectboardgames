@@ -1,7 +1,7 @@
 {
   "metadata": {
     "username": "jsneij",
-    "fetched_at": "2026-03-28T18:43:22.982317+00:00",
+    "fetched_at": "2026-03-28T18:48:24.986133+00:00",
     "total_items": 165,
     "counts": {
       "owned": 40,
@@ -50,7 +50,7 @@
         "bayesaverage": 7.89082,
         "stddev": 1.55883,
         "median": 0.0,
-        "avg_weight": null,
+        "avg_weight": 3.57,
         "ranks": [
           {
             "type": "subtype",
@@ -115,7 +115,7 @@
         "bayesaverage": 6.4231,
         "stddev": 1.10826,
         "median": 0.0,
-        "avg_weight": null,
+        "avg_weight": 3.53,
         "ranks": [
           {
             "type": "subtype",
@@ -174,7 +174,7 @@
         "bayesaverage": 6.38541,
         "stddev": 1.12916,
         "median": 0.0,
-        "avg_weight": null,
+        "avg_weight": 3.69,
         "ranks": [
           {
             "type": "subtype",
@@ -227,7 +227,7 @@
         "bayesaverage": 6.09682,
         "stddev": 1.08499,
         "median": 0.0,
-        "avg_weight": null,
+        "avg_weight": 3.83,
         "ranks": [
           {
             "type": "subtype",
@@ -280,7 +280,7 @@
         "bayesaverage": 7.5573,
         "stddev": 1.42726,
         "median": 0.0,
-        "avg_weight": null,
+        "avg_weight": 3.75,
         "ranks": [
           {
             "type": "subtype",
@@ -345,7 +345,7 @@
         "bayesaverage": 6.77698,
         "stddev": 1.25786,
         "median": 0.0,
-        "avg_weight": null,
+        "avg_weight": 2.35,
         "ranks": [
           {
             "type": "subtype",
@@ -404,7 +404,7 @@
         "bayesaverage": 5.98122,
         "stddev": 1.17868,
         "median": 0.0,
-        "avg_weight": null,
+        "avg_weight": 2.12,
         "ranks": [
           {
             "type": "subtype",
@@ -457,7 +457,7 @@
         "bayesaverage": 7.07394,
         "stddev": 1.22046,
         "median": 0.0,
-        "avg_weight": null,
+        "avg_weight": 2.31,
         "ranks": [
           {
             "type": "subtype",
@@ -522,7 +522,7 @@
         "bayesaverage": 5.53949,
         "stddev": 2.10176,
         "median": 0.0,
-        "avg_weight": null,
+        "avg_weight": 1.17,
         "ranks": [
           {
             "type": "subtype",
@@ -634,7 +634,7 @@
         "bayesaverage": 6.09807,
         "stddev": 1.53089,
         "median": 0.0,
-        "avg_weight": null,
+        "avg_weight": 1.16,
         "ranks": [
           {
             "type": "subtype",
@@ -693,7 +693,7 @@
         "bayesaverage": 7.80939,
         "stddev": 1.3171,
         "median": 0.0,
-        "avg_weight": null,
+        "avg_weight": 2.05,
         "ranks": [
           {
             "type": "subtype",
@@ -752,7 +752,7 @@
         "bayesaverage": 6.15022,
         "stddev": 1.05681,
         "median": 0.0,
-        "avg_weight": null,
+        "avg_weight": 1.93,
         "ranks": [
           {
             "type": "subtype",
@@ -811,7 +811,7 @@
         "bayesaverage": 6.69123,
         "stddev": 1.29962,
         "median": 0.0,
-        "avg_weight": null,
+        "avg_weight": 1.18,
         "ranks": [
           {
             "type": "subtype",
@@ -870,7 +870,7 @@
         "bayesaverage": 7.60589,
         "stddev": 1.38972,
         "median": 0.0,
-        "avg_weight": null,
+        "avg_weight": 2.75,
         "ranks": [
           {
             "type": "subtype",
@@ -929,7 +929,7 @@
         "bayesaverage": 5.69907,
         "stddev": 1.37975,
         "median": 0.0,
-        "avg_weight": null,
+        "avg_weight": 2.57,
         "ranks": [
           {
             "type": "subtype",
@@ -982,7 +982,7 @@
         "bayesaverage": 6.41243,
         "stddev": 1.16818,
         "median": 0.0,
-        "avg_weight": null,
+        "avg_weight": 2.96,
         "ranks": [
           {
             "type": "subtype",
@@ -1035,7 +1035,7 @@
         "bayesaverage": 6.20452,
         "stddev": 1.21965,
         "median": 0.0,
-        "avg_weight": null,
+        "avg_weight": 2.86,
         "ranks": [
           {
             "type": "subtype",
@@ -1088,7 +1088,7 @@
         "bayesaverage": 6.32083,
         "stddev": 1.18576,
         "median": 0.0,
-        "avg_weight": null,
+        "avg_weight": 2.95,
         "ranks": [
           {
             "type": "subtype",
@@ -1141,7 +1141,7 @@
         "bayesaverage": 8.10142,
         "stddev": 1.47103,
         "median": 0.0,
-        "avg_weight": null,
+        "avg_weight": 3.64,
         "ranks": [
           {
             "type": "subtype",
@@ -1206,7 +1206,7 @@
         "bayesaverage": 7.74375,
         "stddev": 1.17696,
         "median": 0.0,
-        "avg_weight": null,
+        "avg_weight": 2.01,
         "ranks": [
           {
             "type": "subtype",
@@ -1271,7 +1271,7 @@
         "bayesaverage": 5.4962,
         "stddev": 2.34513,
         "median": 0.0,
-        "avg_weight": null,
+        "avg_weight": 2.0,
         "ranks": [
           {
             "type": "subtype",
@@ -1324,7 +1324,7 @@
         "bayesaverage": 5.84087,
         "stddev": 1.52369,
         "median": 0.0,
-        "avg_weight": null,
+        "avg_weight": 1.17,
         "ranks": [
           {
             "type": "subtype",
@@ -1383,7 +1383,7 @@
         "bayesaverage": 5.93317,
         "stddev": 1.1847,
         "median": 0.0,
-        "avg_weight": null,
+        "avg_weight": 1.73,
         "ranks": [
           {
             "type": "subtype",
@@ -1448,7 +1448,7 @@
         "bayesaverage": 5.52878,
         "stddev": 0.818618,
         "median": 0.0,
-        "avg_weight": null,
+        "avg_weight": 1.0,
         "ranks": [
           {
             "type": "subtype",
@@ -1501,7 +1501,7 @@
         "bayesaverage": 5.81822,
         "stddev": 1.28484,
         "median": 0.0,
-        "avg_weight": null,
+        "avg_weight": 2.24,
         "ranks": [
           {
             "type": "subtype",
@@ -1560,7 +1560,7 @@
         "bayesaverage": 7.95061,
         "stddev": 1.52414,
         "median": 0.0,
-        "avg_weight": null,
+        "avg_weight": 3.49,
         "ranks": [
           {
             "type": "subtype",
@@ -1619,7 +1619,7 @@
         "bayesaverage": 7.30836,
         "stddev": 1.28632,
         "median": 0.0,
-        "avg_weight": null,
+        "avg_weight": 2.66,
         "ranks": [
           {
             "type": "subtype",
@@ -1684,7 +1684,7 @@
         "bayesaverage": 5.83849,
         "stddev": 1.1635,
         "median": 0.0,
-        "avg_weight": null,
+        "avg_weight": 1.06,
         "ranks": [
           {
             "type": "subtype",
@@ -1737,7 +1737,7 @@
         "bayesaverage": 6.56378,
         "stddev": 1.47109,
         "median": 0.0,
-        "avg_weight": null,
+        "avg_weight": 2.81,
         "ranks": [
           {
             "type": "subtype",
@@ -1796,7 +1796,7 @@
         "bayesaverage": 6.5962,
         "stddev": 1.07512,
         "median": 0.0,
-        "avg_weight": null,
+        "avg_weight": 1.25,
         "ranks": [
           {
             "type": "subtype",
@@ -1861,7 +1861,7 @@
         "bayesaverage": 7.88334,
         "stddev": 1.15147,
         "median": 0.0,
-        "avg_weight": null,
+        "avg_weight": 2.04,
         "ranks": [
           {
             "type": "subtype",
@@ -1926,7 +1926,7 @@
         "bayesaverage": 8.14196,
         "stddev": 1.5204,
         "median": 0.0,
-        "avg_weight": null,
+        "avg_weight": 4.08,
         "ranks": [
           {
             "type": "subtype",
@@ -1985,7 +1985,7 @@
         "bayesaverage": 6.96373,
         "stddev": 1.17047,
         "median": 0.0,
-        "avg_weight": null,
+        "avg_weight": 1.8,
         "ranks": [
           {
             "type": "subtype",
@@ -2050,7 +2050,7 @@
         "bayesaverage": 6.11712,
         "stddev": 1.37469,
         "median": 0.0,
-        "avg_weight": null,
+        "avg_weight": 1.45,
         "ranks": [
           {
             "type": "subtype",
@@ -2109,7 +2109,7 @@
         "bayesaverage": 6.45806,
         "stddev": 1.21992,
         "median": 0.0,
-        "avg_weight": null,
+        "avg_weight": 1.86,
         "ranks": [
           {
             "type": "subtype",
@@ -2168,7 +2168,7 @@
         "bayesaverage": 7.25205,
         "stddev": 1.17658,
         "median": 0.0,
-        "avg_weight": null,
+        "avg_weight": 2.4,
         "ranks": [
           {
             "type": "subtype",
@@ -2227,7 +2227,7 @@
         "bayesaverage": 5.97399,
         "stddev": 1.1139,
         "median": 0.0,
-        "avg_weight": null,
+        "avg_weight": 1.47,
         "ranks": [
           {
             "type": "subtype",
@@ -2286,7 +2286,7 @@
         "bayesaverage": 6.8611,
         "stddev": 1.19032,
         "median": 0.0,
-        "avg_weight": null,
+        "avg_weight": 2.4,
         "ranks": [
           {
             "type": "subtype",
@@ -2345,7 +2345,7 @@
         "bayesaverage": 6.99457,
         "stddev": 1.6499,
         "median": 0.0,
-        "avg_weight": null,
+        "avg_weight": 3.49,
         "ranks": [
           {
             "type": "subtype",
@@ -2407,7 +2407,7 @@
           "bayesaverage": 7.83713,
           "stddev": 1.63715,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 4.38,
           "ranks": [
             {
               "type": "subtype",
@@ -2472,7 +2472,7 @@
           "bayesaverage": 6.48568,
           "stddev": 1.124,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 1.97,
           "ranks": [
             {
               "type": "subtype",
@@ -2531,7 +2531,7 @@
           "bayesaverage": 8.00789,
           "stddev": 1.26255,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 3.83,
           "ranks": [
             {
               "type": "subtype",
@@ -2590,7 +2590,7 @@
           "bayesaverage": 7.10773,
           "stddev": 1.36867,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 4.4,
           "ranks": [
             {
               "type": "subtype",
@@ -2651,7 +2651,7 @@
           "bayesaverage": 7.73472,
           "stddev": 1.38898,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 4.0,
           "ranks": [
             {
               "type": "subtype",
@@ -2710,7 +2710,7 @@
           "bayesaverage": 6.02134,
           "stddev": 1.30237,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 2.25,
           "ranks": [
             {
               "type": "subtype",
@@ -2769,7 +2769,7 @@
           "bayesaverage": 6.30801,
           "stddev": 1.2995,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 2.53,
           "ranks": [
             {
               "type": "subtype",
@@ -2828,7 +2828,7 @@
           "bayesaverage": 6.6488,
           "stddev": 1.22613,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 2.17,
           "ranks": [
             {
               "type": "subtype",
@@ -2887,7 +2887,7 @@
           "bayesaverage": 7.76003,
           "stddev": 1.39392,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 2.5,
           "ranks": [
             {
               "type": "subtype",
@@ -2946,7 +2946,7 @@
           "bayesaverage": 7.0364,
           "stddev": 1.33725,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 2.87,
           "ranks": [
             {
               "type": "subtype",
@@ -3005,7 +3005,7 @@
           "bayesaverage": 7.0795,
           "stddev": 1.33188,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 2.54,
           "ranks": [
             {
               "type": "subtype",
@@ -3064,7 +3064,7 @@
           "bayesaverage": 8.08902,
           "stddev": 1.41458,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 4.4,
           "ranks": [
             {
               "type": "subtype",
@@ -3123,7 +3123,7 @@
           "bayesaverage": 5.90713,
           "stddev": 1.21508,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 2.28,
           "ranks": [
             {
               "type": "subtype",
@@ -3170,7 +3170,7 @@
           "bayesaverage": 6.7042,
           "stddev": 1.33738,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 3.98,
           "ranks": [
             {
               "type": "subtype",
@@ -3229,7 +3229,7 @@
           "bayesaverage": 7.38779,
           "stddev": 1.26058,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 2.33,
           "ranks": [
             {
               "type": "subtype",
@@ -3288,7 +3288,7 @@
           "bayesaverage": 7.79828,
           "stddev": 1.30811,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 4.29,
           "ranks": [
             {
               "type": "subtype",
@@ -3347,7 +3347,7 @@
           "bayesaverage": 6.99879,
           "stddev": 1.23545,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 2.8,
           "ranks": [
             {
               "type": "subtype",
@@ -3406,7 +3406,7 @@
           "bayesaverage": 6.85898,
           "stddev": 1.45924,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 3.73,
           "ranks": [
             {
               "type": "subtype",
@@ -3465,7 +3465,7 @@
           "bayesaverage": 7.73914,
           "stddev": 1.5189,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 4.63,
           "ranks": [
             {
               "type": "subtype",
@@ -3524,7 +3524,7 @@
           "bayesaverage": 5.71894,
           "stddev": 1.10361,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 2.29,
           "ranks": [
             {
               "type": "subtype",
@@ -3577,7 +3577,7 @@
           "bayesaverage": 6.93359,
           "stddev": 1.26622,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 1.98,
           "ranks": [
             {
               "type": "subtype",
@@ -3642,7 +3642,7 @@
           "bayesaverage": 6.56564,
           "stddev": 1.2532,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 2.28,
           "ranks": [
             {
               "type": "subtype",
@@ -3707,7 +3707,7 @@
           "bayesaverage": 5.66367,
           "stddev": 1.04814,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 2.0,
           "ranks": [
             {
               "type": "subtype",
@@ -3760,7 +3760,7 @@
           "bayesaverage": 7.68962,
           "stddev": 1.47927,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 3.26,
           "ranks": [
             {
               "type": "subtype",
@@ -3819,7 +3819,7 @@
           "bayesaverage": 6.24161,
           "stddev": 1.35272,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 1.8,
           "ranks": [
             {
               "type": "subtype",
@@ -3878,7 +3878,7 @@
           "bayesaverage": 7.1793,
           "stddev": 1.38988,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 4.02,
           "ranks": [
             {
               "type": "subtype",
@@ -3931,7 +3931,7 @@
           "bayesaverage": 7.32383,
           "stddev": 1.64649,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 2.34,
           "ranks": [
             {
               "type": "subtype",
@@ -3990,7 +3990,7 @@
           "bayesaverage": 7.67913,
           "stddev": 1.21,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 3.05,
           "ranks": [
             {
               "type": "subtype",
@@ -4051,7 +4051,7 @@
           "bayesaverage": 7.18236,
           "stddev": 1.25334,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 3.01,
           "ranks": [
             {
               "type": "subtype",
@@ -4110,7 +4110,7 @@
           "bayesaverage": 7.58511,
           "stddev": 1.72175,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 3.44,
           "ranks": [
             {
               "type": "subtype",
@@ -4169,7 +4169,7 @@
           "bayesaverage": 6.34949,
           "stddev": 1.29706,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 3.55,
           "ranks": [
             {
               "type": "subtype",
@@ -4234,7 +4234,7 @@
           "bayesaverage": 5.82351,
           "stddev": 1.25021,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 3.83,
           "ranks": [
             {
               "type": "subtype",
@@ -4287,7 +4287,7 @@
           "bayesaverage": 5.71036,
           "stddev": 1.34301,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 3.6,
           "ranks": [
             {
               "type": "subtype",
@@ -4340,7 +4340,7 @@
           "bayesaverage": 5.95644,
           "stddev": 1.29122,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 4.22,
           "ranks": [
             {
               "type": "subtype",
@@ -4405,7 +4405,7 @@
           "bayesaverage": 6.93644,
           "stddev": 1.22373,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 3.36,
           "ranks": [
             {
               "type": "subtype",
@@ -4464,7 +4464,7 @@
           "bayesaverage": 5.76236,
           "stddev": 1.24297,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 3.3,
           "ranks": [
             {
               "type": "subtype",
@@ -4517,7 +4517,7 @@
           "bayesaverage": 6.6563,
           "stddev": 1.49064,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 3.05,
           "ranks": [
             {
               "type": "subtype",
@@ -4582,7 +4582,7 @@
           "bayesaverage": 7.63155,
           "stddev": 1.0976,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 2.92,
           "ranks": [
             {
               "type": "subtype",
@@ -4635,7 +4635,7 @@
           "bayesaverage": 6.71964,
           "stddev": 1.30603,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 2.84,
           "ranks": [
             {
               "type": "subtype",
@@ -4700,7 +4700,7 @@
           "bayesaverage": 5.70058,
           "stddev": 1.76132,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 1.08,
           "ranks": [
             {
               "type": "subtype",
@@ -4753,7 +4753,7 @@
           "bayesaverage": 7.50766,
           "stddev": 1.37092,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 3.97,
           "ranks": [
             {
               "type": "subtype",
@@ -4806,7 +4806,7 @@
           "bayesaverage": 7.65503,
           "stddev": 1.34379,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 4.21,
           "ranks": [
             {
               "type": "subtype",
@@ -4865,7 +4865,7 @@
           "bayesaverage": 6.6975,
           "stddev": 1.42364,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 3.33,
           "ranks": [
             {
               "type": "subtype",
@@ -4924,7 +4924,7 @@
           "bayesaverage": 7.79459,
           "stddev": 1.33198,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 2.2,
           "ranks": [
             {
               "type": "subtype",
@@ -4983,7 +4983,7 @@
           "bayesaverage": 7.82092,
           "stddev": 1.41533,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 4.26,
           "ranks": [
             {
               "type": "subtype",
@@ -5042,7 +5042,7 @@
           "bayesaverage": 6.90348,
           "stddev": 1.19419,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 3.69,
           "ranks": [
             {
               "type": "subtype",
@@ -5095,7 +5095,7 @@
           "bayesaverage": 7.21728,
           "stddev": 1.24289,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 1.1,
           "ranks": [
             {
               "type": "subtype",
@@ -5154,7 +5154,7 @@
           "bayesaverage": 6.23756,
           "stddev": 1.18888,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 1.87,
           "ranks": [
             {
               "type": "subtype",
@@ -5213,7 +5213,7 @@
           "bayesaverage": 6.73419,
           "stddev": 1.35562,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 1.61,
           "ranks": [
             {
               "type": "subtype",
@@ -5278,7 +5278,7 @@
           "bayesaverage": 5.8325,
           "stddev": 1.50605,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 1.38,
           "ranks": [
             {
               "type": "subtype",
@@ -5337,7 +5337,7 @@
           "bayesaverage": 7.54577,
           "stddev": 1.33135,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 2.31,
           "ranks": [
             {
               "type": "subtype",
@@ -5396,7 +5396,7 @@
           "bayesaverage": 7.88093,
           "stddev": 1.48411,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 3.84,
           "ranks": [
             {
               "type": "subtype",
@@ -5461,7 +5461,7 @@
           "bayesaverage": 8.00075,
           "stddev": 1.31198,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 2.91,
           "ranks": [
             {
               "type": "subtype",
@@ -5514,7 +5514,7 @@
           "bayesaverage": 8.16685,
           "stddev": 1.36128,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 3.75,
           "ranks": [
             {
               "type": "subtype",
@@ -5573,7 +5573,7 @@
           "bayesaverage": 7.314,
           "stddev": 1.29482,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 1.98,
           "ranks": [
             {
               "type": "subtype",
@@ -5634,7 +5634,7 @@
           "bayesaverage": 6.15111,
           "stddev": 1.2138,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 1.25,
           "ranks": [
             {
               "type": "subtype",
@@ -5693,7 +5693,7 @@
           "bayesaverage": 6.6284,
           "stddev": 1.24389,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 2.73,
           "ranks": [
             {
               "type": "subtype",
@@ -5758,7 +5758,7 @@
           "bayesaverage": 5.85442,
           "stddev": 1.44441,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 2.58,
           "ranks": [
             {
               "type": "subtype",
@@ -5811,7 +5811,7 @@
           "bayesaverage": 6.53051,
           "stddev": 1.19121,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 2.05,
           "ranks": [
             {
               "type": "subtype",
@@ -5876,7 +5876,7 @@
           "bayesaverage": 6.92384,
           "stddev": 1.2529,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 1.73,
           "ranks": [
             {
               "type": "subtype",
@@ -5935,7 +5935,7 @@
           "bayesaverage": 5.60729,
           "stddev": 1.27599,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 2.42,
           "ranks": [
             {
               "type": "subtype",
@@ -5988,7 +5988,7 @@
           "bayesaverage": 6.01615,
           "stddev": 1.39447,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 3.79,
           "ranks": [
             {
               "type": "subtype",
@@ -6047,7 +6047,7 @@
           "bayesaverage": 5.49186,
           "stddev": 2.01211,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 1.4,
           "ranks": [
             {
               "type": "subtype",
@@ -6100,7 +6100,7 @@
           "bayesaverage": 5.73769,
           "stddev": 1.19889,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 1.81,
           "ranks": [
             {
               "type": "subtype",
@@ -6159,7 +6159,7 @@
           "bayesaverage": 5.5336,
           "stddev": 1.98213,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 3.5,
           "ranks": [
             {
               "type": "subtype",
@@ -6212,7 +6212,7 @@
           "bayesaverage": 6.67497,
           "stddev": 1.26076,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 2.53,
           "ranks": [
             {
               "type": "subtype",
@@ -6271,7 +6271,7 @@
           "bayesaverage": 6.94666,
           "stddev": 1.15872,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 2.23,
           "ranks": [
             {
               "type": "subtype",
@@ -6336,7 +6336,7 @@
           "bayesaverage": 5.57839,
           "stddev": 1.42477,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 2.85,
           "ranks": [
             {
               "type": "subtype",
@@ -6389,7 +6389,7 @@
           "bayesaverage": 7.09308,
           "stddev": 1.33385,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 2.18,
           "ranks": [
             {
               "type": "subtype",
@@ -6454,7 +6454,7 @@
           "bayesaverage": 7.04382,
           "stddev": 1.42758,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 2.91,
           "ranks": [
             {
               "type": "subtype",
@@ -6519,7 +6519,7 @@
           "bayesaverage": 8.30245,
           "stddev": 1.73565,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 3.92,
           "ranks": [
             {
               "type": "subtype",
@@ -6584,7 +6584,7 @@
           "bayesaverage": 6.22404,
           "stddev": 1.2996,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 1.07,
           "ranks": [
             {
               "type": "subtype",
@@ -6643,7 +6643,7 @@
           "bayesaverage": 6.92223,
           "stddev": 1.41427,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 1.69,
           "ranks": [
             {
               "type": "subtype",
@@ -6702,7 +6702,7 @@
           "bayesaverage": 6.55159,
           "stddev": 1.1394,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 1.23,
           "ranks": [
             {
               "type": "subtype",
@@ -6761,7 +6761,7 @@
           "bayesaverage": 5.50233,
           "stddev": 2.62644,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 1.0,
           "ranks": [
             {
               "type": "subtype",
@@ -6814,7 +6814,7 @@
           "bayesaverage": 5.56247,
           "stddev": 2.08207,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 3.54,
           "ranks": [
             {
               "type": "subtype",
@@ -6867,7 +6867,7 @@
           "bayesaverage": 6.77902,
           "stddev": 1.60828,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 4.58,
           "ranks": [
             {
               "type": "subtype",
@@ -6926,7 +6926,7 @@
           "bayesaverage": 6.05115,
           "stddev": 1.15992,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 2.56,
           "ranks": [
             {
               "type": "subtype",
@@ -6991,7 +6991,7 @@
           "bayesaverage": 6.06974,
           "stddev": 1.20612,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 2.15,
           "ranks": [
             {
               "type": "subtype",
@@ -7056,7 +7056,7 @@
           "bayesaverage": 6.65501,
           "stddev": 1.25582,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 1.87,
           "ranks": [
             {
               "type": "subtype",
@@ -7115,7 +7115,7 @@
           "bayesaverage": 6.71055,
           "stddev": 1.25408,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 2.25,
           "ranks": [
             {
               "type": "subtype",
@@ -7180,7 +7180,7 @@
           "bayesaverage": 6.21699,
           "stddev": 1.38851,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 1.78,
           "ranks": [
             {
               "type": "subtype",
@@ -7239,7 +7239,7 @@
           "bayesaverage": 5.54872,
           "stddev": 1.5218,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 2.2,
           "ranks": [
             {
               "type": "subtype",
@@ -7292,7 +7292,7 @@
           "bayesaverage": 5.9106,
           "stddev": 1.09883,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 2.05,
           "ranks": [
             {
               "type": "subtype",
@@ -7345,7 +7345,7 @@
           "bayesaverage": 6.15416,
           "stddev": 1.21557,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 1.29,
           "ranks": [
             {
               "type": "subtype",
@@ -7404,7 +7404,7 @@
           "bayesaverage": 6.66827,
           "stddev": 1.30979,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 1.99,
           "ranks": [
             {
               "type": "subtype",
@@ -7463,7 +7463,7 @@
           "bayesaverage": 7.72495,
           "stddev": 1.53634,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 3.69,
           "ranks": [
             {
               "type": "subtype",
@@ -7522,7 +7522,7 @@
           "bayesaverage": 5.71275,
           "stddev": 1.32248,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 2.58,
           "ranks": [
             {
               "type": "subtype",
@@ -7575,7 +7575,7 @@
           "bayesaverage": 5.97725,
           "stddev": 1.50778,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 3.17,
           "ranks": [
             {
               "type": "subtype",
@@ -7640,7 +7640,7 @@
           "bayesaverage": 5.56272,
           "stddev": 1.33425,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 1.75,
           "ranks": [
             {
               "type": "subtype",
@@ -7693,7 +7693,7 @@
           "bayesaverage": 5.83215,
           "stddev": 1.52112,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 1.96,
           "ranks": [
             {
               "type": "subtype",
@@ -7746,7 +7746,7 @@
           "bayesaverage": 7.10929,
           "stddev": 1.15232,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 1.56,
           "ranks": [
             {
               "type": "subtype",
@@ -7811,7 +7811,7 @@
           "bayesaverage": 7.31618,
           "stddev": 1.45112,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 2.65,
           "ranks": [
             {
               "type": "subtype",
@@ -7870,7 +7870,7 @@
           "bayesaverage": 7.25586,
           "stddev": 1.28813,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 1.47,
           "ranks": [
             {
               "type": "subtype",
@@ -7929,7 +7929,7 @@
           "bayesaverage": 5.70369,
           "stddev": 1.37159,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 1.6,
           "ranks": [
             {
               "type": "subtype",
@@ -7982,7 +7982,7 @@
           "bayesaverage": 5.83091,
           "stddev": 1.38122,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 2.14,
           "ranks": [
             {
               "type": "subtype",
@@ -8035,7 +8035,7 @@
           "bayesaverage": 6.05889,
           "stddev": 1.45462,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 2.03,
           "ranks": [
             {
               "type": "subtype",
@@ -8094,7 +8094,7 @@
           "bayesaverage": 6.71133,
           "stddev": 1.2096,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 1.58,
           "ranks": [
             {
               "type": "subtype",
@@ -8153,7 +8153,7 @@
           "bayesaverage": 5.99276,
           "stddev": 1.59808,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 2.5,
           "ranks": [
             {
               "type": "subtype",
@@ -8218,7 +8218,7 @@
           "bayesaverage": 7.33948,
           "stddev": 1.55718,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 3.33,
           "ranks": [
             {
               "type": "subtype",
@@ -8277,7 +8277,7 @@
           "bayesaverage": 7.09832,
           "stddev": 1.21385,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 2.15,
           "ranks": [
             {
               "type": "subtype",
@@ -8336,7 +8336,7 @@
           "bayesaverage": 5.72763,
           "stddev": 1.11287,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 1.82,
           "ranks": [
             {
               "type": "subtype",
@@ -8389,7 +8389,7 @@
           "bayesaverage": 7.62887,
           "stddev": 1.49119,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 4.61,
           "ranks": [
             {
               "type": "subtype",
@@ -8448,7 +8448,7 @@
           "bayesaverage": 6.83329,
           "stddev": 1.62103,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 4.56,
           "ranks": [
             {
               "type": "subtype",
@@ -8507,7 +8507,7 @@
           "bayesaverage": 6.68788,
           "stddev": 1.73693,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 3.64,
           "ranks": [
             {
               "type": "subtype",
@@ -8560,7 +8560,7 @@
           "bayesaverage": 5.65136,
           "stddev": 1.68024,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 3.1,
           "ranks": [
             {
               "type": "subtype",
@@ -8607,7 +8607,7 @@
           "bayesaverage": 7.42289,
           "stddev": 1.70992,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 2.9,
           "ranks": [
             {
               "type": "subtype",
@@ -8662,7 +8662,7 @@
           "bayesaverage": 6.30742,
           "stddev": 1.22808,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 1.57,
           "ranks": [
             {
               "type": "subtype",
@@ -8721,7 +8721,7 @@
           "bayesaverage": 7.39201,
           "stddev": 1.16878,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 1.89,
           "ranks": [
             {
               "type": "subtype",
@@ -8780,7 +8780,7 @@
           "bayesaverage": 6.5934,
           "stddev": 1.35794,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 2.4,
           "ranks": [
             {
               "type": "subtype",
@@ -8839,7 +8839,7 @@
           "bayesaverage": 6.77735,
           "stddev": 1.40343,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 2.34,
           "ranks": [
             {
               "type": "subtype",
@@ -8898,7 +8898,7 @@
           "bayesaverage": 6.03173,
           "stddev": 1.3785,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 2.79,
           "ranks": [
             {
               "type": "subtype",
@@ -8957,7 +8957,7 @@
           "bayesaverage": 6.57629,
           "stddev": 1.37353,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 1.05,
           "ranks": [
             {
               "type": "subtype",
@@ -9016,7 +9016,7 @@
           "bayesaverage": 6.73802,
           "stddev": 1.49723,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 3.11,
           "ranks": [
             {
               "type": "subtype",
@@ -9085,7 +9085,7 @@
         "bayesaverage": 5.54106,
         "stddev": 2.00581,
         "median": 0.0,
-        "avg_weight": null,
+        "avg_weight": 2.73,
         "ranks": [
           {
             "type": "subtype",
@@ -9138,7 +9138,7 @@
         "bayesaverage": 5.52637,
         "stddev": 1.94084,
         "median": 0.0,
-        "avg_weight": null,
+        "avg_weight": 2.0,
         "ranks": [
           {
             "type": "subtype",
@@ -9193,7 +9193,7 @@
         "bayesaverage": 6.21966,
         "stddev": 1.42702,
         "median": 0.0,
-        "avg_weight": null,
+        "avg_weight": 2.15,
         "ranks": [
           {
             "type": "subtype",
@@ -9252,7 +9252,7 @@
         "bayesaverage": 6.37497,
         "stddev": 1.638,
         "median": 0.0,
-        "avg_weight": null,
+        "avg_weight": 2.0,
         "ranks": [
           {
             "type": "subtype",
@@ -9311,7 +9311,7 @@
         "bayesaverage": 4.828,
         "stddev": 1.92568,
         "median": 0.0,
-        "avg_weight": null,
+        "avg_weight": 1.05,
         "ranks": [
           {
             "type": "subtype",
@@ -9370,7 +9370,7 @@
         "bayesaverage": 5.46364,
         "stddev": 1.64302,
         "median": 0.0,
-        "avg_weight": null,
+        "avg_weight": 1.4,
         "ranks": [
           {
             "type": "subtype",
@@ -9429,7 +9429,7 @@
         "bayesaverage": 5.69289,
         "stddev": 1.84096,
         "median": 0.0,
-        "avg_weight": null,
+        "avg_weight": 1.82,
         "ranks": [
           {
             "type": "subtype",
@@ -9494,7 +9494,7 @@
         "bayesaverage": 4.726,
         "stddev": 1.91622,
         "median": 0.0,
-        "avg_weight": null,
+        "avg_weight": 1.18,
         "ranks": [
           {
             "type": "subtype",
@@ -9559,7 +9559,7 @@
         "bayesaverage": 5.67729,
         "stddev": 1.6509,
         "median": 0.0,
-        "avg_weight": null,
+        "avg_weight": 2.28,
         "ranks": [
           {
             "type": "subtype",
@@ -9624,7 +9624,7 @@
         "bayesaverage": 5.23878,
         "stddev": 1.77808,
         "median": 0.0,
-        "avg_weight": null,
+        "avg_weight": 1.64,
         "ranks": [
           {
             "type": "subtype",
@@ -9686,7 +9686,7 @@
         "bayesaverage": 6.48506,
         "stddev": 1.11344,
         "median": 0.0,
-        "avg_weight": null,
+        "avg_weight": 3.62,
         "ranks": [
           {
             "type": "subtype",
