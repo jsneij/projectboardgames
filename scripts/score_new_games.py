@@ -13,6 +13,7 @@ from pathlib import Path
 
 SCORES_PATH = "data/bgg_collection_scores.json"
 BGG_PATH = "data/bgg_collection.json"
+MECHS_PATH = "data/mechanisms.json"
 FRAMEWORK_PATH = "docs/immersion_score.md"
 
 MODEL = "claude-sonnet-4-20250514"
@@ -94,7 +95,17 @@ def build_calibration_examples(scores):
     return "\n".join(examples)
 
 
-def build_prompt(game_name, section, bgg_data, framework_text, calibration):
+def build_mechanism_catalog(mechs_data):
+    """Format the full mechanism catalog for the prompt."""
+    lines = []
+    for cat in mechs_data["categories"]:
+        lines.append(f"\n### {cat['name']} ({cat['prefix']})")
+        for m in cat["mechanisms"]:
+            lines.append(f"  {m['code']} {m['name']}")
+    return "\n".join(lines)
+
+
+def build_prompt(game_name, section, bgg_data, framework_text, calibration, mech_catalog):
     """Build the Claude prompt for scoring a single game."""
     bgg_info = ""
     if bgg_data:
@@ -114,6 +125,9 @@ BGG data for this game:
 
 ## Framework
 {framework_text}
+
+## Mechanism Catalog (use exact codes and names)
+{mech_catalog}
 
 ## Calibration examples (already scored games for this user)
 {calibration}
@@ -143,20 +157,22 @@ Rules:
 - F hard filter: unpainted miniatures in large quantities raise F by 1.
 - Ar filter: goblin/Gearloc aesthetic scores lower. Prefer elegant, atmospheric art styles.
 - mechs: use the format "CODE-NN Mechanism Name" (e.g., "ACT-01 Action Points", "CAR-08 Multi-Use Cards").
-  Include 3-5 primary mechanisms.
+  Include ALL applicable mechanisms, not just primary ones. Include structural (STR-01 through STR-10),
+  turn order, actions, resolution, victory, economy, movement, area control, cards, etc.
+  Typical games have 6-15 mechanisms. Complex games may have more.
 - description: one sentence, evocative, like a movie tagline.
 - justification: cover all 5 variables, ~8-15 words each, in the style of the calibration examples.
 
 Return ONLY the JSON object, no markdown fences, no explanation."""
 
 
-def score_game(client, game_name, section, bgg_data, framework_text, calibration):
+def score_game(client, game_name, section, bgg_data, framework_text, calibration, mech_catalog):
     """Call Claude API to score a single game."""
-    prompt = build_prompt(game_name, section, bgg_data, framework_text, calibration)
+    prompt = build_prompt(game_name, section, bgg_data, framework_text, calibration, mech_catalog)
 
     response = client.messages.create(
         model=MODEL,
-        max_tokens=500,
+        max_tokens=1000,
         messages=[{"role": "user", "content": prompt}],
     )
 
@@ -192,6 +208,8 @@ def main():
     bgg_collection = load_json(BGG_PATH)
     framework_text = Path(FRAMEWORK_PATH).read_text(encoding="utf-8")
     calibration = build_calibration_examples(scores)
+    mechs_data = load_json(MECHS_PATH)
+    mech_catalog = build_mechanism_catalog(mechs_data)
 
     # Import anthropic here so script doesn't crash if package missing but no games to score
     import anthropic
@@ -202,7 +220,7 @@ def main():
         bgg_data = get_bgg_data(bgg_collection, name)
 
         try:
-            result = score_game(client, name, section, bgg_data, framework_text, calibration)
+            result = score_game(client, name, section, bgg_data, framework_text, calibration, mech_catalog)
 
             # Merge result into existing entry (preserve name)
             display_name = obj.get("name", name)

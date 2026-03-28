@@ -256,6 +256,65 @@ nav::-webkit-scrollbar { display: none; }
 .f-hi { color: #fbbf24; }
 .mono { font-family: 'JetBrains Mono', monospace; }
 
+/* MECHANISMS TAB */
+.mech-category { margin-bottom: 28px; }
+.mech-cat-header {
+  font-size: 15px; font-weight: 700; color: var(--accent); margin-bottom: 12px;
+  padding-bottom: 6px; border-bottom: 1px solid var(--border);
+  display: flex; align-items: center; gap: 8px;
+}
+.mech-cat-count {
+  font-size: 11px; font-weight: 400; color: var(--text3);
+  background: var(--bg-card2); padding: 2px 8px; border-radius: 10px;
+}
+.mech-row {
+  padding: 10px 14px; margin-bottom: 6px; border-radius: 6px;
+  background: var(--bg-card); border: 1px solid var(--border);
+  cursor: pointer; transition: background 0.15s;
+}
+.mech-row:hover { background: var(--bg-hover); }
+.mech-row-head { display: flex; align-items: center; gap: 10px; }
+.mech-code {
+  font-family: 'JetBrains Mono', monospace; font-size: 11px;
+  color: var(--accent); min-width: 52px;
+}
+.mech-name { font-size: 13px; font-weight: 600; color: var(--text1); flex: 1; }
+.mech-game-count {
+  font-size: 10px; color: var(--text3); background: rgba(99,102,241,0.12);
+  padding: 2px 7px; border-radius: 8px;
+}
+.mech-detail { display: none; margin-top: 8px; }
+.mech-row.open .mech-detail { display: block; }
+.mech-desc {
+  font-size: 12px; color: var(--text2); line-height: 1.5;
+  margin-bottom: 8px; max-width: 700px;
+}
+.mech-games { display: flex; flex-wrap: wrap; gap: 5px; }
+.mech-game-tag {
+  font-size: 10px; padding: 3px 8px; border-radius: 4px;
+  font-family: 'JetBrains Mono', monospace;
+}
+.mech-game-tag.owned {
+  background: rgba(34,197,94,0.15); border: 1px solid rgba(34,197,94,0.35); color: #86efac;
+}
+.mech-game-tag.wishlist {
+  background: rgba(251,191,36,0.15); border: 1px solid rgba(251,191,36,0.35); color: #fcd34d;
+}
+.mech-game-tag.inferred {
+  border-style: dashed; opacity: 0.75;
+}
+.mech-search {
+  width: 100%; max-width: 400px; padding: 8px 14px; margin-bottom: 20px;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px;
+  color: var(--text1); font-size: 13px; outline: none;
+}
+.mech-search:focus { border-color: var(--accent); }
+.mech-stats-bar {
+  display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 20px;
+  font-size: 12px; color: var(--text2);
+}
+.mech-stats-bar span { color: var(--accent); font-weight: 600; }
+
 /* WISHLIST */
 .priority-filter { display: flex; gap: 6px; margin-bottom: 16px; flex-wrap: wrap; }
 .pf-btn {
@@ -803,6 +862,7 @@ nav::-webkit-scrollbar { display: none; }
   <nav>
     <button class="tab-btn active" data-tab="table">Full Table</button>
     <button class="tab-btn" data-tab="is-framework">IS Framework</button>
+    <button class="tab-btn" data-tab="mechanisms">Mechanisms</button>
     <button class="tab-btn" data-tab="overview">Overview</button>
     <button class="tab-btn" data-tab="is-scores">IS Scores</button>
     <button class="tab-btn" data-tab="scatter">M&times;T Map</button>
@@ -978,6 +1038,11 @@ nav::-webkit-scrollbar { display: none; }
     <div id="insights-container" style="display:flex;flex-direction:column;gap:20px"></div>
   </div>
 
+  <!-- TAB: MECHANISMS -->
+  <div id="tab-mechanisms" class="tab-pane">
+    <div id="mechanisms-container"></div>
+  </div>
+
   <!-- TAB 8: IS FRAMEWORK -->
   <div id="tab-is-framework" class="tab-pane"></div>
 
@@ -1074,20 +1139,34 @@ function typeIcon(type) {
 }
 
 // ============================================================
+// TYPE → STRUCTURAL MECHANISM MAPPING
+// ============================================================
+const TYPE_TO_MECH = {
+  'competitive': ['STR-01'],
+  'co-op':       ['STR-02'],
+  'solo':        ['STR-04'],
+  'semi-coop':   ['STR-05'],
+  'party':       ['STR-01']
+};
+
+// ============================================================
 // DATA LOADING & MERGING
 // ============================================================
 let STATE = {};
 
 async function loadData() {
-  const [colResp, scResp] = await Promise.all([
+  const [colResp, scResp, mechResp] = await Promise.all([
     fetch('../data/bgg_collection.json'),
-    fetch('../data/bgg_collection_scores.json')
+    fetch('../data/bgg_collection_scores.json'),
+    fetch('../data/mechanisms.json')
   ]);
   if (!colResp.ok) throw new Error('Could not load bgg_collection.json');
   if (!scResp.ok) throw new Error('Could not load bgg_collection_scores.json');
+  if (!mechResp.ok) throw new Error('Could not load mechanisms.json');
   const collection = await colResp.json();
   const scores = await scResp.json();
-  return { collection, scores };
+  const mechanisms = await mechResp.json();
+  return { collection, scores, mechanisms };
 }
 
 function mergeGame(game, scoreObj) {
@@ -1109,11 +1188,21 @@ function mergeGame(game, scoreObj) {
     weight: sc.weight || game.stats.avg_weight || null,
     feeling: sc.feeling || null,
     mechs: sc.mechs || [],
+    mechsAll: enrichMechs(sc.mechs || [], sc.type || game.type || ''),
     bggAvg: game.stats.average || null,
   };
 }
 
-function buildState(collection, scores) {
+function enrichMechs(mechs, type) {
+  const codes = new Set(mechs.map(m => m.split(' ')[0]));
+  const enriched = [...mechs];
+  (TYPE_TO_MECH[type] || []).forEach(code => {
+    if (!codes.has(code)) enriched.push(code + ' [inferred]');
+  });
+  return enriched;
+}
+
+function buildState(collection, scores, mechanisms) {
   const ownedScores = scores.owned || {};
   const wlScores = scores.wishlist || {};
 
@@ -1139,7 +1228,14 @@ function buildState(collection, scores) {
   const preordered = (collection.preordered || []).map(g => mergeGame(g, ownedScores[g.name]));
   const prevOwned = (collection.previously_owned || []).map(g => mergeGame(g, {}));
 
-  return { owned, wishlist, preordered, prevOwned, collection };
+  // Adapt mechanisms.json to internal shape
+  const mechData = (mechanisms?.categories || []).map(cat => ({
+    cat: cat.name,
+    prefix: cat.prefix,
+    mechs: cat.mechanisms.map(m => ({ c: m.code, n: m.name, d: m.description }))
+  }));
+
+  return { owned, wishlist, preordered, prevOwned, collection, mechData };
 }
 
 // ============================================================
@@ -2208,6 +2304,88 @@ const IS_VARS = [
     exLo: 'Budget abstracts', exHi: 'Arkham Horror LCG' }
 ];
 
+// ============================================================
+// TAB: MECHANISMS ENCYCLOPEDIA
+// ============================================================
+function renderMechanisms(state) {
+  const container = document.getElementById('mechanisms-container');
+  const { owned, wishlist, mechData } = state;
+  const allGames = [...owned, ...wishlist];
+
+  // Build lookup: mechCode → [{name, bgg_id, section, inferred}]
+  const mechMap = {};
+  const addGame = (g, section) => {
+    (g.mechsAll || []).forEach(m => {
+      const code = m.split(' ')[0];
+      const inferred = m.includes('[inferred]');
+      if (!mechMap[code]) mechMap[code] = [];
+      if (!mechMap[code].some(e => e.name === g.name))
+        mechMap[code].push({ name: g.name, bgg_id: g.bgg_id, section, inferred });
+    });
+  };
+  owned.forEach(g => addGame(g, 'owned'));
+  wishlist.forEach(g => addGame(g, 'wishlist'));
+
+  // Count totals
+  const totalMechs = mechData.reduce((s, cat) => s + cat.mechs.length, 0);
+  const usedMechs = mechData.reduce((s, cat) => s + cat.mechs.filter(m => mechMap[m.c]).length, 0);
+  const uniqueGames = new Set(allGames.filter(g => (g.mechsAll || []).length > 0).map(g => g.name)).size;
+
+  let html = `<div class="mech-stats-bar">
+    <div><span>${totalMechs}</span> mechanisms</div>
+    <div><span>${usedMechs}</span> in your collection</div>
+    <div><span>${uniqueGames}</span> games tagged</div>
+  </div>
+  <input type="text" class="mech-search" placeholder="Search mechanisms..." id="mech-search">`;
+
+  mechData.forEach(cat => {
+    const catUsed = cat.mechs.filter(m => mechMap[m.c]).length;
+    html += `<div class="mech-category" data-cat="${cat.cat}">
+      <div class="mech-cat-header">${cat.cat} <span class="mech-cat-count">${catUsed}/${cat.mechs.length} in collection</span></div>`;
+
+    cat.mechs.forEach(m => {
+      const games = mechMap[m.c] || [];
+      const gameCountBadge = games.length ? `<span class="mech-game-count">${games.length} game${games.length > 1 ? 's' : ''}</span>` : '';
+      const gameTags = games.map(g =>
+        `<a href="${BGG_LINK(g.bgg_id)}" target="_blank" rel="noopener" onclick="event.stopPropagation()" class="mech-game-tag ${g.section}${g.inferred ? ' inferred' : ''}">${g.name}</a>`
+      ).join('');
+
+      html += `<div class="mech-row" data-search="${m.c} ${m.n}">
+        <div class="mech-row-head">
+          <span class="mech-code">${m.c}</span>
+          <span class="mech-name">${m.n}</span>
+          ${gameCountBadge}
+        </div>
+        <div class="mech-detail">
+          <div class="mech-desc">${m.d}</div>
+          ${games.length ? `<div class="mech-games">${gameTags}</div>` : ''}
+        </div>
+      </div>`;
+    });
+    html += '</div>';
+  });
+
+  container.innerHTML = html;
+
+  // Click to expand mechanism detail
+  container.querySelectorAll('.mech-row').forEach(row => {
+    row.addEventListener('click', () => row.classList.toggle('open'));
+  });
+
+  // Search filter
+  document.getElementById('mech-search').addEventListener('input', e => {
+    const q = e.target.value.toLowerCase();
+    container.querySelectorAll('.mech-row').forEach(row => {
+      const match = row.dataset.search.toLowerCase().includes(q);
+      row.style.display = match ? '' : 'none';
+    });
+    container.querySelectorAll('.mech-category').forEach(cat => {
+      const visible = cat.querySelectorAll('.mech-row[style=""], .mech-row:not([style])').length;
+      cat.style.display = visible ? '' : 'none';
+    });
+  });
+}
+
 const IS_ZONES = [
   { label: 'Has it', min: -Infinity, max: 30, color: '#475569', text: '#94a3b8' },
   { label: 'Likes it', min: 30, max: 87, color: '#f59e0b', text: '#fbbf24' },
@@ -2215,12 +2393,11 @@ const IS_ZONES = [
   { label: 'Peak Immersion', min: 150, max: Infinity, color: '#dc2626', text: '#fca5a5' }
 ];
 
-const MECH_CATS = {
-  ACT: 'Actions', ARC: 'Area Control', CAR: 'Cards', ECO: 'Economy',
-  MOV: 'Movement', RES: 'Resolution', SET: 'Set & Pattern',
-  STR: 'Structure', TRN: 'Turn Order', UNC: 'Uncertainty',
-  VIC: 'Victory', WPL: 'Worker Placement'
-};
+function buildMechCats(mechData) {
+  const cats = {};
+  (mechData || []).forEach(cat => { cats[cat.prefix] = cat.cat; });
+  return cats;
+}
 
 function getISZone(is) {
   return IS_ZONES.find(z => is >= z.min && is < z.max) || IS_ZONES[0];
@@ -2229,6 +2406,7 @@ function getISZone(is) {
 function renderISFramework(state) {
   const container = document.getElementById('tab-is-framework');
   const { owned } = state;
+  const MECH_CATS = buildMechCats(state.mechData);
   const scored = owned.filter(g => g.hasScores && g.IS !== null);
 
   let html = '';
@@ -2947,8 +3125,8 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
 // ============================================================
 (async () => {
   try {
-    const { collection, scores } = await loadData();
-    STATE = buildState(collection, scores);
+    const { collection, scores, mechanisms } = await loadData();
+    STATE = buildState(collection, scores, mechanisms);
 
     renderOverview(STATE);
     renderISScores(STATE);
@@ -2956,6 +3134,7 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
     renderWishlist(STATE);
     renderPatterns(STATE);
     renderInsights();
+    renderMechanisms(STATE);
 
     document.getElementById('loading').style.display = 'none';
   } catch (err) {

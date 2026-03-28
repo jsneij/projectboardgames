@@ -1,0 +1,285 @@
+{
+  "categories": [
+    {
+      "name": "Game Structure",
+      "prefix": "STR",
+      "mechanisms": [
+        {"code": "STR-01", "name": "Competitive Games", "description": "A game with two or more players and a single winner."},
+        {"code": "STR-02", "name": "Cooperative Games", "description": "Players coordinate their actions to achieve a common win condition or conditions."},
+        {"code": "STR-03", "name": "Team-Based Games", "description": "In team-based games, teams of players compete with one another to obtain victory."},
+        {"code": "STR-04", "name": "Solo Games", "description": "A solo game is a game or game mode intended for play by a single player."},
+        {"code": "STR-05", "name": "Semi-Cooperative Games", "description": "A game which ends with either no winners or the players winning as a group but a single player being recognized as the individual winner."},
+        {"code": "STR-06", "name": "Single-Loser Games", "description": "A game with three or more players in which players are not assigned to static teams and which ends with only one loser."},
+        {"code": "STR-07", "name": "Traitor Games", "description": "A traitor game can be seen as a kind of team game or as a cooperative game with a betrayal mechanism."},
+        {"code": "STR-08", "name": "Scenario/Mission/Campaign Games", "description": "A game system that can be applied to a variety of different maps, starting resources and positions, and even different win and loss conditions."},
+        {"code": "STR-09", "name": "Score-and-Reset Games", "description": "A game in which players play until reaching a stopping condition, then record scores, reset the game, and play additional rounds."},
+        {"code": "STR-10", "name": "Legacy Games", "description": "A multisession game in which permanent and irreversible changes to the game state carry over from session to session."}
+      ]
+    },
+    {
+      "name": "Turn Order and Structure",
+      "prefix": "TRN",
+      "mechanisms": [
+        {"code": "TRN-01", "name": "Fixed Turn Order", "description": "Turn order is set at the start of the game and never varies."},
+        {"code": "TRN-02", "name": "Stat Turn Order", "description": "The turn order within each round is set by some statistic relating to the players' resources or position."},
+        {"code": "TRN-03", "name": "Bid Turn Order", "description": "Players bid for turn order."},
+        {"code": "TRN-04", "name": "Progressive Turn Order", "description": "One player has the First Player token; turn order rotates progressively."},
+        {"code": "TRN-05", "name": "Claim Turn Order", "description": "In each round there is a First Player and turns are taken clockwise from that player."},
+        {"code": "TRN-06", "name": "Pass Order", "description": "On their turn, players may either take an action or pass."},
+        {"code": "TRN-07", "name": "Real-Time", "description": "There are no turns; all players act simultaneously in real time."},
+        {"code": "TRN-08", "name": "Punctuated Real-Time", "description": "Real-time play interrupted by periodic pauses for resolution or planning."},
+        {"code": "TRN-09", "name": "Simultaneous Action Selection", "description": "Players plan their turn simultaneously and secretly, then reveal."},
+        {"code": "TRN-10", "name": "Role Order", "description": "Players secretly and simultaneously select an action, role, or priority that determines turn order."},
+        {"code": "TRN-11", "name": "Random Turn Order", "description": "Representatives of play pieces or players are randomized and drawn one at a time."},
+        {"code": "TRN-12", "name": "Action Timer", "description": "Players place owned timers on action spaces and take an action when the timer expires."},
+        {"code": "TRN-13", "name": "Time Track", "description": "There is a linear time track; the player furthest back always takes the next turn."},
+        {"code": "TRN-14", "name": "Passed Action Token", "description": "Players possess one or more Action Tokens that determine available actions."},
+        {"code": "TRN-15", "name": "Interleaved vs. Sequential Phases", "description": "Two different meta-turn structures describing how phases within rounds are ordered."},
+        {"code": "TRN-16", "name": "Lose a Turn", "description": "A meta-mechanism that causes a player to skip their turn under certain conditions."},
+        {"code": "TRN-17", "name": "Interrupts", "description": "A meta-mechanism allowing players to act outside normal turn order in response to events."}
+      ]
+    },
+    {
+      "name": "Actions",
+      "prefix": "ACT",
+      "mechanisms": [
+        {"code": "ACT-01", "name": "Action Points", "description": "A player receives a number of Action Points on their turn to spend on various actions."},
+        {"code": "ACT-02", "name": "Action Drafting", "description": "Players select from an assortment of actions in a shared pool."},
+        {"code": "ACT-03", "name": "Action Retrieval", "description": "Each player has a set of actions that must be retrieved after use before they can be used again."},
+        {"code": "ACT-04", "name": "Action/Event", "description": "On their turn, the player plays a card showing both Action Points and an Event."},
+        {"code": "ACT-05", "name": "Command Cards", "description": "Players have a hand of cards that allows them to activate and perform actions with a subset of their units."},
+        {"code": "ACT-06", "name": "Action Queue", "description": "Players create action queues and perform them in sequence."},
+        {"code": "ACT-07", "name": "Shared Action Queue", "description": "All players add actions to a central action queue."},
+        {"code": "ACT-08", "name": "Follow", "description": "One player selects an action; other players may follow with the same or a lesser action."},
+        {"code": "ACT-09", "name": "Order Counters", "description": "Players place order tokens into regions, indicating planned actions."},
+        {"code": "ACT-10", "name": "Rondel", "description": "The available actions are represented as pie wedges in a circle; players move a marker around it."},
+        {"code": "ACT-11", "name": "Action Selection Restrictions", "description": "Players are restricted in which actions they may choose based on prior choices or game state."},
+        {"code": "ACT-12", "name": "Variable Player Powers", "description": "Each player has special actions that only they can perform or that modify standard actions."},
+        {"code": "ACT-13", "name": "Once-Per-Game Abilities", "description": "Players have a special ability that they can use one time per game."},
+        {"code": "ACT-14", "name": "Advantage Token", "description": "One player has a token permitting a special action or action modification."},
+        {"code": "ACT-15", "name": "Gating and Unlocking", "description": "At certain points in the game, new actions are made available to the players."},
+        {"code": "ACT-16", "name": "Tech Trees/Tech Tracks", "description": "During the game, new actions become available to specific players, or existing actions are improved."},
+        {"code": "ACT-17", "name": "Events", "description": "Actions occur outside player control that cause immediate effects or change the game state."},
+        {"code": "ACT-18", "name": "Narrative Choice", "description": "Multiple action options are presented via a narrative format."},
+        {"code": "ACT-19", "name": "Bingo", "description": "Game elements are selected at random, and each player uses them for their own actions."},
+        {"code": "ACT-20", "name": "Layering", "description": "Components are placed above other components and can overlap in various ways."},
+        {"code": "ACT-21", "name": "Slide/Push", "description": "Players slide a token, and other tokens ahead of it are pushed along."},
+        {"code": "ACT-22", "name": "Matching", "description": "A player must play a card or token matching some feature on the previously played element."},
+        {"code": "ACT-23", "name": "Drawing", "description": "Players draw a picture and other players guess what it depicts."}
+      ]
+    },
+    {
+      "name": "Resolution",
+      "prefix": "RES",
+      "mechanisms": [
+        {"code": "RES-01", "name": "High Number", "description": "Each player has a numeric strength; the higher strength wins the conflict."},
+        {"code": "RES-02", "name": "Stat Check", "description": "There is a target number required to succeed at a test."},
+        {"code": "RES-03", "name": "Critical Hits and Failures", "description": "Dice rolls exceeding a target number generate success, with special results for extremes."},
+        {"code": "RES-04", "name": "Ratio/Combat Results Table", "description": "Attacker and Defender total their strength and consult a ratio-based results table."},
+        {"code": "RES-05", "name": "Die Icons", "description": "The player rolls dice; any die showing the target icon is a success."},
+        {"code": "RES-06", "name": "Card Play", "description": "Each player simultaneously or sequentially plays cards to resolve conflict."},
+        {"code": "RES-07", "name": "Rock, Paper, Scissors", "description": "Three options are cyclically superior (A beats B, B beats C, C beats A)."},
+        {"code": "RES-08", "name": "Prisoner's Dilemma", "description": "Each player chooses between cooperating or defecting, with payoffs depending on both choices."},
+        {"code": "RES-09", "name": "Alternate Removal", "description": "The player with fewer units removes one; then the other player removes one, alternating."},
+        {"code": "RES-10", "name": "Physical Action", "description": "A physical action must be performed to determine the outcome."},
+        {"code": "RES-11", "name": "Static Capture", "description": "Pieces are captured when another piece occupies or passes over their space."},
+        {"code": "RES-12", "name": "Enclosure", "description": "Players try to surround pieces or key areas to capture them."},
+        {"code": "RES-13", "name": "Minimap", "description": "When conflict is initiated, pieces move to a separate board for resolution."},
+        {"code": "RES-14", "name": "Force Commitment", "description": "Players select how many forces they commit to battle in different categories."},
+        {"code": "RES-15", "name": "Voting", "description": "Players vote on whether a proposed action will occur."},
+        {"code": "RES-16", "name": "Player Judge", "description": "One player, the judge, decides the outcome of the action."},
+        {"code": "RES-17", "name": "Targeted Clues", "description": "A player gives clues intended for some but not all players to guess."},
+        {"code": "RES-18", "name": "Tiebreakers", "description": "If a resolution results in a tie, an alternate means breaks it."},
+        {"code": "RES-19", "name": "Dice Selection", "description": "A player rolls multiple dice and selects one based on a rule."},
+        {"code": "RES-20", "name": "Action Speed", "description": "Actions are rated for speed or initiative, determining resolution order."},
+        {"code": "RES-21", "name": "Rerolling and Locking", "description": "Dice may be rerolled or locked to prevent rerolling."},
+        {"code": "RES-22", "name": "Kill Steal", "description": "Players contribute toward a task, but only the player who completes it gets the benefit."},
+        {"code": "RES-23", "name": "Hot Potato", "description": "Players strive to rid themselves of an item that incurs a penalty when triggered."},
+        {"code": "RES-24", "name": "Flicking", "description": "Players use a finger to strike a token and propel it toward a target."},
+        {"code": "RES-25", "name": "Stacking and Balancing", "description": "Players must add, remove, or rearrange objects from a stack or balancing surface."},
+        {"code": "RES-26", "name": "Neighbor Scope", "description": "Actions, resources, or resolutions are shared between neighbors."}
+      ]
+    },
+    {
+      "name": "Game End and Victory",
+      "prefix": "VIC",
+      "mechanisms": [
+        {"code": "VIC-01", "name": "Victory Points from Game State", "description": "An event causes the game state to be evaluated relative to a scoring condition."},
+        {"code": "VIC-02", "name": "Victory Points from Player Actions", "description": "Players earn points by performing actions."},
+        {"code": "VIC-03", "name": "Temporary and Permanent Victory Points", "description": "Some Victory Points are never lost; others can change during the game."},
+        {"code": "VIC-04", "name": "Victory Points as a Resource", "description": "Victory Points may be spent as currency to impact the game state."},
+        {"code": "VIC-05", "name": "Hidden and Exposed Victory Points", "description": "Victory Points may be public or private information."},
+        {"code": "VIC-06", "name": "End-Game Bonuses", "description": "Players earn bonus VPs at the end of the game based on achieved conditions."},
+        {"code": "VIC-07", "name": "Race", "description": "The winner is the first player to reach the end of a track."},
+        {"code": "VIC-08", "name": "Player Elimination", "description": "The winner is the only player remaining in the game."},
+        {"code": "VIC-09", "name": "Fixed Number of Rounds", "description": "The game ends after a set number of rounds."},
+        {"code": "VIC-10", "name": "Exhausting Resources", "description": "The game end is triggered by a resource being exhausted."},
+        {"code": "VIC-11", "name": "Completing Targets", "description": "The game ends after a set number of targets or goals are completed."},
+        {"code": "VIC-12", "name": "Fixed Number of Events", "description": "The game ends after an event occurs a specified number of times."},
+        {"code": "VIC-13", "name": "Elapsed Real Time", "description": "The game ends after a set amount of actual time has elapsed."},
+        {"code": "VIC-14", "name": "Connections", "description": "The game ends when a specified number of connections are made on the board."},
+        {"code": "VIC-15", "name": "Circuit Breaker/Sudden Death", "description": "The game has a fixed victory condition and a special condition that can end it prematurely."},
+        {"code": "VIC-16", "name": "Finale", "description": "When the main game ends, a special mini-game determines the victor."},
+        {"code": "VIC-17", "name": "King of the Hill", "description": "Players earn points by occupying a special position on the board."},
+        {"code": "VIC-18", "name": "Catch the Leader", "description": "The game systems advantage trailing players or disadvantage leaders."},
+        {"code": "VIC-19", "name": "Tug of War", "description": "A marker moves back and forth on a track toward or away from a neutral position."},
+        {"code": "VIC-20", "name": "Highest Lowest", "description": "Each player's score equals the lowest value of several categories."},
+        {"code": "VIC-21", "name": "Ordering", "description": "The objective is to rearrange game elements from a disordered to an ordered state."}
+      ]
+    },
+    {
+      "name": "Uncertainty",
+      "prefix": "UNC",
+      "mechanisms": [
+        {"code": "UNC-01", "name": "Betting and Bluffing", "description": "Players commit stakes to purchase a chance of winning based on hidden information or deception."},
+        {"code": "UNC-02", "name": "Push-Your-Luck", "description": "Players must decide between settling for existing gains and risking them for further rewards."},
+        {"code": "UNC-03", "name": "Memory", "description": "Hidden, trackable information whose tracking gives players an advantage."},
+        {"code": "UNC-04", "name": "Hidden Roles", "description": "One or more players are assigned roles not publicly revealed at the start."},
+        {"code": "UNC-05", "name": "Roles with Asymmetric Information", "description": "Players are secretly assigned roles with different win conditions and starting information."},
+        {"code": "UNC-06", "name": "Communication Limits", "description": "Games limit players from communicating openly with one another."},
+        {"code": "UNC-07", "name": "Unknown Information", "description": "Aspects of the game state are unknown to all players but lie within a known range."},
+        {"code": "UNC-08", "name": "Hidden Information", "description": "Aspects of the game state are hidden from all but one or a few players."},
+        {"code": "UNC-09", "name": "Probability Management", "description": "Players influence the probabilities of outcomes without directly determining them."},
+        {"code": "UNC-10", "name": "Variable Setup", "description": "The starting game state varies from game to game through changes to components or player setups."},
+        {"code": "UNC-11", "name": "Hidden Control", "description": "Players have hidden influence on locations or characters, revealed to perform actions."},
+        {"code": "UNC-12", "name": "Deduction", "description": "Reasoning by process of elimination to discover crucial information."},
+        {"code": "UNC-13", "name": "Induction", "description": "Players attempt to determine the rules governing a situation."},
+        {"code": "UNC-14", "name": "Questions and Answers", "description": "Players ask and answer questions constrained by rules."}
+      ]
+    },
+    {
+      "name": "Economics",
+      "prefix": "ECO",
+      "mechanisms": [
+        {"code": "ECO-01", "name": "Exchanging", "description": "Players exchange a set of assets for a different set with the bank."},
+        {"code": "ECO-02", "name": "Trading", "description": "Players may trade assets with each other."},
+        {"code": "ECO-03", "name": "Market", "description": "Players buy from or sell resources to markets where prices and quantities vary."},
+        {"code": "ECO-04", "name": "Delayed Purchase", "description": "Purchased items do not enter play right away but arrive on a future turn."},
+        {"code": "ECO-05", "name": "Income", "description": "Players gain resources at defined times."},
+        {"code": "ECO-06", "name": "Automatic Resource Growth", "description": "Resources held by a player automatically grow over time."},
+        {"code": "ECO-07", "name": "Loans", "description": "Players may take a loan from the bank to get more money."},
+        {"code": "ECO-08", "name": "Always Available Purchases", "description": "Certain resources are always available to purchase regardless of supply."},
+        {"code": "ECO-09", "name": "I Cut, You Choose", "description": "One player divides a set of resources into groups; another player chooses first."},
+        {"code": "ECO-10", "name": "Discounts", "description": "A player can obtain an asset at a reduced cost."},
+        {"code": "ECO-11", "name": "Upgrades", "description": "Assets may be upgraded to improved versions."},
+        {"code": "ECO-12", "name": "Random Production", "description": "Resources are generated from a random process and distributed to qualifying players."},
+        {"code": "ECO-13", "name": "Investment", "description": "Players own a share of an entity and earn returns based on its performance."},
+        {"code": "ECO-14", "name": "Ownership", "description": "Players own entities and collect benefits if others use them."},
+        {"code": "ECO-15", "name": "Contracts", "description": "Players fulfill contracts to earn rewards."},
+        {"code": "ECO-16", "name": "Bribery", "description": "Players offer bribes to get others to perform specific actions."},
+        {"code": "ECO-17", "name": "Increase Value of Unchosen Resources", "description": "Resources not selected by players increase in value over time."},
+        {"code": "ECO-18", "name": "Negotiation", "description": "Players make agreements about courses of action."},
+        {"code": "ECO-19", "name": "Alliances", "description": "Players have formal relationships that may change over the course of the game."},
+        {"code": "ECO-20", "name": "Resource Queue", "description": "Resources are in an ordered queue and can only be pulled from one end."}
+      ]
+    },
+    {
+      "name": "Auctions",
+      "prefix": "AUC",
+      "mechanisms": [
+        {"code": "AUC-01", "name": "Open Auction", "description": "Players shout out bids as they will, with no turn order."},
+        {"code": "AUC-02", "name": "English Auction", "description": "An auctioneer asks for increasing bids; highest bidder wins."},
+        {"code": "AUC-03", "name": "Turn Order Until Pass Auction", "description": "Players may raise the bid or pass in turn order; last remaining bidder wins."},
+        {"code": "AUC-04", "name": "Sealed-Bid Auction", "description": "Players secretly make a bid; highest sealed bid wins."},
+        {"code": "AUC-05", "name": "Sealed Bid with Cancellation", "description": "Sealed bids where matching bids cancel each other out."},
+        {"code": "AUC-06", "name": "Constrained Bidding", "description": "A meta-mechanism that places constraints on what can be bid."},
+        {"code": "AUC-07", "name": "Once-Around Auction", "description": "Each player has one opportunity to bid, either passing or raising."},
+        {"code": "AUC-08", "name": "Dutch Auction", "description": "Price starts high and decreases until someone claims the item."},
+        {"code": "AUC-09", "name": "Second-Bid Auction", "description": "The winner pays the second-highest bid rather than their own."},
+        {"code": "AUC-10", "name": "Selection Order Bid", "description": "Players bid for the order in which they will draft lots."},
+        {"code": "AUC-11", "name": "Multiple-Lot Auction", "description": "Players simultaneously bid on multiple lots in parallel."},
+        {"code": "AUC-12", "name": "Closed-Economy Auction", "description": "All money spent in the auction goes to other players, not the bank."},
+        {"code": "AUC-13", "name": "Reverse Auction", "description": "Players bid to avoid taking a lot with negative effects."},
+        {"code": "AUC-14", "name": "Dexterity Auction", "description": "A physical act of dexterity is required to submit a valid bid."},
+        {"code": "AUC-15", "name": "Fixed-Placement Auction", "description": "Rules determine which lots players may bid on, with bids placed visually on a board."},
+        {"code": "AUC-16", "name": "Dutch Priority Auction", "description": "Prices for lots are determined based on the number of bids placed."},
+        {"code": "AUC-17", "name": "Bids as Wagers", "description": "Players bid that they can achieve an outcome in the ensuing gameplay."},
+        {"code": "AUC-18", "name": "Auction Compensation", "description": "Losing bidders receive a lesser award in place of the lot they bid on."}
+      ]
+    },
+    {
+      "name": "Worker Placement",
+      "prefix": "WPL",
+      "mechanisms": [
+        {"code": "WPL-01", "name": "Standard Worker Placement", "description": "Players select actions by placing a worker on a building; the space is then blocked for others."},
+        {"code": "WPL-02", "name": "Workers of Differing Types", "description": "Workers differ in abilities or are valid for placement in different areas."},
+        {"code": "WPL-03", "name": "Acquiring and Losing Workers", "description": "Workers beyond the original complement may be acquired or lost during the game."},
+        {"code": "WPL-04", "name": "Workers-As-Dice", "description": "Workers are represented by dice whose pip values impact placement and actions."},
+        {"code": "WPL-05", "name": "Adding and Blocking Buildings", "description": "Buildings and their corresponding actions may be added or blocked during play."},
+        {"code": "WPL-06", "name": "Single Workers", "description": "Players control only a single primary worker and cannot acquire more."},
+        {"code": "WPL-07", "name": "Building Actions and Rewards", "description": "Buildings offer varying rewards to different players based on ownership and turn order."},
+        {"code": "WPL-08", "name": "Turn Order and Resolution Order", "description": "The order by which worker placement actions are selected and resolved creates design variations."}
+      ]
+    },
+    {
+      "name": "Movement",
+      "prefix": "MOV",
+      "mechanisms": [
+        {"code": "MOV-01", "name": "Tessellation", "description": "The playing field is divided into spaces to regulate movement."},
+        {"code": "MOV-02", "name": "Roll and Move", "description": "A randomizer determines how far to move a piece."},
+        {"code": "MOV-03", "name": "Pattern Movement", "description": "Pieces move in a specific pattern relative to the board grid."},
+        {"code": "MOV-04", "name": "Movement Points", "description": "A piece is given points to spend on movement across the board."},
+        {"code": "MOV-05", "name": "Resource to Move", "description": "Players expend a resource to move."},
+        {"code": "MOV-06", "name": "Measurement", "description": "Pieces may be moved up to a certain distance, measured by a ruler."},
+        {"code": "MOV-07", "name": "Different Dice", "description": "Different dice are used to move depending on unit or game state."},
+        {"code": "MOV-08", "name": "Drift", "description": "Two movement cards are played to move, creating a vector-like system."},
+        {"code": "MOV-09", "name": "Impulse", "description": "A turn is broken up into a series of small impulses for movement."},
+        {"code": "MOV-10", "name": "Programmed Movement", "description": "Players simultaneously program their movement, then reveal and execute."},
+        {"code": "MOV-11", "name": "Relative Position", "description": "The precise location of units is not tracked; only relative position matters."},
+        {"code": "MOV-12", "name": "Mancala", "description": "Movement is based on the number of units at the starting location."},
+        {"code": "MOV-13", "name": "Chaining", "description": "Pieces are stationary but are built out in chains from existing pieces."},
+        {"code": "MOV-14", "name": "Bias", "description": "Pieces automatically move in a certain direction or movement is easier in one direction."},
+        {"code": "MOV-15", "name": "Moving Multiple Units", "description": "Actions may move one or multiple units simultaneously."},
+        {"code": "MOV-16", "name": "Map Addition", "description": "The map is added to as it is explored."},
+        {"code": "MOV-17", "name": "Map Reduction", "description": "Over the course of the game, the map shrinks."},
+        {"code": "MOV-18", "name": "Map Deformation", "description": "The map is modified during play through rotation or shifts."},
+        {"code": "MOV-19", "name": "Move Through Deck", "description": "Players move through a deck of cards representing locations."},
+        {"code": "MOV-20", "name": "Movement Template", "description": "A defined template determines where a piece can move."},
+        {"code": "MOV-21", "name": "Pieces as Map", "description": "The pieces themselves compose the map."},
+        {"code": "MOV-22", "name": "Multiple Maps", "description": "The game takes place on multiple maps connected at defined points."},
+        {"code": "MOV-23", "name": "Shortcuts", "description": "A shorter route exists that may not always be available."},
+        {"code": "MOV-24", "name": "Hidden Movement", "description": "Movement occurs that is not visible to all players."}
+      ]
+    },
+    {
+      "name": "Area Control",
+      "prefix": "ARC",
+      "mechanisms": [
+        {"code": "ARC-01", "name": "Absolute Control", "description": "One player has absolute control of an area through exclusive occupation."},
+        {"code": "ARC-02", "name": "Area Majority/Influence", "description": "Multiple players may occupy a space; benefits are based on proportional presence."},
+        {"code": "ARC-03", "name": "Troop Types", "description": "Different types of troops or units compete for area control with varying strengths."},
+        {"code": "ARC-04", "name": "Territories and Regions", "description": "Maps exhibit hierarchical relationships among spaces; control of larger areas yields strategic benefits."},
+        {"code": "ARC-05", "name": "Area Parameters", "description": "Parameters assigned to regions impact why players might wish to control them."},
+        {"code": "ARC-06", "name": "Force Projection", "description": "The impact of unit abilities on opponent decision-making even without direct engagement."},
+        {"code": "ARC-07", "name": "Zone of Control", "description": "Spaces adjacent to a unit impact the ability of opposing units to move or attack."},
+        {"code": "ARC-08", "name": "Line of Sight", "description": "Units may only see or target certain areas based on position and obstacles."}
+      ]
+    },
+    {
+      "name": "Set Collection",
+      "prefix": "SET",
+      "mechanisms": [
+        {"code": "SET-01", "name": "Set Valuation", "description": "The mathematical model by which designers assign values to sets of game elements."},
+        {"code": "SET-02", "name": "Tile-Laying", "description": "Set-collection mechanisms with spatial elements; tiles are placed to form patterns."},
+        {"code": "SET-03", "name": "Grid Coverage", "description": "Players cover a grid or fill a space using a variety of shapes."},
+        {"code": "SET-04", "name": "Network Building", "description": "Sets represent ties between nodes, often as routes between destinations."},
+        {"code": "SET-05", "name": "Combo Abilities", "description": "Abilities acquired separately that synergize together for powerful effects."}
+      ]
+    },
+    {
+      "name": "Card Mechanisms",
+      "prefix": "CAR",
+      "mechanisms": [
+        {"code": "CAR-01", "name": "Trick-Taking", "description": "Players play cards in rounds called tricks, each evaluated to determine a winner."},
+        {"code": "CAR-02", "name": "Ladder Climbing", "description": "Players play cards that must beat the previous play in rank or quantity."},
+        {"code": "CAR-03", "name": "Melding", "description": "Cards in a specific relationship form a meld that can be played or scored."},
+        {"code": "CAR-04", "name": "Card Draw, Limits, and Deck Exhaustion", "description": "Games limit the number of cards held and manage drawing and deck depletion."},
+        {"code": "CAR-05", "name": "Deck Building", "description": "Players play from individual decks, improving them over time through card acquisition."},
+        {"code": "CAR-06", "name": "Drafting", "description": "Cards are distributed through an ordered selection process among players."},
+        {"code": "CAR-07", "name": "Deck Construction", "description": "Prior to play, players select the cards that will make up their deck."},
+        {"code": "CAR-08", "name": "Multi-Use Cards", "description": "Multiple actions shown on a card, but only one can be used at a time."},
+        {"code": "CAR-09", "name": "Tags", "description": "Game objects have icons identifying them as belonging to specific categories for combos and scoring."}
+      ]
+    }
+  ]
+}
