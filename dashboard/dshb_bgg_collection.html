@@ -1871,10 +1871,10 @@ function renderInsights() {
   const container = document.getElementById('insights-container');
   if (!STATE.owned) return;
   const insights = [
-    buildPriorityQueue(STATE),
     buildWeightVsEnjoyment(STATE),
     buildOwnedVsWishlist(STATE),
-    buildMechPairs(STATE)
+    buildMechPairs(STATE),
+    buildPriorityQueue(STATE)
   ];
   insights.forEach(ins => {
     const card = document.createElement('div');
