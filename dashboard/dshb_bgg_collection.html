@@ -2948,7 +2948,7 @@ function initZoneChart(scored) {
   tooltip.className = 'is-zone-tooltip';
   document.body.appendChild(tooltip);
 
-  // Place game dots - distribute vertically within zone to avoid overlap
+  // Place game dots - grid layout within each zone to avoid overlap
   const zoneSlots = {};
   games.forEach(g => {
     if (!zoneSlots[g.zoneKey]) zoneSlots[g.zoneKey] = [];
@@ -2958,12 +2958,29 @@ function initZoneChart(scored) {
   Object.values(zoneSlots).forEach(arr => arr.sort((a, b) => a.IS - b.IS));
 
   games.forEach(g => {
+    const zone = zones.find(z => z.key === g.zoneKey);
     const zoneArr = zoneSlots[g.zoneKey];
     const idx = zoneArr.indexOf(g);
-    const rows = Math.min(zoneArr.length, 4);
-    const row = idx % rows;
-    const yPct = 28 + (row / Math.max(rows, 1)) * 50;
-    const xPct = (Math.max(0, Math.min(g.IS, maxIS)) / maxIS) * 100;
+    const count = zoneArr.length;
+
+    // Grid: fill columns top-to-bottom, then left-to-right
+    const maxRows = 5;
+    const cols = Math.ceil(count / maxRows);
+    const col = Math.floor(idx / maxRows);
+    const row = idx % maxRows;
+
+    // X: spread evenly across the zone width with padding
+    const zoneLeft = (zone.min / maxIS) * 100;
+    const zoneWidth = ((Math.min(zone.max, maxIS) - zone.min) / maxIS) * 100;
+    const padX = zoneWidth * 0.08;
+    const usableW = zoneWidth - padX * 2;
+    const xStep = cols > 1 ? usableW / (cols - 1) : 0;
+    const xPct = zoneLeft + padX + col * xStep;
+
+    // Y: spread evenly with padding
+    const rowsInCol = col < cols - 1 ? maxRows : count - col * maxRows;
+    const yStep = rowsInCol > 1 ? 56 / (rowsInCol - 1) : 0;
+    const yPct = 22 + row * yStep;
 
     const dot = document.createElement('div');
     dot.className = 'is-zone-dot';
