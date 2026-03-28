@@ -1634,7 +1634,8 @@ function renderWishlist(state) {
             ${rank !== '—' ? `<span>BGG ${rank}</span>` : ''}
             ${players ? `<span>${players}</span>` : ''}
             ${playtime ? `<span>${playtime}</span>` : ''}
-            ${wlSc ? `<span style="color:var(--amber)">${wlSc}</span>` : ''}
+            ${wlSc ? `<span style="color:${isColor(g.IS)}">${wlSc}</span>` : ''}
+            ${g.feeling ? FEELING_BADGE(g.feeling) : ''}
           </div>
         </div>
       </div>`;
