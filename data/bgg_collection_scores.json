@@ -1,0 +1,2555 @@
+{
+  "owned": {
+    "Arkham Horror: The Card Game": {
+      "name": "Arkham Horror LCG",
+      "type": "co-op",
+      "weight": 3.56,
+      "M": 4,
+      "T": 5,
+      "G": 4,
+      "F": 2,
+      "Ar": 5,
+      "feeling": "Loves it",
+      "mechs": [
+        "CAR-07 Deck Construction",
+        "CAR-08 Multi-Use Cards",
+        "ACT-18 Narrative Choice",
+        "STR-08 Scenario/Campaign",
+        "ACT-12 Variable Player Powers"
+      ]
+    },
+    "Arkham Horror: The Card Game (Revised Core Set)": {
+      "name": "AH:LCG (Revised Core)",
+      "type": "co-op",
+      "weight": 3.75,
+      "M": 4,
+      "T": 5,
+      "G": 4,
+      "F": 2,
+      "Ar": 5,
+      "feeling": "Loves it",
+      "mechs": [
+        "CAR-07 Deck Construction",
+        "CAR-08 Multi-Use Cards",
+        "ACT-18 Narrative Choice",
+        "STR-08 Scenario/Campaign",
+        "ACT-12 Variable Player Powers"
+      ]
+    },
+    "Burgle Bros.": {
+      "name": "Burgle Bros.",
+      "type": "co-op",
+      "weight": 2.31,
+      "M": 3,
+      "T": 4,
+      "G": 3,
+      "F": 1,
+      "Ar": 4,
+      "feeling": "Likes it",
+      "mechs": [
+        "MOV-16 Map Addition",
+        "ACT-01 Action Points",
+        "ACT-12 Variable Player Powers",
+        "UNC-07 Unknown Information"
+      ]
+    },
+    "Cards Against Humanity": {
+      "name": "Cards Against Humanity",
+      "type": "party",
+      "weight": 1.17,
+      "M": 1,
+      "T": 1,
+      "G": 1,
+      "F": 1,
+      "Ar": 1,
+      "feeling": "Has it",
+      "mechs": [
+        "RES-16 Player Judge",
+        "UNC-08 Hidden Information"
+      ]
+    },
+    "Cheating Moth": {
+      "name": "Cheating Moth",
+      "type": "party",
+      "weight": 1.16,
+      "M": 1,
+      "T": 2,
+      "G": 1,
+      "F": 1,
+      "Ar": 2,
+      "feeling": "Has it",
+      "mechs": [
+        "ACT-22 Matching",
+        "UNC-08 Hidden Information"
+      ]
+    },
+    "Cyberion": {
+      "name": "Cyberion",
+      "type": "competitive",
+      "weight": 1.93,
+      "M": 3,
+      "T": 3,
+      "G": 3,
+      "F": 1,
+      "Ar": 4,
+      "feeling": "Likes it",
+      "mechs": [
+        "CAR-08 Multi-Use Cards",
+        "ECO-01 Exchanging",
+        "SET-01 Set Valuation",
+        "SET-05 Combo Abilities"
+      ]
+    },
+    "Deep Sea Adventure": {
+      "name": "Deep Sea Adventure",
+      "type": "competitive",
+      "weight": 1.18,
+      "M": 2,
+      "T": 3,
+      "G": 2,
+      "F": 1,
+      "Ar": 3,
+      "feeling": "Has it",
+      "mechs": [
+        "UNC-02 Push-Your-Luck",
+        "MOV-04 Movement Points",
+        "VIC-10 Exhausting Resources"
+      ]
+    },
+    "Final Girl": {
+      "name": "Final Girl",
+      "type": "solo",
+      "weight": 2.74,
+      "M": 4,
+      "T": 5,
+      "G": 4,
+      "F": 2,
+      "Ar": 5,
+      "feeling": "Loves it",
+      "mechs": [
+        "ACT-01 Action Points",
+        "RES-02 Stat Check",
+        "ACT-12 Variable Player Powers",
+        "ACT-18 Narrative Choice",
+        "UNC-09 Probability Management"
+      ]
+    },
+    "Gloomhaven: Jaws of the Lion": {
+      "name": "Gloomhaven: JotL",
+      "type": "co-op",
+      "weight": 3.64,
+      "M": 4,
+      "T": 4,
+      "G": 4,
+      "F": 2,
+      "Ar": 4,
+      "feeling": "Loves it",
+      "mechs": [
+        "CAR-08 Multi-Use Cards",
+        "ACT-12 Variable Player Powers",
+        "STR-08 Scenario/Campaign",
+        "TRN-09 Simultaneous Action Selection",
+        "ACT-15 Gating and Unlocking"
+      ]
+    },
+    "Harmonies": {
+      "name": "Harmonies",
+      "type": "competitive",
+      "weight": 2.02,
+      "M": 3,
+      "T": 2,
+      "G": 3,
+      "F": 1,
+      "Ar": 4,
+      "feeling": "Likes it",
+      "mechs": [
+        "SET-02 Tile-Laying",
+        "ACT-02 Action Drafting",
+        "SET-01 Set Valuation"
+      ]
+    },
+    "Hotel Lovecraft": {
+      "name": "Hotel Lovecraft",
+      "type": "co-op",
+      "weight": 2.0,
+      "M": 2,
+      "T": 3,
+      "G": 2,
+      "F": 2,
+      "Ar": 3,
+      "feeling": "Has it",
+      "mechs": [
+        "UNC-07 Unknown Information",
+        "ACT-18 Narrative Choice",
+        "RES-02 Stat Check",
+        "ACT-01 Action Points"
+      ]
+    },
+    "In Vino Morte": {
+      "name": "In Vino Morte",
+      "type": "party",
+      "weight": 1.17,
+      "M": 1,
+      "T": 2,
+      "G": 1,
+      "F": 1,
+      "Ar": 3,
+      "feeling": "Has it",
+      "mechs": [
+        "UNC-02 Push-Your-Luck",
+        "UNC-08 Hidden Information"
+      ]
+    },
+    "Moon Adventure": {
+      "name": "Moon Adventure",
+      "type": "co-op",
+      "weight": 2.24,
+      "M": 2,
+      "T": 3,
+      "G": 2,
+      "F": 1,
+      "Ar": 3,
+      "feeling": "Has it",
+      "mechs": [
+        "UNC-02 Push-Your-Luck",
+        "CAR-08 Multi-Use Cards",
+        "ACT-01 Action Points"
+      ]
+    },
+    "Nemesis": {
+      "name": "Nemesis",
+      "type": "semi-coop",
+      "weight": 3.49,
+      "M": 3,
+      "T": 5,
+      "G": 4,
+      "F": 4,
+      "Ar": 4,
+      "feeling": "Loves it",
+      "mechs": [
+        "ACT-01 Action Points",
+        "MOV-16 Map Addition",
+        "UNC-07 Unknown Information",
+        "UNC-08 Hidden Information",
+        "ACT-12 Variable Player Powers"
+      ]
+    },
+    "Paleo": {
+      "name": "Paleo",
+      "type": "co-op",
+      "weight": 2.66,
+      "M": 3,
+      "T": 4,
+      "G": 3,
+      "F": 2,
+      "Ar": 4,
+      "feeling": "Likes it",
+      "mechs": [
+        "UNC-07 Unknown Information",
+        "CAR-08 Multi-Use Cards",
+        "STR-08 Scenario/Campaign",
+        "ACT-01 Action Points"
+      ]
+    },
+    "Rafter Five": {
+      "name": "Rafter Five",
+      "type": "competitive",
+      "weight": 1.07,
+      "M": 2,
+      "T": 2,
+      "G": 2,
+      "F": 1,
+      "Ar": 3,
+      "feeling": "Has it",
+      "mechs": [
+        "SET-01 Set Valuation",
+        "MOV-04 Movement Points",
+        "VIC-07 Race"
+      ]
+    },
+    "Sentinels of the Multiverse: Definitive Edition": {
+      "name": "Sentinels of the Multiverse DE",
+      "type": "co-op",
+      "weight": 2.81,
+      "M": 4,
+      "T": 4,
+      "G": 4,
+      "F": 2,
+      "Ar": 4,
+      "feeling": "Loves it",
+      "mechs": [
+        "ACT-12 Variable Player Powers",
+        "CAR-09 Tags",
+        "SET-05 Combo Abilities",
+        "ACT-01 Action Points"
+      ]
+    },
+    "Skulls of Sedlec": {
+      "name": "Skulls of Sedlec",
+      "type": "competitive",
+      "weight": 1.24,
+      "M": 2,
+      "T": 2,
+      "G": 2,
+      "F": 1,
+      "Ar": 4,
+      "feeling": "Has it",
+      "mechs": [
+        "SET-02 Tile-Laying",
+        "SET-01 Set Valuation"
+      ]
+    },
+    "Sky Team": {
+      "name": "Sky Team",
+      "type": "co-op",
+      "weight": 2.04,
+      "M": 3,
+      "T": 4,
+      "G": 3,
+      "F": 1,
+      "Ar": 5,
+      "feeling": "Loves it",
+      "mechs": [
+        "WPL-04 Workers-As-Dice",
+        "UNC-06 Communication Limits",
+        "TRN-09 Simultaneous Action Selection"
+      ]
+    },
+    "Spirit Island": {
+      "name": "Spirit Island",
+      "type": "co-op",
+      "weight": 4.08,
+      "M": 5,
+      "T": 5,
+      "G": 5,
+      "F": 3,
+      "Ar": 4,
+      "feeling": "Loves it",
+      "mechs": [
+        "ACT-12 Variable Player Powers",
+        "ARC-02 Area Majority/Influence",
+        "ACT-01 Action Points",
+        "CAR-08 Multi-Use Cards",
+        "TRN-09 Simultaneous Action Selection",
+        "ACT-15 Gating and Unlocking"
+      ]
+    },
+    "Sprawlopolis": {
+      "name": "Sprawlopolis",
+      "type": "co-op",
+      "weight": 1.8,
+      "M": 3,
+      "T": 2,
+      "G": 3,
+      "F": 1,
+      "Ar": 3,
+      "feeling": "Has it",
+      "mechs": [
+        "SET-02 Tile-Laying",
+        "CAR-08 Multi-Use Cards",
+        "VIC-01 Victory Points from Game State"
+      ]
+    },
+    "The Bloody Inn": {
+      "name": "The Bloody Inn",
+      "type": "competitive",
+      "weight": 2.35,
+      "M": 3,
+      "T": 4,
+      "G": 3,
+      "F": 1,
+      "Ar": 5,
+      "feeling": "Loves it",
+      "mechs": [
+        "CAR-08 Multi-Use Cards",
+        "SET-01 Set Valuation",
+        "ACT-01 Action Points",
+        "ECO-05 Income"
+      ]
+    },
+    "The Crew: Mission Deep Sea": {
+      "name": "The Crew: Mission Deep Sea",
+      "type": "co-op",
+      "weight": 2.05,
+      "M": 3,
+      "T": 3,
+      "G": 3,
+      "F": 1,
+      "Ar": 3,
+      "feeling": "Likes it",
+      "mechs": [
+        "CAR-01 Trick-Taking",
+        "UNC-06 Communication Limits",
+        "STR-08 Scenario/Campaign"
+      ]
+    },
+    "The Last Lighthouse": {
+      "name": "The Last Lighthouse",
+      "type": "solo",
+      "weight": 1.73,
+      "M": 3,
+      "T": 3,
+      "G": 3,
+      "F": 1,
+      "Ar": 4,
+      "feeling": "Likes it",
+      "mechs": [
+        "ACT-01 Action Points",
+        "SET-02 Tile-Laying",
+        "UNC-09 Probability Management"
+      ]
+    },
+    "Tokyo Highway": {
+      "name": "Tokyo Highway",
+      "type": "competitive",
+      "weight": 1.45,
+      "M": 2,
+      "T": 2,
+      "G": 2,
+      "F": 1,
+      "Ar": 4,
+      "feeling": "Has it",
+      "mechs": [
+        "RES-10 Physical Action",
+        "SET-04 Network Building"
+      ]
+    },
+    "Trails": {
+      "name": "Trails",
+      "type": "competitive",
+      "weight": 1.86,
+      "M": 2,
+      "T": 2,
+      "G": 2,
+      "F": 1,
+      "Ar": 4,
+      "feeling": "Has it",
+      "mechs": [
+        "ECO-01 Exchanging",
+        "SET-01 Set Valuation",
+        "MOV-04 Movement Points"
+      ]
+    },
+    "Under Falling Skies": {
+      "name": "Under Falling Skies",
+      "type": "solo",
+      "weight": 2.4,
+      "M": 4,
+      "T": 4,
+      "G": 4,
+      "F": 1,
+      "Ar": 3,
+      "feeling": "Loves it",
+      "mechs": [
+        "WPL-04 Workers-As-Dice",
+        "ACT-02 Action Drafting",
+        "STR-08 Scenario/Campaign"
+      ]
+    },
+    "Unsurmountable": {
+      "name": "Unsurmountable",
+      "type": "solo",
+      "weight": 1.47,
+      "M": 2,
+      "T": 2,
+      "G": 2,
+      "F": 1,
+      "Ar": 3,
+      "feeling": "Has it",
+      "mechs": [
+        "SET-02 Tile-Laying",
+        "UNC-02 Push-Your-Luck"
+      ]
+    },
+    "Warp's Edge": {
+      "name": "Warp's Edge",
+      "type": "solo",
+      "weight": 2.4,
+      "M": 4,
+      "T": 4,
+      "G": 4,
+      "F": 1,
+      "Ar": 4,
+      "feeling": "Loves it",
+      "mechs": [
+        "UNC-09 Probability Management",
+        "ACT-12 Variable Player Powers",
+        "RES-21 Rerolling and Locking",
+        "ECO-11 Upgrades"
+      ]
+    },
+    "Earthborne Rangers": {
+      "name": "Earthborne Rangers",
+      "type": "co-op",
+      "weight": 3.5,
+      "M": 4,
+      "T": 4,
+      "G": 4,
+      "F": 3,
+      "Ar": 4,
+      "feeling": null,
+      "mechs": [
+        "CAR-07 Deck Construction",
+        "CAR-08 Multi-Use Cards",
+        "ACT-18 Narrative Choice",
+        "STR-08 Scenario/Campaign",
+        "ACT-12 Variable Player Powers",
+        "ACT-15 Gating and Unlocking"
+      ]
+    },
+    "Arkham Horror: The Card Game – Murder at the Excelsior Hotel: Scenario Pack": {
+      "name": "AH:LCG – Murder at the Excelsior Hotel",
+      "type": "co-op",
+      "weight": 3.56,
+      "M": 4,
+      "T": 5,
+      "G": 4,
+      "F": 2,
+      "Ar": 5,
+      "feeling": "Loves it",
+      "mechs": [
+        "CAR-07 Deck Construction",
+        "CAR-08 Multi-Use Cards",
+        "ACT-18 Narrative Choice",
+        "STR-08 Scenario/Campaign",
+        "ACT-12 Variable Player Powers"
+      ]
+    },
+    "Arkham Horror: The Card Game – The Path to Carcosa: Campaign Expansion": {
+      "name": "AH:LCG – Path to Carcosa: Campaign",
+      "type": "co-op",
+      "weight": 3.56,
+      "M": 4,
+      "T": 5,
+      "G": 4,
+      "F": 2,
+      "Ar": 5,
+      "feeling": "Loves it",
+      "mechs": [
+        "CAR-07 Deck Construction",
+        "CAR-08 Multi-Use Cards",
+        "ACT-18 Narrative Choice",
+        "STR-08 Scenario/Campaign",
+        "ACT-12 Variable Player Powers"
+      ]
+    },
+    "Arkham Horror: The Card Game – The Path to Carcosa: Investigator Expansion": {
+      "name": "AH:LCG – Path to Carcosa: Investigator",
+      "type": "co-op",
+      "weight": 3.56,
+      "M": 4,
+      "T": 5,
+      "G": 4,
+      "F": 2,
+      "Ar": 5,
+      "feeling": "Loves it",
+      "mechs": [
+        "CAR-07 Deck Construction",
+        "CAR-08 Multi-Use Cards",
+        "ACT-18 Narrative Choice",
+        "STR-08 Scenario/Campaign",
+        "ACT-12 Variable Player Powers"
+      ]
+    },
+    "Cards Against Humanity: The A.I. Pack": {
+      "name": "CAH: The A.I. Pack",
+      "type": "party",
+      "weight": 1.17,
+      "M": 1,
+      "T": 1,
+      "G": 1,
+      "F": 1,
+      "Ar": 1,
+      "feeling": "Has it",
+      "mechs": [
+        "RES-16 Player Judge",
+        "UNC-08 Hidden Information"
+      ]
+    },
+    "Final Girl: Hell to Pay": {
+      "name": "Final Girl: Hell to Pay",
+      "type": "solo",
+      "weight": 2.74,
+      "M": 4,
+      "T": 5,
+      "G": 4,
+      "F": 2,
+      "Ar": 5,
+      "feeling": "Loves it",
+      "mechs": [
+        "ACT-01 Action Points",
+        "RES-02 Stat Check",
+        "ACT-12 Variable Player Powers",
+        "ACT-18 Narrative Choice",
+        "UNC-09 Probability Management"
+      ]
+    },
+    "Final Girl: Into the Void": {
+      "name": "Final Girl: Into the Void",
+      "type": "solo",
+      "weight": 2.74,
+      "M": 4,
+      "T": 5,
+      "G": 4,
+      "F": 2,
+      "Ar": 5,
+      "feeling": "Loves it",
+      "mechs": [
+        "ACT-01 Action Points",
+        "RES-02 Stat Check",
+        "ACT-12 Variable Player Powers",
+        "ACT-18 Narrative Choice",
+        "UNC-09 Probability Management"
+      ]
+    },
+    "Final Girl: Madness in the Dark": {
+      "name": "Final Girl: Madness in the Dark",
+      "type": "solo",
+      "weight": 2.74,
+      "M": 4,
+      "T": 5,
+      "G": 4,
+      "F": 2,
+      "Ar": 5,
+      "feeling": "Loves it",
+      "mechs": [
+        "ACT-01 Action Points",
+        "RES-02 Stat Check",
+        "ACT-12 Variable Player Powers",
+        "ACT-18 Narrative Choice",
+        "UNC-09 Probability Management"
+      ]
+    },
+    "Final Girl: Panic at Station 2891": {
+      "name": "Final Girl: Panic at Station 2891",
+      "type": "solo",
+      "weight": 2.74,
+      "M": 4,
+      "T": 5,
+      "G": 4,
+      "F": 2,
+      "Ar": 5,
+      "feeling": "Loves it",
+      "mechs": [
+        "ACT-01 Action Points",
+        "RES-02 Stat Check",
+        "ACT-12 Variable Player Powers",
+        "ACT-18 Narrative Choice",
+        "UNC-09 Probability Management"
+      ]
+    },
+    "The Bloody Inn: The Carnies": {
+      "name": "The Bloody Inn: The Carnies",
+      "type": "competitive",
+      "weight": 2.35,
+      "M": 3,
+      "T": 4,
+      "G": 3,
+      "F": 1,
+      "Ar": 5,
+      "feeling": "Loves it",
+      "mechs": [
+        "CAR-08 Multi-Use Cards",
+        "SET-01 Set Valuation",
+        "ACT-01 Action Points",
+        "ECO-05 Income"
+      ]
+    },
+    "The Last Lighthouse: Expansion Collection": {
+      "name": "The Last Lighthouse: Expansion Collection",
+      "type": "solo",
+      "weight": 1.73,
+      "M": 3,
+      "T": 3,
+      "G": 3,
+      "F": 1,
+      "Ar": 4,
+      "feeling": "Likes it",
+      "mechs": [
+        "ACT-01 Action Points",
+        "SET-02 Tile-Laying",
+        "UNC-09 Probability Management"
+      ]
+    }
+  },
+  "wishlist": {
+    "Mage Knight Board Game": {
+      "name": "Mage Knight",
+      "type": "solo",
+      "weight": 4.38,
+      "M": 5,
+      "T": 3,
+      "G": 5,
+      "F": 5,
+      "Ar": 3,
+      "feeling": null,
+      "mechs": [
+        "CAR-07 Deck Construction",
+        "ACT-01 Action Points",
+        "MOV-02 Grid Movement",
+        "STR-08 Scenario/Campaign",
+        "ACT-12 Variable Player Powers",
+        "ECO-11 Upgrades"
+      ]
+    },
+    "ROVE: Results-Oriented Versatile Explorer": {
+      "name": "ROVE",
+      "type": "solo",
+      "weight": 1.97,
+      "M": 2,
+      "T": 2,
+      "G": 3,
+      "F": 1,
+      "Ar": 3,
+      "feeling": null,
+      "mechs": [
+        "ACT-01 Action Points",
+        "UNC-09 Probability Management",
+        "SET-02 Tile-Laying"
+      ]
+    },
+    "SETI: Search for Extraterrestrial Intelligence": {
+      "name": "SETI",
+      "type": "competitive",
+      "weight": 3.82,
+      "M": 4,
+      "T": 3,
+      "G": 4,
+      "F": 3,
+      "Ar": 4,
+      "feeling": null,
+      "mechs": [
+        "WPL-01 Worker Placement",
+        "ECO-05 Income",
+        "SET-01 Set Valuation",
+        "VIC-01 Victory Points from Game State",
+        "ACT-15 Gating and Unlocking"
+      ]
+    },
+    "Speakeasy": {
+      "name": "Speakeasy",
+      "type": "competitive",
+      "weight": 4.41,
+      "M": 4,
+      "T": 3,
+      "G": 4,
+      "F": 3,
+      "Ar": 4,
+      "feeling": null,
+      "mechs": [
+        "WPL-01 Worker Placement",
+        "ECO-05 Income",
+        "ARC-01 Area Control",
+        "UNC-08 Hidden Information"
+      ]
+    },
+    "Anachrony": {
+      "name": "Anachrony",
+      "type": "competitive",
+      "weight": 4.0,
+      "M": 5,
+      "T": 3,
+      "G": 4,
+      "F": 4,
+      "Ar": 4,
+      "feeling": null,
+      "mechs": [
+        "WPL-01 Worker Placement",
+        "ECO-11 Upgrades",
+        "STR-01 Asymmetric Game",
+        "ACT-02 Action Drafting",
+        "TRN-05 Round/Phase Structure"
+      ]
+    },
+    "Arkham Noir: Case #1 – The Witch Cult Murders": {
+      "name": "Arkham Noir #1",
+      "type": "solo",
+      "weight": 2.23,
+      "M": 3,
+      "T": 4,
+      "G": 3,
+      "F": 1,
+      "Ar": 4,
+      "feeling": null,
+      "mechs": [
+        "CAR-02 Hand Management",
+        "SET-01 Set Valuation",
+        "ACT-18 Narrative Choice",
+        "STR-08 Scenario/Campaign"
+      ]
+    },
+    "Burgle Bros 2: The Casino Capers": {
+      "name": "Burgle Bros 2",
+      "type": "co-op",
+      "weight": 2.5,
+      "M": 3,
+      "T": 4,
+      "G": 3,
+      "F": 2,
+      "Ar": 4,
+      "feeling": null,
+      "mechs": [
+        "MOV-16 Map Addition",
+        "ACT-01 Action Points",
+        "ACT-12 Variable Player Powers",
+        "UNC-07 Unknown Information",
+        "UNC-08 Hidden Information"
+      ]
+    },
+    "Coffee Roaster": {
+      "name": "Coffee Roaster",
+      "type": "solo",
+      "weight": 2.17,
+      "M": 3,
+      "T": 2,
+      "G": 3,
+      "F": 1,
+      "Ar": 3,
+      "feeling": null,
+      "mechs": [
+        "CAR-06 Deckbuilding",
+        "UNC-09 Probability Management",
+        "SET-01 Set Valuation"
+      ]
+    },
+    "Cthulhu: Death May Die": {
+      "name": "Cthulhu: Death May Die",
+      "type": "co-op",
+      "weight": 2.5,
+      "M": 3,
+      "T": 4,
+      "G": 3,
+      "F": 4,
+      "Ar": 4,
+      "feeling": null,
+      "mechs": [
+        "RES-03 Dice Rolling",
+        "ACT-01 Action Points",
+        "MOV-02 Grid Movement",
+        "ACT-12 Variable Player Powers",
+        "STR-08 Scenario/Campaign"
+      ]
+    },
+    "Daybreak": {
+      "name": "Daybreak",
+      "type": "co-op",
+      "weight": 2.86,
+      "M": 3,
+      "T": 3,
+      "G": 3,
+      "F": 2,
+      "Ar": 4,
+      "feeling": null,
+      "mechs": [
+        "ACT-01 Action Points",
+        "ECO-01 Exchanging",
+        "TRN-09 Simultaneous Action Selection",
+        "VIC-10 Exhausting Resources"
+      ]
+    },
+    "EXIT: The Game – The Abandoned Cabin": {
+      "name": "EXIT: Abandoned Cabin",
+      "type": "co-op",
+      "weight": 2.54,
+      "M": 2,
+      "T": 3,
+      "G": 3,
+      "F": 2,
+      "Ar": 3,
+      "feeling": null,
+      "mechs": [
+        "ACT-18 Narrative Choice",
+        "UNC-07 Unknown Information"
+      ]
+    },
+    "Gaia Project": {
+      "name": "Gaia Project",
+      "type": "competitive",
+      "weight": 4.4,
+      "M": 5,
+      "T": 2,
+      "G": 5,
+      "F": 3,
+      "Ar": 3,
+      "feeling": null,
+      "mechs": [
+        "SET-04 Network Building",
+        "STR-01 Asymmetric Game",
+        "ECO-05 Income",
+        "ACT-02 Action Drafting",
+        "VIC-01 Victory Points from Game State",
+        "ECO-11 Upgrades"
+      ]
+    },
+    "Horrified: World of Monsters": {
+      "name": "Horrified: World of Monsters",
+      "type": "co-op",
+      "weight": 2.0,
+      "M": 2,
+      "T": 3,
+      "G": 2,
+      "F": 2,
+      "Ar": 4,
+      "feeling": null,
+      "mechs": [
+        "ACT-01 Action Points",
+        "MOV-02 Grid Movement",
+        "ACT-12 Variable Player Powers"
+      ]
+    },
+    "Imperium: Horizons": {
+      "name": "Imperium: Horizons",
+      "type": "competitive",
+      "weight": 3.98,
+      "M": 4,
+      "T": 3,
+      "G": 4,
+      "F": 3,
+      "Ar": 4,
+      "feeling": null,
+      "mechs": [
+        "CAR-06 Deckbuilding",
+        "STR-01 Asymmetric Game",
+        "ECO-05 Income",
+        "ACT-15 Gating and Unlocking"
+      ]
+    },
+    "It's a Wonderful World": {
+      "name": "It's a Wonderful World",
+      "type": "competitive",
+      "weight": 2.33,
+      "M": 3,
+      "T": 2,
+      "G": 3,
+      "F": 1,
+      "Ar": 3,
+      "feeling": null,
+      "mechs": [
+        "CAR-03 Card Drafting",
+        "ECO-05 Income",
+        "SET-05 Combo Abilities",
+        "VIC-01 Victory Points from Game State"
+      ]
+    },
+    "Kanban EV": {
+      "name": "Kanban EV",
+      "type": "competitive",
+      "weight": 4.3,
+      "M": 5,
+      "T": 2,
+      "G": 4,
+      "F": 3,
+      "Ar": 3,
+      "feeling": null,
+      "mechs": [
+        "WPL-01 Worker Placement",
+        "ECO-05 Income",
+        "TRN-05 Round/Phase Structure",
+        "ECO-11 Upgrades",
+        "ACT-02 Action Drafting"
+      ]
+    },
+    "The LOOP": {
+      "name": "The LOOP",
+      "type": "co-op",
+      "weight": 2.8,
+      "M": 3,
+      "T": 3,
+      "G": 3,
+      "F": 2,
+      "Ar": 4,
+      "feeling": null,
+      "mechs": [
+        "ACT-01 Action Points",
+        "ACT-12 Variable Player Powers",
+        "STR-08 Scenario/Campaign"
+      ]
+    },
+    "Nemesis: Retaliation": {
+      "name": "Nemesis: Retaliation",
+      "type": "semi-coop",
+      "weight": 3.73,
+      "M": 3,
+      "T": 5,
+      "G": 4,
+      "F": 4,
+      "Ar": 4,
+      "feeling": null,
+      "mechs": [
+        "ACT-01 Action Points",
+        "MOV-16 Map Addition",
+        "UNC-07 Unknown Information",
+        "UNC-08 Hidden Information",
+        "ACT-12 Variable Player Powers"
+      ]
+    },
+    "On Mars": {
+      "name": "On Mars",
+      "type": "competitive",
+      "weight": 4.63,
+      "M": 5,
+      "T": 3,
+      "G": 4,
+      "F": 4,
+      "Ar": 5,
+      "feeling": null,
+      "mechs": [
+        "WPL-01 Worker Placement",
+        "ECO-11 Upgrades",
+        "SET-04 Network Building",
+        "TRN-05 Round/Phase Structure",
+        "ECO-05 Income"
+      ]
+    },
+    "Paperback: 10th Anniversary Edition": {
+      "name": "Paperback 10th Ann.",
+      "type": "competitive",
+      "weight": 2.29,
+      "M": 3,
+      "T": 2,
+      "G": 3,
+      "F": 1,
+      "Ar": 3,
+      "feeling": null,
+      "mechs": [
+        "CAR-07 Deck Construction",
+        "CAR-06 Deckbuilding",
+        "SET-01 Set Valuation"
+      ]
+    },
+    "Regicide": {
+      "name": "Regicide",
+      "type": "co-op",
+      "weight": 1.98,
+      "M": 2,
+      "T": 2,
+      "G": 2,
+      "F": 1,
+      "Ar": 3,
+      "feeling": null,
+      "mechs": [
+        "CAR-02 Hand Management",
+        "SET-05 Combo Abilities"
+      ]
+    },
+    "Resist!": {
+      "name": "Resist!",
+      "type": "solo",
+      "weight": 2.28,
+      "M": 2,
+      "T": 3,
+      "G": 3,
+      "F": 1,
+      "Ar": 3,
+      "feeling": null,
+      "mechs": [
+        "CAR-02 Hand Management",
+        "UNC-09 Probability Management",
+        "ACT-18 Narrative Choice"
+      ]
+    },
+    "ROVE: Expansion Collection": {
+      "name": "ROVE: Expansion Collection",
+      "type": "solo",
+      "weight": 0,
+      "M": 2,
+      "T": 2,
+      "G": 3,
+      "F": 1,
+      "Ar": 3,
+      "feeling": null,
+      "mechs": [
+        "ACT-01 Action Points",
+        "UNC-09 Probability Management",
+        "SET-02 Tile-Laying"
+      ]
+    },
+    "Sleeping Gods": {
+      "name": "Sleeping Gods",
+      "type": "co-op",
+      "weight": 3.27,
+      "M": 4,
+      "T": 5,
+      "G": 4,
+      "F": 3,
+      "Ar": 5,
+      "feeling": null,
+      "mechs": [
+        "ACT-18 Narrative Choice",
+        "MOV-01 Point-to-Point Movement",
+        "STR-08 Scenario/Campaign",
+        "ACT-12 Variable Player Powers",
+        "CAR-02 Hand Management"
+      ]
+    },
+    "Trailblazers": {
+      "name": "Trailblazers",
+      "type": "competitive",
+      "weight": 1.8,
+      "M": 2,
+      "T": 2,
+      "G": 3,
+      "F": 1,
+      "Ar": 3,
+      "feeling": null,
+      "mechs": [
+        "CAR-03 Card Drafting",
+        "SET-04 Network Building",
+        "VIC-07 Race"
+      ]
+    },
+    "Unconscious Mind": {
+      "name": "Unconscious Mind",
+      "type": "competitive",
+      "weight": 4.02,
+      "M": 4,
+      "T": 3,
+      "G": 4,
+      "F": 3,
+      "Ar": 4,
+      "feeling": null,
+      "mechs": [
+        "WPL-01 Worker Placement",
+        "ACT-02 Action Drafting",
+        "ECO-05 Income",
+        "SET-05 Combo Abilities"
+      ]
+    },
+    "Vantage": {
+      "name": "Vantage",
+      "type": "competitive",
+      "weight": 2.33,
+      "M": 3,
+      "T": 2,
+      "G": 3,
+      "F": 1,
+      "Ar": 3,
+      "feeling": null,
+      "mechs": [
+        "SET-02 Tile-Laying",
+        "ARC-02 Area Majority/Influence"
+      ]
+    },
+    "The White Castle": {
+      "name": "The White Castle",
+      "type": "competitive",
+      "weight": 3.05,
+      "M": 3,
+      "T": 2,
+      "G": 4,
+      "F": 2,
+      "Ar": 4,
+      "feeling": null,
+      "mechs": [
+        "WPL-04 Workers-As-Dice",
+        "ACT-02 Action Drafting",
+        "VIC-01 Victory Points from Game State"
+      ]
+    },
+    "Apiary": {
+      "name": "Apiary",
+      "type": "competitive",
+      "weight": 3.01,
+      "M": 3,
+      "T": 2,
+      "G": 3,
+      "F": 2,
+      "Ar": 5,
+      "feeling": null,
+      "mechs": [
+        "WPL-01 Worker Placement",
+        "ECO-11 Upgrades",
+        "ACT-15 Gating and Unlocking"
+      ]
+    },
+    "Arcs": {
+      "name": "Arcs",
+      "type": "competitive",
+      "weight": 3.43,
+      "M": 4,
+      "T": 4,
+      "G": 4,
+      "F": 3,
+      "Ar": 4,
+      "feeling": null,
+      "mechs": [
+        "CAR-08 Multi-Use Cards",
+        "ACT-18 Narrative Choice",
+        "STR-01 Asymmetric Game",
+        "ARC-01 Area Control",
+        "ECO-05 Income"
+      ]
+    },
+    "Arkham Horror: The Card Game – Curse of the Rougarou: Scenario Pack": {
+      "name": "AH:LCG – Curse of the Rougarou",
+      "type": "co-op",
+      "weight": 0,
+      "M": 4,
+      "T": 5,
+      "G": 4,
+      "F": 2,
+      "Ar": 5,
+      "feeling": null,
+      "mechs": [
+        "CAR-07 Deck Construction",
+        "CAR-08 Multi-Use Cards",
+        "ACT-18 Narrative Choice",
+        "STR-08 Scenario/Campaign"
+      ]
+    },
+    "Arkham Horror: The Card Game – The Circle Undone: Campaign Expansion": {
+      "name": "AH:LCG – Circle Undone",
+      "type": "co-op",
+      "weight": 0,
+      "M": 4,
+      "T": 5,
+      "G": 4,
+      "F": 2,
+      "Ar": 5,
+      "feeling": null,
+      "mechs": [
+        "CAR-07 Deck Construction",
+        "CAR-08 Multi-Use Cards",
+        "ACT-18 Narrative Choice",
+        "STR-08 Scenario/Campaign"
+      ]
+    },
+    "Arkham Horror: The Card Game – The Dream-Eaters: Campaign Expansion": {
+      "name": "AH:LCG – Dream-Eaters",
+      "type": "co-op",
+      "weight": 0,
+      "M": 4,
+      "T": 5,
+      "G": 4,
+      "F": 2,
+      "Ar": 5,
+      "feeling": null,
+      "mechs": [
+        "CAR-07 Deck Construction",
+        "CAR-08 Multi-Use Cards",
+        "ACT-18 Narrative Choice",
+        "STR-08 Scenario/Campaign"
+      ]
+    },
+    "Arkham Horror: The Card Game – The Forgotten Age: Campaign Expansion": {
+      "name": "AH:LCG – Forgotten Age",
+      "type": "co-op",
+      "weight": 0,
+      "M": 4,
+      "T": 5,
+      "G": 4,
+      "F": 2,
+      "Ar": 5,
+      "feeling": null,
+      "mechs": [
+        "CAR-07 Deck Construction",
+        "CAR-08 Multi-Use Cards",
+        "ACT-18 Narrative Choice",
+        "STR-08 Scenario/Campaign",
+        "ACT-12 Variable Player Powers"
+      ]
+    },
+    "Barcelona": {
+      "name": "Barcelona",
+      "type": "competitive",
+      "weight": 3.36,
+      "M": 3,
+      "T": 2,
+      "G": 4,
+      "F": 2,
+      "Ar": 5,
+      "feeling": null,
+      "mechs": [
+        "WPL-01 Worker Placement",
+        "SET-04 Network Building",
+        "VIC-01 Victory Points from Game State"
+      ]
+    },
+    "Barcelona: Passeig de Gràcia": {
+      "name": "Barcelona: Passeig de Gràcia",
+      "type": "competitive",
+      "weight": 0,
+      "M": 3,
+      "T": 2,
+      "G": 4,
+      "F": 2,
+      "Ar": 5,
+      "feeling": null,
+      "mechs": [
+        "WPL-01 Worker Placement",
+        "SET-04 Network Building",
+        "VIC-01 Victory Points from Game State"
+      ]
+    },
+    "Beast": {
+      "name": "Beast",
+      "type": "competitive",
+      "weight": 3.05,
+      "M": 3,
+      "T": 4,
+      "G": 4,
+      "F": 2,
+      "Ar": 4,
+      "feeling": null,
+      "mechs": [
+        "STR-01 Asymmetric Game",
+        "MOV-02 Grid Movement",
+        "UNC-08 Hidden Information",
+        "ARC-01 Area Control"
+      ]
+    },
+    "Endeavor: Deep Sea": {
+      "name": "Endeavor: Deep Sea",
+      "type": "competitive",
+      "weight": 2.92,
+      "M": 3,
+      "T": 3,
+      "G": 3,
+      "F": 2,
+      "Ar": 5,
+      "feeling": null,
+      "mechs": [
+        "ACT-02 Action Drafting",
+        "ECO-05 Income",
+        "SET-04 Network Building",
+        "VIC-01 Victory Points from Game State"
+      ]
+    },
+    "Everdell Farshore": {
+      "name": "Everdell Farshore",
+      "type": "competitive",
+      "weight": 2.84,
+      "M": 3,
+      "T": 3,
+      "G": 3,
+      "F": 2,
+      "Ar": 5,
+      "feeling": null,
+      "mechs": [
+        "WPL-01 Worker Placement",
+        "CAR-02 Hand Management",
+        "SET-05 Combo Abilities",
+        "ACT-15 Gating and Unlocking"
+      ]
+    },
+    "For the Queen": {
+      "name": "For the Queen",
+      "type": "co-op",
+      "weight": 1.08,
+      "M": 1,
+      "T": 3,
+      "G": 2,
+      "F": 1,
+      "Ar": 3,
+      "feeling": null,
+      "mechs": [
+        "ACT-18 Narrative Choice",
+        "RES-16 Player Judge"
+      ]
+    },
+    "Galactic Cruise": {
+      "name": "Galactic Cruise",
+      "type": "competitive",
+      "weight": 3.96,
+      "M": 4,
+      "T": 3,
+      "G": 4,
+      "F": 3,
+      "Ar": 5,
+      "feeling": null,
+      "mechs": [
+        "WPL-01 Worker Placement",
+        "ECO-05 Income",
+        "SET-05 Combo Abilities",
+        "ECO-11 Upgrades"
+      ]
+    },
+    "The Gallerist": {
+      "name": "The Gallerist",
+      "type": "competitive",
+      "weight": 4.21,
+      "M": 5,
+      "T": 2,
+      "G": 4,
+      "F": 3,
+      "Ar": 4,
+      "feeling": null,
+      "mechs": [
+        "WPL-01 Worker Placement",
+        "ECO-03 Market",
+        "ECO-01 Exchanging",
+        "TRN-05 Round/Phase Structure"
+      ]
+    },
+    "Gloomhaven: Buttons & Bugs": {
+      "name": "GH: Buttons & Bugs",
+      "type": "solo",
+      "weight": 3.32,
+      "M": 4,
+      "T": 4,
+      "G": 4,
+      "F": 2,
+      "Ar": 4,
+      "feeling": null,
+      "mechs": [
+        "CAR-08 Multi-Use Cards",
+        "ACT-12 Variable Player Powers",
+        "STR-08 Scenario/Campaign",
+        "TRN-09 Simultaneous Action Selection"
+      ]
+    },
+    "Heat: Pedal to the Metal": {
+      "name": "Heat",
+      "type": "competitive",
+      "weight": 2.2,
+      "M": 3,
+      "T": 3,
+      "G": 3,
+      "F": 1,
+      "Ar": 4,
+      "feeling": null,
+      "mechs": [
+        "CAR-08 Multi-Use Cards",
+        "UNC-02 Push-Your-Luck",
+        "VIC-07 Race",
+        "ACT-02 Action Drafting"
+      ]
+    },
+    "Hegemony: Lead Your Class to Victory": {
+      "name": "Hegemony",
+      "type": "competitive",
+      "weight": 4.26,
+      "M": 4,
+      "T": 4,
+      "G": 4,
+      "F": 4,
+      "Ar": 3,
+      "feeling": null,
+      "mechs": [
+        "STR-01 Asymmetric Game",
+        "ECO-03 Market",
+        "ARC-02 Area Majority/Influence",
+        "ECO-05 Income",
+        "ACT-02 Action Drafting"
+      ]
+    },
+    "Men-Nefer": {
+      "name": "Men-Nefer",
+      "type": "competitive",
+      "weight": 3.71,
+      "M": 4,
+      "T": 2,
+      "G": 4,
+      "F": 3,
+      "Ar": 4,
+      "feeling": null,
+      "mechs": [
+        "WPL-01 Worker Placement",
+        "ARC-02 Area Majority/Influence",
+        "ECO-05 Income",
+        "SET-02 Tile-Laying"
+      ]
+    },
+    "MicroMacro: Crime City": {
+      "name": "MicroMacro",
+      "type": "co-op",
+      "weight": 1.1,
+      "M": 1,
+      "T": 3,
+      "G": 2,
+      "F": 1,
+      "Ar": 4,
+      "feeling": null,
+      "mechs": [
+        "ACT-18 Narrative Choice",
+        "UNC-07 Unknown Information"
+      ]
+    },
+    "Nautilion": {
+      "name": "Nautilion",
+      "type": "solo",
+      "weight": 1.87,
+      "M": 2,
+      "T": 3,
+      "G": 2,
+      "F": 1,
+      "Ar": 3,
+      "feeling": null,
+      "mechs": [
+        "UNC-09 Probability Management",
+        "UNC-02 Push-Your-Luck",
+        "RES-03 Dice Rolling"
+      ]
+    },
+    "Onirim (Second Edition)": {
+      "name": "Onirim",
+      "type": "solo",
+      "weight": 1.61,
+      "M": 2,
+      "T": 2,
+      "G": 2,
+      "F": 1,
+      "Ar": 3,
+      "feeling": null,
+      "mechs": [
+        "CAR-02 Hand Management",
+        "UNC-09 Probability Management",
+        "SET-01 Set Valuation"
+      ]
+    },
+    "The Quiet Year": {
+      "name": "The Quiet Year",
+      "type": "co-op",
+      "weight": 1.38,
+      "M": 2,
+      "T": 3,
+      "G": 3,
+      "F": 1,
+      "Ar": 3,
+      "feeling": null,
+      "mechs": [
+        "ACT-18 Narrative Choice",
+        "SET-02 Tile-Laying",
+        "RES-16 Player Judge"
+      ]
+    },
+    "Ra": {
+      "name": "Ra",
+      "type": "competitive",
+      "weight": 2.31,
+      "M": 3,
+      "T": 2,
+      "G": 3,
+      "F": 1,
+      "Ar": 3,
+      "feeling": null,
+      "mechs": [
+        "ECO-04 Auction/Bidding",
+        "SET-01 Set Valuation",
+        "TRN-01 Turn Order"
+      ]
+    },
+    "Root": {
+      "name": "Root",
+      "type": "competitive",
+      "weight": 3.84,
+      "M": 4,
+      "T": 4,
+      "G": 4,
+      "F": 3,
+      "Ar": 5,
+      "feeling": null,
+      "mechs": [
+        "STR-01 Asymmetric Game",
+        "ARC-01 Area Control",
+        "CAR-02 Hand Management",
+        "ECO-05 Income",
+        "ACT-12 Variable Player Powers"
+      ]
+    },
+    "Slay the Spire: The Board Game": {
+      "name": "Slay the Spire",
+      "type": "co-op",
+      "weight": 2.91,
+      "M": 4,
+      "T": 3,
+      "G": 4,
+      "F": 2,
+      "Ar": 4,
+      "feeling": null,
+      "mechs": [
+        "CAR-07 Deck Construction",
+        "SET-05 Combo Abilities",
+        "ACT-12 Variable Player Powers",
+        "ACT-15 Gating and Unlocking"
+      ]
+    },
+    "Star Wars: Rebellion": {
+      "name": "Star Wars: Rebellion",
+      "type": "competitive",
+      "weight": 3.75,
+      "M": 4,
+      "T": 4,
+      "G": 5,
+      "F": 4,
+      "Ar": 5,
+      "feeling": null,
+      "mechs": [
+        "STR-01 Asymmetric Game",
+        "MOV-01 Point-to-Point Movement",
+        "UNC-08 Hidden Information",
+        "ACT-12 Variable Player Powers",
+        "ARC-01 Area Control"
+      ]
+    },
+    "Thunder Road: Vendetta": {
+      "name": "Thunder Road",
+      "type": "competitive",
+      "weight": 1.98,
+      "M": 2,
+      "T": 3,
+      "G": 3,
+      "F": 1,
+      "Ar": 4,
+      "feeling": null,
+      "mechs": [
+        "RES-03 Dice Rolling",
+        "MOV-04 Movement Points",
+        "VIC-07 Race",
+        "ARC-01 Area Control"
+      ]
+    },
+    "5 Towers": {
+      "name": "5 Towers",
+      "type": "competitive",
+      "weight": 1.25,
+      "M": 2,
+      "T": 1,
+      "G": 2,
+      "F": 1,
+      "Ar": 2,
+      "feeling": null,
+      "mechs": [
+        "CAR-01 Trick-Taking",
+        "SET-01 Set Valuation"
+      ]
+    },
+    "51st State: Ultimate Edition": {
+      "name": "51st State: UE",
+      "type": "competitive",
+      "weight": 2.73,
+      "M": 3,
+      "T": 3,
+      "G": 3,
+      "F": 2,
+      "Ar": 3,
+      "feeling": null,
+      "mechs": [
+        "CAR-08 Multi-Use Cards",
+        "ECO-01 Exchanging",
+        "ARC-02 Area Majority/Influence",
+        "SET-05 Combo Abilities"
+      ]
+    },
+    "Bloc by Bloc: Uprising": {
+      "name": "Bloc by Bloc",
+      "type": "co-op",
+      "weight": 2.58,
+      "M": 3,
+      "T": 4,
+      "G": 3,
+      "F": 2,
+      "Ar": 3,
+      "feeling": null,
+      "mechs": [
+        "ARC-01 Area Control",
+        "ACT-01 Action Points",
+        "MOV-02 Grid Movement",
+        "STR-08 Scenario/Campaign"
+      ]
+    },
+    "Café": {
+      "name": "Café",
+      "type": "competitive",
+      "weight": 2.05,
+      "M": 2,
+      "T": 2,
+      "G": 2,
+      "F": 1,
+      "Ar": 3,
+      "feeling": null,
+      "mechs": [
+        "SET-05 Combo Abilities",
+        "ECO-05 Income",
+        "CAR-02 Hand Management"
+      ]
+    },
+    "Canvas": {
+      "name": "Canvas",
+      "type": "competitive",
+      "weight": 1.73,
+      "M": 2,
+      "T": 1,
+      "G": 2,
+      "F": 1,
+      "Ar": 5,
+      "feeling": null,
+      "mechs": [
+        "CAR-03 Card Drafting",
+        "SET-01 Set Valuation"
+      ]
+    },
+    "Count of the Nine Estates": {
+      "name": "Count of Nine Estates",
+      "type": "solo",
+      "weight": 2.42,
+      "M": 2,
+      "T": 2,
+      "G": 3,
+      "F": 1,
+      "Ar": 3,
+      "feeling": null,
+      "mechs": [
+        "CAR-02 Hand Management",
+        "SET-01 Set Valuation",
+        "UNC-09 Probability Management"
+      ]
+    },
+    "Deckers": {
+      "name": "Deckers",
+      "type": "competitive",
+      "weight": 3.79,
+      "M": 3,
+      "T": 3,
+      "G": 4,
+      "F": 2,
+      "Ar": 4,
+      "feeling": null,
+      "mechs": [
+        "CAR-07 Deck Construction",
+        "SET-05 Combo Abilities",
+        "ACT-12 Variable Player Powers"
+      ]
+    },
+    "Don't wake up Cthulhu!": {
+      "name": "Don't Wake Cthulhu",
+      "type": "party",
+      "weight": 1.4,
+      "M": 1,
+      "T": 2,
+      "G": 1,
+      "F": 1,
+      "Ar": 3,
+      "feeling": null,
+      "mechs": [
+        "RES-10 Physical Action",
+        "UNC-02 Push-Your-Luck"
+      ]
+    },
+    "Dustrunner": {
+      "name": "Dustrunner",
+      "type": "solo",
+      "weight": 1.8,
+      "M": 2,
+      "T": 3,
+      "G": 2,
+      "F": 1,
+      "Ar": 3,
+      "feeling": null,
+      "mechs": [
+        "RES-03 Dice Rolling",
+        "UNC-09 Probability Management",
+        "ACT-01 Action Points"
+      ]
+    },
+    "Entropy": {
+      "name": "Entropy",
+      "type": "competitive",
+      "weight": 3.43,
+      "M": 3,
+      "T": 2,
+      "G": 4,
+      "F": 2,
+      "Ar": 3,
+      "feeling": null,
+      "mechs": [
+        "SET-02 Tile-Laying",
+        "ARC-02 Area Majority/Influence",
+        "ACT-02 Action Drafting"
+      ]
+    },
+    "Ex Libris": {
+      "name": "Ex Libris",
+      "type": "competitive",
+      "weight": 2.53,
+      "M": 3,
+      "T": 2,
+      "G": 3,
+      "F": 2,
+      "Ar": 4,
+      "feeling": null,
+      "mechs": [
+        "WPL-01 Worker Placement",
+        "SET-01 Set Valuation",
+        "ACT-12 Variable Player Powers"
+      ]
+    },
+    "Fantastic Factories": {
+      "name": "Fantastic Factories",
+      "type": "competitive",
+      "weight": 2.23,
+      "M": 3,
+      "T": 2,
+      "G": 3,
+      "F": 1,
+      "Ar": 3,
+      "feeling": null,
+      "mechs": [
+        "WPL-04 Workers-As-Dice",
+        "ECO-11 Upgrades",
+        "SET-05 Combo Abilities"
+      ]
+    },
+    "First Ascent": {
+      "name": "First Ascent",
+      "type": "competitive",
+      "weight": 2.85,
+      "M": 3,
+      "T": 3,
+      "G": 3,
+      "F": 1,
+      "Ar": 4,
+      "feeling": null,
+      "mechs": [
+        "CAR-02 Hand Management",
+        "ACT-01 Action Points",
+        "VIC-07 Race",
+        "MOV-04 Movement Points"
+      ]
+    },
+    "Flamecraft": {
+      "name": "Flamecraft",
+      "type": "competitive",
+      "weight": 2.18,
+      "M": 2,
+      "T": 3,
+      "G": 2,
+      "F": 1,
+      "Ar": 5,
+      "feeling": null,
+      "mechs": [
+        "WPL-01 Worker Placement",
+        "ECO-01 Exchanging",
+        "SET-05 Combo Abilities"
+      ]
+    },
+    "Ghost Stories": {
+      "name": "Ghost Stories",
+      "type": "co-op",
+      "weight": 2.91,
+      "M": 3,
+      "T": 4,
+      "G": 3,
+      "F": 2,
+      "Ar": 4,
+      "feeling": null,
+      "mechs": [
+        "ACT-01 Action Points",
+        "MOV-02 Grid Movement",
+        "ACT-12 Variable Player Powers",
+        "RES-03 Dice Rolling"
+      ]
+    },
+    "Gloomhaven": {
+      "name": "Gloomhaven",
+      "type": "co-op",
+      "weight": 3.92,
+      "M": 4,
+      "T": 4,
+      "G": 4,
+      "F": 4,
+      "Ar": 4,
+      "feeling": null,
+      "mechs": [
+        "CAR-08 Multi-Use Cards",
+        "ACT-12 Variable Player Powers",
+        "STR-08 Scenario/Campaign",
+        "TRN-09 Simultaneous Action Selection",
+        "ACT-15 Gating and Unlocking"
+      ]
+    },
+    "Hamster Roll": {
+      "name": "Hamster Roll",
+      "type": "competitive",
+      "weight": 1.07,
+      "M": 1,
+      "T": 1,
+      "G": 2,
+      "F": 1,
+      "Ar": 2,
+      "feeling": null,
+      "mechs": [
+        "RES-10 Physical Action",
+        "VIC-07 Race"
+      ]
+    },
+    "Hanabi": {
+      "name": "Hanabi",
+      "type": "co-op",
+      "weight": 1.69,
+      "M": 2,
+      "T": 2,
+      "G": 3,
+      "F": 1,
+      "Ar": 3,
+      "feeling": null,
+      "mechs": [
+        "UNC-08 Hidden Information",
+        "UNC-06 Communication Limits",
+        "CAR-02 Hand Management"
+      ]
+    },
+    "Herbaceous": {
+      "name": "Herbaceous",
+      "type": "competitive",
+      "weight": 1.23,
+      "M": 1,
+      "T": 1,
+      "G": 2,
+      "F": 1,
+      "Ar": 4,
+      "feeling": null,
+      "mechs": [
+        "CAR-03 Card Drafting",
+        "SET-01 Set Valuation"
+      ]
+    },
+    "HeroQuest: The Card Game": {
+      "name": "HeroQuest CG",
+      "type": "competitive",
+      "weight": 1.0,
+      "M": 1,
+      "T": 2,
+      "G": 2,
+      "F": 1,
+      "Ar": 3,
+      "feeling": null,
+      "mechs": [
+        "CAR-02 Hand Management",
+        "RES-03 Dice Rolling"
+      ]
+    },
+    "Horror on the Orient Express: The Board Game": {
+      "name": "Horror Orient Express",
+      "type": "co-op",
+      "weight": 3.54,
+      "M": 3,
+      "T": 5,
+      "G": 4,
+      "F": 3,
+      "Ar": 4,
+      "feeling": null,
+      "mechs": [
+        "ACT-18 Narrative Choice",
+        "STR-08 Scenario/Campaign",
+        "RES-02 Stat Check",
+        "ACT-12 Variable Player Powers"
+      ]
+    },
+    "Inventions: Evolution of Ideas": {
+      "name": "Inventions",
+      "type": "competitive",
+      "weight": 4.58,
+      "M": 5,
+      "T": 2,
+      "G": 4,
+      "F": 3,
+      "Ar": 2,
+      "feeling": null,
+      "mechs": [
+        "ECO-05 Income",
+        "WPL-01 Worker Placement",
+        "SET-05 Combo Abilities",
+        "ACT-15 Gating and Unlocking"
+      ]
+    },
+    "Invincible: The Hero-Building Game": {
+      "name": "Invincible",
+      "type": "co-op",
+      "weight": 2.56,
+      "M": 3,
+      "T": 4,
+      "G": 3,
+      "F": 2,
+      "Ar": 4,
+      "feeling": null,
+      "mechs": [
+        "CAR-07 Deck Construction",
+        "ACT-12 Variable Player Powers",
+        "SET-05 Combo Abilities",
+        "STR-08 Scenario/Campaign"
+      ]
+    },
+    "Jekyll & Hyde vs Scotland Yard": {
+      "name": "Jekyll&Hyde v SY",
+      "type": "competitive",
+      "weight": 2.13,
+      "M": 3,
+      "T": 4,
+      "G": 3,
+      "F": 2,
+      "Ar": 3,
+      "feeling": null,
+      "mechs": [
+        "STR-01 Asymmetric Game",
+        "UNC-08 Hidden Information",
+        "MOV-01 Point-to-Point Movement"
+      ]
+    },
+    "Jekyll vs. Hyde": {
+      "name": "Jekyll vs Hyde",
+      "type": "competitive",
+      "weight": 1.87,
+      "M": 2,
+      "T": 3,
+      "G": 3,
+      "F": 1,
+      "Ar": 3,
+      "feeling": null,
+      "mechs": [
+        "CAR-01 Trick-Taking",
+        "CAR-02 Hand Management"
+      ]
+    },
+    "K2": {
+      "name": "K2",
+      "type": "competitive",
+      "weight": 2.25,
+      "M": 3,
+      "T": 3,
+      "G": 3,
+      "F": 2,
+      "Ar": 4,
+      "feeling": null,
+      "mechs": [
+        "CAR-03 Card Drafting",
+        "MOV-04 Movement Points",
+        "UNC-07 Unknown Information",
+        "VIC-07 Race"
+      ]
+    },
+    "Maskmen": {
+      "name": "Maskmen",
+      "type": "competitive",
+      "weight": 1.78,
+      "M": 1,
+      "T": 1,
+      "G": 2,
+      "F": 1,
+      "Ar": 2,
+      "feeling": null,
+      "mechs": [
+        "CAR-02 Hand Management",
+        "SET-01 Set Valuation"
+      ]
+    },
+    "Mediterráneo": {
+      "name": "Mediterráneo",
+      "type": "competitive",
+      "weight": 2.2,
+      "M": 2,
+      "T": 2,
+      "G": 3,
+      "F": 1,
+      "Ar": 3,
+      "feeling": null,
+      "mechs": [
+        "SET-04 Network Building",
+        "ECO-01 Exchanging",
+        "VIC-01 Victory Points from Game State"
+      ]
+    },
+    "Moving Wild": {
+      "name": "Moving Wild",
+      "type": "competitive",
+      "weight": 2.05,
+      "M": 2,
+      "T": 2,
+      "G": 3,
+      "F": 1,
+      "Ar": 4,
+      "feeling": null,
+      "mechs": [
+        "CAR-03 Card Drafting",
+        "SET-01 Set Valuation",
+        "ARC-02 Area Majority/Influence"
+      ]
+    },
+    "Nine Tiles Panic": {
+      "name": "Nine Tiles Panic",
+      "type": "competitive",
+      "weight": 1.29,
+      "M": 1,
+      "T": 1,
+      "G": 2,
+      "F": 1,
+      "Ar": 3,
+      "feeling": null,
+      "mechs": [
+        "SET-02 Tile-Laying",
+        "TRN-09 Simultaneous Action Selection"
+      ]
+    },
+    "Not Alone": {
+      "name": "Not Alone",
+      "type": "competitive",
+      "weight": 1.99,
+      "M": 2,
+      "T": 4,
+      "G": 3,
+      "F": 1,
+      "Ar": 3,
+      "feeling": null,
+      "mechs": [
+        "STR-01 Asymmetric Game",
+        "UNC-08 Hidden Information",
+        "CAR-02 Hand Management"
+      ]
+    },
+    "Oathsworn: Into the Deepwood": {
+      "name": "Oathsworn",
+      "type": "co-op",
+      "weight": 3.69,
+      "M": 4,
+      "T": 5,
+      "G": 4,
+      "F": 4,
+      "Ar": 5,
+      "feeling": null,
+      "mechs": [
+        "ACT-18 Narrative Choice",
+        "STR-08 Scenario/Campaign",
+        "ACT-12 Variable Player Powers",
+        "CAR-08 Multi-Use Cards",
+        "ACT-01 Action Points"
+      ]
+    },
+    "Peaks": {
+      "name": "Peaks",
+      "type": "competitive",
+      "weight": 2.56,
+      "M": 3,
+      "T": 2,
+      "G": 3,
+      "F": 1,
+      "Ar": 4,
+      "feeling": null,
+      "mechs": [
+        "CAR-02 Hand Management",
+        "ACT-01 Action Points",
+        "VIC-07 Race"
+      ]
+    },
+    "The Plum Island Horror": {
+      "name": "Plum Island Horror",
+      "type": "co-op",
+      "weight": 3.2,
+      "M": 3,
+      "T": 4,
+      "G": 3,
+      "F": 2,
+      "Ar": 4,
+      "feeling": null,
+      "mechs": [
+        "ACT-01 Action Points",
+        "UNC-07 Unknown Information",
+        "STR-08 Scenario/Campaign",
+        "RES-03 Dice Rolling"
+      ]
+    },
+    "Power Failure": {
+      "name": "Power Failure",
+      "type": "competitive",
+      "weight": 1.75,
+      "M": 2,
+      "T": 2,
+      "G": 3,
+      "F": 1,
+      "Ar": 3,
+      "feeling": null,
+      "mechs": [
+        "ECO-05 Income",
+        "SET-04 Network Building",
+        "ACT-01 Action Points"
+      ]
+    },
+    "Power Vacuum": {
+      "name": "Power Vacuum",
+      "type": "competitive",
+      "weight": 1.96,
+      "M": 2,
+      "T": 2,
+      "G": 3,
+      "F": 1,
+      "Ar": 3,
+      "feeling": null,
+      "mechs": [
+        "ARC-01 Area Control",
+        "ACT-02 Action Drafting"
+      ]
+    },
+    "Project L": {
+      "name": "Project L",
+      "type": "competitive",
+      "weight": 1.56,
+      "M": 2,
+      "T": 1,
+      "G": 3,
+      "F": 1,
+      "Ar": 3,
+      "feeling": null,
+      "mechs": [
+        "SET-02 Tile-Laying",
+        "ECO-11 Upgrades",
+        "TRN-09 Simultaneous Action Selection"
+      ]
+    },
+    "Return to Dark Tower": {
+      "name": "Return to Dark Tower",
+      "type": "co-op",
+      "weight": 2.65,
+      "M": 3,
+      "T": 5,
+      "G": 3,
+      "F": 3,
+      "Ar": 5,
+      "feeling": null,
+      "mechs": [
+        "ACT-01 Action Points",
+        "STR-08 Scenario/Campaign",
+        "ACT-12 Variable Player Powers",
+        "UNC-07 Unknown Information"
+      ]
+    },
+    "Sea Salt & Paper": {
+      "name": "Sea Salt & Paper",
+      "type": "competitive",
+      "weight": 1.47,
+      "M": 1,
+      "T": 2,
+      "G": 2,
+      "F": 1,
+      "Ar": 4,
+      "feeling": null,
+      "mechs": [
+        "CAR-03 Card Drafting",
+        "SET-01 Set Valuation"
+      ]
+    },
+    "Side Quest: Nemesis": {
+      "name": "Side Quest: Nemesis",
+      "type": "co-op",
+      "weight": 1.6,
+      "M": 2,
+      "T": 3,
+      "G": 2,
+      "F": 1,
+      "Ar": 4,
+      "feeling": null,
+      "mechs": [
+        "CAR-02 Hand Management",
+        "SET-05 Combo Abilities",
+        "STR-08 Scenario/Campaign"
+      ]
+    },
+    "SILOS": {
+      "name": "SILOS",
+      "type": "competitive",
+      "weight": 2.14,
+      "M": 2,
+      "T": 2,
+      "G": 3,
+      "F": 1,
+      "Ar": 3,
+      "feeling": null,
+      "mechs": [
+        "ARC-01 Area Control",
+        "ACT-02 Action Drafting"
+      ]
+    },
+    "Spire's End": {
+      "name": "Spire's End",
+      "type": "solo",
+      "weight": 2.03,
+      "M": 3,
+      "T": 4,
+      "G": 3,
+      "F": 1,
+      "Ar": 4,
+      "feeling": null,
+      "mechs": [
+        "CAR-02 Hand Management",
+        "ACT-18 Narrative Choice",
+        "STR-08 Scenario/Campaign"
+      ]
+    },
+    "Startups": {
+      "name": "Startups",
+      "type": "competitive",
+      "weight": 1.58,
+      "M": 2,
+      "T": 1,
+      "G": 3,
+      "F": 1,
+      "Ar": 2,
+      "feeling": null,
+      "mechs": [
+        "ECO-03 Market",
+        "UNC-08 Hidden Information"
+      ]
+    },
+    "Summit: The Board Game": {
+      "name": "Summit",
+      "type": "competitive",
+      "weight": 2.46,
+      "M": 3,
+      "T": 4,
+      "G": 3,
+      "F": 2,
+      "Ar": 4,
+      "feeling": null,
+      "mechs": [
+        "MOV-04 Movement Points",
+        "CAR-02 Hand Management",
+        "RES-03 Dice Rolling",
+        "VIC-07 Race"
+      ]
+    },
+    "This War of Mine: The Board Game": {
+      "name": "This War of Mine",
+      "type": "co-op",
+      "weight": 3.33,
+      "M": 3,
+      "T": 5,
+      "G": 4,
+      "F": 3,
+      "Ar": 5,
+      "feeling": null,
+      "mechs": [
+        "ACT-18 Narrative Choice",
+        "ACT-01 Action Points",
+        "STR-08 Scenario/Campaign",
+        "UNC-09 Probability Management"
+      ]
+    },
+    "Tiny Epic Galaxies": {
+      "name": "Tiny Epic Galaxies",
+      "type": "competitive",
+      "weight": 2.16,
+      "M": 3,
+      "T": 2,
+      "G": 3,
+      "F": 1,
+      "Ar": 3,
+      "feeling": null,
+      "mechs": [
+        "WPL-04 Workers-As-Dice",
+        "ACT-02 Action Drafting",
+        "SET-04 Network Building",
+        "ECO-11 Upgrades"
+      ]
+    },
+    "Town 77": {
+      "name": "Town 77",
+      "type": "competitive",
+      "weight": 1.82,
+      "M": 2,
+      "T": 1,
+      "G": 3,
+      "F": 1,
+      "Ar": 2,
+      "feeling": null,
+      "mechs": [
+        "CAR-02 Hand Management",
+        "SET-01 Set Valuation"
+      ]
+    },
+    "Voidfall": {
+      "name": "Voidfall",
+      "type": "competitive",
+      "weight": 4.6,
+      "M": 5,
+      "T": 2,
+      "G": 5,
+      "F": 4,
+      "Ar": 3,
+      "feeling": null,
+      "mechs": [
+        "ECO-05 Income",
+        "ACT-02 Action Drafting",
+        "SET-04 Network Building",
+        "STR-01 Asymmetric Game",
+        "ECO-11 Upgrades"
+      ]
+    },
+    "Weather Machine": {
+      "name": "Weather Machine",
+      "type": "competitive",
+      "weight": 4.56,
+      "M": 5,
+      "T": 2,
+      "G": 4,
+      "F": 4,
+      "Ar": 3,
+      "feeling": null,
+      "mechs": [
+        "WPL-01 Worker Placement",
+        "ECO-05 Income",
+        "SET-05 Combo Abilities",
+        "TRN-05 Round/Phase Structure",
+        "ACT-15 Gating and Unlocking"
+      ]
+    },
+    "Campy Creatures": {
+      "name": "Campy Creatures",
+      "type": "competitive",
+      "weight": 1.57,
+      "M": 2,
+      "T": 2,
+      "G": 2,
+      "F": 1,
+      "Ar": 4,
+      "feeling": null,
+      "mechs": [
+        "UNC-08 Hidden Information",
+        "CAR-02 Hand Management"
+      ]
+    },
+    "Cartographers": {
+      "name": "Cartographers",
+      "type": "competitive",
+      "weight": 1.89,
+      "M": 2,
+      "T": 2,
+      "G": 3,
+      "F": 1,
+      "Ar": 4,
+      "feeling": null,
+      "mechs": [
+        "SET-02 Tile-Laying",
+        "SET-01 Set Valuation",
+        "ACT-18 Narrative Choice"
+      ]
+    },
+    "Catacombs (Third Edition)": {
+      "name": "Catacombs",
+      "type": "co-op",
+      "weight": 2.39,
+      "M": 2,
+      "T": 3,
+      "G": 3,
+      "F": 2,
+      "Ar": 4,
+      "feeling": null,
+      "mechs": [
+        "RES-10 Physical Action",
+        "ACT-12 Variable Player Powers",
+        "MOV-02 Grid Movement"
+      ]
+    },
+    "Elder Sign": {
+      "name": "Elder Sign",
+      "type": "co-op",
+      "weight": 2.34,
+      "M": 2,
+      "T": 3,
+      "G": 3,
+      "F": 2,
+      "Ar": 4,
+      "feeling": null,
+      "mechs": [
+        "RES-03 Dice Rolling",
+        "UNC-09 Probability Management",
+        "ACT-12 Variable Player Powers",
+        "STR-08 Scenario/Campaign"
+      ]
+    },
+    "Paperback Adventures": {
+      "name": "Paperback Adventures",
+      "type": "solo",
+      "weight": 2.79,
+      "M": 2,
+      "T": 2,
+      "G": 3,
+      "F": 2,
+      "Ar": 3,
+      "feeling": null,
+      "mechs": [
+        "CAR-07 Deck Construction",
+        "SET-01 Set Valuation",
+        "ACT-12 Variable Player Powers"
+      ]
+    },
+    "That's Not a Hat": {
+      "name": "That's Not a Hat",
+      "type": "party",
+      "weight": 1.06,
+      "M": 1,
+      "T": 1,
+      "G": 1,
+      "F": 1,
+      "Ar": 2,
+      "feeling": null,
+      "mechs": [
+        "ACT-22 Matching",
+        "UNC-07 Unknown Information"
+      ]
+    },
+    "Tiny Epic Dungeons": {
+      "name": "Tiny Epic Dungeons",
+      "type": "co-op",
+      "weight": 3.11,
+      "M": 3,
+      "T": 3,
+      "G": 3,
+      "F": 2,
+      "Ar": 4,
+      "feeling": null,
+      "mechs": [
+        "ACT-01 Action Points",
+        "MOV-02 Grid Movement",
+        "ACT-12 Variable Player Powers",
+        "RES-03 Dice Rolling"
+      ]
+    },
+    "The Old King's Crown": {
+      "name": "The Old King's Crown",
+      "type": "competitive",
+      "weight": 3,
+      "M": 3,
+      "T": 3,
+      "G": 3,
+      "F": 2,
+      "Ar": 4,
+      "feeling": null,
+      "mechs": [
+        "CAR-02 Hand Management",
+        "ARC-01 Area Control",
+        "UNC-08 Hidden Information"
+      ]
+    },
+    "Fossilium": {
+      "name": "Fossilium",
+      "type": "competitive",
+      "weight": 2.0,
+      "M": 2,
+      "T": 2,
+      "G": 2,
+      "F": 1,
+      "Ar": 3,
+      "feeling": null,
+      "mechs": [
+        "SET-01 Set Valuation",
+        "CAR-03 Card Drafting"
+      ]
+    },
+    "The 7th Continent": {
+      "name": "The 7th Continent",
+      "type": "solo",
+      "weight": 3.07,
+      "M": 4,
+      "T": 5,
+      "G": 4,
+      "F": 3,
+      "Ar": 5,
+      "feeling": "Loves it",
+      "mechs": [
+        "MOV-16 Map Addition",
+        "CAR-08 Multi-Use Cards",
+        "ACT-01 Action Points",
+        "STR-08 Scenario/Campaign",
+        "UNC-07 Unknown Information"
+      ]
+    }
+  }
+}

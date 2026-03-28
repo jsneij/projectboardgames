@@ -1,0 +1,1668 @@
+{
+  "fetched_at": "2026-03-14T23:24:35.555600+00:00",
+  "counts": {
+    "owned": 40,
+    "wishlist_total": 114,
+    "wishlist_p1": 4,
+    "wishlist_p2": 24,
+    "wishlist_p3": 27,
+    "wishlist_p4": 52,
+    "wishlist_p5": 7,
+    "preordered": 2,
+    "previously_owned": 8
+  },
+  "games": {
+    "205637": {
+      "name": "Arkham Horror: The Card Game",
+      "num_plays": 0,
+      "category": "owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "284354": {
+      "name": "Arkham Horror: The Card Game – Murder at the Excelsior Hotel: Scenario Pack",
+      "num_plays": 0,
+      "category": "owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "358212": {
+      "name": "Arkham Horror: The Card Game – The Path to Carcosa: Campaign Expansion",
+      "num_plays": 0,
+      "category": "owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "358213": {
+      "name": "Arkham Horror: The Card Game – The Path to Carcosa: Investigator Expansion",
+      "num_plays": 0,
+      "category": "owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": "2026-02-07",
+      "play_comments": {}
+    },
+    "359609": {
+      "name": "Arkham Horror: The Card Game (Revised Core Set)",
+      "num_plays": 0,
+      "category": "owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "180593": {
+      "name": "The Bloody Inn",
+      "num_plays": 0,
+      "category": "owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "230243": {
+      "name": "The Bloody Inn: The Carnies",
+      "num_plays": 0,
+      "category": "owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "172081": {
+      "name": "Burgle Bros.",
+      "num_plays": 0,
+      "category": "owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "50381": {
+      "name": "Cards Against Humanity",
+      "num_plays": 0,
+      "category": "owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "295897": {
+      "name": "Cards Against Humanity: The A.I. Pack",
+      "num_plays": 0,
+      "category": "owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "105593": {
+      "name": "Cheating Moth",
+      "num_plays": 0,
+      "category": "owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "324856": {
+      "name": "The Crew: Mission Deep Sea",
+      "num_plays": 0,
+      "category": "owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "376893": {
+      "name": "Cyberion",
+      "num_plays": 0,
+      "category": "owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "169654": {
+      "name": "Deep Sea Adventure",
+      "num_plays": 0,
+      "category": "owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "277659": {
+      "name": "Final Girl",
+      "num_plays": 0,
+      "category": "owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "401727": {
+      "name": "Final Girl: Hell to Pay",
+      "num_plays": 0,
+      "category": "owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": "2026-03-09",
+      "play_comments": {}
+    },
+    "354775": {
+      "name": "Final Girl: Into the Void",
+      "num_plays": 0,
+      "category": "owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "354779": {
+      "name": "Final Girl: Madness in the Dark",
+      "num_plays": 0,
+      "category": "owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "354776": {
+      "name": "Final Girl: Panic at Station 2891",
+      "num_plays": 0,
+      "category": "owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": "2026-03-05",
+      "play_comments": {}
+    },
+    "291457": {
+      "name": "Gloomhaven: Jaws of the Lion",
+      "num_plays": 0,
+      "category": "owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "414317": {
+      "name": "Harmonies",
+      "num_plays": 0,
+      "category": "owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "337832": {
+      "name": "Hotel Lovecraft",
+      "num_plays": 0,
+      "category": "owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "212404": {
+      "name": "In Vino Morte",
+      "num_plays": 0,
+      "category": "owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "378117": {
+      "name": "The Last Lighthouse",
+      "num_plays": 0,
+      "category": "owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "427682": {
+      "name": "The Last Lighthouse: Expansion Collection",
+      "num_plays": 0,
+      "category": "owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "330403": {
+      "name": "Moon Adventure",
+      "num_plays": 0,
+      "category": "owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "167355": {
+      "name": "Nemesis",
+      "num_plays": 0,
+      "category": "owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "300531": {
+      "name": "Paleo",
+      "num_plays": 0,
+      "category": "owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "405538": {
+      "name": "Rafter Five",
+      "num_plays": 0,
+      "category": "owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "335212": {
+      "name": "Sentinels of the Multiverse: Definitive Edition",
+      "num_plays": 0,
+      "category": "owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "303553": {
+      "name": "Skulls of Sedlec",
+      "num_plays": 0,
+      "category": "owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "373106": {
+      "name": "Sky Team",
+      "num_plays": 0,
+      "category": "owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "162886": {
+      "name": "Spirit Island",
+      "num_plays": 0,
+      "category": "owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "251658": {
+      "name": "Sprawlopolis",
+      "num_plays": 0,
+      "category": "owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "261901": {
+      "name": "Tokyo Highway",
+      "num_plays": 0,
+      "category": "owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "338628": {
+      "name": "Trails",
+      "num_plays": 0,
+      "category": "owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "306735": {
+      "name": "Under Falling Skies",
+      "num_plays": 0,
+      "category": "owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "331328": {
+      "name": "Unsurmountable",
+      "num_plays": 0,
+      "category": "owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "296237": {
+      "name": "Warp's Edge",
+      "num_plays": 0,
+      "category": "owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "342900": {
+      "name": "Earthborne Rangers",
+      "num_plays": 0,
+      "category": "owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "453740": {
+      "name": "Container",
+      "num_plays": 0,
+      "category": "preordered",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "429431": {
+      "name": "Miskatonic Tales: Journey to Innsmouth",
+      "num_plays": 0,
+      "category": "preordered",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "526": {
+      "name": "Abalone",
+      "num_plays": 0,
+      "category": "previously_owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "2397": {
+      "name": "Backgammon",
+      "num_plays": 0,
+      "category": "previously_owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "2785": {
+      "name": "Game of Goose",
+      "num_plays": 0,
+      "category": "previously_owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "1502": {
+      "name": "Hotel",
+      "num_plays": 0,
+      "category": "previously_owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "1927": {
+      "name": "Munchkin",
+      "num_plays": 0,
+      "category": "previously_owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "2136": {
+      "name": "Pachisi",
+      "num_plays": 0,
+      "category": "previously_owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "23010": {
+      "name": "Risk: 40th Anniversary Collector's Edition",
+      "num_plays": 0,
+      "category": "previously_owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "2952": {
+      "name": "Trivial Pursuit: Genus Edition",
+      "num_plays": 0,
+      "category": "previously_owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "347149": {
+      "name": "Arkham Horror: The Card Game – The Dunwich Legacy: Campaign Expansion",
+      "num_plays": 1,
+      "category": "want_to_buy",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {
+        "111384039": "I loved it!"
+      }
+    },
+    "96848": {
+      "name": "Mage Knight Board Game",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 1,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "342562": {
+      "name": "ROVE: Results-Oriented Versatile Explorer",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 1,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "418059": {
+      "name": "SETI: Search for Extraterrestrial Intelligence",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 1,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "375459": {
+      "name": "Speakeasy",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 1,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "185343": {
+      "name": "Anachrony",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 2,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "225729": {
+      "name": "Arkham Noir: Case #1 – The Witch Cult Murders",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 2,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "286537": {
+      "name": "Burgle Bros 2: The Casino Capers",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 2,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "196526": {
+      "name": "Coffee Roaster",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 2,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "253344": {
+      "name": "Cthulhu: Death May Die",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 2,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "334986": {
+      "name": "Daybreak",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 2,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "203420": {
+      "name": "EXIT: The Game – The Abandoned Cabin",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 2,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "220308": {
+      "name": "Gaia Project",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 2,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "423434": {
+      "name": "Horrified: World of Monsters",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 2,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "367518": {
+      "name": "Imperium: Horizons",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 2,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "271324": {
+      "name": "It's a Wonderful World",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 2,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "284378": {
+      "name": "Kanban EV",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 2,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "316412": {
+      "name": "The LOOP",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 2,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "381248": {
+      "name": "Nemesis: Retaliation",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 2,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "184267": {
+      "name": "On Mars",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 2,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "385643": {
+      "name": "Paperback: 10th Anniversary Edition",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 2,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "307002": {
+      "name": "Regicide",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 2,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "352697": {
+      "name": "Resist!",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 2,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "359501": {
+      "name": "ROVE: Expansion Collection",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 2,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "255984": {
+      "name": "Sleeping Gods",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 2,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "352454": {
+      "name": "Trailblazers",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 2,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "329500": {
+      "name": "Unconscious Mind",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 2,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "420033": {
+      "name": "Vantage",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 2,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "371942": {
+      "name": "The White Castle",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 2,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "400314": {
+      "name": "Apiary",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 3,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "359871": {
+      "name": "Arcs",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 3,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "209728": {
+      "name": "Arkham Horror: The Card Game – Curse of the Rougarou: Scenario Pack",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 3,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "382510": {
+      "name": "Arkham Horror: The Card Game – The Circle Undone: Campaign Expansion",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 3,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "414602": {
+      "name": "Arkham Horror: The Card Game – The Dream-Eaters: Campaign Expansion",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 3,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "377055": {
+      "name": "Arkham Horror: The Card Game – The Forgotten Age: Campaign Expansion",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 3,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "383607": {
+      "name": "Barcelona",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 3,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "415314": {
+      "name": "Barcelona: Passeig de Gràcia",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 3,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "281549": {
+      "name": "Beast",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 3,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "367966": {
+      "name": "Endeavor: Deep Sea",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 3,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "394106": {
+      "name": "Everdell Farshore",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 3,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "295609": {
+      "name": "For the Queen",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 3,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "391137": {
+      "name": "Galactic Cruise",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 3,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "125153": {
+      "name": "The Gallerist",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 3,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "393672": {
+      "name": "Gloomhaven: Buttons & Bugs",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 3,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "366013": {
+      "name": "Heat: Pedal to the Metal",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 3,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "321608": {
+      "name": "Hegemony: Lead Your Class to Victory",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 3,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "404431": {
+      "name": "Men-Nefer",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 3,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "318977": {
+      "name": "MicroMacro: Crime City",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 3,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "206084": {
+      "name": "Nautilion",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 3,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "156336": {
+      "name": "Onirim (Second Edition)",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 3,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "161880": {
+      "name": "The Quiet Year",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 3,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "12": {
+      "name": "Ra",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 3,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "237182": {
+      "name": "Root",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 3,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "338960": {
+      "name": "Slay the Spire: The Board Game",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 3,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "187645": {
+      "name": "Star Wars: Rebellion",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 3,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "342070": {
+      "name": "Thunder Road: Vendetta",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 3,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "400205": {
+      "name": "5 Towers",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "357726": {
+      "name": "51st State: Ultimate Edition",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "356768": {
+      "name": "Bloc by Bloc: Uprising",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "284936": {
+      "name": "Café",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "290236": {
+      "name": "Canvas",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "338763": {
+      "name": "Count of the Nine Estates",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "443306": {
+      "name": "Deckers",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "320135": {
+      "name": "Don't wake up Cthulhu!",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "385720": {
+      "name": "Dustrunner",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "462941": {
+      "name": "Entropy",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "201825": {
+      "name": "Ex Libris",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "216600": {
+      "name": "Fantastic Factories",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "317288": {
+      "name": "First Ascent",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "336986": {
+      "name": "Flamecraft",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "37046": {
+      "name": "Ghost Stories",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "174430": {
+      "name": "Gloomhaven",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "903": {
+      "name": "Hamster Roll",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "98778": {
+      "name": "Hanabi",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "195314": {
+      "name": "Herbaceous",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "328586": {
+      "name": "HeroQuest: The Card Game",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "394897": {
+      "name": "Horror on the Orient Express: The Board Game",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "347305": {
+      "name": "Inventions: Evolution of Ideas",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "396251": {
+      "name": "Invincible: The Hero-Building Game",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "377793": {
+      "name": "Jekyll & Hyde vs Scotland Yard",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "297129": {
+      "name": "Jekyll vs. Hyde",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "73761": {
+      "name": "K2",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "159581": {
+      "name": "Maskmen",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "355801": {
+      "name": "Mediterráneo",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "423270": {
+      "name": "Moving Wild",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "279869": {
+      "name": "Nine Tiles Panic",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "194879": {
+      "name": "Not Alone",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "251661": {
+      "name": "Oathsworn: Into the Deepwood",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "402814": {
+      "name": "Peaks",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "341166": {
+      "name": "The Plum Island Horror",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "330478": {
+      "name": "Power Failure",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "402106": {
+      "name": "Power Vacuum",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "260180": {
+      "name": "Project L",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "256680": {
+      "name": "Return to Dark Tower",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "367220": {
+      "name": "Sea Salt & Paper",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "387538": {
+      "name": "Side Quest: Nemesis",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "429765": {
+      "name": "SILOS",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "271754": {
+      "name": "Spire's End",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "223770": {
+      "name": "Startups",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "201186": {
+      "name": "Summit: The Board Game",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "188920": {
+      "name": "This War of Mine: The Board Game",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "163967": {
+      "name": "Tiny Epic Galaxies",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "402310": {
+      "name": "Town 77",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "337627": {
+      "name": "Voidfall",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "237179": {
+      "name": "Weather Machine",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "357873": {
+      "name": "The Old King's Crown",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "427886": {
+      "name": "Fossilium",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "214396": {
+      "name": "Campy Creatures",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 5,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "263918": {
+      "name": "Cartographers",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 5,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "195137": {
+      "name": "Catacombs (Third Edition)",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 5,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "100423": {
+      "name": "Elder Sign",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 5,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "338468": {
+      "name": "Paperback Adventures",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 5,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "375651": {
+      "name": "That's Not a Hat",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 5,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "331787": {
+      "name": "Tiny Epic Dungeons",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 5,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "180263": {
+      "name": "The 7th Continent",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    }
+  }
+}

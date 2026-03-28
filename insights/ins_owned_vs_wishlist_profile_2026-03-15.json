@@ -1,0 +1,103 @@
+{
+  "insight_id": "owned_vs_wishlist_profile",
+  "version": 1,
+  "title": "Collection DNA: Owned vs Wishlist Profiles",
+  "description": "Side-by-side comparison of average IS axis scores between owned and wishlist. Reveals preference drift.",
+  "type": "comparison",
+  "chart_hint": "radar",
+  "generated_at": "2026-03-15T01:49:39.444617+00:00",
+  "source_files": [
+    "bgg_collection_scores.json"
+  ],
+  "tags": [
+    "collection",
+    "profile",
+    "owned-vs-wishlist"
+  ],
+  "filters_applied": "All scored games",
+  "data": {
+    "groups": {
+      "owned": {
+        "n": 40,
+        "avg_M": 3.02,
+        "avg_T": 3.52,
+        "avg_G": 3.05,
+        "avg_F": 1.52,
+        "avg_Ar": 3.9,
+        "types": {
+          "co-op": 16,
+          "solo": 10,
+          "competitive": 9,
+          "party": 4,
+          "semi-coop": 1
+        }
+      },
+      "wishlist": {
+        "n": 114,
+        "avg_M": 2.85,
+        "avg_T": 2.82,
+        "avg_G": 3.16,
+        "avg_F": 1.89,
+        "avg_Ar": 3.68,
+        "types": {
+          "competitive": 67,
+          "co-op": 30,
+          "solo": 14,
+          "party": 2,
+          "semi-coop": 1
+        }
+      }
+    },
+    "axes": [
+      {
+        "key": "avg_M",
+        "label": "Mechanical Depth",
+        "max": 5
+      },
+      {
+        "key": "avg_T",
+        "label": "Thematic Integration",
+        "max": 5
+      },
+      {
+        "key": "avg_G",
+        "label": "Meaningful Agency",
+        "max": 5
+      },
+      {
+        "key": "avg_F",
+        "label": "Friction",
+        "max": 5,
+        "invert": true
+      },
+      {
+        "key": "avg_Ar",
+        "label": "Art/Production",
+        "max": 5
+      }
+    ]
+  },
+  "columns": {
+    "avg_M": {
+      "display": "Mechanical Depth",
+      "type": "number"
+    },
+    "avg_T": {
+      "display": "Thematic Integration",
+      "type": "number"
+    },
+    "avg_G": {
+      "display": "Meaningful Agency",
+      "type": "number"
+    },
+    "avg_F": {
+      "display": "Friction",
+      "type": "number"
+    },
+    "avg_Ar": {
+      "display": "Art/Production",
+      "type": "number"
+    }
+  },
+  "summary": "Owned (n=40) averages T=3.52 vs wishlist (n=114) at T=2.82. Gap of 0.7 confirms T as your purchase gatekeeper. Wishlist skews competitive (67 games) while owned is co-op/solo dominant (26 of 40)."
+}

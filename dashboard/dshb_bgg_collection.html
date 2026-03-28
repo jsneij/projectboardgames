@@ -1,0 +1,1638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BGG Collection Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #0f172a;
+  --bg-card: #1e293b;
+  --bg-card2: #0d1a2e;
+  --bg-hover: #273348;
+  --border: #334155;
+  --border2: #1e3a5f;
+  --text: #f1f5f9;
+  --text2: #94a3b8;
+  --text3: #64748b;
+  --red: #ef4444;
+  --amber: #f59e0b;
+  --blue: #3b82f6;
+  --green: #22c55e;
+  --purple: #a855f7;
+  --teal: #14b8a6;
+  --indigo: #6366f1;
+}
+
+html, body { height: 100%; background: var(--bg); color: var(--text); font-family: 'Outfit', sans-serif; font-size: 14px; }
+a { color: var(--blue); text-decoration: none; }
+a:hover { text-decoration: underline; color: #60a5fa; }
+
+/* NAV */
+#app-header {
+  background: #070f1e;
+  border-bottom: 1px solid var(--border2);
+  padding: 12px 24px 0;
+  position: sticky; top: 0; z-index: 100;
+}
+#app-header h1 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px; color: var(--text3);
+  margin-bottom: 10px;
+  letter-spacing: 0.05em;
+}
+#app-header h1 span { color: var(--blue); }
+nav { display: flex; gap: 2px; }
+.tab-btn {
+  background: none; border: none; cursor: pointer;
+  color: var(--text3); font-family: 'Outfit', sans-serif;
+  font-size: 13px; font-weight: 500;
+  padding: 8px 16px 10px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.15s, border-color 0.15s;
+  white-space: nowrap;
+}
+.tab-btn:hover { color: var(--text2); }
+.tab-btn.active { color: var(--text); border-bottom-color: var(--blue); }
+
+/* LAYOUT */
+#content { padding: 20px 24px 40px; max-width: 1400px; margin: 0 auto; }
+.tab-pane { display: none; }
+.tab-pane.active { display: block; }
+
+/* LOADING */
+#loading {
+  position: fixed; inset: 0; background: var(--bg);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 999; flex-direction: column; gap: 16px;
+}
+#loading p { color: var(--text2); font-family: 'JetBrains Mono', monospace; font-size: 13px; }
+.spinner {
+  width: 32px; height: 32px;
+  border: 3px solid var(--border); border-top-color: var(--blue);
+  border-radius: 50%; animation: spin 0.8s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* CARDS */
+.card {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: 10px; padding: 16px;
+}
+.section-title {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px; color: var(--text3); letter-spacing: 0.1em;
+  text-transform: uppercase; margin-bottom: 14px;
+  padding-bottom: 8px; border-bottom: 1px solid var(--border);
+}
+
+/* STAT CARDS GRID */
+.stat-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 12px; margin-bottom: 20px;
+}
+.stat-card {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: 10px; padding: 14px 16px;
+}
+.stat-card .label { font-size: 11px; color: var(--text3); margin-bottom: 6px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; }
+.stat-card .value { font-family: 'JetBrains Mono', monospace; font-size: 28px; font-weight: 700; color: var(--text); line-height: 1; }
+.stat-card .sub { font-size: 11px; color: var(--text2); margin-top: 4px; }
+
+/* BADGES */
+.badge {
+  display: inline-block; padding: 2px 7px; border-radius: 4px;
+  font-size: 11px; font-weight: 600; font-family: 'JetBrains Mono', monospace;
+}
+.badge-loves { background: rgba(239,68,68,0.15); color: #f87171; border: 1px solid rgba(239,68,68,0.3); }
+.badge-likes { background: rgba(245,158,11,0.15); color: #fbbf24; border: 1px solid rgba(245,158,11,0.3); }
+.badge-scored { background: rgba(59,130,246,0.15); color: #60a5fa; border: 1px solid rgba(59,130,246,0.3); }
+.badge-unscored { background: rgba(100,116,139,0.15); color: #94a3b8; border: 1px solid rgba(100,116,139,0.25); }
+
+/* LEADERBOARD */
+.leaderboard { display: flex; flex-direction: column; gap: 6px; }
+.lb-row {
+  display: grid; align-items: center;
+  grid-template-columns: 28px 1fr auto 90px auto;
+  gap: 8px; padding: 8px 10px; background: var(--bg-card2);
+  border: 1px solid var(--border); border-radius: 7px;
+  transition: background 0.1s;
+}
+.lb-row:hover { background: var(--bg-hover); }
+.lb-rank {
+  font-family: 'JetBrains Mono', monospace; font-size: 11px;
+  color: var(--text3); text-align: center;
+}
+.lb-name { font-size: 13px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.lb-is {
+  font-family: 'JetBrains Mono', monospace; font-size: 12px;
+  font-weight: 700; text-align: right; min-width: 40px; color: var(--text);
+}
+.lb-bar-wrap { height: 6px; background: var(--border); border-radius: 3px; overflow: hidden; }
+.lb-bar { height: 100%; border-radius: 3px; transition: width 0.3s; }
+
+/* DNA */
+.dna-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.dna-item { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--border); }
+.dna-item:last-child { border-bottom: none; }
+.dna-label { font-size: 13px; color: var(--text2); }
+.dna-val { font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 700; }
+
+/* TWO-COL LAYOUT */
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px; }
+.three-col { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin-bottom: 20px; }
+
+/* IS SCORE BARS */
+.is-list { display: flex; flex-direction: column; gap: 4px; }
+.is-row {
+  display: grid; grid-template-columns: 24px 1fr auto 120px auto;
+  align-items: center; gap: 8px;
+  padding: 6px 10px; border-radius: 6px;
+  transition: background 0.1s;
+}
+.is-row:hover { background: var(--bg-hover); }
+.is-row-idx { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--text3); text-align: right; }
+.is-row-name { font-size: 12px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.is-row-is { font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; min-width: 36px; text-align: right; }
+.is-bar-wrap { height: 5px; background: var(--border); border-radius: 3px; overflow: hidden; }
+.is-bar { height: 100%; border-radius: 3px; }
+
+/* RADAR GRID */
+.radar-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+}
+.radar-card {
+  background: var(--bg-card2); border: 1px solid var(--border);
+  border-radius: 10px; padding: 14px; text-align: center;
+}
+.radar-card .rc-name { font-size: 12px; margin-bottom: 6px; font-weight: 500; }
+.radar-card .rc-scores {
+  display: flex; justify-content: center; gap: 8px;
+  margin-top: 8px; flex-wrap: wrap;
+}
+.rc-score { font-family: 'JetBrains Mono', monospace; font-size: 11px; }
+
+/* SCATTER */
+#scatter-container {
+  position: relative; background: var(--bg-card2);
+  border: 1px solid var(--border); border-radius: 10px;
+  overflow: hidden; margin-bottom: 20px;
+}
+#scatter-svg { width: 100%; display: block; }
+.scatter-tooltip {
+  position: fixed; background: #1e293bf0; border: 1px solid var(--border);
+  border-radius: 8px; padding: 10px 12px;
+  font-size: 12px; pointer-events: none;
+  z-index: 200; max-width: 240px; display: none;
+  line-height: 1.6;
+}
+.scatter-tooltip strong { color: var(--text); font-size: 13px; }
+.scatter-tooltip a { color: var(--blue); }
+
+/* TABLE */
+.sort-bar { display: flex; gap: 6px; margin-bottom: 12px; flex-wrap: wrap; align-items: center; }
+.sort-btn {
+  background: var(--bg-card2); border: 1px solid var(--border);
+  color: var(--text2); font-size: 12px; padding: 4px 12px;
+  border-radius: 5px; cursor: pointer; font-family: 'JetBrains Mono', monospace;
+  transition: all 0.1s;
+}
+.sort-btn:hover { border-color: var(--blue); color: var(--text); }
+.sort-btn.active { background: rgba(59,130,246,0.15); border-color: var(--blue); color: var(--blue); }
+.sort-btn .dir { margin-left: 4px; opacity: 0.7; }
+
+#game-table { width: 100%; border-collapse: collapse; }
+#game-table th {
+  text-align: left; padding: 8px 10px;
+  font-size: 11px; color: var(--text3);
+  font-family: 'JetBrains Mono', monospace;
+  letter-spacing: 0.05em; border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+#game-table td {
+  padding: 7px 10px; border-bottom: 1px solid rgba(51,65,85,0.5);
+  font-size: 12px;
+}
+#game-table tr.game-row { cursor: pointer; }
+#game-table tr.game-row:hover td { background: var(--bg-hover); }
+#game-table tr.expand-row td { padding: 0; background: #121f32; }
+.expand-panel {
+  padding: 16px 20px; display: flex; gap: 20px; align-items: flex-start;
+}
+.expand-mechs { display: flex; flex-wrap: wrap; gap: 6px; }
+.mech-tag {
+  background: rgba(99,102,241,0.15); border: 1px solid rgba(99,102,241,0.3);
+  color: #a5b4fc; font-size: 10px; padding: 3px 8px; border-radius: 4px;
+  font-family: 'JetBrains Mono', monospace;
+}
+.t-hi { color: #f87171; font-weight: 700; }
+.f-hi { color: #fbbf24; }
+.mono { font-family: 'JetBrains Mono', monospace; }
+
+/* WISHLIST */
+.priority-filter { display: flex; gap: 6px; margin-bottom: 16px; flex-wrap: wrap; }
+.pf-btn {
+  background: var(--bg-card2); border: 1px solid var(--border);
+  color: var(--text2); font-size: 12px; padding: 4px 14px;
+  border-radius: 20px; cursor: pointer;
+  transition: all 0.1s;
+}
+.pf-btn.active { color: #fff; }
+.pf-btn[data-p="0"].active { background: var(--blue); border-color: var(--blue); }
+.pf-btn[data-p="1"].active { background: var(--red); border-color: var(--red); }
+.pf-btn[data-p="2"].active { background: var(--amber); border-color: var(--amber); color: #000; }
+.pf-btn[data-p="3"].active { background: var(--green); border-color: var(--green); color: #000; }
+.pf-btn[data-p="4"].active { background: var(--blue); border-color: var(--blue); }
+.pf-btn[data-p="5"].active { background: var(--text3); border-color: var(--text3); }
+
+.priority-section { margin-bottom: 20px; }
+.priority-header {
+  display: flex; align-items: center; gap: 10px;
+  padding: 8px 14px; border-radius: 8px; cursor: pointer;
+  margin-bottom: 10px; user-select: none;
+  background: var(--bg-card); border: 1px solid var(--border);
+  font-weight: 600; font-size: 13px;
+}
+.priority-header .ph-count { font-family: 'JetBrains Mono', monospace; font-size: 11px; opacity: 0.7; }
+.priority-header .ph-arrow { margin-left: auto; opacity: 0.5; transition: transform 0.2s; }
+.priority-header.collapsed .ph-arrow { transform: rotate(-90deg); }
+
+.wishlist-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+.wl-card {
+  background: var(--bg-card2); border: 1px solid var(--border);
+  border-radius: 10px; overflow: hidden;
+  transition: transform 0.15s, border-color 0.15s;
+}
+.wl-card:hover { transform: translateY(-2px); border-color: var(--blue); }
+.wl-thumb {
+  width: 100%; aspect-ratio: 1; object-fit: cover;
+  background: var(--bg-card); display: block;
+}
+.wl-thumb-placeholder {
+  width: 100%; aspect-ratio: 1; background: var(--bg-card);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 28px; color: var(--text3);
+}
+.wl-body { padding: 10px; }
+.wl-name { font-size: 12px; font-weight: 600; line-height: 1.3; margin-bottom: 6px; }
+.wl-meta { display: flex; flex-wrap: wrap; gap: 4px; font-size: 10px; color: var(--text2); }
+.wl-meta span { display: flex; align-items: center; gap: 2px; }
+
+/* PREORDERED */
+.preorder-section { margin-top: 20px; }
+.preorder-card {
+  background: rgba(99,102,241,0.08); border: 1px solid rgba(99,102,241,0.3);
+  border-radius: 10px; padding: 14px 16px;
+  display: flex; align-items: center; gap: 14px;
+  margin-bottom: 8px;
+}
+.preorder-icon { font-size: 20px; }
+.preorder-name { font-weight: 600; font-size: 14px; }
+.preorder-meta { font-size: 12px; color: var(--text2); margin-top: 2px; }
+
+/* PATTERNS */
+.horiz-bar-wrap { margin-bottom: 4px; }
+.horiz-bar-label { display: flex; justify-content: space-between; margin-bottom: 3px; font-size: 12px; }
+.horiz-bar-track { height: 18px; background: var(--border); border-radius: 4px; overflow: hidden; position: relative; }
+.horiz-bar-fill { height: 100%; border-radius: 4px; transition: width 0.4s; position: relative; }
+.horiz-bar-val {
+  position: absolute; right: 6px; top: 50%; transform: translateY(-50%);
+  font-family: 'JetBrains Mono', monospace; font-size: 10px; color: rgba(255,255,255,0.8);
+}
+
+.gatekeeper-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.gatekeeper-card {
+  background: var(--bg-card2); border: 1px solid var(--border);
+  border-radius: 8px; padding: 14px; text-align: center;
+}
+.gk-label { font-size: 11px; color: var(--text3); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.06em; }
+.gk-count { font-family: 'JetBrains Mono', monospace; font-size: 32px; font-weight: 700; line-height: 1; }
+.gk-sub { font-size: 12px; color: var(--text2); margin-top: 4px; }
+
+.observation-list { display: flex; flex-direction: column; gap: 8px; }
+.observation {
+  background: var(--bg-card2); border-left: 3px solid var(--blue);
+  padding: 10px 14px; border-radius: 0 6px 6px 0;
+  font-size: 13px; line-height: 1.5; color: var(--text2);
+}
+.observation strong { color: var(--text); }
+
+/* MINI SCATTER */
+.mini-scatter-wrap {
+  position: relative; overflow: hidden;
+  background: var(--bg-card2); border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+/* PREVIOUSLY OWNED */
+.prev-owned-list { display: flex; flex-direction: column; gap: 6px; }
+.prev-row {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 7px 12px; background: var(--bg-card2);
+  border: 1px solid var(--border); border-radius: 6px;
+}
+.prev-row .pr-name { font-size: 13px; }
+.prev-row .pr-rating {
+  font-family: 'JetBrains Mono', monospace; font-size: 12px;
+  color: var(--text2);
+}
+
+/* SEARCH */
+.search-wrap { margin-bottom: 12px; }
+.search-wrap input {
+  background: var(--bg-card2); border: 1px solid var(--border);
+  color: var(--text); font-family: 'Outfit', sans-serif; font-size: 13px;
+  padding: 7px 12px; border-radius: 7px; width: 100%; max-width: 320px;
+  outline: none; transition: border-color 0.15s;
+}
+.search-wrap input:focus { border-color: var(--blue); }
+.search-wrap input::placeholder { color: var(--text3); }
+
+/* TOGGLE */
+.toggle-wrap { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; font-size: 13px; color: var(--text2); }
+.toggle {
+  width: 36px; height: 20px; background: var(--border); border-radius: 10px;
+  position: relative; cursor: pointer; transition: background 0.2s;
+}
+.toggle.on { background: var(--blue); }
+.toggle::after {
+  content: ''; position: absolute; top: 2px; left: 2px;
+  width: 16px; height: 16px; background: #fff; border-radius: 50%;
+  transition: left 0.2s;
+}
+.toggle.on::after { left: 18px; }
+
+/* AXIS LABELS */
+.axis-label { font-family: 'JetBrains Mono', monospace; font-size: 10px; fill: var(--text3); }
+
+/* SCROLLABLE */
+.scroll-y { overflow-y: auto; max-height: 600px; }
+.scroll-y::-webkit-scrollbar { width: 4px; }
+.scroll-y::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+/* PRIORITY COLORS */
+.p1 { color: var(--red); }
+.p2 { color: var(--amber); }
+.p3 { color: var(--green); }
+.p4 { color: var(--blue); }
+.p5 { color: var(--text3); }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .two-col, .three-col { grid-template-columns: 1fr; }
+  .lb-row { grid-template-columns: 24px 1fr auto auto; }
+  .lb-bar-wrap { display: none; }
+  .is-row { grid-template-columns: 20px 1fr auto; }
+  .is-bar-wrap, .is-row > .badge { display: none; }
+}
+
+/* SECTION SPACING */
+.mb16 { margin-bottom: 16px; }
+.mb20 { margin-bottom: 20px; }
+</style>
+</head>
+<body>
+
+<div id="loading">
+  <div class="spinner"></div>
+  <p>Loading BGG collection data...</p>
+</div>
+
+<div id="app-header">
+  <h1>BGG Dashboard &mdash; <span id="username-label">jsneij</span></h1>
+  <nav>
+    <button class="tab-btn active" data-tab="overview">Overview</button>
+    <button class="tab-btn" data-tab="is-scores">IS Scores</button>
+    <button class="tab-btn" data-tab="scatter">M&times;T Map</button>
+    <button class="tab-btn" data-tab="table">Full Table</button>
+    <button class="tab-btn" data-tab="wishlist">Wishlist</button>
+    <button class="tab-btn" data-tab="patterns">Patterns</button>
+    <button class="tab-btn" data-tab="insights">Insights</button>
+  </nav>
+</div>
+
+<div id="content">
+
+  <!-- TAB 1: OVERVIEW -->
+  <div id="tab-overview" class="tab-pane active">
+    <div id="stat-grid-container" class="mb20"></div>
+    <div class="two-col mb20">
+      <div class="card">
+        <div class="section-title">IS Leaderboard &mdash; Top 12</div>
+        <div id="leaderboard" class="leaderboard"></div>
+      </div>
+      <div>
+        <div class="card mb16">
+          <div class="section-title">Collection DNA</div>
+          <div id="collection-dna"></div>
+        </div>
+        <div class="card">
+          <div class="section-title">Previously Owned</div>
+          <div id="prev-owned" class="prev-owned-list"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB 2: IS SCORES -->
+  <div id="tab-is-scores" class="tab-pane">
+    <div class="two-col">
+      <div class="card mb20" style="grid-column:1/-1">
+        <div class="section-title">Owned &mdash; Ranked by Immersion Score</div>
+        <div id="is-full-list" class="is-list scroll-y"></div>
+      </div>
+    </div>
+    <div class="card mb20">
+      <div class="section-title">Radar Gallery &mdash; IS &ge; 50</div>
+      <div id="radar-grid" class="radar-grid"></div>
+    </div>
+  </div>
+
+  <!-- TAB 3: SCATTER -->
+  <div id="tab-scatter" class="tab-pane">
+    <div class="card mb16" style="padding:14px 16px 10px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+        <div>
+          <div class="section-title" style="margin-bottom:4px">M &times; T Scatter &mdash; Mechanical Depth vs Fiction Embodiment</div>
+          <div style="font-size:11px;color:var(--text3)">Bubble size = inverse of BGG rank (top-ranked games are larger) &bull; Color = feeling &bull; Hover for details</div>
+        </div>
+        <div class="toggle-wrap" style="margin:0">
+          <div class="toggle" id="wl-toggle"></div>
+          <span>Wishlist</span>
+        </div>
+      </div>
+      <div id="scatter-container">
+        <svg id="scatter-svg"></svg>
+      </div>
+    </div>
+    <div class="scatter-tooltip" id="scatter-tooltip"></div>
+    <div style="display:flex;gap:16px;flex-wrap:wrap;font-size:12px;color:var(--text2)">
+      <span><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--red);margin-right:4px"></span>Loves it</span>
+      <span><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--amber);margin-right:4px"></span>Likes it</span>
+      <span><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--blue);margin-right:4px"></span>Scored</span>
+      <span><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--text3);margin-right:4px"></span>Unscored</span>
+      <span><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:none;border:2px dashed var(--purple);margin-right:4px"></span>Wishlist</span>
+    </div>
+  </div>
+
+  <!-- TAB 4: FULL TABLE -->
+  <div id="tab-table" class="tab-pane">
+    <div class="sort-bar">
+      <span style="font-size:11px;color:var(--text3);margin-right:4px">Sort:</span>
+      <button class="sort-btn active" data-sort="IS">IS <span class="dir">↓</span></button>
+      <button class="sort-btn" data-sort="GS">GS <span class="dir">↓</span></button>
+      <button class="sort-btn" data-sort="T">T <span class="dir">↓</span></button>
+      <button class="sort-btn" data-sort="name">Name <span class="dir">↑</span></button>
+      <button class="sort-btn" data-sort="weight">Weight <span class="dir">↓</span></button>
+      <button class="sort-btn" data-sort="bggRank">BGG# <span class="dir">↑</span></button>
+      <button class="sort-btn" data-sort="plays">Plays <span class="dir">↓</span></button>
+      <div class="search-wrap" style="margin:0 0 0 auto">
+        <input type="text" id="table-search" placeholder="Search games...">
+      </div>
+    </div>
+    <div style="overflow-x:auto">
+      <table id="game-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>M</th><th style="color:var(--red)">T</th><th>G</th><th>F</th><th>Ar</th>
+            <th>GS</th><th style="color:var(--amber)">IS</th>
+            <th>Wt</th><th>BGG#</th><th>BGG★</th><th>Plays</th><th>Feeling</th>
+          </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- TAB 5: WISHLIST -->
+  <div id="tab-wishlist" class="tab-pane">
+    <div class="priority-filter" id="priority-filter">
+      <button class="pf-btn active" data-p="0">All</button>
+      <button class="pf-btn" data-p="1">P1 Must Have</button>
+      <button class="pf-btn" data-p="2">P2 Love</button>
+      <button class="pf-btn" data-p="3">P3 Like</button>
+      <button class="pf-btn" data-p="4">P4 Thinking</button>
+      <button class="pf-btn" data-p="5">P5 Skip</button>
+    </div>
+    <div id="wishlist-sections"></div>
+    <div id="preordered-section" class="preorder-section"></div>
+  </div>
+
+  <!-- TAB 6: PATTERNS -->
+  <div id="tab-patterns" class="tab-pane">
+    <div class="two-col mb20">
+      <div class="card">
+        <div class="section-title">T Gatekeeper Analysis</div>
+        <div class="gatekeeper-grid mb16" id="gatekeeper-grid"></div>
+        <div style="font-size:12px;color:var(--text2);line-height:1.6">
+          T (Fiction-Mechanic Embodiment) is the single strongest predictor of IS.
+          Games where mechanics <em>are</em> the fiction score dramatically higher than abstract systems.
+        </div>
+      </div>
+      <div class="card">
+        <div class="section-title">IS Band Distribution</div>
+        <div id="is-bands" style="margin-bottom:16px"></div>
+        <div class="section-title">Feeling Breakdown</div>
+        <div id="feeling-breakdown"></div>
+      </div>
+    </div>
+    <div class="two-col mb20">
+      <div class="card">
+        <div class="section-title">Top Mechanisms (Owned)</div>
+        <div id="mech-bars"></div>
+      </div>
+      <div class="card">
+        <div class="section-title">IS vs Plays &mdash; Aspiration vs Reality</div>
+        <div id="plays-vs-is"></div>
+      </div>
+    </div>
+    <div class="two-col mb20">
+      <div class="card">
+        <div class="section-title">IS vs BGG Rating &mdash; Community Consensus</div>
+        <div class="mini-scatter-wrap">
+          <svg id="is-bgg-scatter" width="100%" height="280" viewBox="0 0 500 280"></svg>
+        </div>
+        <div style="font-size:11px;color:var(--text3);margin-top:8px">
+          Above diagonal: personally overvalued vs community &bull; Below: undervalued
+        </div>
+      </div>
+      <div class="card">
+        <div class="section-title">Personal F vs BGG Complexity Weight</div>
+        <div class="mini-scatter-wrap">
+          <svg id="f-weight-scatter" width="100%" height="280" viewBox="0 0 500 280"></svg>
+        </div>
+        <div style="font-size:11px;color:var(--text3);margin-top:8px">
+          Divergence reveals where friction is setup/fiddliness rather than cognitive load
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="section-title">Observations</div>
+      <div id="observations" class="observation-list"></div>
+    </div>
+  </div>
+
+
+  <!-- TAB 7: INSIGHTS -->
+  <div id="tab-insights" class="tab-pane">
+    <div id="insights-container" style="display:flex;flex-direction:column;gap:20px"></div>
+  </div>
+
+</div><!-- /content -->
+
+<div id="scatter-tooltip" class="scatter-tooltip"></div>
+
+<script>
+// ============================================================
+// CONSTANTS & HELPERS
+// ============================================================
+const BGG_LINK = id => `https://boardgamegeek.com/boardgame/${id}`;
+const a = (id, name) => `<a href="${BGG_LINK(id)}" target="_blank" rel="noopener">${name}</a>`;
+
+const FEELING_COLOR = f => f === 'Loves it' ? 'var(--red)' : f === 'Likes it' ? 'var(--amber)' : 'var(--blue)';
+const FEELING_BADGE = f => {
+  if (f === 'Loves it') return '<span class="badge badge-loves">Loves it</span>';
+  if (f === 'Likes it') return '<span class="badge badge-likes">Likes it</span>';
+  if (f) return `<span class="badge badge-scored">${f}</span>`;
+  return '<span class="badge badge-unscored">—</span>';
+};
+
+const PRIORITY_LABELS = {1:'P1 Must Have',2:'P2 Love to Have',3:'P3 Like to Have',4:'P4 Thinking',5:'P5 Don\'t Buy'};
+const PRIORITY_COLORS = {1:'var(--red)',2:'var(--amber)',3:'var(--green)',4:'var(--blue)',5:'var(--text3)'};
+
+const fmt1 = v => v === null || v === undefined ? '—' : Number.isInteger(v) ? v.toString() : v.toFixed(1);
+const fmtRank = v => v ? `#${v.toLocaleString()}` : '—';
+const fmtBGGRating = v => v && v > 0 ? v.toFixed(2) : '—';
+
+function clamp(min, max, val) { return Math.max(min, Math.min(max, val)); }
+
+// Radar SVG
+function radarSVG(scores, size = 180) {
+  const { M = 0, T = 0, G = 0, F = 0, Ar = 0 } = scores || {};
+  const IF = 5 - (F || 0);
+  const vals = [M, T, G, IF, Ar];
+  const labels = ['M', 'T', 'G', 'IF', 'Ar'];
+  const colors = ['#3b82f6', '#ef4444', '#22c55e', '#f59e0b', '#a855f7'];
+  const cx = size / 2, cy = size / 2, r = size * 0.36;
+  const n = 5;
+  const angle = i => -Math.PI / 2 + (2 * Math.PI * i / n);
+  const pt = (i, v, scale = 1) => {
+    const a = angle(i);
+    const frac = clamp(0, 5, v) / 5;
+    return [cx + r * frac * scale * Math.cos(a), cy + r * frac * scale * Math.sin(a)];
+  };
+
+  // Grid
+  let grid = '';
+  for (let g = 1; g <= 4; g++) {
+    const pts = Array.from({ length: n }, (_, i) => pt(i, g * 1.25).join(',')).join(' ');
+    grid += `<polygon points="${pts}" fill="none" stroke="#1e3a5f" stroke-width="0.8"/>`;
+  }
+  // Axes
+  let axes = '';
+  for (let i = 0; i < n; i++) {
+    const [x, y] = pt(i, 5);
+    axes += `<line x1="${cx}" y1="${cy}" x2="${x}" y2="${y}" stroke="#1e3a5f" stroke-width="0.8"/>`;
+  }
+  // Value polygon
+  const polyPts = vals.map((v, i) => pt(i, Math.max(0, v)).join(',')).join(' ');
+  // Labels
+  let lbls = '';
+  for (let i = 0; i < n; i++) {
+    const [x, y] = pt(i, 5, 1.28);
+    lbls += `<text x="${x}" y="${y}" text-anchor="middle" dominant-baseline="middle" font-size="11" fill="${colors[i]}" font-family="JetBrains Mono,monospace" font-weight="700">${labels[i]}</text>`;
+  }
+  // Value dots
+  let dots = '';
+  vals.forEach((v, i) => {
+    const [x, y] = pt(i, Math.max(0, v));
+    dots += `<circle cx="${x}" cy="${y}" r="2.5" fill="${colors[i]}"/>`;
+  });
+
+  return `<svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}" overflow="visible">
+    ${grid}${axes}
+    <polygon points="${polyPts}" fill="rgba(99,102,241,0.25)" stroke="#6366f1" stroke-width="1.5" stroke-linejoin="round"/>
+    ${dots}${lbls}
+  </svg>`;
+}
+
+// IS color
+function isColor(is) {
+  if (is >= 150) return '#ef4444';
+  if (is >= 87)  return '#f59e0b';
+  if (is >= 30)  return '#3b82f6';
+  return '#64748b';
+}
+
+// Game type icon
+function typeIcon(type) {
+  const map = { 'co-op': '🤝', solo: '🧍', competitive: '⚔️', party: '🎉', 'semi-coop': '🤝⚔️' };
+  return map[type] || '🎲';
+}
+
+// ============================================================
+// DATA LOADING & MERGING
+// ============================================================
+let STATE = {};
+
+async function loadData() {
+  const [colResp, scResp] = await Promise.all([
+    fetch('../data/bgg_collection.json'),
+    fetch('../data/bgg_collection_scores.json')
+  ]);
+  if (!colResp.ok) throw new Error('Could not load bgg_collection.json');
+  if (!scResp.ok) throw new Error('Could not load bgg_collection_scores.json');
+  const collection = await colResp.json();
+  const scores = await scResp.json();
+  return { collection, scores };
+}
+
+function mergeGame(game, scoreObj) {
+  const sc = scoreObj || {};
+  const M = sc.M || 0, T = sc.T || 0, G = sc.G || 0, F = sc.F || 0, Ar = sc.Ar || 0;
+  const hasScores = !!(M || T || G || Ar);
+  const GS = hasScores ? (M * T * G - F) : null;
+  const IS = (GS !== null) ? GS * (Ar / 2) : null;
+  const IF = F ? (5 - F) : null;
+  const bggRank = (game.stats.ranks || []).find(r => r.name === 'boardgame')?.value || null;
+  return {
+    ...game,
+    sc,
+    M, T, G, F, Ar,
+    GS, IS, IF,
+    bggRank,
+    hasScores,
+    type: sc.type || game.type || '',
+    weight: sc.weight || game.stats.avg_weight || null,
+    feeling: sc.feeling || null,
+    mechs: sc.mechs || [],
+    bggAvg: game.stats.average || null,
+  };
+}
+
+function buildState(collection, scores) {
+  const ownedScores = scores.owned || {};
+  const wlScores = scores.wishlist || {};
+
+  const owned = (collection.owned || []).map(g => mergeGame(g, ownedScores[g.name]));
+
+  // Wishlist: flatten all priority buckets
+  const wlBuckets = collection.wishlist || {};
+  const wishlist = [];
+  const priorityKeyMap = {
+    priority_1_must_have: 1, priority_2_love_to_have: 2,
+    priority_3_like_to_have: 3, priority_4_thinking_about: 4,
+    priority_5_dont_buy_this: 5, unset: 0
+  };
+  for (const [key, games] of Object.entries(wlBuckets)) {
+    const pri = priorityKeyMap[key] ?? 0;
+    if (pri === 0) continue; // skip unset
+    (games || []).forEach(g => {
+      const merged = mergeGame(g, wlScores[g.name]);
+      wishlist.push({ ...merged, priority: pri });
+    });
+  }
+
+  const preordered = (collection.preordered || []).map(g => mergeGame(g, ownedScores[g.name]));
+  const prevOwned = (collection.previously_owned || []).map(g => mergeGame(g, {}));
+
+  return { owned, wishlist, preordered, prevOwned, collection };
+}
+
+// ============================================================
+// TAB 1: OVERVIEW
+// ============================================================
+function renderOverview(state) {
+  const { owned, wishlist, preordered, prevOwned } = state;
+
+  // Stat cards
+  const totalOwned = owned.length;
+  const soloReady = owned.filter(g => g.type === 'solo' || g.type === 'co-op').length;
+  const coop = owned.filter(g => g.type === 'co-op').length;
+  const validIS = owned.filter(g => g.IS !== null);
+  const avgIS = validIS.length ? (validIS.reduce((s, g) => s + g.IS, 0) / validIS.length) : 0;
+  const validWt = owned.filter(g => g.weight);
+  const avgWt = validWt.length ? (validWt.reduce((s, g) => s + g.weight, 0) / validWt.length) : 0;
+  const totalWl = wishlist.length;
+  const loves = owned.filter(g => g.feeling === 'Loves it').length;
+
+  const statGrid = document.getElementById('stat-grid-container');
+  statGrid.innerHTML = `<div class="stat-grid">
+    <div class="stat-card"><div class="label">Owned</div><div class="value">${totalOwned}</div><div class="sub">board games</div></div>
+    <div class="stat-card"><div class="label">Solo-Ready</div><div class="value">${soloReady}</div><div class="sub">solo + co-op</div></div>
+    <div class="stat-card"><div class="label">Co-op</div><div class="value">${coop}</div><div class="sub">games</div></div>
+    <div class="stat-card"><div class="label">Avg IS</div><div class="value" style="color:var(--amber)">${avgIS.toFixed(0)}</div><div class="sub">immersion score</div></div>
+    <div class="stat-card"><div class="label">Avg Weight</div><div class="value">${avgWt.toFixed(2)}</div><div class="sub">personal estimate</div></div>
+    <div class="stat-card"><div class="label">Wishlist</div><div class="value" style="color:var(--blue)">${totalWl}</div><div class="sub">games tracked</div></div>
+    <div class="stat-card"><div class="label">Loves It</div><div class="value" style="color:var(--red)">${loves}</div><div class="sub">of ${totalOwned} rated</div></div>
+  </div>`;
+
+  // Leaderboard — top 12 by IS
+  const sorted = [...owned].filter(g => g.IS !== null).sort((a, b) => b.IS - a.IS).slice(0, 12);
+  const maxIS = sorted[0]?.IS || 1;
+  const lb = document.getElementById('leaderboard');
+  lb.innerHTML = sorted.map((g, i) => `
+    <div class="lb-row">
+      <div class="lb-rank">${i + 1}</div>
+      <div class="lb-name">${a(g.bgg_id, g.name)}</div>
+      ${FEELING_BADGE(g.feeling)}
+      <div class="lb-bar-wrap"><div class="lb-bar" style="width:${(g.IS/maxIS*100).toFixed(1)}%;background:${isColor(g.IS)}"></div></div>
+      <div class="lb-is" style="color:${isColor(g.IS)}">${fmt1(g.IS)}</div>
+    </div>`).join('');
+
+  // Collection DNA
+  const solo = owned.filter(g => g.type === 'solo').length;
+  const comp = owned.filter(g => g.type === 'competitive').length;
+  const party = owned.filter(g => g.type === 'party').length;
+  const semiCoop = owned.filter(g => g.type === 'semi-coop').length;
+  const pctSolo = totalOwned ? ((solo + coop) / totalOwned * 100).toFixed(0) : 0;
+  const likes = owned.filter(g => g.feeling === 'Likes it').length;
+  const unrated = owned.filter(g => !g.hasScores).length;
+
+  document.getElementById('collection-dna').innerHTML = `
+    <div class="dna-grid">
+      <div>
+        ${[['Solo', solo, 'var(--green)'], ['Co-op', coop, 'var(--blue)'], ['Competitive', comp, 'var(--amber)'], ['Party', party, 'var(--purple)'], ['Semi-coop', semiCoop, 'var(--teal)']].map(([l, v, c]) => `
+        <div class="dna-item"><span class="dna-label">${l}</span><span class="dna-val" style="color:${c}">${v}</span></div>`).join('')}
+        <div class="dna-item"><span class="dna-label">% Solo-ready</span><span class="dna-val" style="color:var(--green)">${pctSolo}%</span></div>
+      </div>
+      <div>
+        ${[['Loves it', loves, 'var(--red)'], ['Likes it', likes, 'var(--amber)'], ['Unscored', unrated, 'var(--text3)']].map(([l, v, c]) => `
+        <div class="dna-item"><span class="dna-label">${l}</span><span class="dna-val" style="color:${c}">${v}</span></div>`).join('')}
+      </div>
+    </div>`;
+
+  // Previously owned
+  const po = document.getElementById('prev-owned');
+  po.innerHTML = prevOwned.map(g => `
+    <div class="prev-row">
+      <div class="pr-name">${a(g.bgg_id, g.name)}</div>
+      <div class="pr-rating">BGG ${fmtBGGRating(g.bggAvg)}</div>
+    </div>`).join('');
+}
+
+// ============================================================
+// TAB 2: IS SCORES
+// ============================================================
+function renderISScores(state) {
+  const { owned } = state;
+  const sorted = [...owned].sort((a, b) => (b.IS || -9999) - (a.IS || -9999));
+  const withIS = sorted.filter(g => g.IS !== null && g.IS > 0);
+  const zeroIS = sorted.filter(g => g.IS === null || g.IS <= 0);
+  const maxIS = withIS[0]?.IS || 1;
+
+  const list = document.getElementById('is-full-list');
+  list.innerHTML = withIS.map((g, i) => `
+    <div class="is-row">
+      <div class="is-row-idx">${i + 1}</div>
+      <div class="is-row-name">${a(g.bgg_id, g.name)}</div>
+      ${FEELING_BADGE(g.feeling)}
+      <div class="is-bar-wrap"><div class="is-bar" style="width:${(g.IS/maxIS*100).toFixed(1)}%;background:${isColor(g.IS)}"></div></div>
+      <div class="is-row-is" style="color:${isColor(g.IS)}">${fmt1(g.IS)}</div>
+    </div>`).join('') +
+    (zeroIS.length ? `
+      <div style="padding:10px 10px 4px;font-size:11px;color:var(--text3);border-top:1px solid var(--border);margin-top:8px">
+        Games with IS &le; 0 or unscored
+      </div>` +
+      zeroIS.map(g => `
+        <div class="is-row" style="opacity:0.5">
+          <div class="is-row-idx">—</div>
+          <div class="is-row-name">${a(g.bgg_id, g.name)}</div>
+          <span class="badge badge-unscored">IS ${g.IS !== null ? g.IS : '—'}</span>
+          <div class="is-bar-wrap"></div>
+          <div class="is-row-is" style="color:var(--text3)">${g.IS !== null ? g.IS : '—'}</div>
+        </div>`).join('') : '');
+
+  // Radar grid: IS >= 50
+  const radarGames = withIS.filter(g => g.IS >= 50);
+  const rg = document.getElementById('radar-grid');
+  rg.innerHTML = radarGames.map(g => `
+    <div class="radar-card">
+      <div class="rc-name">${a(g.bgg_id, g.name)}</div>
+      ${FEELING_BADGE(g.feeling)}
+      ${radarSVG(g.sc, 160)}
+      <div class="rc-scores">
+        <span class="rc-score" style="color:var(--blue)">M${g.M}</span>
+        <span class="rc-score" style="color:var(--red)">T${g.T}</span>
+        <span class="rc-score" style="color:var(--green)">G${g.G}</span>
+        <span class="rc-score" style="color:var(--amber)">F${g.F}</span>
+        <span class="rc-score" style="color:var(--purple)">Ar${g.Ar}</span>
+        <span class="rc-score" style="color:var(--amber);margin-left:4px">IS ${fmt1(g.IS)}</span>
+      </div>
+    </div>`).join('');
+}
+
+// ============================================================
+// TAB 3: SCATTER
+// ============================================================
+let showWishlist = false;
+
+function renderScatter(state) {
+  const { owned, wishlist } = state;
+  const svg = document.getElementById('scatter-svg');
+  const container = document.getElementById('scatter-container');
+  const W = container.clientWidth || 800;
+  const H = Math.min(W * 0.65, 520);
+  const PAD = { top: 30, right: 30, bottom: 50, left: 52 };
+  const pw = W - PAD.left - PAD.right;
+  const ph = H - PAD.top - PAD.bottom;
+
+  svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+  svg.setAttribute('height', H);
+
+  // Scale: M and T both 1–5
+  const scaleX = v => PAD.left + ((v - 1) / 4) * pw;
+  const scaleY = v => PAD.top + ph - ((v - 1) / 4) * ph;
+
+  // Bubble radius from BGG rank
+  const bubbleR = rank => rank ? clamp(6, 22, 800 / rank) : 6;
+
+  function feelingFill(g, wl = false) {
+    if (wl) return 'none';
+    if (!g.hasScores) return '#475569';
+    if (g.feeling === 'Loves it') return '#ef4444';
+    if (g.feeling === 'Likes it') return '#f59e0b';
+    return '#3b82f6';
+  }
+
+  function makeDot(g, wl = false) {
+    if (!g.M && !g.T) return '';
+    const x = scaleX(g.M || 1).toFixed(1);
+    const y = scaleY(g.T || 1).toFixed(1);
+    const r = bubbleR(g.bggRank);
+    const fill = feelingFill(g, wl);
+    const stroke = wl ? '#a855f7' : fill;
+    const strokeDash = wl ? 'stroke-dasharray="4 2"' : '';
+    const name = g.name.replace(/"/g, '&quot;');
+    return `<circle cx="${x}" cy="${y}" r="${r}" fill="${fill}" fill-opacity="${wl ? 0 : 0.75}" stroke="${stroke}" stroke-width="${wl ? 1.5 : 1}" ${strokeDash}
+      data-id="${g.bgg_id}" data-name="${name}" data-m="${g.M}" data-t="${g.T}"
+      data-is="${g.IS !== null ? g.IS.toFixed(0) : '—'}"
+      data-gs="${g.GS !== null ? g.GS : '—'}"
+      data-feeling="${g.feeling || ''}"
+      data-bgg="${g.bggAvg ? g.bggAvg.toFixed(2) : '—'}"
+      data-rank="${g.bggRank || ''}"
+      data-wl="${wl ? '1' : '0'}"
+      style="cursor:pointer" class="scatter-dot"/>`;
+  }
+
+  // Grid lines
+  let gridLines = '';
+  for (let v = 1; v <= 5; v++) {
+    const x = scaleX(v).toFixed(1);
+    const y = scaleY(v).toFixed(1);
+    gridLines += `<line x1="${x}" y1="${PAD.top}" x2="${x}" y2="${PAD.top + ph}" stroke="#1e3a5f" stroke-width="0.8"/>`;
+    gridLines += `<line x1="${PAD.left}" y1="${y}" x2="${PAD.left + pw}" y2="${y}" stroke="#1e3a5f" stroke-width="0.8"/>`;
+    gridLines += `<text x="${(x)}" y="${PAD.top + ph + 18}" text-anchor="middle" font-size="11" fill="#475569" font-family="JetBrains Mono,monospace">${v}</text>`;
+    gridLines += `<text x="${PAD.left - 12}" y="${y}" text-anchor="middle" dominant-baseline="middle" font-size="11" fill="#475569" font-family="JetBrains Mono,monospace">${v}</text>`;
+  }
+
+  // Axis labels
+  const axisLabels = `
+    <text x="${PAD.left + pw / 2}" y="${H - 6}" text-anchor="middle" font-size="12" fill="#94a3b8" font-family="Outfit,sans-serif">M — Mechanical Depth</text>
+    <text x="${14}" y="${PAD.top + ph / 2}" text-anchor="middle" dominant-baseline="middle" font-size="12" fill="#94a3b8" font-family="Outfit,sans-serif" transform="rotate(-90,14,${PAD.top + ph / 2})">T — Fiction Embodiment</text>`;
+
+  const dots = owned.map(g => makeDot(g)).join('') +
+    (showWishlist ? wishlist.filter(g => g.M && g.T).map(g => makeDot(g, true)).join('') : '');
+
+  svg.innerHTML = gridLines + axisLabels + dots;
+
+  // Tooltip
+  const tooltip = document.getElementById('scatter-tooltip');
+  svg.querySelectorAll('.scatter-dot').forEach(dot => {
+    dot.addEventListener('mouseenter', e => {
+      const d = e.target.dataset;
+      const wl = d.wl === '1';
+      tooltip.style.display = 'block';
+      tooltip.innerHTML = `<strong>${a(d.id, d.name)}</strong><br>
+        <span style="color:var(--blue)">M=${d.m}</span> &times; <span style="color:var(--red)">T=${d.t}</span>
+        &bull; IS <strong>${d.is}</strong><br>
+        BGG ★ ${d.bgg} &bull; Rank ${d.rank ? '#' + Number(d.rank).toLocaleString() : '—'}<br>
+        ${d.feeling ? `<span style="color:${FEELING_COLOR(d.feeling)}">${d.feeling}</span>` : ''}
+        ${wl ? '<span style="color:var(--purple)">[Wishlist]</span>' : ''}`;
+    });
+    dot.addEventListener('mousemove', e => {
+      tooltip.style.left = (e.clientX + 14) + 'px';
+      tooltip.style.top = (e.clientY - 10) + 'px';
+    });
+    dot.addEventListener('mouseleave', () => { tooltip.style.display = 'none'; });
+  });
+}
+
+// Wishlist toggle
+document.getElementById('wl-toggle').addEventListener('click', function () {
+  showWishlist = !showWishlist;
+  this.classList.toggle('on', showWishlist);
+  if (STATE.owned) renderScatter(STATE);
+});
+
+// ============================================================
+// TAB 4: TABLE
+// ============================================================
+let tableSortField = 'IS';
+let tableSortDir = -1; // -1 = desc, 1 = asc
+let tableSearch = '';
+let expandedRow = null;
+
+function renderTable(state) {
+  const { owned } = state;
+
+  function sortFn(a, b) {
+    let av, bv;
+    const f = tableSortField;
+    if (f === 'name') { av = a.name.toLowerCase(); bv = b.name.toLowerCase(); }
+    else if (f === 'IS') { av = a.IS ?? -9999; bv = b.IS ?? -9999; }
+    else if (f === 'GS') { av = a.GS ?? -9999; bv = b.GS ?? -9999; }
+    else if (f === 'T') { av = a.T || 0; bv = b.T || 0; }
+    else if (f === 'weight') { av = a.weight || 0; bv = b.weight || 0; }
+    else if (f === 'bggRank') { av = a.bggRank || 99999; bv = b.bggRank || 99999; }
+    else if (f === 'plays') { av = a.num_plays || 0; bv = b.num_plays || 0; }
+    if (av < bv) return tableSortDir;
+    if (av > bv) return -tableSortDir;
+    return 0;
+  }
+
+  const filtered = owned.filter(g =>
+    !tableSearch || g.name.toLowerCase().includes(tableSearch.toLowerCase())
+  ).sort(sortFn);
+
+  const tbody = document.getElementById('table-body');
+  tbody.innerHTML = '';
+  expandedRow = null;
+
+  filtered.forEach((g, i) => {
+    const row = document.createElement('tr');
+    row.className = 'game-row';
+    row.dataset.idx = i;
+    const tHi = g.T >= 4 ? ' class="t-hi"' : '';
+    row.innerHTML = `
+      <td>${typeIcon(g.type)}</td>
+      <td style="min-width:180px">${a(g.bgg_id, g.name)}</td>
+      <td style="color:var(--text2)">${g.type || '—'}</td>
+      <td class="mono">${g.hasScores ? g.M : '—'}</td>
+      <td class="mono"${tHi}>${g.hasScores ? g.T : '—'}</td>
+      <td class="mono">${g.hasScores ? g.G : '—'}</td>
+      <td class="mono" style="color:var(--amber)">${g.hasScores ? g.F : '—'}</td>
+      <td class="mono">${g.hasScores ? g.Ar : '—'}</td>
+      <td class="mono">${g.GS !== null ? g.GS : '—'}</td>
+      <td class="mono" style="color:${g.IS !== null ? isColor(g.IS) : 'var(--text3)'}"><strong>${g.IS !== null ? fmt1(g.IS) : '—'}</strong></td>
+      <td class="mono" style="color:var(--text2)">${g.weight ? g.weight.toFixed(2) : '—'}</td>
+      <td class="mono" style="color:var(--text3)">${fmtRank(g.bggRank)}</td>
+      <td class="mono" style="color:var(--text2)">${fmtBGGRating(g.bggAvg)}</td>
+      <td class="mono">${g.num_plays || 0}</td>
+      <td>${FEELING_BADGE(g.feeling)}</td>`;
+
+    const expandRow = document.createElement('tr');
+    expandRow.className = 'expand-row';
+    expandRow.style.display = 'none';
+    const td = document.createElement('td');
+    td.colSpan = 15;
+    const mechsHtml = (g.mechs || []).map(m => `<span class="mech-tag">${m}</span>`).join('');
+    td.innerHTML = `<div class="expand-panel">
+      ${radarSVG(g.sc, 160)}
+      <div>
+        <div style="font-size:11px;color:var(--text3);margin-bottom:8px">MECHANISMS</div>
+        <div class="expand-mechs">${mechsHtml || '<span style="color:var(--text3)">—</span>'}</div>
+        ${g.comment ? `<div style="margin-top:12px;font-size:12px;color:var(--text2);font-style:italic;max-width:400px">"${g.comment}"</div>` : ''}
+      </div>
+    </div>`;
+    expandRow.appendChild(td);
+
+    row.addEventListener('click', () => {
+      if (expandedRow === expandRow) {
+        expandRow.style.display = 'none';
+        expandedRow = null;
+      } else {
+        if (expandedRow) expandedRow.style.display = 'none';
+        expandRow.style.display = '';
+        expandedRow = expandRow;
+      }
+    });
+
+    tbody.appendChild(row);
+    tbody.appendChild(expandRow);
+  });
+}
+
+// Sort buttons
+document.querySelectorAll('.sort-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const field = btn.dataset.sort;
+    if (tableSortField === field) {
+      tableSortDir *= -1;
+    } else {
+      tableSortField = field;
+      tableSortDir = field === 'name' || field === 'bggRank' ? 1 : -1;
+    }
+    document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const dir = btn.querySelector('.dir');
+    if (dir) dir.textContent = tableSortDir === -1 ? '↓' : '↑';
+    if (STATE.owned) renderTable(STATE);
+  });
+});
+
+document.getElementById('table-search').addEventListener('input', e => {
+  tableSearch = e.target.value;
+  if (STATE.owned) renderTable(STATE);
+});
+
+// ============================================================
+// TAB 5: WISHLIST
+// ============================================================
+let wlFilter = 0;
+
+function renderWishlist(state) {
+  const { wishlist, preordered } = state;
+  const sections = document.getElementById('wishlist-sections');
+  const priorities = wlFilter === 0 ? [1, 2, 3, 4, 5] : [wlFilter];
+
+  sections.innerHTML = priorities.map(p => {
+    const games = wishlist.filter(g => g.priority === p);
+    if (!games.length) return '';
+    const label = PRIORITY_LABELS[p];
+    const color = PRIORITY_COLORS[p];
+    const cardsHtml = games.map(g => {
+      const hasImg = g.thumbnail;
+      const imgHtml = hasImg
+        ? `<img class="wl-thumb" src="${g.thumbnail}" alt="${g.name.replace(/"/g, '&quot;')}" loading="lazy" onerror="this.style.display='none'">`
+        : `<div class="wl-thumb-placeholder">🎲</div>`;
+      const rank = g.bggRank ? `#${g.bggRank.toLocaleString()}` : '—';
+      const rating = g.bggAvg ? g.bggAvg.toFixed(1) : '—';
+      const players = (g.stats.min_players && g.stats.max_players)
+        ? `${g.stats.min_players}–${g.stats.max_players}p` : '';
+      const playtime = (g.stats.min_playtime && g.stats.max_playtime)
+        ? `${g.stats.min_playtime}–${g.stats.max_playtime}m` : '';
+      const wlSc = g.sc && (g.sc.M || g.sc.T) ? `IS ${g.IS !== null ? fmt1(g.IS) : '?'}` : '';
+      return `<div class="wl-card">
+        ${imgHtml}
+        <div class="wl-body">
+          <div class="wl-name">${a(g.bgg_id, g.name)}</div>
+          <div class="wl-meta">
+            ${rating !== '—' ? `<span>★ ${rating}</span>` : ''}
+            ${rank !== '—' ? `<span>BGG ${rank}</span>` : ''}
+            ${players ? `<span>${players}</span>` : ''}
+            ${playtime ? `<span>${playtime}</span>` : ''}
+            ${wlSc ? `<span style="color:var(--amber)">${wlSc}</span>` : ''}
+          </div>
+        </div>
+      </div>`;
+    }).join('');
+
+    return `<div class="priority-section" data-priority="${p}">
+      <div class="priority-header" onclick="togglePriSection(this)">
+        <span style="color:${color}">${label}</span>
+        <span class="ph-count">${games.length} games</span>
+        <span class="ph-arrow">▼</span>
+      </div>
+      <div class="priority-body">
+        <div class="wishlist-grid">${cardsHtml}</div>
+      </div>
+    </div>`;
+  }).join('');
+
+  // Preordered
+  const preSec = document.getElementById('preordered-section');
+  if (preordered.length) {
+    preSec.innerHTML = `<div class="card">
+      <div class="section-title" style="color:var(--indigo)">Preordered</div>
+      ${preordered.map(g => `
+        <div class="preorder-card">
+          <div class="preorder-icon">📦</div>
+          <div>
+            <div class="preorder-name">${a(g.bgg_id, g.name)}</div>
+            <div class="preorder-meta">BGG ★ ${fmtBGGRating(g.bggAvg)} &bull; Rank ${fmtRank(g.bggRank)}</div>
+          </div>
+        </div>`).join('')}
+    </div>`;
+  } else {
+    preSec.innerHTML = '';
+  }
+}
+
+function togglePriSection(header) {
+  header.classList.toggle('collapsed');
+  const body = header.nextElementSibling;
+  body.style.display = header.classList.contains('collapsed') ? 'none' : '';
+}
+
+// Priority filter buttons
+document.getElementById('priority-filter').querySelectorAll('.pf-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.pf-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    wlFilter = parseInt(btn.dataset.p);
+    if (STATE.owned) renderWishlist(STATE);
+  });
+});
+
+// ============================================================
+// TAB 6: PATTERNS
+// ============================================================
+function renderPatterns(state) {
+  const { owned } = state;
+  const scored = owned.filter(g => g.hasScores);
+
+  // T Gatekeeper
+  const t4 = scored.filter(g => g.T >= 4);
+  const t2 = scored.filter(g => g.T <= 2);
+  const t4avgIS = t4.length ? t4.reduce((s, g) => s + (g.IS || 0), 0) / t4.length : 0;
+  const t2avgIS = t2.length ? t2.reduce((s, g) => s + (g.IS || 0), 0) / t2.length : 0;
+  document.getElementById('gatekeeper-grid').innerHTML = `
+    <div class="gatekeeper-card" style="border-color:rgba(239,68,68,0.4)">
+      <div class="gk-label" style="color:var(--red)">T &ge; 4</div>
+      <div class="gk-count" style="color:var(--red)">${t4.length}</div>
+      <div class="gk-sub">games &bull; avg IS <strong>${t4avgIS.toFixed(0)}</strong></div>
+    </div>
+    <div class="gatekeeper-card" style="border-color:rgba(100,116,139,0.4)">
+      <div class="gk-label" style="color:var(--text3)">T &le; 2</div>
+      <div class="gk-count" style="color:var(--text3)">${t2.length}</div>
+      <div class="gk-sub">games &bull; avg IS <strong>${t2avgIS.toFixed(0)}</strong></div>
+    </div>`;
+
+  // IS Band distribution
+  const bands = [['0–30', 0, 30], ['30–87', 30, 87], ['87–150', 87, 150], ['150+', 150, Infinity]];
+  const bandCounts = bands.map(([label, lo, hi]) => ({
+    label, count: scored.filter(g => (g.IS || 0) >= lo && (g.IS || 0) < hi).length
+  }));
+  const maxBand = Math.max(...bandCounts.map(b => b.count));
+  const bandColors = ['#64748b', '#3b82f6', '#f59e0b', '#ef4444'];
+  document.getElementById('is-bands').innerHTML = bandCounts.map((b, i) => `
+    <div class="horiz-bar-wrap">
+      <div class="horiz-bar-label"><span>${b.label}</span><span class="mono">${b.count}</span></div>
+      <div class="horiz-bar-track">
+        <div class="horiz-bar-fill" style="width:${(b.count / maxBand * 100).toFixed(1)}%;background:${bandColors[i]}">
+          <span class="horiz-bar-val">${b.count}</span>
+        </div>
+      </div>
+    </div>`).join('');
+
+  // Feeling breakdown
+  const fl = [['Loves it', 'var(--red)'], ['Likes it', 'var(--amber)'], ['null', 'var(--text3)']];
+  const feelingCounts = fl.map(([f]) => ({
+    label: f === 'null' ? 'Unscored' : f,
+    count: f === 'null' ? owned.filter(g => !g.hasScores).length : owned.filter(g => g.feeling === f).length,
+    color: fl.find(([lf]) => lf === f)[1]
+  }));
+  const maxF = Math.max(...feelingCounts.map(f => f.count));
+  document.getElementById('feeling-breakdown').innerHTML = feelingCounts.map(f => `
+    <div class="horiz-bar-wrap">
+      <div class="horiz-bar-label"><span>${f.label}</span><span class="mono">${f.count}</span></div>
+      <div class="horiz-bar-track">
+        <div class="horiz-bar-fill" style="width:${(f.count / maxF * 100).toFixed(1)}%;background:${f.color}">
+        </div>
+      </div>
+    </div>`).join('');
+
+  // Mechanism histogram
+  const mechCount = {};
+  scored.forEach(g => (g.mechs || []).forEach(m => { mechCount[m] = (mechCount[m] || 0) + 1; }));
+  const topMechs = Object.entries(mechCount).sort((a, b) => b[1] - a[1]).slice(0, 14);
+  const maxMech = topMechs[0]?.[1] || 1;
+  document.getElementById('mech-bars').innerHTML = topMechs.map(([m, c]) => `
+    <div class="horiz-bar-wrap">
+      <div class="horiz-bar-label" style="font-size:11px"><span>${m}</span><span class="mono">${c}</span></div>
+      <div class="horiz-bar-track" style="height:14px">
+        <div class="horiz-bar-fill" style="width:${(c / maxMech * 100).toFixed(1)}%;background:var(--indigo)">
+        </div>
+      </div>
+    </div>`).join('');
+
+  // Plays vs IS bar chart
+  const playsData = scored.filter(g => g.IS !== null).sort((a, b) => (b.IS || 0) - (a.IS || 0)).slice(0, 20);
+  const maxPlays = Math.max(1, ...playsData.map(g => g.num_plays || 0));
+  const maxIS2 = playsData[0]?.IS || 1;
+  document.getElementById('plays-vs-is').innerHTML = `<div style="font-size:11px;color:var(--text3);margin-bottom:8px">Top 20 by IS — bar height = IS, color intensity = plays</div>` +
+    playsData.map(g => {
+      const plays = g.num_plays || 0;
+      const playsAlpha = 0.3 + (plays / maxPlays) * 0.7;
+      return `<div class="horiz-bar-wrap" style="margin-bottom:3px">
+        <div class="horiz-bar-label" style="font-size:10px"><span>${a(g.bgg_id, g.name.length > 28 ? g.name.slice(0, 27) + '…' : g.name)}</span><span class="mono">${plays}×</span></div>
+        <div class="horiz-bar-track" style="height:12px">
+          <div class="horiz-bar-fill" style="width:${(g.IS / maxIS2 * 100).toFixed(1)}%;background:rgba(99,102,241,${playsAlpha.toFixed(2)})"></div>
+        </div>
+      </div>`;
+    }).join('');
+
+  // IS vs BGG Rating mini-scatter
+  renderMiniScatter(
+    'is-bgg-scatter',
+    scored.filter(g => g.IS !== null && g.bggAvg > 0),
+    g => ({ x: g.bggAvg, y: g.IS, label: g.name, id: g.bgg_id, color: FEELING_COLOR(g.feeling) }),
+    { xLabel: 'BGG Rating', yLabel: 'IS', xMin: 5, xMax: 10, yMin: 0, yMax: 260 }
+  );
+
+  // F vs BGG Weight scatter
+  renderMiniScatter(
+    'f-weight-scatter',
+    scored.filter(g => g.weight > 0 && g.stats.avg_weight > 0),
+    g => ({ x: g.stats.avg_weight, y: g.F, label: g.name, id: g.bgg_id, color: '#f59e0b' }),
+    { xLabel: 'BGG Complexity', yLabel: 'Personal F', xMin: 1, xMax: 5, yMin: 0, yMax: 5 }
+  );
+
+  // Observations
+  document.getElementById('observations').innerHTML = [
+    `<strong>T is the gatekeeper:</strong> Games with T≥4 average IS ${t4avgIS.toFixed(0)} vs T≤2 averaging IS ${t2avgIS.toFixed(0)} — a ${(t4avgIS/Math.max(1,t2avgIS)).toFixed(0)}× gap. Fiction-mechanic integration is not optional for depth.`,
+    `<strong>Immersion vs. frequency:</strong> High-IS games like Spirit Island rarely appear in the plays log — aspirational collection vs. actual play habits. This is worth tracking.`,
+    `<strong>Co-op and solo dominate high-IS:</strong> Nearly all games above IS 120 are co-op or solo. Competitive games cluster lower — possibly due to player count friction inflating F.`,
+    `<strong>Mechanism diversity:</strong> Variable Player Powers and Action Points dominate (17 and 16 games). This isn't lazy design — both create the kind of meaningful divergence that supports high T scores.`,
+    `<strong>Wishlist is densest at P2–P3:</strong> Most tracked games sit in "Love to Have" and "Like to Have" tiers — healthy signal-to-noise ratio. P4 is a catch-all that may need pruning.`,
+    `<strong>BGG rank vs. IS divergence:</strong> Games like Final Girl appear near the top of personal IS rankings despite modest BGG standing — the personal scoring model rewards different qualities than crowd consensus.`
+  ].map(obs => `<div class="observation">${obs}</div>`).join('');
+}
+
+function renderMiniScatter(svgId, data, accessor, opts) {
+  const { xLabel, yLabel, xMin, xMax, yMin, yMax } = opts;
+  const svg = document.getElementById(svgId);
+  if (!svg) return;
+  const W = 500, H = 280;
+  const PAD = { top: 20, right: 20, bottom: 36, left: 44 };
+  const pw = W - PAD.left - PAD.right;
+  const ph = H - PAD.top - PAD.bottom;
+
+  const scX = v => PAD.left + ((v - xMin) / (xMax - xMin)) * pw;
+  const scY = v => PAD.top + ph - ((v - yMin) / (yMax - yMin)) * ph;
+
+  let html = '';
+
+  // Grid
+  for (let tx = xMin; tx <= xMax; tx++) {
+    const x = scX(tx).toFixed(1);
+    html += `<line x1="${x}" y1="${PAD.top}" x2="${x}" y2="${PAD.top + ph}" stroke="#1e3a5f" stroke-width="0.7"/>`;
+    html += `<text x="${x}" y="${PAD.top + ph + 16}" text-anchor="middle" font-size="10" fill="#475569" font-family="JetBrains Mono,monospace">${tx}</text>`;
+  }
+  for (let ty = yMin; ty <= yMax; ty += (yMax - yMin) / 5) {
+    const y = scY(ty).toFixed(1);
+    html += `<line x1="${PAD.left}" y1="${y}" x2="${PAD.left + pw}" y2="${y}" stroke="#1e3a5f" stroke-width="0.7"/>`;
+    html += `<text x="${PAD.left - 6}" y="${y}" text-anchor="end" dominant-baseline="middle" font-size="10" fill="#475569" font-family="JetBrains Mono,monospace">${ty.toFixed(0)}</text>`;
+  }
+
+  // Axis labels
+  html += `<text x="${PAD.left + pw/2}" y="${H - 4}" text-anchor="middle" font-size="11" fill="#94a3b8" font-family="Outfit,sans-serif">${xLabel}</text>`;
+  html += `<text x="12" y="${PAD.top + ph/2}" text-anchor="middle" dominant-baseline="middle" font-size="11" fill="#94a3b8" font-family="Outfit,sans-serif" transform="rotate(-90,12,${PAD.top+ph/2})">${yLabel}</text>`;
+
+  // Diagonal reference line (for IS vs BGG)
+  if (yLabel === 'IS') {
+    // Just a visual neutral line — skip or draw a rough reference
+  }
+
+  // Dots
+  data.forEach(g => {
+    const d = accessor(g);
+    const x = clamp(PAD.left, PAD.left + pw, scX(d.x)).toFixed(1);
+    const y = clamp(PAD.top, PAD.top + ph, scY(d.y)).toFixed(1);
+    const name = d.label.replace(/"/g, '&quot;').replace(/</g, '&lt;');
+    html += `<circle cx="${x}" cy="${y}" r="5" fill="${d.color}" fill-opacity="0.7" stroke="${d.color}" stroke-width="1">
+      <title>${name}\n${xLabel}: ${d.x.toFixed ? d.x.toFixed(2) : d.x} | ${yLabel}: ${d.y.toFixed ? d.y.toFixed(1) : d.y}</title>
+    </circle>`;
+  });
+
+  svg.innerHTML = html;
+}
+
+// ============================================================
+// INSIGHTS
+// ============================================================
+const INSIGHT_FILES = [
+  'ins_weight_vs_enjoyment_2026-03-15.json',
+  'ins_owned_vs_wishlist_profile_2026-03-15.json',
+  'ins_mech_pairs_high_is_2026-03-15.json',
+  'ins_next_to_play_priority_2026-03-15.json'
+];
+
+async function renderInsights() {
+  const container = document.getElementById('insights-container');
+  for (const filename of INSIGHT_FILES) {
+    try {
+      const res = await fetch(`../insights/${filename}`);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const ins = await res.json();
+      const card = document.createElement('div');
+      card.className = 'card';
+      card.innerHTML = buildInsightCard(ins);
+      container.appendChild(card);
+    } catch (e) {
+      console.warn('Could not load insight:', filename, e);
+    }
+  }
+}
+
+function buildInsightCard(ins) {
+  const date = ins.generated_at ? ins.generated_at.slice(0, 10) : '';
+  let chartHtml = '';
+  if (ins.type === 'ranked_list') chartHtml = insRankedList(ins.data);
+  else if (ins.chart_hint === 'bar') chartHtml = insBarChart(ins.data);
+  else if (ins.chart_hint === 'bar_horizontal') chartHtml = insHBarChart(ins.data);
+  else if (ins.chart_hint === 'radar') chartHtml = insDualRadar(ins.data);
+  else chartHtml = insTable(ins);
+
+  return `
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:16px">
+      <div>
+        <div class="section-title" style="margin-bottom:4px">${ins.title}</div>
+        ${ins.filters_applied ? `<div style="font-size:11px;color:var(--text3)">${ins.filters_applied}</div>` : ''}
+      </div>
+      <div style="font-size:10px;color:var(--text3);font-family:'JetBrains Mono',monospace;white-space:nowrap;padding-top:2px">${date}</div>
+    </div>
+    ${chartHtml}
+    ${ins.summary ? `<div style="font-size:12px;color:var(--text2);line-height:1.6;margin-top:16px;padding-top:12px;border-top:1px solid var(--border)">${ins.summary}</div>` : ''}
+  `;
+}
+
+function insBarChart(data) {
+  const maxIS = Math.max(...data.map(d => d.avg_is));
+  const W = 500, H = 220, padB = 44, padT = 24, padL = 10, padR = 10;
+  const barAreaW = W - padL - padR;
+  const chartH = H - padB - padT;
+  const barW = Math.floor(barAreaW / data.length);
+
+  const bars = data.map((d, i) => {
+    const barH = Math.round((d.avg_is / maxIS) * chartH);
+    const x = padL + i * barW + 6;
+    const y = padT + chartH - barH;
+    const bw = barW - 12;
+    // Blue → red gradient by loves_pct
+    const p = (d.loves_pct || 0) / 100;
+    const fill = `rgb(${Math.round(59 + p * 180)},${Math.round(130 - p * 62)},${Math.round(246 - p * 178)})`;
+    const topGames = (d.top_games || []).slice(0, 1).join('');
+    return `
+      <rect x="${x}" y="${y}" width="${bw}" height="${barH}" rx="4" fill="${fill}" opacity="0.88"/>
+      <text x="${x + bw / 2}" y="${y - 5}" text-anchor="middle" fill="var(--text)" font-size="12" font-weight="500" font-family="JetBrains Mono,monospace">${d.avg_is}</text>
+      <text x="${x + bw / 2}" y="${padT + chartH + 14}" text-anchor="middle" fill="var(--text2)" font-size="11" font-family="Outfit,sans-serif">${d.label}</text>
+      <text x="${x + bw / 2}" y="${padT + chartH + 26}" text-anchor="middle" fill="var(--text3)" font-size="9" font-family="Outfit,sans-serif">n=${d.count}</text>
+      <text x="${x + bw / 2}" y="${padT + chartH + 38}" text-anchor="middle" fill="var(--text3)" font-size="8" font-family="Outfit,sans-serif" style="font-style:italic">${d.loves_pct}% Loves</text>
+    `;
+  }).join('');
+
+  // Y-axis label
+  const yLabel = `<text x="4" y="${padT + chartH / 2}" text-anchor="middle" fill="var(--text3)" font-size="9" font-family="Outfit,sans-serif" transform="rotate(-90,4,${padT + chartH / 2})">Avg IS</text>`;
+
+  return `<svg viewBox="0 0 ${W} ${H}" width="100%" style="max-height:220px">${yLabel}${bars}</svg>`;
+}
+
+function insHBarChart(data) {
+  const maxVal = Math.max(...data.map(d => d.value));
+  const rowH = 28, padL = 238, padR = 44, padT = 8, W = 520;
+  const barAreaW = W - padL - padR;
+  const H = padT + data.length * rowH + 8;
+
+  const rows = data.map((d, i) => {
+    const barW = Math.round((d.value / maxVal) * barAreaW);
+    const y = padT + i * rowH;
+    return `
+      <text x="${padL - 8}" y="${y + rowH / 2 + 4}" text-anchor="end" fill="var(--text2)" font-size="10" font-family="Outfit,sans-serif">${d.label}</text>
+      <rect x="${padL}" y="${y + 6}" width="${barW}" height="${rowH - 12}" rx="3" fill="var(--indigo)" opacity="0.78"/>
+      <text x="${padL + barW + 5}" y="${y + rowH / 2 + 4}" fill="var(--text3)" font-size="10" font-family="JetBrains Mono,monospace">${d.value}</text>
+    `;
+  }).join('');
+
+  return `<svg viewBox="0 0 ${W} ${H}" width="100%">${rows}</svg>`;
+}
+
+function insDualRadar(data) {
+  const { groups, axes } = data;
+  const size = 260, cx = 130, cy = 130, r = 96, n = axes.length;
+  const ang = i => -Math.PI / 2 + (2 * Math.PI * i / n);
+  const pt = (i, v) => {
+    const ax = axes[i];
+    let frac = clamp(0, ax.max, v) / ax.max;
+    if (ax.invert) frac = 1 - frac;
+    return [cx + r * frac * Math.cos(ang(i)), cy + r * frac * Math.sin(ang(i))];
+  };
+
+  // Grid rings
+  let grid = '';
+  for (let ring = 1; ring <= 5; ring++) {
+    const pts = axes.map((_, i) => { const a = ang(i); return `${cx + r * (ring / 5) * Math.cos(a)},${cy + r * (ring / 5) * Math.sin(a)}`; }).join(' ');
+    grid += `<polygon points="${pts}" fill="none" stroke="var(--border)" stroke-width="0.5"/>`;
+  }
+  axes.forEach((_, i) => {
+    const a = ang(i);
+    grid += `<line x1="${cx}" y1="${cy}" x2="${cx + r * Math.cos(a)}" y2="${cy + r * Math.sin(a)}" stroke="var(--border)" stroke-width="0.5"/>`;
+  });
+  axes.forEach((ax, i) => {
+    const a = ang(i);
+    const lx = cx + (r + 16) * Math.cos(a), ly = cy + (r + 16) * Math.sin(a);
+    grid += `<text x="${lx}" y="${ly + 4}" text-anchor="middle" fill="var(--text3)" font-size="9" font-family="Outfit,sans-serif">${ax.label}</text>`;
+  });
+
+  const ownedPts = axes.map((_, i) => pt(i, groups.owned[axes[i].key]).join(',')).join(' ');
+  const wishPts = axes.map((_, i) => pt(i, groups.wishlist[axes[i].key]).join(',')).join(' ');
+
+  const svgHtml = `<svg viewBox="0 0 ${size} ${size}" width="${size}" height="${size}" style="flex-shrink:0">
+    ${grid}
+    <polygon points="${wishPts}" fill="var(--purple)" fill-opacity="0.12" stroke="var(--purple)" stroke-width="1.5" stroke-dasharray="4,2"/>
+    <polygon points="${ownedPts}" fill="var(--blue)" fill-opacity="0.18" stroke="var(--blue)" stroke-width="2"/>
+  </svg>`;
+
+  const tableRows = axes.map(ax => {
+    const ov = groups.owned[ax.key], wv = groups.wishlist[ax.key];
+    const diff = ov - wv;
+    const diffStr = diff > 0
+      ? `<span style="color:var(--blue)">+${diff.toFixed(2)}</span>`
+      : `<span style="color:var(--purple)">${diff.toFixed(2)}</span>`;
+    return `<tr>
+      <td style="padding:4px 8px;color:var(--text2);font-size:12px">${ax.label}</td>
+      <td style="padding:4px 8px;text-align:right;color:var(--blue);font-family:'JetBrains Mono',monospace;font-size:12px">${ov.toFixed(2)}</td>
+      <td style="padding:4px 8px;text-align:right;color:var(--purple);font-family:'JetBrains Mono',monospace;font-size:12px">${wv.toFixed(2)}</td>
+      <td style="padding:4px 8px;text-align:right;font-family:'JetBrains Mono',monospace;font-size:12px">${diffStr}</td>
+    </tr>`;
+  }).join('');
+
+  const typeRows = (label, grp, color) => {
+    const types = grp.types || {};
+    return Object.entries(types).sort((a, b) => b[1] - a[1]).map(([k, v]) =>
+      `<span style="display:inline-block;margin:2px 4px 2px 0;padding:2px 7px;border-radius:999px;background:${color}22;color:${color};border:1px solid ${color}55;font-size:10px">${k} <b>${v}</b></span>`
+    ).join('');
+  };
+
+  const detailHtml = `
+    <div style="flex:1;min-width:180px">
+      <div style="display:flex;gap:20px;margin-bottom:14px;font-size:12px;color:var(--text2)">
+        <span><span style="display:inline-block;width:24px;height:2px;background:var(--blue);vertical-align:middle;margin-right:6px"></span>Owned (n=${groups.owned.n})</span>
+        <span><span style="display:inline-block;width:24px;border-top:2px dashed var(--purple);vertical-align:middle;margin-right:6px"></span>Wishlist (n=${groups.wishlist.n})</span>
+      </div>
+      <table style="width:100%;border-collapse:collapse;margin-bottom:14px">
+        <thead><tr style="border-bottom:1px solid var(--border)">
+          <th style="padding:3px 8px;text-align:left;font-size:10px;color:var(--text3);font-weight:500">Axis</th>
+          <th style="padding:3px 8px;text-align:right;font-size:10px;color:var(--blue);font-weight:500">Owned</th>
+          <th style="padding:3px 8px;text-align:right;font-size:10px;color:var(--purple);font-weight:500">Wishlist</th>
+          <th style="padding:3px 8px;text-align:right;font-size:10px;color:var(--text3);font-weight:500">Δ</th>
+        </tr></thead>
+        <tbody>${tableRows}</tbody>
+      </table>
+      <div style="margin-bottom:6px;font-size:10px;color:var(--text3)">OWNED TYPES</div>
+      <div style="margin-bottom:12px">${typeRows('Owned', groups.owned, 'var(--blue)')}</div>
+      <div style="margin-bottom:6px;font-size:10px;color:var(--text3)">WISHLIST TYPES</div>
+      <div>${typeRows('Wishlist', groups.wishlist, 'var(--purple)')}</div>
+    </div>`;
+
+  return `<div style="display:flex;gap:24px;flex-wrap:wrap;align-items:flex-start">${svgHtml}${detailHtml}</div>`;
+}
+
+function insRankedList(data) {
+  const maxPrio = Math.max(...data.map(d => d.priority_score));
+  const feelingColor = f => f === 'Loves it' ? 'var(--red)' : f === 'Likes it' ? 'var(--amber)' : 'var(--text3)';
+  const soloTag = solo => solo
+    ? `<span style="display:inline-block;padding:1px 6px;border-radius:999px;background:var(--teal)22;color:var(--teal);border:1px solid var(--teal)44;font-size:9px;font-family:'JetBrains Mono',monospace">solo</span>`
+    : `<span style="display:inline-block;padding:1px 6px;border-radius:999px;background:var(--border);color:var(--text3);font-size:9px;font-family:'JetBrains Mono',monospace">—</span>`;
+
+  const rows = data.map((d, i) => {
+    const barPct = Math.round((d.priority_score / maxPrio) * 100);
+    const fc = feelingColor(d.feeling);
+    const mechs = (d.top_mechs || []).slice(0, 2).join(' · ');
+    const time = d.playtime_min > 0 ? `${d.playtime_min}m` : '—';
+    const rank = i + 1;
+    const rankStyle = rank <= 3 ? `color:var(--amber);font-weight:700` : `color:var(--text3)`;
+    return `<tr style="border-bottom:1px solid var(--border)22">
+      <td style="padding:7px 8px 7px 4px;${rankStyle};font-family:'JetBrains Mono',monospace;font-size:11px;width:24px;text-align:right">${rank}</td>
+      <td style="padding:7px 12px 7px 8px;min-width:160px">
+        <div style="font-size:13px;color:var(--text);font-weight:500;line-height:1.3">${d.name}</div>
+        ${mechs ? `<div style="font-size:10px;color:var(--text3);margin-top:2px">${mechs}</div>` : ''}
+      </td>
+      <td style="padding:7px 16px 7px 0;min-width:120px">
+        <div style="display:flex;align-items:center;gap:6px">
+          <div style="flex:1;height:6px;background:var(--bg);border-radius:3px;overflow:hidden;min-width:60px">
+            <div style="height:100%;width:${barPct}%;background:var(--indigo);border-radius:3px;opacity:0.8"></div>
+          </div>
+          <span style="font-size:11px;color:var(--text2);font-family:'JetBrains Mono',monospace;width:36px;text-align:right">${d.priority_score.toFixed(0)}</span>
+        </div>
+      </td>
+      <td style="padding:7px 10px;text-align:right;font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--amber);width:42px">${d.IS}</td>
+      <td style="padding:7px 10px;width:68px"><span style="font-size:10px;color:${fc};font-weight:500">${d.feeling}</span></td>
+      <td style="padding:7px 6px;width:48px;text-align:center">${soloTag(d.solo)}</td>
+      <td style="padding:7px 10px;text-align:right;font-size:11px;color:var(--text3);width:36px">${time}</td>
+      <td style="padding:7px 8px;text-align:right;font-size:11px;color:var(--text3);width:28px">F${d.friction}</td>
+    </tr>`;
+  }).join('');
+
+  return `<div style="overflow-x:auto">
+    <table style="width:100%;border-collapse:collapse">
+      <thead><tr style="border-bottom:1px solid var(--border)">
+        <th style="padding:4px 8px 6px 4px;text-align:right;font-size:9px;color:var(--text3);font-weight:500">#</th>
+        <th style="padding:4px 8px 6px;text-align:left;font-size:9px;color:var(--text3);font-weight:500">GAME</th>
+        <th style="padding:4px 8px 6px 0;text-align:left;font-size:9px;color:var(--text3);font-weight:500">PRIORITY</th>
+        <th style="padding:4px 10px 6px;text-align:right;font-size:9px;color:var(--amber);font-weight:500">IS</th>
+        <th style="padding:4px 10px 6px;text-align:left;font-size:9px;color:var(--text3);font-weight:500">FEELING</th>
+        <th style="padding:4px 6px 6px;text-align:center;font-size:9px;color:var(--teal);font-weight:500">SOLO</th>
+        <th style="padding:4px 10px 6px;text-align:right;font-size:9px;color:var(--text3);font-weight:500">TIME</th>
+        <th style="padding:4px 8px 6px;text-align:right;font-size:9px;color:var(--text3);font-weight:500">F</th>
+      </tr></thead>
+      <tbody>${rows}</tbody>
+    </table>
+  </div>`;
+}
+
+function insTable(ins) {
+  const cols = Object.entries(ins.columns || {});
+  if (!cols.length || !ins.data?.length) return '<div style="color:var(--text3);font-size:12px">No data</div>';
+  const headers = cols.map(([, c]) => `<th style="padding:4px 10px;text-align:left;font-size:10px;color:var(--text3);font-weight:500">${c.display}</th>`).join('');
+  const rows = ins.data.map(row =>
+    `<tr>${cols.map(([k]) => `<td style="padding:4px 10px;font-size:12px;color:var(--text2)">${Array.isArray(row[k]) ? row[k].join(', ') : row[k] ?? '—'}</td>`).join('')}</tr>`
+  ).join('');
+  return `<div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse"><thead><tr style="border-bottom:1px solid var(--border)">${headers}</tr></thead><tbody>${rows}</tbody></table></div>`;
+}
+
+// ============================================================
+// TAB SWITCHING
+// ============================================================
+let scatterRendered = false;
+
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const tab = btn.dataset.tab;
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById(`tab-${tab}`).classList.add('active');
+
+    // Lazy render scatter (needs layout to be visible for clientWidth)
+    if (tab === 'scatter' && STATE.owned && !scatterRendered) {
+      renderScatter(STATE);
+      scatterRendered = true;
+    }
+    if (tab === 'scatter' && STATE.owned) {
+      renderScatter(STATE);
+    }
+  });
+});
+
+// ============================================================
+// INIT
+// ============================================================
+(async () => {
+  try {
+    const { collection, scores } = await loadData();
+    STATE = buildState(collection, scores);
+
+    renderOverview(STATE);
+    renderISScores(STATE);
+    renderTable(STATE);
+    renderWishlist(STATE);
+    renderPatterns(STATE);
+    renderInsights();
+
+    document.getElementById('loading').style.display = 'none';
+  } catch (err) {
+    const loadDiv = document.getElementById('loading');
+    loadDiv.innerHTML = `<div style="color:var(--red);font-family:JetBrains Mono,monospace;text-align:center;padding:24px">
+      <div style="font-size:16px;margin-bottom:12px">Failed to load data</div>
+      <div style="font-size:12px;color:#94a3b8">${err.message}</div>
+      <div style="font-size:11px;color:#64748b;margin-top:12px">
+        Make sure you're running:<br><code>python -m http.server 8000</code><br>from the project root
+      </div>
+    </div>`;
+  }
+})();
+</script>
+</body>
+</html>
