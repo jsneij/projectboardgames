@@ -211,7 +211,7 @@ nav::-webkit-scrollbar { display: none; }
 
 /* TABLE */
 .sort-bar { display: flex; gap: 6px; margin-bottom: 0; flex-wrap: wrap; align-items: center;
-  position: sticky; top: 0; z-index: 20; background: var(--bg); padding: 10px 0; }
+  position: sticky; top: var(--header-h, 78px); z-index: 20; background: var(--bg); padding: 10px 0; }
 .sort-btn {
   background: var(--bg-card2); border: 1px solid var(--border);
   color: var(--text2); font-size: 12px; padding: 4px 12px;
@@ -229,7 +229,7 @@ nav::-webkit-scrollbar { display: none; }
   font-family: 'JetBrains Mono', monospace;
   letter-spacing: 0.05em; border-bottom: 1px solid var(--border);
   white-space: nowrap;
-  position: sticky; top: 46px; z-index: 19; background: var(--bg);
+  position: sticky; top: calc(var(--header-h, 78px) + 40px); z-index: 19; background: var(--bg);
 }
 #game-table td {
   padding: 7px 10px; border-bottom: 1px solid rgba(51,65,85,0.5);
@@ -264,7 +264,7 @@ nav::-webkit-scrollbar { display: none; }
   font-size: 15px; font-weight: 700; color: var(--accent); margin-bottom: 12px;
   padding: 8px 0 6px 0; border-bottom: 1px solid var(--border);
   display: flex; align-items: center; gap: 8px;
-  position: sticky; top: 44px; z-index: 19; background: var(--bg);
+  position: sticky; top: calc(var(--header-h, 78px) + 44px); z-index: 19; background: var(--bg);
 }
 .mech-cat-count {
   font-size: 11px; font-weight: 400; color: var(--text3);
@@ -346,7 +346,7 @@ nav::-webkit-scrollbar { display: none; }
   width: 100%; max-width: 400px; padding: 8px 14px; margin-bottom: 20px;
   background: var(--bg); border: 1px solid var(--border); border-radius: 8px;
   color: var(--text1); font-size: 13px; outline: none;
-  position: sticky; top: 0; z-index: 20;
+  position: sticky; top: var(--header-h, 78px); z-index: 20;
 }
 .mech-search:focus { border-color: var(--accent); }
 .mech-stats-bar {
@@ -957,7 +957,7 @@ nav::-webkit-scrollbar { display: none; }
         <input type="text" id="table-search" placeholder="Search games...">
       </div>
     </div>
-    <div style="overflow-x:auto">
+    <div>
       <table id="game-table">
         <thead>
           <tr>
@@ -3062,6 +3062,10 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
 // ============================================================
 (async () => {
   try {
+    // Measure sticky header height for CSS sticky offsets
+    const hdr = document.getElementById('app-header');
+    if (hdr) document.documentElement.style.setProperty('--header-h', hdr.offsetHeight + 'px');
+
     const { collection, scores, mechanisms } = await loadData();
     STATE = buildState(collection, scores, mechanisms);
 
