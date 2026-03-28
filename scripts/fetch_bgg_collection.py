@@ -696,6 +696,37 @@ def load_existing_games_index() -> dict:
     return index
 
 
+def fetch_expansion_play_counts(token: str, session=None) -> dict:
+    """Fetch play counts from the boardgameexpansion subtype.
+
+    BGG only reports accurate num_plays under an item's native subtype.
+    Games that are also expansions show num_plays=0 under subtype=boardgame,
+    so we need this second fetch to get the real counts.
+    Returns dict of {bgg_id: num_plays} for items with plays > 0.
+    """
+    root = fetch_collection(token, session=session,
+                            extra_params={"brief": "1", "subtype": "boardgameexpansion"})
+    counts = {}
+    for item in root.findall("item"):
+        bgg_id = int(item.get("objectid"))
+        plays_el = item.find("numplays")
+        num_plays = int(plays_el.text) if plays_el is not None and plays_el.text else 0
+        if num_plays > 0:
+            counts[bgg_id] = num_plays
+    return counts
+
+
+def patch_expansion_plays(games: list, exp_counts: dict):
+    """Update num_plays for games where the expansion subtype has a higher count."""
+    patched = 0
+    for game in games:
+        exp_plays = exp_counts.get(game["bgg_id"], 0)
+        if exp_plays > game.get("num_plays", 0):
+            game["num_plays"] = exp_plays
+            patched += 1
+    return patched
+
+
 # =============================================================================
 # Main
 # =============================================================================
@@ -739,13 +770,21 @@ def main():
         if changed_count == 0:
             # modifiedsince doesn't catch play log changes — check num_plays
             print(f"  ✓ No collection edits. Checking play counts...")
+            # Fetch play counts for both subtypes (boardgame + expansion)
+            # because BGG only reports accurate num_plays under the item's native subtype
             brief_root = fetch_collection(token, session=session, extra_params={"brief": "1"})
-            existing_index = load_existing_games_index()
-            play_changed = []
+            play_counts = {}
             for item in brief_root.findall("item"):
                 bgg_id = int(item.get("objectid"))
                 plays_el = item.find("numplays")
-                num_plays = int(plays_el.text) if plays_el is not None and plays_el.text else 0
+                play_counts[bgg_id] = int(plays_el.text) if plays_el is not None and plays_el.text else 0
+            exp_counts = fetch_expansion_play_counts(token, session=session)
+            for bgg_id, exp_plays in exp_counts.items():
+                play_counts[bgg_id] = max(play_counts.get(bgg_id, 0), exp_plays)
+
+            existing_index = load_existing_games_index()
+            play_changed = []
+            for bgg_id, num_plays in play_counts.items():
                 prev = existing_index.get(bgg_id)
                 prev_count = prev.get("num_plays", 0) if prev else 0
                 if num_plays != prev_count and prev:
@@ -781,6 +820,10 @@ def main():
             print(f"\n[2/4] Parsing {changed_count} changed item(s)...")
             changed_games = [parse_item(item) for item in root.findall("item")]
             print(f"  ✓ Parsed {len(changed_games)} games")
+
+            # Patch play counts for expansion items
+            exp_counts = fetch_expansion_play_counts(token, session=session)
+            patch_expansion_plays(changed_games, exp_counts)
 
             # Load full existing data to merge into
             existing_index = load_existing_games_index()
@@ -824,6 +867,12 @@ def main():
         print("\n[2/4] Parsing collection data...")
         games = [parse_item(item) for item in root.findall("item")]
         print(f"  ✓ Parsed {len(games)} games")
+
+        # Patch play counts for expansion items (BGG reports 0 under boardgame subtype)
+        exp_counts = fetch_expansion_play_counts(token, session=session)
+        patched = patch_expansion_plays(games, exp_counts)
+        if patched:
+            print(f"  ✓ Patched play counts for {patched} expansion(s)")
 
         games_to_fetch = [g for g in games if g["num_plays"] > 0]
         print(f"\n[3/4] Fetching play logs for {len(games_to_fetch)} games...")
