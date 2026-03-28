@@ -300,9 +300,6 @@ nav::-webkit-scrollbar { display: none; }
 .mech-game-tag.wishlist {
   background: rgba(251,191,36,0.15); border: 1px solid rgba(251,191,36,0.35); color: #fcd34d;
 }
-.mech-game-tag.inferred {
-  border-style: dashed; opacity: 0.75;
-}
 .mech-search {
   width: 100%; max-width: 400px; padding: 8px 14px; margin-bottom: 20px;
   background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px;
@@ -1139,17 +1136,6 @@ function typeIcon(type) {
 }
 
 // ============================================================
-// TYPE → STRUCTURAL MECHANISM MAPPING
-// ============================================================
-const TYPE_TO_MECH = {
-  'competitive': ['STR-01'],
-  'co-op':       ['STR-02'],
-  'solo':        ['STR-04'],
-  'semi-coop':   ['STR-05'],
-  'party':       ['STR-01']
-};
-
-// ============================================================
 // DATA LOADING & MERGING
 // ============================================================
 let STATE = {};
@@ -1188,18 +1174,8 @@ function mergeGame(game, scoreObj) {
     weight: sc.weight || game.stats.avg_weight || null,
     feeling: sc.feeling || null,
     mechs: sc.mechs || [],
-    mechsAll: enrichMechs(sc.mechs || [], sc.type || game.type || ''),
     bggAvg: game.stats.average || null,
   };
-}
-
-function enrichMechs(mechs, type) {
-  const codes = new Set(mechs.map(m => m.split(' ')[0]));
-  const enriched = [...mechs];
-  (TYPE_TO_MECH[type] || []).forEach(code => {
-    if (!codes.has(code)) enriched.push(code + ' [inferred]');
-  });
-  return enriched;
 }
 
 function buildState(collection, scores, mechanisms) {
@@ -2312,15 +2288,14 @@ function renderMechanisms(state) {
   const { owned, wishlist, mechData } = state;
   const allGames = [...owned, ...wishlist];
 
-  // Build lookup: mechCode → [{name, bgg_id, section, inferred}]
+  // Build lookup: mechCode → [{name, bgg_id, section}]
   const mechMap = {};
   const addGame = (g, section) => {
-    (g.mechsAll || []).forEach(m => {
+    (g.mechs || []).forEach(m => {
       const code = m.split(' ')[0];
-      const inferred = m.includes('[inferred]');
       if (!mechMap[code]) mechMap[code] = [];
       if (!mechMap[code].some(e => e.name === g.name))
-        mechMap[code].push({ name: g.name, bgg_id: g.bgg_id, section, inferred });
+        mechMap[code].push({ name: g.name, bgg_id: g.bgg_id, section });
     });
   };
   owned.forEach(g => addGame(g, 'owned'));
@@ -2329,7 +2304,7 @@ function renderMechanisms(state) {
   // Count totals
   const totalMechs = mechData.reduce((s, cat) => s + cat.mechs.length, 0);
   const usedMechs = mechData.reduce((s, cat) => s + cat.mechs.filter(m => mechMap[m.c]).length, 0);
-  const uniqueGames = new Set(allGames.filter(g => (g.mechsAll || []).length > 0).map(g => g.name)).size;
+  const uniqueGames = new Set(allGames.filter(g => (g.mechs || []).length > 0).map(g => g.name)).size;
 
   let html = `<div class="mech-stats-bar">
     <div><span>${totalMechs}</span> mechanisms</div>
@@ -2347,7 +2322,7 @@ function renderMechanisms(state) {
       const games = mechMap[m.c] || [];
       const gameCountBadge = games.length ? `<span class="mech-game-count">${games.length} game${games.length > 1 ? 's' : ''}</span>` : '';
       const gameTags = games.map(g =>
-        `<a href="${BGG_LINK(g.bgg_id)}" target="_blank" rel="noopener" onclick="event.stopPropagation()" class="mech-game-tag ${g.section}${g.inferred ? ' inferred' : ''}">${g.name}</a>`
+        `<a href="${BGG_LINK(g.bgg_id)}" target="_blank" rel="noopener" onclick="event.stopPropagation()" class="mech-game-tag ${g.section}">${g.name}</a>`
       ).join('');
 
       html += `<div class="mech-row" data-search="${m.c} ${m.n}">
