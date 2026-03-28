@@ -801,10 +801,10 @@ nav::-webkit-scrollbar { display: none; }
     </a>
   </div>
   <nav>
-    <button class="tab-btn active" data-tab="overview">Overview</button>
+    <button class="tab-btn active" data-tab="table">Full Table</button>
+    <button class="tab-btn" data-tab="overview">Overview</button>
     <button class="tab-btn" data-tab="is-scores">IS Scores</button>
     <button class="tab-btn" data-tab="scatter">M&times;T Map</button>
-    <button class="tab-btn" data-tab="table">Full Table</button>
     <button class="tab-btn" data-tab="wishlist">Wishlist</button>
     <button class="tab-btn" data-tab="patterns">Patterns</button>
     <button class="tab-btn" data-tab="insights">Insights</button>
@@ -815,7 +815,7 @@ nav::-webkit-scrollbar { display: none; }
 <div id="content">
 
   <!-- TAB 1: OVERVIEW -->
-  <div id="tab-overview" class="tab-pane active">
+  <div id="tab-overview" class="tab-pane">
     <div id="stat-grid-container" class="mb20"></div>
     <div class="two-col mb20">
       <div class="card">
@@ -877,7 +877,7 @@ nav::-webkit-scrollbar { display: none; }
   </div>
 
   <!-- TAB 4: FULL TABLE -->
-  <div id="tab-table" class="tab-pane">
+  <div id="tab-table" class="tab-pane active">
     <div class="sort-bar">
       <span style="font-size:11px;color:var(--text3);margin-right:4px">Show:</span>
       <button class="sort-btn active" data-filter="all">All</button>
