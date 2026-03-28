@@ -696,33 +696,52 @@ def load_existing_games_index() -> dict:
     return index
 
 
-def fetch_expansion_play_counts(token: str, session=None) -> dict:
-    """Fetch play counts from the boardgameexpansion subtype.
+def fetch_user_play_counts(token: str, session=None) -> dict:
+    """Fetch play counts from the user's plays API.
 
-    BGG only reports accurate num_plays under an item's native subtype.
-    Games that are also expansions show num_plays=0 under subtype=boardgame,
-    so we need this second fetch to get the real counts.
-    Returns dict of {bgg_id: num_plays} for items with plays > 0.
+    BGG's collection API num_plays is unreliable for items with multiple
+    subtypes (e.g. boardgame + boardgameexpansion) — it reports 0 when
+    queried under the wrong subtype. The plays API is authoritative.
+    Returns dict of {bgg_id: play_count}.
     """
-    root = fetch_collection(token, session=session,
-                            extra_params={"brief": "1", "subtype": "boardgameexpansion"})
+    headers = {
+        "Authorization": f"Bearer {token}",
+        "Accept": "application/xml",
+    }
+    http = session if session else requests
     counts = {}
-    for item in root.findall("item"):
-        bgg_id = int(item.get("objectid"))
-        plays_el = item.find("numplays")
-        num_plays = int(plays_el.text) if plays_el is not None and plays_el.text else 0
-        if num_plays > 0:
-            counts[bgg_id] = num_plays
+    page = 1
+    while True:
+        url = f"{BGG_API_BASE}/plays"
+        params = {"username": BGG_USERNAME, "page": str(page)}
+        resp = http.get(url, params=params, headers=headers, timeout=30)
+        if resp.status_code != 200:
+            break
+        root = ET.fromstring(resp.text)
+        plays = root.findall("play")
+        if not plays:
+            break
+        for play in plays:
+            item = play.find("item")
+            if item is not None:
+                bgg_id = int(item.get("objectid"))
+                qty = int(play.get("quantity", 1))
+                counts[bgg_id] = counts.get(bgg_id, 0) + qty
+        total = int(root.get("total", 0))
+        if page * 100 >= total:
+            break
+        page += 1
+        time.sleep(PLAYS_REQUEST_DELAY)
     return counts
 
 
-def patch_expansion_plays(games: list, exp_counts: dict):
-    """Update num_plays for games where the expansion subtype has a higher count."""
+def patch_play_counts(games: list, play_counts: dict):
+    """Update num_plays for games where the plays API reports a different count."""
     patched = 0
     for game in games:
-        exp_plays = exp_counts.get(game["bgg_id"], 0)
-        if exp_plays > game.get("num_plays", 0):
-            game["num_plays"] = exp_plays
+        api_plays = play_counts.get(game["bgg_id"], 0)
+        if api_plays != game.get("num_plays", 0):
+            game["num_plays"] = api_plays
             patched += 1
     return patched
 
@@ -770,25 +789,16 @@ def main():
         if changed_count == 0:
             # modifiedsince doesn't catch play log changes — check num_plays
             print(f"  ✓ No collection edits. Checking play counts...")
-            # Fetch play counts for both subtypes (boardgame + expansion)
-            # because BGG only reports accurate num_plays under the item's native subtype
-            brief_root = fetch_collection(token, session=session, extra_params={"brief": "1"})
-            play_counts = {}
-            for item in brief_root.findall("item"):
-                bgg_id = int(item.get("objectid"))
-                plays_el = item.find("numplays")
-                play_counts[bgg_id] = int(plays_el.text) if plays_el is not None and plays_el.text else 0
-            exp_counts = fetch_expansion_play_counts(token, session=session)
-            for bgg_id, exp_plays in exp_counts.items():
-                play_counts[bgg_id] = max(play_counts.get(bgg_id, 0), exp_plays)
-
+            # Collection API num_plays is unreliable for multi-subtype items;
+            # use the plays API as authoritative source for play counts
+            play_counts = fetch_user_play_counts(token, session=session)
             existing_index = load_existing_games_index()
             play_changed = []
-            for bgg_id, num_plays in play_counts.items():
-                prev = existing_index.get(bgg_id)
-                prev_count = prev.get("num_plays", 0) if prev else 0
-                if num_plays != prev_count and prev:
-                    play_changed.append((bgg_id, prev, num_plays))
+            for bgg_id, game in existing_index.items():
+                api_plays = play_counts.get(bgg_id, 0)
+                cached_plays = game.get("num_plays", 0)
+                if api_plays != cached_plays:
+                    play_changed.append((bgg_id, game, api_plays))
 
             if not play_changed:
                 print(f"  {GREEN}✓ Nothing has changed since last fetch.{RESET}")
@@ -821,9 +831,9 @@ def main():
             changed_games = [parse_item(item) for item in root.findall("item")]
             print(f"  ✓ Parsed {len(changed_games)} games")
 
-            # Patch play counts for expansion items
-            exp_counts = fetch_expansion_play_counts(token, session=session)
-            patch_expansion_plays(changed_games, exp_counts)
+            # Patch play counts from plays API (collection API is unreliable for expansions)
+            user_plays = fetch_user_play_counts(token, session=session)
+            patch_play_counts(changed_games, user_plays)
 
             # Load full existing data to merge into
             existing_index = load_existing_games_index()
@@ -868,11 +878,11 @@ def main():
         games = [parse_item(item) for item in root.findall("item")]
         print(f"  ✓ Parsed {len(games)} games")
 
-        # Patch play counts for expansion items (BGG reports 0 under boardgame subtype)
-        exp_counts = fetch_expansion_play_counts(token, session=session)
-        patched = patch_expansion_plays(games, exp_counts)
+        # Patch play counts from plays API (collection API is unreliable for expansions)
+        user_plays = fetch_user_play_counts(token, session=session)
+        patched = patch_play_counts(games, user_plays)
         if patched:
-            print(f"  ✓ Patched play counts for {patched} expansion(s)")
+            print(f"  ✓ Patched play counts for {patched} game(s)")
 
         games_to_fetch = [g for g in games if g["num_plays"] > 0]
         print(f"\n[3/4] Fetching play logs for {len(games_to_fetch)} games...")
