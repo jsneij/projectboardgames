@@ -1834,9 +1834,10 @@ function buildOwnedVsWishlist(state) {
 function buildMechPairs(state) {
   const { owned, wishlist } = state;
   const allGames = [...owned, ...wishlist].filter(g => g.IS !== null && g.IS >= 80);
+  const stripCode = m => m.replace(/^[A-Z]{2,4}-\d+\s+/, '');
   const pairCounts = {};
   allGames.forEach(g => {
-    const mechs = (g.mechs || []).sort();
+    const mechs = (g.mechs || []).map(stripCode).sort();
     for (let i = 0; i < mechs.length; i++) {
       for (let j = i + 1; j < mechs.length; j++) {
         const key = mechs[i] + ' + ' + mechs[j];
@@ -1846,15 +1847,14 @@ function buildMechPairs(state) {
   });
   const data = Object.entries(pairCounts)
     .sort((a, b) => b[1] - a[1])
-    .slice(0, 12)
+    .slice(0, 10)
     .map(([label, value]) => ({ label, value }));
-  const topMechs = data.length > 0 ? data.slice(0, 3).map(d => d.label).join(', ') : 'N/A';
   return {
     title: 'Mechanical DNA: Top Mechanism Pairs in High-IS Games',
     chart_hint: 'bar_horizontal',
     filters_applied: `IS >= 80 (owned + wishlist, n=${allGames.length})`,
     generated_at: new Date().toISOString(),
-    summary: `Across ${allGames.length} high-IS games, the dominant pairs are: ${topMechs}. Your mechanical DNA favours character-driven narrative campaigns with meaningful decision trees.`,
+    summary: `Across ${allGames.length} high-IS games, your mechanical DNA is character-driven narrative campaigns with meaningful decision trees.`,
     data
   };
 }
@@ -1931,21 +1931,31 @@ function insBarChart(data) {
 
 function insHBarChart(data) {
   const maxVal = Math.max(...data.map(d => d.value));
-  const rowH = 28, padL = 238, padR = 44, padT = 8, W = 520;
-  const barAreaW = W - padL - padR;
-  const H = padT + data.length * rowH + 8;
-
   const rows = data.map((d, i) => {
-    const barW = Math.round((d.value / maxVal) * barAreaW);
-    const y = padT + i * rowH;
-    return `
-      <text x="${padL - 8}" y="${y + rowH / 2 + 4}" text-anchor="end" fill="var(--text2)" font-size="10" font-family="Outfit,sans-serif">${d.label}</text>
-      <rect x="${padL}" y="${y + 6}" width="${barW}" height="${rowH - 12}" rx="3" fill="var(--indigo)" opacity="0.78"/>
-      <text x="${padL + barW + 5}" y="${y + rowH / 2 + 4}" fill="var(--text3)" font-size="10" font-family="JetBrains Mono,monospace">${d.value}</text>
-    `;
+    const pct = Math.round((d.value / maxVal) * 100);
+    const rank = i + 1;
+    // Top 3 get amber accent, rest get indigo with fading opacity
+    const isTop = rank <= 3;
+    const barColor = isTop ? 'var(--amber)' : 'var(--indigo)';
+    const barOpacity = isTop ? 0.85 : Math.max(0.35, 0.75 - (i - 3) * 0.05);
+    const rankColor = isTop ? 'var(--amber)' : 'var(--text3)';
+    const labelColor = isTop ? 'var(--text)' : 'var(--text2)';
+    const [mechA, mechB] = d.label.split(' + ');
+    return `<div style="display:flex;align-items:center;gap:10px;padding:5px 0;transition:opacity 0.15s" onmouseenter="this.style.opacity='1';this.style.transform='translateX(2px)'" onmouseleave="this.style.opacity='';this.style.transform=''">
+      <span style="width:20px;text-align:right;font-family:'JetBrains Mono',monospace;font-size:11px;color:${rankColor};font-weight:${isTop ? '700' : '400'};flex-shrink:0">${rank}</span>
+      <div style="flex:1;min-width:0">
+        <div style="font-size:12px;color:${labelColor};font-weight:500;margin-bottom:4px;line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${mechA} <span style="color:var(--text3);font-weight:400">+</span> ${mechB}</div>
+        <div style="display:flex;align-items:center;gap:8px">
+          <div style="flex:1;height:5px;background:var(--bg);border-radius:3px;overflow:hidden">
+            <div style="height:100%;width:${pct}%;background:${barColor};border-radius:3px;opacity:${barOpacity};transition:width 0.4s ease"></div>
+          </div>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:${isTop ? 'var(--amber)' : 'var(--text2)'};font-weight:${isTop ? '600' : '400'};width:24px;text-align:right;flex-shrink:0">${d.value}</span>
+        </div>
+      </div>
+    </div>`;
   }).join('');
 
-  return `<svg viewBox="0 0 ${W} ${H}" width="100%">${rows}</svg>`;
+  return `<div style="display:flex;flex-direction:column;gap:2px">${rows}</div>`;
 }
 
 function insDualRadar(data) {
