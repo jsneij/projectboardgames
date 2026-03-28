@@ -122,6 +122,7 @@ python3 -m http.server 8000
 ├── docs/
 │   ├── immersion_score.md         ← IS framework + user profile
 │   └── tabletop mechanics/        ← encyclopedia source markdown
+├── CW/                            ← Claude Cowork outputs and artefacts
 ├── .github/workflows/
 │   ├── fetch-bgg.yml              ← nightly fetch + score + commit
 │   └── deploy-pages.yml           ← GitHub Pages deploy

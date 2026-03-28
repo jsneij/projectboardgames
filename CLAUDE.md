@@ -17,13 +17,16 @@ ProjectBoardGames/
 │   └── deploy-pages.yml               ← GitHub Pages deploy
 ├── scripts/
 │   ├── fetch_bgg_collection.py        ← BGG fetcher
-│   └── sync_scores.py                 ← scores sync
+│   ├── sync_scores.py                 ← scores sync
+│   ├── score_new_games.py             ← auto-scoring via Claude API
+│   └── parse_encyclopedia.py          ← encyclopedia markdown → mechanisms.json
 ├── dashboard/
 │   └── dshb_bgg_collection.html       ← HTML dashboard (single file)
 ├── data/                              ← all data files
 │   ├── bgg_collection.json
-│   ├── bgg_collection_scores.json     ← personal scores (do not overwrite)
+│   ├── bgg_collection_scores.json     ← personal scores + mechanisms (source of truth)
 │   ├── bgg_collection_compact.json
+│   ├── mechanisms.json                ← 203-mechanism encyclopedia
 │   └── fetch_log.json
 ├── docs/
 │   ├── immersion_score.md             ← scoring framework + user profile
@@ -31,6 +34,7 @@ ProjectBoardGames/
 ├── skills/
 │   ├── bgg_dashboard.md               ← dashboard design spec
 │   └── efficient_json_fetch.md        ← fetch pattern reference
+├── CW/                                ← Claude Cowork outputs and artefacts
 ├── insights/                          ← reserved folder (currently unused)
 ├── next steps/                        ← backlog
 └── venv/                              ← local only, not committed
