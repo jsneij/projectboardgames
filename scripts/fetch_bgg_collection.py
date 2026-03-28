@@ -858,27 +858,35 @@ def main():
                 if api_plays != cached_plays:
                     play_changed.append((bgg_id, game, api_plays))
 
-            if not play_changed:
+            # Check for missing weights even if nothing else changed
+            missing_wt = [bid for bid, g in existing_index.items()
+                          if not g.get("stats", {}).get("avg_weight")]
+
+            if not play_changed and not missing_wt:
                 print(f"  {GREEN}✓ Nothing has changed since last fetch.{RESET}")
                 print(f"\n{'=' * 60}")
                 print("Up to date. No files written.")
                 print(f"{'=' * 60}")
                 return
 
-            # Patch play counts and fetch new play logs
-            print(f"  ✓ {len(play_changed)} game(s) have new plays")
-            for i, (bgg_id, prev_game, new_count) in enumerate(play_changed, 1):
-                prev_game["num_plays"] = new_count
-                print(f"  [{i}/{len(play_changed)}] {prev_game['name']} ({new_count} plays)...", end="", flush=True)
-                if new_count > 0:
-                    plays = fetch_plays_for_game(bgg_id, token, session=session)
-                    prev_game["plays"] = plays
-                    print(f" ✓ {len(plays)} entries")
-                else:
-                    prev_game["plays"] = []
-                    print(" ✓ cleared")
-                if i < len(play_changed):
-                    time.sleep(PLAYS_REQUEST_DELAY)
+            if not play_changed and missing_wt:
+                # Only weights need backfill — skip play log work
+                print(f"  ✓ No play changes, but {len(missing_wt)} game(s) missing weight")
+            elif play_changed:
+                # Patch play counts and fetch new play logs
+                print(f"  ✓ {len(play_changed)} game(s) have new plays")
+                for i, (bgg_id, prev_game, new_count) in enumerate(play_changed, 1):
+                    prev_game["num_plays"] = new_count
+                    print(f"  [{i}/{len(play_changed)}] {prev_game['name']} ({new_count} plays)...", end="", flush=True)
+                    if new_count > 0:
+                        plays = fetch_plays_for_game(bgg_id, token, session=session)
+                        prev_game["plays"] = plays
+                        print(f" ✓ {len(plays)} entries")
+                    else:
+                        prev_game["plays"] = []
+                        print(" ✓ cleared")
+                    if i < len(play_changed):
+                        time.sleep(PLAYS_REQUEST_DELAY)
 
             games = list(existing_index.values())
 
