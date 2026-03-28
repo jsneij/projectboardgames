@@ -30,6 +30,11 @@ jobs:
       - name: Sync scores
         run: python scripts/sync_scores.py
 
+      - name: Score new games
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/score_new_games.py
+
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
