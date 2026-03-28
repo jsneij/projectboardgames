@@ -1736,12 +1736,50 @@ function renderMiniScatter(svgId, data, accessor, opts) {
 const INSIGHT_FILES = [
   'ins_weight_vs_enjoyment_2026-03-15.json',
   'ins_owned_vs_wishlist_profile_2026-03-15.json',
-  'ins_mech_pairs_high_is_2026-03-15.json',
-  'ins_next_to_play_priority_2026-03-15.json'
+  'ins_mech_pairs_high_is_2026-03-15.json'
 ];
+
+function buildPriorityQueue(state) {
+  const { owned } = state;
+  // Owned base games with IS scores, sorted by priority score
+  const scored = owned.filter(g => g.IS !== null && g.type !== 'expansion');
+  const data = scored.map(g => {
+    let prio = g.IS;
+    const solo = g.type === 'solo' || g.type === 'co-op' || g.type === 'semi-coop';
+    if (solo) prio *= 1.2;
+    if (g.F && g.F <= 1) prio *= 1.15;
+    const pt = g.stats ? (g.stats.playing_time || g.stats.max_playtime || 0) : 0;
+    if (pt > 0 && pt <= 60) prio *= 1.1;
+    return {
+      name: g.name, IS: g.IS, priority_score: Math.round(prio * 10) / 10,
+      feeling: g.feeling || '—', solo, playtime_min: pt,
+      friction: g.F || 0, top_mechs: (g.mechs || []).slice(0, 2),
+      num_plays: g.num_plays || 0, bgg_id: g.bgg_id
+    };
+  }).sort((a, b) => b.priority_score - a.priority_score);
+  const played = data.filter(g => g.num_plays > 0).length;
+  return {
+    title: 'Next to Play: Priority Queue',
+    type: 'ranked_list',
+    filters_applied: `Owned base games only (expansions excluded), ${played} of ${data.length} played`,
+    generated_at: new Date().toISOString(),
+    summary: `Priority = IS × 1.2 (solo/co-op) × 1.15 (F≤1) × 1.1 (≤60 min). Rewards games easier to get to the table.`,
+    data
+  };
+}
 
 async function renderInsights() {
   const container = document.getElementById('insights-container');
+
+  // Dynamic priority queue from live data
+  if (STATE.owned) {
+    const pqInsight = buildPriorityQueue(STATE);
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.innerHTML = buildInsightCard(pqInsight);
+    container.appendChild(card);
+  }
+
   for (const filename of INSIGHT_FILES) {
     try {
       const res = await fetch(`../insights/${filename}`);
@@ -1916,6 +1954,7 @@ function insRankedList(data) {
   const soloTag = solo => solo
     ? `<span style="display:inline-block;padding:1px 6px;border-radius:999px;background:var(--teal)22;color:var(--teal);border:1px solid var(--teal)44;font-size:9px;font-family:'JetBrains Mono',monospace">solo</span>`
     : `<span style="display:inline-block;padding:1px 6px;border-radius:999px;background:var(--border);color:var(--text3);font-size:9px;font-family:'JetBrains Mono',monospace">—</span>`;
+  const hasPlays = data.some(d => d.num_plays != null);
 
   const rows = data.map((d, i) => {
     const barPct = Math.round((d.priority_score / maxPrio) * 100);
@@ -1924,6 +1963,10 @@ function insRankedList(data) {
     const time = d.playtime_min > 0 ? `${d.playtime_min}m` : '—';
     const rank = i + 1;
     const rankStyle = rank <= 3 ? `color:var(--amber);font-weight:700` : `color:var(--text3)`;
+    const np = d.num_plays || 0;
+    const playsCell = hasPlays
+      ? `<td style="padding:7px 8px;text-align:center;font-family:'JetBrains Mono',monospace;font-size:11px;width:28px;color:${np > 0 ? 'var(--green)' : 'var(--text3)'}">${np > 0 ? np : '—'}</td>`
+      : '';
     return `<tr style="border-bottom:1px solid var(--border)22">
       <td style="padding:7px 8px 7px 4px;${rankStyle};font-family:'JetBrains Mono',monospace;font-size:11px;width:24px;text-align:right">${rank}</td>
       <td style="padding:7px 12px 7px 8px;min-width:160px">
@@ -1943,8 +1986,13 @@ function insRankedList(data) {
       <td style="padding:7px 6px;width:48px;text-align:center">${soloTag(d.solo)}</td>
       <td style="padding:7px 10px;text-align:right;font-size:11px;color:var(--text3);width:36px">${time}</td>
       <td style="padding:7px 8px;text-align:right;font-size:11px;color:var(--text3);width:28px">F${d.friction}</td>
+      ${playsCell}
     </tr>`;
   }).join('');
+
+  const playsHeader = hasPlays
+    ? `<th style="padding:4px 8px 6px;text-align:center;font-size:9px;color:var(--green);font-weight:500">PLAYS</th>`
+    : '';
 
   return `<div style="overflow-x:auto">
     <table style="width:100%;border-collapse:collapse">
@@ -1957,6 +2005,7 @@ function insRankedList(data) {
         <th style="padding:4px 6px 6px;text-align:center;font-size:9px;color:var(--teal);font-weight:500">SOLO</th>
         <th style="padding:4px 10px 6px;text-align:right;font-size:9px;color:var(--text3);font-weight:500">TIME</th>
         <th style="padding:4px 8px 6px;text-align:right;font-size:9px;color:var(--text3);font-weight:500">F</th>
+        ${playsHeader}
       </tr></thead>
       <tbody>${rows}</tbody>
     </table>
