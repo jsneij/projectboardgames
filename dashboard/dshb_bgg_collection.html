@@ -1437,10 +1437,14 @@ function renderTable(state) {
     const td = document.createElement('td');
     td.colSpan = 16;
     const mechsHtml = (g.mechs || []).map(m => `<span class="mech-tag">${m}</span>`).join('');
+    const desc = g.sc.description || '';
+    const just = g.sc.justification || '';
     td.innerHTML = `<div class="expand-panel">
       ${radarSVG(g.sc, 160)}
-      <div>
-        <div style="font-size:11px;color:var(--text3);margin-bottom:8px">MECHANISMS</div>
+      <div style="flex:1;min-width:0">
+        ${desc ? `<div style="font-size:13px;color:var(--accent);margin-bottom:10px;line-height:1.4">${desc}</div>` : ''}
+        ${just ? `<div style="font-size:11px;color:var(--text3);margin-bottom:4px">JUSTIFICATION IS</div><div style="font-size:12px;color:var(--text2);line-height:1.5;margin-bottom:10px">${just.replace(/([MTGF]|Ar)\(\d\):/g, '<span style="color:var(--accent);font-weight:600">$&</span>')}</div>` : ''}
+        <div style="font-size:11px;color:var(--text3);margin-bottom:4px">MECHANISMS</div>
         <div class="expand-mechs">${mechsHtml || '<span style="color:var(--text3)">—</span>'}</div>
         ${g.comment ? `<div style="margin-top:12px;font-size:12px;color:var(--text2);font-style:italic;max-width:400px">"${g.comment}"</div>` : ''}
       </div>

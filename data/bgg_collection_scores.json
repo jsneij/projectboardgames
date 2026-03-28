@@ -16,7 +16,9 @@
         "ACT-18 Narrative Choice",
         "STR-08 Scenario/Campaign",
         "ACT-12 Variable Player Powers"
-      ]
+      ],
+      "description": "Build a deck, become an investigator, and descend into Lovecraftian nightmares where every scenario rewrites reality around you.",
+      "justification": "M(4): Deck construction with multi-use cards and cross-class synergies. T(5): Investigating mythos horrors IS the mechanic — chaos bag creates dread. G(4): Every card play and movement choice carries narrative weight. F(2): Deckbuilding between scenarios and token management add overhead. Ar(5): Evocative Lovecraftian art across hundreds of unique cards."
     },
     "Arkham Horror: The Card Game (Revised Core Set)": {
       "name": "AH:LCG (Revised Core)",
@@ -34,7 +36,9 @@
         "ACT-18 Narrative Choice",
         "STR-08 Scenario/Campaign",
         "ACT-12 Variable Player Powers"
-      ]
+      ],
+      "description": "The definitive entry point into Arkham's nightmares — streamlined components, same soul-crushing mythos.",
+      "justification": "M(4): Same deep deck construction engine with tighter card pool. T(5): Chaos bag and encounter deck still generate pure investigative dread. G(4): Meaningful deckbuilding and scenario choices persist. F(2): Revised layout helps but inherent complexity remains. Ar(5): Updated card formatting with the same hauntingly beautiful illustrations."
     },
     "Burgle Bros.": {
       "name": "Burgle Bros.",
@@ -51,7 +55,9 @@
         "ACT-01 Action Points",
         "ACT-12 Variable Player Powers",
         "UNC-07 Unknown Information"
-      ]
+      ],
+      "description": "Assemble a crew, crack a multi-story building's safes, and escape the roof before patrolling guards catch you.",
+      "justification": "M(3): Tile-flip exploration with action point management. T(4): Sneaking past guards and cracking safes IS how you play — tension is procedural. G(3): Meaningful route planning but limited options per turn. F(1): Tiny box, fast setup, clean rules. Ar(4): Tim Foley's retro heist art nails the caper aesthetic."
     },
     "Cards Against Humanity": {
       "name": "Cards Against Humanity",
@@ -66,7 +72,9 @@
       "mechs": [
         "RES-16 Player Judge",
         "UNC-08 Hidden Information"
-      ]
+      ],
+      "description": "Fill in the blanks with the most offensive thing you can find and let your friends judge your depravity.",
+      "justification": "M(1): Play a card from your hand. That's it. T(1): No thematic experience beyond shock value. G(1): Random hand, subjective judging, no meaningful decisions. F(1): Open box and play immediately. Ar(1): Black and white text on cards — functional at best."
     },
     "Cheating Moth": {
       "name": "Cheating Moth",
@@ -81,7 +89,9 @@
       "mechs": [
         "ACT-22 Matching",
         "UNC-08 Hidden Information"
-      ]
+      ],
+      "description": "A card-shedding game where cheating is not only allowed but required — just don't let the bug-eyed guard catch you.",
+      "justification": "M(1): Basic card matching with a single gimmick. T(2): The cheating mechanic adds a mischievous social layer. G(1): Limited decisions beyond when to sneak a card away. F(1): Tiny card game, instant setup. Ar(3): Charming, colorful insect illustrations."
     },
     "Cyberion": {
       "name": "Cyberion",
@@ -98,7 +108,9 @@
         "ECO-01 Exchanging",
         "SET-01 Set Valuation",
         "SET-05 Combo Abilities"
-      ]
+      ],
+      "description": "Salvage cybernetic parts from a dying space station, combining them into powerful combos before the system shuts down forever.",
+      "justification": "M(3): Multi-use cards with set collection and satisfying combo chains. T(3): Scavenging and upgrading feels thematic but abstracted. G(3): Tight hand management with meaningful exchange decisions. F(1): Small footprint, fast to teach and play. Ar(4): Slick cyberpunk aesthetic with excellent card design."
     },
     "Deep Sea Adventure": {
       "name": "Deep Sea Adventure",
@@ -114,7 +126,9 @@
         "UNC-02 Push-Your-Luck",
         "MOV-04 Movement Points",
         "VIC-10 Exhausting Resources"
-      ]
+      ],
+      "description": "Divers share one oxygen tank and greedily grab treasure from the ocean floor — but everyone breathing from the same supply means someone's drowning.",
+      "justification": "M(2): Roll, move, grab — push-your-luck at its simplest. T(3): Shared oxygen creates genuine social tension and greed. G(2): Limited to stay-or-go decisions with some timing. F(1): Fits in a pocket, plays in 20 minutes. Ar(3): Minimalist Oink Games design, clean and functional."
     },
     "Final Girl": {
       "name": "Final Girl",
@@ -132,7 +146,9 @@
         "ACT-12 Variable Player Powers",
         "ACT-18 Narrative Choice",
         "UNC-09 Probability Management"
-      ]
+      ],
+      "description": "You are the last survivor in a slasher film — fight the killer, save victims, and survive the night using only your wits and a dwindling action economy.",
+      "justification": "M(4): Action points, stat checks, and probability management interlock tightly. T(5): Every mechanic generates horror movie moments — you ARE the final girl. G(4): Constant triage between saving victims, fighting, and fleeing. F(2): Setup with multiple decks and boards takes time. Ar(5): Each feature film box has stunning, genre-authentic artwork."
     },
     "Gloomhaven: Jaws of the Lion": {
       "name": "Gloomhaven: JotL",
@@ -150,7 +166,9 @@
         "STR-08 Scenario/Campaign",
         "TRN-09 Simultaneous Action Selection",
         "ACT-15 Gating and Unlocking"
-      ]
+      ],
+      "description": "Choose two cards, commit to your plan, and watch it collide with the dungeon's chaos in a campaign that permanently evolves your mercenary.",
+      "justification": "M(4): Dual-card action selection with exhaustion creates deep hand management. T(4): Card loss as stamina and unlocking abilities generates dungeon-crawl tension. G(4): Simultaneous selection means committing before seeing outcomes. F(2): Scenario setup and rules density require investment. Ar(4): Strong map tiles and character art with clear iconography."
     },
     "Harmonies": {
       "name": "Harmonies",
@@ -166,7 +184,9 @@
         "SET-02 Tile-Laying",
         "ACT-02 Action Drafting",
         "SET-01 Set Valuation"
-      ]
+      ],
+      "description": "Draft colored tokens and stack them into landscapes, building habitats that attract animals to your personal nature tableau.",
+      "justification": "M(3): Drafting and spatial stacking with pattern matching. T(2): Nature theme is pleasant but mechanics don't generate it. G(3): Meaningful draft choices and placement optimization. F(1): Simple rules, fast setup, elegant flow. Ar(4): Beautiful pastel palette and calming visual design."
     },
     "Hotel Lovecraft": {
       "name": "Hotel Lovecraft",
@@ -183,7 +203,9 @@
         "ACT-18 Narrative Choice",
         "RES-02 Stat Check",
         "ACT-01 Action Points"
-      ]
+      ],
+      "description": "Explore the rooms of a Lovecraftian hotel where cosmic horrors lurk behind every door and sanity is the real currency.",
+      "justification": "M(2): Basic action points with stat checks and unknown information. T(3): Lovecraftian setting provides atmosphere but mechanics are conventional. G(2): Choices feel limited by dice and card draws. F(2): Multiple decks and tokens to manage. Ar(3): Adequate horror theming but nothing standout."
     },
     "In Vino Morte": {
       "name": "In Vino Morte",
@@ -198,7 +220,9 @@
       "mechs": [
         "UNC-02 Push-Your-Luck",
         "UNC-08 Hidden Information"
-      ]
+      ],
+      "description": "Poison your rivals' wine while trying not to drink from the wrong glass yourself.",
+      "justification": "M(1): Simple push-your-luck bluffing with minimal structure. T(2): Poisoning theme adds flavor but mechanics are bare. G(1): Almost entirely luck-driven with hidden information. F(1): A handful of cards, plays instantly. Ar(1): Minimal production value."
     },
     "Moon Adventure": {
       "name": "Moon Adventure",
@@ -214,7 +238,9 @@
         "UNC-02 Push-Your-Luck",
         "CAR-08 Multi-Use Cards",
         "ACT-01 Action Points"
-      ]
+      ],
+      "description": "Manage your oxygen and supplies across the lunar surface, pushing deeper into unexplored territory before your resources run dry.",
+      "justification": "M(2): Push-your-luck with multi-use cards and basic action points. T(3): Shared oxygen and exploration evoke lunar survival tension. G(2): Decisions feel constrained by card draws. F(1): Compact Oink Games format, quick setup. Ar(3): Clean, minimal space aesthetic."
     },
     "Nemesis": {
       "name": "Nemesis",
@@ -232,7 +258,9 @@
         "UNC-07 Unknown Information",
         "UNC-08 Hidden Information",
         "ACT-12 Variable Player Powers"
-      ]
+      ],
+      "description": "Wake up from hypersleep, discover aliens have infested your ship, and try to survive — but everyone has their own secret agenda.",
+      "justification": "M(3): Action points with map exploration and hidden objectives. T(5): Every noise roll, room reveal, and contamination check IS the alien horror film. G(4): Meaningful decisions about fighting, fleeing, and trusting crewmates. F(4): Massive setup with unpainted miniatures that required commissioning a painter. Ar(4): Incredible alien and ship design, docked for out-of-box unfinished miniatures."
     },
     "Paleo": {
       "name": "Paleo",
@@ -249,7 +277,9 @@
         "CAR-08 Multi-Use Cards",
         "STR-08 Scenario/Campaign",
         "ACT-01 Action Points"
-      ]
+      ],
+      "description": "Lead a prehistoric tribe through a harsh world where every card flip could mean food, danger, or the discovery that changes your people's future.",
+      "justification": "M(3): Unknown information and multi-use cards with cooperative resource pooling. T(4): Card-back scouting and communal survival generate tribal narrative. G(3): Meaningful choices about which dangers to face and resources to share. F(2): Multiple module decks and setup for each scenario. Ar(4): Warm, evocative prehistoric illustrations."
     },
     "Rafter Five": {
       "name": "Rafter Five",
@@ -265,7 +295,9 @@
         "SET-01 Set Valuation",
         "MOV-04 Movement Points",
         "VIC-07 Race"
-      ]
+      ],
+      "description": "Race wooden rafts down a river, collecting sets of cargo before your opponents reach the finish line.",
+      "justification": "M(2): Simple set collection and movement. T(2): River racing theme is present but mechanically thin. G(2): Basic tactical choices about movement and collection. F(1): Fast-playing filler with minimal rules. Ar(3): Pleasant, colorful component design."
     },
     "Sentinels of the Multiverse: Definitive Edition": {
       "name": "Sentinels of the Multiverse DE",
@@ -282,7 +314,9 @@
         "CAR-09 Tags",
         "SET-05 Combo Abilities",
         "ACT-01 Action Points"
-      ]
+      ],
+      "description": "Each hero is a living comic book — play your unique deck of powers against escalating supervillains in battles that tell stories through card combos.",
+      "justification": "M(4): Variable powers with tag-based combos and synergistic card chains. T(4): Each hero deck generates a unique comic-book power fantasy. G(4): Strategic sequencing of powers and team coordination. F(2): Managing multiple villain and environment decks takes effort. Ar(4): Bold comic-book art style with strong character identities."
     },
     "Skulls of Sedlec": {
       "name": "Skulls of Sedlec",
@@ -297,7 +331,9 @@
       "mechs": [
         "SET-02 Tile-Laying",
         "SET-01 Set Valuation"
-      ]
+      ],
+      "description": "Arrange exhumed skulls into a beautiful ossuary display, scoring points for how elegantly the dead are stacked.",
+      "justification": "M(2): Simple tile-laying with adjacency-based set scoring. T(2): Bone-stacking theme is morbidly charming but abstract. G(2): Placement choices matter but options are limited. F(1): Eighteen cards, plays in ten minutes. Ar(3): Delightfully macabre skull illustrations."
     },
     "Sky Team": {
       "name": "Sky Team",
@@ -313,7 +349,9 @@
         "WPL-04 Workers-As-Dice",
         "UNC-06 Communication Limits",
         "TRN-09 Simultaneous Action Selection"
-      ]
+      ],
+      "description": "You and your co-pilot must land a plane in total silence, communicating only through dice placement.",
+      "justification": "M(3): Dice-as-workers placed across cockpit systems with tight tolerances. T(4): The silence rule doesn't describe pressure — it creates it. G(3): Every die placement is a meaningful gamble on your partner's intent. F(1): Small box, clean rules, fast setup. Ar(5): Gorgeous cockpit board and destination art by Eric Hibbeler."
     },
     "Spirit Island": {
       "name": "Spirit Island",
@@ -332,7 +370,9 @@
         "CAR-08 Multi-Use Cards",
         "TRN-09 Simultaneous Action Selection",
         "ACT-15 Gating and Unlocking"
-      ]
+      ],
+      "description": "Ancient spirits unite to drive colonizing invaders from their sacred island through elemental fury and growing power.",
+      "justification": "M(5): Interlocking spirit powers, elements, and innate abilities create deep combos. T(5): You ARE the spirit — every power generates the elemental defense fantasy. G(5): Enormous decision tree with cascading consequences across the island. F(3): Setup and upkeep manageable but rules density is high. Ar(5): Stunning spirit art and lush island board by Jason Behnke."
     },
     "Sprawlopolis": {
       "name": "Sprawlopolis",
@@ -348,7 +388,9 @@
         "SET-02 Tile-Laying",
         "CAR-08 Multi-Use Cards",
         "VIC-01 Victory Points from Game State"
-      ]
+      ],
+      "description": "Eighteen cards, infinite city — lay roads, parks, and districts to build a metropolis that scores against its own shifting victory conditions.",
+      "justification": "M(3): Multi-use cards as both scoring rules and city tiles. T(2): City-building theme exists but decisions feel spatial, not narrative. G(3): Every placement has cascading scoring implications. F(1): Fits in a wallet, plays in fifteen minutes. Ar(3): Functional, colorful city-block illustrations."
     },
     "The Bloody Inn": {
       "name": "The Bloody Inn",
@@ -365,7 +407,9 @@
         "SET-01 Set Valuation",
         "ACT-01 Action Points",
         "ECO-05 Income"
-      ]
+      ],
+      "description": "Run a quaint French inn where you murder wealthy guests and bury them in your garden for profit.",
+      "justification": "M(3): Multi-use cards with tight hand management and action economy. T(4): Murdering, bribing, and burying guests IS the mechanic — darkly thematic. G(3): Meaningful choices each round but limited options keep it focused. F(1): Teach in five minutes, play in thirty. Ar(5): Weberson Santiago's macabre illustrations are iconic."
     },
     "The Crew: Mission Deep Sea": {
       "name": "The Crew: Mission Deep Sea",
@@ -381,7 +425,9 @@
         "CAR-01 Trick-Taking",
         "UNC-06 Communication Limits",
         "STR-08 Scenario/Campaign"
-      ]
+      ],
+      "description": "A cooperative trick-taking game where you must win specific tricks in specific orders — and you can barely communicate how.",
+      "justification": "M(3): Trick-taking with cooperative constraints and mission targets. T(3): Communication limits generate tension but the undersea theme is light. G(3): Playing the right card at the right time is genuinely strategic. F(1): Standard card game, fast setup, simple rules. Ar(3): Clean nautical design, functional but not striking."
     },
     "The Last Lighthouse": {
       "name": "The Last Lighthouse",
@@ -397,7 +443,9 @@
         "ACT-01 Action Points",
         "SET-02 Tile-Laying",
         "UNC-09 Probability Management"
-      ]
+      ],
+      "description": "Keep your lighthouse burning on a sinking island, laying tiles to hold back the rising sea while managing dwindling resources.",
+      "justification": "M(3): Tile-laying with action management and probability mitigation. T(3): The sinking island creates escalating tension and isolation. G(3): Deciding where to build and which threats to address feels meaningful. F(1): Small box solo game, fast to set up. Ar(4): Atmospheric coastal art with a somber, solitary mood."
     },
     "Tokyo Highway": {
       "name": "Tokyo Highway",
@@ -412,7 +460,9 @@
       "mechs": [
         "RES-10 Physical Action",
         "SET-04 Network Building"
-      ]
+      ],
+      "description": "Build an impossible tangle of elevated highways with tweezers and steady hands, threading roads over and under your opponents' structures.",
+      "justification": "M(2): Dexterity-based network building with simple rules. T(2): Highway construction theme is present but secondary to dexterity. G(2): Placement matters but physical skill dominates strategy. F(1): Minimal components, straightforward setup. Ar(4): Stunning minimalist aesthetic — the table becomes the art."
     },
     "Trails": {
       "name": "Trails",
@@ -428,7 +478,9 @@
         "ECO-01 Exchanging",
         "SET-01 Set Valuation",
         "MOV-04 Movement Points"
-      ]
+      ],
+      "description": "Hike along a national park trail, collecting resources and photographing wildlife as the sun arcs across the sky.",
+      "justification": "M(2): Basic resource exchange and set collection along a linear path. T(2): Park theme is pleasant but mechanics don't evoke hiking. G(2): Limited decisions about when to turn around on the trail. F(1): Light rules, quick setup, short playtime. Ar(3): Pleasant nature illustrations in the Parks series style."
     },
     "Under Falling Skies": {
       "name": "Under Falling Skies",
@@ -444,7 +496,9 @@
         "WPL-04 Workers-As-Dice",
         "ACT-02 Action Drafting",
         "STR-08 Scenario/Campaign"
-      ]
+      ],
+      "description": "Alone in a bunker beneath an alien mothership, you roll dice and assign them to defend your city — but higher numbers bring the invaders closer.",
+      "justification": "M(4): Dice-as-workers with a brilliant risk-reward tension on every placement. T(4): Higher dice = better actions but faster alien descent creates genuine dread. G(4): Every die placement forces agonizing trade-offs between offense and defense. F(1): Solo game in a small box with elegant, fast setup. Ar(3): Functional sci-fi art that serves the game without dazzling."
     },
     "Unsurmountable": {
       "name": "Unsurmountable",
@@ -459,7 +513,9 @@
       "mechs": [
         "SET-02 Tile-Laying",
         "UNC-02 Push-Your-Luck"
-      ]
+      ],
+      "description": "Lay path tiles up a treacherous mountain, pushing your luck against avalanches and dead ends in a solo climbing puzzle.",
+      "justification": "M(2): Simple tile-laying with push-your-luck elements. T(2): Mountain climbing theme is present but abstract. G(2): Placement decisions matter but randomness dominates. F(1): Tiny solo game, instant setup. Ar(3): Clean, pleasant mountain-themed art."
     },
     "Warp's Edge": {
       "name": "Warp's Edge",
@@ -476,7 +532,9 @@
         "ACT-12 Variable Player Powers",
         "RES-21 Rerolling and Locking",
         "ECO-11 Upgrades"
-      ]
+      ],
+      "description": "A lone starfighter pilot trapped in a time loop, replaying the same battle with an ever-evolving bag of tokens until you finally break through.",
+      "justification": "M(4): Bag-building with rerolling, locking, and upgrade paths across loops. T(4): The time-loop mechanic IS the narrative — each warp teaches you something new. G(4): Meaningful decisions about which tokens to add, keep, or spend. F(1): Solo bag-builder with fast, clean setup. Ar(4): Vibrant sci-fi art with distinct boss and ship designs."
     },
     "Earthborne Rangers": {
       "name": "Earthborne Rangers",
@@ -495,7 +553,9 @@
         "STR-08 Scenario/Campaign",
         "ACT-12 Variable Player Powers",
         "ACT-15 Gating and Unlocking"
-      ]
+      ],
+      "description": "Wander a rewilded future Earth as a ranger, building your path through a living open world that remembers every choice you make.",
+      "justification": "M(4): Deck construction with multi-use cards and branching narrative paths. T(5): The open-world structure makes you feel like you inhabit this future ecology. G(4): Freeform exploration with genuine narrative consequences. F(3): Campaign tracking and large card pool require commitment. Ar(5): Breathtaking solarpunk landscapes and character art throughout."
     },
     "Arkham Horror: The Card Game – Murder at the Excelsior Hotel: Scenario Pack": {
       "name": "AH:LCG – Murder at the Excelsior Hotel",
@@ -513,7 +573,9 @@
         "ACT-18 Narrative Choice",
         "STR-08 Scenario/Campaign",
         "ACT-12 Variable Player Powers"
-      ]
+      ],
+      "description": "Wake up in a luxury hotel surrounded by corpses — now prove your innocence while eldritch forces close in around you.",
+      "justification": "M(4): Same deep deck construction engine in a standalone murder mystery. T(5): Whodunit structure layered over mythos horror creates unique tension. G(4): Investigation choices branch the scenario in dramatically different directions. F(2): Requires core set and deckbuilding preparation. Ar(5): Gorgeous hotel setting with classic Arkham Horror illustration quality."
     },
     "Arkham Horror: The Card Game – The Path to Carcosa: Campaign Expansion": {
       "name": "AH:LCG – Path to Carcosa: Campaign",
@@ -531,7 +593,9 @@
         "ACT-18 Narrative Choice",
         "STR-08 Scenario/Campaign",
         "ACT-12 Variable Player Powers"
-      ]
+      ],
+      "description": "Attend a performance of The King in Yellow and watch reality unravel as madness becomes the campaign's central mechanic.",
+      "justification": "M(4): Core deck construction engine with new doubt/conviction mechanics. T(5): Sanity and unreliable reality are mechanized — you question your own campaign state. G(4): Choices about embracing or fighting madness shape the entire campaign. F(2): Full campaign requiring core set and substantial deckbuilding. Ar(5): Haunting Carcosa imagery with the series' best atmospheric art."
     },
     "Arkham Horror: The Card Game – The Path to Carcosa: Investigator Expansion": {
       "name": "AH:LCG – Path to Carcosa: Investigator",
@@ -549,7 +613,9 @@
         "ACT-18 Narrative Choice",
         "STR-08 Scenario/Campaign",
         "ACT-12 Variable Player Powers"
-      ]
+      ],
+      "description": "New investigators shaped by madness — artists, mystics, and performers whose powers blur the line between brilliance and insanity.",
+      "justification": "M(4): Fresh investigator decks with unique madness-adjacent abilities. T(5): Each investigator's mechanics reflect their relationship to the Yellow Sign. G(4): New deckbuilding options and investigator-specific strategies. F(2): Requires core set and campaign expansion for full use. Ar(5): Character portraits and card art capture the Carcosa cycle's unsettling beauty."
     },
     "Cards Against Humanity: The A.I. Pack": {
       "name": "CAH: The A.I. Pack",
@@ -564,7 +630,9 @@
       "mechs": [
         "RES-16 Player Judge",
         "UNC-08 Hidden Information"
-      ]
+      ],
+      "description": "The same crude fill-in-the-blank game, now with cards about robots, algorithms, and the singularity.",
+      "justification": "M(1): Identical zero-decision mechanic as the base game. T(1): AI theme is cosmetic text on cards. G(1): No meaningful choices — just play what seems funniest. F(1): Shuffle into existing deck and go. Ar(1): Same black-and-white text-only cards."
     },
     "Final Girl: Hell to Pay": {
       "name": "Final Girl: Hell to Pay",
@@ -582,7 +650,9 @@
         "ACT-12 Variable Player Powers",
         "ACT-18 Narrative Choice",
         "UNC-09 Probability Management"
-      ]
+      ],
+      "description": "Survive a nightclub overtaken by demonic forces, where the dance floor becomes a killing ground and every exit leads deeper into hell.",
+      "justification": "M(4): Core Final Girl engine with location-specific modular mechanics. T(5): Demonic nightclub setting generates unique horror scenarios through gameplay. G(4): Triage decisions intensified by the venue's tight, dangerous layout. F(2): Feature film setup with multiple decks and location boards. Ar(5): Infernal nightclub art dripping with horror-movie atmosphere."
     },
     "Final Girl: Into the Void": {
       "name": "Final Girl: Into the Void",
@@ -600,7 +670,9 @@
         "ACT-12 Variable Player Powers",
         "ACT-18 Narrative Choice",
         "UNC-09 Probability Management"
-      ]
+      ],
+      "description": "Trapped on a space station with an alien predator, you must survive in zero-gravity corridors where every airlock is both weapon and death trap.",
+      "justification": "M(4): Core engine enhanced with zero-gravity and airlock-specific mechanics. T(5): Sci-fi horror isolation is generated by the station's spatial mechanics. G(4): Airlock gambles and vacuum exposure add unique tactical layers. F(2): Feature film setup with station-specific components. Ar(5): Cold, clinical space station art that channels Alien perfectly."
     },
     "Final Girl: Madness in the Dark": {
       "name": "Final Girl: Madness in the Dark",
@@ -618,7 +690,9 @@
         "ACT-12 Variable Player Powers",
         "ACT-18 Narrative Choice",
         "UNC-09 Probability Management"
-      ]
+      ],
+      "description": "Navigate a pitch-black asylum where the darkness itself is a mechanic — you can't fight what you can't see.",
+      "justification": "M(4): Core engine with darkness and visibility as additional mechanical layers. T(5): Darkness mechanics generate fear — limited vision IS the horror. G(4): Flashlight management and blind movement create agonizing choices. F(2): Feature film setup plus darkness overlay components. Ar(5): Oppressive asylum art that makes the board feel claustrophobic."
     },
     "Final Girl: Panic at Station 2891": {
       "name": "Final Girl: Panic at Station 2891",
@@ -636,7 +710,9 @@
         "ACT-12 Variable Player Powers",
         "ACT-18 Narrative Choice",
         "UNC-09 Probability Management"
-      ]
+      ],
+      "description": "An arctic research station, a shape-shifting alien, and no way to know if the person you just saved is still human.",
+      "justification": "M(4): Core engine with paranoia and contamination mechanics. T(5): Trust-no-one paranoia is mechanized — rescued victims might be the threat. G(4): Saving people who might betray you creates unique decision tension. F(2): Feature film setup with paranoia-specific components. Ar(5): Frozen wasteland art channeling The Thing with gorgeous isolation."
     },
     "The Bloody Inn: The Carnies": {
       "name": "The Bloody Inn: The Carnies",
@@ -653,7 +729,9 @@
         "SET-01 Set Valuation",
         "ACT-01 Action Points",
         "ECO-05 Income"
-      ]
+      ],
+      "description": "The travelling carnival has come to your murderous inn — and the new guests bring tricks, illusions, and even darker opportunities.",
+      "justification": "M(3): Same multi-use card engine with new carnival guest abilities. T(4): Carnival performers add macabre variety to the murder-for-profit loop. G(3): New guest powers expand tactical options within the tight framework. F(1): Same fast teach and compact footprint as the base. Ar(5): Santiago's carnival characters match the base game's iconic style."
     },
     "The Last Lighthouse: Expansion Collection": {
       "name": "The Last Lighthouse: Expansion Collection",
@@ -669,7 +747,9 @@
         "ACT-01 Action Points",
         "SET-02 Tile-Laying",
         "UNC-09 Probability Management"
-      ]
+      ],
+      "description": "New threats, new tools, and new ways for your lighthouse island to crumble into the sea.",
+      "justification": "M(3): Expanded tile and event options add variety to the core engine. T(3): New modules deepen the isolation and escalation. G(3): Additional decision points from new threat types and tools. F(1): Modular expansions that slot cleanly into the base game. Ar(4): Maintains the base game's atmospheric coastal aesthetic."
     }
   },
   "wishlist": {
@@ -690,7 +770,9 @@
         "STR-08 Scenario/Campaign",
         "ACT-12 Variable Player Powers",
         "ECO-11 Upgrades"
-      ]
+      ],
+      "description": "Command a powerful Mage Knight exploring a vast fantasy landscape, conquering cities and leveling up through one of gaming's deepest solo puzzles.",
+      "justification": "M(5): Deck construction, grid movement, and multi-system upgrades create immense depth. T(3): Fantasy adventure theme present but mechanics feel like a puzzle, not a story. G(5): Every hand is a complex optimization problem with real consequences. F(5): Notoriously heavy setup, rules overhead, and lengthy play sessions. Ar(3): Functional fantasy art that serves without inspiring."
     },
     "ROVE: Results-Oriented Versatile Explorer": {
       "name": "ROVE",
@@ -706,7 +788,9 @@
         "ACT-01 Action Points",
         "UNC-09 Probability Management",
         "SET-02 Tile-Laying"
-      ]
+      ],
+      "description": "Guide a tiny Mars rover across shifting terrain cards, solving spatial puzzles one mission at a time.",
+      "justification": "M(2): Simple tile-sliding with mission-based objectives. T(2): Mars rover theme is referenced but not generated by mechanics. G(3): Meaningful spatial puzzle decisions despite small footprint. F(1): Wallet-sized solo game, instant setup. Ar(3): Clean, functional space-themed card art."
     },
     "SETI: Search for Extraterrestrial Intelligence": {
       "name": "SETI",
@@ -724,7 +808,9 @@
         "SET-01 Set Valuation",
         "VIC-01 Victory Points from Game State",
         "ACT-15 Gating and Unlocking"
-      ]
+      ],
+      "description": "Scan the cosmos for alien signals, launching probes and building research networks in a race to make first contact.",
+      "justification": "M(4): Worker placement with income engines, set collection, and gating. T(3): Space exploration theme is present but mechanics lean euro. G(4): Meaningful worker and resource allocation decisions. F(3): Multiple interconnected boards and resource tracks. Ar(4): Elegant space-science aesthetic with detailed probe and signal art."
     },
     "Speakeasy": {
       "name": "Speakeasy",
@@ -741,7 +827,9 @@
         "ECO-05 Income",
         "ARC-01 Area Control",
         "UNC-08 Hidden Information"
-      ]
+      ],
+      "description": "Run a Prohibition-era empire of illegal bars, bribing officials, muscling rivals, and keeping your operation hidden from the feds.",
+      "justification": "M(4): Worker placement with area control and hidden information. T(4): Bribery, territory, and secrecy mechanics generate the gangster fantasy. G(4): Balancing expansion with concealment creates tense strategic decisions. F(3): Multiple boards, hidden information tracking, and complex interactions. Ar(4): Atmospheric 1920s noir visual design."
     },
     "Anachrony": {
       "name": "Anachrony",
@@ -759,7 +847,9 @@
         "STR-01 Asymmetric Game",
         "ACT-02 Action Drafting",
         "TRN-05 Round/Phase Structure"
-      ]
+      ],
+      "description": "Lead a faction through a time-bending apocalypse, borrowing resources from your own future and hoping you can pay them back before paradox destroys everything.",
+      "justification": "M(5): Worker placement with time travel, asymmetric factions, and upgrade paths. T(4): Borrowing from the future and creating time paradoxes IS the core mechanic. G(4): Complex multi-turn planning with temporal debt consequences. F(4): Exosuit miniatures, multiple boards, and time-travel tracking overhead. Ar(4): Striking post-apocalyptic sci-fi aesthetic and faction design."
     },
     "Arkham Noir: Case #1 – The Witch Cult Murders": {
       "name": "Arkham Noir #1",
@@ -776,7 +866,9 @@
         "SET-01 Set Valuation",
         "ACT-18 Narrative Choice",
         "STR-08 Scenario/Campaign"
-      ]
+      ],
+      "description": "A solo noir investigation dealt in cards — connect clues into case files before time runs out and the cult completes its ritual.",
+      "justification": "M(3): Hand management with set collection and narrative branching. T(4): Card connections generate the noir investigation experience procedurally. G(3): Meaningful choices about which leads to pursue and when to close cases. F(1): Small card game with fast setup. Ar(4): Black-and-white noir illustrations ooze pulp detective atmosphere."
     },
     "Burgle Bros 2: The Casino Capers": {
       "name": "Burgle Bros 2",
@@ -794,7 +886,9 @@
         "ACT-12 Variable Player Powers",
         "UNC-07 Unknown Information",
         "UNC-08 Hidden Information"
-      ]
+      ],
+      "description": "Your heist crew infiltrates a Vegas casino — but now the guards are smarter, the floors are flashier, and you need disguises to blend in.",
+      "justification": "M(3): Evolved tile-flip exploration with disguise and escalation mechanics. T(4): Disguise management and casino infiltration generate caper-film tension. G(3): Route planning with new stealth variables adds depth. F(2): Larger footprint and more components than the original. Ar(4): Upgraded retro-Vegas art style expands Tim Foley's heist world."
     },
     "Coffee Roaster": {
       "name": "Coffee Roaster",
@@ -810,7 +904,9 @@
         "CAR-06 Deckbuilding",
         "UNC-09 Probability Management",
         "SET-01 Set Valuation"
-      ]
+      ],
+      "description": "Draw beans from a bag, roast them to perfection, and serve the ideal cup — a solo bag-management puzzle wrapped in coffee culture.",
+      "justification": "M(3): Bag-building with probability management and set evaluation. T(2): Coffee theme is charming but mechanics feel abstract. G(3): Meaningful push-your-luck and bean management decisions. F(1): Small solo game with minimal setup. Ar(3): Warm, pleasant coffee-themed illustrations."
     },
     "Cthulhu: Death May Die": {
       "name": "Cthulhu: Death May Die",
@@ -828,7 +924,9 @@
         "MOV-02 Grid Movement",
         "ACT-12 Variable Player Powers",
         "STR-08 Scenario/Campaign"
-      ]
+      ],
+      "description": "You're not trying to prevent the ritual — it's too late for that. Instead, drive yourself mad enough to fight an Elder God face to face.",
+      "justification": "M(3): Dice rolling with action points and character progression. T(4): Embracing madness to gain power generates Lovecraftian horror brilliantly. G(3): Balancing sanity loss against power gains creates real tension. F(3): Large miniatures with multiple boards and scenario setup. Ar(4): Impressive Elder God sculpts and dark, atmospheric board art."
     },
     "Daybreak": {
       "name": "Daybreak",
@@ -845,7 +943,9 @@
         "ECO-01 Exchanging",
         "TRN-09 Simultaneous Action Selection",
         "VIC-10 Exhausting Resources"
-      ]
+      ],
+      "description": "Cooperatively avert climate catastrophe by deploying clean energy, passing policies, and managing cascading environmental crises across four world powers.",
+      "justification": "M(3): Simultaneous action selection with resource exchange and crisis management. T(3): Climate theme is earnest but mechanics feel system-management focused. G(3): Coordination decisions and resource allocation carry weight. F(2): Multiple player boards and crisis tracking. Ar(4): Matt Leacock's clean, modern design with striking environmental art."
     },
     "EXIT: The Game – The Abandoned Cabin": {
       "name": "EXIT: Abandoned Cabin",
@@ -860,7 +960,9 @@
       "mechs": [
         "ACT-18 Narrative Choice",
         "UNC-07 Unknown Information"
-      ]
+      ],
+      "description": "Locked in a cabin with only cryptic clues and a decoder wheel — solve the puzzles or never leave.",
+      "justification": "M(2): Puzzle-solving with a decoder mechanism and narrative clue chains. T(3): Being trapped and solving to escape generates genuine urgency. G(3): Lateral thinking puzzles with meaningful eureka moments. F(2): One-time play and some components require destruction. Ar(3): Adequate cabin setting with functional puzzle presentation."
     },
     "Gaia Project": {
       "name": "Gaia Project",
@@ -879,7 +981,9 @@
         "ACT-02 Action Drafting",
         "VIC-01 Victory Points from Game State",
         "ECO-11 Upgrades"
-      ]
+      ],
+      "description": "Fourteen alien species terraform planets across a modular galaxy, each evolving along unique technology tracks in a deep strategic competition.",
+      "justification": "M(5): Network building with asymmetric factions, income engines, and upgrade tech. T(2): Sci-fi theme is thin — this is a pure euro optimization puzzle. G(5): Every action has cascading strategic implications across multiple systems. F(3): Complex setup with many tracks, tokens, and round scoring tiles. Ar(3): Functional space aesthetic — clean but not visually striking."
     },
     "Horrified: World of Monsters": {
       "name": "Horrified: World of Monsters",
@@ -895,7 +999,9 @@
         "ACT-01 Action Points",
         "MOV-02 Grid Movement",
         "ACT-12 Variable Player Powers"
-      ]
+      ],
+      "description": "Classic Universal Monsters stalk a village and only your team of townsfolk can solve each creature's unique weakness before it's too late.",
+      "justification": "M(2): Simple action points with grid movement and item collection. T(3): Each monster's unique defeat condition evokes its film origin. G(2): Decisions are straightforward with limited strategic depth. F(2): Multiple monster setups and village board management. Ar(4): Beautiful Universal Monsters art with vibrant, atmospheric design."
     },
     "Imperium: Horizons": {
       "name": "Imperium: Horizons",
@@ -912,7 +1018,9 @@
         "STR-01 Asymmetric Game",
         "ECO-05 Income",
         "ACT-15 Gating and Unlocking"
-      ]
+      ],
+      "description": "Guide a civilization from barbarism to empire through a deck that literally evolves — your cards change as your people advance through history.",
+      "justification": "M(4): Deckbuilding with asymmetric civilizations, income, and state transitions. T(3): Civilization growth is mechanized but feels abstract at card level. G(4): When to trigger your civilization's evolution is deeply strategic. F(3): Dense rulebook with civilization-specific exceptions and interactions. Ar(4): Rich, diverse civilization art across dozens of unique cultures."
     },
     "It's a Wonderful World": {
       "name": "It's a Wonderful World",
@@ -929,7 +1037,9 @@
         "ECO-05 Income",
         "SET-05 Combo Abilities",
         "VIC-01 Victory Points from Game State"
-      ]
+      ],
+      "description": "Draft blueprint cards, scrap what you don't need for resources, and engine-build a dystopian empire one production chain at a time.",
+      "justification": "M(3): Card drafting with combo-driven engine building. T(2): Dystopian theme is cosmetic — this is pure engine optimization. G(3): Draft and commit decisions create meaningful strategic tension. F(1): Clean rules, fast rounds, minimal setup. Ar(3): Serviceable retro-futurist card illustrations."
     },
     "Kanban EV": {
       "name": "Kanban EV",
@@ -947,7 +1057,9 @@
         "TRN-05 Round/Phase Structure",
         "ECO-11 Upgrades",
         "ACT-02 Action Drafting"
-      ]
+      ],
+      "description": "Work in an electric car factory under a demanding manager, optimizing your production line across departments while competing for employee of the week.",
+      "justification": "M(5): Worker placement with income, upgrades, and tightly interlocked departments. T(3): Factory management theme is present but deeply abstracted. G(4): Sandra the manager creates time pressure on strategic planning. F(3): Multiple interconnected boards and complex phase structure. Ar(3): Functional industrial design — clean but utilitarian."
     },
     "The LOOP": {
       "name": "The LOOP",
@@ -963,7 +1075,9 @@
         "ACT-01 Action Points",
         "ACT-12 Variable Player Powers",
         "STR-08 Scenario/Campaign"
-      ]
+      ],
+      "description": "Travel through time to stop a mad scientist's clones from unraveling history, looping your actions to pull off impossible combos.",
+      "justification": "M(3): Action points with variable powers and campaign progression. T(3): Time-loop theme provides flavor but mechanics are standard co-op. G(3): Card combo potential and clone management offer real decisions. F(2): Multiple boards and clone tracking components. Ar(4): Vibrant, cartoonish time-travel art with strong visual identity."
     },
     "Nemesis: Retaliation": {
       "name": "Nemesis: Retaliation",
@@ -981,7 +1095,9 @@
         "UNC-07 Unknown Information",
         "UNC-08 Hidden Information",
         "ACT-12 Variable Player Powers"
-      ]
+      ],
+      "description": "The aliens are back — a new ship, new crew, and new nightmares in deep space where survival means trusting no one.",
+      "justification": "M(3): Same core action and exploration engine with new alien behaviors. T(5): Fresh alien types and ship layout regenerate the survival horror experience. G(4): New crew abilities and alien mechanics demand adapted strategies. F(4): Same massive setup with unpainted miniatures as the original. Ar(4): New alien designs are terrifying but miniatures arrive unpainted."
     },
     "On Mars": {
       "name": "On Mars",
@@ -999,7 +1115,9 @@
         "SET-04 Network Building",
         "TRN-05 Round/Phase Structure",
         "ECO-05 Income"
-      ]
+      ],
+      "description": "Build humanity's first Martian colony by shuttling between orbit and surface, managing life support, and constructing the infrastructure of a new world.",
+      "justification": "M(5): Worker placement with network building, income, and orbital logistics. T(4): Orbit-to-surface duality and life support generate colonization tension. G(4): Dual-location decisions and building placement are deeply strategic. F(4): Massive board, many systems, and Lacerda-level rules density. Ar(5): Ian O'Toole's gorgeous Mars landscape and clean iconography."
     },
     "Paperback: 10th Anniversary Edition": {
       "name": "Paperback 10th Ann.",
@@ -1015,7 +1133,9 @@
         "CAR-07 Deck Construction",
         "CAR-06 Deckbuilding",
         "SET-01 Set Valuation"
-      ]
+      ],
+      "description": "Spell words to defeat genre-fiction villains, building your deck of letters into an ever-more-powerful vocabulary engine.",
+      "justification": "M(3): Deck construction meeting word-game mechanics with set scoring. T(3): Pulp fiction framing adds charm — spelling IS your weapon. G(3): Word choice, card purchase, and timing create layered decisions. F(1): Standard card game setup, fast and accessible. Ar(3): Pleasant pulp-novel cover art on card backs."
     },
     "Regicide": {
       "name": "Regicide",
@@ -1030,7 +1150,9 @@
       "mechs": [
         "CAR-02 Hand Management",
         "SET-05 Combo Abilities"
-      ]
+      ],
+      "description": "Defeat twelve royals using only a standard deck of cards — suits are your weapons, and every play must count.",
+      "justification": "M(2): Hand management with suit-based combo powers. T(2): Medieval combat framing is thin over pure card mechanics. G(2): Meaningful card sequencing but limited by hand draws. F(1): Uses a standard poker deck, zero setup. Ar(3): Illustrated court cards with bold, regal design."
     },
     "Resist!": {
       "name": "Resist!",
@@ -1046,7 +1168,9 @@
         "CAR-02 Hand Management",
         "UNC-09 Probability Management",
         "ACT-18 Narrative Choice"
-      ]
+      ],
+      "description": "Lead the Spanish Maquis resistance against Franco's regime, managing a hand of guerrilla fighters in a solo narrative card game.",
+      "justification": "M(2): Hand management with probability mitigation and narrative branching. T(3): Historical resistance theme gives weight to card-play decisions. G(3): Choosing which fighters to deploy and which missions to attempt. F(1): Small card game with minimal setup. Ar(3): Functional wartime illustration style."
     },
     "ROVE: Expansion Collection": {
       "name": "ROVE: Expansion Collection",
@@ -1062,7 +1186,9 @@
         "ACT-01 Action Points",
         "UNC-09 Probability Management",
         "SET-02 Tile-Laying"
-      ]
+      ],
+      "description": "New mission modules and terrain challenges for your intrepid little Mars rover.",
+      "justification": "M(2): Expanded tile and mission variety on the same core engine. T(2): Same Mars rover theme — referenced, not generated. G(3): New missions add fresh spatial puzzles and difficulty. F(1): Same wallet-sized format with modular additions. Ar(3): Consistent with the base game's clean space art."
     },
     "Sleeping Gods": {
       "name": "Sleeping Gods",
@@ -1080,7 +1206,9 @@
         "STR-08 Scenario/Campaign",
         "ACT-12 Variable Player Powers",
         "CAR-02 Hand Management"
-      ]
+      ],
+      "description": "Captain a steamship crew lost in a strange world, exploring an atlas of interconnected locations where every choice opens new storylines and closes others.",
+      "justification": "M(4): Hand management with point-to-point exploration and narrative branching. T(5): The open-world atlas and persistent consequences generate genuine wanderlust. G(4): Every destination choice sacrifices others — exploration has real cost. F(3): Massive campaign with save states, large map, and many decks. Ar(5): Lush, painterly world art across a stunning atlas board."
     },
     "Trailblazers": {
       "name": "Trailblazers",
@@ -1096,7 +1224,9 @@
         "CAR-03 Card Drafting",
         "SET-04 Network Building",
         "VIC-07 Race"
-      ]
+      ],
+      "description": "Draft trail cards and build winding paths through the wilderness, racing to complete hiking, biking, and kayaking routes.",
+      "justification": "M(2): Simple card drafting with network-building path connections. T(2): Outdoor theme is pleasant but mechanically decorative. G(3): Drafting and path-routing decisions offer genuine strategic choices. F(1): Clean rules, fast rounds, compact footprint. Ar(3): Attractive nature illustrations with a warm palette."
     },
     "Unconscious Mind": {
       "name": "Unconscious Mind",
@@ -1113,7 +1243,9 @@
         "ACT-02 Action Drafting",
         "ECO-05 Income",
         "SET-05 Combo Abilities"
-      ]
+      ],
+      "description": "Explore the architecture of the human psyche as a Freudian analyst, placing workers across the layers of a patient's unconscious to unlock buried memories.",
+      "justification": "M(4): Worker placement with action drafting, income, and combo abilities. T(4): Psychoanalysis mechanics genuinely map to Freudian concepts of the mind. G(4): Layered decision-making across conscious and unconscious spaces. F(3): Multiple boards and psychological-system tracking. Ar(4): Surrealist art style that channels the dreamlike subject matter."
     },
     "Vantage": {
       "name": "Vantage",
@@ -1128,7 +1260,9 @@
       "mechs": [
         "SET-02 Tile-Laying",
         "ARC-02 Area Majority/Influence"
-      ]
+      ],
+      "description": "Lay landscape tiles to create vistas from multiple viewpoints, scoring based on what you can see from different vantage points.",
+      "justification": "M(3): Tile-laying with area influence and multi-perspective scoring. T(2): Landscape theme is present but perspective scoring is abstract. G(3): Tile placement decisions balance multiple scoring angles. F(1): Clean rules with a focused tile-laying loop. Ar(3): Pleasant landscape art on tiles."
     },
     "The White Castle": {
       "name": "The White Castle",
@@ -1144,7 +1278,9 @@
         "WPL-04 Workers-As-Dice",
         "ACT-02 Action Drafting",
         "VIC-01 Victory Points from Game State"
-      ]
+      ],
+      "description": "Place dice-workers in Himeji Castle's courtyards, gardens, and towers to gain the Daimyo's favor in feudal Japan.",
+      "justification": "M(3): Workers-as-dice with action drafting and multi-track scoring. T(2): Japanese castle theme is atmospheric but mechanically thin. G(4): Dice value selection creates deep tactical decisions each round. F(2): Multiple scoring tracks and action areas to manage. Ar(4): Elegant Japanese art with a refined, minimalist board."
     },
     "Apiary": {
       "name": "Apiary",
@@ -1160,7 +1296,9 @@
         "WPL-01 Worker Placement",
         "ECO-11 Upgrades",
         "ACT-15 Gating and Unlocking"
-      ]
+      ],
+      "description": "Command a spacefaring bee civilization, sending worker bees across the galaxy to harvest resources and evolve your hive's capabilities.",
+      "justification": "M(3): Worker placement with upgrade paths and gating mechanics. T(2): Space-bees theme is whimsical but mechanics don't generate it. G(3): Worker strength escalation creates meaningful timing decisions. F(2): Multiple boards and resource tracks. Ar(5): Stunning hymenoptera-meets-space-opera visual design throughout."
     },
     "Arcs": {
       "name": "Arcs",
@@ -1178,7 +1316,9 @@
         "STR-01 Asymmetric Game",
         "ARC-01 Area Control",
         "ECO-05 Income"
-      ]
+      ],
+      "description": "A galactic saga told through cards — build and betray alliances in a space opera where the campaign remembers everything.",
+      "justification": "M(4): Multi-use cards with area control and asymmetric narrative arcs. T(4): Campaign acts generate emergent political drama through card play. G(4): Card commitment and alliance-breaking create high-stakes decisions. F(3): Campaign tracking with multiple faction-specific components. Ar(4): Kyle Ferrin's distinctive art brings the galactic drama to life."
     },
     "Arkham Horror: The Card Game – Curse of the Rougarou: Scenario Pack": {
       "name": "AH:LCG – Curse of the Rougarou",
@@ -1195,7 +1335,9 @@
         "CAR-08 Multi-Use Cards",
         "ACT-18 Narrative Choice",
         "STR-08 Scenario/Campaign"
-      ]
+      ],
+      "description": "Hunt a werewolf through the bayou in a standalone scenario where the swamp itself is your deadliest enemy.",
+      "justification": "M(4): Core deck construction with bayou-specific location mechanics. T(5): Swamp exploration and lycanthrope pursuit generate visceral horror. G(4): Tracking the Rougarou through shifting bayou locations demands adaptive strategy. F(2): Requires core set and deck preparation. Ar(5): Atmospheric bayou and werewolf art in the Arkham style."
     },
     "Arkham Horror: The Card Game – The Circle Undone: Campaign Expansion": {
       "name": "AH:LCG – Circle Undone",
@@ -1212,7 +1354,9 @@
         "CAR-08 Multi-Use Cards",
         "ACT-18 Narrative Choice",
         "STR-08 Scenario/Campaign"
-      ]
+      ],
+      "description": "Investigate a haunted lodge where a spectral séance sets the stage for a campaign steeped in witchcraft and ghostly terrors.",
+      "justification": "M(4): Core engine with new haunt and spectral mechanics. T(5): Witch trials and ghostly encounters mechanized through encounter design. G(4): Campaign choices between the living and dead shape branching paths. F(2): Full campaign requiring core set investment. Ar(5): Haunted New England imagery with the series' signature atmospheric art."
     },
     "Arkham Horror: The Card Game – The Dream-Eaters: Campaign Expansion": {
       "name": "AH:LCG – Dream-Eaters",
@@ -1229,7 +1373,9 @@
         "CAR-08 Multi-Use Cards",
         "ACT-18 Narrative Choice",
         "STR-08 Scenario/Campaign"
-      ]
+      ],
+      "description": "Two intertwined campaigns — one waking, one dreaming — where investigators in different realities affect each other's fates.",
+      "justification": "M(4): Core engine with dual-campaign structure linking two parallel storylines. T(5): Dream-world mechanics generate surreal horror distinct from waking scenarios. G(4): Managing two parallel campaigns creates unique strategic layers. F(2): Dual-campaign tracking adds organizational overhead. Ar(5): Dreamlands art shifts the palette into ethereal, alien beauty."
     },
     "Arkham Horror: The Card Game – The Forgotten Age: Campaign Expansion": {
       "name": "AH:LCG – Forgotten Age",
@@ -1247,7 +1393,9 @@
         "ACT-18 Narrative Choice",
         "STR-08 Scenario/Campaign",
         "ACT-12 Variable Player Powers"
-      ]
+      ],
+      "description": "Venture deep into uncharted jungles where ancient ruins hide venomous traps, temporal anomalies, and horrors older than civilization.",
+      "justification": "M(4): Core engine with supply mechanics and exploration-specific hazards. T(5): Jungle expedition with supply attrition generates survival-exploration horror. G(4): Supply management and branching exploration paths demand careful planning. F(2): Full campaign with expedition-specific components. Ar(5): Lush jungle ruins and serpent imagery expand the Arkham visual universe."
     },
     "Barcelona": {
       "name": "Barcelona",
@@ -1263,7 +1411,9 @@
         "WPL-01 Worker Placement",
         "SET-04 Network Building",
         "VIC-01 Victory Points from Game State"
-      ]
+      ],
+      "description": "Shape the modernist expansion of 1800s Barcelona, building Gaudi's masterpieces and filling the Eixample grid with citizens and landmarks.",
+      "justification": "M(3): Worker placement with network building and citizen management. T(2): City-building theme is present but decisions feel mechanical. G(4): Intersection placement and citizen timing create deep strategic choices. F(2): Multiple boards and scoring conditions to track. Ar(5): Gorgeous modernist art celebrating Barcelona's architectural heritage."
     },
     "Barcelona: Passeig de Gràcia": {
       "name": "Barcelona: Passeig de Gràcia",
@@ -1279,7 +1429,9 @@
         "WPL-01 Worker Placement",
         "SET-04 Network Building",
         "VIC-01 Victory Points from Game State"
-      ]
+      ],
+      "description": "An expansion that extends Barcelona's modernist city-building with the iconic boulevard and its architectural treasures.",
+      "justification": "M(3): Same city-building Euro engine. T(2): Barcelona theme is decorative on optimization mechanics. G(4): Added strategic layers through new building options. F(2): Moderate setup with expansion modules. Ar(5): Same gorgeous production quality as the base game."
     },
     "Beast": {
       "name": "Beast",
@@ -1296,7 +1448,9 @@
         "MOV-02 Grid Movement",
         "UNC-08 Hidden Information",
         "ARC-01 Area Control"
-      ]
+      ],
+      "description": "One player is the Beast, stalking villagers through forests and swamps; the others are hunters tracking it through footprints and fear.",
+      "justification": "M(3): Asymmetric hidden movement with deduction and area control. T(4): Hunter-vs-beast asymmetry generates genuine predator-prey tension. G(4): Both sides face meaningful decisions about revealing or concealing position. F(2): Asymmetric setup with hidden movement tracking. Ar(4): Dark, atmospheric forest art with a folklore-horror tone."
     },
     "Endeavor: Deep Sea": {
       "name": "Endeavor: Deep Sea",
@@ -1313,7 +1467,9 @@
         "ECO-05 Income",
         "SET-04 Network Building",
         "VIC-01 Victory Points from Game State"
-      ]
+      ],
+      "description": "Lead a deep-sea research organization, deploying submersibles and building research networks across the ocean's most mysterious depths.",
+      "justification": "M(3): Action drafting with income engines and network building. T(3): Deep-sea exploration theme adds atmosphere to the euro framework. G(3): Building action variety through research creates cascading decisions. F(2): Multiple tracks and building progression to manage. Ar(5): Stunning oceanic art with a refined, elegant board presence."
     },
     "Everdell Farshore": {
       "name": "Everdell Farshore",
@@ -1330,7 +1486,9 @@
         "CAR-02 Hand Management",
         "SET-05 Combo Abilities",
         "ACT-15 Gating and Unlocking"
-      ]
+      ],
+      "description": "Build a coastal critter civilization on a distant shore, sending workers to gather resources and playing cards to construct your seaside village.",
+      "justification": "M(3): Worker placement with hand management and combo-driven tableau. T(3): Woodland creatures building a village is charming but mechanically light. G(3): Timing worker placement against card combos creates strategic depth. F(2): Multiple card types and resource tracks to manage. Ar(5): Breathtaking watercolor-style art with adorable critter character design."
     },
     "For the Queen": {
       "name": "For the Queen",
@@ -1345,7 +1503,9 @@
       "mechs": [
         "ACT-18 Narrative Choice",
         "RES-16 Player Judge"
-      ]
+      ],
+      "description": "A collaborative storytelling game where prompt cards slowly reveal whether your loyalty to the Queen will hold — or shatter.",
+      "justification": "M(1): Draw a card, answer a question — no traditional mechanics. T(3): Prompts generate genuine emotional narrative about loyalty and betrayal. G(2): Creative freedom is high but there are no strategic decisions. F(1): Open the box and start talking. Ar(3): Elegant card design with evocative queen portraits."
     },
     "Galactic Cruise": {
       "name": "Galactic Cruise",
@@ -1362,7 +1522,9 @@
         "ECO-05 Income",
         "SET-05 Combo Abilities",
         "ECO-11 Upgrades"
-      ]
+      ],
+      "description": "Manage a luxury starship, hiring alien crew, upgrading systems, and keeping passengers happy across a cosmic voyage.",
+      "justification": "M(4): Worker placement with income engines, upgrades, and combo abilities. T(3): Space cruise management is thematic but mechanically euro. G(4): Crew hiring and system upgrades create meaningful engine-building arcs. F(3): Multiple interconnected boards and resource tracks. Ar(5): Gorgeous retro-futurist space art with vibrant alien character design."
     },
     "The Gallerist": {
       "name": "The Gallerist",
@@ -1379,7 +1541,9 @@
         "ECO-03 Market",
         "ECO-01 Exchanging",
         "TRN-05 Round/Phase Structure"
-      ]
+      ],
+      "description": "Discover artists, buy and display their work, and manipulate the art market to build the most prestigious gallery in the world.",
+      "justification": "M(5): Worker placement with market manipulation, artist development, and gallery curation. T(3): Art-world theme is unusually integrated for a euro but still abstracted. G(4): Every action triggers cascading market and reputation consequences. F(3): Lacerda-level complexity with multiple interconnected systems. Ar(4): Refined gallery aesthetic with clean, elegant board design."
     },
     "Gloomhaven: Buttons & Bugs": {
       "name": "GH: Buttons & Bugs",
@@ -1396,7 +1560,9 @@
         "ACT-12 Variable Player Powers",
         "STR-08 Scenario/Campaign",
         "TRN-09 Simultaneous Action Selection"
-      ]
+      ],
+      "description": "The Gloomhaven tactical card system distilled into a solo pocket game — clear dungeons with a single mercenary and a tiny deck.",
+      "justification": "M(4): Core dual-card selection preserved in a compressed solo format. T(4): Card exhaustion and ability unlocking still generate dungeon-crawl tension. G(4): Same commitment-before-resolution decisions in a tighter package. F(2): Compact but still requires scenario setup and tracking. Ar(4): Miniaturized Gloomhaven art maintains the series' visual identity."
     },
     "Heat: Pedal to the Metal": {
       "name": "Heat",
@@ -1413,7 +1579,9 @@
         "UNC-02 Push-Your-Luck",
         "VIC-07 Race",
         "ACT-02 Action Drafting"
-      ]
+      ],
+      "description": "Push your engine to the breaking point in a card-driven race where playing heat cards means speed now but mechanical failure later.",
+      "justification": "M(3): Multi-use cards with push-your-luck racing and drafting. T(3): Heat management as engine stress genuinely generates racing tension. G(3): Cornering speed, heat management, and drafting create real decisions. F(1): Straightforward setup with clean, fast gameplay. Ar(4): Dynamic racing art with a retro 1960s Grand Prix aesthetic."
     },
     "Hegemony: Lead Your Class to Victory": {
       "name": "Hegemony",
@@ -1431,7 +1599,9 @@
         "ARC-02 Area Majority/Influence",
         "ECO-05 Income",
         "ACT-02 Action Drafting"
-      ]
+      ],
+      "description": "Play as the working class, middle class, capitalists, or the state itself in a political simulation where class warfare is the entire game.",
+      "justification": "M(4): Asymmetric factions with market mechanics and political influence. T(4): Class struggle IS the game — each faction's mechanics embody their real-world position. G(4): Policy voting and market manipulation create genuine political tension. F(4): Massive asymmetric rules overhead with economic simulation complexity. Ar(3): Functional political design that prioritizes information over aesthetics."
     },
     "Men-Nefer": {
       "name": "Men-Nefer",
@@ -1448,7 +1618,9 @@
         "ARC-02 Area Majority/Influence",
         "ECO-05 Income",
         "SET-02 Tile-Laying"
-      ]
+      ],
+      "description": "Build the ancient city of Memphis across millennia, placing workers along the Nile to construct monuments that define Egyptian civilization.",
+      "justification": "M(4): Worker placement with area influence, income, and tile-laying. T(2): Ancient Egyptian theme is atmospheric but mechanically standard euro. G(4): Monument placement and worker timing create interlocking decisions. F(3): Multiple boards, eras, and scoring conditions. Ar(4): Rich Egyptian art with detailed monument and Nile illustrations."
     },
     "MicroMacro: Crime City": {
       "name": "MicroMacro",
@@ -1463,7 +1635,9 @@
       "mechs": [
         "ACT-18 Narrative Choice",
         "UNC-07 Unknown Information"
-      ]
+      ],
+      "description": "A giant city map hides dozens of crimes frozen in time — trace the stories backward through the illustrated chaos to solve each case.",
+      "justification": "M(1): Pure visual search with narrative connection — no traditional mechanics. T(3): Detective work through visual storytelling generates genuine investigation feel. G(2): Observation-based with satisfying discovery but no strategic decisions. F(1): Unfold the map, pick a case, start looking. Ar(4): Incredibly detailed Where's Waldo-style city illustration."
     },
     "Nautilion": {
       "name": "Nautilion",
@@ -1479,7 +1653,9 @@
         "UNC-09 Probability Management",
         "UNC-02 Push-Your-Luck",
         "RES-03 Dice Rolling"
-      ]
+      ],
+      "description": "Captain a submarine through a Nautilus-inspired odyssey, rolling dice to recruit crew and outrun pursuing enemies in an Oniverse adventure.",
+      "justification": "M(2): Dice rolling with probability management and push-your-luck. T(3): Submarine voyage in the Oniverse creates dreamlike nautical atmosphere. G(2): Limited agency — dice dictate options more than player choice. F(1): Small solo game with fast, simple setup. Ar(3): Oniverse's surreal, dreamlike art style."
     },
     "Onirim (Second Edition)": {
       "name": "Onirim",
@@ -1495,7 +1671,9 @@
         "CAR-02 Hand Management",
         "UNC-09 Probability Management",
         "SET-01 Set Valuation"
-      ]
+      ],
+      "description": "Wander through a labyrinthine dreamworld, playing cards in color sequences to find the doors before the deck runs out and the dream collapses.",
+      "justification": "M(2): Hand management with probability management and set collection. T(2): Dream theme is evocative but card play feels abstract. G(2): Meaningful discard decisions but heavily luck-dependent. F(1): Solo card game with minimal setup. Ar(3): Surreal, pastel dreamscape art throughout."
     },
     "The Quiet Year": {
       "name": "The Quiet Year",
@@ -1511,7 +1689,9 @@
         "ACT-18 Narrative Choice",
         "SET-02 Tile-Laying",
         "RES-16 Player Judge"
-      ]
+      ],
+      "description": "A community survives the apocalypse for one year — draw cards for seasons, map your settlement, and watch tensions build toward an uncertain future.",
+      "justification": "M(2): Card-driven narrative with map-drawing and collaborative worldbuilding. T(3): Seasonal prompts generate emergent post-apocalyptic stories organically. G(3): Drawing the map and making community decisions feels consequential. F(1): A deck of cards and some paper — nothing else needed. Ar(3): Minimalist design that lets the player-drawn map be the art."
     },
     "Ra": {
       "name": "Ra",
@@ -1527,7 +1707,9 @@
         "ECO-04 Auction/Bidding",
         "SET-01 Set Valuation",
         "TRN-01 Turn Order"
-      ]
+      ],
+      "description": "Bid with ancient sun tokens on tiles drawn from the Nile — Egyptian civilization rises and falls with every auction.",
+      "justification": "M(3): Auction mechanics with set collection and round-based scoring. T(2): Egyptian theme is pasted on — this is pure bidding strategy. G(3): When to invoke Ra and what to bid creates real tension. F(1): Simple rules, fast rounds, elegant design. Ar(3): Classic Knizia-era Egyptian art — pleasant but dated."
     },
     "Root": {
       "name": "Root",
@@ -1545,7 +1727,9 @@
         "CAR-02 Hand Management",
         "ECO-05 Income",
         "ACT-12 Variable Player Powers"
-      ]
+      ],
+      "description": "Woodland factions — cats, birds, rebels, and vagabonds — wage asymmetric war across a forest where every faction plays by entirely different rules.",
+      "justification": "M(4): Deeply asymmetric factions with area control and hand management. T(3): Factions embody political archetypes but combat feels mechanical. G(4): Each faction's unique victory path demands different strategic thinking. F(3): Teaching four different rule sets and managing asymmetric interactions. Ar(5): Kyle Ferrin's charming woodland art is instantly iconic."
     },
     "Slay the Spire: The Board Game": {
       "name": "Slay the Spire",
@@ -1562,7 +1746,9 @@
         "SET-05 Combo Abilities",
         "ACT-12 Variable Player Powers",
         "ACT-15 Gating and Unlocking"
-      ]
+      ],
+      "description": "The roguelike deckbuilder made physical — fight through three acts of monsters, build your deck from card rewards, and face the heart of the Spire.",
+      "justification": "M(4): Deck construction with combo abilities, variable powers, and gating. T(4): Roguelike progression and deck evolution generate the video game's tension. G(4): Card reward choices and combat sequencing demand strategic thinking. F(2): Multiple decks, enemy setups, and campaign tracking. Ar(4): Faithful adaptation of the video game's distinctive art style."
     },
     "Star Wars: Rebellion": {
       "name": "Star Wars: Rebellion",
@@ -1580,7 +1766,9 @@
         "UNC-08 Hidden Information",
         "ACT-12 Variable Player Powers",
         "ARC-01 Area Control"
-      ]
+      ],
+      "description": "The Empire hunts for the hidden Rebel base across the galaxy while the Rebels spark hope — an asymmetric war told through missions and fleets.",
+      "justification": "M(4): Asymmetric grand strategy with hidden base, fleet combat, and missions. T(4): Empire-vs-Rebellion asymmetry generates the Star Wars political-military fantasy. G(4): Hidden base placement and mission assignment create tense cat-and-mouse. F(4): Massive board, many miniatures, and complex combat resolution. Ar(5): Gorgeous Star Wars art with iconic ship miniatures and galaxy board."
     },
     "Thunder Road: Vendetta": {
       "name": "Thunder Road",
@@ -1597,7 +1785,9 @@
         "MOV-04 Movement Points",
         "VIC-07 Race",
         "ARC-01 Area Control"
-      ]
+      ],
+      "description": "Demolition derby on a desert highway that scrolls endlessly forward — if your car falls off the back edge of the map, it's gone forever.",
+      "justification": "M(2): Dice-driven racing with area control and vehicle combat. T(3): Cars exploding and falling off the map generates Road Warrior chaos. G(3): Meaningful decisions about attacking rivals versus racing ahead. F(1): Fast setup with a brilliantly simple scrolling board. Ar(4): Retro 1980s post-apocalyptic art with explosive energy."
     },
     "5 Towers": {
       "name": "5 Towers",
@@ -1612,7 +1802,9 @@
       "mechs": [
         "CAR-01 Trick-Taking",
         "SET-01 Set Valuation"
-      ]
+      ],
+      "description": "Draft numbered cards to build five ascending towers — but every card you take commits you to a column you might regret.",
+      "justification": "M(2): Simple trick-style drafting with set collection constraints. T(1): Tower theme is purely cosmetic. G(2): When to take and which tower to build offers light decisions. F(1): A handful of cards, plays in fifteen minutes. Ar(2): Minimal, functional card design."
     },
     "51st State: Ultimate Edition": {
       "name": "51st State: UE",
@@ -1629,7 +1821,9 @@
         "ECO-01 Exchanging",
         "ARC-02 Area Majority/Influence",
         "SET-05 Combo Abilities"
-      ]
+      ],
+      "description": "Rebuild civilization after the apocalypse by raiding, trading, or annexing locations — every card can be used three different ways.",
+      "justification": "M(3): Multi-use cards with resource exchange and combo-building. T(3): Post-apocalyptic rebuilding comes through in card flavor and actions. G(3): Triple-use cards create meaningful strategic fork at every play. F(2): Card-heavy setup with multiple resource types. Ar(3): Gritty post-apocalyptic art — functional but not eye-catching."
     },
     "Bloc by Bloc: Uprising": {
       "name": "Bloc by Bloc",
@@ -1646,7 +1840,9 @@
         "ACT-01 Action Points",
         "MOV-02 Grid Movement",
         "STR-08 Scenario/Campaign"
-      ]
+      ],
+      "description": "Coordinate an urban insurrection across a modular city grid — barricade streets, liberate districts, and clash with riot police before the state crushes you.",
+      "justification": "M(3): Area control with action points and grid-based tactical movement. T(4): Barricading, rioting, and police suppression generate protest-movement tension. G(3): District liberation and police avoidance create meaningful tactical choices. F(2): Modular city board setup with multiple faction components. Ar(3): Stark, political-poster art style — effective but austere."
     },
     "Café": {
       "name": "Café",
@@ -1662,7 +1858,9 @@
         "SET-05 Combo Abilities",
         "ECO-05 Income",
         "CAR-02 Hand Management"
-      ]
+      ],
+      "description": "Brew specialty coffees and serve demanding customers in a cozy café where every blend matters.",
+      "justification": "M(2): Light combo-building with hand management. T(2): Café theme is pleasant but mechanics are generic resource conversion. G(2): Decisions exist but limited strategic depth. F(1): Quick setup, simple rules. Ar(3): Clean, warm art style."
     },
     "Canvas": {
       "name": "Canvas",
@@ -1677,7 +1875,9 @@
       "mechs": [
         "CAR-03 Card Drafting",
         "SET-01 Set Valuation"
-      ]
+      ],
+      "description": "Layer transparent cards to compose paintings, combining icons into scoring sets — the art you create is literally the game.",
+      "justification": "M(2): Card drafting with set-based scoring from layered transparency. T(2): Art-creation theme is unique but scoring feels mathematical. G(2): Drafting choices matter but final compositions are partly luck. F(1): Elegant, minimal rules with fast play. Ar(5): Transparent layering creates genuinely beautiful paintings at the table."
     },
     "Count of the Nine Estates": {
       "name": "Count of Nine Estates",
@@ -1693,7 +1893,9 @@
         "CAR-02 Hand Management",
         "SET-01 Set Valuation",
         "UNC-09 Probability Management"
-      ]
+      ],
+      "description": "A solo card game of medieval estate management — balance your council, develop lands, and outmaneuver rival nobles through hand optimization.",
+      "justification": "M(2): Hand management with set valuation and probability mitigation. T(2): Medieval estate theme is present but card play feels abstract. G(3): Meaningful decisions about which cards to keep and develop. F(1): Small solo card game with fast setup. Ar(3): Adequate medieval-themed card art."
     },
     "Deckers": {
       "name": "Deckers",
@@ -1709,7 +1911,9 @@
         "CAR-07 Deck Construction",
         "SET-05 Combo Abilities",
         "ACT-12 Variable Player Powers"
-      ]
+      ],
+      "description": "Build a custom deck of cyberpunk programs and hack through layered ice defenses in a competitive deckbuilding race.",
+      "justification": "M(3): Deck construction with combo abilities and variable powers. T(3): Cyberpunk hacking theme comes through in card naming and flow. G(4): Deck composition and combo sequencing reward deep strategic planning. F(2): Multiple card pools and setup for competitive deckbuilding. Ar(4): Sharp cyberpunk aesthetic with neon-drenched digital art."
     },
     "Don't wake up Cthulhu!": {
       "name": "Don't Wake Cthulhu",
@@ -1724,7 +1928,9 @@
       "mechs": [
         "RES-10 Physical Action",
         "UNC-02 Push-Your-Luck"
-      ]
+      ],
+      "description": "Pull sticks from a wobbly Cthulhu tower — whoever collapses the Elder God loses their sanity and the game.",
+      "justification": "M(1): Pure dexterity — it's Jenga with a Cthulhu wrapper. T(2): Lovecraftian skin adds humor but no thematic generation. G(1): No decisions — just steady hands. F(1): Set up the tower and start pulling. Ar(3): Fun Cthulhu sculpt as the tower centerpiece."
     },
     "Dustrunner": {
       "name": "Dustrunner",
@@ -1740,7 +1946,9 @@
         "RES-03 Dice Rolling",
         "UNC-09 Probability Management",
         "ACT-01 Action Points"
-      ]
+      ],
+      "description": "Roll dice to navigate a lone courier through a post-apocalyptic wasteland, delivering packages against the clock and the elements.",
+      "justification": "M(2): Dice rolling with probability management and action points. T(3): Wasteland courier theme generates a lonely, dangerous journey feel. G(2): Dice mitigation offers some choices but randomness leads. F(1): Small solo game with minimal components. Ar(3): Dusty, desolate wasteland art fitting the theme."
     },
     "Entropy": {
       "name": "Entropy",
@@ -1756,7 +1964,9 @@
         "SET-02 Tile-Laying",
         "ARC-02 Area Majority/Influence",
         "ACT-02 Action Drafting"
-      ]
+      ],
+      "description": "Tile-laying area control where the very fabric of the board is contested — every placement reshapes the competitive landscape.",
+      "justification": "M(3): Tile-laying with area influence and action drafting. T(2): Abstract entropy theme — mechanics don't generate narrative. G(4): Every tile placement has major territorial consequences. F(2): Multiple scoring conditions and area tracking. Ar(3): Clean abstract design — functional but not evocative."
     },
     "Ex Libris": {
       "name": "Ex Libris",
@@ -1772,7 +1982,9 @@
         "WPL-01 Worker Placement",
         "SET-01 Set Valuation",
         "ACT-12 Variable Player Powers"
-      ]
+      ],
+      "description": "Fantasy librarians compete to curate the most impressive collection, shelving books in alphabetical order while seeking rare tomes and avoiding banned texts.",
+      "justification": "M(3): Worker placement with set collection and variable powers. T(2): Library theme is charming but shelving books feels mechanical. G(3): Placement timing and book selection create meaningful choices. F(2): Multiple location tiles and card management. Ar(4): Whimsical fantasy library art with delightful book-spine details."
     },
     "Fantastic Factories": {
       "name": "Fantastic Factories",
@@ -1788,7 +2000,9 @@
         "WPL-04 Workers-As-Dice",
         "ECO-11 Upgrades",
         "SET-05 Combo Abilities"
-      ]
+      ],
+      "description": "Roll dice-workers and slot them into factory blueprints to produce goods — the most efficient engine wins the manufacturing race.",
+      "justification": "M(3): Workers-as-dice with upgrade-driven combo building. T(2): Factory theme is present but abstract — it's pure engine optimization. G(3): Dice assignment and blueprint selection create meaningful combos. F(1): Clean rules with a fast, simultaneous flow. Ar(3): Bright, functional factory illustrations."
     },
     "First Ascent": {
       "name": "First Ascent",
@@ -1805,7 +2019,9 @@
         "ACT-01 Action Points",
         "VIC-07 Race",
         "MOV-04 Movement Points"
-      ]
+      ],
+      "description": "Race to summit a mountain by managing hand cards as climbing holds, choosing routes that test your stamina and nerve.",
+      "justification": "M(3): Hand management with action points and racing movement. T(3): Card play as climbing holds generates physical ascent tension. G(3): Route selection and stamina management create strategic depth. F(1): Clean rules with elegant card-as-movement design. Ar(4): Dramatic alpine art with beautiful mountain panoramas."
     },
     "Flamecraft": {
       "name": "Flamecraft",
@@ -1821,7 +2037,9 @@
         "WPL-01 Worker Placement",
         "ECO-01 Exchanging",
         "SET-05 Combo Abilities"
-      ]
+      ],
+      "description": "Befriend artisan dragons who power the shops of a cozy fantasy town, enchanting goods and gathering companions.",
+      "justification": "M(2): Simple worker placement with resource exchange and combos. T(3): Dragon-powered shops are charming and thematically consistent. G(2): Shop visits offer choices but depth is limited. F(1): Accessible rules with a gentle learning curve. Ar(5): Incredibly adorable dragon art — one of the most beautiful games on any shelf."
     },
     "Ghost Stories": {
       "name": "Ghost Stories",
@@ -1838,7 +2056,9 @@
         "MOV-02 Grid Movement",
         "ACT-12 Variable Player Powers",
         "RES-03 Dice Rolling"
-      ]
+      ],
+      "description": "Taoist monks defend a village from waves of ghosts and demons, exorcising spirits through dice and desperate cooperation before Wu-Feng rises.",
+      "justification": "M(3): Action points with grid movement, variable powers, and dice combat. T(4): Waves of ghosts overwhelming the village generate escalating horror-defense tension. G(3): Positioning and exorcism timing create meaningful cooperative decisions. F(2): Ghost waves and village tile management require tracking. Ar(4): Striking Chinese ghost-mythology art with menacing spirit designs."
     },
     "Gloomhaven": {
       "name": "Gloomhaven",
@@ -1856,7 +2076,9 @@
         "STR-08 Scenario/Campaign",
         "TRN-09 Simultaneous Action Selection",
         "ACT-15 Gating and Unlocking"
-      ]
+      ],
+      "description": "A massive tactical campaign where your mercenary band clears dungeons, unlocks new classes, and watches the world permanently change around your choices.",
+      "justification": "M(4): Multi-use cards with variable powers, campaign progression, and gating. T(4): Card exhaustion as stamina and world-state changes generate living-world immersion. G(4): Simultaneous card selection with permanent consequences. F(4): Enormous box with hundreds of components and lengthy scenario setup. Ar(4): Detailed dungeon and character art across a massive component library."
     },
     "Hamster Roll": {
       "name": "Hamster Roll",
@@ -1871,7 +2093,9 @@
       "mechs": [
         "RES-10 Physical Action",
         "VIC-07 Race"
-      ]
+      ],
+      "description": "Roll a hamster wheel down a slope and try to land it perfectly on the target — pure dexterity chaos.",
+      "justification": "M(1): Pure physical dexterity — roll and hope. T(1): Hamster theme is cosmetic. G(2): Aiming provides minimal agency over random outcomes. F(1): Set up and start rolling instantly. Ar(2): Basic, functional hamster-themed components."
     },
     "Hanabi": {
       "name": "Hanabi",
@@ -1887,7 +2111,9 @@
         "UNC-08 Hidden Information",
         "UNC-06 Communication Limits",
         "CAR-02 Hand Management"
-      ]
+      ],
+      "description": "Hold your cards backward so only others can see them, then cooperate through limited hints to play a perfect fireworks display.",
+      "justification": "M(2): Hand management under hidden-information and communication constraints. T(2): Fireworks theme is decorative — this is a logic puzzle. G(3): Hint-giving and deduction create genuinely meaningful decisions. F(1): Tiny card game, instant setup. Ar(3): Simple, colorful firework illustrations."
     },
     "Herbaceous": {
       "name": "Herbaceous",
@@ -1902,7 +2128,9 @@
       "mechs": [
         "CAR-03 Card Drafting",
         "SET-01 Set Valuation"
-      ]
+      ],
+      "description": "Grow an herb garden by drafting plant cards into collections, pressing your luck on when to pot your herbs for points.",
+      "justification": "M(1): Simple card drafting with set collection timing. T(1): Herb-garden theme is purely cosmetic. G(2): When to pot your herbs offers a light push-your-luck decision. F(1): Handful of cards, plays in fifteen minutes. Ar(4): Gorgeous botanical watercolor illustrations by Beth Sobel."
     },
     "HeroQuest: The Card Game": {
       "name": "HeroQuest CG",
@@ -1917,7 +2145,9 @@
       "mechs": [
         "CAR-02 Hand Management",
         "RES-03 Dice Rolling"
-      ]
+      ],
+      "description": "A quick dungeon-crawl card game where heroes fight monsters through simple hand management and dice combat.",
+      "justification": "M(1): Basic hand management with dice rolling — minimal depth. T(2): Classic fantasy dungeon theme referenced but not mechanized. G(2): Some card-play choices but largely dice-dependent. F(1): Simple card game setup. Ar(3): Nostalgic HeroQuest-adjacent fantasy art."
     },
     "Horror on the Orient Express: The Board Game": {
       "name": "Horror Orient Express",
@@ -1934,7 +2164,9 @@
         "STR-08 Scenario/Campaign",
         "RES-02 Stat Check",
         "ACT-12 Variable Player Powers"
-      ]
+      ],
+      "description": "Board the legendary train as investigators racing across Europe to stop a Mythos conspiracy, where every stop reveals new horrors and the clock never stops.",
+      "justification": "M(3): Narrative choices with stat checks, variable powers, and campaign structure. T(5): The moving train creates relentless pacing — horror unfolds station by station. G(4): Investigation and resource allocation under time pressure demand real decisions. F(3): Campaign components with multiple scenario setups and character tracking. Ar(4): Atmospheric Orient Express and Lovecraftian art throughout."
     },
     "Inventions: Evolution of Ideas": {
       "name": "Inventions",
@@ -1951,7 +2183,9 @@
         "WPL-01 Worker Placement",
         "SET-05 Combo Abilities",
         "ACT-15 Gating and Unlocking"
-      ]
+      ],
+      "description": "Shepherd humanity's greatest inventions through history, managing workshops, patents, and the chain of ideas that built civilization.",
+      "justification": "M(5): Worker placement with income, combo abilities, and deep gating systems. T(3): Invention theme is intellectually rich but mechanically abstracted. G(4): Technology chains and timing decisions create cascading strategic depth. F(3): Lacerda-level complexity with multiple interconnected systems. Ar(3): Functional historical design — clean but not visually striking."
     },
     "Invincible: The Hero-Building Game": {
       "name": "Invincible",
@@ -1968,7 +2202,9 @@
         "ACT-12 Variable Player Powers",
         "SET-05 Combo Abilities",
         "STR-08 Scenario/Campaign"
-      ]
+      ],
+      "description": "Build your superhero's power deck across a comic-book campaign, fighting villains whose destruction reshapes the story.",
+      "justification": "M(3): Deck construction with variable powers and campaign progression. T(4): Comic-book panel storytelling and power escalation generate superhero fantasy. G(3): Deck-building choices and combat sequencing offer meaningful decisions. F(2): Campaign setup with multiple villain and story decks. Ar(4): Ryan Ottley's iconic Invincible art brings the comic to the table."
     },
     "Jekyll & Hyde vs Scotland Yard": {
       "name": "Jekyll&Hyde v SY",
@@ -1984,7 +2220,9 @@
         "STR-01 Asymmetric Game",
         "UNC-08 Hidden Information",
         "MOV-01 Point-to-Point Movement"
-      ]
+      ],
+      "description": "One player is Jekyll hiding from Scotland Yard through London's streets — but at night, Hyde emerges with a completely different set of rules.",
+      "justification": "M(3): Asymmetric hidden movement with dual-identity mechanics. T(4): Jekyll/Hyde transformation changes how you play — identity IS the mechanic. G(3): Hiding as Jekyll and hunting as Hyde create distinct strategic layers. F(2): Asymmetric setup with hidden movement tracking. Ar(3): Functional Victorian London board and character design."
     },
     "Jekyll vs. Hyde": {
       "name": "Jekyll vs Hyde",
@@ -1999,7 +2237,9 @@
       "mechs": [
         "CAR-01 Trick-Taking",
         "CAR-02 Hand Management"
-      ]
+      ],
+      "description": "A two-player trick-taking duel where one player wants balance and the other wants chaos — and the potion track shifts with every trick.",
+      "justification": "M(2): Trick-taking with asymmetric hand management and potion tracking. T(3): The struggle between Jekyll and Hyde is reflected in the trick balance. G(3): Playing for equilibrium versus disruption creates tense card decisions. F(1): Standard card game with fast setup. Ar(3): Evocative Victorian dual-identity card art."
     },
     "K2": {
       "name": "K2",
@@ -2016,7 +2256,9 @@
         "MOV-04 Movement Points",
         "UNC-07 Unknown Information",
         "VIC-07 Race"
-      ]
+      ],
+      "description": "Race your climbers to the summit of the world's deadliest mountain, managing hand cards as oxygen and movement while storms roll in.",
+      "justification": "M(3): Card drafting with movement, weather management, and acclimatization. T(3): Altitude sickness and weather cards generate mountaineering survival tension. G(3): Deciding when to push and when to shelter is meaningfully strategic. F(2): Weather tiles and dual-climber management. Ar(4): Dramatic K2 summit art with striking weather illustrations."
     },
     "Maskmen": {
       "name": "Maskmen",
@@ -2031,7 +2273,9 @@
       "mechs": [
         "CAR-02 Hand Management",
         "SET-01 Set Valuation"
-      ]
+      ],
+      "description": "Bluff and play wrestling cards in a ladder-climbing game where you secretly set the hierarchy of which wrestlers beat which.",
+      "justification": "M(1): Simple hand management with player-defined card rankings. T(1): Wrestling theme is cosmetic — it's a pure card game. G(2): Setting the card hierarchy adds a light deduction layer. F(1): Tiny card game, plays in minutes. Ar(2): Basic wrestler illustrations — functional at best."
     },
     "Mediterráneo": {
       "name": "Mediterráneo",
@@ -2047,7 +2291,9 @@
         "SET-04 Network Building",
         "ECO-01 Exchanging",
         "VIC-01 Victory Points from Game State"
-      ]
+      ],
+      "description": "Sail the Mediterranean trading goods and building a network of ports across sun-drenched coastal cities.",
+      "justification": "M(2): Light network building with set collection. T(2): Mediterranean trading theme is atmospheric but decorative. G(3): Route and timing decisions create meaningful choices. F(1): Streamlined rules, quick to table. Ar(3): Pleasant coastal art with clean graphic design."
     },
     "Moving Wild": {
       "name": "Moving Wild",
@@ -2063,7 +2309,9 @@
         "CAR-03 Card Drafting",
         "SET-01 Set Valuation",
         "ARC-02 Area Majority/Influence"
-      ]
+      ],
+      "description": "Draft animal cards to populate a shared savanna, competing for area majority as herds migrate across the landscape.",
+      "justification": "M(2): Card drafting with set collection and area influence. T(2): Wildlife migration theme is referenced but not generated. G(3): Drafting and placement decisions affect multiple scoring dimensions. F(1): Light rules with quick rounds. Ar(4): Beautiful wildlife photography-inspired art."
     },
     "Nine Tiles Panic": {
       "name": "Nine Tiles Panic",
@@ -2078,7 +2326,9 @@
       "mechs": [
         "SET-02 Tile-Laying",
         "TRN-09 Simultaneous Action Selection"
-      ]
+      ],
+      "description": "Frantically arrange nine tiles to build a town that scores for whatever bizarre criteria the round demands — most roads to aliens, longest burger chain, whatever.",
+      "justification": "M(1): Real-time tile arrangement with variable scoring. T(1): Town theme is incidental — it's a spatial speed puzzle. G(2): Speed and spatial reasoning under pressure. F(1): Flip scoring cards and race. Ar(3): Quirky, colorful Japanese-style tile illustrations."
     },
     "Not Alone": {
       "name": "Not Alone",
@@ -2094,7 +2344,9 @@
         "STR-01 Asymmetric Game",
         "UNC-08 Hidden Information",
         "CAR-02 Hand Management"
-      ]
+      ],
+      "description": "One player is a shape-shifting alien hunting stranded astronauts across a hostile planet — the crew must resist assimilation long enough to be rescued.",
+      "justification": "M(2): Asymmetric hidden selection with hand management. T(4): Hunter-prey dynamic on an alien planet generates real survival tension. G(3): Location bluffing and anticipation create meaningful mind games. F(1): Simple card game with fast setup. Ar(3): Moody alien planet art with functional location design."
     },
     "Oathsworn: Into the Deepwood": {
       "name": "Oathsworn",
@@ -2112,7 +2364,9 @@
         "ACT-12 Variable Player Powers",
         "CAR-08 Multi-Use Cards",
         "ACT-01 Action Points"
-      ]
+      ],
+      "description": "A story-heavy campaign where your company of warriors ventures into a cursed forest, fighting massive monsters through a novel-length narrative.",
+      "justification": "M(4): Narrative choices with multi-use cards, variable powers, and tactical combat. T(5): The Deepwood's story and monster encounters generate dark-fantasy immersion. G(4): Strategic combat positioning and narrative branching demand investment. F(4): Enormous campaign with massive miniatures and extensive story content. Ar(5): Stunning dark-fantasy art with breathtaking monster illustrations."
     },
     "Peaks": {
       "name": "Peaks",
@@ -2128,7 +2382,9 @@
         "CAR-02 Hand Management",
         "ACT-01 Action Points",
         "VIC-07 Race"
-      ]
+      ],
+      "description": "Race to the summit through hand management and route selection, playing cards as climbing holds on an ever-steepening mountain.",
+      "justification": "M(3): Hand management with action points and competitive racing. T(2): Mountain climbing theme present but card play feels abstract. G(3): Route and card timing decisions offer strategic depth. F(1): Clean, fast card game. Ar(4): Beautiful mountain panorama art."
     },
     "The Plum Island Horror": {
       "name": "Plum Island Horror",
@@ -2145,7 +2401,9 @@
         "UNC-07 Unknown Information",
         "STR-08 Scenario/Campaign",
         "RES-03 Dice Rolling"
-      ]
+      ],
+      "description": "Monsters swarm from a government research facility onto a New England island — coordinate evacuations, fight creatures, and uncover what went wrong.",
+      "justification": "M(3): Action points with unknown information, scenarios, and dice combat. T(4): Monster outbreak on a real island generates B-movie horror atmosphere. G(3): Evacuation coordination and monster prioritization demand real decisions. F(2): Island board setup with multiple monster and event decks. Ar(4): Retro horror-movie poster aesthetic with creature design."
     },
     "Power Failure": {
       "name": "Power Failure",
@@ -2161,7 +2419,9 @@
         "ECO-05 Income",
         "SET-04 Network Building",
         "ACT-01 Action Points"
-      ]
+      ],
+      "description": "Build and manage a city's electrical grid, connecting power plants to neighborhoods before blackouts cascade across the network.",
+      "justification": "M(2): Network building with income and action points. T(2): Power grid theme is present but gameplay is abstract. G(3): Network optimization and timing decisions offer meaningful choices. F(1): Simple rules with clean gameplay. Ar(3): Functional city infrastructure art."
     },
     "Power Vacuum": {
       "name": "Power Vacuum",
@@ -2176,7 +2436,9 @@
       "mechs": [
         "ARC-01 Area Control",
         "ACT-02 Action Drafting"
-      ]
+      ],
+      "description": "Seize political control of a collapsing state, deploying influence across contested regions in a tight area-control duel.",
+      "justification": "M(2): Area control with action drafting and influence placement. T(2): Political theme is present but mechanics are abstract. G(3): Territory selection and timing create real competitive tension. F(1): Fast-playing area control with clean rules. Ar(3): Stark political poster art — functional and thematic."
     },
     "Project L": {
       "name": "Project L",
@@ -2192,7 +2454,9 @@
         "SET-02 Tile-Laying",
         "ECO-11 Upgrades",
         "TRN-09 Simultaneous Action Selection"
-      ]
+      ],
+      "description": "Slot Tetris-like pieces into puzzle cards to complete them, upgrading your piece collection into an ever-faster completion engine.",
+      "justification": "M(2): Tile-laying puzzle with upgrade-driven engine building. T(1): No theme — pure abstract spatial optimization. G(3): Piece selection and puzzle timing create satisfying optimization. F(1): Elegant rules, simultaneous play, minimal setup. Ar(3): Clean, minimalist design with satisfying acrylic pieces."
     },
     "Return to Dark Tower": {
       "name": "Return to Dark Tower",
@@ -2209,7 +2473,9 @@
         "STR-08 Scenario/Campaign",
         "ACT-12 Variable Player Powers",
         "UNC-07 Unknown Information"
-      ]
+      ],
+      "description": "A corrupted tower rises at the center of the land — explore, quest, and build your strength before confronting the darkness within its app-driven depths.",
+      "justification": "M(3): Action points with variable powers, questing, and app-driven scenarios. T(5): The physical tower with lights and sounds generates dark-fantasy atmosphere. G(3): Exploration and quest prioritization offer meaningful choices. F(3): App dependency, tower assembly, and component management. Ar(5): The motorized tower centerpiece is one of gaming's most stunning productions."
     },
     "Sea Salt & Paper": {
       "name": "Sea Salt & Paper",
@@ -2224,7 +2490,9 @@
       "mechs": [
         "CAR-03 Card Drafting",
         "SET-01 Set Valuation"
-      ]
+      ],
+      "description": "Fold origami sea creatures from drafted cards, building sets of ocean life and deciding when to end the round for maximum points.",
+      "justification": "M(1): Simple card drafting with set-based scoring and round-ending push. T(2): Origami sea-life theme is charming and visually unique. G(2): When to stop and scoring set choices offer light decisions. F(1): Tiny card game, plays in twenty minutes. Ar(4): Delightful origami-style art on every card."
     },
     "Side Quest: Nemesis": {
       "name": "Side Quest: Nemesis",
@@ -2240,7 +2508,9 @@
         "CAR-02 Hand Management",
         "SET-05 Combo Abilities",
         "STR-08 Scenario/Campaign"
-      ]
+      ],
+      "description": "A compact cooperative card game set in the Nemesis universe — survive alien encounters through hand management and teamwork.",
+      "justification": "M(2): Hand management with combo abilities and scenario structure. T(3): Nemesis universe provides atmosphere but card-only format limits immersion. G(2): Card play offers some decisions but depth is limited. F(1): Small card game with fast setup. Ar(4): Art drawn from the Nemesis universe maintains its dark aesthetic."
     },
     "SILOS": {
       "name": "SILOS",
@@ -2255,7 +2525,9 @@
       "mechs": [
         "ARC-01 Area Control",
         "ACT-02 Action Drafting"
-      ]
+      ],
+      "description": "Compete for underground silo control, deploying resources across contested vertical spaces in a tight area-control game.",
+      "justification": "M(2): Area control with action drafting and resource deployment. T(2): Silo theme is functional but abstract. G(3): Vertical area control creates unique spatial decisions. F(1): Compact rules with focused gameplay. Ar(3): Clean, functional industrial design."
     },
     "Spire's End": {
       "name": "Spire's End",
@@ -2271,7 +2543,9 @@
         "CAR-02 Hand Management",
         "ACT-18 Narrative Choice",
         "STR-08 Scenario/Campaign"
-      ]
+      ],
+      "description": "Climb a mysterious spire alone, flipping cards that branch the story into combat, puzzles, and dark revelations in a solo choose-your-own-adventure.",
+      "justification": "M(3): Hand management with narrative branching and campaign structure. T(4): Card-flip storytelling generates genuine mystery and dread as you climb. G(3): Combat and narrative choices carry real consequences. F(1): Solo card game with no setup — just open and start. Ar(4): Dark, atmospheric fantasy art on oversized story cards."
     },
     "Startups": {
       "name": "Startups",
@@ -2286,7 +2560,9 @@
       "mechs": [
         "ECO-03 Market",
         "UNC-08 Hidden Information"
-      ]
+      ],
+      "description": "Invest in startup companies by playing cards to the table, bluffing about your holdings while trying to hold majority stakes.",
+      "justification": "M(2): Market manipulation with hidden information and set collection. T(1): Startup theme is cosmetic — pure card-game mechanics. G(3): When to play and when to hold creates genuine bluffing tension. F(1): Minimal cards, instant setup. Ar(2): Functional, minimal card design."
     },
     "Summit: The Board Game": {
       "name": "Summit",
@@ -2303,7 +2579,9 @@
         "CAR-02 Hand Management",
         "RES-03 Dice Rolling",
         "VIC-07 Race"
-      ]
+      ],
+      "description": "Race up and back down a deadly mountain, managing supplies and weather while choosing whether to help or abandon your fellow climbers.",
+      "justification": "M(3): Movement with hand management, dice, and survival resource tracking. T(4): Altitude, weather, and the choice to help others generate mountaineering drama. G(3): Route and supply decisions are meaningful, especially the moral ones. F(2): Mountain board setup with weather and supply tracking. Ar(4): Dramatic alpine art with punishing weather illustrations."
     },
     "This War of Mine: The Board Game": {
       "name": "This War of Mine",
@@ -2320,7 +2598,9 @@
         "ACT-01 Action Points",
         "STR-08 Scenario/Campaign",
         "UNC-09 Probability Management"
-      ]
+      ],
+      "description": "Survive a modern siege as civilians — scavenge at night, guard your shelter by day, and make impossible moral choices that haunt you.",
+      "justification": "M(3): Narrative choices with action points, scenario structure, and probability. T(5): Every mechanic — hunger, illness, depression — generates civilian wartime suffering. G(4): Moral dilemmas with real mechanical consequences define every session. F(3): Book of scripts, journal tracking, and scenario management. Ar(5): Heartbreaking, somber art that captures the human cost of war."
     },
     "Tiny Epic Galaxies": {
       "name": "Tiny Epic Galaxies",
@@ -2337,7 +2617,9 @@
         "ACT-02 Action Drafting",
         "SET-04 Network Building",
         "ECO-11 Upgrades"
-      ]
+      ],
+      "description": "Roll dice to colonize planets and upgrade your galactic empire in a compact space-conquest game that punches above its size.",
+      "justification": "M(3): Workers-as-dice with action drafting and upgrade-driven progression. T(2): Space theme is present but mechanics feel abstract. G(3): Dice assignment and follow mechanic create real decisions. F(1): Small box with fast setup and clean rules. Ar(3): Compact space art that serves the tiny epic format."
     },
     "Town 77": {
       "name": "Town 77",
@@ -2352,7 +2634,9 @@
       "mechs": [
         "CAR-02 Hand Management",
         "SET-01 Set Valuation"
-      ]
+      ],
+      "description": "Build a city skyline by placing building cards, managing height restrictions and adjacency rules in a compact urban puzzle.",
+      "justification": "M(2): Hand management with set collection and placement rules. T(1): City theme is purely mechanical — abstract building placement. G(3): Placement and timing decisions offer genuine optimization. F(1): Small card game with minimal setup. Ar(2): Basic, functional building illustrations."
     },
     "Voidfall": {
       "name": "Voidfall",
@@ -2370,7 +2654,9 @@
         "SET-04 Network Building",
         "STR-01 Asymmetric Game",
         "ECO-11 Upgrades"
-      ]
+      ],
+      "description": "Reclaim a shattered galactic civilization from the Voidborn, managing three interconnected resource tracks across asymmetric faction play in a heavy 4X euro.",
+      "justification": "M(5): Income, action drafting, network building, and asymmetric factions create immense depth. T(2): Sci-fi 4X theme present but mechanics feel like a euro optimization puzzle. G(5): Every action cascades across military, economic, and political tracks. F(4): Enormous component count with complex interlocking systems. Ar(3): Functional sci-fi art — clean but not visually distinctive."
     },
     "Weather Machine": {
       "name": "Weather Machine",
@@ -2388,7 +2674,9 @@
         "SET-05 Combo Abilities",
         "TRN-05 Round/Phase Structure",
         "ACT-15 Gating and Unlocking"
-      ]
+      ],
+      "description": "Collaborate and compete to control the world's weather, managing a Lacerda-level web of interconnected labs, bots, and government funding.",
+      "justification": "M(5): Worker placement with income, combos, and deep gating mechanics. T(3): Weather control theme is intellectually interesting but mechanically abstracted. G(4): Phase-based decisions and combo planning demand long-term strategy. F(4): Lacerda's most complex design — extensive rules overhead and tracking. Ar(3): Ian O'Toole's clean iconography but the aesthetic is utilitarian."
     },
     "Campy Creatures": {
       "name": "Campy Creatures",
@@ -2403,7 +2691,9 @@
       "mechs": [
         "UNC-08 Hidden Information",
         "CAR-02 Hand Management"
-      ]
+      ],
+      "description": "Send classic movie monsters to abduct mortals, bluffing about which creature you've played in a simultaneous-reveal showdown.",
+      "justification": "M(2): Hidden selection with hand management and bluffing. T(2): Monster theme adds flavor but bluffing is the real mechanic. G(2): Mind-reading opponents provides light strategic engagement. F(1): Simple card game with fast rounds. Ar(4): Gorgeous retro horror-movie monster illustrations."
     },
     "Cartographers": {
       "name": "Cartographers",
@@ -2419,7 +2709,9 @@
         "SET-02 Tile-Laying",
         "SET-01 Set Valuation",
         "ACT-18 Narrative Choice"
-      ]
+      ],
+      "description": "Map a kingdom's wilderness by drawing shapes on your personal grid, scoring for patterns that shift every season.",
+      "justification": "M(2): Tile-laying on a personal grid with variable seasonal scoring. T(2): Cartography theme is referenced but map-drawing feels abstract. G(3): Shape placement optimizing multiple scoring cards is genuinely strategic. F(1): Flip cards, draw shapes — clean and fast. Ar(4): Attractive fantasy map aesthetic with charming illustration."
     },
     "Catacombs (Third Edition)": {
       "name": "Catacombs",
@@ -2435,7 +2727,9 @@
         "RES-10 Physical Action",
         "ACT-12 Variable Player Powers",
         "MOV-02 Grid Movement"
-      ]
+      ],
+      "description": "Flick wooden discs to fight monsters in a dungeon — it's a dungeon crawler where your dexterity IS your combat skill.",
+      "justification": "M(2): Dexterity-based combat with variable powers and grid progression. T(3): Flicking discs as attacks generates kinetic dungeon-crawl excitement. G(3): Shot selection and hero coordination create meaningful tactical choices. F(2): Multiple room setups with monster and hero disc management. Ar(4): Vibrant fantasy dungeon art with charming disc-based characters."
     },
     "Elder Sign": {
       "name": "Elder Sign",
@@ -2452,7 +2746,9 @@
         "UNC-09 Probability Management",
         "ACT-12 Variable Player Powers",
         "STR-08 Scenario/Campaign"
-      ]
+      ],
+      "description": "Roll dice to match symbols and seal portals in a Lovecraftian museum before the Ancient One awakens — Arkham Horror distilled into dice.",
+      "justification": "M(2): Dice rolling with probability management and variable investigators. T(3): Lovecraftian setting with adventure cards that tell micro-stories. G(3): Adventure selection and dice assignment offer real decisions. F(2): Multiple adventure cards and ancient one setup. Ar(4): Classic Fantasy Flight Arkham Horror art throughout."
     },
     "Paperback Adventures": {
       "name": "Paperback Adventures",
@@ -2468,7 +2764,9 @@
         "CAR-07 Deck Construction",
         "SET-01 Set Valuation",
         "ACT-12 Variable Player Powers"
-      ]
+      ],
+      "description": "Spell words to deal damage in a solo deckbuilding roguelike — longer words hit harder, and every letter card has a unique combat power.",
+      "justification": "M(2): Deck construction with set-based word scoring and variable powers. T(2): Pulp-adventure framing is light — spelling IS the game. G(3): Word optimization and card power sequencing demand creative thinking. F(2): Solo setup with enemy and character card management. Ar(3): Pleasant pulp-adventure art on character and enemy cards."
     },
     "That's Not a Hat": {
       "name": "That's Not a Hat",
@@ -2483,7 +2781,9 @@
       "mechs": [
         "ACT-22 Matching",
         "UNC-07 Unknown Information"
-      ]
+      ],
+      "description": "Pass gifts around the table and try to remember what each person is holding — but you'll forget almost immediately.",
+      "justification": "M(1): Pure memory — no decisions, no strategy. T(1): Gift-giving theme is cosmetic. G(1): No meaningful agency beyond remembering. F(1): Deal cards and start passing. Ar(2): Simple, clean card illustrations."
     },
     "Tiny Epic Dungeons": {
       "name": "Tiny Epic Dungeons",
@@ -2500,7 +2800,9 @@
         "MOV-02 Grid Movement",
         "ACT-12 Variable Player Powers",
         "RES-03 Dice Rolling"
-      ]
+      ],
+      "description": "Explore a modular dungeon in a tiny box, fighting monsters and racing to defeat the boss before the torch goes out.",
+      "justification": "M(3): Action points with grid movement, variable powers, and dice combat. T(3): Torch timer and dungeon exploration create urgency and atmosphere. G(3): Movement and combat decisions are meaningful within the compact format. F(2): Small-box dungeon setup with multiple tile and card types. Ar(4): Impressive visual quality for such a small box."
     },
     "The Old King's Crown": {
       "name": "The Old King's Crown",
@@ -2516,7 +2818,9 @@
         "CAR-02 Hand Management",
         "ARC-01 Area Control",
         "UNC-08 Hidden Information"
-      ]
+      ],
+      "description": "Vie for the throne through card-driven area control, deploying nobles and armies across a kingdom where hidden loyalties decide everything.",
+      "justification": "M(3): Hand management with area control and hidden information. T(3): Medieval succession theme comes through in card play and positioning. G(3): Hidden loyalty and area deployment create political tension. F(2): Multiple map regions and hidden information tracking. Ar(4): Rich medieval art with regal character portraits."
     },
     "Fossilium": {
       "name": "Fossilium",
@@ -2531,7 +2835,9 @@
       "mechs": [
         "SET-01 Set Valuation",
         "CAR-03 Card Drafting"
-      ]
+      ],
+      "description": "Excavate fossil fragments by drafting cards, assembling prehistoric skeletons for museums in a paleontological set-collection race.",
+      "justification": "M(2): Card drafting with set collection and assembly. T(2): Fossil excavation theme is present but mechanically simple. G(2): Draft choices matter but depth is limited. F(1): Light card game with fast setup. Ar(3): Charming fossil and dinosaur skeleton illustrations."
     },
     "The 7th Continent": {
       "name": "The 7th Continent",
@@ -2549,7 +2855,9 @@
         "ACT-01 Action Points",
         "STR-08 Scenario/Campaign",
         "UNC-07 Unknown Information"
-      ]
+      ],
+      "description": "Stranded on a cursed continent, explore a vast card-driven wilderness where every terrain tile hides discoveries, dangers, and the slow creep of an ancient doom.",
+      "justification": "M(4): Map addition with multi-use cards, action points, and campaign persistence. T(5): Card-flip exploration generates genuine mystery — the continent reveals itself. G(4): Resource management and exploration routing demand strategic planning. F(3): Massive card-world with save system and lengthy campaign sessions. Ar(5): Lush, hand-painted exploration cards create a breathtaking world."
     }
   }
 }
