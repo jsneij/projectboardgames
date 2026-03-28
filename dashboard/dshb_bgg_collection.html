@@ -1494,7 +1494,7 @@ function renderTable(state) {
   }
 
   const filtered = allGames.filter(g => {
-    if (tableFilter === 'owned' && g._source !== 'owned') return false;
+    if (tableFilter === 'owned' && g._source !== 'owned' && g._source !== 'preordered') return false;
     if (tableFilter === 'wishlist' && g._source !== 'wishlist') return false;
     if (tableSearch && !g.name.toLowerCase().includes(tableSearch.toLowerCase())) return false;
     return true;
