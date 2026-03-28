@@ -2966,7 +2966,7 @@ function initZoneChart(scored) {
     // Grid: fill columns top-to-bottom, then left-to-right
     const maxRows = 5;
     const cols = Math.ceil(count / maxRows);
-    const col = Math.floor(idx / maxRows);
+    const gridCol = Math.floor(idx / maxRows);
     const row = idx % maxRows;
 
     // X: spread evenly across the zone width with padding
@@ -2975,10 +2975,10 @@ function initZoneChart(scored) {
     const padX = zoneWidth * 0.08;
     const usableW = zoneWidth - padX * 2;
     const xStep = cols > 1 ? usableW / (cols - 1) : 0;
-    const xPct = zoneLeft + padX + col * xStep;
+    const xPct = zoneLeft + padX + gridCol * xStep;
 
     // Y: spread evenly with padding
-    const rowsInCol = col < cols - 1 ? maxRows : count - col * maxRows;
+    const rowsInCol = gridCol < cols - 1 ? maxRows : count - gridCol * maxRows;
     const yStep = rowsInCol > 1 ? 56 / (rowsInCol - 1) : 0;
     const yPct = 22 + row * yStep;
 
