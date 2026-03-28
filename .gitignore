@@ -211,3 +211,6 @@ __marimo__/
 
 # Claude Code
 .claude/
+
+# Claude Cowork outputs
+CW/
