@@ -1,7 +1,7 @@
 {
   "metadata": {
     "username": "jsneij",
-    "fetched_at": "2026-03-14T23:24:35.555600+00:00",
+    "fetched_at": "2026-03-28T11:32:26.720448+00:00",
     "total_items": 165,
     "counts": {
       "owned": 40,
@@ -222,10 +222,10 @@
         "max_playtime": null,
         "playing_time": null,
         "user_rating": null,
-        "usersrated": 577.0,
-        "average": 8.79913,
-        "bayesaverage": 6.09364,
-        "stddev": 1.08611,
+        "usersrated": 580.0,
+        "average": 8.80017,
+        "bayesaverage": 6.09682,
+        "stddev": 1.08499,
         "median": 0.0,
         "avg_weight": null,
         "ranks": [
@@ -2328,10 +2328,10 @@
         "max_playtime": 240,
         "playing_time": 240,
         "user_rating": null,
-        "usersrated": 3814.0,
-        "average": 8.08485,
-        "bayesaverage": 6.98833,
-        "stddev": 1.65105,
+        "usersrated": 3874.0,
+        "average": 8.08297,
+        "bayesaverage": 6.99457,
+        "stddev": 1.6499,
         "median": 0.0,
         "avg_weight": null,
         "ranks": [
@@ -2339,7 +2339,7 @@
             "type": "subtype",
             "name": "boardgame",
             "friendly_name": "Board Game Rank",
-            "value": 513
+            "value": 507
           },
           {
             "type": "family",
@@ -8478,10 +8478,10 @@
           "max_playtime": 120,
           "playing_time": 120,
           "user_rating": null,
-          "usersrated": 2229.0,
-          "average": 8.11377,
-          "bayesaverage": 6.66168,
-          "stddev": 1.72392,
+          "usersrated": 2384.0,
+          "average": 8.08975,
+          "bayesaverage": 6.68788,
+          "stddev": 1.73693,
           "median": 0.0,
           "avg_weight": null,
           "ranks": [
@@ -8489,13 +8489,13 @@
               "type": "subtype",
               "name": "boardgame",
               "friendly_name": "Board Game Rank",
-              "value": 977
+              "value": 936
             },
             {
               "type": "family",
               "name": "strategygames",
               "friendly_name": "Strategy Game Rank",
-              "value": 513
+              "value": 489
             }
           ]
         },
@@ -8531,10 +8531,10 @@
           "max_playtime": 120,
           "playing_time": 120,
           "user_rating": null,
-          "usersrated": 237.0,
-          "average": 7.48142,
-          "bayesaverage": 5.64187,
-          "stddev": 1.65939,
+          "usersrated": 261.0,
+          "average": 7.4747,
+          "bayesaverage": 5.65136,
+          "stddev": 1.68024,
           "median": 0.0,
           "avg_weight": null,
           "ranks": [
@@ -8542,7 +8542,7 @@
               "type": "subtype",
               "name": "boardgame",
               "friendly_name": "Board Game Rank",
-              "value": 7680
+              "value": 7412
             }
           ]
         },
@@ -8578,10 +8578,10 @@
           "max_playtime": 1000,
           "playing_time": 1000,
           "user_rating": null,
-          "usersrated": 23133.0,
-          "average": 7.73338,
-          "bayesaverage": 7.42327,
-          "stddev": 1.70988,
+          "usersrated": 23136.0,
+          "average": 7.73317,
+          "bayesaverage": 7.42289,
+          "stddev": 1.70992,
           "median": 0.0,
           "avg_weight": null,
           "ranks": [
