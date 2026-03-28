@@ -210,7 +210,8 @@ nav::-webkit-scrollbar { display: none; }
 .scatter-tooltip a { color: var(--blue); }
 
 /* TABLE */
-.sort-bar { display: flex; gap: 6px; margin-bottom: 12px; flex-wrap: wrap; align-items: center; }
+.sort-bar { display: flex; gap: 6px; margin-bottom: 0; flex-wrap: wrap; align-items: center;
+  position: sticky; top: 0; z-index: 20; background: var(--bg); padding: 10px 0; }
 .sort-btn {
   background: var(--bg-card2); border: 1px solid var(--border);
   color: var(--text2); font-size: 12px; padding: 4px 12px;
@@ -228,6 +229,7 @@ nav::-webkit-scrollbar { display: none; }
   font-family: 'JetBrains Mono', monospace;
   letter-spacing: 0.05em; border-bottom: 1px solid var(--border);
   white-space: nowrap;
+  position: sticky; top: 46px; z-index: 19; background: var(--bg);
 }
 #game-table td {
   padding: 7px 10px; border-bottom: 1px solid rgba(51,65,85,0.5);
@@ -260,8 +262,9 @@ nav::-webkit-scrollbar { display: none; }
 .mech-category { margin-bottom: 28px; }
 .mech-cat-header {
   font-size: 15px; font-weight: 700; color: var(--accent); margin-bottom: 12px;
-  padding-bottom: 6px; border-bottom: 1px solid var(--border);
+  padding: 8px 0 6px 0; border-bottom: 1px solid var(--border);
   display: flex; align-items: center; gap: 8px;
+  position: sticky; top: 44px; z-index: 19; background: var(--bg);
 }
 .mech-cat-count {
   font-size: 11px; font-weight: 400; color: var(--text3);
@@ -341,8 +344,9 @@ nav::-webkit-scrollbar { display: none; }
 }
 .mech-search {
   width: 100%; max-width: 400px; padding: 8px 14px; margin-bottom: 20px;
-  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px;
+  background: var(--bg); border: 1px solid var(--border); border-radius: 8px;
   color: var(--text1); font-size: 13px; outline: none;
+  position: sticky; top: 0; z-index: 20;
 }
 .mech-search:focus { border-color: var(--accent); }
 .mech-stats-bar {
