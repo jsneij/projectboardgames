@@ -1,7 +1,7 @@
 {
   "metadata": {
     "username": "jsneij",
-    "fetched_at": "2026-03-28T11:44:10.810222+00:00",
+    "fetched_at": "2026-03-28T11:50:22.828134+00:00",
     "total_items": 165,
     "counts": {
       "owned": 40,
@@ -1369,7 +1369,7 @@
         "last_modified": "2026-02-14 15:56:53"
       },
       "wishlist_priority": null,
-      "num_plays": 0,
+      "num_plays": 1,
       "comment": null,
       "stats": {
         "min_players": 1,
@@ -1400,7 +1400,19 @@
         "quantity": null,
         "comment": "P 1"
       },
-      "plays": []
+      "plays": [
+        {
+          "play_id": 111528095,
+          "date": "2026-03-09",
+          "quantity": 1,
+          "length_minutes": 30,
+          "incomplete": true,
+          "no_win_stats": false,
+          "location": null,
+          "comments": "Did not finish",
+          "players": []
+        }
+      ]
     },
     {
       "bgg_id": 427682,
@@ -4314,7 +4326,7 @@
           "last_modified": "2026-02-14 18:28:38"
         },
         "wishlist_priority": 3,
-        "num_plays": 0,
+        "num_plays": 1,
         "comment": null,
         "stats": {
           "min_players": 1,
@@ -4345,7 +4357,19 @@
           "quantity": null,
           "comment": "P 1-4"
         },
-        "plays": []
+        "plays": [
+          {
+            "play_id": 112077825,
+            "date": "2026-03-22",
+            "quantity": 1,
+            "length_minutes": null,
+            "incomplete": false,
+            "no_win_stats": false,
+            "location": null,
+            "comments": "love it",
+            "players": []
+          }
+        ]
       },
       {
         "bgg_id": 383607,
@@ -9648,7 +9672,7 @@
         "last_modified": "2026-03-10 17:34:55"
       },
       "wishlist_priority": null,
-      "num_plays": 0,
+      "num_plays": 1,
       "comment": null,
       "stats": {
         "min_players": 1,
@@ -9673,7 +9697,19 @@
         ]
       },
       "private_info": null,
-      "plays": []
+      "plays": [
+        {
+          "play_id": 111384039,
+          "date": "2025-01-12",
+          "quantity": 1,
+          "length_minutes": 150,
+          "incomplete": false,
+          "no_win_stats": false,
+          "location": null,
+          "comments": "I loved it!",
+          "players": []
+        }
+      ]
     }
   ],
   "for_trade": []

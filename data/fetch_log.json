@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-03-28T11:44:10.810222+00:00",
+  "fetched_at": "2026-03-28T11:50:22.828134+00:00",
   "counts": {
     "owned": 40,
     "wishlist_total": 114,
@@ -244,13 +244,15 @@
     },
     "378117": {
       "name": "The Last Lighthouse",
-      "num_plays": 0,
+      "num_plays": 1,
       "category": "owned",
       "wishlist_priority": null,
       "user_rating": null,
       "comment": null,
       "acquisition_date": null,
-      "play_comments": {}
+      "play_comments": {
+        "111528095": "Did not finish"
+      }
     },
     "427682": {
       "name": "The Last Lighthouse: Expansion Collection",
@@ -514,13 +516,15 @@
     },
     "347149": {
       "name": "Arkham Horror: The Card Game – The Dunwich Legacy: Campaign Expansion",
-      "num_plays": 0,
+      "num_plays": 1,
       "category": "want_to_buy",
       "wishlist_priority": null,
       "user_rating": null,
       "comment": null,
       "acquisition_date": null,
-      "play_comments": {}
+      "play_comments": {
+        "111384039": "I loved it!"
+      }
     },
     "96848": {
       "name": "Mage Knight Board Game",
@@ -854,13 +858,15 @@
     },
     "377055": {
       "name": "Arkham Horror: The Card Game – The Forgotten Age: Campaign Expansion",
-      "num_plays": 0,
+      "num_plays": 1,
       "category": "wishlist",
       "wishlist_priority": 3,
       "user_rating": null,
       "comment": null,
       "acquisition_date": null,
-      "play_comments": {}
+      "play_comments": {
+        "112077825": "love it"
+      }
     },
     "383607": {
       "name": "Barcelona",
