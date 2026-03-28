@@ -853,7 +853,11 @@ nav { display: flex; gap: 2px; }
   <!-- TAB 4: FULL TABLE -->
   <div id="tab-table" class="tab-pane">
     <div class="sort-bar">
-      <span style="font-size:11px;color:var(--text3);margin-right:4px">Sort:</span>
+      <span style="font-size:11px;color:var(--text3);margin-right:4px">Show:</span>
+      <button class="sort-btn active" data-filter="all">All</button>
+      <button class="sort-btn" data-filter="owned">Owned</button>
+      <button class="sort-btn" data-filter="wishlist">Wishlist</button>
+      <span style="font-size:11px;color:var(--text3);margin-left:12px;margin-right:4px">Sort:</span>
       <button class="sort-btn active" data-sort="IS">IS <span class="dir">↓</span></button>
       <button class="sort-btn" data-sort="GS">GS <span class="dir">↓</span></button>
       <button class="sort-btn" data-sort="T">T <span class="dir">↓</span></button>
@@ -871,6 +875,7 @@ nav { display: flex; gap: 2px; }
           <tr>
             <th></th>
             <th>Name</th>
+            <th>Source</th>
             <th>Type</th>
             <th>M</th><th style="color:var(--red)">T</th><th>G</th><th>F</th><th>Ar</th>
             <th>GS</th><th style="color:var(--amber)">IS</th>
@@ -1352,10 +1357,17 @@ document.getElementById('wl-toggle').addEventListener('click', function () {
 let tableSortField = 'IS';
 let tableSortDir = -1; // -1 = desc, 1 = asc
 let tableSearch = '';
+let tableFilter = 'all'; // 'all', 'owned', 'wishlist'
 let expandedRow = null;
 
 function renderTable(state) {
-  const { owned } = state;
+  const { owned, wishlist } = state;
+
+  // Tag source on each game
+  const allGames = [
+    ...owned.map(g => ({ ...g, _source: 'owned' })),
+    ...wishlist.map(g => ({ ...g, _source: 'wishlist' }))
+  ];
 
   function sortFn(a, b) {
     let av, bv;
@@ -1372,9 +1384,12 @@ function renderTable(state) {
     return 0;
   }
 
-  const filtered = owned.filter(g =>
-    !tableSearch || g.name.toLowerCase().includes(tableSearch.toLowerCase())
-  ).sort(sortFn);
+  const filtered = allGames.filter(g => {
+    if (tableFilter === 'owned' && g._source !== 'owned') return false;
+    if (tableFilter === 'wishlist' && g._source !== 'wishlist') return false;
+    if (tableSearch && !g.name.toLowerCase().includes(tableSearch.toLowerCase())) return false;
+    return true;
+  }).sort(sortFn);
 
   const tbody = document.getElementById('table-body');
   tbody.innerHTML = '';
@@ -1385,9 +1400,13 @@ function renderTable(state) {
     row.className = 'game-row';
     row.dataset.idx = i;
     const tHi = g.T >= 4 ? ' class="t-hi"' : '';
+    const srcBadge = g._source === 'wishlist'
+      ? `<span style="font-size:10px;padding:2px 6px;border-radius:4px;background:rgba(168,85,247,0.15);color:#c084fc;border:1px solid rgba(168,85,247,0.3)">WL${g.priority ? g.priority : ''}</span>`
+      : `<span style="font-size:10px;padding:2px 6px;border-radius:4px;background:rgba(34,197,94,0.12);color:#4ade80;border:1px solid rgba(34,197,94,0.25)">Own</span>`;
     row.innerHTML = `
       <td>${typeIcon(g.type)}</td>
       <td style="min-width:180px">${a(g.bgg_id, g.name)}</td>
+      <td>${srcBadge}</td>
       <td style="color:var(--text2)">${g.type || '—'}</td>
       <td class="mono">${g.hasScores ? g.M : '—'}</td>
       <td class="mono"${tHi}>${g.hasScores ? g.T : '—'}</td>
@@ -1406,7 +1425,7 @@ function renderTable(state) {
     expandRow.className = 'expand-row';
     expandRow.style.display = 'none';
     const td = document.createElement('td');
-    td.colSpan = 15;
+    td.colSpan = 16;
     const mechsHtml = (g.mechs || []).map(m => `<span class="mech-tag">${m}</span>`).join('');
     td.innerHTML = `<div class="expand-panel">
       ${radarSVG(g.sc, 160)}
@@ -1435,7 +1454,7 @@ function renderTable(state) {
 }
 
 // Sort buttons
-document.querySelectorAll('.sort-btn').forEach(btn => {
+document.querySelectorAll('.sort-btn[data-sort]').forEach(btn => {
   btn.addEventListener('click', () => {
     const field = btn.dataset.sort;
     if (tableSortField === field) {
@@ -1444,10 +1463,20 @@ document.querySelectorAll('.sort-btn').forEach(btn => {
       tableSortField = field;
       tableSortDir = field === 'name' || field === 'bggRank' ? 1 : -1;
     }
-    document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.sort-btn[data-sort]').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     const dir = btn.querySelector('.dir');
     if (dir) dir.textContent = tableSortDir === -1 ? '↓' : '↑';
+    if (STATE.owned) renderTable(STATE);
+  });
+});
+
+// Filter buttons (All / Owned / Wishlist)
+document.querySelectorAll('.sort-btn[data-filter]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    tableFilter = btn.dataset.filter;
+    document.querySelectorAll('.sort-btn[data-filter]').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
     if (STATE.owned) renderTable(STATE);
   });
 });
