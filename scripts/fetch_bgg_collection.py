@@ -253,7 +253,7 @@ def fetch_plays_for_game(bgg_id: int, token: str, session: requests.Session = No
     return all_plays
 
 
-def fetch_thing_data(bgg_ids: list, session: requests.Session = None) -> dict:
+def fetch_thing_data(bgg_ids: list, token: str, session: requests.Session = None) -> dict:
     """Fetch weight and other data from /thing endpoint in batches.
 
     The collection API does not return averageweight — this endpoint does.
@@ -261,6 +261,10 @@ def fetch_thing_data(bgg_ids: list, session: requests.Session = None) -> dict:
     Returns dict of {bgg_id: {"avg_weight": float, ...}}.
     """
     http = session if session else requests
+    headers = {
+        "Authorization": f"Bearer {token}",
+        "Accept": "application/xml",
+    }
     results = {}
 
     for i in range(0, len(bgg_ids), THING_BATCH_SIZE):
@@ -271,6 +275,7 @@ def fetch_thing_data(bgg_ids: list, session: requests.Session = None) -> dict:
             resp = http.get(
                 f"{BGG_API_BASE}/thing",
                 params={"id": ids_str, "stats": "1"},
+                headers=headers,
                 timeout=30,
             )
             if resp.status_code == 200:
@@ -1006,7 +1011,7 @@ def main():
     if missing_weight:
         print(f"\n  Fetching weight data for {len(missing_weight)} games "
               f"({len(missing_weight) // THING_BATCH_SIZE + 1} batches)...")
-        thing_data = fetch_thing_data(missing_weight, session=session)
+        thing_data = fetch_thing_data(missing_weight, token, session=session)
         patched_wt = 0
         for g in games:
             td = thing_data.get(g["bgg_id"])
