@@ -1663,7 +1663,7 @@ function renderWishlist(state) {
           <div class="preorder-icon">📦</div>
           <div>
             <div class="preorder-name">${a(g.bgg_id, g.name)}</div>
-            <div class="preorder-meta">BGG ★ ${fmtBGGRating(g.bggAvg)} &bull; Rank ${fmtRank(g.bggRank)}</div>
+            <div class="preorder-meta">BGG ★ ${fmtBGGRating(g.bggAvg)} &bull; Rank ${fmtRank(g.bggRank)} ${g.feeling ? FEELING_BADGE(g.feeling) : ''}</div>
           </div>
         </div>`).join('')}
     </div>`;
