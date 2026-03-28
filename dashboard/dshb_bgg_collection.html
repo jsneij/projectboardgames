@@ -123,6 +123,7 @@ nav::-webkit-scrollbar { display: none; }
   display: inline-block; padding: 2px 7px; border-radius: 4px;
   font-size: 11px; font-weight: 600; font-family: 'JetBrains Mono', monospace;
 }
+.badge-breathes { background: rgba(220,38,38,0.2); color: #fca5a5; border: 1px solid rgba(220,38,38,0.4); }
 .badge-loves { background: rgba(239,68,68,0.15); color: #f87171; border: 1px solid rgba(239,68,68,0.3); }
 .badge-likes { background: rgba(245,158,11,0.15); color: #fbbf24; border: 1px solid rgba(245,158,11,0.3); }
 .badge-scored { background: rgba(59,130,246,0.15); color: #60a5fa; border: 1px solid rgba(59,130,246,0.3); }
@@ -930,9 +931,10 @@ nav::-webkit-scrollbar { display: none; }
     </div>
     <div class="scatter-tooltip" id="scatter-tooltip"></div>
     <div style="display:flex;gap:16px;flex-wrap:wrap;font-size:12px;color:var(--text2)">
+      <span><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#dc2626;margin-right:4px"></span>Breathes it</span>
       <span><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--red);margin-right:4px"></span>Loves it</span>
       <span><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--amber);margin-right:4px"></span>Likes it</span>
-      <span><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--blue);margin-right:4px"></span>Scored</span>
+      <span><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--blue);margin-right:4px"></span>Has it</span>
       <span><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--text3);margin-right:4px"></span>Unscored</span>
       <span><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:none;border:2px dashed var(--purple);margin-right:4px"></span>Wishlist</span>
     </div>
@@ -1059,8 +1061,9 @@ nav::-webkit-scrollbar { display: none; }
 const BGG_LINK = id => `https://boardgamegeek.com/boardgame/${id}`;
 const a = (id, name) => `<a href="${BGG_LINK(id)}" target="_blank" rel="noopener">${name}</a>`;
 
-const FEELING_COLOR = f => f === 'Loves it' ? 'var(--red)' : f === 'Likes it' ? 'var(--amber)' : 'var(--blue)';
+const FEELING_COLOR = f => f === 'Breathes it' ? '#fca5a5' : f === 'Loves it' ? 'var(--red)' : f === 'Likes it' ? 'var(--amber)' : 'var(--blue)';
 const FEELING_BADGE = f => {
+  if (f === 'Breathes it') return '<span class="badge badge-breathes">Breathes it</span>';
   if (f === 'Loves it') return '<span class="badge badge-loves">Loves it</span>';
   if (f === 'Likes it') return '<span class="badge badge-likes">Likes it</span>';
   if (f) return `<span class="badge badge-scored">${f}</span>`;
@@ -1239,6 +1242,7 @@ function renderOverview(state) {
   const validWt = owned.filter(g => g.weight);
   const avgWt = validWt.length ? (validWt.reduce((s, g) => s + g.weight, 0) / validWt.length) : 0;
   const totalWl = wishlist.length;
+  const breathes = owned.filter(g => g.feeling === 'Breathes it').length;
   const loves = owned.filter(g => g.feeling === 'Loves it').length;
 
   const statGrid = document.getElementById('stat-grid-container');
@@ -1249,7 +1253,7 @@ function renderOverview(state) {
     <div class="stat-card"><div class="label">Avg IS</div><div class="value" style="color:var(--amber)">${avgIS.toFixed(0)}</div><div class="sub">immersion score</div></div>
     <div class="stat-card"><div class="label">Avg Weight</div><div class="value">${avgWt.toFixed(2)}</div><div class="sub">personal estimate</div></div>
     <div class="stat-card"><div class="label">Wishlist</div><div class="value" style="color:var(--blue)">${totalWl}</div><div class="sub">games tracked</div></div>
-    <div class="stat-card"><div class="label">Loves It</div><div class="value" style="color:var(--red)">${loves}</div><div class="sub">of ${totalOwned} rated</div></div>
+    <div class="stat-card"><div class="label">Breathes It</div><div class="value" style="color:#fca5a5">${breathes}</div><div class="sub">of ${totalOwned} owned</div></div>
   </div>`;
 
   // Leaderboard — top 12 by IS
@@ -1272,6 +1276,7 @@ function renderOverview(state) {
   const semiCoop = owned.filter(g => g.type === 'semi-coop').length;
   const pctSolo = totalOwned ? ((solo + coop) / totalOwned * 100).toFixed(0) : 0;
   const likes = owned.filter(g => g.feeling === 'Likes it').length;
+  const hasIt = owned.filter(g => g.feeling === 'Has it').length;
   const unrated = owned.filter(g => !g.hasScores).length;
 
   document.getElementById('collection-dna').innerHTML = `
@@ -1282,7 +1287,7 @@ function renderOverview(state) {
         <div class="dna-item"><span class="dna-label">% Solo-ready</span><span class="dna-val" style="color:var(--green)">${pctSolo}%</span></div>
       </div>
       <div>
-        ${[['Loves it', loves, 'var(--red)'], ['Likes it', likes, 'var(--amber)'], ['Unscored', unrated, 'var(--text3)']].map(([l, v, c]) => `
+        ${[['Breathes it', breathes, '#fca5a5'], ['Loves it', loves, 'var(--red)'], ['Likes it', likes, 'var(--amber)'], ['Has it', hasIt, 'var(--text2)'], ['Unscored', unrated, 'var(--text3)']].map(([l, v, c]) => `
         <div class="dna-item"><span class="dna-label">${l}</span><span class="dna-val" style="color:${c}">${v}</span></div>`).join('')}
       </div>
     </div>`;
@@ -1375,6 +1380,7 @@ function renderScatter(state) {
   function feelingFill(g, wl = false) {
     if (wl) return 'none';
     if (!g.hasScores) return '#475569';
+    if (g.feeling === 'Breathes it') return '#dc2626';
     if (g.feeling === 'Loves it') return '#ef4444';
     if (g.feeling === 'Likes it') return '#f59e0b';
     return '#3b82f6';
@@ -1721,7 +1727,7 @@ function renderPatterns(state) {
     </div>`).join('');
 
   // Feeling breakdown
-  const fl = [['Loves it', 'var(--red)'], ['Likes it', 'var(--amber)'], ['null', 'var(--text3)']];
+  const fl = [['Breathes it', '#fca5a5'], ['Loves it', 'var(--red)'], ['Likes it', 'var(--amber)'], ['Has it', 'var(--text2)'], ['null', 'var(--text3)']];
   const feelingCounts = fl.map(([f]) => ({
     label: f === 'null' ? 'Unscored' : f,
     count: f === 'null' ? owned.filter(g => !g.hasScores).length : owned.filter(g => g.feeling === f).length,
@@ -2453,7 +2459,7 @@ const IS_ZONES = [
   { label: 'Has it', min: -Infinity, max: 30, color: '#475569', text: '#94a3b8' },
   { label: 'Likes it', min: 30, max: 87, color: '#f59e0b', text: '#fbbf24' },
   { label: 'Loves it', min: 87, max: 150, color: '#ef4444', text: '#f87171' },
-  { label: 'Peak Immersion', min: 150, max: Infinity, color: '#dc2626', text: '#fca5a5' }
+  { label: 'Breathes it', min: 150, max: Infinity, color: '#dc2626', text: '#fca5a5' }
 ];
 
 function getISZone(is) {
@@ -2893,7 +2899,7 @@ function initZoneChart(scored) {
     { key: 'has',   label: 'Has it',         min: 0,   max: 30,  fill: 'rgba(71,85,105,0.25)',  stroke: '#475569', text: '#94a3b8',  bg: '#475569' },
     { key: 'likes', label: 'Likes it',        min: 30,  max: 87,  fill: 'rgba(245,158,11,0.12)', stroke: '#f59e0b', text: '#fbbf24',  bg: '#f59e0b' },
     { key: 'loves', label: 'Loves it',        min: 87,  max: 150, fill: 'rgba(239,68,68,0.12)',  stroke: '#ef4444', text: '#f87171',  bg: '#ef4444' },
-    { key: 'peak',  label: 'Peak Immersion',  min: 150, max: maxIS, fill: 'rgba(220,38,38,0.2)', stroke: '#dc2626', text: '#fca5a5',  bg: '#dc2626' }
+    { key: 'breathes', label: 'Breathes it', min: 150, max: maxIS, fill: 'rgba(220,38,38,0.2)', stroke: '#dc2626', text: '#fca5a5',  bg: '#dc2626' }
   ];
 
   // Assign each game a zone key

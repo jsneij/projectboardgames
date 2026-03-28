@@ -9,7 +9,7 @@
       "G": 4,
       "F": 2,
       "Ar": 5,
-      "feeling": "Loves it",
+      "feeling": "Breathes it",
       "mechs": [
         "STR-02 Cooperative Games",
         "STR-04 Solo Games",
@@ -49,7 +49,7 @@
       "G": 4,
       "F": 2,
       "Ar": 5,
-      "feeling": "Loves it",
+      "feeling": "Breathes it",
       "mechs": [
         "STR-02 Cooperative Games",
         "STR-04 Solo Games",
@@ -123,7 +123,7 @@
       "G": 1,
       "F": 1,
       "Ar": 1,
-      "feeling": "Has it",
+      "feeling": null,
       "mechs": [
         "STR-01 Competitive Games",
         "TRN-04 Progressive Turn Order",
@@ -226,7 +226,7 @@
       "G": 4,
       "F": 2,
       "Ar": 5,
-      "feeling": "Loves it",
+      "feeling": "Breathes it",
       "mechs": [
         "STR-04 Solo Games",
         "ACT-01 Action Points",
@@ -592,7 +592,7 @@
       "G": 5,
       "F": 3,
       "Ar": 5,
-      "feeling": "Loves it",
+      "feeling": "Breathes it",
       "mechs": [
         "STR-02 Cooperative Games",
         "STR-04 Solo Games",
@@ -879,7 +879,7 @@
       "G": 4,
       "F": 3,
       "Ar": 5,
-      "feeling": null,
+      "feeling": "Breathes it",
       "mechs": [
         "STR-02 Cooperative Games",
         "STR-04 Solo Games",
@@ -921,7 +921,7 @@
       "G": 4,
       "F": 2,
       "Ar": 5,
-      "feeling": "Loves it",
+      "feeling": "Breathes it",
       "mechs": [
         "STR-02 Cooperative Games",
         "STR-04 Solo Games",
@@ -964,7 +964,7 @@
       "G": 4,
       "F": 2,
       "Ar": 5,
-      "feeling": "Loves it",
+      "feeling": "Breathes it",
       "mechs": [
         "STR-02 Cooperative Games",
         "STR-04 Solo Games",
@@ -1012,7 +1012,7 @@
       "G": 4,
       "F": 2,
       "Ar": 5,
-      "feeling": "Loves it",
+      "feeling": "Breathes it",
       "mechs": [
         "STR-02 Cooperative Games",
         "STR-04 Solo Games",
@@ -1059,7 +1059,7 @@
       "G": 1,
       "F": 1,
       "Ar": 1,
-      "feeling": "Has it",
+      "feeling": null,
       "mechs": [
         "STR-01 Competitive Games",
         "TRN-04 Progressive Turn Order",
@@ -1082,7 +1082,7 @@
       "G": 4,
       "F": 2,
       "Ar": 5,
-      "feeling": "Loves it",
+      "feeling": "Breathes it",
       "mechs": [
         "STR-04 Solo Games",
         "ACT-01 Action Points",
@@ -1112,7 +1112,7 @@
       "G": 4,
       "F": 2,
       "Ar": 5,
-      "feeling": "Loves it",
+      "feeling": "Breathes it",
       "mechs": [
         "STR-04 Solo Games",
         "ACT-01 Action Points",
@@ -1142,7 +1142,7 @@
       "G": 4,
       "F": 2,
       "Ar": 5,
-      "feeling": "Loves it",
+      "feeling": "Breathes it",
       "mechs": [
         "STR-04 Solo Games",
         "ACT-01 Action Points",
@@ -1171,7 +1171,7 @@
       "G": 4,
       "F": 2,
       "Ar": 5,
-      "feeling": "Loves it",
+      "feeling": "Breathes it",
       "mechs": [
         "STR-04 Solo Games",
         "ACT-01 Action Points",
@@ -1262,7 +1262,7 @@
       "G": 5,
       "F": 5,
       "Ar": 3,
-      "feeling": null,
+      "feeling": "Loves it",
       "mechs": [
         "STR-01 Competitive Games",
         "STR-04 Solo Games",
@@ -1305,7 +1305,7 @@
       "G": 3,
       "F": 1,
       "Ar": 3,
-      "feeling": null,
+      "feeling": "Has it",
       "mechs": [
         "STR-04 Solo Games",
         "STR-08 Scenario/Mission/Campaign Games",
@@ -1334,7 +1334,7 @@
       "G": 4,
       "F": 3,
       "Ar": 4,
-      "feeling": null,
+      "feeling": "Loves it",
       "mechs": [
         "STR-01 Competitive Games",
         "STR-04 Solo Games",
@@ -1367,7 +1367,7 @@
       "G": 4,
       "F": 3,
       "Ar": 4,
-      "feeling": null,
+      "feeling": "Loves it",
       "mechs": [
         "STR-01 Competitive Games",
         "STR-04 Solo Games",
@@ -1401,7 +1401,7 @@
       "G": 4,
       "F": 4,
       "Ar": 4,
-      "feeling": null,
+      "feeling": "Breathes it",
       "mechs": [
         "STR-01 Competitive Games",
         "STR-04 Solo Games",
@@ -1436,7 +1436,7 @@
       "G": 3,
       "F": 1,
       "Ar": 4,
-      "feeling": null,
+      "feeling": "Likes it",
       "mechs": [
         "STR-04 Solo Games",
         "STR-08 Scenario/Mission/Campaign Games",
@@ -1466,7 +1466,7 @@
       "G": 3,
       "F": 2,
       "Ar": 4,
-      "feeling": null,
+      "feeling": "Likes it",
       "mechs": [
         "STR-02 Cooperative Games",
         "STR-04 Solo Games",
@@ -1501,7 +1501,7 @@
       "G": 3,
       "F": 1,
       "Ar": 3,
-      "feeling": null,
+      "feeling": "Has it",
       "mechs": [
         "STR-04 Solo Games",
         "VIC-02 Victory Points from Player Actions",
@@ -1527,7 +1527,7 @@
       "G": 3,
       "F": 3,
       "Ar": 4,
-      "feeling": null,
+      "feeling": "Likes it",
       "mechs": [
         "STR-02 Cooperative Games",
         "STR-04 Solo Games",
@@ -1560,7 +1560,7 @@
       "G": 3,
       "F": 2,
       "Ar": 4,
-      "feeling": null,
+      "feeling": "Likes it",
       "mechs": [
         "STR-02 Cooperative Games",
         "STR-04 Solo Games",
@@ -1592,7 +1592,7 @@
       "G": 3,
       "F": 2,
       "Ar": 3,
-      "feeling": null,
+      "feeling": "Has it",
       "mechs": [
         "STR-02 Cooperative Games",
         "STR-04 Solo Games",
@@ -1619,7 +1619,7 @@
       "G": 5,
       "F": 3,
       "Ar": 3,
-      "feeling": null,
+      "feeling": "Likes it",
       "mechs": [
         "STR-01 Competitive Games",
         "STR-04 Solo Games",
@@ -1654,7 +1654,7 @@
       "G": 2,
       "F": 2,
       "Ar": 4,
-      "feeling": null,
+      "feeling": "Has it",
       "mechs": [
         "STR-02 Cooperative Games",
         "STR-04 Solo Games",
@@ -1685,7 +1685,7 @@
       "G": 4,
       "F": 3,
       "Ar": 4,
-      "feeling": null,
+      "feeling": "Loves it",
       "mechs": [
         "STR-01 Competitive Games",
         "STR-04 Solo Games",
@@ -1719,7 +1719,7 @@
       "G": 3,
       "F": 1,
       "Ar": 3,
-      "feeling": null,
+      "feeling": "Has it",
       "mechs": [
         "STR-01 Competitive Games",
         "STR-04 Solo Games",
@@ -1751,7 +1751,7 @@
       "G": 4,
       "F": 3,
       "Ar": 3,
-      "feeling": null,
+      "feeling": "Likes it",
       "mechs": [
         "STR-01 Competitive Games",
         "STR-04 Solo Games",
@@ -1785,7 +1785,7 @@
       "G": 3,
       "F": 2,
       "Ar": 4,
-      "feeling": null,
+      "feeling": "Likes it",
       "mechs": [
         "STR-02 Cooperative Games",
         "STR-04 Solo Games",
@@ -1819,7 +1819,7 @@
       "G": 4,
       "F": 4,
       "Ar": 4,
-      "feeling": null,
+      "feeling": "Loves it",
       "mechs": [
         "STR-05 Semi-Cooperative Games",
         "STR-04 Solo Games",
@@ -1854,7 +1854,7 @@
       "G": 4,
       "F": 4,
       "Ar": 5,
-      "feeling": null,
+      "feeling": "Breathes it",
       "mechs": [
         "STR-01 Competitive Games",
         "STR-04 Solo Games",
@@ -1890,7 +1890,7 @@
       "G": 3,
       "F": 1,
       "Ar": 3,
-      "feeling": null,
+      "feeling": "Likes it",
       "mechs": [
         "STR-01 Competitive Games",
         "STR-04 Solo Games",
@@ -1920,7 +1920,7 @@
       "G": 2,
       "F": 1,
       "Ar": 3,
-      "feeling": null,
+      "feeling": "Has it",
       "mechs": [
         "STR-02 Cooperative Games",
         "STR-04 Solo Games",
@@ -1949,7 +1949,7 @@
       "G": 3,
       "F": 1,
       "Ar": 3,
-      "feeling": null,
+      "feeling": "Has it",
       "mechs": [
         "STR-04 Solo Games",
         "ACT-18 Narrative Choice",
@@ -1976,7 +1976,7 @@
       "G": 3,
       "F": 1,
       "Ar": 3,
-      "feeling": null,
+      "feeling": "Has it",
       "mechs": [
         "STR-04 Solo Games",
         "STR-08 Scenario/Mission/Campaign Games",
@@ -2001,7 +2001,7 @@
       "G": 4,
       "F": 3,
       "Ar": 5,
-      "feeling": null,
+      "feeling": "Breathes it",
       "mechs": [
         "STR-02 Cooperative Games",
         "STR-04 Solo Games",
@@ -2036,7 +2036,7 @@
       "G": 3,
       "F": 1,
       "Ar": 3,
-      "feeling": null,
+      "feeling": "Has it",
       "mechs": [
         "STR-01 Competitive Games",
         "STR-04 Solo Games",
@@ -2062,7 +2062,7 @@
       "G": 4,
       "F": 3,
       "Ar": 4,
-      "feeling": null,
+      "feeling": "Loves it",
       "mechs": [
         "STR-01 Competitive Games",
         "STR-04 Solo Games",
@@ -2093,7 +2093,7 @@
       "G": 3,
       "F": 1,
       "Ar": 3,
-      "feeling": null,
+      "feeling": "Has it",
       "mechs": [
         "STR-01 Competitive Games",
         "STR-04 Solo Games",
@@ -2122,7 +2122,7 @@
       "G": 4,
       "F": 2,
       "Ar": 4,
-      "feeling": null,
+      "feeling": "Likes it",
       "mechs": [
         "WPL-04 Workers-As-Dice",
         "ACT-02 Action Drafting",
@@ -2140,7 +2140,7 @@
       "G": 3,
       "F": 2,
       "Ar": 5,
-      "feeling": null,
+      "feeling": "Likes it",
       "mechs": [
         "STR-01 Competitive Games",
         "STR-04 Solo Games",
@@ -2174,7 +2174,7 @@
       "G": 4,
       "F": 3,
       "Ar": 4,
-      "feeling": null,
+      "feeling": "Loves it",
       "mechs": [
         "STR-01 Competitive Games",
         "STR-08 Scenario/Mission/Campaign Games",
@@ -2222,7 +2222,7 @@
       "G": 4,
       "F": 2,
       "Ar": 5,
-      "feeling": null,
+      "feeling": "Breathes it",
       "mechs": [
         "STR-02 Cooperative Games",
         "STR-04 Solo Games",
@@ -2260,7 +2260,7 @@
       "G": 4,
       "F": 2,
       "Ar": 5,
-      "feeling": null,
+      "feeling": "Breathes it",
       "mechs": [
         "STR-02 Cooperative Games",
         "STR-04 Solo Games",
@@ -2304,7 +2304,7 @@
       "G": 4,
       "F": 2,
       "Ar": 5,
-      "feeling": null,
+      "feeling": "Breathes it",
       "mechs": [
         "STR-02 Cooperative Games",
         "STR-04 Solo Games",
@@ -2339,7 +2339,7 @@
       "G": 4,
       "F": 2,
       "Ar": 5,
-      "feeling": null,
+      "feeling": "Breathes it",
       "mechs": [
         "STR-02 Cooperative Games",
         "STR-04 Solo Games",
@@ -2387,7 +2387,7 @@
       "G": 4,
       "F": 2,
       "Ar": 5,
-      "feeling": null,
+      "feeling": "Likes it",
       "mechs": [
         "STR-01 Competitive Games",
         "STR-04 Solo Games",
@@ -2419,7 +2419,7 @@
       "G": 4,
       "F": 2,
       "Ar": 5,
-      "feeling": null,
+      "feeling": "Likes it",
       "mechs": [
         "STR-01 Competitive Games",
         "STR-04 Solo Games",
@@ -2448,7 +2448,7 @@
       "G": 4,
       "F": 2,
       "Ar": 4,
-      "feeling": null,
+      "feeling": "Loves it",
       "mechs": [
         "STR-01 Competitive Games",
         "UNC-04 Hidden Roles",
@@ -2477,7 +2477,7 @@
       "G": 3,
       "F": 2,
       "Ar": 5,
-      "feeling": null,
+      "feeling": "Likes it",
       "mechs": [
         "STR-01 Competitive Games",
         "STR-04 Solo Games",
@@ -2510,7 +2510,7 @@
       "G": 3,
       "F": 2,
       "Ar": 5,
-      "feeling": null,
+      "feeling": "Likes it",
       "mechs": [
         "STR-01 Competitive Games",
         "STR-04 Solo Games",
@@ -2544,7 +2544,7 @@
       "G": 2,
       "F": 1,
       "Ar": 3,
-      "feeling": null,
+      "feeling": "Has it",
       "mechs": [
         "STR-02 Cooperative Games",
         "TRN-04 Progressive Turn Order",
@@ -2569,7 +2569,7 @@
       "G": 4,
       "F": 3,
       "Ar": 5,
-      "feeling": null,
+      "feeling": "Loves it",
       "mechs": [
         "STR-01 Competitive Games",
         "STR-04 Solo Games",
@@ -2601,7 +2601,7 @@
       "G": 4,
       "F": 3,
       "Ar": 4,
-      "feeling": null,
+      "feeling": "Loves it",
       "mechs": [
         "STR-01 Competitive Games",
         "STR-04 Solo Games",
@@ -2636,7 +2636,7 @@
       "G": 4,
       "F": 2,
       "Ar": 4,
-      "feeling": null,
+      "feeling": "Loves it",
       "mechs": [
         "STR-04 Solo Games",
         "STR-08 Scenario/Mission/Campaign Games",
@@ -2674,7 +2674,7 @@
       "G": 3,
       "F": 1,
       "Ar": 4,
-      "feeling": null,
+      "feeling": "Likes it",
       "mechs": [
         "STR-01 Competitive Games",
         "STR-04 Solo Games",
@@ -2707,7 +2707,7 @@
       "G": 4,
       "F": 4,
       "Ar": 3,
-      "feeling": null,
+      "feeling": "Loves it",
       "mechs": [
         "STR-01 Competitive Games",
         "TRN-04 Progressive Turn Order",
@@ -2741,7 +2741,7 @@
       "G": 4,
       "F": 3,
       "Ar": 4,
-      "feeling": null,
+      "feeling": "Likes it",
       "mechs": [
         "STR-01 Competitive Games",
         "STR-04 Solo Games",
@@ -2775,7 +2775,7 @@
       "G": 2,
       "F": 1,
       "Ar": 4,
-      "feeling": null,
+      "feeling": "Has it",
       "mechs": [
         "STR-02 Cooperative Games",
         "STR-04 Solo Games",
@@ -2801,7 +2801,7 @@
       "G": 2,
       "F": 1,
       "Ar": 3,
-      "feeling": null,
+      "feeling": "Has it",
       "mechs": [
         "STR-04 Solo Games",
         "STR-01 Competitive Games",
@@ -2830,7 +2830,7 @@
       "G": 2,
       "F": 1,
       "Ar": 3,
-      "feeling": null,
+      "feeling": "Has it",
       "mechs": [
         "STR-04 Solo Games",
         "TRN-01 Fixed Turn Order",
@@ -2857,7 +2857,7 @@
       "G": 3,
       "F": 1,
       "Ar": 3,
-      "feeling": null,
+      "feeling": "Has it",
       "mechs": [
         "STR-02 Cooperative Games",
         "TRN-04 Progressive Turn Order",
@@ -2884,7 +2884,7 @@
       "G": 3,
       "F": 1,
       "Ar": 3,
-      "feeling": null,
+      "feeling": "Has it",
       "mechs": [
         "STR-01 Competitive Games",
         "TRN-04 Progressive Turn Order",
@@ -2913,7 +2913,7 @@
       "G": 4,
       "F": 3,
       "Ar": 5,
-      "feeling": null,
+      "feeling": "Loves it",
       "mechs": [
         "STR-01 Competitive Games",
         "TRN-04 Progressive Turn Order",
@@ -2945,7 +2945,7 @@
       "G": 4,
       "F": 2,
       "Ar": 4,
-      "feeling": null,
+      "feeling": "Loves it",
       "mechs": [
         "STR-02 Cooperative Games",
         "STR-04 Solo Games",
@@ -2985,7 +2985,7 @@
       "G": 4,
       "F": 4,
       "Ar": 5,
-      "feeling": null,
+      "feeling": "Breathes it",
       "mechs": [
         "STR-01 Competitive Games",
         "STR-03 Team-Based Games",
@@ -3031,7 +3031,7 @@
       "G": 3,
       "F": 1,
       "Ar": 4,
-      "feeling": null,
+      "feeling": "Likes it",
       "mechs": [
         "STR-01 Competitive Games",
         "TRN-01 Fixed Turn Order",
@@ -3060,7 +3060,7 @@
       "G": 2,
       "F": 1,
       "Ar": 2,
-      "feeling": null,
+      "feeling": "Has it",
       "mechs": [
         "STR-01 Competitive Games",
         "CAR-06 Drafting",
@@ -3084,7 +3084,7 @@
       "G": 3,
       "F": 2,
       "Ar": 3,
-      "feeling": null,
+      "feeling": "Likes it",
       "mechs": [
         "STR-01 Competitive Games",
         "STR-04 Solo Games",
@@ -3115,7 +3115,7 @@
       "G": 3,
       "F": 2,
       "Ar": 3,
-      "feeling": null,
+      "feeling": "Likes it",
       "mechs": [
         "STR-02 Cooperative Games",
         "STR-04 Solo Games",
@@ -3148,7 +3148,7 @@
       "G": 2,
       "F": 1,
       "Ar": 3,
-      "feeling": null,
+      "feeling": "Has it",
       "mechs": [
         "STR-01 Competitive Games",
         "STR-04 Solo Games",
@@ -3178,7 +3178,7 @@
       "G": 2,
       "F": 1,
       "Ar": 5,
-      "feeling": null,
+      "feeling": "Has it",
       "mechs": [
         "STR-01 Competitive Games",
         "STR-04 Solo Games",
@@ -3205,7 +3205,7 @@
       "G": 3,
       "F": 1,
       "Ar": 3,
-      "feeling": null,
+      "feeling": "Has it",
       "mechs": [
         "STR-04 Solo Games",
         "STR-01 Competitive Games",
@@ -3234,7 +3234,7 @@
       "G": 4,
       "F": 2,
       "Ar": 4,
-      "feeling": null,
+      "feeling": "Likes it",
       "mechs": [
         "STR-01 Competitive Games",
         "STR-04 Solo Games",
@@ -3265,7 +3265,7 @@
       "G": 1,
       "F": 1,
       "Ar": 3,
-      "feeling": null,
+      "feeling": "Has it",
       "mechs": [
         "STR-01 Competitive Games",
         "STR-06 Single-Loser Games",
@@ -3287,7 +3287,7 @@
       "G": 2,
       "F": 1,
       "Ar": 3,
-      "feeling": null,
+      "feeling": "Has it",
       "mechs": [
         "STR-04 Solo Games",
         "ACT-01 Action Points",
@@ -3313,7 +3313,7 @@
       "G": 4,
       "F": 2,
       "Ar": 3,
-      "feeling": null,
+      "feeling": "Likes it",
       "mechs": [
         "STR-01 Competitive Games",
         "STR-04 Solo Games",
@@ -3344,7 +3344,7 @@
       "G": 3,
       "F": 2,
       "Ar": 4,
-      "feeling": null,
+      "feeling": "Likes it",
       "mechs": [
         "STR-01 Competitive Games",
         "STR-04 Solo Games",
@@ -3377,7 +3377,7 @@
       "G": 3,
       "F": 1,
       "Ar": 3,
-      "feeling": null,
+      "feeling": "Has it",
       "mechs": [
         "STR-01 Competitive Games",
         "STR-04 Solo Games",
@@ -3409,7 +3409,7 @@
       "G": 3,
       "F": 1,
       "Ar": 4,
-      "feeling": null,
+      "feeling": "Likes it",
       "mechs": [
         "STR-01 Competitive Games",
         "TRN-01 Fixed Turn Order",
@@ -3437,7 +3437,7 @@
       "G": 2,
       "F": 1,
       "Ar": 5,
-      "feeling": null,
+      "feeling": "Has it",
       "mechs": [
         "STR-01 Competitive Games",
         "STR-04 Solo Games",
@@ -3468,7 +3468,7 @@
       "G": 3,
       "F": 2,
       "Ar": 4,
-      "feeling": null,
+      "feeling": "Likes it",
       "mechs": [
         "STR-02 Cooperative Games",
         "STR-04 Solo Games",
@@ -3499,7 +3499,7 @@
       "G": 4,
       "F": 4,
       "Ar": 4,
-      "feeling": null,
+      "feeling": "Loves it",
       "mechs": [
         "STR-02 Cooperative Games",
         "STR-04 Solo Games",
@@ -3547,7 +3547,7 @@
       "G": 2,
       "F": 1,
       "Ar": 2,
-      "feeling": null,
+      "feeling": "Has it",
       "mechs": [
         "STR-01 Competitive Games",
         "TRN-01 Fixed Turn Order",
@@ -3566,7 +3566,7 @@
       "G": 3,
       "F": 1,
       "Ar": 3,
-      "feeling": null,
+      "feeling": "Has it",
       "mechs": [
         "STR-02 Cooperative Games",
         "TRN-01 Fixed Turn Order",
@@ -3592,7 +3592,7 @@
       "G": 2,
       "F": 1,
       "Ar": 4,
-      "feeling": null,
+      "feeling": "Has it",
       "mechs": [
         "STR-01 Competitive Games",
         "STR-04 Solo Games",
@@ -3618,7 +3618,7 @@
       "G": 2,
       "F": 1,
       "Ar": 3,
-      "feeling": null,
+      "feeling": "Has it",
       "mechs": [
         "STR-01 Competitive Games",
         "TRN-01 Fixed Turn Order",
@@ -3644,7 +3644,7 @@
       "G": 4,
       "F": 3,
       "Ar": 4,
-      "feeling": null,
+      "feeling": "Loves it",
       "mechs": [
         "STR-02 Cooperative Games",
         "STR-04 Solo Games",
@@ -3680,7 +3680,7 @@
       "G": 4,
       "F": 3,
       "Ar": 3,
-      "feeling": null,
+      "feeling": "Likes it",
       "mechs": [
         "STR-01 Competitive Games",
         "STR-04 Solo Games",
@@ -3715,7 +3715,7 @@
       "G": 3,
       "F": 2,
       "Ar": 4,
-      "feeling": null,
+      "feeling": "Likes it",
       "mechs": [
         "STR-02 Cooperative Games",
         "STR-04 Solo Games",
@@ -3744,7 +3744,7 @@
       "G": 3,
       "F": 2,
       "Ar": 3,
-      "feeling": null,
+      "feeling": "Likes it",
       "mechs": [
         "STR-01 Competitive Games",
         "TRN-01 Fixed Turn Order",
@@ -3770,7 +3770,7 @@
       "G": 3,
       "F": 1,
       "Ar": 3,
-      "feeling": null,
+      "feeling": "Has it",
       "mechs": [
         "STR-01 Competitive Games",
         "TRN-01 Fixed Turn Order",
@@ -3794,7 +3794,7 @@
       "G": 3,
       "F": 2,
       "Ar": 4,
-      "feeling": null,
+      "feeling": "Likes it",
       "mechs": [
         "STR-01 Competitive Games",
         "STR-04 Solo Games",
@@ -3824,7 +3824,7 @@
       "G": 2,
       "F": 1,
       "Ar": 2,
-      "feeling": null,
+      "feeling": "Has it",
       "mechs": [
         "STR-01 Competitive Games",
         "CAR-02 Ladder Climbing",
@@ -3849,7 +3849,7 @@
       "G": 3,
       "F": 1,
       "Ar": 3,
-      "feeling": null,
+      "feeling": "Has it",
       "mechs": [
         "STR-01 Competitive Games",
         "TRN-04 Progressive Turn Order",
@@ -3876,7 +3876,7 @@
       "G": 3,
       "F": 1,
       "Ar": 4,
-      "feeling": null,
+      "feeling": "Has it",
       "mechs": [
         "STR-01 Competitive Games",
         "STR-04 Solo Games",
@@ -3901,7 +3901,7 @@
       "G": 2,
       "F": 1,
       "Ar": 3,
-      "feeling": null,
+      "feeling": "Has it",
       "mechs": [
         "STR-01 Competitive Games",
         "TRN-09 Simultaneous Action Selection",
@@ -3927,7 +3927,7 @@
       "G": 3,
       "F": 1,
       "Ar": 3,
-      "feeling": null,
+      "feeling": "Likes it",
       "mechs": [
         "STR-01 Competitive Games",
         "STR-07 Traitor Games",
@@ -3958,7 +3958,7 @@
       "G": 4,
       "F": 4,
       "Ar": 5,
-      "feeling": null,
+      "feeling": "Breathes it",
       "mechs": [
         "STR-02 Cooperative Games",
         "STR-04 Solo Games",
@@ -3996,7 +3996,7 @@
       "G": 3,
       "F": 1,
       "Ar": 4,
-      "feeling": null,
+      "feeling": "Likes it",
       "mechs": [
         "STR-01 Competitive Games",
         "STR-04 Solo Games",
@@ -4024,7 +4024,7 @@
       "G": 3,
       "F": 2,
       "Ar": 4,
-      "feeling": null,
+      "feeling": "Likes it",
       "mechs": [
         "STR-02 Cooperative Games",
         "STR-04 Solo Games",
@@ -4056,7 +4056,7 @@
       "G": 3,
       "F": 1,
       "Ar": 3,
-      "feeling": null,
+      "feeling": "Has it",
       "mechs": [
         "STR-01 Competitive Games",
         "ACT-01 Action Points",
@@ -4083,7 +4083,7 @@
       "G": 3,
       "F": 1,
       "Ar": 3,
-      "feeling": null,
+      "feeling": "Has it",
       "mechs": [
         "STR-01 Competitive Games",
         "STR-04 Solo Games",
@@ -4110,7 +4110,7 @@
       "G": 3,
       "F": 1,
       "Ar": 3,
-      "feeling": null,
+      "feeling": "Has it",
       "mechs": [
         "STR-01 Competitive Games",
         "STR-04 Solo Games",
@@ -4136,7 +4136,7 @@
       "G": 3,
       "F": 3,
       "Ar": 5,
-      "feeling": null,
+      "feeling": "Loves it",
       "mechs": [
         "STR-02 Cooperative Games",
         "STR-04 Solo Games",
@@ -4176,7 +4176,7 @@
       "G": 2,
       "F": 1,
       "Ar": 4,
-      "feeling": null,
+      "feeling": "Has it",
       "mechs": [
         "STR-01 Competitive Games",
         "TRN-04 Progressive Turn Order",
@@ -4201,7 +4201,7 @@
       "G": 2,
       "F": 1,
       "Ar": 4,
-      "feeling": null,
+      "feeling": "Has it",
       "mechs": [
         "STR-02 Cooperative Games",
         "STR-04 Solo Games",
@@ -4231,7 +4231,7 @@
       "G": 3,
       "F": 1,
       "Ar": 3,
-      "feeling": null,
+      "feeling": "Has it",
       "mechs": [
         "STR-01 Competitive Games",
         "ARC-01 Absolute Control",
@@ -4259,7 +4259,7 @@
       "G": 3,
       "F": 1,
       "Ar": 4,
-      "feeling": null,
+      "feeling": "Likes it",
       "mechs": [
         "STR-04 Solo Games",
         "STR-08 Scenario/Mission/Campaign Games",
@@ -4287,7 +4287,7 @@
       "G": 3,
       "F": 1,
       "Ar": 2,
-      "feeling": null,
+      "feeling": "Has it",
       "mechs": [
         "STR-01 Competitive Games",
         "TRN-04 Progressive Turn Order",
@@ -4315,7 +4315,7 @@
       "G": 3,
       "F": 2,
       "Ar": 4,
-      "feeling": null,
+      "feeling": "Likes it",
       "mechs": [
         "STR-01 Competitive Games",
         "STR-04 Solo Games",
@@ -4346,7 +4346,7 @@
       "G": 4,
       "F": 3,
       "Ar": 5,
-      "feeling": null,
+      "feeling": "Loves it",
       "mechs": [
         "STR-02 Cooperative Games",
         "STR-04 Solo Games",
@@ -4383,7 +4383,7 @@
       "G": 3,
       "F": 1,
       "Ar": 3,
-      "feeling": null,
+      "feeling": "Has it",
       "mechs": [
         "STR-01 Competitive Games",
         "STR-04 Solo Games",
@@ -4420,7 +4420,7 @@
       "G": 3,
       "F": 1,
       "Ar": 2,
-      "feeling": null,
+      "feeling": "Has it",
       "mechs": [
         "STR-01 Competitive Games",
         "STR-04 Solo Games",
@@ -4446,7 +4446,7 @@
       "G": 5,
       "F": 4,
       "Ar": 3,
-      "feeling": null,
+      "feeling": "Likes it",
       "mechs": [
         "STR-01 Competitive Games",
         "STR-04 Solo Games",
@@ -4488,7 +4488,7 @@
       "G": 4,
       "F": 4,
       "Ar": 3,
-      "feeling": null,
+      "feeling": "Likes it",
       "mechs": [
         "STR-01 Competitive Games",
         "TRN-04 Progressive Turn Order",
@@ -4520,7 +4520,7 @@
       "G": 2,
       "F": 1,
       "Ar": 4,
-      "feeling": null,
+      "feeling": "Has it",
       "mechs": [
         "STR-01 Competitive Games",
         "TRN-09 Simultaneous Action Selection",
@@ -4544,7 +4544,7 @@
       "G": 3,
       "F": 1,
       "Ar": 4,
-      "feeling": null,
+      "feeling": "Has it",
       "mechs": [
         "STR-01 Competitive Games",
         "STR-04 Solo Games",
@@ -4573,7 +4573,7 @@
       "G": 3,
       "F": 2,
       "Ar": 4,
-      "feeling": null,
+      "feeling": "Likes it",
       "mechs": [
         "STR-02 Cooperative Games",
         "STR-08 Scenario/Mission/Campaign Games",
@@ -4604,7 +4604,7 @@
       "G": 3,
       "F": 2,
       "Ar": 4,
-      "feeling": null,
+      "feeling": "Likes it",
       "mechs": [
         "STR-02 Cooperative Games",
         "STR-04 Solo Games",
@@ -4639,7 +4639,7 @@
       "G": 3,
       "F": 2,
       "Ar": 3,
-      "feeling": null,
+      "feeling": "Has it",
       "mechs": [
         "STR-04 Solo Games",
         "STR-01 Competitive Games",
@@ -4694,7 +4694,7 @@
       "G": 3,
       "F": 2,
       "Ar": 4,
-      "feeling": null,
+      "feeling": "Likes it",
       "mechs": [
         "STR-02 Cooperative Games",
         "STR-04 Solo Games",
@@ -4728,7 +4728,7 @@
       "G": 3,
       "F": 2,
       "Ar": 4,
-      "feeling": null,
+      "feeling": "Likes it",
       "mechs": [
         "STR-01 Competitive Games",
         "STR-04 Solo Games",
@@ -4759,7 +4759,7 @@
       "G": 2,
       "F": 1,
       "Ar": 3,
-      "feeling": null,
+      "feeling": "Has it",
       "mechs": [
         "STR-01 Competitive Games",
         "STR-04 Solo Games",
@@ -4786,7 +4786,7 @@
       "G": 4,
       "F": 3,
       "Ar": 5,
-      "feeling": "Loves it",
+      "feeling": "Breathes it",
       "mechs": [
         "STR-02 Cooperative Games",
         "STR-04 Solo Games",

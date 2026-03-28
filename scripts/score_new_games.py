@@ -230,7 +230,18 @@ def main():
             print(f"    M={obj['M']} T={obj['T']} G={obj['G']} F={obj['F']} Ar={obj['Ar']}")
             gs = obj["M"] * obj["T"] * obj["G"] - obj["F"]
             is_val = gs * (obj["Ar"] / 2)
-            print(f"    IS={is_val}")
+
+            # Auto-populate feeling from IS zones
+            if is_val >= 150:
+                obj["feeling"] = "Breathes it"
+            elif is_val >= 87:
+                obj["feeling"] = "Loves it"
+            elif is_val >= 30:
+                obj["feeling"] = "Likes it"
+            else:
+                obj["feeling"] = "Has it"
+
+            print(f"    IS={is_val} → {obj['feeling']}")
             print(f"    {obj.get('description', '')[:80]}")
 
         except Exception as e:
