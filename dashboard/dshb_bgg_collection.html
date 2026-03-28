@@ -733,6 +733,18 @@ nav::-webkit-scrollbar { display: none; }
   max-width: 320px; min-width: 200px;
   box-shadow: 0 8px 32px rgba(0,0,0,0.5);
 }
+@media (max-width: 640px) {
+  .is-mech-tooltip {
+    position: fixed; left: 8px !important; right: 8px !important; bottom: 8px !important;
+    top: auto !important; max-width: none; width: auto;
+    max-height: 55vh; overflow-y: auto; -webkit-overflow-scrolling: touch;
+    pointer-events: auto; border-radius: 14px;
+    padding: 16px 16px 12px;
+  }
+  .is-mech-tooltip-overlay {
+    position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 199; display: none;
+  }
+}
 .is-mech-tooltip-title {
   font-family: 'JetBrains Mono', monospace; font-size: 14px;
   font-weight: 700; color: var(--indigo); margin-bottom: 10px;
@@ -2672,30 +2684,62 @@ function initMechTooltips(mechByCat) {
   tooltip.className = 'is-mech-tooltip';
   document.body.appendChild(tooltip);
 
+  const overlay = document.createElement('div');
+  overlay.className = 'is-mech-tooltip-overlay';
+  document.body.appendChild(overlay);
+
+  const isMobile = () => window.innerWidth <= 640;
+
+  function showTooltip(cat, entries) {
+    if (!entries.length) {
+      tooltip.innerHTML = `<div class="is-mech-tooltip-title">${cat} \u2014 ${MECH_CATS[cat]}</div>
+        <div style="color:var(--text3);font-size:11px">No mechanics from this category in your collection</div>`;
+    } else {
+      tooltip.innerHTML = `<div class="is-mech-tooltip-title">${cat} \u2014 ${MECH_CATS[cat]}</div>` +
+        entries.map(([mech, games]) => `
+          <div class="is-mech-tooltip-item">
+            <div class="is-mech-tooltip-mech">${mech}</div>
+            <div class="is-mech-tooltip-games">
+              ${games.map(g => `<span class="is-mech-tooltip-game">${g}</span>`).join('')}
+            </div>
+          </div>
+        `).join('');
+    }
+    tooltip.style.display = 'block';
+    if (isMobile()) overlay.style.display = 'block';
+  }
+
+  function hideTooltip() {
+    tooltip.style.display = 'none';
+    overlay.style.display = 'none';
+  }
+
+  overlay.addEventListener('click', hideTooltip);
+
   document.querySelectorAll('[data-mechcat]').forEach(card => {
     const cat = card.dataset.mechcat;
     const mechs = mechByCat[cat] || {};
     const entries = Object.entries(mechs).sort((a, b) => b[1].length - a[1].length);
 
-    card.addEventListener('mouseenter', e => {
-      if (!entries.length) {
-        tooltip.innerHTML = `<div class="is-mech-tooltip-title">${cat} \u2014 ${MECH_CATS[cat]}</div>
-          <div style="color:var(--text3);font-size:11px">No mechanics from this category in your collection</div>`;
+    // Mobile: tap to toggle
+    card.addEventListener('click', e => {
+      if (!isMobile()) return;
+      e.stopPropagation();
+      if (tooltip.style.display === 'block') {
+        hideTooltip();
       } else {
-        tooltip.innerHTML = `<div class="is-mech-tooltip-title">${cat} \u2014 ${MECH_CATS[cat]}</div>` +
-          entries.map(([mech, games]) => `
-            <div class="is-mech-tooltip-item">
-              <div class="is-mech-tooltip-mech">${mech}</div>
-              <div class="is-mech-tooltip-games">
-                ${games.map(g => `<span class="is-mech-tooltip-game">${g}</span>`).join('')}
-              </div>
-            </div>
-          `).join('');
+        showTooltip(cat, entries);
       }
-      tooltip.style.display = 'block';
+    });
+
+    // Desktop: hover
+    card.addEventListener('mouseenter', e => {
+      if (isMobile()) return;
+      showTooltip(cat, entries);
     });
 
     card.addEventListener('mousemove', e => {
+      if (isMobile()) return;
       const tw = tooltip.offsetWidth;
       const th = tooltip.offsetHeight;
       let x = e.clientX + 14;
@@ -2707,7 +2751,8 @@ function initMechTooltips(mechByCat) {
     });
 
     card.addEventListener('mouseleave', () => {
-      tooltip.style.display = 'none';
+      if (isMobile()) return;
+      hideTooltip();
     });
   });
 }
