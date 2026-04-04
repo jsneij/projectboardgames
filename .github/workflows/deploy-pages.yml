@@ -31,7 +31,7 @@ jobs:
       - name: Inject deploy timestamp
         run: |
           TS=$(date -u +'%Y/%m/%d %H:%M')
-          sed -i "s|<!-- __DEPLOY_TS__ -->|&vert; deployed ${TS}|g" dashboard/dshb_bgg_collection.html
+          sed -i "s/<!-- __DEPLOY_TS__ -->/deployed ${TS}/g" dashboard/dshb_bgg_collection.html
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

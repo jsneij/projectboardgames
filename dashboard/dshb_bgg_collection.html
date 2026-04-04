@@ -864,6 +864,7 @@ nav::-webkit-scrollbar { display: none; }
       Fetch BGG Data
     </a>
     <span id="last-fetch"></span>
+    <span id="deploy-sep" style="display:none">|</span>
     <span id="deploy-ts"><!-- __DEPLOY_TS__ --></span>
     </div>
   </div>
@@ -3157,6 +3158,9 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
       const pad = n => String(n).padStart(2, '0');
       document.getElementById('last-fetch').textContent =
         `last fetch ${d.getUTCFullYear()}/${pad(d.getUTCMonth()+1)}/${pad(d.getUTCDate())} ${pad(d.getUTCHours())}:${pad(d.getUTCMinutes())}`;
+      if (document.getElementById('deploy-ts').textContent.trim()) {
+        document.getElementById('deploy-sep').style.display = '';
+      }
     }
 
     renderOverview(STATE);
