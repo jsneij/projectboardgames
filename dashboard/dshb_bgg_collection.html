@@ -1163,7 +1163,7 @@ function langDepHtml(g) {
   const idx = levels.indexOf(level);
   const col = idx >= 0 ? colors[idx] : 'var(--text2)';
   return `<div style="font-size:11px;color:var(--text3);margin-bottom:4px">LANGUAGE DEPENDENCE</div>
-    <div style="font-size:12px;color:${col};margin-bottom:10px">${level}</div>`;
+    <div style="font-size:12px;color:var(--text2);margin-bottom:10px">${level} <span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${col};vertical-align:middle"></span></div>`;
 }
 
 // ============================================================
