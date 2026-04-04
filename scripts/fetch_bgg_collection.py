@@ -72,7 +72,7 @@ def load_env() -> dict:
     """Load configuration from .env file or environment variables."""
     config = {}
 
-    env_path = Path(__file__).parent / ".env"
+    env_path = Path(__file__).parent.parent / ".env"
     if env_path.exists():
         with open(env_path) as f:
             for line in f:
@@ -254,11 +254,11 @@ def fetch_plays_for_game(bgg_id: int, token: str, session: requests.Session = No
 
 
 def fetch_thing_data(bgg_ids: list, token: str, session: requests.Session = None) -> dict:
-    """Fetch weight and other data from /thing endpoint in batches.
+    """Fetch weight, language dependence, and other data from /thing endpoint.
 
-    The collection API does not return averageweight — this endpoint does.
+    The collection API does not return averageweight or polls — this endpoint does.
     BGG allows up to 20 IDs per /thing request.
-    Returns dict of {bgg_id: {"avg_weight": float, ...}}.
+    Returns dict of {bgg_id: {"avg_weight": float, "language_dependence": {...}, ...}}.
     """
     http = session if session else requests
     headers = {
@@ -303,6 +303,27 @@ def fetch_thing_data(bgg_ids: list, token: str, session: requests.Session = None
                     if wt_el is not None:
                         val = wt_el.get("value")
                         data["avg_weight"] = round(float(val), 2) if val and float(val) != 0 else None
+
+            # Parse language_dependence poll
+            for poll in item.findall("poll"):
+                if poll.get("name") == "language_dependence":
+                    votes = []
+                    best_val, best_count = None, -1
+                    results_el = poll.find("results")
+                    if results_el is not None:
+                        for r in results_el.findall("result"):
+                            v = r.get("value", "")
+                            n = int(r.get("numvotes", 0))
+                            votes.append({"value": v, "numvotes": n})
+                            if n > best_count:
+                                best_count = n
+                                best_val = v
+                    if votes:
+                        data["language_dependence"] = {
+                            "level": best_val,
+                            "votes": votes,
+                        }
+                    break
 
             results[bgg_id] = data
 
@@ -863,20 +884,24 @@ def main():
                 if api_plays != cached_plays:
                     play_changed.append((bgg_id, game, api_plays))
 
-            # Check for missing weights even if nothing else changed
+            # Check for missing weights or language dependence
             missing_wt = [bid for bid, g in existing_index.items()
                           if not g.get("stats", {}).get("avg_weight")]
+            missing_lang = [bid for bid, g in existing_index.items()
+                            if not g.get("language_dependence")]
+            needs_thing = bool(missing_wt or missing_lang)
 
-            if not play_changed and not missing_wt:
+            if not play_changed and not needs_thing:
                 print(f"  {GREEN}✓ Nothing has changed since last fetch.{RESET}")
                 print(f"\n{'=' * 60}")
                 print("Up to date. No files written.")
                 print(f"{'=' * 60}")
                 return
 
-            if not play_changed and missing_wt:
-                # Only weights need backfill — skip play log work
-                print(f"  ✓ No play changes, but {len(missing_wt)} game(s) missing weight")
+            if not play_changed and needs_thing:
+                # Only /thing data needs backfill — skip play log work
+                print(f"  ✓ No play changes, but {len(missing_wt)} missing weight, "
+                      f"{len(missing_lang)} missing language dependence")
             elif play_changed:
                 # Patch play counts and fetch new play logs
                 print(f"  ✓ {len(play_changed)} game(s) have new plays")
@@ -1005,20 +1030,27 @@ def main():
     # Common: fetch weights from /thing API, categorize, write output
     # -------------------------------------------------------------------------
 
-    # Fetch weight from /thing endpoint (collection API doesn't include it)
-    missing_weight = [g["bgg_id"] for g in games
-                      if not g.get("stats", {}).get("avg_weight")]
-    if missing_weight:
-        print(f"\n  Fetching weight data for {len(missing_weight)} games "
-              f"({len(missing_weight) // THING_BATCH_SIZE + 1} batches)...")
-        thing_data = fetch_thing_data(missing_weight, token, session=session)
+    # Fetch weight + language dependence from /thing endpoint
+    needs_thing = [g["bgg_id"] for g in games
+                   if not g.get("stats", {}).get("avg_weight")
+                   or not g.get("language_dependence")]
+    if needs_thing:
+        print(f"\n  Fetching /thing data for {len(needs_thing)} games "
+              f"({len(needs_thing) // THING_BATCH_SIZE + 1} batches)...")
+        thing_data = fetch_thing_data(needs_thing, token, session=session)
         patched_wt = 0
+        patched_lang = 0
         for g in games:
             td = thing_data.get(g["bgg_id"])
-            if td and td.get("avg_weight") is not None:
+            if not td:
+                continue
+            if td.get("avg_weight") is not None and not g.get("stats", {}).get("avg_weight"):
                 g.setdefault("stats", {})["avg_weight"] = td["avg_weight"]
                 patched_wt += 1
-        print(f"  ✓ Updated weight for {patched_wt} game(s)")
+            if td.get("language_dependence"):
+                g["language_dependence"] = td["language_dependence"]
+                patched_lang += 1
+        print(f"  ✓ Updated weight for {patched_wt}, language dependence for {patched_lang} game(s)")
 
     total_play_entries = sum(len(g["plays"]) for g in games)
 

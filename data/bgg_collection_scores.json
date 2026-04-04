@@ -4816,6 +4816,42 @@
       ],
       "description": "Stranded on a cursed continent, explore a vast card-driven wilderness where every terrain tile hides discoveries, dangers, and the slow creep of an ancient doom.",
       "justification": "M(4): Map addition with multi-use cards, action points, and campaign persistence. T(5): Card-flip exploration generates genuine mystery — the continent reveals itself. G(4): Resource management and exploration routing demand strategic planning. F(3): Massive card-world with save system and lengthy campaign sessions. Ar(5): Lush, hand-painted exploration cards create a breathtaking world."
+    },
+    "Barrage": {
+      "name": "Barrage",
+      "type": "competitive",
+      "weight": 0,
+      "M": 0,
+      "T": 0,
+      "G": 0,
+      "F": 0,
+      "Ar": 0,
+      "feeling": null,
+      "mechs": []
+    },
+    "Everdell": {
+      "name": "Everdell",
+      "type": "competitive",
+      "weight": 0,
+      "M": 0,
+      "T": 0,
+      "G": 0,
+      "F": 0,
+      "Ar": 0,
+      "feeling": null,
+      "mechs": []
+    },
+    "Revive": {
+      "name": "Revive",
+      "type": "competitive",
+      "weight": 0,
+      "M": 0,
+      "T": 0,
+      "G": 0,
+      "F": 0,
+      "Ar": 0,
+      "feeling": null,
+      "mechs": []
     }
   },
   "preordered": {

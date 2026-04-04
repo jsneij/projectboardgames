@@ -1145,6 +1145,29 @@ function typeIcon(type) {
   return map[type] || '🎲';
 }
 
+// Language dependence mini bar chart
+function langDepHtml(g) {
+  const ld = g.language_dependence;
+  if (!ld || !ld.votes || !ld.votes.length) return '';
+  const maxV = Math.max(...ld.votes.map(v => v.numvotes));
+  const totalV = ld.votes.reduce((s, v) => s + v.numvotes, 0);
+  const shortLabels = ['None', 'Some', 'Moderate', 'Extensive', 'Unplayable'];
+  const barColors = ['#22c55e', '#84cc16', '#f59e0b', '#f97316', '#ef4444'];
+  const bars = ld.votes.map((v, i) => {
+    const pct = maxV > 0 ? (v.numvotes / maxV * 100) : 0;
+    const isWinner = v.value === ld.level;
+    return `<div style="display:flex;align-items:center;gap:6px;font-size:11px">
+      <span style="width:62px;text-align:right;color:${isWinner ? barColors[i] : 'var(--text3)'};font-weight:${isWinner ? '600' : '400'}">${shortLabels[i]}</span>
+      <div style="flex:1;height:6px;background:var(--border);border-radius:3px;overflow:hidden">
+        <div style="width:${pct.toFixed(1)}%;height:100%;background:${barColors[i]};border-radius:3px"></div>
+      </div>
+      <span class="mono" style="width:24px;color:var(--text3);font-size:10px">${v.numvotes}</span>
+    </div>`;
+  }).join('');
+  return `<div style="font-size:11px;color:var(--text3);margin-bottom:4px">LANGUAGE DEPENDENCE</div>
+    <div style="margin-bottom:10px;max-width:320px">${bars}</div>`;
+}
+
 // ============================================================
 // DATA LOADING & MERGING
 // ============================================================
@@ -1545,6 +1568,7 @@ function renderTable(state) {
       <div style="flex:1;min-width:0">
         ${desc ? `<div style="font-size:13px;color:var(--accent);margin-bottom:10px;line-height:1.4">${desc}</div>` : ''}
         ${just ? `<div style="font-size:11px;color:var(--text3);margin-bottom:4px">JUSTIFICATION IS</div><div style="font-size:12px;color:var(--text2);line-height:1.5;margin-bottom:10px">${just.replace(/([MTGF]|Ar)\(\d\):/g, '<span style="color:var(--accent);font-weight:600">$&</span>')}</div>` : ''}
+        ${langDepHtml(g)}
         <div style="font-size:11px;color:var(--text3);margin-bottom:4px">MECHANISMS</div>
         <div class="expand-mechs">${mechsHtml || '<span style="color:var(--text3)">—</span>'}</div>
         ${g.comment ? `<div style="margin-top:12px;font-size:12px;color:var(--text2);font-style:italic;max-width:400px">"${g.comment}"</div>` : ''}
