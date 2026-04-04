@@ -956,6 +956,7 @@ nav::-webkit-scrollbar { display: none; }
       <button class="sort-btn" data-sort="weight">Weight <span class="dir">↓</span></button>
       <button class="sort-btn" data-sort="bggRank">BGG# <span class="dir">↑</span></button>
       <button class="sort-btn" data-sort="plays">Plays <span class="dir">↓</span></button>
+      <button class="sort-btn" data-sort="langDep">Lang <span class="dir">↓</span></button>
       <div class="search-wrap" style="margin:0 0 0 auto">
         <input type="text" id="table-search" placeholder="Search games...">
       </div>
@@ -1513,6 +1514,11 @@ function renderTable(state) {
     else if (f === 'weight') { av = a.weight || 0; bv = b.weight || 0; }
     else if (f === 'bggRank') { av = a.bggRank || 99999; bv = b.bggRank || 99999; }
     else if (f === 'plays') { av = a.num_plays || 0; bv = b.num_plays || 0; }
+    else if (f === 'langDep') {
+      const ldLevels = ['No necessary in-game text','Some necessary text - easily memorized or small crib sheet','Moderate in-game text - needs crib sheet or paste ups','Extensive use of text - massive conversion needed to be playable','Unplayable in another language'];
+      av = ldLevels.indexOf(a.language_dependence || ''); bv = ldLevels.indexOf(b.language_dependence || '');
+      if (av < 0) av = -1; if (bv < 0) bv = -1;
+    }
     if (av < bv) return -tableSortDir;
     if (av > bv) return tableSortDir;
     return 0;
