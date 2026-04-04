@@ -3157,7 +3157,7 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
       const d = new Date(fetchedAt);
       const pad = n => String(n).padStart(2, '0');
       document.getElementById('last-fetch').textContent =
-        `last fetch ${d.getUTCFullYear()}/${pad(d.getUTCMonth()+1)}/${pad(d.getUTCDate())} ${pad(d.getUTCHours())}:${pad(d.getUTCMinutes())}`;
+        `last fetch ${d.getFullYear()}/${pad(d.getMonth()+1)}/${pad(d.getDate())} ${pad(d.getHours())}:${pad(d.getMinutes())}`;
       if (document.getElementById('deploy-ts').textContent.trim()) {
         document.getElementById('deploy-sep').style.display = '';
       }
