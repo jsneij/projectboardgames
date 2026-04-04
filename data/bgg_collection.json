@@ -1,7 +1,7 @@
 {
   "metadata": {
     "username": "jsneij",
-    "fetched_at": "2026-04-04T08:26:52.316970+00:00",
+    "fetched_at": "2026-04-04T08:42:14.767505+00:00",
     "total_items": 168,
     "counts": {
       "owned": 40,
@@ -80,31 +80,7 @@
         "comment": "P 1-4"
       },
       "plays": [],
-      "language_dependence": {
-        "level": "Extensive use of text - massive conversion needed to be playable",
-        "votes": [
-          {
-            "value": "No necessary in-game text",
-            "numvotes": 0
-          },
-          {
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": 0
-          },
-          {
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": 0
-          },
-          {
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": 38
-          },
-          {
-            "value": "Unplayable in another language",
-            "numvotes": 10
-          }
-        ]
-      }
+      "language_dependence": "Extensive use of text - massive conversion needed to be playable"
     },
     {
       "bgg_id": 284354,
@@ -164,31 +140,7 @@
         "comment": "P 1-2"
       },
       "plays": [],
-      "language_dependence": {
-        "level": "Extensive use of text - massive conversion needed to be playable",
-        "votes": [
-          {
-            "value": "No necessary in-game text",
-            "numvotes": 0
-          },
-          {
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": 0
-          },
-          {
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": 0
-          },
-          {
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": 1
-          },
-          {
-            "value": "Unplayable in another language",
-            "numvotes": 1
-          }
-        ]
-      }
+      "language_dependence": "Extensive use of text - massive conversion needed to be playable"
     },
     {
       "bgg_id": 358212,
@@ -242,31 +194,7 @@
         "comment": "P 1-4"
       },
       "plays": [],
-      "language_dependence": {
-        "level": "Unplayable in another language",
-        "votes": [
-          {
-            "value": "No necessary in-game text",
-            "numvotes": 0
-          },
-          {
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": 0
-          },
-          {
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": 0
-          },
-          {
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": 0
-          },
-          {
-            "value": "Unplayable in another language",
-            "numvotes": 1
-          }
-        ]
-      }
+      "language_dependence": "Unplayable in another language"
     },
     {
       "bgg_id": 358213,
@@ -320,31 +248,7 @@
         "comment": "P 1-4"
       },
       "plays": [],
-      "language_dependence": {
-        "level": "No necessary in-game text",
-        "votes": [
-          {
-            "value": "No necessary in-game text",
-            "numvotes": 0
-          },
-          {
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": 0
-          },
-          {
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": 0
-          },
-          {
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": 0
-          },
-          {
-            "value": "Unplayable in another language",
-            "numvotes": 0
-          }
-        ]
-      }
+      "language_dependence": "No necessary in-game text"
     },
     {
       "bgg_id": 359609,
@@ -410,31 +314,7 @@
         "comment": "P 1-4"
       },
       "plays": [],
-      "language_dependence": {
-        "level": "Extensive use of text - massive conversion needed to be playable",
-        "votes": [
-          {
-            "value": "No necessary in-game text",
-            "numvotes": 0
-          },
-          {
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": 0
-          },
-          {
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": 0
-          },
-          {
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": 6
-          },
-          {
-            "value": "Unplayable in another language",
-            "numvotes": 2
-          }
-        ]
-      }
+      "language_dependence": "Extensive use of text - massive conversion needed to be playable"
     },
     {
       "bgg_id": 180593,
@@ -494,31 +374,7 @@
         "comment": "P 1-4"
       },
       "plays": [],
-      "language_dependence": {
-        "level": "Some necessary text - easily memorized or small crib sheet",
-        "votes": [
-          {
-            "value": "No necessary in-game text",
-            "numvotes": 2
-          },
-          {
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": 22
-          },
-          {
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": 6
-          },
-          {
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": 0
-          },
-          {
-            "value": "Unplayable in another language",
-            "numvotes": 0
-          }
-        ]
-      }
+      "language_dependence": "Some necessary text - easily memorized or small crib sheet"
     },
     {
       "bgg_id": 230243,
@@ -572,31 +428,7 @@
       },
       "private_info": null,
       "plays": [],
-      "language_dependence": {
-        "level": "Moderate in-game text - needs crib sheet or paste ups",
-        "votes": [
-          {
-            "value": "No necessary in-game text",
-            "numvotes": 0
-          },
-          {
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": 0
-          },
-          {
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": 2
-          },
-          {
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": 0
-          },
-          {
-            "value": "Unplayable in another language",
-            "numvotes": 0
-          }
-        ]
-      }
+      "language_dependence": "Moderate in-game text - needs crib sheet or paste ups"
     },
     {
       "bgg_id": 172081,
@@ -662,31 +494,7 @@
         "comment": "P 1-4\nPablo&Inés"
       },
       "plays": [],
-      "language_dependence": {
-        "level": "Moderate in-game text - needs crib sheet or paste ups",
-        "votes": [
-          {
-            "value": "No necessary in-game text",
-            "numvotes": 0
-          },
-          {
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": 4
-          },
-          {
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": 23
-          },
-          {
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": 3
-          },
-          {
-            "value": "Unplayable in another language",
-            "numvotes": 0
-          }
-        ]
-      }
+      "language_dependence": "Moderate in-game text - needs crib sheet or paste ups"
     },
     {
       "bgg_id": 50381,
@@ -746,31 +554,7 @@
         "comment": "P 4-30"
       },
       "plays": [],
-      "language_dependence": {
-        "level": "Extensive use of text - massive conversion needed to be playable",
-        "votes": [
-          {
-            "value": "No necessary in-game text",
-            "numvotes": 1
-          },
-          {
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": 0
-          },
-          {
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": 5
-          },
-          {
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": 44
-          },
-          {
-            "value": "Unplayable in another language",
-            "numvotes": 31
-          }
-        ]
-      }
+      "language_dependence": "Extensive use of text - massive conversion needed to be playable"
     },
     {
       "bgg_id": 295897,
@@ -824,31 +608,7 @@
         "comment": "P 4-30"
       },
       "plays": [],
-      "language_dependence": {
-        "level": "No necessary in-game text",
-        "votes": [
-          {
-            "value": "No necessary in-game text",
-            "numvotes": 0
-          },
-          {
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": 0
-          },
-          {
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": 0
-          },
-          {
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": 0
-          },
-          {
-            "value": "Unplayable in another language",
-            "numvotes": 0
-          }
-        ]
-      }
+      "language_dependence": "No necessary in-game text"
     },
     {
       "bgg_id": 105593,
@@ -908,31 +668,7 @@
         "comment": "P 3-5"
       },
       "plays": [],
-      "language_dependence": {
-        "level": "No necessary in-game text",
-        "votes": [
-          {
-            "value": "No necessary in-game text",
-            "numvotes": 16
-          },
-          {
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": 0
-          },
-          {
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": 0
-          },
-          {
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": 0
-          },
-          {
-            "value": "Unplayable in another language",
-            "numvotes": 0
-          }
-        ]
-      }
+      "language_dependence": "No necessary in-game text"
     },
     {
       "bgg_id": 324856,
@@ -992,31 +728,7 @@
         "comment": "P 2-5\nRani has it. In Germany"
       },
       "plays": [],
-      "language_dependence": {
-        "level": "Moderate in-game text - needs crib sheet or paste ups",
-        "votes": [
-          {
-            "value": "No necessary in-game text",
-            "numvotes": 4
-          },
-          {
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": 5
-          },
-          {
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": 12
-          },
-          {
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": 2
-          },
-          {
-            "value": "Unplayable in another language",
-            "numvotes": 0
-          }
-        ]
-      }
+      "language_dependence": "Moderate in-game text - needs crib sheet or paste ups"
     },
     {
       "bgg_id": 376893,
@@ -1076,31 +788,7 @@
         "comment": "P 1-2"
       },
       "plays": [],
-      "language_dependence": {
-        "level": "No necessary in-game text",
-        "votes": [
-          {
-            "value": "No necessary in-game text",
-            "numvotes": 2
-          },
-          {
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": 0
-          },
-          {
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": 0
-          },
-          {
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": 0
-          },
-          {
-            "value": "Unplayable in another language",
-            "numvotes": 0
-          }
-        ]
-      }
+      "language_dependence": "No necessary in-game text"
     },
     {
       "bgg_id": 169654,
@@ -1160,31 +848,7 @@
         "comment": "P 2-6\nPablo&Inés"
       },
       "plays": [],
-      "language_dependence": {
-        "level": "No necessary in-game text",
-        "votes": [
-          {
-            "value": "No necessary in-game text",
-            "numvotes": 36
-          },
-          {
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": 0
-          },
-          {
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": 0
-          },
-          {
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": 0
-          },
-          {
-            "value": "Unplayable in another language",
-            "numvotes": 0
-          }
-        ]
-      }
+      "language_dependence": "No necessary in-game text"
     },
     {
       "bgg_id": 277659,
@@ -1244,31 +908,7 @@
         "comment": "P 1"
       },
       "plays": [],
-      "language_dependence": {
-        "level": "Moderate in-game text - needs crib sheet or paste ups",
-        "votes": [
-          {
-            "value": "No necessary in-game text",
-            "numvotes": 0
-          },
-          {
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": 1
-          },
-          {
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": 9
-          },
-          {
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": 2
-          },
-          {
-            "value": "Unplayable in another language",
-            "numvotes": 1
-          }
-        ]
-      }
+      "language_dependence": "Moderate in-game text - needs crib sheet or paste ups"
     },
     {
       "bgg_id": 401727,
@@ -1322,31 +962,7 @@
         "comment": null
       },
       "plays": [],
-      "language_dependence": {
-        "level": "Moderate in-game text - needs crib sheet or paste ups",
-        "votes": [
-          {
-            "value": "No necessary in-game text",
-            "numvotes": 0
-          },
-          {
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": 0
-          },
-          {
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": 1
-          },
-          {
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": 0
-          },
-          {
-            "value": "Unplayable in another language",
-            "numvotes": 0
-          }
-        ]
-      }
+      "language_dependence": "Moderate in-game text - needs crib sheet or paste ups"
     },
     {
       "bgg_id": 354775,
@@ -1400,31 +1016,7 @@
         "comment": "P 1"
       },
       "plays": [],
-      "language_dependence": {
-        "level": "Moderate in-game text - needs crib sheet or paste ups",
-        "votes": [
-          {
-            "value": "No necessary in-game text",
-            "numvotes": 0
-          },
-          {
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": 0
-          },
-          {
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": 1
-          },
-          {
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": 1
-          },
-          {
-            "value": "Unplayable in another language",
-            "numvotes": 0
-          }
-        ]
-      }
+      "language_dependence": "Moderate in-game text - needs crib sheet or paste ups"
     },
     {
       "bgg_id": 354779,
@@ -1478,31 +1070,7 @@
         "comment": "P 1"
       },
       "plays": [],
-      "language_dependence": {
-        "level": "Moderate in-game text - needs crib sheet or paste ups",
-        "votes": [
-          {
-            "value": "No necessary in-game text",
-            "numvotes": 0
-          },
-          {
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": 0
-          },
-          {
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": 1
-          },
-          {
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": 0
-          },
-          {
-            "value": "Unplayable in another language",
-            "numvotes": 0
-          }
-        ]
-      }
+      "language_dependence": "Moderate in-game text - needs crib sheet or paste ups"
     },
     {
       "bgg_id": 354776,
@@ -1556,31 +1124,7 @@
         "comment": "P 1"
       },
       "plays": [],
-      "language_dependence": {
-        "level": "Moderate in-game text - needs crib sheet or paste ups",
-        "votes": [
-          {
-            "value": "No necessary in-game text",
-            "numvotes": 0
-          },
-          {
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": 0
-          },
-          {
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": 1
-          },
-          {
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": 0
-          },
-          {
-            "value": "Unplayable in another language",
-            "numvotes": 0
-          }
-        ]
-      }
+      "language_dependence": "Moderate in-game text - needs crib sheet or paste ups"
     },
     {
       "bgg_id": 291457,
@@ -1646,31 +1190,7 @@
         "comment": "P 1-4\nAlso given to Daniel, Diane, Nora, Nael"
       },
       "plays": [],
-      "language_dependence": {
-        "level": "Extensive use of text - massive conversion needed to be playable",
-        "votes": [
-          {
-            "value": "No necessary in-game text",
-            "numvotes": 1
-          },
-          {
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": 0
-          },
-          {
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": 3
-          },
-          {
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": 25
-          },
-          {
-            "value": "Unplayable in another language",
-            "numvotes": 10
-          }
-        ]
-      }
+      "language_dependence": "Extensive use of text - massive conversion needed to be playable"
     },
     {
       "bgg_id": 414317,
@@ -1736,31 +1256,7 @@
         "comment": "P 1-4 In Germany. \nBought to Gerard, Maria & Miquel"
       },
       "plays": [],
-      "language_dependence": {
-        "level": "No necessary in-game text",
-        "votes": [
-          {
-            "value": "No necessary in-game text",
-            "numvotes": 49
-          },
-          {
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": 0
-          },
-          {
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": 0
-          },
-          {
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": 0
-          },
-          {
-            "value": "Unplayable in another language",
-            "numvotes": 0
-          }
-        ]
-      }
+      "language_dependence": "No necessary in-game text"
     },
     {
       "bgg_id": 337832,
@@ -1814,31 +1310,7 @@
         "comment": "P 1-5"
       },
       "plays": [],
-      "language_dependence": {
-        "level": "No necessary in-game text",
-        "votes": [
-          {
-            "value": "No necessary in-game text",
-            "numvotes": 0
-          },
-          {
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": 0
-          },
-          {
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": 0
-          },
-          {
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": 0
-          },
-          {
-            "value": "Unplayable in another language",
-            "numvotes": 0
-          }
-        ]
-      }
+      "language_dependence": "No necessary in-game text"
     },
     {
       "bgg_id": 212404,
@@ -1898,31 +1370,7 @@
         "comment": "P 3-9"
       },
       "plays": [],
-      "language_dependence": {
-        "level": "No necessary in-game text",
-        "votes": [
-          {
-            "value": "No necessary in-game text",
-            "numvotes": 2
-          },
-          {
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": 0
-          },
-          {
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": 0
-          },
-          {
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": 0
-          },
-          {
-            "value": "Unplayable in another language",
-            "numvotes": 0
-          }
-        ]
-      }
+      "language_dependence": "No necessary in-game text"
     },
     {
       "bgg_id": 378117,
@@ -1988,31 +1436,7 @@
           "players": []
         }
       ],
-      "language_dependence": {
-        "level": "Moderate in-game text - needs crib sheet or paste ups",
-        "votes": [
-          {
-            "value": "No necessary in-game text",
-            "numvotes": 0
-          },
-          {
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": 0
-          },
-          {
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": 1
-          },
-          {
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": 1
-          },
-          {
-            "value": "Unplayable in another language",
-            "numvotes": 0
-          }
-        ]
-      }
+      "language_dependence": "Moderate in-game text - needs crib sheet or paste ups"
     },
     {
       "bgg_id": 427682,
@@ -2066,31 +1490,7 @@
         "comment": "P 1"
       },
       "plays": [],
-      "language_dependence": {
-        "level": "Moderate in-game text - needs crib sheet or paste ups",
-        "votes": [
-          {
-            "value": "No necessary in-game text",
-            "numvotes": 0
-          },
-          {
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": 0
-          },
-          {
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": 1
-          },
-          {
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": 0
-          },
-          {
-            "value": "Unplayable in another language",
-            "numvotes": 0
-          }
-        ]
-      }
+      "language_dependence": "Moderate in-game text - needs crib sheet or paste ups"
     },
     {
       "bgg_id": 330403,
@@ -2150,31 +1550,7 @@
         "comment": "P 2-5"
       },
       "plays": [],
-      "language_dependence": {
-        "level": "Some necessary text - easily memorized or small crib sheet",
-        "votes": [
-          {
-            "value": "No necessary in-game text",
-            "numvotes": 0
-          },
-          {
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": 1
-          },
-          {
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": 0
-          },
-          {
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": 0
-          },
-          {
-            "value": "Unplayable in another language",
-            "numvotes": 0
-          }
-        ]
-      }
+      "language_dependence": "Some necessary text - easily memorized or small crib sheet"
     },
     {
       "bgg_id": 167355,
@@ -2234,31 +1610,7 @@
         "comment": "P 1-5"
       },
       "plays": [],
-      "language_dependence": {
-        "level": "Moderate in-game text - needs crib sheet or paste ups",
-        "votes": [
-          {
-            "value": "No necessary in-game text",
-            "numvotes": 0
-          },
-          {
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": 1
-          },
-          {
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": 24
-          },
-          {
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": 13
-          },
-          {
-            "value": "Unplayable in another language",
-            "numvotes": 1
-          }
-        ]
-      }
+      "language_dependence": "Moderate in-game text - needs crib sheet or paste ups"
     },
     {
       "bgg_id": 300531,
@@ -2324,31 +1676,7 @@
         "comment": "P 2-4\nBought to Elias and Martín"
       },
       "plays": [],
-      "language_dependence": {
-        "level": "Some necessary text - easily memorized or small crib sheet",
-        "votes": [
-          {
-            "value": "No necessary in-game text",
-            "numvotes": 0
-          },
-          {
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": 20
-          },
-          {
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": 15
-          },
-          {
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": 0
-          },
-          {
-            "value": "Unplayable in another language",
-            "numvotes": 0
-          }
-        ]
-      }
+      "language_dependence": "Some necessary text - easily memorized or small crib sheet"
     },
     {
       "bgg_id": 405538,
@@ -2402,31 +1730,7 @@
         "comment": "P 1-6\nSilvia Buypower"
       },
       "plays": [],
-      "language_dependence": {
-        "level": "No necessary in-game text",
-        "votes": [
-          {
-            "value": "No necessary in-game text",
-            "numvotes": 2
-          },
-          {
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": 0
-          },
-          {
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": 0
-          },
-          {
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": 0
-          },
-          {
-            "value": "Unplayable in another language",
-            "numvotes": 0
-          }
-        ]
-      }
+      "language_dependence": "No necessary in-game text"
     },
     {
       "bgg_id": 335212,
@@ -2486,31 +1790,7 @@
         "comment": "P 1-5\nApp in Steam"
       },
       "plays": [],
-      "language_dependence": {
-        "level": "Extensive use of text - massive conversion needed to be playable",
-        "votes": [
-          {
-            "value": "No necessary in-game text",
-            "numvotes": 0
-          },
-          {
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": 0
-          },
-          {
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": 0
-          },
-          {
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": 2
-          },
-          {
-            "value": "Unplayable in another language",
-            "numvotes": 0
-          }
-        ]
-      }
+      "language_dependence": "Extensive use of text - massive conversion needed to be playable"
     },
     {
       "bgg_id": 303553,
@@ -2576,31 +1856,7 @@
         "comment": "P 2-3\nBought for Mar"
       },
       "plays": [],
-      "language_dependence": {
-        "level": "Some necessary text - easily memorized or small crib sheet",
-        "votes": [
-          {
-            "value": "No necessary in-game text",
-            "numvotes": 3
-          },
-          {
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": 4
-          },
-          {
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": 0
-          },
-          {
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": 0
-          },
-          {
-            "value": "Unplayable in another language",
-            "numvotes": 0
-          }
-        ]
-      }
+      "language_dependence": "Some necessary text - easily memorized or small crib sheet"
     },
     {
       "bgg_id": 373106,
@@ -2666,31 +1922,7 @@
         "comment": "P2 (P1 with fanmade solo rules)"
       },
       "plays": [],
-      "language_dependence": {
-        "level": "Some necessary text - easily memorized or small crib sheet",
-        "votes": [
-          {
-            "value": "No necessary in-game text",
-            "numvotes": 24
-          },
-          {
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": 50
-          },
-          {
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": 7
-          },
-          {
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": 0
-          },
-          {
-            "value": "Unplayable in another language",
-            "numvotes": 0
-          }
-        ]
-      }
+      "language_dependence": "Some necessary text - easily memorized or small crib sheet"
     },
     {
       "bgg_id": 162886,
@@ -2750,31 +1982,7 @@
         "comment": "P 1-4\nPablo & Inés in Spanish. \nGiven to Rani in English. \nApp in Steam"
       },
       "plays": [],
-      "language_dependence": {
-        "level": "Extensive use of text - massive conversion needed to be playable",
-        "votes": [
-          {
-            "value": "No necessary in-game text",
-            "numvotes": 0
-          },
-          {
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": 0
-          },
-          {
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": 9
-          },
-          {
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": 61
-          },
-          {
-            "value": "Unplayable in another language",
-            "numvotes": 15
-          }
-        ]
-      }
+      "language_dependence": "Extensive use of text - massive conversion needed to be playable"
     },
     {
       "bgg_id": 251658,
@@ -2840,31 +2048,7 @@
         "comment": "P 1-4"
       },
       "plays": [],
-      "language_dependence": {
-        "level": "Moderate in-game text - needs crib sheet or paste ups",
-        "votes": [
-          {
-            "value": "No necessary in-game text",
-            "numvotes": 0
-          },
-          {
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": 6
-          },
-          {
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": 18
-          },
-          {
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": 1
-          },
-          {
-            "value": "Unplayable in another language",
-            "numvotes": 0
-          }
-        ]
-      }
+      "language_dependence": "Moderate in-game text - needs crib sheet or paste ups"
     },
     {
       "bgg_id": 261901,
@@ -2924,31 +2108,7 @@
         "comment": "P 2-4"
       },
       "plays": [],
-      "language_dependence": {
-        "level": "No necessary in-game text",
-        "votes": [
-          {
-            "value": "No necessary in-game text",
-            "numvotes": 6
-          },
-          {
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": 0
-          },
-          {
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": 0
-          },
-          {
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": 0
-          },
-          {
-            "value": "Unplayable in another language",
-            "numvotes": 0
-          }
-        ]
-      }
+      "language_dependence": "No necessary in-game text"
     },
     {
       "bgg_id": 338628,
@@ -3008,31 +2168,7 @@
         "comment": "P 2-4\nGiven to Mar - with Toni. "
       },
       "plays": [],
-      "language_dependence": {
-        "level": "Some necessary text - easily memorized or small crib sheet",
-        "votes": [
-          {
-            "value": "No necessary in-game text",
-            "numvotes": 0
-          },
-          {
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": 5
-          },
-          {
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": 1
-          },
-          {
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": 0
-          },
-          {
-            "value": "Unplayable in another language",
-            "numvotes": 0
-          }
-        ]
-      }
+      "language_dependence": "Some necessary text - easily memorized or small crib sheet"
     },
     {
       "bgg_id": 306735,
@@ -3092,31 +2228,7 @@
         "comment": "P 1"
       },
       "plays": [],
-      "language_dependence": {
-        "level": "Moderate in-game text - needs crib sheet or paste ups",
-        "votes": [
-          {
-            "value": "No necessary in-game text",
-            "numvotes": 0
-          },
-          {
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": 4
-          },
-          {
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": 9
-          },
-          {
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": 0
-          },
-          {
-            "value": "Unplayable in another language",
-            "numvotes": 0
-          }
-        ]
-      }
+      "language_dependence": "Moderate in-game text - needs crib sheet or paste ups"
     },
     {
       "bgg_id": 331328,
@@ -3176,31 +2288,7 @@
         "comment": "P 1"
       },
       "plays": [],
-      "language_dependence": {
-        "level": "Extensive use of text - massive conversion needed to be playable",
-        "votes": [
-          {
-            "value": "No necessary in-game text",
-            "numvotes": 0
-          },
-          {
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": 0
-          },
-          {
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": 0
-          },
-          {
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": 3
-          },
-          {
-            "value": "Unplayable in another language",
-            "numvotes": 0
-          }
-        ]
-      }
+      "language_dependence": "Extensive use of text - massive conversion needed to be playable"
     },
     {
       "bgg_id": 296237,
@@ -3260,31 +2348,7 @@
         "comment": "P 1"
       },
       "plays": [],
-      "language_dependence": {
-        "level": "Moderate in-game text - needs crib sheet or paste ups",
-        "votes": [
-          {
-            "value": "No necessary in-game text",
-            "numvotes": 0
-          },
-          {
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": 1
-          },
-          {
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": 7
-          },
-          {
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": 1
-          },
-          {
-            "value": "Unplayable in another language",
-            "numvotes": 1
-          }
-        ]
-      }
+      "language_dependence": "Moderate in-game text - needs crib sheet or paste ups"
     },
     {
       "bgg_id": 342900,
@@ -3344,31 +2408,7 @@
       },
       "private_info": null,
       "plays": [],
-      "language_dependence": {
-        "level": "Unplayable in another language",
-        "votes": [
-          {
-            "value": "No necessary in-game text",
-            "numvotes": 0
-          },
-          {
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": 0
-          },
-          {
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": 0
-          },
-          {
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": 6
-          },
-          {
-            "value": "Unplayable in another language",
-            "numvotes": 7
-          }
-        ]
-      }
+      "language_dependence": "Unplayable in another language"
     }
   ],
   "wishlist": {
@@ -3437,31 +2477,7 @@
           "comment": "P 1-4"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Extensive use of text - massive conversion needed to be playable",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 3
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 27
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 169
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 8
-            }
-          ]
-        }
+        "language_dependence": "Extensive use of text - massive conversion needed to be playable"
       },
       {
         "bgg_id": 342562,
@@ -3521,31 +2537,7 @@
           "comment": "P 1"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Some necessary text - easily memorized or small crib sheet",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 7
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "Some necessary text - easily memorized or small crib sheet"
       },
       {
         "bgg_id": 418059,
@@ -3605,31 +2597,7 @@
           "comment": "P 1-4"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Moderate in-game text - needs crib sheet or paste ups",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 1
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 2
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 16
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 6
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 1
-            }
-          ]
-        }
+        "language_dependence": "Moderate in-game text - needs crib sheet or paste ups"
       },
       {
         "bgg_id": 375459,
@@ -3689,31 +2657,7 @@
           "comment": "P 1-4"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "No necessary in-game text",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 5
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "No necessary in-game text"
       }
     ],
     "priority_2_love_to_have": [
@@ -3775,31 +2719,7 @@
           "comment": "P 1-4"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "No necessary in-game text",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 31
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 3
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "No necessary in-game text"
       },
       {
         "bgg_id": 225729,
@@ -3859,31 +2779,7 @@
           "comment": "P 1"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "No necessary in-game text",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 5
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 1
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 1
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "No necessary in-game text"
       },
       {
         "bgg_id": 286537,
@@ -3943,31 +2839,7 @@
           "comment": "P 1-4"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Extensive use of text - massive conversion needed to be playable",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 3
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "Extensive use of text - massive conversion needed to be playable"
       },
       {
         "bgg_id": 196526,
@@ -4027,31 +2899,7 @@
           "comment": "P 1\nQuizas para Toni"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "No necessary in-game text",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 6
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 1
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "No necessary in-game text"
       },
       {
         "bgg_id": 253344,
@@ -4111,31 +2959,7 @@
           "comment": "P 1-5"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Moderate in-game text - needs crib sheet or paste ups",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 1
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 9
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 7
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "Moderate in-game text - needs crib sheet or paste ups"
       },
       {
         "bgg_id": 334986,
@@ -4195,31 +3019,7 @@
           "comment": "P 1-4"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Moderate in-game text - needs crib sheet or paste ups",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 7
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 5
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 2
-            }
-          ]
-        }
+        "language_dependence": "Moderate in-game text - needs crib sheet or paste ups"
       },
       {
         "bgg_id": 203420,
@@ -4279,31 +3079,7 @@
           "comment": "P 1-6"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Unplayable in another language",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 2
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 6
-            }
-          ]
-        }
+        "language_dependence": "Unplayable in another language"
       },
       {
         "bgg_id": 220308,
@@ -4363,31 +3139,7 @@
           "comment": "P 1-4\nTop recommended by Jaime"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "No necessary in-game text",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 42
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 6
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "No necessary in-game text"
       },
       {
         "bgg_id": 423434,
@@ -4435,31 +3187,7 @@
         },
         "private_info": null,
         "plays": [],
-        "language_dependence": {
-          "level": "Moderate in-game text - needs crib sheet or paste ups",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 1
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "Moderate in-game text - needs crib sheet or paste ups"
       },
       {
         "bgg_id": 367518,
@@ -4519,31 +3247,7 @@
           "comment": "P 1-4"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Extensive use of text - massive conversion needed to be playable",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 2
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "Extensive use of text - massive conversion needed to be playable"
       },
       {
         "bgg_id": 271324,
@@ -4603,31 +3307,7 @@
           "comment": "P 1-5"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "No necessary in-game text",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 34
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 4
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "No necessary in-game text"
       },
       {
         "bgg_id": 284378,
@@ -4687,31 +3367,7 @@
           "comment": "P 1-4"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "No necessary in-game text",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 9
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "No necessary in-game text"
       },
       {
         "bgg_id": 316412,
@@ -4771,31 +3427,7 @@
           "comment": "P 1-4"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Extensive use of text - massive conversion needed to be playable",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 2
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 9
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "Extensive use of text - massive conversion needed to be playable"
       },
       {
         "bgg_id": 381248,
@@ -4855,31 +3487,7 @@
           "comment": "P 1-5"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Extensive use of text - massive conversion needed to be playable",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 1
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 6
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "Extensive use of text - massive conversion needed to be playable"
       },
       {
         "bgg_id": 184267,
@@ -4939,31 +3547,7 @@
           "comment": "P 1-4"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "No necessary in-game text",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 17
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 1
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 1
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "No necessary in-game text"
       },
       {
         "bgg_id": 385643,
@@ -5017,31 +3601,7 @@
           "comment": "P 1-5\nGame\nhttps://www.fowers.games/collections/wordgames/products/paperback\nExpansion\nhttps://www.fowers.games/collections/wordgames/products/paperback-unabridged\nDeluxe\nhttps://www.fowers.games/collections/direct-price/products/copy-of-paperback-deluxe"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "No necessary in-game text",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "No necessary in-game text"
       },
       {
         "bgg_id": 307002,
@@ -5107,31 +3667,7 @@
           "comment": "P 1-4"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "No necessary in-game text",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 16
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 2
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "No necessary in-game text"
       },
       {
         "bgg_id": 352697,
@@ -5197,31 +3733,7 @@
           "comment": "P 1"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Extensive use of text - massive conversion needed to be playable",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 4
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 7
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 1
-            }
-          ]
-        }
+        "language_dependence": "Extensive use of text - massive conversion needed to be playable"
       },
       {
         "bgg_id": 359501,
@@ -5275,31 +3787,7 @@
           "comment": "P 1"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "No necessary in-game text",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "No necessary in-game text"
       },
       {
         "bgg_id": 255984,
@@ -5359,31 +3847,7 @@
           "comment": "P 1-4"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Unplayable in another language",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 1
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 9
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 11
-            }
-          ]
-        }
+        "language_dependence": "Unplayable in another language"
       },
       {
         "bgg_id": 352454,
@@ -5443,31 +3907,7 @@
           "comment": "P 1-8"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Some necessary text - easily memorized or small crib sheet",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 2
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "Some necessary text - easily memorized or small crib sheet"
       },
       {
         "bgg_id": 329500,
@@ -5521,31 +3961,7 @@
         },
         "private_info": null,
         "plays": [],
-        "language_dependence": {
-          "level": "No necessary in-game text",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 16
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "No necessary in-game text"
       },
       {
         "bgg_id": 420033,
@@ -5605,31 +4021,7 @@
           "comment": "P 1-6\n"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Extensive use of text - massive conversion needed to be playable",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 7
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 4
-            }
-          ]
-        }
+        "language_dependence": "Extensive use of text - massive conversion needed to be playable"
       },
       {
         "bgg_id": 371942,
@@ -5689,31 +4081,7 @@
           "comment": "P 1-4"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "No necessary in-game text",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 38
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 1
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "No necessary in-game text"
       }
     ],
     "priority_3_like_to_have": [
@@ -5775,31 +4143,7 @@
           "comment": "P 1-5\n"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Moderate in-game text - needs crib sheet or paste ups",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 1
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 10
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 2
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "Moderate in-game text - needs crib sheet or paste ups"
       },
       {
         "bgg_id": 359871,
@@ -5859,31 +4203,7 @@
           "comment": "P 2-4"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Extensive use of text - massive conversion needed to be playable",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 5
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 17
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 1
-            }
-          ]
-        }
+        "language_dependence": "Extensive use of text - massive conversion needed to be playable"
       },
       {
         "bgg_id": 209728,
@@ -5949,31 +4269,7 @@
           "comment": "P 1-4"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Extensive use of text - massive conversion needed to be playable",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 2
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 1
-            }
-          ]
-        }
+        "language_dependence": "Extensive use of text - massive conversion needed to be playable"
       },
       {
         "bgg_id": 382510,
@@ -6027,31 +4323,7 @@
           "comment": "P 1-4"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Extensive use of text - massive conversion needed to be playable",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 1
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "Extensive use of text - massive conversion needed to be playable"
       },
       {
         "bgg_id": 414602,
@@ -6105,31 +4377,7 @@
           "comment": "P 1-4"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "No necessary in-game text",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "No necessary in-game text"
       },
       {
         "bgg_id": 377055,
@@ -6195,31 +4443,7 @@
             "players": []
           }
         ],
-        "language_dependence": {
-          "level": "No necessary in-game text",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "No necessary in-game text"
       },
       {
         "bgg_id": 383607,
@@ -6279,31 +4503,7 @@
           "comment": "P 1-4"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "No necessary in-game text",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 9
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "No necessary in-game text"
       },
       {
         "bgg_id": 415314,
@@ -6357,31 +4557,7 @@
           "comment": "P 1-4"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "No necessary in-game text",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 1
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "No necessary in-game text"
       },
       {
         "bgg_id": 281549,
@@ -6447,31 +4623,7 @@
           "comment": "P 2-4"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Moderate in-game text - needs crib sheet or paste ups",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 1
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 7
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 3
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "Moderate in-game text - needs crib sheet or paste ups"
       },
       {
         "bgg_id": 367966,
@@ -6525,31 +4677,7 @@
         },
         "private_info": null,
         "plays": [],
-        "language_dependence": {
-          "level": "Some necessary text - easily memorized or small crib sheet",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 11
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 5
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 2
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "Some necessary text - easily memorized or small crib sheet"
       },
       {
         "bgg_id": 394106,
@@ -6615,31 +4743,7 @@
           "comment": "P 1-4"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Extensive use of text - massive conversion needed to be playable",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 5
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "Extensive use of text - massive conversion needed to be playable"
       },
       {
         "bgg_id": 295609,
@@ -6693,31 +4797,7 @@
           "comment": "P 2-6"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Some necessary text - easily memorized or small crib sheet",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 1
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 1
-            }
-          ]
-        }
+        "language_dependence": "Some necessary text - easily memorized or small crib sheet"
       },
       {
         "bgg_id": 391137,
@@ -6771,31 +4851,7 @@
         },
         "private_info": null,
         "plays": [],
-        "language_dependence": {
-          "level": "Moderate in-game text - needs crib sheet or paste ups",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 1
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 12
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 1
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "Moderate in-game text - needs crib sheet or paste ups"
       },
       {
         "bgg_id": 125153,
@@ -6855,31 +4911,7 @@
           "comment": "P 1-4"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "No necessary in-game text",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 29
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 1
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "No necessary in-game text"
       },
       {
         "bgg_id": 393672,
@@ -6939,31 +4971,7 @@
           "comment": "P 1"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Extensive use of text - massive conversion needed to be playable",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 5
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 3
-            }
-          ]
-        }
+        "language_dependence": "Extensive use of text - massive conversion needed to be playable"
       },
       {
         "bgg_id": 366013,
@@ -7023,31 +5031,7 @@
           "comment": "P 1-6"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "No necessary in-game text",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 37
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 17
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 2
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "No necessary in-game text"
       },
       {
         "bgg_id": 321608,
@@ -7107,31 +5091,7 @@
           "comment": "P 2-4"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Extensive use of text - massive conversion needed to be playable",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 3
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 17
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 1
-            }
-          ]
-        }
+        "language_dependence": "Extensive use of text - massive conversion needed to be playable"
       },
       {
         "bgg_id": 404431,
@@ -7185,31 +5145,7 @@
         },
         "private_info": null,
         "plays": [],
-        "language_dependence": {
-          "level": "No necessary in-game text",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 9
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "No necessary in-game text"
       },
       {
         "bgg_id": 318977,
@@ -7269,31 +5205,7 @@
           "comment": "P 1-4"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Moderate in-game text - needs crib sheet or paste ups",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 14
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 4
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "Moderate in-game text - needs crib sheet or paste ups"
       },
       {
         "bgg_id": 206084,
@@ -7353,31 +5265,7 @@
           "comment": "P 1-2"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Moderate in-game text - needs crib sheet or paste ups",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 1
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 1
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 2
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "Moderate in-game text - needs crib sheet or paste ups"
       },
       {
         "bgg_id": 156336,
@@ -7443,31 +5331,7 @@
           "comment": "P 1-2\n"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "No necessary in-game text",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 15
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "No necessary in-game text"
       },
       {
         "bgg_id": 161880,
@@ -7527,31 +5391,7 @@
           "comment": "P 2-4"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Moderate in-game text - needs crib sheet or paste ups",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 1
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "Moderate in-game text - needs crib sheet or paste ups"
       },
       {
         "bgg_id": 12,
@@ -7611,31 +5451,7 @@
           "comment": "P 2-5"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "No necessary in-game text",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 85
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 7
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "No necessary in-game text"
       },
       {
         "bgg_id": 237182,
@@ -7701,31 +5517,7 @@
           "comment": "P 2-4"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Extensive use of text - massive conversion needed to be playable",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 1
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 23
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 52
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 5
-            }
-          ]
-        }
+        "language_dependence": "Extensive use of text - massive conversion needed to be playable"
       },
       {
         "bgg_id": 338960,
@@ -7779,31 +5571,7 @@
         },
         "private_info": null,
         "plays": [],
-        "language_dependence": {
-          "level": "Extensive use of text - massive conversion needed to be playable",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 1
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 1
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 11
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 2
-            }
-          ]
-        }
+        "language_dependence": "Extensive use of text - massive conversion needed to be playable"
       },
       {
         "bgg_id": 187645,
@@ -7863,31 +5631,7 @@
           "comment": "P 2–4"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Extensive use of text - massive conversion needed to be playable",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 6
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 36
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 1
-            }
-          ]
-        }
+        "language_dependence": "Extensive use of text - massive conversion needed to be playable"
       },
       {
         "bgg_id": 342070,
@@ -7947,31 +5691,7 @@
           "comment": "P 2-4"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Moderate in-game text - needs crib sheet or paste ups",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 6
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 7
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "Moderate in-game text - needs crib sheet or paste ups"
       }
     ],
     "priority_4_thinking_about": [
@@ -8033,31 +5753,7 @@
           "comment": "P 2-5"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "No necessary in-game text",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 6
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "No necessary in-game text"
       },
       {
         "bgg_id": 357726,
@@ -8123,31 +5819,7 @@
           "comment": "P 1-4"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Moderate in-game text - needs crib sheet or paste ups",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 2
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 1
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 1
-            }
-          ]
-        }
+        "language_dependence": "Moderate in-game text - needs crib sheet or paste ups"
       },
       {
         "bgg_id": 356768,
@@ -8201,31 +5873,7 @@
           "comment": "P 1-4"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Moderate in-game text - needs crib sheet or paste ups",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 1
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 2
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "Moderate in-game text - needs crib sheet or paste ups"
       },
       {
         "bgg_id": 284936,
@@ -8291,31 +5939,7 @@
           "comment": "P 1-4\nGuay para Toni"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "No necessary in-game text",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 9
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "No necessary in-game text"
       },
       {
         "bgg_id": 290236,
@@ -8375,31 +5999,7 @@
           "comment": "P 1-5"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Some necessary text - easily memorized or small crib sheet",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 6
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 16
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "Some necessary text - easily memorized or small crib sheet"
       },
       {
         "bgg_id": 338763,
@@ -8453,31 +6053,7 @@
           "comment": "P 1"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "No necessary in-game text",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "No necessary in-game text"
       },
       {
         "bgg_id": 443306,
@@ -8537,31 +6113,7 @@
           "comment": "P 1-4"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Moderate in-game text - needs crib sheet or paste ups",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 2
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 1
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "Moderate in-game text - needs crib sheet or paste ups"
       },
       {
         "bgg_id": 320135,
@@ -8615,31 +6167,7 @@
           "comment": "P 3-6"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "No necessary in-game text",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "No necessary in-game text"
       },
       {
         "bgg_id": 385720,
@@ -8699,31 +6227,7 @@
           "comment": "P 1"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "No necessary in-game text",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "No necessary in-game text"
       },
       {
         "bgg_id": 462941,
@@ -8777,31 +6281,7 @@
           "comment": "P 1-4"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "No necessary in-game text",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "No necessary in-game text"
       },
       {
         "bgg_id": 201825,
@@ -8861,31 +6341,7 @@
           "comment": "P 1-4"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Moderate in-game text - needs crib sheet or paste ups",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 1
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 6
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 6
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 1
-            }
-          ]
-        }
+        "language_dependence": "Moderate in-game text - needs crib sheet or paste ups"
       },
       {
         "bgg_id": 216600,
@@ -8951,31 +6407,7 @@
           "comment": "P 1-5"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Some necessary text - easily memorized or small crib sheet",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 12
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 4
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "Some necessary text - easily memorized or small crib sheet"
       },
       {
         "bgg_id": 317288,
@@ -9029,31 +6461,7 @@
           "comment": "P 2-5"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Moderate in-game text - needs crib sheet or paste ups",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 2
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "Moderate in-game text - needs crib sheet or paste ups"
       },
       {
         "bgg_id": 336986,
@@ -9119,31 +6527,7 @@
           "comment": "P 1-5"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Moderate in-game text - needs crib sheet or paste ups",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 17
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "Moderate in-game text - needs crib sheet or paste ups"
       },
       {
         "bgg_id": 37046,
@@ -9209,31 +6593,7 @@
           "comment": "P 1-4"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "No necessary in-game text",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 80
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 8
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 1
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "No necessary in-game text"
       },
       {
         "bgg_id": 174430,
@@ -9299,31 +6659,7 @@
           "comment": "P 1-4"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Extensive use of text - massive conversion needed to be playable",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 1
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 2
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 48
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 21
-            }
-          ]
-        }
+        "language_dependence": "Extensive use of text - massive conversion needed to be playable"
       },
       {
         "bgg_id": 903,
@@ -9383,31 +6719,7 @@
           "comment": "P 2-4"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "No necessary in-game text",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 14
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "No necessary in-game text"
       },
       {
         "bgg_id": 98778,
@@ -9467,31 +6779,7 @@
           "comment": "P 2-5"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "No necessary in-game text",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 123
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "No necessary in-game text"
       },
       {
         "bgg_id": 195314,
@@ -9551,31 +6839,7 @@
           "comment": "P 1-4"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "No necessary in-game text",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 11
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 1
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "No necessary in-game text"
       },
       {
         "bgg_id": 328586,
@@ -9629,31 +6893,7 @@
           "comment": "P 2-4"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "No necessary in-game text",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "No necessary in-game text"
       },
       {
         "bgg_id": 394897,
@@ -9707,31 +6947,7 @@
           "comment": "P 1-4"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Extensive use of text - massive conversion needed to be playable",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 1
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "Extensive use of text - massive conversion needed to be playable"
       },
       {
         "bgg_id": 347305,
@@ -9791,31 +7007,7 @@
           "comment": "P 1-4"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "No necessary in-game text",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 7
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 1
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 1
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "No necessary in-game text"
       },
       {
         "bgg_id": 396251,
@@ -9881,31 +7073,7 @@
           "comment": "P 1-4"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Some necessary text - easily memorized or small crib sheet",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 1
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "Some necessary text - easily memorized or small crib sheet"
       },
       {
         "bgg_id": 377793,
@@ -9971,31 +7139,7 @@
           "comment": "P 2"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "No necessary in-game text",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 1
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 1
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 1
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 1
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "No necessary in-game text"
       },
       {
         "bgg_id": 297129,
@@ -10055,31 +7199,7 @@
           "comment": "P 2"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "No necessary in-game text",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 9
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "No necessary in-game text"
       },
       {
         "bgg_id": 73761,
@@ -10145,31 +7265,7 @@
           "comment": "P 1-5"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "No necessary in-game text",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 63
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "No necessary in-game text"
       },
       {
         "bgg_id": 159581,
@@ -10229,31 +7325,7 @@
           "comment": "P 2-6"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "No necessary in-game text",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 5
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "No necessary in-game text"
       },
       {
         "bgg_id": 355801,
@@ -10307,31 +7379,7 @@
           "comment": "P 2"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "No necessary in-game text",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 12
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "No necessary in-game text"
       },
       {
         "bgg_id": 423270,
@@ -10385,31 +7433,7 @@
           "comment": "P 1-6"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Moderate in-game text - needs crib sheet or paste ups",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 1
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "Moderate in-game text - needs crib sheet or paste ups"
       },
       {
         "bgg_id": 279869,
@@ -10469,31 +7493,7 @@
           "comment": "P 2-5"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Some necessary text - easily memorized or small crib sheet",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 2
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 1
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "Some necessary text - easily memorized or small crib sheet"
       },
       {
         "bgg_id": 194879,
@@ -10553,31 +7553,7 @@
           "comment": "P 2-7"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Moderate in-game text - needs crib sheet or paste ups",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 1
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 18
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 2
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 1
-            }
-          ]
-        }
+        "language_dependence": "Moderate in-game text - needs crib sheet or paste ups"
       },
       {
         "bgg_id": 251661,
@@ -10637,31 +7613,7 @@
           "comment": "P 1-4"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Unplayable in another language",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 3
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 6
-            }
-          ]
-        }
+        "language_dependence": "Unplayable in another language"
       },
       {
         "bgg_id": 402814,
@@ -10715,31 +7667,7 @@
           "comment": "P 1-6"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Moderate in-game text - needs crib sheet or paste ups",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 1
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "Moderate in-game text - needs crib sheet or paste ups"
       },
       {
         "bgg_id": 341166,
@@ -10805,31 +7733,7 @@
           "comment": "P 1-4"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Moderate in-game text - needs crib sheet or paste ups",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 1
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 1
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 1
-            }
-          ]
-        }
+        "language_dependence": "Moderate in-game text - needs crib sheet or paste ups"
       },
       {
         "bgg_id": 330478,
@@ -10883,31 +7787,7 @@
           "comment": "P 2-4"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "No necessary in-game text",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "No necessary in-game text"
       },
       {
         "bgg_id": 402106,
@@ -10961,31 +7841,7 @@
           "comment": "P 1-5"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "No necessary in-game text",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 4
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "No necessary in-game text"
       },
       {
         "bgg_id": 260180,
@@ -11051,31 +7907,7 @@
           "comment": "P 1-4"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "No necessary in-game text",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 19
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "No necessary in-game text"
       },
       {
         "bgg_id": 256680,
@@ -11135,31 +7967,7 @@
           "comment": "P 1-4"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Extensive use of text - massive conversion needed to be playable",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 1
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 1
-            }
-          ]
-        }
+        "language_dependence": "Extensive use of text - massive conversion needed to be playable"
       },
       {
         "bgg_id": 367220,
@@ -11219,31 +8027,7 @@
           "comment": "P 2-4"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "No necessary in-game text",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 35
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "No necessary in-game text"
       },
       {
         "bgg_id": 387538,
@@ -11297,31 +8081,7 @@
           "comment": "P 1-4"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Unplayable in another language",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 1
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 2
-            }
-          ]
-        }
+        "language_dependence": "Unplayable in another language"
       },
       {
         "bgg_id": 429765,
@@ -11375,31 +8135,7 @@
           "comment": "P 2-4"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "No necessary in-game text",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 1
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 1
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 1
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "No necessary in-game text"
       },
       {
         "bgg_id": 271754,
@@ -11459,31 +8195,7 @@
           "comment": "P 1-2"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Unplayable in another language",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 1
-            }
-          ]
-        }
+        "language_dependence": "Unplayable in another language"
       },
       {
         "bgg_id": 223770,
@@ -11543,31 +8255,7 @@
           "comment": "P 3-7"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "No necessary in-game text",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 7
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "No necessary in-game text"
       },
       {
         "bgg_id": 201186,
@@ -11633,31 +8321,7 @@
           "comment": "P 1-6"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Extensive use of text - massive conversion needed to be playable",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 1
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 2
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "Extensive use of text - massive conversion needed to be playable"
       },
       {
         "bgg_id": 188920,
@@ -11717,31 +8381,7 @@
           "comment": "P 1-6\n(Originalmente era un videojuego - está en Steam)"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Unplayable in another language",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 1
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 7
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 25
-            }
-          ]
-        }
+        "language_dependence": "Unplayable in another language"
       },
       {
         "bgg_id": 163967,
@@ -11801,31 +8441,7 @@
           "comment": "P 1-5"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Moderate in-game text - needs crib sheet or paste ups",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 3
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 24
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 5
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 1
-            }
-          ]
-        }
+        "language_dependence": "Moderate in-game text - needs crib sheet or paste ups"
       },
       {
         "bgg_id": 402310,
@@ -11879,31 +8495,7 @@
           "comment": "P 1-5"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "No necessary in-game text",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 1
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "No necessary in-game text"
       },
       {
         "bgg_id": 337627,
@@ -11963,31 +8555,7 @@
           "comment": "P 1-4"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Moderate in-game text - needs crib sheet or paste ups",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 1
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 3
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 7
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "Moderate in-game text - needs crib sheet or paste ups"
       },
       {
         "bgg_id": 237179,
@@ -12047,31 +8615,7 @@
           "comment": "P 2-4"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "No necessary in-game text",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 9
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "No necessary in-game text"
       },
       {
         "bgg_id": 357873,
@@ -12125,31 +8669,7 @@
         },
         "private_info": null,
         "plays": [],
-        "language_dependence": {
-          "level": "Extensive use of text - massive conversion needed to be playable",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 1
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 4
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "Extensive use of text - massive conversion needed to be playable"
       },
       {
         "bgg_id": 427886,
@@ -12197,31 +8717,7 @@
         },
         "private_info": null,
         "plays": [],
-        "language_dependence": {
-          "level": "No necessary in-game text",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 1
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "No necessary in-game text"
       },
       {
         "bgg_id": 180263,
@@ -12275,31 +8771,7 @@
         },
         "private_info": null,
         "plays": [],
-        "language_dependence": {
-          "level": "Extensive use of text - massive conversion needed to be playable",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 1
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 45
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 8
-            }
-          ]
-        }
+        "language_dependence": "Extensive use of text - massive conversion needed to be playable"
       },
       {
         "bgg_id": 251247,
@@ -12353,31 +8825,7 @@
         },
         "private_info": null,
         "plays": [],
-        "language_dependence": {
-          "level": "No necessary in-game text",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 26
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 3
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "No necessary in-game text"
       },
       {
         "bgg_id": 199792,
@@ -12437,31 +8885,7 @@
         },
         "private_info": null,
         "plays": [],
-        "language_dependence": {
-          "level": "Extensive use of text - massive conversion needed to be playable",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 10
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 41
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 2
-            }
-          ]
-        }
+        "language_dependence": "Extensive use of text - massive conversion needed to be playable"
       },
       {
         "bgg_id": 332772,
@@ -12515,31 +8939,7 @@
         },
         "private_info": null,
         "plays": [],
-        "language_dependence": {
-          "level": "Some necessary text - easily memorized or small crib sheet",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 7
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 19
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 3
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "Some necessary text - easily memorized or small crib sheet"
       }
     ],
     "priority_5_dont_buy_this": [
@@ -12601,31 +9001,7 @@
           "comment": "P 2-5"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Some necessary text - easily memorized or small crib sheet",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 5
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "Some necessary text - easily memorized or small crib sheet"
       },
       {
         "bgg_id": 263918,
@@ -12685,31 +9061,7 @@
           "comment": "P 1-100"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Some necessary text - easily memorized or small crib sheet",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 6
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 26
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 6
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 1
-            }
-          ]
-        }
+        "language_dependence": "Some necessary text - easily memorized or small crib sheet"
       },
       {
         "bgg_id": 195137,
@@ -12769,31 +9121,7 @@
           "comment": "P 2-5"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "No necessary in-game text",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 2
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 1
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "No necessary in-game text"
       },
       {
         "bgg_id": 100423,
@@ -12853,31 +9181,7 @@
           "comment": "P 1-8"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Some necessary text - easily memorized or small crib sheet",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 48
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 42
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 9
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 1
-            }
-          ]
-        }
+        "language_dependence": "Some necessary text - easily memorized or small crib sheet"
       },
       {
         "bgg_id": 338468,
@@ -12937,31 +9241,7 @@
           "comment": "P 1-2"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "Unplayable in another language",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 0
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 4
-            }
-          ]
-        }
+        "language_dependence": "Unplayable in another language"
       },
       {
         "bgg_id": 375651,
@@ -13021,31 +9301,7 @@
           "comment": "P 3-8"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "No necessary in-game text",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 14
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 0
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 0
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "No necessary in-game text"
       },
       {
         "bgg_id": 331787,
@@ -13111,31 +9367,7 @@
           "comment": "P 1-4"
         },
         "plays": [],
-        "language_dependence": {
-          "level": "No necessary in-game text",
-          "votes": [
-            {
-              "value": "No necessary in-game text",
-              "numvotes": 4
-            },
-            {
-              "value": "Some necessary text - easily memorized or small crib sheet",
-              "numvotes": 3
-            },
-            {
-              "value": "Moderate in-game text - needs crib sheet or paste ups",
-              "numvotes": 1
-            },
-            {
-              "value": "Extensive use of text - massive conversion needed to be playable",
-              "numvotes": 0
-            },
-            {
-              "value": "Unplayable in another language",
-              "numvotes": 0
-            }
-          ]
-        }
+        "language_dependence": "No necessary in-game text"
       }
     ],
     "unset": []
@@ -13193,31 +9425,7 @@
         "comment": "P 3-5"
       },
       "plays": [],
-      "language_dependence": {
-        "level": "No necessary in-game text",
-        "votes": [
-          {
-            "value": "No necessary in-game text",
-            "numvotes": 1
-          },
-          {
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": 0
-          },
-          {
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": 0
-          },
-          {
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": 0
-          },
-          {
-            "value": "Unplayable in another language",
-            "numvotes": 0
-          }
-        ]
-      }
+      "language_dependence": "No necessary in-game text"
     },
     {
       "bgg_id": 429431,
@@ -13271,31 +9479,7 @@
         "comment": "P 1-4"
       },
       "plays": [],
-      "language_dependence": {
-        "level": "Extensive use of text - massive conversion needed to be playable",
-        "votes": [
-          {
-            "value": "No necessary in-game text",
-            "numvotes": 0
-          },
-          {
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": 0
-          },
-          {
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": 0
-          },
-          {
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": 1
-          },
-          {
-            "value": "Unplayable in another language",
-            "numvotes": 0
-          }
-        ]
-      }
+      "language_dependence": "Extensive use of text - massive conversion needed to be playable"
     }
   ],
   "previously_owned": [
@@ -13357,31 +9541,7 @@
         "comment": "P 2"
       },
       "plays": [],
-      "language_dependence": {
-        "level": "No necessary in-game text",
-        "votes": [
-          {
-            "value": "No necessary in-game text",
-            "numvotes": 39
-          },
-          {
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": 0
-          },
-          {
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": 0
-          },
-          {
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": 0
-          },
-          {
-            "value": "Unplayable in another language",
-            "numvotes": 0
-          }
-        ]
-      }
+      "language_dependence": "No necessary in-game text"
     },
     {
       "bgg_id": 2397,
@@ -13441,31 +9601,7 @@
         "comment": "P 2"
       },
       "plays": [],
-      "language_dependence": {
-        "level": "No necessary in-game text",
-        "votes": [
-          {
-            "value": "No necessary in-game text",
-            "numvotes": 73
-          },
-          {
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": 0
-          },
-          {
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": 0
-          },
-          {
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": 0
-          },
-          {
-            "value": "Unplayable in another language",
-            "numvotes": 0
-          }
-        ]
-      }
+      "language_dependence": "No necessary in-game text"
     },
     {
       "bgg_id": 2785,
@@ -13525,31 +9661,7 @@
         "comment": "P 2-6"
       },
       "plays": [],
-      "language_dependence": {
-        "level": "No necessary in-game text",
-        "votes": [
-          {
-            "value": "No necessary in-game text",
-            "numvotes": 5
-          },
-          {
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": 1
-          },
-          {
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": 0
-          },
-          {
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": 0
-          },
-          {
-            "value": "Unplayable in another language",
-            "numvotes": 0
-          }
-        ]
-      }
+      "language_dependence": "No necessary in-game text"
     },
     {
       "bgg_id": 1502,
@@ -13609,31 +9721,7 @@
         "comment": "P 2-4"
       },
       "plays": [],
-      "language_dependence": {
-        "level": "Some necessary text - easily memorized or small crib sheet",
-        "votes": [
-          {
-            "value": "No necessary in-game text",
-            "numvotes": 3
-          },
-          {
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": 12
-          },
-          {
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": 0
-          },
-          {
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": 0
-          },
-          {
-            "value": "Unplayable in another language",
-            "numvotes": 1
-          }
-        ]
-      }
+      "language_dependence": "Some necessary text - easily memorized or small crib sheet"
     },
     {
       "bgg_id": 1927,
@@ -13699,31 +9787,7 @@
         "comment": "P 3-6"
       },
       "plays": [],
-      "language_dependence": {
-        "level": "Extensive use of text - massive conversion needed to be playable",
-        "votes": [
-          {
-            "value": "No necessary in-game text",
-            "numvotes": 0
-          },
-          {
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": 0
-          },
-          {
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": 7
-          },
-          {
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": 103
-          },
-          {
-            "value": "Unplayable in another language",
-            "numvotes": 26
-          }
-        ]
-      }
+      "language_dependence": "Extensive use of text - massive conversion needed to be playable"
     },
     {
       "bgg_id": 2136,
@@ -13789,31 +9853,7 @@
         "comment": "P 2-6"
       },
       "plays": [],
-      "language_dependence": {
-        "level": "No necessary in-game text",
-        "votes": [
-          {
-            "value": "No necessary in-game text",
-            "numvotes": 28
-          },
-          {
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": 1
-          },
-          {
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": 0
-          },
-          {
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": 0
-          },
-          {
-            "value": "Unplayable in another language",
-            "numvotes": 0
-          }
-        ]
-      }
+      "language_dependence": "No necessary in-game text"
     },
     {
       "bgg_id": 23010,
@@ -13879,31 +9919,7 @@
         "comment": "P 2-6"
       },
       "plays": [],
-      "language_dependence": {
-        "level": "Some necessary text - easily memorized or small crib sheet",
-        "votes": [
-          {
-            "value": "No necessary in-game text",
-            "numvotes": 0
-          },
-          {
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": 1
-          },
-          {
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": 0
-          },
-          {
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": 0
-          },
-          {
-            "value": "Unplayable in another language",
-            "numvotes": 0
-          }
-        ]
-      }
+      "language_dependence": "Some necessary text - easily memorized or small crib sheet"
     },
     {
       "bgg_id": 2952,
@@ -13963,31 +9979,7 @@
         "comment": "P 2-24"
       },
       "plays": [],
-      "language_dependence": {
-        "level": "Unplayable in another language",
-        "votes": [
-          {
-            "value": "No necessary in-game text",
-            "numvotes": 0
-          },
-          {
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": 0
-          },
-          {
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": 0
-          },
-          {
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": 2
-          },
-          {
-            "value": "Unplayable in another language",
-            "numvotes": 31
-          }
-        ]
-      }
+      "language_dependence": "Unplayable in another language"
     }
   ],
   "want_to_play": [],
@@ -14050,31 +10042,7 @@
           "players": []
         }
       ],
-      "language_dependence": {
-        "level": "Unplayable in another language",
-        "votes": [
-          {
-            "value": "No necessary in-game text",
-            "numvotes": 0
-          },
-          {
-            "value": "Some necessary text - easily memorized or small crib sheet",
-            "numvotes": 0
-          },
-          {
-            "value": "Moderate in-game text - needs crib sheet or paste ups",
-            "numvotes": 0
-          },
-          {
-            "value": "Extensive use of text - massive conversion needed to be playable",
-            "numvotes": 0
-          },
-          {
-            "value": "Unplayable in another language",
-            "numvotes": 1
-          }
-        ]
-      }
+      "language_dependence": "Unplayable in another language"
     }
   ],
   "for_trade": []

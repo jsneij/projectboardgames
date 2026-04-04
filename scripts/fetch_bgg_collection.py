@@ -304,25 +304,19 @@ def fetch_thing_data(bgg_ids: list, token: str, session: requests.Session = None
                         val = wt_el.get("value")
                         data["avg_weight"] = round(float(val), 2) if val and float(val) != 0 else None
 
-            # Parse language_dependence poll
+            # Parse language_dependence poll — store only the winning level
             for poll in item.findall("poll"):
                 if poll.get("name") == "language_dependence":
-                    votes = []
                     best_val, best_count = None, -1
                     results_el = poll.find("results")
                     if results_el is not None:
                         for r in results_el.findall("result"):
-                            v = r.get("value", "")
                             n = int(r.get("numvotes", 0))
-                            votes.append({"value": v, "numvotes": n})
                             if n > best_count:
                                 best_count = n
-                                best_val = v
-                    if votes:
-                        data["language_dependence"] = {
-                            "level": best_val,
-                            "votes": votes,
-                        }
+                                best_val = r.get("value", "")
+                    if best_val:
+                        data["language_dependence"] = best_val
                     break
 
             results[bgg_id] = data
@@ -888,7 +882,7 @@ def main():
             missing_wt = [bid for bid, g in existing_index.items()
                           if not g.get("stats", {}).get("avg_weight")]
             missing_lang = [bid for bid, g in existing_index.items()
-                            if not g.get("language_dependence")]
+                            if not isinstance(g.get("language_dependence"), str)]
             needs_thing = bool(missing_wt or missing_lang)
 
             if not play_changed and not needs_thing:
@@ -1033,7 +1027,7 @@ def main():
     # Fetch weight + language dependence from /thing endpoint
     needs_thing = [g["bgg_id"] for g in games
                    if not g.get("stats", {}).get("avg_weight")
-                   or not g.get("language_dependence")]
+                   or not isinstance(g.get("language_dependence"), str)]
     if needs_thing:
         print(f"\n  Fetching /thing data for {len(needs_thing)} games "
               f"({len(needs_thing) // THING_BATCH_SIZE + 1} batches)...")
