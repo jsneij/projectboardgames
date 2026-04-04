@@ -857,11 +857,14 @@ nav::-webkit-scrollbar { display: none; }
 <div id="app-header">
   <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px">
     <h1 style="margin-bottom:0">BGG Dashboard &mdash; <span id="username-label">jsneij</span></h1>
+    <div style="display:flex;align-items:center;gap:16px">
+    <span id="deploy-ts" style="font-size:11px;color:var(--text3);font-family:'JetBrains Mono',monospace"><!-- __DEPLOY_TS__ --></span>
     <a href="https://github.com/jsneij/projectboardgames/actions/workflows/fetch-bgg.yml"
        target="_blank" rel="noopener" class="fetch-btn" title="Run or view the BGG data fetch workflow on GitHub">
       <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" style="vertical-align:-2px;margin-right:5px"><path d="M8 0a8 8 0 100 16A8 8 0 008 0zm3.78 4.22a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06 0L4.22 7.28a.75.75 0 011.06-1.06L7 7.94l3.72-3.72a.75.75 0 011.06 0z"/></svg>
       Fetch BGG Data
     </a>
+    </div>
   </div>
   <nav>
     <button class="tab-btn active" data-tab="table">Full Table</button>
