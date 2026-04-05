@@ -976,7 +976,7 @@ nav::-webkit-scrollbar { display: none; }
             <th>Type</th>
             <th>M</th><th style="color:var(--red)">T</th><th>G</th><th>F</th><th>Ar</th>
             <th>GS</th><th style="color:var(--amber)">IS</th>
-            <th>Wt</th><th>BGG#</th><th>BGG★</th><th>Plays</th><th>Feeling</th>
+            <th>Wt</th><th title="Language Dependence">🌐</th><th>BGG#</th><th>BGG★</th><th>Plays</th><th>Feeling</th>
           </tr>
         </thead>
         <tbody id="table-body"></tbody>
@@ -1152,20 +1152,36 @@ function typeIcon(type) {
 }
 
 // Language dependence
+const LANG_LEVELS = [
+  'No necessary in-game text',
+  'Some necessary text - easily memorized or small crib sheet',
+  'Moderate in-game text - needs crib sheet or paste ups',
+  'Extensive use of text - massive conversion needed to be playable',
+  'Unplayable in another language'
+];
+const LANG_COLORS = ['#22c55e', '#3b82f6', '#eab308', '#f97316', '#ef4444'];
+
+function langLevel(g) {
+  const ld = g.language_dependence;
+  if (!ld) return -1;
+  const level = typeof ld === 'string' ? ld : ld.level;
+  return LANG_LEVELS.indexOf(level || '');
+}
+
+function langDot(g) {
+  const idx = langLevel(g);
+  if (idx < 0) return '<span style="color:var(--text3)">—</span>';
+  return `<span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${LANG_COLORS[idx]}" title="${LANG_LEVELS[idx]}"></span>`;
+}
+
 function langDepHtml(g) {
   const ld = g.language_dependence;
   if (!ld) return '';
   // Handle both string (new) and object (legacy) formats
   const level = typeof ld === 'string' ? ld : ld.level;
   if (!level) return '';
-  const levels = [
-    'No necessary in-game text',
-    'Some necessary text - easily memorized or small crib sheet',
-    'Moderate in-game text - needs crib sheet or paste ups',
-    'Extensive use of text - massive conversion needed to be playable',
-    'Unplayable in another language'
-  ];
-  const colors = ['#22c55e', '#3b82f6', '#eab308', '#f97316', '#ef4444'];
+  const levels = LANG_LEVELS;
+  const colors = LANG_COLORS;
   const idx = levels.indexOf(level);
   const col = idx >= 0 ? colors[idx] : 'var(--text2)';
   const dots = colors.map((c, i) => {
@@ -1563,6 +1579,7 @@ function renderTable(state) {
       <td class="mono">${g.GS !== null ? g.GS : '—'}</td>
       <td class="mono" style="color:${g.IS !== null ? isColor(g.IS) : 'var(--text3)'}"><strong>${g.IS !== null ? fmt1(g.IS) : '—'}</strong></td>
       <td class="mono" style="color:var(--text2)">${g.weight ? g.weight.toFixed(2) : '—'}</td>
+      <td style="text-align:center">${langDot(g)}</td>
       <td class="mono" style="color:var(--text3)">${fmtRank(g.bggRank)}</td>
       <td class="mono" style="color:var(--text2)">${fmtBGGRating(g.bggAvg)}</td>
       <td class="mono">${g.num_plays || 0}</td>
@@ -1572,7 +1589,7 @@ function renderTable(state) {
     expandRow.className = 'expand-row';
     expandRow.style.display = 'none';
     const td = document.createElement('td');
-    td.colSpan = 16;
+    td.colSpan = 17;
     const mechsHtml = (g.mechs || []).map(m => `<span class="mech-tag">${m}</span>`).join('');
     const desc = g.sc.description || '';
     const just = g.sc.justification || '';
