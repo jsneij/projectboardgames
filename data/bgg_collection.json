@@ -1,7 +1,7 @@
 {
   "metadata": {
     "username": "jsneij",
-    "fetched_at": "2026-04-04T08:42:14.767505+00:00",
+    "fetched_at": "2026-04-05T06:19:19.475495+00:00",
     "total_items": 168,
     "counts": {
       "owned": 40,
@@ -608,7 +608,7 @@
         "comment": "P 4-30"
       },
       "plays": [],
-      "language_dependence": "No necessary in-game text"
+      "language_dependence": "Extensive use of text - massive conversion needed to be playable"
     },
     {
       "bgg_id": 105593,
@@ -8807,7 +8807,7 @@
           "bayesaverage": 7.83725,
           "stddev": 1.44435,
           "median": 0.0,
-          "avg_weight": 4.11,
+          "avg_weight": 4.12,
           "ranks": [
             {
               "type": "subtype",
