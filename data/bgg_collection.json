@@ -1,15 +1,15 @@
 {
   "metadata": {
     "username": "jsneij",
-    "fetched_at": "2026-05-31T06:17:21.244874+00:00",
-    "total_items": 168,
+    "fetched_at": "2026-05-31T20:24:41.677882+00:00",
+    "total_items": 171,
     "counts": {
       "owned": 40,
-      "wishlist_total": 117,
+      "wishlist_total": 120,
       "wishlist_p1": 4,
       "wishlist_p2": 24,
-      "wishlist_p3": 27,
-      "wishlist_p4": 55,
+      "wishlist_p3": 29,
+      "wishlist_p4": 56,
       "wishlist_p5": 7,
       "preordered": 2,
       "previously_owned": 8
@@ -5692,6 +5692,120 @@
         },
         "plays": [],
         "language_dependence": "Moderate in-game text - needs crib sheet or paste ups"
+      },
+      {
+        "bgg_id": 397931,
+        "type": "boardgame",
+        "collection_id": 146045715,
+        "name": "Deep Regrets",
+        "year": 2025,
+        "image": "https://cf.geekdo-images.com/WUvpRzsNSZgq1gyvjiQcWw__original/img/wXnREOcKLkysXorXqRQXKslz-iI=/0x0/filters:format(jpeg)/pic8156363.jpg",
+        "thumbnail": "https://cf.geekdo-images.com/WUvpRzsNSZgq1gyvjiQcWw__small/img/XJyLMXaTHUGyAv7n-G0DpR1W1SU=/fit-in/200x150/filters:strip_icc()/pic8156363.jpg",
+        "status": {
+          "own": false,
+          "previously_owned": false,
+          "for_trade": false,
+          "want": false,
+          "want_to_play": false,
+          "want_to_buy": false,
+          "wishlist": true,
+          "preordered": false,
+          "last_modified": "2026-05-31 15:21:25"
+        },
+        "wishlist_priority": 3,
+        "num_plays": 0,
+        "comment": null,
+        "stats": {
+          "min_players": 1,
+          "max_players": 5,
+          "min_playtime": 30,
+          "max_playtime": 150,
+          "playing_time": 150,
+          "user_rating": null,
+          "usersrated": 3580.0,
+          "average": 7.31688,
+          "bayesaverage": 6.48036,
+          "stddev": 1.59906,
+          "median": 0.0,
+          "avg_weight": 2.32,
+          "ranks": [
+            {
+              "type": "subtype",
+              "name": "boardgame",
+              "friendly_name": "Board Game Rank",
+              "value": 1374
+            },
+            {
+              "type": "family",
+              "name": "thematic",
+              "friendly_name": "Thematic Rank",
+              "value": 362
+            },
+            {
+              "type": "family",
+              "name": "familygames",
+              "friendly_name": "Family Game Rank",
+              "value": 418
+            }
+          ]
+        },
+        "private_info": null,
+        "plays": [],
+        "language_dependence": "Moderate in-game text - needs crib sheet or paste ups"
+      },
+      {
+        "bgg_id": 400366,
+        "type": "boardgame",
+        "collection_id": 146045757,
+        "name": "Wondrous Creatures",
+        "year": 2024,
+        "image": "https://cf.geekdo-images.com/3ue_3La0WYopTSDER3shUA__original/img/fm8i0N9fCQRGqNHgk0jh0gk01Ww=/0x0/filters:format(jpeg)/pic8389014.jpg",
+        "thumbnail": "https://cf.geekdo-images.com/3ue_3La0WYopTSDER3shUA__small/img/4SreytxNoZL435EkTriKB08W5W0=/fit-in/200x150/filters:strip_icc()/pic8389014.jpg",
+        "status": {
+          "own": false,
+          "previously_owned": false,
+          "for_trade": false,
+          "want": false,
+          "want_to_play": false,
+          "want_to_buy": false,
+          "wishlist": true,
+          "preordered": false,
+          "last_modified": "2026-05-31 15:22:20"
+        },
+        "wishlist_priority": 3,
+        "num_plays": 0,
+        "comment": null,
+        "stats": {
+          "min_players": 1,
+          "max_players": 4,
+          "min_playtime": 40,
+          "max_playtime": 80,
+          "playing_time": 80,
+          "user_rating": null,
+          "usersrated": 5894.0,
+          "average": 8.05674,
+          "bayesaverage": 7.28135,
+          "stddev": 1.18266,
+          "median": 0.0,
+          "avg_weight": 3.03,
+          "ranks": [
+            {
+              "type": "subtype",
+              "name": "boardgame",
+              "friendly_name": "Board Game Rank",
+              "value": 247
+            },
+            {
+              "type": "family",
+              "name": "strategygames",
+              "friendly_name": "Strategy Game Rank",
+              "value": 145
+            }
+          ]
+        },
+        "private_info": null,
+        "plays": [],
+        "language_dependence": "Moderate in-game text - needs crib sheet or paste ups"
       }
     ],
     "priority_4_thinking_about": [
@@ -8940,6 +9054,66 @@
         "private_info": null,
         "plays": [],
         "language_dependence": "Some necessary text - easily memorized or small crib sheet"
+      },
+      {
+        "bgg_id": 454103,
+        "type": "boardgame",
+        "collection_id": 146045610,
+        "name": "Magical Athlete",
+        "year": 2025,
+        "image": "https://cf.geekdo-images.com/1uW8t9AkuqOF0xjv_sXKgw__original/img/iBRrCDdqyVY1ckqWIjo0xQ_k70A=/0x0/filters:format(png)/pic9106864.png",
+        "thumbnail": "https://cf.geekdo-images.com/1uW8t9AkuqOF0xjv_sXKgw__small/img/tWEmoT1EaoYUpbwrTGCLMHaaZGs=/fit-in/200x150/filters:strip_icc()/pic9106864.png",
+        "status": {
+          "own": false,
+          "previously_owned": false,
+          "for_trade": false,
+          "want": false,
+          "want_to_play": false,
+          "want_to_buy": false,
+          "wishlist": true,
+          "preordered": false,
+          "last_modified": "2026-05-31 15:18:17"
+        },
+        "wishlist_priority": 4,
+        "num_plays": 0,
+        "comment": null,
+        "stats": {
+          "min_players": 2,
+          "max_players": 6,
+          "min_playtime": 30,
+          "max_playtime": 30,
+          "playing_time": 30,
+          "user_rating": null,
+          "usersrated": 5049.0,
+          "average": 7.84462,
+          "bayesaverage": 7.03204,
+          "stddev": 1.5515,
+          "median": 0.0,
+          "avg_weight": 1.15,
+          "ranks": [
+            {
+              "type": "subtype",
+              "name": "boardgame",
+              "friendly_name": "Board Game Rank",
+              "value": 465
+            },
+            {
+              "type": "family",
+              "name": "partygames",
+              "friendly_name": "Party Game Rank",
+              "value": 10
+            },
+            {
+              "type": "family",
+              "name": "familygames",
+              "friendly_name": "Family Game Rank",
+              "value": 77
+            }
+          ]
+        },
+        "private_info": null,
+        "plays": [],
+        "language_dependence": "Moderate in-game text - needs crib sheet or paste ups"
       }
     ],
     "priority_5_dont_buy_this": [
