@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-05-31T20:24:41.677882+00:00",
+  "fetched_at": "2026-05-31T20:50:34.396340+00:00",
   "counts": {
-    "owned": 40,
+    "owned": 43,
     "wishlist_total": 120,
     "wishlist_p1": 4,
     "wishlist_p2": 24,
@@ -1078,6 +1078,26 @@
       "acquisition_date": null,
       "play_comments": {}
     },
+    "397931": {
+      "name": "Deep Regrets",
+      "num_plays": 0,
+      "category": "owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "400366": {
+      "name": "Wondrous Creatures",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 3,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
     "400205": {
       "name": "5 Towers",
       "num_plays": 0,
@@ -1628,6 +1648,16 @@
       "acquisition_date": null,
       "play_comments": {}
     },
+    "454103": {
+      "name": "Magical Athlete",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 4,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
     "214396": {
       "name": "Campy Creatures",
       "num_plays": 0,
@@ -1698,28 +1728,28 @@
       "acquisition_date": null,
       "play_comments": {}
     },
-    "397931": {
-      "name": "Deep Regrets",
+    "421471": {
+      "name": "Deep Regrets: Lamentable Tentacles Mini-Expansion",
       "num_plays": 0,
-      "category": "wishlist",
-      "wishlist_priority": 3,
+      "category": "owned",
+      "wishlist_priority": null,
       "user_rating": null,
       "comment": null,
       "acquisition_date": null,
       "play_comments": {}
     },
-    "454103": {
-      "name": "Magical Athlete",
+    "440640": {
+      "name": "Even Deeper Regrets",
       "num_plays": 0,
-      "category": "wishlist",
-      "wishlist_priority": 4,
+      "category": "owned",
+      "wishlist_priority": null,
       "user_rating": null,
       "comment": null,
       "acquisition_date": null,
       "play_comments": {}
     },
-    "400366": {
-      "name": "Wondrous Creatures",
+    "227935": {
+      "name": "Wonderland's War",
       "num_plays": 0,
       "category": "wishlist",
       "wishlist_priority": 3,

@@ -1,10 +1,10 @@
 {
   "metadata": {
     "username": "jsneij",
-    "fetched_at": "2026-05-31T20:24:41.677882+00:00",
-    "total_items": 171,
+    "fetched_at": "2026-05-31T20:50:34.396340+00:00",
+    "total_items": 174,
     "counts": {
-      "owned": 40,
+      "owned": 43,
       "wishlist_total": 120,
       "wishlist_p1": 4,
       "wishlist_p2": 24,
@@ -2409,6 +2409,162 @@
       "private_info": null,
       "plays": [],
       "language_dependence": "Unplayable in another language"
+    },
+    {
+      "bgg_id": 397931,
+      "type": "boardgame",
+      "collection_id": 146045715,
+      "name": "Deep Regrets",
+      "year": 2025,
+      "image": "https://cf.geekdo-images.com/WUvpRzsNSZgq1gyvjiQcWw__original/img/wXnREOcKLkysXorXqRQXKslz-iI=/0x0/filters:format(jpeg)/pic8156363.jpg",
+      "thumbnail": "https://cf.geekdo-images.com/WUvpRzsNSZgq1gyvjiQcWw__small/img/XJyLMXaTHUGyAv7n-G0DpR1W1SU=/fit-in/200x150/filters:strip_icc()/pic8156363.jpg",
+      "status": {
+        "own": true,
+        "previously_owned": false,
+        "for_trade": false,
+        "want": false,
+        "want_to_play": false,
+        "want_to_buy": false,
+        "wishlist": false,
+        "preordered": false,
+        "last_modified": "2026-05-31 15:48:46"
+      },
+      "wishlist_priority": null,
+      "num_plays": 0,
+      "comment": null,
+      "stats": {
+        "min_players": 1,
+        "max_players": 5,
+        "min_playtime": 30,
+        "max_playtime": 150,
+        "playing_time": 150,
+        "user_rating": null,
+        "usersrated": 3580.0,
+        "average": 7.31688,
+        "bayesaverage": 6.48036,
+        "stddev": 1.59906,
+        "median": 0.0,
+        "avg_weight": 2.32,
+        "ranks": [
+          {
+            "type": "subtype",
+            "name": "boardgame",
+            "friendly_name": "Board Game Rank",
+            "value": 1374
+          },
+          {
+            "type": "family",
+            "name": "thematic",
+            "friendly_name": "Thematic Rank",
+            "value": 362
+          },
+          {
+            "type": "family",
+            "name": "familygames",
+            "friendly_name": "Family Game Rank",
+            "value": 418
+          }
+        ]
+      },
+      "private_info": null,
+      "plays": [],
+      "language_dependence": "Moderate in-game text - needs crib sheet or paste ups"
+    },
+    {
+      "bgg_id": 421471,
+      "type": "boardgame",
+      "collection_id": 146046739,
+      "name": "Deep Regrets: Lamentable Tentacles Mini-Expansion",
+      "year": 2025,
+      "image": "https://cf.geekdo-images.com/fc4q35iV-qG26y3qXcs4wQ__original/img/htwpppXFy6laYh2zBKUhbKKuj8k=/0x0/filters:format(png)/pic8296509.png",
+      "thumbnail": "https://cf.geekdo-images.com/fc4q35iV-qG26y3qXcs4wQ__small/img/_8qAI5ZLKUEgOThUutqt3kkcW5k=/fit-in/200x150/filters:strip_icc()/pic8296509.png",
+      "status": {
+        "own": true,
+        "previously_owned": false,
+        "for_trade": false,
+        "want": false,
+        "want_to_play": false,
+        "want_to_buy": false,
+        "wishlist": false,
+        "preordered": false,
+        "last_modified": "2026-05-31 15:49:58"
+      },
+      "wishlist_priority": null,
+      "num_plays": 0,
+      "comment": null,
+      "stats": {
+        "min_players": 1,
+        "max_players": 5,
+        "min_playtime": 30,
+        "max_playtime": 150,
+        "playing_time": 150,
+        "user_rating": null,
+        "usersrated": 311.0,
+        "average": 7.82546,
+        "bayesaverage": 5.74751,
+        "stddev": 1.22269,
+        "median": 0.0,
+        "avg_weight": 2.29,
+        "ranks": [
+          {
+            "type": "subtype",
+            "name": "boardgame",
+            "friendly_name": "Board Game Rank",
+            "value": null
+          }
+        ]
+      },
+      "private_info": null,
+      "plays": [],
+      "language_dependence": "No necessary in-game text"
+    },
+    {
+      "bgg_id": 440640,
+      "type": "boardgame",
+      "collection_id": 146046696,
+      "name": "Even Deeper Regrets",
+      "year": 2026,
+      "image": "https://cf.geekdo-images.com/vCazYrOYOzQKNqQHOT4log__original/img/xsrMIesjfV3YCVluShYfnigqqtU=/0x0/filters:format(png)/pic8754502.png",
+      "thumbnail": "https://cf.geekdo-images.com/vCazYrOYOzQKNqQHOT4log__small/img/YlO3oH6T-WQupsVjDiteVybHMKY=/fit-in/200x150/filters:strip_icc()/pic8754502.png",
+      "status": {
+        "own": true,
+        "previously_owned": false,
+        "for_trade": false,
+        "want": false,
+        "want_to_play": false,
+        "want_to_buy": false,
+        "wishlist": false,
+        "preordered": false,
+        "last_modified": "2026-05-31 15:48:33"
+      },
+      "wishlist_priority": null,
+      "num_plays": 0,
+      "comment": null,
+      "stats": {
+        "min_players": 1,
+        "max_players": 5,
+        "min_playtime": 60,
+        "max_playtime": 150,
+        "playing_time": 150,
+        "user_rating": null,
+        "usersrated": 104.0,
+        "average": 8.15779,
+        "bayesaverage": 5.58858,
+        "stddev": 1.63804,
+        "median": 0.0,
+        "avg_weight": 2.0,
+        "ranks": [
+          {
+            "type": "subtype",
+            "name": "boardgame",
+            "friendly_name": "Board Game Rank",
+            "value": null
+          }
+        ]
+      },
+      "private_info": null,
+      "plays": [],
+      "language_dependence": "No necessary in-game text"
     }
   ],
   "wishlist": {
@@ -5694,66 +5850,6 @@
         "language_dependence": "Moderate in-game text - needs crib sheet or paste ups"
       },
       {
-        "bgg_id": 397931,
-        "type": "boardgame",
-        "collection_id": 146045715,
-        "name": "Deep Regrets",
-        "year": 2025,
-        "image": "https://cf.geekdo-images.com/WUvpRzsNSZgq1gyvjiQcWw__original/img/wXnREOcKLkysXorXqRQXKslz-iI=/0x0/filters:format(jpeg)/pic8156363.jpg",
-        "thumbnail": "https://cf.geekdo-images.com/WUvpRzsNSZgq1gyvjiQcWw__small/img/XJyLMXaTHUGyAv7n-G0DpR1W1SU=/fit-in/200x150/filters:strip_icc()/pic8156363.jpg",
-        "status": {
-          "own": false,
-          "previously_owned": false,
-          "for_trade": false,
-          "want": false,
-          "want_to_play": false,
-          "want_to_buy": false,
-          "wishlist": true,
-          "preordered": false,
-          "last_modified": "2026-05-31 15:21:25"
-        },
-        "wishlist_priority": 3,
-        "num_plays": 0,
-        "comment": null,
-        "stats": {
-          "min_players": 1,
-          "max_players": 5,
-          "min_playtime": 30,
-          "max_playtime": 150,
-          "playing_time": 150,
-          "user_rating": null,
-          "usersrated": 3580.0,
-          "average": 7.31688,
-          "bayesaverage": 6.48036,
-          "stddev": 1.59906,
-          "median": 0.0,
-          "avg_weight": 2.32,
-          "ranks": [
-            {
-              "type": "subtype",
-              "name": "boardgame",
-              "friendly_name": "Board Game Rank",
-              "value": 1374
-            },
-            {
-              "type": "family",
-              "name": "thematic",
-              "friendly_name": "Thematic Rank",
-              "value": 362
-            },
-            {
-              "type": "family",
-              "name": "familygames",
-              "friendly_name": "Family Game Rank",
-              "value": 418
-            }
-          ]
-        },
-        "private_info": null,
-        "plays": [],
-        "language_dependence": "Moderate in-game text - needs crib sheet or paste ups"
-      },
-      {
         "bgg_id": 400366,
         "type": "boardgame",
         "collection_id": 146045757,
@@ -5800,6 +5896,60 @@
               "name": "strategygames",
               "friendly_name": "Strategy Game Rank",
               "value": 145
+            }
+          ]
+        },
+        "private_info": null,
+        "plays": [],
+        "language_dependence": "Moderate in-game text - needs crib sheet or paste ups"
+      },
+      {
+        "bgg_id": 227935,
+        "type": "boardgame",
+        "collection_id": 146046734,
+        "name": "Wonderland's War",
+        "year": 2022,
+        "image": "https://cf.geekdo-images.com/bUbrvlY6Dw1cdb-sNrnkew__original/img/KcU-Srht_4xyLQ69ZjFcFKEOfMc=/0x0/filters:format(jpeg)/pic5188761.jpg",
+        "thumbnail": "https://cf.geekdo-images.com/bUbrvlY6Dw1cdb-sNrnkew__small/img/Uy_FkD9PPC4Z_0a00fQHPrZPyno=/fit-in/200x150/filters:strip_icc()/pic5188761.jpg",
+        "status": {
+          "own": false,
+          "previously_owned": false,
+          "for_trade": false,
+          "want": false,
+          "want_to_play": false,
+          "want_to_buy": false,
+          "wishlist": true,
+          "preordered": false,
+          "last_modified": "2026-05-31 15:49:43"
+        },
+        "wishlist_priority": 3,
+        "num_plays": 0,
+        "comment": null,
+        "stats": {
+          "min_players": 2,
+          "max_players": 5,
+          "min_playtime": 45,
+          "max_playtime": 125,
+          "playing_time": 125,
+          "user_rating": null,
+          "usersrated": 10599.0,
+          "average": 8.03649,
+          "bayesaverage": 7.50276,
+          "stddev": 1.41837,
+          "median": 0.0,
+          "avg_weight": 3.04,
+          "ranks": [
+            {
+              "type": "subtype",
+              "name": "boardgame",
+              "friendly_name": "Board Game Rank",
+              "value": 132
+            },
+            {
+              "type": "family",
+              "name": "strategygames",
+              "friendly_name": "Strategy Game Rank",
+              "value": 93
             }
           ]
         },
