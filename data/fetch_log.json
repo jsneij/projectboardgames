@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-31T20:50:34.396340+00:00",
+  "fetched_at": "2026-06-01T06:54:44.649592+00:00",
   "counts": {
     "owned": 43,
     "wishlist_total": 120,
@@ -406,6 +406,36 @@
     },
     "342900": {
       "name": "Earthborne Rangers",
+      "num_plays": 0,
+      "category": "owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "397931": {
+      "name": "Deep Regrets",
+      "num_plays": 0,
+      "category": "owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "421471": {
+      "name": "Deep Regrets: Lamentable Tentacles Mini-Expansion",
+      "num_plays": 0,
+      "category": "owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "440640": {
+      "name": "Even Deeper Regrets",
       "num_plays": 0,
       "category": "owned",
       "wishlist_priority": null,
@@ -1078,18 +1108,18 @@
       "acquisition_date": null,
       "play_comments": {}
     },
-    "397931": {
-      "name": "Deep Regrets",
+    "400366": {
+      "name": "Wondrous Creatures",
       "num_plays": 0,
-      "category": "owned",
-      "wishlist_priority": null,
+      "category": "wishlist",
+      "wishlist_priority": 3,
       "user_rating": null,
       "comment": null,
       "acquisition_date": null,
       "play_comments": {}
     },
-    "400366": {
-      "name": "Wondrous Creatures",
+    "227935": {
+      "name": "Wonderland's War",
       "num_plays": 0,
       "category": "wishlist",
       "wishlist_priority": 3,
@@ -1723,36 +1753,6 @@
       "num_plays": 0,
       "category": "wishlist",
       "wishlist_priority": 5,
-      "user_rating": null,
-      "comment": null,
-      "acquisition_date": null,
-      "play_comments": {}
-    },
-    "421471": {
-      "name": "Deep Regrets: Lamentable Tentacles Mini-Expansion",
-      "num_plays": 0,
-      "category": "owned",
-      "wishlist_priority": null,
-      "user_rating": null,
-      "comment": null,
-      "acquisition_date": null,
-      "play_comments": {}
-    },
-    "440640": {
-      "name": "Even Deeper Regrets",
-      "num_plays": 0,
-      "category": "owned",
-      "wishlist_priority": null,
-      "user_rating": null,
-      "comment": null,
-      "acquisition_date": null,
-      "play_comments": {}
-    },
-    "227935": {
-      "name": "Wonderland's War",
-      "num_plays": 0,
-      "category": "wishlist",
-      "wishlist_priority": 3,
       "user_rating": null,
       "comment": null,
       "acquisition_date": null,
