@@ -1,14 +1,14 @@
 {
   "metadata": {
     "username": "jsneij",
-    "fetched_at": "2026-06-11T06:47:50.250956+00:00",
-    "total_items": 174,
+    "fetched_at": "2026-06-12T06:40:32.101650+00:00",
+    "total_items": 176,
     "counts": {
       "owned": 43,
-      "wishlist_total": 120,
+      "wishlist_total": 122,
       "wishlist_p1": 4,
       "wishlist_p2": 24,
-      "wishlist_p3": 29,
+      "wishlist_p3": 31,
       "wishlist_p4": 56,
       "wishlist_p5": 7,
       "preordered": 2,
@@ -5950,6 +5950,126 @@
               "name": "strategygames",
               "friendly_name": "Strategy Game Rank",
               "value": 93
+            }
+          ]
+        },
+        "private_info": null,
+        "plays": [],
+        "language_dependence": "Moderate in-game text - needs crib sheet or paste ups"
+      },
+      {
+        "bgg_id": 358737,
+        "type": "boardgame",
+        "collection_id": 146408429,
+        "name": "Leviathan Wilds",
+        "year": 2024,
+        "image": "https://cf.geekdo-images.com/k_iHhr7ltGhj46u4oQ4YAQ__original/img/qSlgK-1y9-AgtOAA86R9gt9XNaI=/0x0/filters:format(jpeg)/pic7976770.jpg",
+        "thumbnail": "https://cf.geekdo-images.com/k_iHhr7ltGhj46u4oQ4YAQ__small/img/-YtdhfpOEJNDPIbJovPSjDMXgec=/fit-in/200x150/filters:strip_icc()/pic7976770.jpg",
+        "status": {
+          "own": false,
+          "previously_owned": false,
+          "for_trade": false,
+          "want": false,
+          "want_to_play": false,
+          "want_to_buy": false,
+          "wishlist": true,
+          "preordered": false,
+          "last_modified": "2026-06-11 17:34:23"
+        },
+        "wishlist_priority": 3,
+        "num_plays": 0,
+        "comment": null,
+        "stats": {
+          "min_players": 1,
+          "max_players": 4,
+          "min_playtime": 45,
+          "max_playtime": 90,
+          "playing_time": 90,
+          "user_rating": null,
+          "usersrated": 2796.0,
+          "average": 7.8608,
+          "bayesaverage": 6.74691,
+          "stddev": 1.21505,
+          "median": 0.0,
+          "avg_weight": 2.47,
+          "ranks": [
+            {
+              "type": "subtype",
+              "name": "boardgame",
+              "friendly_name": "Board Game Rank",
+              "value": 835
+            },
+            {
+              "type": "family",
+              "name": "thematic",
+              "friendly_name": "Thematic Rank",
+              "value": 130
+            },
+            {
+              "type": "family",
+              "name": "strategygames",
+              "friendly_name": "Strategy Game Rank",
+              "value": 460
+            }
+          ]
+        },
+        "private_info": null,
+        "plays": [],
+        "language_dependence": "Extensive use of text - massive conversion needed to be playable"
+      },
+      {
+        "bgg_id": 420498,
+        "type": "boardgame",
+        "collection_id": 146408249,
+        "name": "Unstoppable",
+        "year": 2025,
+        "image": "https://cf.geekdo-images.com/JlY4u_H5nr8bs05XQWVoGw__original/img/UfFncO9wLb25n6e8ayUIJm6L9yk=/0x0/filters:format(png)/pic8185930.png",
+        "thumbnail": "https://cf.geekdo-images.com/JlY4u_H5nr8bs05XQWVoGw__small/img/YTiVBeiGJeE34GxyAwMoOMwAjqE=/fit-in/200x150/filters:strip_icc()/pic8185930.png",
+        "status": {
+          "own": false,
+          "previously_owned": false,
+          "for_trade": false,
+          "want": false,
+          "want_to_play": false,
+          "want_to_buy": false,
+          "wishlist": true,
+          "preordered": false,
+          "last_modified": "2026-06-11 17:29:35"
+        },
+        "wishlist_priority": 3,
+        "num_plays": 0,
+        "comment": null,
+        "stats": {
+          "min_players": 1,
+          "max_players": 2,
+          "min_playtime": 30,
+          "max_playtime": 90,
+          "playing_time": 90,
+          "user_rating": null,
+          "usersrated": 1893.0,
+          "average": 8.36137,
+          "bayesaverage": 6.70957,
+          "stddev": 1.24077,
+          "median": 0.0,
+          "avg_weight": 2.98,
+          "ranks": [
+            {
+              "type": "subtype",
+              "name": "boardgame",
+              "friendly_name": "Board Game Rank",
+              "value": 902
+            },
+            {
+              "type": "family",
+              "name": "cgs",
+              "friendly_name": "Customizable Rank",
+              "value": 8
+            },
+            {
+              "type": "family",
+              "name": "strategygames",
+              "friendly_name": "Strategy Game Rank",
+              "value": 463
             }
           ]
         },

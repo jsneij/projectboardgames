@@ -1,11 +1,11 @@
 {
-  "fetched_at": "2026-06-11T06:47:50.250956+00:00",
+  "fetched_at": "2026-06-12T06:40:32.101650+00:00",
   "counts": {
     "owned": 43,
-    "wishlist_total": 120,
+    "wishlist_total": 122,
     "wishlist_p1": 4,
     "wishlist_p2": 24,
-    "wishlist_p3": 29,
+    "wishlist_p3": 31,
     "wishlist_p4": 56,
     "wishlist_p5": 7,
     "preordered": 2,
@@ -1753,6 +1753,26 @@
       "num_plays": 0,
       "category": "wishlist",
       "wishlist_priority": 5,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "358737": {
+      "name": "Leviathan Wilds",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 3,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
+    "420498": {
+      "name": "Unstoppable",
+      "num_plays": 0,
+      "category": "wishlist",
+      "wishlist_priority": 3,
       "user_rating": null,
       "comment": null,
       "acquisition_date": null,
