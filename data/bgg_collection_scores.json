@@ -315,7 +315,7 @@
     "Hotel Lovecraft": {
       "name": "Hotel Lovecraft",
       "type": "co-op",
-      "weight": 2.0,
+      "weight": 2,
       "M": 2,
       "T": 3,
       "G": 2,
@@ -1311,7 +1311,7 @@
     "Even Deeper Regrets": {
       "name": "Even Deeper Regrets",
       "type": "co-op",
-      "weight": 2.0,
+      "weight": 2,
       "M": 4,
       "T": 5,
       "G": 4,
@@ -1399,7 +1399,7 @@
     },
     "Hot Streak": {
       "name": "Hot Streak",
-      "type": "competitive",
+      "type": "party",
       "weight": 1.2,
       "M": 2,
       "T": 2,
@@ -1565,7 +1565,7 @@
     "Anachrony": {
       "name": "Anachrony",
       "type": "competitive",
-      "weight": 4.0,
+      "weight": 4,
       "M": 5,
       "T": 4,
       "G": 4,
@@ -1818,7 +1818,7 @@
     "Horrified: World of Monsters": {
       "name": "Horrified: World of Monsters",
       "type": "co-op",
-      "weight": 2.0,
+      "weight": 2,
       "M": 2,
       "T": 3,
       "G": 2,
@@ -3782,7 +3782,7 @@
     "HeroQuest: The Card Game": {
       "name": "HeroQuest CG",
       "type": "competitive",
-      "weight": 1.0,
+      "weight": 1,
       "M": 1,
       "T": 2,
       "G": 2,
@@ -4923,7 +4923,7 @@
     "Fossilium": {
       "name": "Fossilium",
       "type": "competitive",
-      "weight": 2.0,
+      "weight": 2,
       "M": 2,
       "T": 2,
       "G": 2,
