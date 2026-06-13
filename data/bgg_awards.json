@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-13T22:15:04+00:00",
+    "generated_at": "2026-06-13T22:25:35+00:00",
     "programs": [
       "Spiel des Jahres",
       "Golden Geek Awards",
@@ -10,7 +10,7 @@
     "total_awards": 152,
     "total_entries": 368,
     "resolved_games": 264,
-    "scored_games": 179,
+    "scored_games": 259,
     "honor_ids_resolved": 151
   },
   "awards": [
@@ -26,7 +26,19 @@
           "image": "https://cf.geekdo-images.com/GuhpuTKFteZEIhPTFvEpJw__original/img/g4qgGJr7qvkSCTArazRXhkDVYQA=/0x0/filters:format(jpeg)/pic8589750.jpg",
           "thumbnail": "https://cf.geekdo-images.com/GuhpuTKFteZEIhPTFvEpJw__small/img/2Gft8rEmdaQW1YJX5DyPX0uWyoM=/fit-in/200x150/filters:strip_icc()/pic8589750.jpg",
           "year_published": 2025,
-          "bayes_rating": 7.144
+          "bayes_rating": 7.144,
+          "M": 2,
+          "T": 2,
+          "G": 2,
+          "F": 2,
+          "Ar": 3,
+          "GS": 6,
+          "IS": 9.0,
+          "feeling": "On Shelf",
+          "type": "competitive",
+          "weight": 2.0,
+          "description": "Command an army of toys in tactical skirmishes where childhood nostalgia meets strategic warfare.",
+          "justification": "M(2): Basic tactical movement with dice combat and simple unit abilities. T(2): Toy theme is cute but doesn't generate childhood wonder mechanically. G(2): Standard tactical decisions with limited strategic depth or consequence. F(2): Miniature setup and rules reference create moderate overhead. Ar(3): Colorful toy aesthetic appeals but lacks atmospheric depth."
         },
         {
           "bgg_id": 400602,
@@ -34,7 +46,19 @@
           "image": "https://cf.geekdo-images.com/DahMIPzUpexvhUPAG3dGbA__original/img/P01WNfQ0kOF9n7FFNXpGCo-tueE=/0x0/filters:format(jpeg)/pic8303209.jpg",
           "thumbnail": "https://cf.geekdo-images.com/DahMIPzUpexvhUPAG3dGbA__small/img/uzogBNlLw3GBuGa1T6_8oQbADnY=/fit-in/200x150/filters:strip_icc()/pic8303209.jpg",
           "year_published": 2024,
-          "bayes_rating": 7.403
+          "bayes_rating": 7.403,
+          "M": 4,
+          "T": 3,
+          "G": 4,
+          "F": 2,
+          "Ar": 4,
+          "GS": 46,
+          "IS": 92.0,
+          "feeling": "Immersive",
+          "type": "solo",
+          "weight": 3.2,
+          "description": "Guide a civilization through millennia of development, making crucial decisions that shape humanity's destiny across multiple eras.",
+          "justification": "M(4): Tech trees, multi-use cards, and era progression create deep interconnected systems. T(3): Civilization development theme present but mechanics feel more abstract than generative. G(4): Every tech choice and card play shapes your civilization's trajectory meaningfully. F(2): Solo setup and rules complexity manageable but era transitions add overhead. Ar(4): Clean historical artwork with appealing visual progression through technological ages."
         },
         {
           "bgg_id": 435346,
@@ -42,7 +66,19 @@
           "image": "https://cf.geekdo-images.com/ZW3tDJsRWJK5ONSDOWm34g__original/img/H76qdNea6KnSO2wpZHT9NMThlJw=/0x0/filters:format(jpeg)/pic8679533.jpg",
           "thumbnail": "https://cf.geekdo-images.com/ZW3tDJsRWJK5ONSDOWm34g__small/img/wwyKTZU3xZiUYSCns-RdzNVoqPg=/fit-in/200x150/filters:strip_icc()/pic8679533.jpg",
           "year_published": 2025,
-          "bayes_rating": 5.588
+          "bayes_rating": 5.588,
+          "M": 2,
+          "T": 2,
+          "G": 2,
+          "F": 2,
+          "Ar": 3,
+          "GS": 6,
+          "IS": 9.0,
+          "feeling": "On Shelf",
+          "type": "competitive",
+          "weight": 2.0,
+          "description": "Explore a mystical island, collecting magical resources and building structures to become the most powerful island inhabitant.",
+          "justification": "M(2): Basic action points and tile placement without complex interactions. T(2): Island exploration theme sits on top of abstract mechanics. G(2): Meaningful choices but limited decision trees and consequences. F(2): Standard setup time with moderate component management overhead. Ar(3): Colorful tropical art style that's pleasant but not exceptional."
         },
         {
           "bgg_id": 61522,
@@ -81,7 +117,19 @@
           "image": "https://cf.geekdo-images.com/hh5YOk9OQ3e0uJbMOfvT2g__original/img/pq_dOY_tC4Owv3RnTIlYEcsDHrs=/0x0/filters:format(jpeg)/pic7921978.jpg",
           "thumbnail": "https://cf.geekdo-images.com/hh5YOk9OQ3e0uJbMOfvT2g__small/img/bYaPoCwSz2lq-tAtb_60fPqiNzA=/fit-in/200x150/filters:strip_icc()/pic7921978.jpg",
           "year_published": 2024,
-          "bayes_rating": 6.291
+          "bayes_rating": 6.291,
+          "M": 4,
+          "T": 3,
+          "G": 4,
+          "F": 2,
+          "Ar": 4,
+          "GS": 46,
+          "IS": 92.0,
+          "feeling": "Immersive",
+          "type": "competitive",
+          "weight": 3.8,
+          "description": "Lead Viking clans across treacherous seas and foreign lands, building settlements and claiming glory in Odin's name.",
+          "justification": "M(4): Complex worker placement with asymmetric clan powers and interlocking systems. T(3): Viking theme present but mechanics don't generate epic saga experience. G(4): Deep decision trees with meaningful long-term consequences across multiple boards. F(2): Heavy setup and rules overhead typical of Uwe Rosenberg designs. Ar(4): Atmospheric Norse art with quality components and board design."
         },
         {
           "bgg_id": 385610,
@@ -89,7 +137,19 @@
           "image": "https://cf.geekdo-images.com/ar_YhktX6VcXBLcEfnu_dw__original/img/QyKTmZomxKVYO_uY5OjaojFQNUk=/0x0/filters:format(png)/pic7464921.png",
           "thumbnail": "https://cf.geekdo-images.com/ar_YhktX6VcXBLcEfnu_dw__small/img/XlZo63iHoNfh7yKZdJiJj2Wfglo=/fit-in/200x150/filters:strip_icc()/pic7464921.png",
           "year_published": 2023,
-          "bayes_rating": 7.024
+          "bayes_rating": 7.024,
+          "M": 4,
+          "T": 2,
+          "G": 4,
+          "F": 2,
+          "Ar": 4,
+          "GS": 30,
+          "IS": 60.0,
+          "feeling": "Engaging",
+          "type": "competitive",
+          "weight": 3.8,
+          "description": "Transform a medieval mining town into a silver empire through guild politics, cathedral construction, and cutthroat economics.",
+          "justification": "M(4): Asymmetric guilds, worker types, tech tracks create interlocking engine systems. T(2): Medieval silver mining theme sits on top of Euro mechanics. G(4): Deep decision trees with guild powers and multi-use cards. F(2): Setup complexity and multiple boards add overhead but manageable. Ar(4): Rich medieval artwork and detailed component design throughout."
         },
         {
           "bgg_id": 440295,
@@ -97,7 +157,19 @@
           "image": "https://cf.geekdo-images.com/zTpRE9R5qDR92k5_Tfoupw__original/img/ILmj31POnCAPLthA0BNd4ZwhPRk=/0x0/filters:format(jpeg)/pic8744380.jpg",
           "thumbnail": "https://cf.geekdo-images.com/zTpRE9R5qDR92k5_Tfoupw__small/img/7MP7vCrRqiGdaglrx7REDk2DAQU=/fit-in/200x150/filters:strip_icc()/pic8744380.jpg",
           "year_published": 2025,
-          "bayes_rating": 0.0
+          "bayes_rating": 0.0,
+          "M": 1,
+          "T": 1,
+          "G": 1,
+          "F": 5,
+          "Ar": 1,
+          "GS": -4,
+          "IS": -2.0,
+          "feeling": "On Shelf",
+          "type": "competitive",
+          "weight": 1.0,
+          "description": "A French children's card game about collecting nuts where squirrels gather acorns through simple matching.",
+          "justification": "M(1): Basic card matching with minimal interaction or depth. T(1): Nut collection theme purely decorative, not mechanically integrated. G(1): Random draws limit meaningful decision-making opportunities. F(5): Foreign language rules, unclear availability, children's game barriers. Ar(1): Presumed simple children's illustration style without atmospheric depth."
         },
         {
           "bgg_id": 10890,
@@ -156,7 +228,19 @@
           "image": "https://cf.geekdo-images.com/zM3cPLHv2smrTSDI565a3A__original/img/uMqWKO2eqgAWfa4DU7P7Zo8wOhE=/0x0/filters:format(jpeg)/pic7322524.jpg",
           "thumbnail": "https://cf.geekdo-images.com/zM3cPLHv2smrTSDI565a3A__small/img/k2gvTqIvCffscucHD-uJ65dfQYA=/fit-in/200x150/filters:strip_icc()/pic7322524.jpg",
           "year_published": 2023,
-          "bayes_rating": 6.531
+          "bayes_rating": 6.531,
+          "M": 3,
+          "T": 4,
+          "G": 3,
+          "F": 2,
+          "Ar": 4,
+          "GS": 34,
+          "IS": 68.0,
+          "feeling": "Engaging",
+          "type": "competitive",
+          "weight": 2.8,
+          "description": "Rise through the ranks of warring Sicilian crime families in 1980s Palermo, where every deal could be your last.",
+          "justification": "M(3): Action points with area control and family management systems. T(4): Every extortion, hit, and territory grab IS the mafia power struggle. G(3): Meaningful choices in violence versus politics but constrained options. F(2): Rules overhead and multiple boards create setup friction. Ar(4): Atmospheric crime family artwork captures 1980s Sicily tension perfectly."
         },
         {
           "bgg_id": 401002,
@@ -164,7 +248,19 @@
           "image": "https://cf.geekdo-images.com/ZlSjV8b4LVmPt_g5bIfugA__original/img/-WyRPQHt9ujG8Cc_5Ht-bpQZwII=/0x0/filters:format(jpeg)/pic8012900.jpg",
           "thumbnail": "https://cf.geekdo-images.com/ZlSjV8b4LVmPt_g5bIfugA__small/img/Hs23JUb1ZXVf137LjTW_SdfJLqk=/fit-in/200x150/filters:strip_icc()/pic8012900.jpg",
           "year_published": 2023,
-          "bayes_rating": 5.529
+          "bayes_rating": 5.529,
+          "M": 1,
+          "T": 1,
+          "G": 2,
+          "F": 1,
+          "Ar": 2,
+          "GS": 1,
+          "IS": 1.0,
+          "feeling": "On Shelf",
+          "type": "solo",
+          "weight": 1.0,
+          "description": "Draw paths and solve spatial puzzles while following a dragon's journey through illustrated fantasy landscapes.",
+          "justification": "M(1): Basic path-drawing puzzles with minimal interconnected systems. T(1): Dragon is cosmetic decoration over generic puzzle mechanics. G(2): Puzzle solutions offer some meaningful path-finding choices. F(1): Pick up book and start drawing immediately. Ar(2): Generic fantasy illustration without distinctive visual identity."
         },
         {
           "bgg_id": 168949,
@@ -223,7 +319,19 @@
           "image": "https://cf.geekdo-images.com/SoU8p28Sk1s8MSvoM4N8pQ__original/img/g4S18szTdrXCdIwVKzMKrZrYAcM=/0x0/filters:format(jpeg)/pic6293412.jpg",
           "thumbnail": "https://cf.geekdo-images.com/SoU8p28Sk1s8MSvoM4N8pQ__small/img/4KuHNTWSMPf8vTNDKSRMMI3oOv8=/fit-in/200x150/filters:strip_icc()/pic6293412.jpg",
           "year_published": 2021,
-          "bayes_rating": 8.354
+          "bayes_rating": 8.354,
+          "M": 4,
+          "T": 2,
+          "G": 4,
+          "F": 2,
+          "Ar": 4,
+          "GS": 30,
+          "IS": 60.0,
+          "feeling": "Engaging",
+          "type": "competitive",
+          "weight": 3.5,
+          "description": "Build the world's greatest zoo by drafting cards, managing conservation projects, and racing toward fame on parallel scoring tracks.",
+          "justification": "M(4): Card drafting with action selection, upgrade paths, and interlocking zoo systems. T(2): Zoo theme is pleasant but mechanics don't generate conservation experience. G(4): Meaningful card drafts and action choices with long-term consequences. F(2): Setup time and icon learning create moderate overhead. Ar(4): Clean, professional zoo art with strong visual hierarchy."
         },
         {
           "bgg_id": 364942,
@@ -231,7 +339,19 @@
           "image": "https://cf.geekdo-images.com/sNuUBj4EYuwqOc9k4v9CMA__original/img/Ryv5b4TTMPOWakINYTETBvwF2mc=/0x0/filters:format(png)/pic7052613.png",
           "thumbnail": "https://cf.geekdo-images.com/sNuUBj4EYuwqOc9k4v9CMA__small/img/vTHfRIsKpYPPWQoLDluLkIVrwrg=/fit-in/200x150/filters:strip_icc()/pic7052613.png",
           "year_published": 2022,
-          "bayes_rating": 5.725
+          "bayes_rating": 5.725,
+          "M": 2,
+          "T": 3,
+          "G": 2,
+          "F": 1,
+          "Ar": 3,
+          "GS": 11,
+          "IS": 16.5,
+          "feeling": "On Shelf",
+          "type": "co-op",
+          "weight": 1.5,
+          "description": "Kids travel back in time to prevent a zombie apocalypse by solving memory puzzles and making story choices.",
+          "justification": "M(2): Simple memory and deduction mechanics with light narrative branching. T(3): Time travel premise creates some thematic tension in choices. G(2): Limited agency through memory challenges and story decisions. F(1): Quick setup, simple rules designed for accessibility. Ar(3): Kid-friendly cartoon zombie art, functional but not atmospheric."
         },
         {
           "bgg_id": 359970,
@@ -239,7 +359,19 @@
           "image": "https://cf.geekdo-images.com/GtLESZ4ZjqikK12bjBTmig__original/img/CHUtcmSXFs8LYKRHyUaeio2ra4U=/0x0/filters:format(jpeg)/pic7040521.jpg",
           "thumbnail": "https://cf.geekdo-images.com/GtLESZ4ZjqikK12bjBTmig__small/img/66Emb1wn1JD_5_9XdsYY2DgMVMA=/fit-in/200x150/filters:strip_icc()/pic7040521.jpg",
           "year_published": 2022,
-          "bayes_rating": 6.675
+          "bayes_rating": 6.675,
+          "M": 2,
+          "T": 2,
+          "G": 2,
+          "F": 2,
+          "Ar": 3,
+          "GS": 6,
+          "IS": 9.0,
+          "feeling": "On Shelf",
+          "type": "competitive",
+          "weight": 2.1,
+          "description": "Draft fighters into your deck and battle through tournament rounds where only the strongest decks survive elimination.",
+          "justification": "M(2): Simple deck building with creature powers but limited interaction depth. T(2): Fighting tournament references theme but doesn't generate tension or drama. G(2): Draft choices matter but gameplay feels automated once decks clash. F(2): Multiple phases and tournament structure create moderate setup overhead. Ar(3): Clean cartoon fighter art serves function without inspiring atmosphere."
         }
       ],
       "recommended": []
@@ -258,7 +390,19 @@
           "image": "https://cf.geekdo-images.com/BGtYtHbLgYhYyNMoyOm1RA__original/img/05P7xaW8B4ueCvItryBjO5wVA5s=/0x0/filters:format(jpeg)/pic7416525.jpg",
           "thumbnail": "https://cf.geekdo-images.com/BGtYtHbLgYhYyNMoyOm1RA__small/img/Qml2TbcN2IyaA-PtHKcIrhnELd4=/fit-in/200x150/filters:strip_icc()/pic7416525.jpg",
           "year_published": 2021,
-          "bayes_rating": 6.762
+          "bayes_rating": 6.762,
+          "M": 2,
+          "T": 1,
+          "G": 2,
+          "F": 1,
+          "Ar": 3,
+          "GS": 3,
+          "IS": 4.5,
+          "feeling": "On Shelf",
+          "type": "competitive",
+          "weight": 1.8,
+          "description": "Draft cards to build your ancient wonder faster than your rivals in this streamlined civilization race.",
+          "justification": "M(2): Simple card drafting with basic resource matching and wonder building. T(1): Ancient civilization theme is pure decoration over abstract mechanics. G(2): Card choices matter but limited options and streamlined play. F(1): Family-weight game with quick setup and simple rules. Ar(3): Clean but unremarkable art, functional wonder boards lack atmosphere."
         },
         {
           "bgg_id": 316554,
@@ -266,7 +410,19 @@
           "image": "https://cf.geekdo-images.com/PhjygpWSo-0labGrPBMyyg__original/img/mZzaBAEEJpMlHWWmC0R6Su0OibQ=/0x0/filters:format(jpeg)/pic5666597.jpg",
           "thumbnail": "https://cf.geekdo-images.com/PhjygpWSo-0labGrPBMyyg__small/img/JGgY-nBmkyB8WRp8vcoBLlNMQ5U=/fit-in/200x150/filters:strip_icc()/pic5666597.jpg",
           "year_published": 2020,
-          "bayes_rating": 8.222
+          "bayes_rating": 8.222,
+          "M": 4,
+          "T": 3,
+          "G": 4,
+          "F": 2,
+          "Ar": 4,
+          "GS": 46,
+          "IS": 92.0,
+          "feeling": "Immersive",
+          "type": "competitive",
+          "weight": 3.0,
+          "description": "Navigate the deadly politics of Arrakis through spice, schemes, and strategic alliances in the battle for the Imperium's throne.",
+          "justification": "M(4): Deck building with worker placement creates rich synergies and strategic depth. T(3): Political maneuvering feels Dune-like but mechanics reference more than generate. G(4): Every card play and agent placement cascades into meaningful consequences. F(2): Setup and multiple boards create overhead but manageable complexity. Ar(4): Stunning desert palette and iconic Dune imagery throughout."
         },
         {
           "bgg_id": 341178,
@@ -274,7 +430,19 @@
           "image": "https://cf.geekdo-images.com/AFscd4PVnMrRklhK3tgJ0A__original/img/CX3whCQJbaEHpiNAT43K8eVyTRA=/0x0/filters:format(png)/pic6256905.png",
           "thumbnail": "https://cf.geekdo-images.com/AFscd4PVnMrRklhK3tgJ0A__small/img/PWmQApEHX5QD2leKbnCPSIEdjvY=/fit-in/200x150/filters:strip_icc()/pic6256905.png",
           "year_published": 2021,
-          "bayes_rating": 5.552
+          "bayes_rating": 5.552,
+          "M": 2,
+          "T": 3,
+          "G": 2,
+          "F": 2,
+          "Ar": 3,
+          "GS": 10,
+          "IS": 15.0,
+          "feeling": "On Shelf",
+          "type": "solo",
+          "weight": 1.8,
+          "description": "Navigate branching underwater adventures through a storytelling card system where your choices shape the ocean's mysteries.",
+          "justification": "M(2): Simple card-driven branching narrative with minimal mechanical depth. T(3): Ocean exploration emerges through narrative choices and discovery. G(2): Meaningful story branches but limited mechanical agency. F(2): Card management and story tracking create some overhead. Ar(3): Functional underwater aesthetic without standout visual appeal."
         },
         {
           "bgg_id": 328479,
@@ -282,7 +450,19 @@
           "image": "https://cf.geekdo-images.com/fPhdfZX9UTLr4-SVgK0zoQ__original/img/ZPdxDPt1jSRQMNnVgn-qIPhNv0E=/0x0/filters:format(jpeg)/pic5899025.jpg",
           "thumbnail": "https://cf.geekdo-images.com/fPhdfZX9UTLr4-SVgK0zoQ__small/img/v8irnVxaCdK29XPtqEbtlKkLY4c=/fit-in/200x150/filters:strip_icc()/pic5899025.jpg",
           "year_published": 2021,
-          "bayes_rating": 6.795
+          "bayes_rating": 6.795,
+          "M": 3,
+          "T": 2,
+          "G": 3,
+          "F": 2,
+          "Ar": 4,
+          "GS": 16,
+          "IS": 32.0,
+          "feeling": "Engaging",
+          "type": "competitive",
+          "weight": 2.3,
+          "description": "As a nature spirit, simultaneously reveal symbol cards to collect trees and animals while managing the sacred fire that sustains the forest.",
+          "justification": "M(3): Simultaneous card reveal with push-your-luck symbols and tile collection. T(2): Forest spirit theme applied over abstract symbol matching mechanics. G(3): Meaningful risk assessment on every card reveal and collection choice. F(2): Multiple decks and tiles create setup overhead and rules complexity. Ar(4): Lush forest artwork with appealing nature spirit aesthetic by Apolline Etienne."
         }
       ],
       "recommended": []
@@ -301,7 +481,19 @@
           "image": "https://cf.geekdo-images.com/bLL3P-G25nIUkFjHxfJfnw__original/img/HBEhgjfb0QcF9pFrdJ8VYhBapoU=/0x0/filters:format(jpeg)/pic7632081.jpg",
           "thumbnail": "https://cf.geekdo-images.com/bLL3P-G25nIUkFjHxfJfnw__small/img/XY_Z5rRJe3IPLRfOvWp70OM2B68=/fit-in/200x150/filters:strip_icc()/pic7632081.jpg",
           "year_published": 2020,
-          "bayes_rating": 7.212
+          "bayes_rating": 7.212,
+          "M": 2,
+          "T": 1,
+          "G": 2,
+          "F": 1,
+          "Ar": 4,
+          "GS": 3,
+          "IS": 6.0,
+          "feeling": "On Shelf",
+          "type": "co-op",
+          "weight": 1.5,
+          "description": "Detectives examine a massive illustrated cityscape to solve interconnected crimes by following visual clues across time and space.",
+          "justification": "M(2): Hidden object search with case connections but minimal mechanical depth. T(1): Crime theme is purely decorative overlay on visual puzzle mechanics. G(2): Some meaningful deduction choices but mostly linear clue following. F(1): Unfold map and start playing immediately. Ar(4): Detailed Wimmelbild illustration style with charming visual storytelling."
         },
         {
           "bgg_id": 284083,
@@ -309,7 +501,19 @@
           "image": "https://cf.geekdo-images.com/98LnQShydr11OBKS46xY-Q__original/img/Q-ZkgnuBu9OTBr7J3qnqPjqamAE=/0x0/filters:format(jpeg)/pic5687013.jpg",
           "thumbnail": "https://cf.geekdo-images.com/98LnQShydr11OBKS46xY-Q__small/img/et-fnuozyOdBOVL-5kSS3_7I8fw=/fit-in/200x150/filters:strip_icc()/pic5687013.jpg",
           "year_published": 2019,
-          "bayes_rating": 7.615
+          "bayes_rating": 7.615,
+          "M": 2,
+          "T": 2,
+          "G": 3,
+          "F": 1,
+          "Ar": 3,
+          "GS": 11,
+          "IS": 16.5,
+          "feeling": "On Shelf",
+          "type": "co-op",
+          "weight": 2.0,
+          "description": "A space crew must complete increasingly complex missions using only cryptic hints and silent teamwork in this cooperative trick-taking adventure.",
+          "justification": "M(2): Trick-taking with mission constraints but limited mechanical depth. T(2): Space theme is decorative, doesn't generate crew experience. G(3): Meaningful card play decisions within communication restrictions. F(1): Quick setup, elegant rules, immediate play. Ar(3): Clean functional design but lacks atmospheric immersion."
         },
         {
           "bgg_id": 300010,
@@ -317,7 +521,19 @@
           "image": "https://cf.geekdo-images.com/S_Cpk3j3Z3ceNJBPNg4l7w__original/img/2g1g35Rp3u1tF_8fX3YLpmjIPj8=/0x0/filters:format(png)/pic5212561.png",
           "thumbnail": "https://cf.geekdo-images.com/S_Cpk3j3Z3ceNJBPNg4l7w__small/img/yyYrzwIVoBwTJ0U3TI6oZWvkgS0=/fit-in/200x150/filters:strip_icc()/pic5212561.png",
           "year_published": 2020,
-          "bayes_rating": 6.342
+          "bayes_rating": 6.342,
+          "M": 2,
+          "T": 2,
+          "G": 2,
+          "F": 1,
+          "Ar": 4,
+          "GS": 7,
+          "IS": 14.0,
+          "feeling": "On Shelf",
+          "type": "competitive",
+          "weight": 1.2,
+          "description": "Explore a magical island as young dragons, collecting domino tiles to build landscapes and discover baby dragons in their eggs.",
+          "justification": "M(2): Simple domino placement with basic pattern matching requirements. T(2): Dragon theme is charming but mechanics don't generate fantasy. G(2): Limited meaningful choices in tile selection and placement. F(1): Family game with immediate setup and simple rules. Ar(4): Cute dragon art appeals to families, pleasant visual design."
         }
       ],
       "recommended": []
@@ -336,7 +552,19 @@
           "image": "https://cf.geekdo-images.com/8MpTeqlzyIupMpSSxP3PAw__original/img/XoqLo4dQlXvFHZBAcKbZheA8NHA=/0x0/filters:format(jpeg)/pic4949335.jpg",
           "thumbnail": "https://cf.geekdo-images.com/8MpTeqlzyIupMpSSxP3PAw__small/img/NACmpm6Pzd2IrmAq9teXwLlmKqA=/fit-in/200x150/filters:strip_icc()/pic4949335.jpg",
           "year_published": 2019,
-          "bayes_rating": 6.548
+          "bayes_rating": 6.548,
+          "M": 2,
+          "T": 2,
+          "G": 3,
+          "F": 1,
+          "Ar": 3,
+          "GS": 11,
+          "IS": 16.5,
+          "feeling": "On Shelf",
+          "type": "competitive",
+          "weight": 2.1,
+          "description": "Noble houses deploy knights with hidden agendas in a medieval court where timing your reveals determines victory or death.",
+          "justification": "M(2): Hidden role cards with simple timing decisions, minimal interaction depth. T(2): Medieval theme sits on mechanics rather than emerging from them. G(3): Meaningful timing choices on when to reveal cards matter significantly. F(1): Quick setup, simple rules, plays in twenty minutes smoothly. Ar(3): Functional medieval art without atmospheric depth or distinctive style."
         },
         {
           "bgg_id": 262712,
@@ -344,7 +572,19 @@
           "image": "https://cf.geekdo-images.com/gcALy45JfcjyKUn6T3mBIQ__original/img/YLSAurBSWEGi3PHsuQWi8St_0Yg=/0x0/filters:format(jpeg)/pic4422847.jpg",
           "thumbnail": "https://cf.geekdo-images.com/gcALy45JfcjyKUn6T3mBIQ__small/img/5cPMxq_X6VIO8l2t1_6H7C_KqrU=/fit-in/200x150/filters:strip_icc()/pic4422847.jpg",
           "year_published": 2019,
-          "bayes_rating": 7.388
+          "bayes_rating": 7.388,
+          "M": 4,
+          "T": 2,
+          "G": 4,
+          "F": 2,
+          "Ar": 4,
+          "GS": 30,
+          "IS": 60.0,
+          "feeling": "Engaging",
+          "type": "competitive",
+          "weight": 3.2,
+          "description": "Harness mystical artifacts and essences to fuel ancient monuments and transcend to arcane mastery.",
+          "justification": "M(4): Deep artifact combinations with essences creating intricate engine optimization puzzles. T(2): Mystical theme overlays mechanics but doesn't generate magical experience. G(4): Every artifact purchase and essence management decision cascades meaningfully. F(2): Setup and iconography learning curve moderate but manageable. Ar(4): Elegant mystical artwork with rich colors and atmospheric symbols."
         },
         {
           "bgg_id": null,
@@ -371,7 +611,19 @@
           "image": "https://cf.geekdo-images.com/q_JGK291hrhnhiRB0667oA__original/img/8VjZEG278faO9JZwzce3v3EKssI=/0x0/filters:format(png)/pic3979766.png",
           "thumbnail": "https://cf.geekdo-images.com/q_JGK291hrhnhiRB0667oA__small/img/PUrzEmTo5kOcK5BOb4cbOOcH86I=/fit-in/200x150/filters:strip_icc()/pic3979766.png",
           "year_published": 2018,
-          "bayes_rating": 6.591
+          "bayes_rating": 6.591,
+          "M": 1,
+          "T": 1,
+          "G": 1,
+          "F": 1,
+          "Ar": 2,
+          "GS": 0,
+          "IS": 0.0,
+          "feeling": "On Shelf",
+          "type": "co-op",
+          "weight": 1.0,
+          "description": "Play numbered cards in ascending order without speaking, relying only on shared intuition and perfect timing.",
+          "justification": "M(1): Play cards in numerical order - minimal mechanical complexity. T(1): Abstract numbers with no thematic layer whatsoever. G(1): Success depends on luck and timing, not meaningful decisions. F(1): Shuffle cards and play immediately. Ar(2): Plain numbered cards with basic geometric design."
         },
         {
           "bgg_id": 63918,
@@ -399,7 +651,19 @@
           "image": "https://cf.geekdo-images.com/TMk8jhW6i6cT0Bz1SVVihQ__original/img/AFrdF8saaxVFPRhza2UJEFS9VnM=/0x0/filters:format(jpeg)/pic7856659.jpg",
           "thumbnail": "https://cf.geekdo-images.com/TMk8jhW6i6cT0Bz1SVVihQ__small/img/co8k-vjbQRICoY8FVcnHt9m9AV4=/fit-in/200x150/filters:strip_icc()/pic7856659.jpg",
           "year_published": 2021,
-          "bayes_rating": 0.0
+          "bayes_rating": 0.0,
+          "M": 2,
+          "T": 3,
+          "G": 3,
+          "F": 2,
+          "Ar": 3,
+          "GS": 16,
+          "IS": 24.0,
+          "feeling": "On Shelf",
+          "type": "solo",
+          "weight": 2.0,
+          "description": "Detective work meets fairy tale noir as you investigate Mr. Wolfe's alleged crimes through deductive case files.",
+          "justification": "M(2): Basic deduction with card reveals and clue matching. T(3): Fairy tale detective theme carried through narrative but not deeply embedded. G(3): Deductive choices matter but limited agency in linear cases. F(2): File-based format requires some organization and reference checking. Ar(3): Functional noir-fairy tale aesthetic without exceptional visual design."
         }
       ],
       "recommended": []
@@ -418,7 +682,19 @@
           "image": "https://cf.geekdo-images.com/aPSHJO0d0XOpQR5X-wJonw__original/img/AkbtYVc6xXJF3c9EUrakklcclKw=/0x0/filters:format(png)/pic6973671.png",
           "thumbnail": "https://cf.geekdo-images.com/aPSHJO0d0XOpQR5X-wJonw__small/img/ccsXKrdGJw-YSClWwzVUwk5Nh9Y=/fit-in/200x150/filters:strip_icc()/pic6973671.png",
           "year_published": 2017,
-          "bayes_rating": 7.605
+          "bayes_rating": 7.605,
+          "M": 2,
+          "T": 1,
+          "G": 3,
+          "F": 1,
+          "Ar": 4,
+          "GS": 5,
+          "IS": 10.0,
+          "feeling": "On Shelf",
+          "type": "competitive",
+          "weight": 2.3,
+          "description": "Draft colorful tiles from a Moorish palace's marketplace to create stunning azulejo patterns on your royal wall.",
+          "justification": "M(2): Pattern matching and set completion with light spatial puzzles. T(1): Tile decoration theme is pleasant but purely cosmetic. G(3): Meaningful drafting choices and tile placement optimization each turn. F(1): Simple rules, fast setup, elegant component handling. Ar(4): Beautiful tile art evoking Portuguese azulejo craftsmanship."
         },
         {
           "bgg_id": 167791,
@@ -446,7 +722,19 @@
           "image": "https://cf.geekdo-images.com/v0FCI-wY8YlPn39XKd3F8w__original/img/vppUmOYk1ZFqprmgN_1-htcXa-s=/0x0/filters:format(jpeg)/pic2401324.jpg",
           "thumbnail": "https://cf.geekdo-images.com/v0FCI-wY8YlPn39XKd3F8w__small/img/lgy2HBtB0l2m-XknC9fGn-qakXc=/fit-in/200x150/filters:strip_icc()/pic2401324.jpg",
           "year_published": 2014,
-          "bayes_rating": 6.607
+          "bayes_rating": 6.607,
+          "M": 2,
+          "T": 3,
+          "G": 2,
+          "F": 1,
+          "Ar": 3,
+          "GS": 11,
+          "IS": 16.5,
+          "feeling": "On Shelf",
+          "type": "co-op",
+          "weight": 1.5,
+          "description": "Young detectives race against time to gather clues and catch the fox who stole Mrs. Plumpert's prized pot pie.",
+          "justification": "M(2): Simple roll-and-move with basic deduction and clue gathering. T(3): Detective work feels authentic through evidence collection mechanics. G(2): Cooperative decisions but limited by dice rolls and simple choices. F(1): Family game with quick setup and intuitive rules. Ar(3): Charming children's book illustration style, well-executed but simple."
         }
       ],
       "recommended": []
@@ -465,7 +753,19 @@
           "image": "https://cf.geekdo-images.com/6B_gm3wnwyErEte563njWQ__original/img/i4mD8XtRa6SFjsFyoEqfgQwB9gI=/0x0/filters:format(png)/pic9052946.png",
           "thumbnail": "https://cf.geekdo-images.com/6B_gm3wnwyErEte563njWQ__small/img/rRvcznNBG0qQr-bzgIrQ41jkRFc=/fit-in/200x150/filters:strip_icc()/pic9052946.png",
           "year_published": 2026,
-          "bayes_rating": 0.0
+          "bayes_rating": 0.0,
+          "M": 2,
+          "T": 1,
+          "G": 2,
+          "F": 1,
+          "Ar": 2,
+          "GS": 3,
+          "IS": 3.0,
+          "feeling": "On Shelf",
+          "type": "co-op",
+          "weight": 2.0,
+          "description": "Build decks of Care Bear magic to spread friendship and unlock the power of caring across Cloud Kingdom.",
+          "justification": "M(2): Basic deckbuilding with friendship tokens and simple card interactions. T(1): Care Bears theme is pure decoration over standard mechanics. G(2): Deck choices matter but limited by child-friendly design constraints. F(1): Simple rules and setup for family accessibility. Ar(2): Bright colorful art but saccharine aesthetic clashes with user preferences."
         },
         {
           "bgg_id": 169786,
@@ -473,7 +773,19 @@
           "image": "https://cf.geekdo-images.com/7k_nOxpO9OGIjhLq2BUZdA__original/img/HlDb9F365w0tSP8uD1vf1pfniQE=/0x0/filters:format(jpeg)/pic3163924.jpg",
           "thumbnail": "https://cf.geekdo-images.com/7k_nOxpO9OGIjhLq2BUZdA__small/img/eQ69OEDdjYjfKg6q5Navee87skU=/fit-in/200x150/filters:strip_icc()/pic3163924.jpg",
           "year_published": 2016,
-          "bayes_rating": 7.944
+          "bayes_rating": 7.944,
+          "M": 4,
+          "T": 2,
+          "G": 4,
+          "F": 4,
+          "Ar": 5,
+          "GS": 28,
+          "IS": 70.0,
+          "feeling": "Engaging",
+          "type": "competitive",
+          "weight": 3.43,
+          "description": "Command diesel-punk mechs across Eastern Europa, harvesting resources and conquering territories in an alternate 1920s where the Great War never ended.",
+          "justification": "M(4): Asymmetric faction powers with interlocking resource economy and mech upgrades. T(2): Beautiful art but mechanics feel like Euro with mech decoration. G(4): Multiple victory paths with meaningful timing and positioning decisions. F(4): Large box with many unpainted miniatures requiring assembly or painting. Ar(5): Jakub Rozalski's haunting 1920+ artwork is absolutely stunning and iconic."
         },
         {
           "bgg_id": 192547,
@@ -481,7 +793,19 @@
           "image": "https://cf.geekdo-images.com/7iIFnoc2JJwt0fSOXc7eIA__original/img/_p9z7g8E88uk25dlA7a82hnINBw=/0x0/filters:format(jpeg)/pic7502821.jpg",
           "thumbnail": "https://cf.geekdo-images.com/7iIFnoc2JJwt0fSOXc7eIA__small/img/wUcpMs8QcP-ehHoktFTivBODkNQ=/fit-in/200x150/filters:strip_icc()/pic7502821.jpg",
           "year_published": 2016,
-          "bayes_rating": 5.905
+          "bayes_rating": 5.905,
+          "M": 2,
+          "T": 2,
+          "G": 2,
+          "F": 1,
+          "Ar": 3,
+          "GS": 7,
+          "IS": 10.5,
+          "feeling": "On Shelf",
+          "type": "competitive",
+          "weight": 1.2,
+          "description": "Stack wooden eggs in a wobbly nest while a cuckoo clock bird threatens to knock everything down.",
+          "justification": "M(2): Simple stacking with minor dexterity challenge, limited systems interaction. T(2): Nest-building theme present but mechanics don't generate bird experience. G(2): Some risk assessment in placement but mostly luck-driven outcomes. F(1): Wooden components, instant setup, teach in minutes. Ar(3): Charming wooden aesthetic but lacks visual impact or atmosphere."
         }
       ],
       "recommended": []
@@ -500,7 +824,19 @@
           "image": "https://cf.geekdo-images.com/1nQ3ZKudtDeAP7IiKE-kNg__original/img/6igmXolQesapNU9yEnexip6m9B8=/0x0/filters:format(jpeg)/pic8625343.jpg",
           "thumbnail": "https://cf.geekdo-images.com/1nQ3ZKudtDeAP7IiKE-kNg__small/img/sW38512N2r1ZuuPE2TUD2LNfoxM=/fit-in/200x150/filters:strip_icc()/pic8625343.jpg",
           "year_published": 2015,
-          "bayes_rating": 7.048
+          "bayes_rating": 7.048,
+          "M": 2,
+          "T": 4,
+          "G": 2,
+          "F": 2,
+          "Ar": 4,
+          "GS": 14,
+          "IS": 28.0,
+          "feeling": "On Shelf",
+          "type": "co-op",
+          "weight": 2.1,
+          "description": "A murdered ghost communicates only through abstract visions, guiding psychic investigators to solve his own death before time runs out.",
+          "justification": "M(2): Simple card drafting and clue matching with limited depth. T(4): Abstract art cards generate genuine psychic communication experience perfectly. G(2): Ghost player has choices but investigators mostly guess randomly. F(2): Setup involves sorting many vision cards by difficulty. Ar(4): Ethereal, atmospheric artwork creates haunting séance mood beautifully."
         },
         {
           "bgg_id": null,
@@ -516,7 +852,19 @@
           "image": "https://cf.geekdo-images.com/5f-iX5k5gIo1y2U6_E4gSA__original/img/JRyU-V_SFvofgJVLoU5p-sBmCn4=/0x0/filters:format(png)/pic7022636.png",
           "thumbnail": "https://cf.geekdo-images.com/5f-iX5k5gIo1y2U6_E4gSA__small/img/h-BhOyu_7iLWKbzJsWuzTKrJ_jE=/fit-in/200x150/filters:strip_icc()/pic7022636.png",
           "year_published": 2015,
-          "bayes_rating": 5.609
+          "bayes_rating": 5.609,
+          "M": 2,
+          "T": 2,
+          "G": 2,
+          "F": 1,
+          "Ar": 3,
+          "GS": 7,
+          "IS": 10.5,
+          "feeling": "On Shelf",
+          "type": "competitive",
+          "weight": 1.8,
+          "description": "One player becomes the cunning fox while others hunt as forest animals in this asymmetric deduction game.",
+          "justification": "M(2): Simple asymmetric roles with basic card play and deduction. T(2): Fox-and-hunters theme sits on top of mechanics. G(2): Limited meaningful choices, mostly card selection and bluffing. F(1): Light rules, quick setup, family-friendly complexity. Ar(3): Functional woodland art, nothing special but adequate."
         }
       ],
       "recommended": []
@@ -575,7 +923,19 @@
           "image": "https://cf.geekdo-images.com/Fhb5SUHL2-Y59CD9h9ElTw__original/img/Qcmx5hHDKp5DXIjfOxMDWI9yq58=/0x0/filters:format(jpeg)/pic3944242.jpg",
           "thumbnail": "https://cf.geekdo-images.com/Fhb5SUHL2-Y59CD9h9ElTw__small/img/GjCX_FqrVB0tE6WJ4RYhQTEML3A=/fit-in/200x150/filters:strip_icc()/pic3944242.jpg",
           "year_published": 2014,
-          "bayes_rating": 5.664
+          "bayes_rating": 5.664,
+          "M": 2,
+          "T": 1,
+          "G": 2,
+          "F": 2,
+          "Ar": 2,
+          "GS": 2,
+          "IS": 2.0,
+          "feeling": "On Shelf",
+          "type": "competitive",
+          "weight": 2.1,
+          "description": "Command giant monsters in tactical combat, rolling dice to power devastating attacks across destructible cityscapes.",
+          "justification": "M(2): Basic action points with dice rolling for combat resolution. T(1): Kaiju theme is cosmetic overlay on generic tactical combat. G(2): Movement and attack choices matter but limited tactical depth. F(2): Standard setup with multiple dice types and terrain tracking. Ar(2): Functional monster art but lacks atmospheric polish or distinctive style."
         },
         {
           "bgg_id": 136991,
@@ -705,7 +1065,19 @@
           "image": "https://cf.geekdo-images.com/dC9Psqoy8uRh4scy4JlqQQ__original/img/fbN1NKvCpDraWx8WvkSlATBrWpg=/0x0/filters:format(jpeg)/pic6299803.jpg",
           "thumbnail": "https://cf.geekdo-images.com/dC9Psqoy8uRh4scy4JlqQQ__small/img/-41BewkmPwSHJhZuFv0s2HMXReo=/fit-in/200x150/filters:strip_icc()/pic6299803.jpg",
           "year_published": 2020,
-          "bayes_rating": 5.527
+          "bayes_rating": 5.527,
+          "M": 2,
+          "T": 3,
+          "G": 2,
+          "F": 1,
+          "Ar": 4,
+          "GS": 11,
+          "IS": 22.0,
+          "feeling": "On Shelf",
+          "type": "co-op",
+          "weight": 1.5,
+          "description": "Young heroes venture through the magical kingdom of Andor, solving quests and protecting the realm from emerging threats.",
+          "justification": "M(2): Simple action points and movement on fixed board with basic quest mechanics. T(3): Fantasy adventure actions align with heroic theme but don't generate tension. G(2): Limited meaningful choices constrained by simplified children's game design. F(1): Streamlined rules and setup designed for young players. Ar(4): Charming fantasy illustrations in established Andor visual style."
         },
         {
           "bgg_id": 126792,
@@ -832,7 +1204,19 @@
           "image": "https://cf.geekdo-images.com/YvHnHVhnGbYNpjDGWKMR7w__original/img/Q0-uKEp6yyA3vT5svGw8SJJhTRU=/0x0/filters:format(jpeg)/pic2956443.jpg",
           "thumbnail": "https://cf.geekdo-images.com/YvHnHVhnGbYNpjDGWKMR7w__small/img/scrLDFWvI7cQh-L9MvQOyZr-KQU=/fit-in/200x150/filters:strip_icc()/pic2956443.jpg",
           "year_published": 2012,
-          "bayes_rating": 5.533
+          "bayes_rating": 5.533,
+          "M": 2,
+          "T": 4,
+          "G": 3,
+          "F": 2,
+          "Ar": 3,
+          "GS": 22,
+          "IS": 33.0,
+          "feeling": "Engaging",
+          "type": "co-op",
+          "weight": 2.5,
+          "description": "Step into Victorian London as consulting detectives unraveling supernatural mysteries that Holmes himself couldn't solve.",
+          "justification": "M(2): Mostly reading, discussing clues, and logical deduction without complex systems. T(4): Investigating occult mysteries generates genuine detective atmosphere through narrative immersion. G(3): Meaningful choices about which leads to follow and theories to pursue. F(2): Fan expansion requires base game, some setup complexity with case materials. Ar(3): Atmospheric Victorian mystery art but fan production values limit polish."
         }
       ],
       "recommended": []
@@ -1320,7 +1704,19 @@
           "image": "https://cf.geekdo-images.com/0_KEDk4lCvryf1Ju3YQJxA__original/img/zv58Iylm_N8nfVFgRkMVM0Q9Fh8=/0x0/filters:format(jpeg)/pic3339551.jpg",
           "thumbnail": "https://cf.geekdo-images.com/0_KEDk4lCvryf1Ju3YQJxA__small/img/FticvQmaT_qfdrX-hpSSK1ttRb0=/fit-in/200x150/filters:strip_icc()/pic3339551.jpg",
           "year_published": 2017,
-          "bayes_rating": 7.104
+          "bayes_rating": 7.104,
+          "M": 2,
+          "T": 1,
+          "G": 2,
+          "F": 1,
+          "Ar": 3,
+          "GS": 3,
+          "IS": 4.5,
+          "feeling": "On Shelf",
+          "type": "competitive",
+          "weight": 2.05,
+          "description": "Trade cubes along ancient spice routes, upgrading your caravan's abilities to fulfill valuable merchant contracts.",
+          "justification": "M(2): Multi-use cards with basic cube conversion chains and set collection. T(1): Spice trading theme is pure decoration over abstract optimization. G(2): Card selection matters but limited hand creates narrow choices. F(1): Clean rules, quick setup, smooth gameplay flow. Ar(3): Competent spice route art but lacks atmospheric depth or character."
         }
       ],
       "recommended": []
@@ -2346,7 +2742,19 @@
           "image": "https://cf.geekdo-images.com/GtLESZ4ZjqikK12bjBTmig__original/img/CHUtcmSXFs8LYKRHyUaeio2ra4U=/0x0/filters:format(jpeg)/pic7040521.jpg",
           "thumbnail": "https://cf.geekdo-images.com/GtLESZ4ZjqikK12bjBTmig__small/img/66Emb1wn1JD_5_9XdsYY2DgMVMA=/fit-in/200x150/filters:strip_icc()/pic7040521.jpg",
           "year_published": 2022,
-          "bayes_rating": 6.675
+          "bayes_rating": 6.675,
+          "M": 2,
+          "T": 2,
+          "G": 2,
+          "F": 2,
+          "Ar": 3,
+          "GS": 6,
+          "IS": 9.0,
+          "feeling": "On Shelf",
+          "type": "competitive",
+          "weight": 2.1,
+          "description": "Draft fighters into your deck and battle through tournament rounds where only the strongest decks survive elimination.",
+          "justification": "M(2): Simple deck building with creature powers but limited interaction depth. T(2): Fighting tournament references theme but doesn't generate tension or drama. G(2): Draft choices matter but gameplay feels automated once decks clash. F(2): Multiple phases and tournament structure create moderate setup overhead. Ar(3): Clean cartoon fighter art serves function without inspiring atmosphere."
         }
       ],
       "nominees": [
@@ -2356,7 +2764,19 @@
           "image": "https://cf.geekdo-images.com/ypE6HrTY1Xvpt1XCpKlMBw__original/img/G4-gFXe9tKgnkgJOFTVO2A-Wbm4=/0x0/filters:format(png)/pic5960068.png",
           "thumbnail": "https://cf.geekdo-images.com/ypE6HrTY1Xvpt1XCpKlMBw__small/img/25aN_TPIrOU6S7_1V31lVwsr3iA=/fit-in/200x150/filters:strip_icc()/pic5960068.png",
           "year_published": 2015,
-          "bayes_rating": 7.025
+          "bayes_rating": 7.025,
+          "M": 4,
+          "T": 2,
+          "G": 4,
+          "F": 2,
+          "Ar": 4,
+          "GS": 30,
+          "IS": 60.0,
+          "feeling": "Engaging",
+          "type": "competitive",
+          "weight": 3.2,
+          "description": "Navigate the bustling streets of Edo period Tokyo as artisans and merchants, building your reputation through careful movement and resource management.",
+          "justification": "M(4): Action points with worker placement, movement restrictions, and layered scoring systems. T(2): Edo period setting pleasant but mechanics don't generate historical immersion. G(4): Every movement and placement decision creates meaningful trade-offs and timing puzzles. F(2): Multiple boards and components create moderate setup and rules overhead. Ar(4): Clean Japanese aesthetic with detailed period artwork and quality components."
         },
         {
           "bgg_id": 258779,
@@ -2364,7 +2784,19 @@
           "image": "https://cf.geekdo-images.com/3HkjDovk8Yr2wMumcSUGog__original/img/hl_WEzG4mKaEW_7qrZf-sPxXMpI=/0x0/filters:format(jpeg)/pic4843622.jpg",
           "thumbnail": "https://cf.geekdo-images.com/3HkjDovk8Yr2wMumcSUGog__small/img/4pF1oDpvn1VR3rbvW88xLK86xmA=/fit-in/200x150/filters:strip_icc()/pic4843622.jpg",
           "year_published": 2022,
-          "bayes_rating": 7.414
+          "bayes_rating": 7.414,
+          "M": 3,
+          "T": 2,
+          "G": 3,
+          "F": 2,
+          "Ar": 4,
+          "GS": 16,
+          "IS": 32.0,
+          "feeling": "Engaging",
+          "type": "competitive",
+          "weight": 2.8,
+          "description": "Roll dice to harvest meteorites and build planetary landscapes in simultaneous real-time tile-laying competition across alien worlds.",
+          "justification": "M(3): Simultaneous tile placement with polyomino puzzles and resource conversion chains. T(2): Planet-building theme is cosmetic over abstract spatial optimization mechanics. G(3): Meaningful tile placement decisions with cascading spatial consequences each round. F(2): Dice rolling and simultaneous play create some chaos and downtime. Ar(4): Clean sci-fi aesthetic with appealing planet boards and colorful components."
         }
       ],
       "recommended": []
@@ -2383,7 +2815,19 @@
           "image": "https://cf.geekdo-images.com/fPhdfZX9UTLr4-SVgK0zoQ__original/img/ZPdxDPt1jSRQMNnVgn-qIPhNv0E=/0x0/filters:format(jpeg)/pic5899025.jpg",
           "thumbnail": "https://cf.geekdo-images.com/fPhdfZX9UTLr4-SVgK0zoQ__small/img/v8irnVxaCdK29XPtqEbtlKkLY4c=/fit-in/200x150/filters:strip_icc()/pic5899025.jpg",
           "year_published": 2021,
-          "bayes_rating": 6.795
+          "bayes_rating": 6.795,
+          "M": 3,
+          "T": 2,
+          "G": 3,
+          "F": 2,
+          "Ar": 4,
+          "GS": 16,
+          "IS": 32.0,
+          "feeling": "Engaging",
+          "type": "competitive",
+          "weight": 2.3,
+          "description": "As a nature spirit, simultaneously reveal symbol cards to collect trees and animals while managing the sacred fire that sustains the forest.",
+          "justification": "M(3): Simultaneous card reveal with push-your-luck symbols and tile collection. T(2): Forest spirit theme applied over abstract symbol matching mechanics. G(3): Meaningful risk assessment on every card reveal and collection choice. F(2): Multiple decks and tiles create setup overhead and rules complexity. Ar(4): Lush forest artwork with appealing nature spirit aesthetic by Apolline Etienne."
         }
       ],
       "nominees": [
@@ -2393,7 +2837,19 @@
           "image": "https://cf.geekdo-images.com/qrPLpAnhFgc470ZRuXlvbg__original/img/QenUCVaFRry4-wlimHmeLn226Bo=/0x0/filters:format(jpeg)/pic4037705.jpg",
           "thumbnail": "https://cf.geekdo-images.com/qrPLpAnhFgc470ZRuXlvbg__small/img/ZFL0o-lhnuWE21Sa9YS8qi8ayGU=/fit-in/200x150/filters:strip_icc()/pic4037705.jpg",
           "year_published": 2018,
-          "bayes_rating": 7.161
+          "bayes_rating": 7.161,
+          "M": 3,
+          "T": 2,
+          "G": 4,
+          "F": 1,
+          "Ar": 3,
+          "GS": 23,
+          "IS": 34.5,
+          "feeling": "Engaging",
+          "type": "competitive",
+          "weight": 2.8,
+          "description": "Hunt a legendary cryptid by asking yes-or-no questions about its habitat while protecting your own secret clues.",
+          "justification": "M(3): Deduction with clue management and spatial reasoning on modular board. T(2): Cryptid hunting flavor but mechanics feel abstract. G(4): Every question reveals information while exposing your own knowledge. F(1): Clean setup, simple rules, flows smoothly. Ar(3): Functional woodland art lacks atmospheric punch for cryptid theme."
         },
         {
           "bgg_id": 316554,
@@ -2401,7 +2857,19 @@
           "image": "https://cf.geekdo-images.com/PhjygpWSo-0labGrPBMyyg__original/img/mZzaBAEEJpMlHWWmC0R6Su0OibQ=/0x0/filters:format(jpeg)/pic5666597.jpg",
           "thumbnail": "https://cf.geekdo-images.com/PhjygpWSo-0labGrPBMyyg__small/img/JGgY-nBmkyB8WRp8vcoBLlNMQ5U=/fit-in/200x150/filters:strip_icc()/pic5666597.jpg",
           "year_published": 2020,
-          "bayes_rating": 8.222
+          "bayes_rating": 8.222,
+          "M": 4,
+          "T": 3,
+          "G": 4,
+          "F": 2,
+          "Ar": 4,
+          "GS": 46,
+          "IS": 92.0,
+          "feeling": "Immersive",
+          "type": "competitive",
+          "weight": 3.0,
+          "description": "Navigate the deadly politics of Arrakis through spice, schemes, and strategic alliances in the battle for the Imperium's throne.",
+          "justification": "M(4): Deck building with worker placement creates rich synergies and strategic depth. T(3): Political maneuvering feels Dune-like but mechanics reference more than generate. G(4): Every card play and agent placement cascades into meaningful consequences. F(2): Setup and multiple boards create overhead but manageable complexity. Ar(4): Stunning desert palette and iconic Dune imagery throughout."
         }
       ],
       "recommended": []
@@ -2487,7 +2955,19 @@
           "image": "https://cf.geekdo-images.com/FJlTdSMkK5hMNtCympJFmg__original/img/pr_jKPa74JjBBm30Mo9Uj9Jq1-w=/0x0/filters:format(jpeg)/pic5429837.jpg",
           "thumbnail": "https://cf.geekdo-images.com/FJlTdSMkK5hMNtCympJFmg__small/img/WqPUfQOfiIe5FnBXz-EAavw5jCs=/fit-in/200x150/filters:strip_icc()/pic5429837.jpg",
           "year_published": 2019,
-          "bayes_rating": 7.094
+          "bayes_rating": 7.094,
+          "M": 4,
+          "T": 4,
+          "G": 4,
+          "F": 3,
+          "Ar": 4,
+          "GS": 61,
+          "IS": 122.0,
+          "feeling": "Immersive",
+          "type": "competitive",
+          "weight": 3.2,
+          "description": "Noble houses debate the kingdom's fate through fifteen generations while a mysterious chronicle records every consequence.",
+          "justification": "M(4): Legacy voting with hidden agendas, dilemma consequences, and evolving narrative. T(4): Political decisions reshape kingdom history through actual mechanical changes. G(4): Every vote carries permanent consequences for future generations. F(3): Legacy stickers, chronicle tracking, and complex political setup. Ar(4): Elegant heraldic design with atmospheric medieval political art."
         }
       ],
       "recommended": []
@@ -2516,7 +2996,19 @@
           "image": "https://cf.geekdo-images.com/fsjopscDFCVArzU7fzhVxA__original/img/JJXwLsCeWj_8FOurLToKpdQuvpc=/0x0/filters:format(jpeg)/pic6183704.jpg",
           "thumbnail": "https://cf.geekdo-images.com/fsjopscDFCVArzU7fzhVxA__small/img/6Yu-lVdkDTrICD1y5ZqNmzHZEsc=/fit-in/200x150/filters:strip_icc()/pic6183704.jpg",
           "year_published": 2018,
-          "bayes_rating": 7.048
+          "bayes_rating": 7.048,
+          "M": 4,
+          "T": 2,
+          "G": 4,
+          "F": 2,
+          "Ar": 4,
+          "GS": 30,
+          "IS": 60.0,
+          "feeling": "Engaging",
+          "type": "competitive",
+          "weight": 3.2,
+          "description": "Transform ancient Rome through careful city planning, balancing immediate gains against long-term architectural ambitions.",
+          "justification": "M(4): Multi-use cards, tile placement, and worker placement create interlocking systems. T(2): Roman theme is decorative overlay on abstract optimization mechanics. G(4): Deep decision space with meaningful trade-offs between immediate and delayed scoring. F(2): Setup and rules complexity manageable but not trivial for new players. Ar(4): Clean, elegant Roman aesthetic with quality component presentation by Klemens Franz."
         },
         {
           "bgg_id": null,
@@ -2553,7 +3045,19 @@
           "image": "https://cf.geekdo-images.com/u1EZSUC5n8k4g4OFPkn3ow__original/img/e4QJiofBkd18ZffIURPyqNWrhxk=/0x0/filters:format(jpeg)/pic8014078.jpg",
           "thumbnail": "https://cf.geekdo-images.com/u1EZSUC5n8k4g4OFPkn3ow__small/img/mOfaidSnvnq2gHEQuAsYTLyIQQQ=/fit-in/200x150/filters:strip_icc()/pic8014078.jpg",
           "year_published": 2018,
-          "bayes_rating": 7.36
+          "bayes_rating": 7.36,
+          "M": 3,
+          "T": 1,
+          "G": 3,
+          "F": 1,
+          "Ar": 3,
+          "GS": 8,
+          "IS": 12.0,
+          "feeling": "On Shelf",
+          "type": "competitive",
+          "weight": 2.0,
+          "description": "Roll colorful dice and mark clever combinations on your scoresheet to chain together satisfying cascades of points.",
+          "justification": "M(3): Dice selection with chaining combos across multiple colored scoresheets creates engaging puzzles. T(1): Abstract optimization with no thematic content beyond colorful presentation. G(3): Meaningful choices in dice selection and chain activation timing. F(1): Roll dice, mark sheet — immediate setup and play. Ar(3): Clean, colorful design that's functional but not atmospheric."
         },
         {
           "bgg_id": 227789,
@@ -2561,7 +3065,19 @@
           "image": "https://cf.geekdo-images.com/P0B68R2CLFTuiD8M9lCYPQ__original/img/3tMVOxYhmuL3fpqW2256qUXqWxE=/0x0/filters:format(jpeg)/pic3563904.jpg",
           "thumbnail": "https://cf.geekdo-images.com/P0B68R2CLFTuiD8M9lCYPQ__small/img/1Omy3H6zspL0HKrUjgdolrGxmwk=/fit-in/200x150/filters:strip_icc()/pic3563904.jpg",
           "year_published": 2017,
-          "bayes_rating": 7.098
+          "bayes_rating": 7.098,
+          "M": 3,
+          "T": 1,
+          "G": 4,
+          "F": 2,
+          "Ar": 4,
+          "GS": 10,
+          "IS": 20.0,
+          "feeling": "On Shelf",
+          "type": "competitive",
+          "weight": 3.1,
+          "description": "Manage a medieval monastery brewery, balancing monks and resources to craft the perfect ales for heavenly profit.",
+          "justification": "M(3): Worker placement with dual-sided board optimization and resource timing. T(1): Medieval brewery theme is decorative overlay on abstract optimization. G(4): Meaningful choices between board sides and resource placement timing. F(2): Rules complexity and dual board management add setup overhead. Ar(4): Clean medieval aesthetic with pleasant monastery and brewery artwork."
         }
       ],
       "recommended": []
@@ -2690,7 +3206,19 @@
           "image": "https://cf.geekdo-images.com/PcxTKtTwov2vxkZZbRVDAw__original/img/kjg4hSkTE2a8MKlkZNgTGqfKqgc=/0x0/filters:format(jpeg)/pic2546156.jpg",
           "thumbnail": "https://cf.geekdo-images.com/PcxTKtTwov2vxkZZbRVDAw__small/img/exJUDw66ox4k5H5dSX_oAOuRNXk=/fit-in/200x150/filters:strip_icc()/pic2546156.jpg",
           "year_published": 2015,
-          "bayes_rating": 6.862
+          "bayes_rating": 6.862,
+          "M": 3,
+          "T": 2,
+          "G": 3,
+          "F": 2,
+          "Ar": 4,
+          "GS": 16,
+          "IS": 32.0,
+          "feeling": "Engaging",
+          "type": "competitive",
+          "weight": 2.8,
+          "description": "Brave or cowardly witches deliver potions across enchanted valleys, gambling on whether rivals will dare challenge their magical boasts.",
+          "justification": "M(3): Role cards with brave/coward risk-reward system and area movement. T(2): Witch theme is charming but mechanics feel abstract. G(3): Meaningful risk assessment on every brave/coward declaration. F(2): Setup and rules explanation add moderate overhead. Ar(4): Whimsical fairy-tale artwork with attractive landscape board."
         }
       ],
       "nominees": [
@@ -2993,7 +3521,19 @@
           "image": "https://cf.geekdo-images.com/wFwQ-MEGf6BLIyV77hQvHQ__original/img/jGDJHygR3da__4gT0pMzKAD1SQU=/0x0/filters:format(png)/pic5982841.png",
           "thumbnail": "https://cf.geekdo-images.com/wFwQ-MEGf6BLIyV77hQvHQ__small/img/hBn-T03NV6qYDYiaUMfP5-dJdz8=/fit-in/200x150/filters:strip_icc()/pic5982841.png",
           "year_published": 2021,
-          "bayes_rating": 0.0
+          "bayes_rating": 0.0,
+          "M": 1,
+          "T": 1,
+          "G": 1,
+          "F": 1,
+          "Ar": 2,
+          "GS": 0,
+          "IS": 0.0,
+          "feeling": "On Shelf",
+          "type": "party",
+          "weight": 1.0,
+          "description": "Stack tiny decorative figurines on cakes while competing for the most aesthetically pleasing arrangement.",
+          "justification": "M(1): Stack pieces on cake, minimal interaction or depth. T(1): Cake decorating theme is purely cosmetic decoration. G(1): Placement choices exist but outcomes feel arbitrary and light. F(1): Simple components, quick setup, immediate play. Ar(2): Cute figurines but generic cake aesthetic lacks atmosphere."
         }
       ],
       "nominees": [
@@ -3003,7 +3543,19 @@
           "image": "https://cf.geekdo-images.com/U-azZcnB7jLSIfiIbCRj2w__original/img/ZUyw28V-m3_yf0qoH1BO-7jyrwM=/0x0/filters:format(jpeg)/pic8542666.jpg",
           "thumbnail": "https://cf.geekdo-images.com/U-azZcnB7jLSIfiIbCRj2w__small/img/IQmtOlwviHL6LFDGtg3L2Jbb0z4=/fit-in/200x150/filters:strip_icc()/pic8542666.jpg",
           "year_published": 2025,
-          "bayes_rating": 5.705
+          "bayes_rating": 5.705,
+          "M": 2,
+          "T": 2,
+          "G": 2,
+          "F": 1,
+          "Ar": 4,
+          "GS": 7,
+          "IS": 14.0,
+          "feeling": "On Shelf",
+          "type": "competitive",
+          "weight": 1.5,
+          "description": "Create a junior-friendly Pacific Northwest habitat by drafting simplified tiles to build peaceful animal sanctuaries.",
+          "justification": "M(2): Simplified tile drafting and placement for children. T(2): Nature theme is pleasant but mechanics don't generate wildlife experience. G(2): Limited choices designed for young players reduce meaningful agency. F(1): Family game with streamlined rules and quick setup. Ar(4): Likely maintains Cascadia's beautiful nature illustrations in accessible format."
         },
         {
           "bgg_id": null,
@@ -3040,7 +3592,19 @@
           "image": "https://cf.geekdo-images.com/dqtqtGBSD0zI48DrWZiH6A__original/img/LVckII57DBxV7Ka1aC0dyBDTahk=/0x0/filters:format(jpeg)/pic7917756.jpg",
           "thumbnail": "https://cf.geekdo-images.com/dqtqtGBSD0zI48DrWZiH6A__small/img/Qi0eWg69byhxeTnADRryP5wKfgM=/fit-in/200x150/filters:strip_icc()/pic7917756.jpg",
           "year_published": 2024,
-          "bayes_rating": 5.55
+          "bayes_rating": 5.55,
+          "M": 2,
+          "T": 1,
+          "G": 2,
+          "F": 1,
+          "Ar": 3,
+          "GS": 3,
+          "IS": 4.5,
+          "feeling": "On Shelf",
+          "type": "competitive",
+          "weight": 2.0,
+          "description": "Collect gem cards of different sizes to build the most valuable collection in this simple family game.",
+          "justification": "M(2): Basic set collection with simple card drawing mechanics. T(1): Gem collecting is purely mechanical without thematic generation. G(2): Limited meaningful choices in basic card selection game. F(1): Simple family game with minimal setup requirements. Ar(3): Functional gem artwork without distinctive visual identity."
         },
         {
           "bgg_id": null,
@@ -3067,7 +3631,19 @@
           "image": "https://cf.geekdo-images.com/3PLNZOg5ZEVf9u121faEbw__original/img/J_D8TkWJfM4xFoWdoEmKKpXANck=/0x0/filters:format(jpeg)/pic7075722.jpg",
           "thumbnail": "https://cf.geekdo-images.com/3PLNZOg5ZEVf9u121faEbw__small/img/cRxQAJfpp54chQduFPedHYn245Q=/fit-in/200x150/filters:strip_icc()/pic7075722.jpg",
           "year_published": 2022,
-          "bayes_rating": 5.673
+          "bayes_rating": 5.673,
+          "M": 2,
+          "T": 3,
+          "G": 2,
+          "F": 1,
+          "Ar": 3,
+          "GS": 11,
+          "IS": 16.5,
+          "feeling": "On Shelf",
+          "type": "co-op",
+          "weight": 1.5,
+          "description": "A ghostly pirate captain guides young treasure hunters through silent clues and spooky deduction puzzles.",
+          "justification": "M(2): Simple deduction with card-based cluing system for children. T(3): Ghost communication limits create mild supernatural atmosphere. G(2): Basic deduction choices with forgiving cooperative structure. F(1): Kids game with streamlined rules and quick setup. Ar(3): Colorful pirate theme but lacks atmospheric depth for horror preference."
         }
       ],
       "nominees": [
@@ -3077,7 +3653,19 @@
           "image": "https://cf.geekdo-images.com/xqu4JwxRuLxL3yQAOXVpeA__original/img/YCc2gSIvYR5kUNN6RJgu2fJo8tw=/0x0/filters:format(jpeg)/pic6754887.jpg",
           "thumbnail": "https://cf.geekdo-images.com/xqu4JwxRuLxL3yQAOXVpeA__small/img/kobHsKrYWjG-mEyBC6twI8L73g4=/fit-in/200x150/filters:strip_icc()/pic6754887.jpg",
           "year_published": 2022,
-          "bayes_rating": 5.533
+          "bayes_rating": 5.533,
+          "M": 1,
+          "T": 1,
+          "G": 2,
+          "F": 1,
+          "Ar": 3,
+          "GS": 1,
+          "IS": 1.5,
+          "feeling": "On Shelf",
+          "type": "competitive",
+          "weight": 1.2,
+          "description": "Ice cream vendor Carla must stack scoops on wobbly cones while racing to fulfill orders in this dexterity challenge.",
+          "justification": "M(1): Stack ice cream scoops — minimal mechanical depth beyond dexterity. T(1): Ice cream theme is pure decoration over stacking mechanics. G(2): Some meaningful choices in order selection and risk management. F(1): Simple setup and rules for immediate family play. Ar(3): Colorful cartoon ice cream art appeals to children but lacks sophistication."
         },
         {
           "bgg_id": 170969,
@@ -3085,7 +3673,19 @@
           "image": "https://cf.geekdo-images.com/Fhb5SUHL2-Y59CD9h9ElTw__original/img/Qcmx5hHDKp5DXIjfOxMDWI9yq58=/0x0/filters:format(jpeg)/pic3944242.jpg",
           "thumbnail": "https://cf.geekdo-images.com/Fhb5SUHL2-Y59CD9h9ElTw__small/img/GjCX_FqrVB0tE6WJ4RYhQTEML3A=/fit-in/200x150/filters:strip_icc()/pic3944242.jpg",
           "year_published": 2014,
-          "bayes_rating": 5.664
+          "bayes_rating": 5.664,
+          "M": 2,
+          "T": 1,
+          "G": 2,
+          "F": 2,
+          "Ar": 2,
+          "GS": 2,
+          "IS": 2.0,
+          "feeling": "On Shelf",
+          "type": "competitive",
+          "weight": 2.1,
+          "description": "Command giant monsters in tactical combat, rolling dice to power devastating attacks across destructible cityscapes.",
+          "justification": "M(2): Basic action points with dice rolling for combat resolution. T(1): Kaiju theme is cosmetic overlay on generic tactical combat. G(2): Movement and attack choices matter but limited tactical depth. F(2): Standard setup with multiple dice types and terrain tracking. Ar(2): Functional monster art but lacks atmospheric polish or distinctive style."
         }
       ],
       "recommended": []
@@ -3141,7 +3741,19 @@
           "image": "https://cf.geekdo-images.com/S_Cpk3j3Z3ceNJBPNg4l7w__original/img/2g1g35Rp3u1tF_8fX3YLpmjIPj8=/0x0/filters:format(png)/pic5212561.png",
           "thumbnail": "https://cf.geekdo-images.com/S_Cpk3j3Z3ceNJBPNg4l7w__small/img/yyYrzwIVoBwTJ0U3TI6oZWvkgS0=/fit-in/200x150/filters:strip_icc()/pic5212561.png",
           "year_published": 2020,
-          "bayes_rating": 6.342
+          "bayes_rating": 6.342,
+          "M": 2,
+          "T": 2,
+          "G": 2,
+          "F": 1,
+          "Ar": 4,
+          "GS": 7,
+          "IS": 14.0,
+          "feeling": "On Shelf",
+          "type": "competitive",
+          "weight": 1.2,
+          "description": "Explore a magical island as young dragons, collecting domino tiles to build landscapes and discover baby dragons in their eggs.",
+          "justification": "M(2): Simple domino placement with basic pattern matching requirements. T(2): Dragon theme is charming but mechanics don't generate fantasy. G(2): Limited meaningful choices in tile selection and placement. F(1): Family game with immediate setup and simple rules. Ar(4): Cute dragon art appeals to families, pleasant visual design."
         }
       ],
       "nominees": [
@@ -3159,7 +3771,19 @@
           "image": "https://cf.geekdo-images.com/vUeJ2wQ5WHvf4cTTNvhdpw__original/img/nYdRzOWicUPnt6zAFAGRYXxOR38=/0x0/filters:format(png)/pic5241229.png",
           "thumbnail": "https://cf.geekdo-images.com/vUeJ2wQ5WHvf4cTTNvhdpw__small/img/0x_fpGjdVBFOl29s_1qhsou0FxA=/fit-in/200x150/filters:strip_icc()/pic5241229.png",
           "year_published": 2020,
-          "bayes_rating": 5.559
+          "bayes_rating": 5.559,
+          "M": 3,
+          "T": 3,
+          "G": 3,
+          "F": 2,
+          "Ar": 4,
+          "GS": 25,
+          "IS": 50.0,
+          "feeling": "Engaging",
+          "type": "solo",
+          "weight": 2.5,
+          "description": "Detective Mia London uses logical deduction to solve cases by questioning suspects and following clues in Victorian London.",
+          "justification": "M(3): Deduction puzzles with branching investigation paths and clue management. T(3): Detective work feels authentic through questioning and case-solving structure. G(3): Meaningful deductive choices that directly impact case resolution success. F(2): Card management and case setup create moderate overhead. Ar(4): Atmospheric Victorian detective aesthetic with strong character illustrations."
         }
       ],
       "recommended": []
@@ -3188,7 +3812,19 @@
           "image": "https://cf.geekdo-images.com/2Kd_Ja9x5SBwV4XqR3Q2GA__original/img/OH7VIaBapzzpXU9pXxnEsU2PaeI=/0x0/filters:format(jpeg)/pic5476706.jpg",
           "thumbnail": "https://cf.geekdo-images.com/2Kd_Ja9x5SBwV4XqR3Q2GA__small/img/uBMkcmlswzJebqsRuGpDswikyoI=/fit-in/200x150/filters:strip_icc()/pic5476706.jpg",
           "year_published": 2020,
-          "bayes_rating": 5.53
+          "bayes_rating": 5.53,
+          "M": 2,
+          "T": 1,
+          "G": 2,
+          "F": 2,
+          "Ar": 2,
+          "GS": 2,
+          "IS": 2.0,
+          "feeling": "On Shelf",
+          "type": "competitive",
+          "weight": 1.5,
+          "description": "Draw fish from memory after studying underwater photographs, competing to recreate marine scenes with colored pencils.",
+          "justification": "M(2): Memory challenge with basic drawing mechanics, minimal depth. T(1): Drawing fish doesn't generate underwater exploration experience. G(2): Limited meaningful choices beyond memory recall and drawing accuracy. F(2): Requires drawing materials and setup time for photos. Ar(2): Functional fish photography but uninspiring visual presentation overall."
         },
         {
           "bgg_id": null,
@@ -3225,7 +3861,19 @@
           "image": "https://cf.geekdo-images.com/Y8rIsYKqGUhXcpkAO-EI8w__original/img/xjmzZ38YiVstr22-dMw8B2J45WA=/0x0/filters:format(jpeg)/pic4959947.jpg",
           "thumbnail": "https://cf.geekdo-images.com/Y8rIsYKqGUhXcpkAO-EI8w__small/img/5mYCCSG2Ynalc6HNxHHlYEBDzyQ=/fit-in/200x150/filters:strip_icc()/pic4959947.jpg",
           "year_published": 2018,
-          "bayes_rating": 5.598
+          "bayes_rating": 5.598,
+          "M": 2,
+          "T": 2,
+          "G": 2,
+          "F": 1,
+          "Ar": 3,
+          "GS": 7,
+          "IS": 10.5,
+          "feeling": "On Shelf",
+          "type": "competitive",
+          "weight": 1.5,
+          "description": "Navigate a whimsical fairy tale kingdom, collecting story fragments while deducing which locations your opponents are secretly visiting.",
+          "justification": "M(2): Simple movement with basic deduction and set collection mechanics. T(2): Fairy tale theme is decorative overlay on abstract mechanisms. G(2): Limited meaningful choices in movement and questioning other players. F(1): Family game with straightforward rules and quick setup. Ar(3): Colorful fairy tale illustrations that appeal to families but lack sophistication."
         },
         {
           "bgg_id": 270140,
@@ -3233,7 +3881,19 @@
           "image": "https://cf.geekdo-images.com/Mkj4bNlFxfHq0gnIoCjEEA__original/img/Hnf1bp1UvGNMdTTVwQF79-hNVgk=/0x0/filters:format(jpeg)/pic4535117.jpg",
           "thumbnail": "https://cf.geekdo-images.com/Mkj4bNlFxfHq0gnIoCjEEA__small/img/5whc3LC2uOo-oUdN8i4Ew0B1Vzg=/fit-in/200x150/filters:strip_icc()/pic4535117.jpg",
           "year_published": 2019,
-          "bayes_rating": 5.55
+          "bayes_rating": 5.55,
+          "M": 2,
+          "T": 2,
+          "G": 2,
+          "F": 1,
+          "Ar": 3,
+          "GS": 7,
+          "IS": 10.5,
+          "feeling": "On Shelf",
+          "type": "competitive",
+          "weight": 1.2,
+          "description": "Stack colorful animal towers and race them across lily pads in this whimsical balancing challenge for kids.",
+          "justification": "M(2): Simple stacking and dice movement with minimal decision depth. T(2): Animal theme is decorative, mechanics don't generate jungle experience. G(2): Limited meaningful choices beyond basic risk assessment. F(1): Family game with instant setup and simple rules. Ar(3): Bright cartoon animals appeal to children but lack sophistication."
         }
       ],
       "recommended": []
@@ -3262,7 +3922,19 @@
           "image": "https://cf.geekdo-images.com/vS_kW-sA3ucX0_l8rjiR-Q__original/img/YoVF-FmQovJBZy88MQGGGeWd7ok=/0x0/filters:format(jpeg)/pic3196017.jpg",
           "thumbnail": "https://cf.geekdo-images.com/vS_kW-sA3ucX0_l8rjiR-Q__small/img/-83eFWueuzRljOcwZYyYMGOr5Fo=/fit-in/200x150/filters:strip_icc()/pic3196017.jpg",
           "year_published": 2016,
-          "bayes_rating": 5.518
+          "bayes_rating": 5.518,
+          "M": 1,
+          "T": 1,
+          "G": 1,
+          "F": 1,
+          "Ar": 2,
+          "GS": 0,
+          "IS": 0.0,
+          "feeling": "On Shelf",
+          "type": "party",
+          "weight": 1.0,
+          "description": "Draw clues using only emojis and hope your friends can decode your artistic masterpiece.",
+          "justification": "M(1): Draw emojis, guess answers — minimal mechanical depth. T(1): Emoji theme is surface decoration, not generated experience. G(1): Random prompts and subjective judging eliminate meaningful agency. F(1): Grab cards and start drawing immediately. Ar(2): Basic emoji graphics lack visual sophistication or atmosphere."
         },
         {
           "bgg_id": 232045,
@@ -3270,7 +3942,19 @@
           "image": "https://cf.geekdo-images.com/JMRNKUsXPMbIZAuCh3PPtQ__original/img/iveN-yZCLz3B8vhL5Ipw1O6-xKU=/0x0/filters:format(jpeg)/pic3915286.jpg",
           "thumbnail": "https://cf.geekdo-images.com/JMRNKUsXPMbIZAuCh3PPtQ__small/img/6mR--R_aSWsfVtRz2dqRmeoR3_w=/fit-in/200x150/filters:strip_icc()/pic3915286.jpg",
           "year_published": 2017,
-          "bayes_rating": 5.684
+          "bayes_rating": 5.684,
+          "M": 1,
+          "T": 1,
+          "G": 1,
+          "F": 1,
+          "Ar": 2,
+          "GS": 0,
+          "IS": 0.0,
+          "feeling": "On Shelf",
+          "type": "party",
+          "weight": 1.2,
+          "description": "Shake a plastic manor to arrange colored balls into rooms faster than your opponents in this frantic dexterity race.",
+          "justification": "M(1): Shake box until balls land in right spots - no strategic depth. T(1): Haunted manor theme is pure decoration over dexterity mechanics. G(1): Success depends entirely on physical coordination, not meaningful decisions. F(1): Grab box and shake immediately, zero setup required. Ar(2): Plastic toy aesthetic lacks atmosphere or visual appeal."
         }
       ],
       "recommended": []
@@ -3289,7 +3973,19 @@
           "image": "https://cf.geekdo-images.com/xVx8ex1fjO9C7W8rRvWdVQ__original/img/rIyNSXqNgGs4Yqt0xL5CdTp9grg=/0x0/filters:format(png)/pic3320017.png",
           "thumbnail": "https://cf.geekdo-images.com/xVx8ex1fjO9C7W8rRvWdVQ__small/img/7ZeCdaJWigksF5wUHTGGXmmfP6Y=/fit-in/200x150/filters:strip_icc()/pic3320017.png",
           "year_published": 2016,
-          "bayes_rating": 6.55
+          "bayes_rating": 6.55,
+          "M": 2,
+          "T": 1,
+          "G": 2,
+          "F": 1,
+          "Ar": 3,
+          "GS": 3,
+          "IS": 4.5,
+          "feeling": "On Shelf",
+          "type": "competitive",
+          "weight": 1.2,
+          "description": "Flick your penguin through doorways in a school made of boxes, collecting fish while avoiding the hall monitor.",
+          "justification": "M(2): Flicking mechanics with some tactical positioning and collection goals. T(1): Penguin school theme is cute decoration over abstract flicking. G(2): Some meaningful choices in flicking angles and risk assessment. F(1): Quick setup, simple rules, immediate play. Ar(3): Colorful cartoon penguins, functional but not atmospheric."
         }
       ],
       "nominees": [
@@ -3299,7 +3995,19 @@
           "image": "https://cf.geekdo-images.com/MlvOjkWlgwkGstoQAqJ72w__original/img/PP82-rp3B69Yr3ptWh0mhOFs2DY=/0x0/filters:format(jpeg)/pic3388417.jpg",
           "thumbnail": "https://cf.geekdo-images.com/MlvOjkWlgwkGstoQAqJ72w__small/img/ZwP3s0yw4w_u20ltBzt8dsR5lNQ=/fit-in/200x150/filters:strip_icc()/pic3388417.jpg",
           "year_published": 2017,
-          "bayes_rating": 5.569
+          "bayes_rating": 5.569,
+          "M": 2,
+          "T": 2,
+          "G": 2,
+          "F": 1,
+          "Ar": 3,
+          "GS": 7,
+          "IS": 10.5,
+          "feeling": "On Shelf",
+          "type": "competitive",
+          "weight": 1.5,
+          "description": "Guess which pirate drew which treasure card through clever questioning and deductive reasoning.",
+          "justification": "M(2): Simple card draw and questioning with basic deduction mechanics. T(2): Pirate theme decorates mechanics rather than generating adventure experience. G(2): Meaningful questions but limited decision space in deduction format. F(1): Light party game with minimal setup and rules overhead. Ar(3): Colorful cartoon pirate art that's functional but not atmospheric."
         },
         {
           "bgg_id": null,
@@ -3336,7 +4044,19 @@
           "image": "https://cf.geekdo-images.com/V_nDKd8bFLwCu4ttyuWJrg__original/img/rzOKwasYoKNhQNu06vCKP8SqjoY=/0x0/filters:format(jpeg)/pic2498158.jpg",
           "thumbnail": "https://cf.geekdo-images.com/V_nDKd8bFLwCu4ttyuWJrg__small/img/Djv6DavegF7YoX7YrwZlgHr1mgY=/fit-in/200x150/filters:strip_icc()/pic2498158.jpg",
           "year_published": 2015,
-          "bayes_rating": 5.699
+          "bayes_rating": 5.699,
+          "M": 2,
+          "T": 3,
+          "G": 2,
+          "F": 1,
+          "Ar": 3,
+          "GS": 11,
+          "IS": 16.5,
+          "feeling": "On Shelf",
+          "type": "competitive",
+          "weight": 1.5,
+          "description": "Collect and cook ingredient cards to create delicious recipes in this light culinary card game.",
+          "justification": "M(2): Simple card draw and set collection with basic recipe completion. T(3): Cooking mechanics loosely generate culinary satisfaction through ingredient gathering. G(2): Limited meaningful choices in basic set collection gameplay. F(1): Light card game with minimal setup and simple rules. Ar(3): Colorful food illustrations but unremarkable overall visual design."
         },
         {
           "bgg_id": null,
@@ -3363,7 +4083,19 @@
           "image": "https://cf.geekdo-images.com/83b12oXwbrUmQQg0CrPuzg__original/img/2ZPsNKNjwXVMSzsckJFV8u7VoqA=/0x0/filters:format(jpeg)/pic2385041.jpg",
           "thumbnail": "https://cf.geekdo-images.com/83b12oXwbrUmQQg0CrPuzg__small/img/Hc9tb9l1_TYsu3l0rThsysuxTAo=/fit-in/200x150/filters:strip_icc()/pic2385041.jpg",
           "year_published": 2015,
-          "bayes_rating": 5.902
+          "bayes_rating": 5.902,
+          "M": 2,
+          "T": 2,
+          "G": 2,
+          "F": 1,
+          "Ar": 3,
+          "GS": 7,
+          "IS": 10.5,
+          "feeling": "On Shelf",
+          "type": "competitive",
+          "weight": 1.5,
+          "description": "Guide three spider siblings across a web to catch ants while mama spider above helps or hinders their progress.",
+          "justification": "M(2): Simple roll-and-move with basic spider positioning mechanics. T(2): Spider theme is cute but mechanics don't generate spider experience. G(2): Limited meaningful choices beyond basic movement optimization. F(1): Family game with simple setup and rules. Ar(3): Colorful children's illustration style, functional but not atmospheric."
         }
       ],
       "nominees": [
@@ -3373,7 +4105,19 @@
           "image": "https://cf.geekdo-images.com/by1g5O4vIKpmdJZBEVR7kw__original/img/xevL9mUwNkaZImKLt3KKx7S1Y6s=/0x0/filters:format(jpeg)/pic2449840.jpg",
           "thumbnail": "https://cf.geekdo-images.com/by1g5O4vIKpmdJZBEVR7kw__small/img/HACbhKMCMwtOgtSerns6rt3sGRg=/fit-in/200x150/filters:strip_icc()/pic2449840.jpg",
           "year_published": 2015,
-          "bayes_rating": 5.594
+          "bayes_rating": 5.594,
+          "M": 2,
+          "T": 2,
+          "G": 2,
+          "F": 1,
+          "Ar": 2,
+          "GS": 7,
+          "IS": 7.0,
+          "feeling": "On Shelf",
+          "type": "competitive",
+          "weight": 1.5,
+          "description": "Flick wooden discs to push a monster token off the board while avoiding being pushed off yourself.",
+          "justification": "M(2): Simple flicking mechanics with spatial positioning but limited depth. T(2): Monster theme is decorative overlay on abstract pushing game. G(2): Flicking skill matters but limited strategic decisions beyond targeting. F(1): Wooden components, minimal setup, teach in two minutes. Ar(2): Basic wooden tokens and simple board design."
         },
         {
           "bgg_id": 178053,
@@ -3381,7 +4125,19 @@
           "image": "https://cf.geekdo-images.com/kCp-7JO9wNzJt-QeVe87Kg__original/img/OG1mZX0nRMzvJJz_6_0Z3a_PIlg=/0x0/filters:format(jpeg)/pic6659668.jpg",
           "thumbnail": "https://cf.geekdo-images.com/kCp-7JO9wNzJt-QeVe87Kg__small/img/mr2PtSEDxbioQVGfIhOrOockCWo=/fit-in/200x150/filters:strip_icc()/pic6659668.jpg",
           "year_published": 2015,
-          "bayes_rating": 5.517
+          "bayes_rating": 5.517,
+          "M": 2,
+          "T": 2,
+          "G": 2,
+          "F": 2,
+          "Ar": 2,
+          "GS": 6,
+          "IS": 6.0,
+          "feeling": "On Shelf",
+          "type": "competitive",
+          "weight": 1.5,
+          "description": "Pirates race to collect treasure cards by flicking wooden discs across a board while memorizing where the loot is hidden.",
+          "justification": "M(2): Simple disc-flicking with basic treasure collection mechanics. T(2): Pirate theme applied but doesn't generate treasure-hunting experience. G(2): Limited tactical choices beyond aim and memory. F(2): Physical setup and component organization creates mild friction. Ar(2): Basic children's game production with functional cartoon pirate art."
         }
       ],
       "recommended": []
@@ -4349,7 +5105,19 @@
           "image": "https://cf.geekdo-images.com/8_AV1h-Pi7zX-ZRJ2FG6YA__original/img/abl7ZIcREI0zRYauXa2-Wz6efeA=/0x0/filters:format(jpeg)/pic6630400.jpg",
           "thumbnail": "https://cf.geekdo-images.com/8_AV1h-Pi7zX-ZRJ2FG6YA__small/img/D6As_Sd_DHmJfPHJ3XmJnpVc83Q=/fit-in/200x150/filters:strip_icc()/pic6630400.jpg",
           "year_published": 1988,
-          "bayes_rating": 0.0
+          "bayes_rating": 0.0,
+          "M": 2,
+          "T": 1,
+          "G": 2,
+          "F": 1,
+          "Ar": 2,
+          "GS": 3,
+          "IS": 3.0,
+          "feeling": "On Shelf",
+          "type": "competitive",
+          "weight": 1.5,
+          "description": "Draw cards and hope for strong bears in this simple German children's game from 1988.",
+          "justification": "M(2): Basic card drawing with number comparison mechanics. T(1): Bear theme exists only on card illustrations, no thematic generation. G(2): Limited decisions beyond when to draw or stop. F(1): Simple rules, quick setup for family play. Ar(2): 1980s children's game aesthetic lacks modern polish or atmosphere."
         }
       ],
       "recommended": []
@@ -4426,7 +5194,19 @@
           "image": "https://cf.geekdo-images.com/HpGXIlt5i6T-0jbiQRReOg__original/img/2uApg8IOYjNVSzbUIwJUa-Z8eL8=/0x0/filters:format(png)/pic8303080.png",
           "thumbnail": "https://cf.geekdo-images.com/HpGXIlt5i6T-0jbiQRReOg__small/img/8wfQelnNsbXCykJWMjD8UAjhleU=/fit-in/200x150/filters:strip_icc()/pic8303080.png",
           "year_published": 2024,
-          "bayes_rating": 7.622
+          "bayes_rating": 7.622,
+          "M": 3,
+          "T": 4,
+          "G": 4,
+          "F": 2,
+          "Ar": 4,
+          "GS": 46,
+          "IS": 92.0,
+          "feeling": "Immersive",
+          "type": "co-op",
+          "weight": 2.5,
+          "description": "Work together under time pressure to defuse bombs while shouting cryptic instructions from a manual only one player can see.",
+          "justification": "M(3): Real-time coordination with manual-based puzzle solving and communication restrictions. T(4): Time pressure and frantic shouting generates authentic bomb defusal tension. G(4): Every wire cut and module decision carries life-or-death consequences. F(2): Rules explanation and manual complexity add setup overhead. Ar(4): Clean technical design with authentic bomb disposal aesthetic."
         }
       ],
       "nominees": [
@@ -4436,7 +5216,19 @@
           "image": "https://cf.geekdo-images.com/YrQxEB9Ef0kQorRApzG5vQ__original/img/hK6k-x_GYfooemrkkRuF0bTvKxE=/0x0/filters:format(jpeg)/pic8780246.jpg",
           "thumbnail": "https://cf.geekdo-images.com/YrQxEB9Ef0kQorRApzG5vQ__small/img/_dNNsSelyw9qUEOIXBRt6PE_1us=/fit-in/200x150/filters:strip_icc()/pic8780246.jpg",
           "year_published": 2024,
-          "bayes_rating": 6.989
+          "bayes_rating": 6.989,
+          "M": 2,
+          "T": 1,
+          "G": 2,
+          "F": 1,
+          "Ar": 2,
+          "GS": 3,
+          "IS": 3.0,
+          "feeling": "On Shelf",
+          "type": "solo",
+          "weight": 1.5,
+          "description": "Draw cards and flip them strategically to build sequences while racing against a shrinking deck.",
+          "justification": "M(2): Simple draw-and-flip with basic set collection mechanics. T(1): Abstract number manipulation with no thematic experience generated. G(2): Limited meaningful choices in when to flip versus hold. F(1): Minimal components, instant setup, quick play. Ar(2): Basic card design with functional but uninspiring visual presentation."
         },
         {
           "bgg_id": 419639,
@@ -4444,7 +5236,19 @@
           "image": "https://cf.geekdo-images.com/iSXZ4NR52el43WXTTnUgOA__original/img/8XZHQjDO_r6cRgf3LRPdGbK7Ps8=/0x0/filters:format(png)/pic9435212.png",
           "thumbnail": "https://cf.geekdo-images.com/iSXZ4NR52el43WXTTnUgOA__small/img/oF5fAgqX4CVYrAXTK_7GdNJQ9D0=/fit-in/200x150/filters:strip_icc()/pic9435212.png",
           "year_published": 2024,
-          "bayes_rating": 6.086
+          "bayes_rating": 6.086,
+          "M": 2,
+          "T": 2,
+          "G": 2,
+          "F": 1,
+          "Ar": 3,
+          "GS": 7,
+          "IS": 10.5,
+          "feeling": "On Shelf",
+          "type": "solo",
+          "weight": 1.8,
+          "description": "Draw continuous lines through increasingly complex mazes without lifting your pen or crossing existing paths.",
+          "justification": "M(2): Simple line-drawing puzzles with spatial pattern recognition. T(2): Abstract puzzle mechanics don't generate thematic experience. G(2): Route optimization choices but limited decision space. F(1): Minimal components, instant setup and play. Ar(3): Clean geometric design but lacks atmospheric visual appeal."
         }
       ],
       "recommended": []
@@ -4463,7 +5267,19 @@
           "image": "https://cf.geekdo-images.com/uXMeQzNenHb3zK7Hoa6b2w__original/img/mWOQnkpyYBorh_Y1-0Y2o-ew17k=/0x0/filters:format(jpeg)/pic7398904.jpg",
           "thumbnail": "https://cf.geekdo-images.com/uXMeQzNenHb3zK7Hoa6b2w__small/img/WyPClajMWU9lV5BdCXiZnqdZgmU=/fit-in/200x150/filters:strip_icc()/pic7398904.jpg",
           "year_published": 2023,
-          "bayes_rating": 7.889
+          "bayes_rating": 7.889,
+          "M": 3,
+          "T": 4,
+          "G": 3,
+          "F": 1,
+          "Ar": 5,
+          "GS": 35,
+          "IS": 87.5,
+          "feeling": "Immersive",
+          "type": "co-op",
+          "weight": 2.2,
+          "description": "You and your co-pilot must land a plane in total silence, communicating only through dice placement.",
+          "justification": "M(3): Dice-as-workers placed across cockpit systems with tight tolerances. T(4): The silence rule doesn't describe pressure — it creates it. G(3): Every die placement is a meaningful gamble on your partner's intent. F(1): Small box, clean rules, fast setup. Ar(5): Gorgeous cockpit board and destination art by Eric Hibbeler."
         }
       ],
       "nominees": [
@@ -4481,7 +5297,19 @@
           "image": "https://cf.geekdo-images.com/7vSkMR7exNsU7ZfRgJKodQ__original/img/CEF2zr_yUhqZrc0NP6NnBoXGGPc=/0x0/filters:format(png)/pic7784394.png",
           "thumbnail": "https://cf.geekdo-images.com/7vSkMR7exNsU7ZfRgJKodQ__small/img/SzzzJKDO1wvj9YWfCg-mOnjC_lQ=/fit-in/200x150/filters:strip_icc()/pic7784394.png",
           "year_published": 2024,
-          "bayes_rating": 6.713
+          "bayes_rating": 6.713,
+          "M": 2,
+          "T": 2,
+          "G": 2,
+          "F": 1,
+          "Ar": 3,
+          "GS": 7,
+          "IS": 10.5,
+          "feeling": "On Shelf",
+          "type": "competitive",
+          "weight": 2.2,
+          "description": "Flip crew cards to reveal pirates or sailors while building the most valuable ship crew through careful risk and recruitment.",
+          "justification": "M(2): Simple card flipping with basic set collection mechanics. T(2): Pirate theme is decorative overlay on abstract mechanics. G(2): Some meaningful choices in risk-taking but limited decision space. F(1): Light rules, quick setup, flows smoothly. Ar(3): Colorful cartoon pirate art that's functional but unremarkable."
         }
       ],
       "recommended": []
@@ -4510,7 +5338,19 @@
           "image": "https://cf.geekdo-images.com/wkj9lur-J5Bxun09mnI2rQ__original/img/4qUgF74h0l6EMn-HPzGI4Nydszk=/0x0/filters:format(jpeg)/pic7070521.jpg",
           "thumbnail": "https://cf.geekdo-images.com/wkj9lur-J5Bxun09mnI2rQ__small/img/WD6rjSm3DZS3JD2Bb4EXM9fL5bk=/fit-in/200x150/filters:strip_icc()/pic7070521.jpg",
           "year_published": 2022,
-          "bayes_rating": 6.367
+          "bayes_rating": 6.367,
+          "M": 2,
+          "T": 2,
+          "G": 2,
+          "F": 1,
+          "Ar": 3,
+          "GS": 7,
+          "IS": 10.5,
+          "feeling": "On Shelf",
+          "type": "party",
+          "weight": 1.2,
+          "description": "Guess how your friends will answer personal questions, then reveal the surprising truths behind their responses.",
+          "justification": "M(2): Simple question-and-answer with basic scoring mechanisms. T(2): Social connection theme present but not mechanically generated. G(2): Limited meaningful choices beyond predicting friend responses. F(1): Minimal setup, straightforward party game rules. Ar(3): Clean card design but unremarkable visual presentation."
         },
         {
           "bgg_id": 353545,
@@ -4518,7 +5358,19 @@
           "image": "https://cf.geekdo-images.com/T-eq9Ux4gkmqfEXry8HC1w__original/img/FgPzhjwC0X0-6ZNLhowN8iccREA=/0x0/filters:format(jpeg)/pic9018430.jpg",
           "thumbnail": "https://cf.geekdo-images.com/T-eq9Ux4gkmqfEXry8HC1w__small/img/6OG1_bmI_3NkAeD-IT9dJnFHmmc=/fit-in/200x150/filters:strip_icc()/pic9018430.jpg",
           "year_published": 2022,
-          "bayes_rating": 6.936
+          "bayes_rating": 6.936,
+          "M": 2,
+          "T": 2,
+          "G": 2,
+          "F": 1,
+          "Ar": 3,
+          "GS": 7,
+          "IS": 10.5,
+          "feeling": "On Shelf",
+          "type": "solo",
+          "weight": 1.5,
+          "description": "Draw subway lines across London's iconic landmarks while optimizing passenger connections in this flip-and-write transit puzzle.",
+          "justification": "M(2): Simple line-drawing with basic connection optimization. T(2): London theme decorates but doesn't generate transit experience. G(2): Route choices matter but limited by card draws. F(1): Grab sheets, flip cards, draw lines immediately. Ar(3): Clean London map design, functional but unremarkable illustrations."
         }
       ],
       "recommended": []
@@ -4537,7 +5389,19 @@
           "image": "https://cf.geekdo-images.com/MjeJZfulbsM1DSV3DrGJYA__original/img/B374C04Eip7fmQBGJzgiOTp-jyQ=/0x0/filters:format(jpeg)/pic5100691.jpg",
           "thumbnail": "https://cf.geekdo-images.com/MjeJZfulbsM1DSV3DrGJYA__small/img/tVSFjSxYEcw7sKj3unIIQV8kxoc=/fit-in/200x150/filters:strip_icc()/pic5100691.jpg",
           "year_published": 2021,
-          "bayes_rating": 7.734
+          "bayes_rating": 7.734,
+          "M": 3,
+          "T": 2,
+          "G": 3,
+          "F": 1,
+          "Ar": 4,
+          "GS": 17,
+          "IS": 34.0,
+          "feeling": "Engaging",
+          "type": "competitive",
+          "weight": 2.3,
+          "description": "Draft habitat tiles and wildlife tokens to build the most harmonious ecosystem in the Pacific Northwest.",
+          "justification": "M(3): Tile drafting with spatial placement and scoring pattern optimization. T(2): Nature theme is pleasant but mechanics don't generate wilderness experience. G(3): Meaningful drafting decisions and tile placement create engaging puzzles. F(1): Clean rules, quick setup, smooth gameplay flow. Ar(4): Beautiful watercolor Pacific Northwest landscapes with charming wildlife illustrations."
         }
       ],
       "nominees": [
@@ -4567,7 +5431,19 @@
           "image": "https://cf.geekdo-images.com/0LVOOyXtNNyFhyj7tFaKCQ__original/img/P8h6npX36CQrxXua-8UWYocpc44=/0x0/filters:format(jpeg)/pic5212719.jpg",
           "thumbnail": "https://cf.geekdo-images.com/0LVOOyXtNNyFhyj7tFaKCQ__small/img/a-klyIgrojswCIe3KKOmJrCOgOw=/fit-in/200x150/filters:strip_icc()/pic5212719.jpg",
           "year_published": 2020,
-          "bayes_rating": 6.773
+          "bayes_rating": 6.773,
+          "M": 2,
+          "T": 1,
+          "G": 2,
+          "F": 1,
+          "Ar": 3,
+          "GS": 3,
+          "IS": 4.5,
+          "feeling": "On Shelf",
+          "type": "party",
+          "weight": 1.5,
+          "description": "Secretly rank answers to prompts on a 1-10 scale, then collectively guess the hidden order through discussion and deduction.",
+          "justification": "M(2): Simple ranking and guessing with minimal interaction systems. T(1): Abstract ranking creates no thematic experience or immersion. G(2): Some discussion strategy but mostly random prompt responses. F(1): Instant setup, simple rules, flows smoothly. Ar(3): Clean modern design but purely functional aesthetic."
         }
       ],
       "recommended": []
@@ -4586,7 +5462,19 @@
           "image": "https://cf.geekdo-images.com/bLL3P-G25nIUkFjHxfJfnw__original/img/HBEhgjfb0QcF9pFrdJ8VYhBapoU=/0x0/filters:format(jpeg)/pic7632081.jpg",
           "thumbnail": "https://cf.geekdo-images.com/bLL3P-G25nIUkFjHxfJfnw__small/img/XY_Z5rRJe3IPLRfOvWp70OM2B68=/fit-in/200x150/filters:strip_icc()/pic7632081.jpg",
           "year_published": 2020,
-          "bayes_rating": 7.212
+          "bayes_rating": 7.212,
+          "M": 2,
+          "T": 1,
+          "G": 2,
+          "F": 1,
+          "Ar": 4,
+          "GS": 3,
+          "IS": 6.0,
+          "feeling": "On Shelf",
+          "type": "co-op",
+          "weight": 1.5,
+          "description": "Detectives examine a massive illustrated cityscape to solve interconnected crimes by following visual clues across time and space.",
+          "justification": "M(2): Hidden object search with case connections but minimal mechanical depth. T(1): Crime theme is purely decorative overlay on visual puzzle mechanics. G(2): Some meaningful deduction choices but mostly linear clue following. F(1): Unfold map and start playing immediately. Ar(4): Detailed Wimmelbild illustration style with charming visual storytelling."
         }
       ],
       "nominees": [
@@ -4604,7 +5492,19 @@
           "image": "https://cf.geekdo-images.com/elS-EEtVF92Vk-YBqnJKeA__original/img/Zr5Q4VUehMBvib7M48FyaAa9Gss=/0x0/filters:format(png)/pic5733331.png",
           "thumbnail": "https://cf.geekdo-images.com/elS-EEtVF92Vk-YBqnJKeA__small/img/ZWbcOy6SjMcwsmeYe7Y42Nfk174=/fit-in/200x150/filters:strip_icc()/pic5733331.png",
           "year_published": 2020,
-          "bayes_rating": 6.529
+          "bayes_rating": 6.529,
+          "M": 2,
+          "T": 3,
+          "G": 2,
+          "F": 1,
+          "Ar": 3,
+          "GS": 11,
+          "IS": 16.5,
+          "feeling": "On Shelf",
+          "type": "co-op",
+          "weight": 1.8,
+          "description": "Teenage zombie hunters evolve their abilities across permanent campaign scenarios that unlock new powers and challenges.",
+          "justification": "M(2): Basic action points and movement with simple unlock mechanics. T(3): Zombie theme present but mechanics feel more puzzle than horror. G(2): Limited meaningful choices in simplified cooperative framework. F(1): Family game with streamlined rules and quick setup. Ar(3): Colorful cartoon zombie art appropriate for teen audience."
         }
       ],
       "recommended": []
@@ -4665,7 +5565,19 @@
           "image": "https://cf.geekdo-images.com/k8OZeKYMN2vVSVCl5FD-UA__original/img/XiytG0d5nHtdoN4Kq3pCM6VcSac=/0x0/filters:format(jpeg)/pic5382418.jpg",
           "thumbnail": "https://cf.geekdo-images.com/k8OZeKYMN2vVSVCl5FD-UA__small/img/lRMeiFcB9C3ivyZlCoPRQe5xKNU=/fit-in/200x150/filters:strip_icc()/pic5382418.jpg",
           "year_published": 2019,
-          "bayes_rating": 6.891
+          "bayes_rating": 6.891,
+          "M": 3,
+          "T": 2,
+          "G": 3,
+          "F": 1,
+          "Ar": 4,
+          "GS": 17,
+          "IS": 34.0,
+          "feeling": "Engaging",
+          "type": "competitive",
+          "weight": 2.3,
+          "description": "Harvest moon phases to build a celestial puzzle where each tile placement advances time and unlocks new cosmic possibilities.",
+          "justification": "M(3): Tile placement with timing track creates interlocking decision space. T(2): Moon theme is decorative, mechanics don't generate celestial experience. G(3): Each tile placement meaningfully affects timing and positioning. F(1): Clean rules, minimal setup, elegant component design. Ar(4): Gorgeous minimalist moon phase artwork with excellent production quality."
         }
       ],
       "recommended": []
@@ -4684,7 +5596,19 @@
           "image": "https://cf.geekdo-images.com/74haNunMBn85beBi-yIKwA__original/img/hA22qL6nZxchA8FMTIfhLMcI53I=/0x0/filters:format(png)/pic8669313.png",
           "thumbnail": "https://cf.geekdo-images.com/74haNunMBn85beBi-yIKwA__small/img/feIV-gqMeza43ycvxh6PGx4lA_w=/fit-in/200x150/filters:strip_icc()/pic8669313.png",
           "year_published": 2018,
-          "bayes_rating": 7.437
+          "bayes_rating": 7.437,
+          "M": 1,
+          "T": 1,
+          "G": 1,
+          "F": 1,
+          "Ar": 2,
+          "GS": 0,
+          "IS": 0.0,
+          "feeling": "On Shelf",
+          "type": "party",
+          "weight": 1.1,
+          "description": "Give clues to help your teammate guess a word, but if any clues match, they all get erased.",
+          "justification": "M(1): Write a word, erase duplicates, guess the target word. T(1): No thematic layer beyond party game mechanics. G(1): Random word draws with subjective clue writing. F(1): Grab paper and pencils, start playing immediately. Ar(2): Minimal design with basic card layout and typography."
         }
       ],
       "nominees": [
@@ -4694,7 +5618,19 @@
           "image": "https://cf.geekdo-images.com/HyuiLSbeKn_aap3kIa4mNA__original/img/oNMAhXR0BK-lIG4-8BOiEa6EDCk=/0x0/filters:format(jpeg)/pic6937668.jpg",
           "thumbnail": "https://cf.geekdo-images.com/HyuiLSbeKn_aap3kIa4mNA__small/img/B4lERqIjRLz-KWPZvOHZEWgMO8k=/fit-in/200x150/filters:strip_icc()/pic6937668.jpg",
           "year_published": 2021,
-          "bayes_rating": 5.95
+          "bayes_rating": 5.95,
+          "M": 2,
+          "T": 1,
+          "G": 2,
+          "F": 1,
+          "Ar": 2,
+          "GS": 3,
+          "IS": 3.0,
+          "feeling": "On Shelf",
+          "type": "competitive",
+          "weight": 1.2,
+          "description": "Roll colorful dice to collect sets of llamas and numbers while avoiding the dreaded L.L.A.M.A. penalty.",
+          "justification": "M(2): Basic dice rolling with set collection, minimal interaction. T(1): Llama theme is pure decoration over abstract mechanics. G(2): Some push-your-luck decisions but largely random outcomes. F(1): Dice game with simple rules and instant setup. Ar(2): Colorful but generic cartoon llama aesthetic lacks sophistication."
         },
         {
           "bgg_id": null,
@@ -4721,7 +5657,19 @@
           "image": "https://cf.geekdo-images.com/aPSHJO0d0XOpQR5X-wJonw__original/img/AkbtYVc6xXJF3c9EUrakklcclKw=/0x0/filters:format(png)/pic6973671.png",
           "thumbnail": "https://cf.geekdo-images.com/aPSHJO0d0XOpQR5X-wJonw__small/img/ccsXKrdGJw-YSClWwzVUwk5Nh9Y=/fit-in/200x150/filters:strip_icc()/pic6973671.png",
           "year_published": 2017,
-          "bayes_rating": 7.605
+          "bayes_rating": 7.605,
+          "M": 2,
+          "T": 1,
+          "G": 3,
+          "F": 1,
+          "Ar": 4,
+          "GS": 5,
+          "IS": 10.0,
+          "feeling": "On Shelf",
+          "type": "competitive",
+          "weight": 2.3,
+          "description": "Draft colorful tiles from a Moorish palace's marketplace to create stunning azulejo patterns on your royal wall.",
+          "justification": "M(2): Pattern matching and set completion with light spatial puzzles. T(1): Tile decoration theme is pleasant but purely cosmetic. G(3): Meaningful drafting choices and tile placement optimization each turn. F(1): Simple rules, fast setup, elegant component handling. Ar(4): Beautiful tile art evoking Portuguese azulejo craftsmanship."
         }
       ],
       "nominees": [
@@ -4751,7 +5699,19 @@
           "image": "https://cf.geekdo-images.com/q_JGK291hrhnhiRB0667oA__original/img/8VjZEG278faO9JZwzce3v3EKssI=/0x0/filters:format(png)/pic3979766.png",
           "thumbnail": "https://cf.geekdo-images.com/q_JGK291hrhnhiRB0667oA__small/img/PUrzEmTo5kOcK5BOb4cbOOcH86I=/fit-in/200x150/filters:strip_icc()/pic3979766.png",
           "year_published": 2018,
-          "bayes_rating": 6.591
+          "bayes_rating": 6.591,
+          "M": 1,
+          "T": 1,
+          "G": 1,
+          "F": 1,
+          "Ar": 2,
+          "GS": 0,
+          "IS": 0.0,
+          "feeling": "On Shelf",
+          "type": "co-op",
+          "weight": 1.0,
+          "description": "Play numbered cards in ascending order without speaking, relying only on shared intuition and perfect timing.",
+          "justification": "M(1): Play cards in numerical order - minimal mechanical complexity. T(1): Abstract numbers with no thematic layer whatsoever. G(1): Success depends on luck and timing, not meaningful decisions. F(1): Shuffle cards and play immediately. Ar(2): Plain numbered cards with basic geometric design."
         }
       ],
       "recommended": []
@@ -4770,7 +5730,19 @@
           "image": "https://cf.geekdo-images.com/c0m3gwZTcfKoLI63ASio8g__original/img/HT6NQPT0cSFcZXjSewtjTO_NBAE=/0x0/filters:format(png)/pic8443569.png",
           "thumbnail": "https://cf.geekdo-images.com/c0m3gwZTcfKoLI63ASio8g__small/img/4p4Xydg0tze9UFcd6oUbCnVyxCw=/fit-in/200x150/filters:strip_icc()/pic8443569.png",
           "year_published": 2016,
-          "bayes_rating": 7.169
+          "bayes_rating": 7.169,
+          "M": 2,
+          "T": 1,
+          "G": 2,
+          "F": 1,
+          "Ar": 4,
+          "GS": 3,
+          "IS": 6.0,
+          "feeling": "On Shelf",
+          "type": "competitive",
+          "weight": 2.17,
+          "description": "Draft domino tiles and build your kingdom's landscape to create the most valuable realm of all.",
+          "justification": "M(2): Simple tile drafting and placement with basic adjacency scoring. T(1): Kingdom building is purely abstract point optimization. G(2): Draft choices matter but limited tile options constrain decisions. F(1): Teach in minutes, fast setup, elegant flow. Ar(4): Colorful medieval illustrations with charming pastoral kingdom aesthetic."
         }
       ],
       "nominees": [
@@ -4780,7 +5752,19 @@
           "image": "https://cf.geekdo-images.com/NVsxRYyE_vIBzObK72maCQ__original/img/Y00t5jiiOS6kcaUyQnGlU74zRlY=/0x0/filters:format(jpeg)/pic9402780.jpg",
           "thumbnail": "https://cf.geekdo-images.com/NVsxRYyE_vIBzObK72maCQ__small/img/mbTY-NayWlIEb4Jpry95-Icqeko=/fit-in/200x150/filters:strip_icc()/pic9402780.jpg",
           "year_published": 2017,
-          "bayes_rating": 6.775
+          "bayes_rating": 6.775,
+          "M": 2,
+          "T": 2,
+          "G": 2,
+          "F": 2,
+          "Ar": 3,
+          "GS": 6,
+          "IS": 9.0,
+          "feeling": "On Shelf",
+          "type": "co-op",
+          "weight": 2.1,
+          "description": "Four heroes silently race through a shopping mall to steal from fantasy shops before time runs out.",
+          "justification": "M(2): Movement restrictions and silent coordination but limited mechanical depth. T(2): Mall heist theme present but mechanics don't generate fantasy tension. G(2): Constrained movement choices matter but communication limits reduce agency. F(2): Real-time pressure and teaching communication rules creates setup friction. Ar(3): Clean mall board design but lacks atmospheric punch."
         },
         {
           "bgg_id": null,
@@ -4807,7 +5791,19 @@
           "image": "https://cf.geekdo-images.com/nC6ifPCDnAItwoKSKXVrnw__original/img/Id-jjIer_61ZbvI2_RVRCeBZFY4=/0x0/filters:format(jpeg)/pic8907965.jpg",
           "thumbnail": "https://cf.geekdo-images.com/nC6ifPCDnAItwoKSKXVrnw__small/img/1iZav_8ZqurrDbvkZA9GcFhB5x0=/fit-in/200x150/filters:strip_icc()/pic8907965.jpg",
           "year_published": 2015,
-          "bayes_rating": 7.428
+          "bayes_rating": 7.428,
+          "M": 2,
+          "T": 1,
+          "G": 2,
+          "F": 1,
+          "Ar": 3,
+          "GS": 3,
+          "IS": 4.5,
+          "feeling": "On Shelf",
+          "type": "party",
+          "weight": 1.3,
+          "description": "Give one-word clues to guide your team to secret agents hidden among a grid of codenames without triggering the assassin.",
+          "justification": "M(2): Simple grid deduction with clue-giving but minimal mechanical depth. T(1): Spy theme is pure decoration over abstract word association. G(2): Clue-giving offers creativity but guessing is mostly logical deduction. F(1): Grid of cards, immediate play, zero setup time. Ar(3): Clean graphic design but uninspiring spy artwork and bland presentation."
         }
       ],
       "nominees": [
@@ -4837,7 +5833,19 @@
           "image": "https://cf.geekdo-images.com/hhV3JiYZUHEi_glLhC0v8w__original/img/CJ-VpizVCicjpKS6Gs5hy9E74LQ=/0x0/filters:format(jpeg)/pic2727088.jpg",
           "thumbnail": "https://cf.geekdo-images.com/hhV3JiYZUHEi_glLhC0v8w__small/img/_XHxgYraTvLmBnHpY8snFa2ma9o=/fit-in/200x150/filters:strip_icc()/pic2727088.jpg",
           "year_published": 2015,
-          "bayes_rating": 6.862
+          "bayes_rating": 6.862,
+          "M": 2,
+          "T": 1,
+          "G": 2,
+          "F": 1,
+          "Ar": 3,
+          "GS": 3,
+          "IS": 4.5,
+          "feeling": "On Shelf",
+          "type": "competitive",
+          "weight": 1.8,
+          "description": "Race through a jungle temple by simultaneously drawing tiles and placing them on your personal board to create paths for your explorers.",
+          "justification": "M(2): Simple tile-laying with simultaneous movement, minimal interaction. T(1): Generic jungle theme pasted onto abstract path optimization. G(2): Limited decisions in tile placement and explorer movement. F(1): Quick setup, simple rules, flows smoothly. Ar(3): Bright colorful art but generic adventure aesthetic."
         }
       ],
       "recommended": []
@@ -4898,7 +5906,19 @@
           "image": "https://cf.geekdo-images.com/vfRhLe8HeLQUtLBtEwVxkQ__original/img/ifzMh_jFYGtNXpwYbYedrg27JKU=/0x0/filters:format(jpeg)/pic8840460.jpg",
           "thumbnail": "https://cf.geekdo-images.com/vfRhLe8HeLQUtLBtEwVxkQ__small/img/orE8fJMGUnajT1UZKNE2s_tWjE0=/fit-in/200x150/filters:strip_icc()/pic8840460.jpg",
           "year_published": 2025,
-          "bayes_rating": 0.0
+          "bayes_rating": 0.0,
+          "M": 2,
+          "T": 1,
+          "G": 2,
+          "F": 1,
+          "Ar": 2,
+          "GS": 3,
+          "IS": 3.0,
+          "feeling": "On Shelf",
+          "type": "co-op",
+          "weight": 1.2,
+          "description": "Play numbered cards in ascending and descending sequences before the deck runs out and dooms you all.",
+          "justification": "M(2): Simple card sequencing with limited tactical depth. T(1): Abstract numbers with no thematic experience generated. G(2): Basic decisions about card timing and communication. F(1): Minimal setup, learn instantly, play immediately. Ar(2): Plain numbered cards with minimal visual design."
         }
       ],
       "recommended": []
@@ -6215,7 +7235,19 @@
           "image": "https://cf.geekdo-images.com/YvHnHVhnGbYNpjDGWKMR7w__original/img/Q0-uKEp6yyA3vT5svGw8SJJhTRU=/0x0/filters:format(jpeg)/pic2956443.jpg",
           "thumbnail": "https://cf.geekdo-images.com/YvHnHVhnGbYNpjDGWKMR7w__small/img/scrLDFWvI7cQh-L9MvQOyZr-KQU=/fit-in/200x150/filters:strip_icc()/pic2956443.jpg",
           "year_published": 2012,
-          "bayes_rating": 5.533
+          "bayes_rating": 5.533,
+          "M": 2,
+          "T": 4,
+          "G": 3,
+          "F": 2,
+          "Ar": 3,
+          "GS": 22,
+          "IS": 33.0,
+          "feeling": "Engaging",
+          "type": "co-op",
+          "weight": 2.5,
+          "description": "Step into Victorian London as consulting detectives unraveling supernatural mysteries that Holmes himself couldn't solve.",
+          "justification": "M(2): Mostly reading, discussing clues, and logical deduction without complex systems. T(4): Investigating occult mysteries generates genuine detective atmosphere through narrative immersion. G(3): Meaningful choices about which leads to follow and theories to pursue. F(2): Fan expansion requires base game, some setup complexity with case materials. Ar(3): Atmospheric Victorian mystery art but fan production values limit polish."
         }
       ],
       "nominees": [],
@@ -6389,7 +7421,19 @@
           "image": null,
           "thumbnail": null,
           "year_published": 2024,
-          "bayes_rating": 0.0
+          "bayes_rating": 0.0,
+          "M": 2,
+          "T": 2,
+          "G": 2,
+          "F": 2,
+          "Ar": 3,
+          "GS": 6,
+          "IS": 9.0,
+          "feeling": "On Shelf",
+          "type": "competitive",
+          "weight": 2.5,
+          "description": "Race through the forest as either the steady tortoise or speedy hare in this classic fable reimagined as a strategic board game.",
+          "justification": "M(2): Simple race mechanics with basic action point allocation. T(2): Fable theme present but mechanics don't generate tortoise vs hare dynamics. G(2): Limited meaningful decisions in straightforward race format. F(2): Standard setup complexity for family racing game. Ar(3): Clean functional design appropriate for family audience."
         }
       ],
       "nominees": [],
@@ -6407,7 +7451,19 @@
           "image": "https://cf.geekdo-images.com/A6-wiP1KFOpTmNNAJ9kizQ__original/img/GlWrcmu24HFZbKqXt7-sFodOsus=/0x0/filters:format(jpeg)/pic6498928.jpg",
           "thumbnail": "https://cf.geekdo-images.com/A6-wiP1KFOpTmNNAJ9kizQ__small/img/A7fr1EN2RcO4cNRbV9kt-vvwNgA=/fit-in/200x150/filters:strip_icc()/pic6498928.jpg",
           "year_published": 2021,
-          "bayes_rating": 6.543
+          "bayes_rating": 6.543,
+          "M": 3,
+          "T": 3,
+          "G": 3,
+          "F": 1,
+          "Ar": 3,
+          "GS": 26,
+          "IS": 39.0,
+          "feeling": "Engaging",
+          "type": "co-op",
+          "weight": 2.0,
+          "description": "Race against time to solve puzzles and escape digital adventures using only cards and a smartphone app.",
+          "justification": "M(3): Card combinations with app integration create layered puzzle solving. T(3): Time pressure and clue discovery generate escape room tension reasonably well. G(3): Meaningful deduction choices but app guidance limits some agency. F(1): Just cards and phone app, instant setup and play. Ar(3): Clean card design but lacks atmospheric depth of premium games."
         },
         {
           "bgg_id": null,
@@ -6434,7 +7490,19 @@
           "image": "https://cf.geekdo-images.com/Qtkb-UTvHa0-kxt_MK1nKw__original/img/wJiRr7lBmWSKcRS3lPpvKIPMgQQ=/0x0/filters:format(jpeg)/pic3763549.jpg",
           "thumbnail": "https://cf.geekdo-images.com/Qtkb-UTvHa0-kxt_MK1nKw__small/img/MfKsnJUTx9IQV-o12Fahxx5IaDQ=/fit-in/200x150/filters:strip_icc()/pic3763549.jpg",
           "year_published": 2017,
-          "bayes_rating": 7.688
+          "bayes_rating": 7.688,
+          "M": 4,
+          "T": 5,
+          "G": 4,
+          "F": 2,
+          "Ar": 4,
+          "GS": 78,
+          "IS": 156.0,
+          "feeling": "Total",
+          "type": "co-op",
+          "weight": 2.8,
+          "description": "The world has flooded and you must sail between floating havens, searching for supplies while the plague evolves and cities sink beneath the waves.",
+          "justification": "M(4): Action points with legacy evolution, supply networks, and escalating threats. T(5): Every search, infection, and city loss IS the post-apocalyptic struggle. G(4): Meaningful choices about exploration, resource allocation, and permanent changes. F(2): Legacy stickers and evolving rules add setup complexity over time. Ar(4): Atmospheric post-flood world design with strong visual cohesion."
         }
       ],
       "recommended": []
