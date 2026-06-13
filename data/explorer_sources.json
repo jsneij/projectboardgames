@@ -1,11 +1,4 @@
 {
-  "_README": [
-    "Configuration for scripts/explorer_discover.py.",
-    "Add/remove BGG GeekList IDs in bgg_geeklists to expand reviewer coverage.",
-    "Curated solo-focused lists from the 1 Player Guild and major reviewers",
-    "have the highest signal — search BGG for 'Top Solo Games <year>' and add the IDs.",
-    "Each scraper can be toggled via the 'enabled' map."
-  ],
   "bgg_geeklists": [
     335712
   ],
@@ -14,10 +7,5 @@
     "bgg_geeklists": true,
     "polyhedron_collider": true,
     "solitaire_times": true
-  },
-  "feeling_thresholds": {
-    "_comment": "From scripts/score_new_games.py — match those constants",
-    "Total": 150,
-    "Immersive": 87
   }
 }
