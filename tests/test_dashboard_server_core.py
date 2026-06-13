@@ -1,9 +1,10 @@
 import json
+import subprocess
 from pathlib import Path
 
 import pytest
 
-from scripts.dashboard_server_core import atomic_write_json, validate_scores
+from scripts.dashboard_server_core import atomic_write_json, commit_and_push, validate_scores
 
 
 def _load(p: Path):
@@ -100,3 +101,21 @@ def test_atomic_write_json_cleans_up_tmp_on_serialization_error(tmp_path):
     assert not target.exists()
     leftovers = [p for p in tmp_path.iterdir() if p.suffix == ".tmp"]
     assert leftovers == []
+
+
+def test_commit_and_push_happy_path(repo, scores_path):
+    # Mutate the scores file so there's something to commit
+    data = json.loads(scores_path.read_text(encoding="utf-8"))
+    data["owned"]["Burgle Bros."]["M"] = 5
+    atomic_write_json(scores_path, data)
+
+    result = commit_and_push(["Burgle Bros."], scores_path, repo)
+
+    assert result["status"] == "ok"
+    assert result["pushed"] is True
+    assert len(result["commit"]) == 40  # full sha
+    log = subprocess.run(
+        ["git", "log", "-1", "--format=%s"], cwd=repo,
+        capture_output=True, text=True, check=True,
+    ).stdout.strip()
+    assert log == "Update collection scores: Burgle Bros."
