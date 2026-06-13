@@ -1162,11 +1162,12 @@ function pendingChangeCount() {
 }
 
 function applyPendingToOriginal() {
-  // Deep copy of original with pending merged in.
+  // Deep copy of original with pending merged in. Stale localStorage entries
+  // (e.g. game removed from collection since the snapshot) are skipped silently.
   const out = JSON.parse(JSON.stringify(Edit.original));
   for (const [collection, games] of Object.entries(Edit.pending)) {
     for (const [name, fields] of Object.entries(games)) {
-      Object.assign(out[collection][name], fields);
+      if (out[collection]?.[name]) Object.assign(out[collection][name], fields);
     }
   }
   return out;
