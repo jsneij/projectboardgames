@@ -110,7 +110,8 @@ def _build_commit_message(changed_games: list[str]) -> str:
     return f"Update collection scores: {', '.join(shown)}{extra}"
 
 
-def commit_and_push(changed_games: list[str], scores_path: Path, repo_root: Path) -> dict:
+def commit_and_push(changed_games: list[str], scores_path: Path, repo_root: Path,
+                    commit_message: str | None = None) -> dict:
     """Stage scores_path, commit, push. Returns a status dict.
 
     status values:
@@ -134,7 +135,7 @@ def commit_and_push(changed_games: list[str], scores_path: Path, repo_root: Path
     if diff.returncode == 0:
         return {"status": "noop", "message": "No changes to commit.", "pushed": False, "commit": None}
 
-    msg = _build_commit_message(changed_games)
+    msg = commit_message if commit_message else _build_commit_message(changed_games)
     commit = _run_git(["commit", "-m", msg], repo_root)
     if commit.returncode != 0:
         return {

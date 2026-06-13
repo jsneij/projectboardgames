@@ -215,3 +215,4 @@ __marimo__/
 # Claude Cowork outputs
 CW/
 .superpowers/
+data/.explorer_discover.log

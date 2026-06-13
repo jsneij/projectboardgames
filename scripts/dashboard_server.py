@@ -15,6 +15,7 @@ import http.server
 import json
 import os
 import sys
+import time
 import webbrowser
 from pathlib import Path
 from urllib.parse import unquote, urlparse
@@ -30,10 +31,13 @@ from scripts.dashboard_server_core import (  # noqa: E402
 )
 
 SCORES_PATH = REPO_ROOT / "data" / "bgg_collection_scores.json"
+EXPLORER_SOURCES_PATH = REPO_ROOT / "data" / "explorer_sources.json"
+EXPLORER_DISCOVER_SCRIPT = REPO_ROOT / "scripts" / "explorer_discover.py"
 DASHBOARD_HTML = REPO_ROOT / "dashboard" / "dshb_bgg_collection.html"
 ALLOWED_DIRS = ("dashboard", "data")
 HOST = "127.0.0.1"
 PORT = int(os.environ.get("DASHBOARD_PORT", "8765"))
+KNOWN_SCRAPER_KEYS = {"bgg_hot", "bgg_geeklists", "polyhedron_collider", "solitaire_times"}
 
 
 class Handler(http.server.SimpleHTTPRequestHandler):
@@ -82,6 +86,12 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         self.send_error(404, "Not Found")
 
     def do_POST(self) -> None:  # noqa: N802
+        if self.path == "/api/explorer/refresh":
+            self._handle_explorer_refresh()
+            return
+        if self.path == "/api/explorer/sources":
+            self._handle_explorer_sources()
+            return
         if self.path != "/api/save":
             self.send_error(404, "Not Found")
             return
@@ -124,6 +134,84 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         atomic_write_json(SCORES_PATH, scores)
         result = commit_and_push(list(changed_games), SCORES_PATH, REPO_ROOT)
         code = 200 if result["status"] in ("ok", "committed_not_pushed", "noop") else 500
+        self._send_json(code, result)
+
+    # ── Explorer endpoints ─────────────────────────────────────────────────
+    def _handle_explorer_refresh(self) -> None:
+        """Fire scripts/explorer_discover.py in a background subprocess.
+
+        The discovery pipeline takes minutes (BGG rate-limit + Claude API),
+        so we don't block the response. The user reloads after a bit to see
+        new candidates. stdout/err go to /tmp for inspection.
+        """
+        import subprocess as _sp
+        if not EXPLORER_DISCOVER_SCRIPT.exists():
+            self._send_json(500, {"status": "error",
+                                  "message": "explorer_discover.py missing"})
+            return
+        log_path = REPO_ROOT / "data" / ".explorer_discover.log"
+        try:
+            log_fh = open(log_path, "a", encoding="utf-8")
+            log_fh.write(f"\n=== {time.strftime('%Y-%m-%d %H:%M:%S')} run started ===\n")
+            log_fh.flush()
+            _sp.Popen(
+                [sys.executable, str(EXPLORER_DISCOVER_SCRIPT)],
+                cwd=str(REPO_ROOT),
+                stdout=log_fh,
+                stderr=_sp.STDOUT,
+            )
+        except OSError as e:
+            self._send_json(500, {"status": "error",
+                                  "message": f"Could not start subprocess: {e}"})
+            return
+        self._send_json(200, {
+            "status": "started",
+            "message": f"Discovery started in background. Log: {log_path.name}",
+        })
+
+    def _handle_explorer_sources(self) -> None:
+        """POST /api/explorer/sources — validate + write + commit + push."""
+        length = int(self.headers.get("Content-Length", "0") or "0")
+        raw = self.rfile.read(length) if length else b""
+        try:
+            payload = json.loads(raw.decode("utf-8"))
+        except Exception:
+            self._send_json(400, {"status": "validation_error",
+                                  "message": "Invalid JSON."})
+            return
+
+        # Light validation
+        if not isinstance(payload, dict):
+            self._send_json(400, {"status": "validation_error",
+                                  "message": "must be an object"})
+            return
+        gl = payload.get("bgg_geeklists", [])
+        if not isinstance(gl, list) or any(
+                not isinstance(x, int) or x < 1 for x in gl):
+            self._send_json(400, {"status": "validation_error",
+                                  "message": "bgg_geeklists must be a list of positive ints"})
+            return
+        enabled = payload.get("enabled", {})
+        if not isinstance(enabled, dict):
+            self._send_json(400, {"status": "validation_error",
+                                  "message": "enabled must be an object"})
+            return
+        for k, v in enabled.items():
+            if k not in KNOWN_SCRAPER_KEYS:
+                self._send_json(400, {"status": "validation_error",
+                                      "message": f"unknown scraper key: {k}"})
+                return
+            if not isinstance(v, bool):
+                self._send_json(400, {"status": "validation_error",
+                                      "message": f"{k} must be a bool"})
+                return
+
+        atomic_write_json(EXPLORER_SOURCES_PATH, payload)
+        result = commit_and_push([], EXPLORER_SOURCES_PATH, REPO_ROOT,
+                                 commit_message="Update Explorer sources")
+        if result.get("status") == "ok":
+            result["message"] = "Sources saved & pushed — next discovery run uses them."
+        code = 200 if result.get("status") in ("ok", "committed_not_pushed", "noop") else 500
         self._send_json(code, result)
 
     def _send_dashboard(self) -> None:

@@ -246,6 +246,100 @@ nav::-webkit-scrollbar { display: none; }
 #game-table tr.game-row { cursor: pointer; }
 #game-table tr.game-row:hover td { background: var(--bg-hover); }
 #game-table tr.expand-row td { padding: 0; background: #121f32; }
+
+/* Explorer table — slightly roomier than the Collection table. */
+#explorer-table { border-collapse: separate; border-spacing: 0; width: 100%; }
+#explorer-table th {
+  padding: 10px 14px; text-align: left; font-weight: 600;
+  font-size: 11px; color: var(--text3);
+  font-family: 'JetBrains Mono', monospace; letter-spacing: 0.05em;
+  border-bottom: 1px solid var(--border); white-space: nowrap;
+  position: sticky; top: var(--table-th-top, 118px); z-index: 9; background: var(--bg);
+}
+#explorer-table td {
+  padding: 12px 14px; border-bottom: 1px solid rgba(51,65,85,0.5);
+  font-size: 13px; vertical-align: middle;
+}
+#explorer-table tr.game-row { cursor: pointer; }
+#explorer-table tr.game-row:hover td { background: var(--bg-hover); }
+#explorer-table tr.expand-row td { padding: 0; background: #121f32; }
+#explorer-table tr.expand-row .expand-panel { padding: 24px 28px; gap: 28px; }
+.source-badge {
+  display: inline-block; font-size: 10px; padding: 3px 8px; margin: 2px 4px 2px 0;
+  border-radius: 4px; background: rgba(120,200,250,0.12);
+  color: #cce8ff; border: 1px solid rgba(120,200,250,0.25); white-space: nowrap;
+}
+.source-badge a { color: inherit; text-decoration: none; }
+.source-badge a:hover { text-decoration: underline; }
+.explorer-tools {
+  display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
+  margin: 0 0 14px;
+}
+.explorer-tools .refresh-btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-family: 'JetBrains Mono', monospace; font-size: 11px;
+  padding: 6px 12px; border-radius: 6px; cursor: pointer;
+  background: rgba(34,197,94,0.10); color: #4ade80;
+  border: 1px solid rgba(34,197,94,0.30);
+  transition: all 0.15s;
+}
+.explorer-tools .refresh-btn:hover { background: rgba(34,197,94,0.18); border-color: #4ade80; }
+.explorer-tools .refresh-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.explorer-sources-panel {
+  margin-top: 28px; padding: 20px 22px; border: 1px solid var(--border);
+  border-radius: 8px; background: rgba(255,255,255,0.02);
+}
+.explorer-sources-panel h3 {
+  margin: 0 0 6px; font-size: 13px; font-weight: 600; color: var(--text);
+}
+.explorer-sources-panel .sources-help {
+  font-size: 11px; color: var(--text3); margin-bottom: 14px; line-height: 1.5;
+}
+.explorer-sources-panel .source-section { margin-bottom: 16px; }
+.explorer-sources-panel .source-section-title {
+  font-size: 11px; color: var(--text3); margin-bottom: 8px;
+  text-transform: uppercase; letter-spacing: 0.05em;
+}
+.geeklist-chip {
+  display: inline-flex; align-items: center; gap: 4px;
+  background: rgba(120,200,250,0.12); color: #cce8ff;
+  border: 1px solid rgba(120,200,250,0.30); border-radius: 999px;
+  padding: 3px 8px 3px 12px; margin: 2px 4px 2px 0; font-size: 12px;
+  font-family: 'JetBrains Mono', monospace;
+}
+.geeklist-chip a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+.geeklist-chip button {
+  background: none; border: 0; color: #cce8ff; cursor: pointer;
+  font-size: 13px; padding: 0 0 0 2px;
+}
+.geeklist-add {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 11px; padding: 4px 10px; background: transparent;
+  border: 1px dashed #888; color: #ccc; border-radius: 999px; cursor: pointer;
+}
+.geeklist-add input {
+  width: 80px; background: #0f0f0f; color: #fff;
+  border: 1px solid #444; border-radius: 3px; padding: 2px 6px;
+  font-family: 'JetBrains Mono', monospace; font-size: 12px;
+}
+.scraper-toggle-row {
+  display: flex; align-items: center; gap: 8px; margin-bottom: 6px; font-size: 12px;
+}
+.scraper-toggle-row .scraper-name { color: var(--text2); font-family: 'JetBrains Mono', monospace; }
+.scraper-toggle-row label.edit-toggle { gap: 6px; }
+.explorer-sources-panel .sources-actions {
+  display: flex; gap: 8px; justify-content: flex-end; margin-top: 14px;
+}
+.explorer-sources-panel button.primary {
+  padding: 6px 14px; border: 1px solid #2e6a3d; background: #1f4a2a;
+  color: #fff; border-radius: 4px; font-size: 12px; cursor: pointer;
+}
+.explorer-sources-panel button.secondary {
+  padding: 6px 14px; border: 1px solid #555; background: #222;
+  color: #ccc; border-radius: 4px; font-size: 12px; cursor: pointer;
+}
+.explorer-sources-panel button:hover { filter: brightness(1.15); }
+.explorer-sources-panel button:disabled { opacity: 0.4; cursor: not-allowed; }
 .expand-panel {
   padding: 16px 20px; display: flex; gap: 20px; align-items: center;
 }
@@ -969,7 +1063,7 @@ nav::-webkit-scrollbar { display: none; }
           <ol>
             <li>Open <a href="https://github.com/settings/personal-access-tokens" target="_blank" rel="noopener">github.com/settings/personal-access-tokens</a> → <em>Generate new token</em> → <em>Fine-grained</em>.</li>
             <li>Resource owner: <strong>jsneij</strong>. Repository access: <em>Only select repositories</em> → <strong>projectboardgames</strong>.</li>
-            <li>Permissions → Repository → <strong>Contents: Read and write</strong>. Leave everything else off.</li>
+            <li>Permissions → Repository → <strong>Contents: Read and write</strong> AND <strong>Actions: Read and write</strong> (Actions is needed for the Explorer "Refresh candidates" button to trigger the discovery workflow). Leave everything else off.</li>
             <li>Set an expiration (e.g. 90 days), generate, copy the token (starts with <code>github_pat_…</code>).</li>
           </ol>
           <input type="password" id="token-input" autocomplete="off" spellcheck="false" placeholder="github_pat_…">
@@ -1185,11 +1279,18 @@ nav::-webkit-scrollbar { display: none; }
 
   <!-- TAB: EXPLORER — unowned solo games scored Total / Immersive by the framework -->
   <div id="tab-explorer" class="tab-pane">
-    <div style="font-size:12px;color:var(--text3);margin-bottom:12px;line-height:1.5">
+    <div style="font-size:12px;color:var(--text3);margin-bottom:14px;line-height:1.5">
       Solo games <strong>not</strong> in your collection that the Immersion-Score framework predicts as
       <span style="color:var(--red);font-weight:600">Total</span> or
       <span style="color:var(--amber);font-weight:600">Immersive</span>.
       Sourced weekly from BGG hot, curated GeekLists, Polyhedron Collider, and Solitaire Times.
+      <span id="explorer-meta" style="display:block;opacity:0.6;font-size:11px;margin-top:6px"></span>
+    </div>
+    <div class="explorer-tools">
+      <button id="explorer-refresh-btn" class="refresh-btn" title="Run the discovery pipeline now">
+        <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-1px"><path d="M3.5 9.5a4.5 4.5 0 1 0 1.3-4M3 4v3h3"/></svg>
+        <span id="explorer-refresh-label">Refresh candidates</span>
+      </button>
     </div>
     <div class="sort-bar">
       <span style="font-size:11px;color:var(--text3);margin-right:4px">Show:</span>
@@ -1227,6 +1328,28 @@ nav::-webkit-scrollbar { display: none; }
         </thead>
         <tbody id="explorer-tbody"></tbody>
       </table>
+    </div>
+
+    <!-- Sources editor: persisted to data/explorer_sources.json -->
+    <div class="explorer-sources-panel">
+      <h3>Discovery sources</h3>
+      <div class="sources-help">
+        Add curated BGG GeekList IDs (e.g. the 1 Player Guild's "Top Solo Games of 2025" — find it on BGG and copy the number from the URL).
+        Each list is scraped on every run; only solo-capable games predicted Total / Immersive will appear above.
+        External scrapers can be toggled on or off.
+      </div>
+      <div class="source-section">
+        <div class="source-section-title">Curated BGG GeekLists</div>
+        <div id="geeklist-chips"></div>
+      </div>
+      <div class="source-section">
+        <div class="source-section-title">External scrapers</div>
+        <div id="scraper-toggles"></div>
+      </div>
+      <div class="sources-actions">
+        <button id="explorer-sources-revert" class="secondary">Revert</button>
+        <button id="explorer-sources-save" class="primary" disabled>Save sources</button>
+      </div>
     </div>
   </div>
 
@@ -1939,12 +2062,12 @@ function langDepHtml(g) {
 let STATE = {};
 
 async function loadData() {
-  const [colResp, scResp, mechResp, expResp] = await Promise.all([
+  const [colResp, scResp, mechResp, expResp, srcResp] = await Promise.all([
     fetch('../data/bgg_collection.json'),
     fetch('../data/bgg_collection_scores.json'),
     fetch('../data/mechanisms.json'),
-    // Explorer is optional — pre-discovery, the file may not exist yet.
     fetch('../data/explorer_candidates.json').catch(() => null),
+    fetch('../data/explorer_sources.json').catch(() => null),
   ]);
   if (!colResp.ok) throw new Error('Could not load bgg_collection.json');
   if (!scResp.ok) throw new Error('Could not load bgg_collection_scores.json');
@@ -1954,9 +2077,13 @@ async function loadData() {
   const mechanisms = await mechResp.json();
   let explorer = { metadata: {}, candidates: [] };
   if (expResp && expResp.ok) {
-    try { explorer = await expResp.json(); } catch { /* keep default empty */ }
+    try { explorer = await expResp.json(); } catch { /* default empty */ }
   }
-  return { collection, scores, mechanisms, explorer };
+  let explorerSources = null;
+  if (srcResp && srcResp.ok) {
+    try { explorerSources = await srcResp.json(); } catch { /* keep null */ }
+  }
+  return { collection, scores, mechanisms, explorer, explorerSources };
 }
 
 function mergeGame(game, scoreObj) {
@@ -2030,7 +2157,7 @@ function buildState(collection, scores, mechanisms, explorer) {
 
   return {
     owned, wishlist, preordered, prevOwned, collection, mechData,
-    explorer: explorerCandidates, explorerMeta,
+    explorer: explorerCandidates, explorerMeta, explorerSources,
   };
 }
 
@@ -3334,10 +3461,7 @@ function renderExplorer(state) {
     const tHi = (g.T ?? 0) >= 4 ? ' class="t-hi"' : '';
     const isCol = g.IS !== null && g.IS !== undefined ? isColor(g.IS) : 'var(--text3)';
     const isVal = g.IS !== null && g.IS !== undefined ? fmt1(g.IS) : '—';
-    const srcBadges = (g.sources || []).map(s => {
-      const label = s.replace('bgg_', '').replace('_', ' ');
-      return `<span style="display:inline-block;font-size:10px;padding:1px 6px;margin-right:4px;border-radius:4px;background:rgba(120,200,250,0.12);color:#cce8ff;border:1px solid rgba(120,200,250,0.25)">${htmlEscape(label)}</span>`;
-    }).join('');
+    const srcBadges = (g.sources || []).map(renderSourceBadge).join('');
     row.innerHTML = `
       <td>${typeIcon(g.type)}</td>
       <td style="min-width:200px"><span class="game-title" title="Show details">${htmlEscape(g.name)}</span></td>
@@ -3374,6 +3498,7 @@ function renderExplorer(state) {
         ${desc ? `<div style="font-size:13px;color:var(--accent);margin-bottom:10px;line-height:1.4">${htmlEscape(desc)}</div>` : ''}
         ${just ? `<div style="font-size:11px;color:var(--text3);margin-bottom:4px">PREDICTED JUSTIFICATION</div><div style="font-size:12px;color:var(--text2);line-height:1.5;margin-bottom:10px">${htmlEscape(just).replace(/([MTGF]|Ar)\(\d\):/g, '<span style="color:var(--accent);font-weight:600">$&</span>')}</div>` : ''}
         ${mechsHtml ? `<div style="font-size:11px;color:var(--text3);margin-bottom:4px">PREDICTED MECHANISMS</div><div class="expand-mechs">${mechsHtml}</div>` : ''}
+        ${(g.sources && g.sources.length) ? `<div style="margin-top:14px;font-size:11px;color:var(--text3);margin-bottom:4px">FOUND VIA</div><div>${g.sources.map(renderSourceBadge).join('')}</div>` : ''}
         <div style="margin-top:14px">
           <a href="${BGG_URL(g.bgg_id)}" target="_blank" rel="noopener" style="font-size:12px;color:var(--accent);text-decoration:underline;text-underline-offset:3px">View on BoardGameGeek →</a>
         </div>
@@ -3401,8 +3526,28 @@ function renderExplorer(state) {
   });
 }
 
-// BGG URL helper (the existing `a()` no longer returns a link)
+// BGG URL helpers (the existing `a()` no longer returns a link)
 function BGG_URL(id) { return `https://boardgamegeek.com/boardgame/${id}`; }
+function BGG_GEEKLIST_URL(id) { return `https://boardgamegeek.com/geeklist/${id}`; }
+
+// Friendly source-badge rendering. Used by the Explorer row and expand panel.
+function renderSourceBadge(source) {
+  if (!source) return '';
+  if (source === 'bgg_hot') {
+    return `<span class="source-badge">BGG hot list</span>`;
+  }
+  if (source.startsWith('bgg_geeklist:')) {
+    const id = source.split(':', 2)[1];
+    return `<span class="source-badge"><a href="${BGG_GEEKLIST_URL(id)}" target="_blank" rel="noopener">GeekList #${htmlEscape(id)}</a></span>`;
+  }
+  if (source === 'polyhedron_collider') {
+    return `<span class="source-badge"><a href="https://www.polyhedroncollider.com/" target="_blank" rel="noopener">Polyhedron Collider</a></span>`;
+  }
+  if (source === 'solitaire_times') {
+    return `<span class="source-badge"><a href="https://solitairetimes.com/" target="_blank" rel="noopener">Solitaire Times</a></span>`;
+  }
+  return `<span class="source-badge">${htmlEscape(source)}</span>`;
+}
 
 // Explorer sort/filter button wiring
 document.querySelectorAll('[data-explorer-sort]').forEach(btn => {
@@ -3435,6 +3580,279 @@ if (explorerSearchEl) {
     explorerSearch = e.target.value;
     if (STATE.explorer) renderExplorer(STATE);
   });
+}
+
+// ─── Refresh button ──────────────────────────────────────────────────────
+// Two dispatch paths:
+//   1. Local server (Edit.mode === 'local'): POST /api/explorer/refresh — the
+//      Python server forks the discovery pipeline in the background.
+//   2. Online (Edit.mode === 'online'): POST GitHub workflow_dispatch with the
+//      Bearer token. Requires Actions: Read & write permission on the token.
+async function refreshExplorer() {
+  const btn = document.getElementById('explorer-refresh-btn');
+  const label = document.getElementById('explorer-refresh-label');
+  if (!btn || !label) return;
+  const restore = (text) => { btn.disabled = false; label.textContent = text; };
+  btn.disabled = true;
+  label.textContent = 'Triggering…';
+
+  // Prefer local server when present.
+  if (Edit && Edit.mode === 'local') {
+    try {
+      const r = await fetch('/api/explorer/refresh', { method: 'POST' });
+      const j = await r.json().catch(() => ({}));
+      if (r.ok && (j.status === 'started' || j.status === 'ok')) {
+        showToast('Discovery running locally — refresh the page in ~5 minutes.', 'info', 6000);
+        restore('Refresh candidates');
+        return;
+      }
+      showToast(`Refresh failed: ${j.message || r.status}`, 'error', 6000);
+      restore('Refresh candidates');
+      return;
+    } catch (err) {
+      showToast('Could not reach local server.', 'error', 5000);
+      restore('Refresh candidates');
+      return;
+    }
+  }
+
+  // Online: workflow_dispatch via GitHub API.
+  const token = TokenStore.get();
+  if (!token) {
+    openTokenModal();
+    showToast('Set a GitHub token first to refresh online.', 'warn', 3500);
+    restore('Refresh candidates');
+    return;
+  }
+  try {
+    const r = await fetch(
+      `https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/actions/workflows/discover-explorer.yml/dispatches`,
+      {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/vnd.github+json',
+          'Authorization': `Bearer ${token}`,
+          'X-GitHub-Api-Version': '2022-11-28',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ ref: GH_BRANCH }),
+      },
+    );
+    if (r.status === 204) {
+      showToast('Workflow triggered — Pages will redeploy with new candidates in ~6 min.', 'info', 6500);
+    } else if (r.status === 401) {
+      openTokenModal();
+      showToast('Token rejected. Re-enter it.', 'error', 5000);
+    } else if (r.status === 403 || r.status === 404) {
+      showToast("Token can't trigger workflows. Regenerate with 'Actions: Read & write'.", 'error', 7000);
+    } else {
+      const txt = await r.text();
+      showToast(`Workflow dispatch failed: ${r.status} ${txt.slice(0, 120)}`, 'error', 6000);
+    }
+  } catch (err) {
+    showToast(`Network error triggering workflow: ${err}`, 'error', 5000);
+  } finally {
+    restore('Refresh candidates');
+  }
+}
+document.getElementById('explorer-refresh-btn')?.addEventListener('click', refreshExplorer);
+
+// ─── Sources editor ──────────────────────────────────────────────────────
+// State: working copy of explorer_sources.json. Edits don't persist until Save.
+const SourcesEditor = {
+  original: null,    // last-saved snapshot
+  working: null,     // in-flight edits
+  scraperKeys: ['polyhedron_collider', 'solitaire_times'], // bgg_hot / bgg_geeklists always-on
+};
+
+function initSourcesEditor() {
+  const src = (STATE && STATE.explorerSources) || null;
+  if (!src) {
+    document.querySelector('.explorer-sources-panel').style.display = 'none';
+    return;
+  }
+  document.querySelector('.explorer-sources-panel').style.display = '';
+  SourcesEditor.original = JSON.parse(JSON.stringify(src));
+  SourcesEditor.working = JSON.parse(JSON.stringify(src));
+  renderSourcesEditor();
+}
+
+function renderSourcesEditor() {
+  const w = SourcesEditor.working;
+  if (!w) return;
+
+  // GeekList chips
+  const chipsEl = document.getElementById('geeklist-chips');
+  if (chipsEl) {
+    const ids = w.bgg_geeklists || [];
+    chipsEl.innerHTML = ids.map(id =>
+      `<span class="geeklist-chip">
+        <a href="${BGG_GEEKLIST_URL(id)}" target="_blank" rel="noopener">#${id}</a>
+        <button class="geeklist-remove" data-id="${id}" title="Remove">×</button>
+      </span>`
+    ).join('') + `
+      <span class="geeklist-add">
+        <input type="number" id="geeklist-add-input" placeholder="ID" min="1" inputmode="numeric">
+        <button id="geeklist-add-btn">+ Add</button>
+      </span>`;
+  }
+
+  // Scraper toggles
+  const togglesEl = document.getElementById('scraper-toggles');
+  if (togglesEl) {
+    const enabled = w.enabled || {};
+    togglesEl.innerHTML = SourcesEditor.scraperKeys.map(k => {
+      const on = enabled[k] !== false;
+      const friendly = k === 'polyhedron_collider' ? 'Polyhedron Collider'
+                     : k === 'solitaire_times' ? 'Solitaire Times' : k;
+      return `<div class="scraper-toggle-row">
+        <label class="edit-toggle" title="Toggle ${friendly}">
+          <input type="checkbox" class="scraper-checkbox" data-scraper="${k}"${on ? ' checked' : ''}>
+          <span class="edit-toggle-pill"></span>
+        </label>
+        <span class="scraper-name">${friendly}</span>
+      </div>`;
+    }).join('');
+  }
+
+  updateSourcesDirty();
+}
+
+function updateSourcesDirty() {
+  const dirty = JSON.stringify(SourcesEditor.original) !== JSON.stringify(SourcesEditor.working);
+  document.getElementById('explorer-sources-save').disabled = !dirty;
+  document.getElementById('explorer-sources-revert').disabled = !dirty;
+}
+
+document.addEventListener('click', (e) => {
+  const rm = e.target.closest && e.target.closest('.geeklist-remove');
+  if (rm) {
+    const id = parseInt(rm.getAttribute('data-id'), 10);
+    SourcesEditor.working.bgg_geeklists = (SourcesEditor.working.bgg_geeklists || []).filter(x => x !== id);
+    renderSourcesEditor();
+    return;
+  }
+  if (e.target && e.target.id === 'geeklist-add-btn') {
+    const inp = document.getElementById('geeklist-add-input');
+    const v = parseInt(inp.value, 10);
+    if (!Number.isFinite(v) || v < 1) {
+      showToast('Enter a positive geeklist ID', 'warn', 2500);
+      return;
+    }
+    const list = SourcesEditor.working.bgg_geeklists || [];
+    if (list.includes(v)) {
+      showToast(`#${v} already in the list`, 'warn', 2500);
+      return;
+    }
+    SourcesEditor.working.bgg_geeklists = [...list, v];
+    inp.value = '';
+    renderSourcesEditor();
+  }
+});
+document.addEventListener('change', (e) => {
+  const el = e.target;
+  if (!el || !el.classList || !el.classList.contains('scraper-checkbox')) return;
+  const key = el.getAttribute('data-scraper');
+  if (!SourcesEditor.working.enabled) SourcesEditor.working.enabled = {};
+  SourcesEditor.working.enabled[key] = el.checked;
+  updateSourcesDirty();
+});
+
+document.getElementById('explorer-sources-revert')?.addEventListener('click', () => {
+  SourcesEditor.working = JSON.parse(JSON.stringify(SourcesEditor.original));
+  renderSourcesEditor();
+});
+
+document.getElementById('explorer-sources-save')?.addEventListener('click', async () => {
+  const saveBtn = document.getElementById('explorer-sources-save');
+  saveBtn.disabled = true;
+  saveBtn.textContent = 'Saving…';
+  const payload = SourcesEditor.working;
+  try {
+    if (Edit && Edit.mode === 'local') {
+      const r = await fetch('/api/explorer/sources', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
+      const j = await r.json().catch(() => ({}));
+      if (j.status === 'ok' || j.status === 'noop' || j.status === 'committed_not_pushed') {
+        SourcesEditor.original = JSON.parse(JSON.stringify(payload));
+        showToast(j.message || 'Sources saved', j.status === 'committed_not_pushed' ? 'warn' : 'info');
+      } else {
+        showToast(`Save failed: ${j.message || r.status}`, 'error', 5000);
+      }
+    } else if (Edit && Edit.mode === 'online') {
+      const token = TokenStore.get();
+      if (!token) { openTokenModal(); return; }
+      const result = await saveSourcesViaGitHubAPI(payload, token);
+      if (result.status === 'ok' || result.status === 'noop') {
+        SourcesEditor.original = JSON.parse(JSON.stringify(payload));
+        showToast(result.message || 'Sources saved', 'info');
+      } else {
+        showToast(result.message || 'Save failed', 'error', 5000);
+      }
+    } else {
+      showToast('No edit backend available.', 'error', 4000);
+    }
+  } catch (err) {
+    showToast(`Save error: ${err}`, 'error', 5000);
+  } finally {
+    saveBtn.textContent = 'Save sources';
+    updateSourcesDirty();
+  }
+});
+
+// PUT sources via GitHub API (mirrors saveViaGitHubAPI for scores)
+async function saveSourcesViaGitHubAPI(newSources, token) {
+  const headers = {
+    'Accept': 'application/vnd.github+json',
+    'Authorization': `Bearer ${token}`,
+    'X-GitHub-Api-Version': '2022-11-28',
+  };
+  const path = 'data/explorer_sources.json';
+  const baseUrl = `https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${path}`;
+  const getResp = await fetch(`${baseUrl}?ref=${GH_BRANCH}`, { headers });
+  if (getResp.status === 401) return { status: 'auth_error', message: 'Token rejected.' };
+  if (!getResp.ok) return { status: 'error', message: `GitHub ${getResp.status} reading sources.` };
+  const file = await getResp.json();
+  const newJson = JSON.stringify(newSources, null, 2) + '\n';
+  const newB64 = utf8ToBase64(newJson);
+  if (newB64.replace(/\s/g, '') === file.content.replace(/\s/g, '')) {
+    return { status: 'noop', message: 'No changes to commit.' };
+  }
+  const put = await fetch(baseUrl, {
+    method: 'PUT',
+    headers: { ...headers, 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      message: 'Update Explorer sources',
+      content: newB64,
+      sha: file.sha,
+      branch: GH_BRANCH,
+    }),
+  });
+  if (put.status === 401) return { status: 'auth_error', message: 'Token rejected mid-save.' };
+  if (put.status === 403) return { status: 'error', message: 'Token lacks Contents: Read/Write.' };
+  if (put.status === 409) return { status: 'error', message: 'Sources file changed on the server — reload and try again.' };
+  if (!put.ok) {
+    const t = await put.text();
+    return { status: 'error', message: `GitHub ${put.status}: ${t.slice(0, 150)}` };
+  }
+  return {
+    status: 'ok',
+    message: 'Sources saved — next discovery run uses them.',
+  };
+}
+
+// Wire the metadata line + sources editor on render
+function renderExplorerMeta(state) {
+  const el = document.getElementById('explorer-meta');
+  if (!el) return;
+  const m = state.explorerMeta || {};
+  if (!m.generated_at) { el.textContent = ''; return; }
+  const d = new Date(m.generated_at);
+  const when = isNaN(d) ? m.generated_at : d.toLocaleString();
+  el.textContent = `Last refreshed ${when} · evaluated ${m.total_evaluated || 0} · kept ${m.kept_total || 0} Total + ${m.kept_immersive || 0} Immersive.`;
 }
 
 const IS_ZONES = [
@@ -4094,8 +4512,9 @@ const initReady = new Promise(res => { _initReady = res; });
     const headerH = hdr ? hdr.offsetHeight : 78;
     document.documentElement.style.setProperty('--header-h', headerH + 'px');
 
-    const { collection, scores, mechanisms, explorer } = await loadData();
+    const { collection, scores, mechanisms, explorer, explorerSources } = await loadData();
     STATE = buildState(collection, scores, mechanisms, explorer);
+    STATE.explorerSources = explorerSources;
     buildMechOptions(mechanisms);
     Edit.original = JSON.parse(JSON.stringify(scores));
     _initReady();
@@ -4120,6 +4539,8 @@ const initReady = new Promise(res => { _initReady = res; });
     renderInsights();
     renderMechanisms(STATE);
     renderExplorer(STATE);
+    renderExplorerMeta(STATE);
+    initSourcesEditor();
 
     // Measure sort bar to position table headers below it
     const sortBar = document.querySelector('.sort-bar');
