@@ -497,6 +497,10 @@ def main() -> int:
     scores_by_bgg_id: dict[int, dict] = {}
     if args.score:
         print("\n[Score] Loading framework + calibration")
+        # Ensure repo root is on sys.path so `scripts.*` imports resolve
+        # both locally and on GitHub Actions.
+        if str(ROOT) not in sys.path:
+            sys.path.insert(0, str(ROOT))
         from scripts.score_new_games import (
             build_calibration_examples, build_mechanism_catalog, score_game,
         )
