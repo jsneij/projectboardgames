@@ -3899,7 +3899,15 @@ async function saveSourcesViaGitHubAPI(newSources, token) {
   };
   const path = 'data/explorer_sources.json';
   const baseUrl = `https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${path}`;
-  const getResp = await fetch(`${baseUrl}?ref=${GH_BRANCH}`, { headers });
+  let getResp;
+  try {
+    getResp = await fetch(`${baseUrl}?ref=${GH_BRANCH}`, { headers });
+  } catch (e) {
+    return {
+      status: 'error',
+      message: `Couldn't reach api.github.com (${e.message}). Disable ad-blockers / Brave Shields on this site, or try a different browser.`,
+    };
+  }
   if (getResp.status === 401) return { status: 'auth_error', message: 'Token rejected.' };
   if (!getResp.ok) return { status: 'error', message: `GitHub ${getResp.status} reading sources.` };
   const file = await getResp.json();
@@ -3908,16 +3916,24 @@ async function saveSourcesViaGitHubAPI(newSources, token) {
   if (newB64.replace(/\s/g, '') === file.content.replace(/\s/g, '')) {
     return { status: 'noop', message: 'No changes to commit.' };
   }
-  const put = await fetch(baseUrl, {
-    method: 'PUT',
-    headers: { ...headers, 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      message: 'Update Explorer sources',
-      content: newB64,
-      sha: file.sha,
-      branch: GH_BRANCH,
-    }),
-  });
+  let put;
+  try {
+    put = await fetch(baseUrl, {
+      method: 'PUT',
+      headers: { ...headers, 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        message: 'Update Explorer sources',
+        content: newB64,
+        sha: file.sha,
+        branch: GH_BRANCH,
+      }),
+    });
+  } catch (e) {
+    return {
+      status: 'error',
+      message: `Couldn't write to GitHub (${e.message}). Likely a browser extension blocking api.github.com.`,
+    };
+  }
   if (put.status === 401) return { status: 'auth_error', message: 'Token rejected mid-save.' };
   if (put.status === 403) return { status: 'error', message: 'Token lacks Contents: Read/Write.' };
   if (put.status === 409) return { status: 'error', message: 'Sources file changed on the server — reload and try again.' };
