@@ -1128,6 +1128,50 @@ function renderPendingCount() {
   if (el) el.textContent = String(n);
 }
 
+const SCORE_FIELDS = ['M', 'T', 'G', 'F', 'Ar'];
+
+function findGame(name) {
+  for (const collection of ['owned', 'wishlist', 'preordered']) {
+    if (Edit.original?.[collection]?.[name]) {
+      return { collection, original: Edit.original[collection][name] };
+    }
+  }
+  return null;
+}
+
+function recordEdit(collection, name, field, value) {
+  if (!Edit.pending[collection]) Edit.pending[collection] = {};
+  if (!Edit.pending[collection][name]) Edit.pending[collection][name] = {};
+  const original = Edit.original[collection][name][field];
+  // Primitive equality only — arrays/objects compared with === will never match,
+  // which is OK; the save flow's no-op git diff will still catch a "phantom" diff.
+  if (value === original) {
+    delete Edit.pending[collection][name][field];
+    if (Object.keys(Edit.pending[collection][name]).length === 0) {
+      delete Edit.pending[collection][name];
+    }
+    if (Object.keys(Edit.pending[collection]).length === 0) {
+      delete Edit.pending[collection];
+    }
+  } else {
+    Edit.pending[collection][name][field] = value;
+  }
+  renderPendingCount();
+}
+
+function renderScoreCell(gameName, field, currentValue) {
+  if (!Edit.on) return String(currentValue ?? 0);
+  const v = currentValue ?? 0;
+  const safe = gameName.replace(/"/g, '&quot;');
+  return `<input type="number" min="0" max="5" step="1" value="${v}"
+    class="edit-score" data-game="${safe}" data-field="${field}"
+    style="width:36px;padding:2px 4px;background:#1a1a1a;color:#fff;border:1px solid #555;border-radius:3px;text-align:center">`;
+}
+
+function renderCollection() {
+  if (STATE.owned) renderTable(STATE);
+}
+
 // ============================================================
 // CONSTANTS & HELPERS
 // ============================================================
@@ -1637,11 +1681,11 @@ function renderTable(state) {
       <td style="min-width:180px">${a(g.bgg_id, g.name)}</td>
       <td>${srcBadge}</td>
       <td style="color:var(--text2)">${g.type || '—'}</td>
-      <td class="mono">${g.hasScores ? g.M : '—'}</td>
-      <td class="mono"${tHi}>${g.hasScores ? g.T : '—'}</td>
-      <td class="mono">${g.hasScores ? g.G : '—'}</td>
-      <td class="mono" style="color:var(--amber)">${g.hasScores ? g.F : '—'}</td>
-      <td class="mono">${g.hasScores ? g.Ar : '—'}</td>
+      <td class="mono">${g.hasScores ? renderScoreCell(g.name, 'M', g.M) : '—'}</td>
+      <td class="mono"${tHi}>${g.hasScores ? renderScoreCell(g.name, 'T', g.T) : '—'}</td>
+      <td class="mono">${g.hasScores ? renderScoreCell(g.name, 'G', g.G) : '—'}</td>
+      <td class="mono" style="color:var(--amber)">${g.hasScores ? renderScoreCell(g.name, 'F', g.F) : '—'}</td>
+      <td class="mono">${g.hasScores ? renderScoreCell(g.name, 'Ar', g.Ar) : '—'}</td>
       <td class="mono">${g.GS !== null ? g.GS : '—'}</td>
       <td class="mono" style="color:${g.IS !== null ? isColor(g.IS) : 'var(--text3)'}"><strong>${g.IS !== null ? fmt1(g.IS) : '—'}</strong></td>
       <td class="mono" style="color:var(--text2)">${g.weight ? g.weight.toFixed(2) : '—'}</td>
@@ -3233,6 +3277,8 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
 
     const { collection, scores, mechanisms } = await loadData();
     STATE = buildState(collection, scores, mechanisms);
+    // Snapshot for the Edit mode (Tasks 8-13). Deep clone so live mutations don't pollute the baseline.
+    Edit.original = JSON.parse(JSON.stringify(scores));
 
     // Populate last fetch timestamp
     const fetchedAt = collection.metadata?.fetched_at;
@@ -3272,6 +3318,24 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
     </div>`;
   }
 })();
+
+// ============================================================
+// EDIT MODE: DELEGATED CHANGE LISTENER FOR SCORE INPUTS
+// ============================================================
+document.addEventListener('change', (e) => {
+  const el = e.target;
+  if (!el || !el.classList || !el.classList.contains('edit-score')) return;
+  const game = el.getAttribute('data-game');
+  const field = el.getAttribute('data-field');
+  let value = parseInt(el.value, 10);
+  if (Number.isNaN(value)) value = 0;
+  if (value < 0) value = 0;
+  if (value > 5) value = 5;
+  el.value = value;
+  const found = findGame(game);
+  if (!found) return;
+  recordEdit(found.collection, game, field, value);
+});
 
 // ============================================================
 // EDIT MODE DETECTION (runs after dashboard init)
