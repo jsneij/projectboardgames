@@ -27,7 +27,7 @@ BGG_API_BASE = "https://boardgamegeek.com/xmlapi2"
 # others behind WAF) reject UAs containing "bot" / "explorer" / "crawler" etc.
 DEFAULT_UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15"
 HTTP_TIMEOUT = 30
-MAX_RETRIES = 5
+MAX_RETRIES = 3
 RETRY_DELAY_SECONDS = 5
 
 # Atom feeds use a namespace. RSS 2.0 doesn't.
@@ -61,16 +61,16 @@ def _get(
             time.sleep(RETRY_DELAY_SECONDS)
             continue
         if resp.status_code == 429:
-            # Honor Retry-After if present, else exponential backoff
             ra = resp.headers.get("Retry-After", "")
             try:
                 wait = int(ra) if ra.isdigit() else backoff_429
             except Exception:
                 wait = backoff_429
+            wait = min(wait, 60)  # cap at 60s
             print(f"  [explorer_sources] HTTP 429 from {url} — backing off {wait}s "
                   f"(attempt {attempt + 1}/{MAX_RETRIES})")
             time.sleep(wait)
-            backoff_429 = min(backoff_429 * 2, 120)
+            backoff_429 = min(backoff_429 * 2, 60)
             continue
         print(f"  [explorer_sources] HTTP {resp.status_code} from {url}")
         return None

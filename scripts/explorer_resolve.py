@@ -79,10 +79,11 @@ def _get_xml(url: str, params: dict, bearer_token: str) -> ET.Element | None:
                 wait = int(ra) if ra.isdigit() else backoff_429
             except Exception:
                 wait = backoff_429
+            wait = min(wait, 60)
             print(f"  [resolve] HTTP 429 for {params.get('query')!r} — backing off {wait}s "
                   f"(attempt {attempt + 1}/{MAX_RETRIES})")
             time.sleep(wait)
-            backoff_429 = min(backoff_429 * 2, 120)
+            backoff_429 = min(backoff_429 * 2, 60)
             continue
         print(f"  [resolve] HTTP {resp.status_code} for {params.get('query')!r}")
         return None

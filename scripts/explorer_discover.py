@@ -86,9 +86,10 @@ def _get_thing_xml(ids_chunk: list[int], bearer_token: str) -> ET.Element | None
                 wait = int(ra) if ra.isdigit() else backoff_429
             except Exception:
                 wait = backoff_429
+            wait = min(wait, 60)
             print(f"  [thing] HTTP 429 — backing off {wait}s (attempt {attempt + 1}/{MAX_RETRIES})")
             time.sleep(wait)
-            backoff_429 = min(backoff_429 * 2, 240)
+            backoff_429 = min(backoff_429 * 2, 60)
             continue
         print(f"  [thing] HTTP {resp.status_code}")
         return None
@@ -257,8 +258,13 @@ def save_cache(cache: dict) -> None:
 
 
 def compute_is(scored: dict) -> tuple[float, str]:
-    gs = scored["M"] * scored["T"] * scored["G"] - scored["F"]
-    is_val = gs * (scored["Ar"] / 2)
+    M = scored.get("M", 0) or 0
+    T = scored.get("T", 0) or 0
+    G = scored.get("G", 0) or 0
+    F = scored.get("F", 0) or 0
+    Ar = scored.get("Ar", 0) or 0
+    gs = M * T * G - F
+    is_val = gs * (Ar / 2)
     if is_val >= FEELING_TOTAL_MIN:
         feeling = "Total"
     elif is_val >= FEELING_IMMERSIVE_MIN:
@@ -466,7 +472,7 @@ def main(argv: list[str] | None = None) -> int:
             "min_players": thing.get("min_players"),
             "max_players": thing.get("max_players"),
             **scored,
-            "GS": scored["M"] * scored["T"] * scored["G"] - scored["F"],
+            "GS": (scored.get("M",0) or 0) * (scored.get("T",0) or 0) * (scored.get("G",0) or 0) - (scored.get("F",0) or 0),
             "IS": is_val,
             "feeling": feeling,
         }
