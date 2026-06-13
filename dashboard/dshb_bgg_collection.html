@@ -870,7 +870,6 @@ nav::-webkit-scrollbar { display: none; }
   text-decoration-style: dotted; text-underline-offset: 3px;
 }
 .edit-mode-key:hover { color: var(--accent); }
-.edit-mode-key.has-token { color: #4ade80; }
 .token-modal-backdrop {
   position: fixed; inset: 0; background: rgba(0,0,0,0.65);
   display: none; align-items: center; justify-content: center;
@@ -959,7 +958,7 @@ nav::-webkit-scrollbar { display: none; }
           <span class="edit-toggle-pill"></span>
           <span class="edit-toggle-label">Edit mode</span>
         </label>
-        <span id="edit-mode-key-link" class="edit-mode-key" style="display:none" title="Set or update the GitHub token used to save edits online">🔑 Token</span>
+        <span id="edit-mode-key-link" class="edit-mode-key" style="display:none" title="Set or update the GitHub token used to save edits online">Set token</span>
       </div>
 
       <!-- Token setup modal (only used on github.io / online mode). -->
@@ -1427,7 +1426,7 @@ function updateTokenIndicator() {
   if (!link) return;
   const has = !!TokenStore.get();
   link.classList.toggle('has-token', has);
-  link.textContent = has ? '🔑 Reset token' : '🔑 Set token';
+  link.textContent = has ? 'Reset token' : 'Set token';
 }
 
 (function wireTokenModal() {
