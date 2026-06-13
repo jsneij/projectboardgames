@@ -1337,6 +1337,89 @@
       ],
       "description": "Descend deeper into cosmic horror as your investigation team confronts eldritch truths that rewrite reality around you.",
       "justification": "M(4): Multi-use cards with action points and escalating horror mechanics. T(5): Sanity loss and reality distortion IS the investigation experience. G(4): Every choice deepens horror while advancing the mystery. F(2): Campaign setup and horror tracking add manageable overhead. Ar(5): Evocative Lovecraftian atmosphere with haunting character portraits."
+    },
+    "Container": {
+      "name": "Container",
+      "type": "competitive",
+      "weight": 2.94,
+      "M": 3,
+      "T": 1,
+      "G": 4,
+      "F": 2,
+      "Ar": 3,
+      "feeling": "On Shelf",
+      "mechs": [
+        "STR-01 Competitive Games",
+        "TRN-01 Fixed Turn Order",
+        "ACT-01 Action Points",
+        "ECO-01 Exchanging",
+        "ECO-02 Trading",
+        "ECO-03 Market",
+        "ECO-08 Always Available Purchases",
+        "ECO-13 Investment",
+        "ECO-18 Negotiation",
+        "VIC-01 Victory Points from Game State",
+        "VIC-09 Fixed Number of Rounds",
+        "AUC-01 Open Auction"
+      ],
+      "description": "Build a shipping empire by producing goods, loading containers, and manipulating markets through an intricate dance of supply and demand.",
+      "justification": "M(3): Multi-role economic engine with production chains and market manipulation. T(1): Abstract economic mechanics with pasted-on shipping theme. G(4): Deep player interaction through market control and negotiation decisions. F(2): Medium setup with multiple boards and component sorting. Ar(3): Clean industrial design but lacks atmospheric punch or personality."
+    },
+    "Miskatonic Tales: Journey to Innsmouth": {
+      "name": "Miskatonic Tales: Journey to Innsmouth",
+      "type": "co-op",
+      "weight": 2.33,
+      "M": 4,
+      "T": 5,
+      "G": 4,
+      "F": 2,
+      "Ar": 4,
+      "feeling": "Total",
+      "mechs": [
+        "STR-02 Cooperative Games",
+        "STR-04 Solo Games",
+        "STR-08 Scenario/Mission/Campaign Games",
+        "ACT-01 Action Points",
+        "ACT-12 Variable Player Powers",
+        "ACT-17 Events",
+        "ACT-18 Narrative Choice",
+        "RES-02 Stat Check",
+        "RES-05 Die Icons",
+        "UNC-07 Unknown Information",
+        "UNC-08 Hidden Information",
+        "UNC-12 Deduction",
+        "CAR-04 Card Draw, Limits, and Deck Exhaustion",
+        "CAR-08 Multi-Use Cards",
+        "VIC-11 Completing Targets",
+        "MOV-01 Tessellation",
+        "MOV-04 Movement Points"
+      ],
+      "description": "Lead investigators through the fish-reeking streets of Innsmouth where every door hides Deep One cultists and cosmic truths that shatter sanity.",
+      "justification": "M(4): Action points with investigative mechanics and branching scenario paths. T(5): Sanity loss and cult discoveries ARE the Lovecraftian horror experience. G(4): Investigation choices and resource management carry narrative weight throughout. F(2): Campaign setup and component management add moderate overhead. Ar(4): Atmospheric Lovecraftian art capturing Innsmouth's decaying maritime dread."
+    },
+    "Hot Streak": {
+      "name": "Hot Streak",
+      "type": "competitive",
+      "weight": 1.2,
+      "M": 2,
+      "T": 2,
+      "G": 2,
+      "F": 1,
+      "Ar": 3,
+      "feeling": "On Shelf",
+      "mechs": [
+        "STR-01 Competitive Games",
+        "TRN-01 Fixed Turn Order",
+        "ACT-23 Drawing",
+        "RES-06 Card Play",
+        "CAR-04 Card Draw, Limits, and Deck Exhaustion",
+        "VIC-01 Victory Points from Game State",
+        "VIC-09 Fixed Number of Rounds",
+        "UNC-02 Push-Your-Luck",
+        "SET-01 Set Valuation"
+      ],
+      "description": "Draw cards to build poker-style combinations while deciding when to lock in your score before the deck burns you.",
+      "justification": "M(2): Simple draw-and-evaluate with basic set collection patterns. T(2): Generic card game with light gambling theme overlay. G(2): Push-luck timing decisions but limited strategic depth. F(1): Minimal components, quick teach, instant setup. Ar(3): Clean functional design but nothing atmospheric or memorable."
     }
   },
   "wishlist": {
@@ -5148,86 +5231,7 @@
       ],
       "description": "Command unstoppable killing machines in brutal mech combat where every decision could be your last against relentless opposition.",
       "justification": "M(4): Complex mech customization with interlocking weapon systems and tactical positioning. T(5): Every damage roll and system failure IS piloting a war machine. G(4): High-stakes tactical decisions with cascading consequences across battle phases. F(2): Moderate setup with dice and card management overhead. Ar(4): Striking mech designs with atmospheric battlefield art and strong visual hierarchy."
-    },
-    "Hot Streak": {
-      "name": "Hot Streak",
-      "type": "party",
-      "weight": 1.2,
-      "M": 2,
-      "T": 2,
-      "G": 2,
-      "F": 1,
-      "Ar": 3,
-      "feeling": "On Shelf",
-      "mechs": [
-        "STR-01 Competitive Games",
-        "TRN-01 Fixed Turn Order",
-        "ACT-18 Narrative Choice",
-        "RES-15 Voting",
-        "RES-16 Player Judge",
-        "CAR-04 Card Draw, Limits, and Deck Exhaustion",
-        "VIC-02 Victory Points from Player Actions",
-        "VIC-09 Fixed Number of Rounds",
-        "UNC-07 Unknown Information"
-      ],
-      "description": "Race to connect the dots between random prompts and convince others your wild associations make perfect sense.",
-      "justification": "M(2): Simple card play with basic pattern recognition mechanics. T(2): Party creativity theme present but not mechanically generated. G(2): Limited agency in subjective social voting context. F(1): Light party game with minimal setup overhead. Ar(3): Clean functional design without distinctive visual identity."
     }
   },
-  "preordered": {
-    "Container": {
-      "name": "Container",
-      "type": "competitive",
-      "weight": 3.0,
-      "M": 3,
-      "T": 2,
-      "G": 4,
-      "F": 1,
-      "Ar": 3,
-      "feeling": "Engaging",
-      "mechs": [
-        "STR-01 Competitive Games",
-        "TRN-01 Turn Order: Sequential",
-        "ACT-05 Auction/Bidding",
-        "ACT-09 Set Prices",
-        "ECO-01 Exchanging",
-        "ECO-02 Market",
-        "ECO-04 Supply and Demand",
-        "ECO-05 Income",
-        "ECO-06 Loans and Interest",
-        "ECO-14 Production",
-        "MOV-01 No Board",
-        "VIC-01 Victory Points as a Resource"
-      ],
-      "description": "An austere economic ballet where every price you set reshapes the entire table's market — pure supply-and-demand abstraction in chunky plastic.",
-      "justification": "M(3): Interlocking production/shipping/auction system, elegant not complex. T(2): Theme is a frame — you're manipulating prices, not experiencing logistics. G(4): Pricing and auction psychology reshape the market for everyone. F(1): Clean rules, fast setup, elegant flow. Ar(3): 2026 edition with upgraded production quality and cleaner visual design."
-    },
-    "Miskatonic Tales: Journey to Innsmouth": {
-      "name": "Miskatonic Tales: Journey to Innsmouth",
-      "type": "co-op",
-      "weight": 2.5,
-      "M": 3,
-      "T": 4,
-      "G": 3,
-      "F": 3,
-      "Ar": 3,
-      "feeling": "Engaging",
-      "mechs": [
-        "STR-02 Cooperative Games",
-        "STR-04 Solo Games",
-        "STR-08 Scenario/Mission/Campaign Games",
-        "ACT-12 Variable Player Powers",
-        "ACT-18 Narrative Choice",
-        "RES-02 Stat Check",
-        "RES-16 Push Your Luck",
-        "UNC-07 Unknown Information",
-        "UNC-10 Variable Setup",
-        "MOV-03 Map Exploration",
-        "CAR-04 Card Draw, Limits, and Deck Exhaustion",
-        "CAR-08 Multi-Use Cards"
-      ],
-      "description": "A gamebook-driven Lovecraftian investigation where your character deck slowly contaminates with stress and injury — madness is a mechanic, not a flavour text.",
-      "justification": "M(3): Character decks with push-your-luck stat tests and map exploration, interesting but not deeply interlocking. T(4): Deck contamination generates Lovecraftian deterioration mechanically — CYOA page-flipping occasionally breaks immersion. G(3): Meaningful investigation choices but outcomes often dictated by book and card draws. F(3): Three massive scenario books, map tiles, multiple card types, 6+ hours per adventure — bloated. Ar(3): Chaosium Mythos pedigree, decent illustrations, functional not stunning."
-    }
-  }
+  "preordered": {}
 }

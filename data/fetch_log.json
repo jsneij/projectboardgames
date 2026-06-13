@@ -1,14 +1,14 @@
 {
-  "fetched_at": "2026-06-13T06:15:56.593938+00:00",
+  "fetched_at": "2026-06-13T15:43:06.189761+00:00",
   "counts": {
-    "owned": 43,
-    "wishlist_total": 123,
+    "owned": 46,
+    "wishlist_total": 122,
     "wishlist_p1": 4,
     "wishlist_p2": 24,
-    "wishlist_p3": 32,
+    "wishlist_p3": 31,
     "wishlist_p4": 56,
     "wishlist_p5": 7,
-    "preordered": 2,
+    "preordered": 0,
     "previously_owned": 8
   },
   "games": {
@@ -447,7 +447,7 @@
     "453740": {
       "name": "Container",
       "num_plays": 0,
-      "category": "preordered",
+      "category": "owned",
       "wishlist_priority": null,
       "user_rating": null,
       "comment": null,
@@ -457,7 +457,7 @@
     "429431": {
       "name": "Miskatonic Tales: Journey to Innsmouth",
       "num_plays": 0,
-      "category": "preordered",
+      "category": "owned",
       "wishlist_priority": null,
       "user_rating": null,
       "comment": null,
@@ -1148,6 +1148,16 @@
       "acquisition_date": null,
       "play_comments": {}
     },
+    "446497": {
+      "name": "Hot Streak",
+      "num_plays": 0,
+      "category": "owned",
+      "wishlist_priority": null,
+      "user_rating": null,
+      "comment": null,
+      "acquisition_date": null,
+      "play_comments": {}
+    },
     "400205": {
       "name": "5 Towers",
       "num_plays": 0,
@@ -1773,16 +1783,6 @@
       "num_plays": 0,
       "category": "wishlist",
       "wishlist_priority": 5,
-      "user_rating": null,
-      "comment": null,
-      "acquisition_date": null,
-      "play_comments": {}
-    },
-    "446497": {
-      "name": "Hot Streak",
-      "num_plays": 0,
-      "category": "wishlist",
-      "wishlist_priority": 3,
       "user_rating": null,
       "comment": null,
       "acquisition_date": null,
