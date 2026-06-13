@@ -21,7 +21,8 @@ jobs:
       - name: Refresh awards
         env:
           BGG_BEARER_TOKEN: ${{ secrets.BGG_BEARER_TOKEN }}
-        run: python scripts/fetch_bgg_awards.py --min-year 2010
+        # No --min-year: scrape full history (cache + 429 backoff keep it bounded)
+        run: python scripts/fetch_bgg_awards.py
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
