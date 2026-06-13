@@ -2155,9 +2155,12 @@ function buildState(collection, scores, mechanisms, explorer) {
     : [];
   const explorerMeta = (explorer && explorer.metadata) || {};
 
+  // Note: explorerSources is attached to STATE *after* buildState() returns
+  // (in the init IIFE), since it's a top-level config object the editor uses
+  // — not part of the merged collection state.
   return {
     owned, wishlist, preordered, prevOwned, collection, mechData,
-    explorer: explorerCandidates, explorerMeta, explorerSources,
+    explorer: explorerCandidates, explorerMeta,
   };
 }
 
