@@ -54,3 +54,27 @@ def test_validate_scores_rejects_mechs_not_array_of_strings(scores_path):
     payload = {"owned": {"Burgle Bros.": {"mechs": ["ok", 42]}}}
     errors = validate_scores(payload, existing)
     assert {"field": "owned.Burgle Bros..mechs", "problem": "must be array of strings"} in errors
+
+
+def test_validate_scores_rejects_bool_as_score(scores_path):
+    # Python quirk: isinstance(True, int) is True. The explicit bool guard
+    # in validate_scores prevents True/False from passing as a score. This
+    # test pins that guard so refactors can't silently regress it.
+    existing = _load(scores_path)
+    payload = {"owned": {"Burgle Bros.": {"M": True}}}
+    errors = validate_scores(payload, existing)
+    assert {"field": "owned.Burgle Bros..M", "problem": "must be int 0..5"} in errors
+
+
+def test_validate_scores_rejects_non_numeric_weight(scores_path):
+    existing = _load(scores_path)
+    payload = {"owned": {"Burgle Bros.": {"weight": "heavy"}}}
+    errors = validate_scores(payload, existing)
+    assert {"field": "owned.Burgle Bros..weight", "problem": "must be numeric"} in errors
+
+
+def test_validate_scores_rejects_non_string_text_field(scores_path):
+    existing = _load(scores_path)
+    payload = {"owned": {"Burgle Bros.": {"feeling": 99}}}
+    errors = validate_scores(payload, existing)
+    assert {"field": "owned.Burgle Bros..feeling", "problem": "must be a string"} in errors
