@@ -37,11 +37,20 @@ HTTP_TIMEOUT = 30
 # The parser per program may need to be customized via PARSERS below.
 AWARD_PROGRAMS = [
     ("Spiel des Jahres",       "https://en.wikipedia.org/wiki/Spiel_des_Jahres"),
-    ("Kennerspiel des Jahres", "https://en.wikipedia.org/wiki/Kennerspiel_des_Jahres"),
-    ("Kinderspiel des Jahres", "https://en.wikipedia.org/wiki/Kinderspiel_des_Jahres"),
     ("Golden Geek Awards",     "https://en.wikipedia.org/wiki/Golden_Geek_Awards"),
     ("Origins Awards",         "https://en.wikipedia.org/wiki/Origins_Award"),
     ("As d'Or",                "https://en.wikipedia.org/wiki/As_d%27Or"),
+]
+
+# Mapping from Wikipedia caption text → award program for SdJ family. The
+# SdJ Wikipedia page contains tables for all three sister awards (plus
+# special prizes), each labelled by <caption>.
+SDJ_CAPTION_MAP = [
+    # Order matters — first match wins. Most-specific first.
+    (re.compile(r"connoisseur", re.IGNORECASE),  "Kennerspiel des Jahres"),
+    (re.compile(r"children", re.IGNORECASE),     "Kinderspiel des Jahres"),
+    (re.compile(r"game of the year", re.IGNORECASE), "Spiel des Jahres"),
+    (re.compile(r"special", re.IGNORECASE),      "Spiel des Jahres — Special Prize"),
 ]
 
 
@@ -49,6 +58,10 @@ AWARD_PROGRAMS = [
 
 TABLE_RE = re.compile(
     r'<table[^>]*class="[^"]*wikitable[^"]*"[^>]*>(.*?)</table>',
+    re.DOTALL | re.IGNORECASE,
+)
+CAPTION_RE = re.compile(
+    r'<caption[^>]*>(.*?)</caption>',
     re.DOTALL | re.IGNORECASE,
 )
 ROW_RE = re.compile(r'<tr[^>]*>(.*?)</tr>', re.DOTALL | re.IGNORECASE)
@@ -119,20 +132,29 @@ def parse_wikipedia_award(program: str, url: str) -> list[dict]:
         last_idx = m.end()
     chunks.append((last_heading, html[last_idx:]))
 
-    # Names of OTHER programs in the SdJ family — skip their dedicated sections
-    # when scraping a sibling page (each page tends to include summary tables
-    # for all three).
-    SDJ_FAMILY = ["Spiel des Jahres", "Kennerspiel des Jahres", "Kinderspiel des Jahres"]
-    sibling_names = [s for s in SDJ_FAMILY if s != program and s.lower() != program.lower()]
+    is_sdj_family_page = program == "Spiel des Jahres"
 
     for heading, body in chunks:
         heading_year = _find_year(heading)
-        # Skip sections whose heading explicitly belongs to a sibling award
-        h_lower = heading.lower()
-        if any(s.lower() in h_lower for s in sibling_names):
-            continue
         for tm in TABLE_RE.finditer(body):
             table = tm.group(0)
+            # Determine which program this specific table is for.
+            # For the SdJ page, the table caption distinguishes SdJ vs
+            # Kennerspiel vs Kinderspiel vs Special Prize.
+            row_program = program
+            if is_sdj_family_page:
+                cap_m = CAPTION_RE.search(table)
+                cap_text = _clean_cell(cap_m.group(1)) if cap_m else ""
+                matched = False
+                for pat, prog in SDJ_CAPTION_MAP:
+                    if pat.search(cap_text):
+                        row_program = prog
+                        matched = True
+                        break
+                if not matched:
+                    # Unknown caption inside SdJ page — skip rather than
+                    # mislabel.
+                    continue
             rows = ROW_RE.findall(table)
             if not rows:
                 continue
@@ -201,10 +223,8 @@ def parse_wikipedia_award(program: str, url: str) -> list[dict]:
                 else:
                     status = "Nominee"
 
-                # If first column is the winner column with a year header,
-                # the heading tells us the year.
                 entries.append({
-                    "program": program,
+                    "program": row_program,
                     "year": yr,
                     "status": status,
                     "name": name,
@@ -363,8 +383,8 @@ def load_env():
 def main() -> int:
     import argparse
     ap = argparse.ArgumentParser()
-    ap.add_argument("--min-year", type=int, default=2015,
-                    help="Drop awards before this year (default 2015)")
+    ap.add_argument("--min-year", type=int, default=0,
+                    help="Drop awards before this year (default 0 = all history)")
     ap.add_argument("--programs", nargs="*",
                     help="Only scrape these programs (substring match on name)")
     args = ap.parse_args()
