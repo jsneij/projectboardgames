@@ -119,3 +119,45 @@ def test_commit_and_push_happy_path(repo, scores_path):
         capture_output=True, text=True, check=True,
     ).stdout.strip()
     assert log == "Update collection scores: Burgle Bros."
+
+
+def test_commit_and_push_returns_noop_when_no_diff(repo, scores_path):
+    result = commit_and_push(["Burgle Bros."], scores_path, repo)
+    assert result["status"] == "noop"
+    # Repo is clean
+    status = subprocess.run(
+        ["git", "status", "--porcelain"], cwd=repo,
+        capture_output=True, text=True, check=True,
+    ).stdout.strip()
+    assert status == ""
+
+
+def test_commit_and_push_returns_committed_not_pushed_when_remote_is_gone(repo, scores_path, tmp_path):
+    # Mutate the file
+    data = json.loads(scores_path.read_text(encoding="utf-8"))
+    data["owned"]["Burgle Bros."]["G"] = 5
+    atomic_write_json(scores_path, data)
+    # Point origin at a non-existent path so push fails
+    subprocess.run(
+        ["git", "remote", "set-url", "origin", str(tmp_path / "does-not-exist")],
+        cwd=repo, check=True,
+    )
+
+    result = commit_and_push(["Burgle Bros."], scores_path, repo)
+
+    assert result["status"] == "committed_not_pushed"
+    assert result["pushed"] is False
+    assert len(result["commit"]) == 40
+    # The commit is still in the local log
+    log = subprocess.run(
+        ["git", "log", "-1", "--format=%s"], cwd=repo,
+        capture_output=True, text=True, check=True,
+    ).stdout.strip()
+    assert log.startswith("Update collection scores:")
+
+
+def test_commit_message_truncates_after_five_games():
+    from scripts.dashboard_server_core import _build_commit_message
+    names = [f"Game {i}" for i in range(8)]
+    msg = _build_commit_message(names)
+    assert msg == "Update collection scores: Game 0, Game 1, Game 2, Game 3, Game 4 (+3 more)"
