@@ -168,8 +168,9 @@ def _parse_feed_titles(xml_text: str) -> list[str]:
     return titles
 
 
-def _fetch_feed_titles(url: str) -> list[str]:
-    resp = _get(url, accept="application/rss+xml, application/atom+xml, application/xml")
+def _fetch_feed_titles(url: str, bearer_token: str | None = None) -> list[str]:
+    resp = _get(url, accept="application/rss+xml, application/atom+xml, application/xml",
+                bearer_token=bearer_token)
     if resp is None:
         return []
     return _parse_feed_titles(resp.text)
@@ -339,22 +340,43 @@ def _host_label(url: str) -> str:
         return url
 
 
-def custom_url(url: str) -> list[dict[str, Any]]:
+def _bearer_for(url: str, bgg_token: str | None) -> str | None:
+    """Auto-attach the BGG bearer token when the custom URL is on boardgamegeek.com.
+
+    BGG now requires Bearer auth on every page — both /xmlapi2/* and the
+    regular HTML pages. Without this, custom URLs like /hotness or /browse/*
+    return HTTP 403.
+    """
+    try:
+        from urllib.parse import urlparse
+        host = (urlparse(url).hostname or "").lower()
+        if host.endswith("boardgamegeek.com") and bgg_token:
+            return bgg_token
+    except Exception:
+        pass
+    return None
+
+
+def custom_url(url: str, bgg_token: str | None = None) -> list[dict[str, Any]]:
     """Scrape one user-provided URL. Tries feed → autodiscovery → HTML headings."""
     if not url or not url.startswith(("http://", "https://")):
         return []
 
+    token = _bearer_for(url, bgg_token)
+
     # 1. Try direct feed parse
-    titles = _fetch_feed_titles(url)
+    titles = _fetch_feed_titles(url, bearer_token=token)
 
     # 2. If no titles, fetch as HTML and look for autodiscovery link
     if not titles:
         try:
-            resp = _get(url, accept="text/html, application/rss+xml, */*")
+            resp = _get(url, accept="text/html, application/rss+xml, */*",
+                        bearer_token=token)
             if resp is not None:
                 feed_url = _autodiscover_feed_url(resp.text, url)
                 if feed_url:
-                    titles = _fetch_feed_titles(feed_url)
+                    feed_token = _bearer_for(feed_url, bgg_token)
+                    titles = _fetch_feed_titles(feed_url, bearer_token=feed_token)
                 if not titles:
                     # 3. Last-resort: scrape <h1>/<h2>/<h3> headings
                     titles = _scrape_html_headings(resp.text)
@@ -375,11 +397,11 @@ def custom_url(url: str) -> list[dict[str, Any]]:
     ]
 
 
-def custom_urls(urls: list[str]) -> list[dict[str, Any]]:
+def custom_urls(urls: list[str], bgg_token: str | None = None) -> list[dict[str, Any]]:
     """Run custom_url on each user-provided URL with a small politeness gap."""
     out: list[dict[str, Any]] = []
     for i, url in enumerate(urls or []):
-        out.extend(custom_url(url))
+        out.extend(custom_url(url, bgg_token=bgg_token))
         if i + 1 < len(urls):
             time.sleep(0.5)
     return out

@@ -322,7 +322,7 @@ def main(argv: list[str] | None = None) -> int:
             print(f"  solitaire_times          → {len(c)}")
             candidates.extend(c)
         if enabled.get("custom_urls", True) and custom_url_list:
-            c = explorer_sources.custom_urls(custom_url_list)
+            c = explorer_sources.custom_urls(custom_url_list, bgg_token=bgg_token)
             print(f"  custom_urls ({len(custom_url_list)})         → {len(c)}")
             candidates.extend(c)
 
