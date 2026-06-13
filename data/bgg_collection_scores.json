@@ -5148,6 +5148,30 @@
       ],
       "description": "Command unstoppable killing machines in brutal mech combat where every decision could be your last against relentless opposition.",
       "justification": "M(4): Complex mech customization with interlocking weapon systems and tactical positioning. T(5): Every damage roll and system failure IS piloting a war machine. G(4): High-stakes tactical decisions with cascading consequences across battle phases. F(2): Moderate setup with dice and card management overhead. Ar(4): Striking mech designs with atmospheric battlefield art and strong visual hierarchy."
+    },
+    "Hot Streak": {
+      "name": "Hot Streak",
+      "type": "party",
+      "weight": 1.2,
+      "M": 2,
+      "T": 2,
+      "G": 2,
+      "F": 1,
+      "Ar": 3,
+      "feeling": "On Shelf",
+      "mechs": [
+        "STR-01 Competitive Games",
+        "TRN-01 Fixed Turn Order",
+        "ACT-18 Narrative Choice",
+        "RES-15 Voting",
+        "RES-16 Player Judge",
+        "CAR-04 Card Draw, Limits, and Deck Exhaustion",
+        "VIC-02 Victory Points from Player Actions",
+        "VIC-09 Fixed Number of Rounds",
+        "UNC-07 Unknown Information"
+      ],
+      "description": "Race to connect the dots between random prompts and convince others your wild associations make perfect sense.",
+      "justification": "M(2): Simple card play with basic pattern recognition mechanics. T(2): Party creativity theme present but not mechanically generated. G(2): Limited agency in subjective social voting context. F(1): Light party game with minimal setup overhead. Ar(3): Clean functional design without distinctive visual identity."
     }
   },
   "preordered": {

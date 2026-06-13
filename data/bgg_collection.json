@@ -1,14 +1,14 @@
 {
   "metadata": {
     "username": "jsneij",
-    "fetched_at": "2026-06-12T06:40:32.101650+00:00",
-    "total_items": 176,
+    "fetched_at": "2026-06-13T06:15:56.593938+00:00",
+    "total_items": 177,
     "counts": {
       "owned": 43,
-      "wishlist_total": 122,
+      "wishlist_total": 123,
       "wishlist_p1": 4,
       "wishlist_p2": 24,
-      "wishlist_p3": 31,
+      "wishlist_p3": 32,
       "wishlist_p4": 56,
       "wishlist_p5": 7,
       "preordered": 2,
@@ -6076,6 +6076,60 @@
         "private_info": null,
         "plays": [],
         "language_dependence": "Moderate in-game text - needs crib sheet or paste ups"
+      },
+      {
+        "bgg_id": 446497,
+        "type": "boardgame",
+        "collection_id": 146421354,
+        "name": "Hot Streak",
+        "year": 2025,
+        "image": "https://cf.geekdo-images.com/co36SqyPYlM1QwVW6XSwyQ__original/img/ErbrDNguZzKtnCCAUiQCh1xwldc=/0x0/filters:format(jpeg)/pic8933083.jpg",
+        "thumbnail": "https://cf.geekdo-images.com/co36SqyPYlM1QwVW6XSwyQ__small/img/dur_aXLM90CAW7CE_Tt5wjADaJk=/fit-in/200x150/filters:strip_icc()/pic8933083.jpg",
+        "status": {
+          "own": false,
+          "previously_owned": false,
+          "for_trade": false,
+          "want": false,
+          "want_to_play": false,
+          "want_to_buy": false,
+          "wishlist": true,
+          "preordered": false,
+          "last_modified": "2026-06-12 06:53:58"
+        },
+        "wishlist_priority": 3,
+        "num_plays": 0,
+        "comment": null,
+        "stats": {
+          "min_players": 2,
+          "max_players": 8,
+          "min_playtime": 20,
+          "max_playtime": 20,
+          "playing_time": 20,
+          "user_rating": null,
+          "usersrated": 6022.0,
+          "average": 7.84182,
+          "bayesaverage": 7.15259,
+          "stddev": 1.35,
+          "median": 0.0,
+          "avg_weight": 1.2,
+          "ranks": [
+            {
+              "type": "subtype",
+              "name": "boardgame",
+              "friendly_name": "Board Game Rank",
+              "value": 346
+            },
+            {
+              "type": "family",
+              "name": "partygames",
+              "friendly_name": "Party Game Rank",
+              "value": 4
+            }
+          ]
+        },
+        "private_info": null,
+        "plays": [],
+        "language_dependence": "Some necessary text - easily memorized or small crib sheet"
       }
     ],
     "priority_4_thinking_about": [
