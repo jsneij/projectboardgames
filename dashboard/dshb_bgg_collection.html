@@ -1142,13 +1142,114 @@ async function detectEditServer() {
   }
 }
 
-function setEditMode(on) {
+const PENDING_KEY = 'bgg_pending_edits_v1';
+
+function showToast(text, kind = 'info', ms = 4000) {
+  const div = document.createElement('div');
+  div.textContent = text;
+  const bg = kind === 'error' ? '#7a2222' : (kind === 'warn' ? '#7a5b22' : '#1f4a2a');
+  div.style.cssText = `position:fixed;bottom:24px;left:50%;transform:translateX(-50%);
+    background:${bg};color:#fff;padding:10px 16px;border-radius:6px;font-size:13px;
+    box-shadow:0 8px 24px rgba(0,0,0,.5);z-index:200`;
+  document.body.appendChild(div);
+  setTimeout(() => div.remove(), ms);
+}
+
+function pendingChangeCount() {
+  let n = 0;
+  for (const c of Object.values(Edit.pending)) n += Object.keys(c).length;
+  return n;
+}
+
+function applyPendingToOriginal() {
+  // Deep copy of original with pending merged in.
+  const out = JSON.parse(JSON.stringify(Edit.original));
+  for (const [collection, games] of Object.entries(Edit.pending)) {
+    for (const [name, fields] of Object.entries(games)) {
+      Object.assign(out[collection][name], fields);
+    }
+  }
+  return out;
+}
+
+async function setEditMode(on) {
+  if (Edit.on && !on) {
+    // ── Turning OFF ────────────────────────────────────────────────────
+    const cb = document.getElementById('edit-toggle-checkbox');
+    const banner = document.getElementById('edit-banner');
+
+    if (pendingChangeCount() === 0) {
+      Edit.on = false;
+      document.body.classList.remove('edit-mode');
+      if (banner) banner.style.display = 'none';
+      showToast('No changes', 'info', 1500);
+      if (typeof renderCollection === 'function') renderCollection();
+      return;
+    }
+
+    const updated = applyPendingToOriginal();
+    const changed_games = Object.values(Edit.pending).flatMap(c => Object.keys(c));
+    showToast(`Saving ${changed_games.length} game(s)…`, 'info', 1500);
+
+    try {
+      const r = await fetch('/api/save', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ scores: updated, changed_games }),
+      });
+      const j = await r.json();
+
+      if (j.status === 'ok' || j.status === 'noop') {
+        Edit.original = updated;
+        Edit.pending = {};
+        localStorage.removeItem(PENDING_KEY);
+        Edit.on = false;
+        document.body.classList.remove('edit-mode');
+        if (banner) banner.style.display = 'none';
+        renderPendingCount();
+        if (typeof renderCollection === 'function') renderCollection();
+        showToast(j.message || `Saved ${changed_games.length} game(s)`, 'info');
+
+      } else if (j.status === 'committed_not_pushed') {
+        Edit.original = updated;
+        Edit.pending = {};
+        localStorage.removeItem(PENDING_KEY);
+        Edit.on = false;
+        document.body.classList.remove('edit-mode');
+        if (banner) banner.style.display = 'none';
+        renderPendingCount();
+        if (typeof renderCollection === 'function') renderCollection();
+        showToast(j.message || 'Committed locally; push failed', 'warn', 6000);
+
+      } else if (j.status === 'validation_error') {
+        if (cb) cb.checked = true;
+        Edit.on = true;
+        const e0 = j.errors?.[0];
+        const detail = e0 ? `${e0.field || ''} ${e0.problem || ''}`.trim() : '';
+        showToast(`Validation error${detail ? ': ' + detail : ''}`, 'error', 6000);
+
+      } else {
+        // status === 'error' or unknown
+        if (cb) cb.checked = true;
+        Edit.on = true;
+        showToast(`Save failed: ${j.message || 'unknown error'}`, 'error', 6000);
+      }
+
+    } catch (err) {
+      // Server unreachable — leave Edit mode ON so the edits aren't lost.
+      if (cb) cb.checked = true;
+      Edit.on = true;
+      showToast("Can't reach local server. Your edits are kept in this browser. Restart /dashboard_BGG and try again.", 'error', 8000);
+    }
+    return;
+  }
+
+  // ── Turning ON (or no-op same-state) ──────────────────────────────────
   Edit.on = on;
   const banner = document.getElementById('edit-banner');
   if (banner) banner.style.display = on ? 'block' : 'none';
   document.body.classList.toggle('edit-mode', on);
   renderPendingCount();
-  // Re-render the collection table (function added in later tasks)
   if (typeof renderCollection === 'function') renderCollection();
 }
 
@@ -1188,6 +1289,8 @@ function recordEdit(collection, name, field, value) {
     Edit.pending[collection][name][field] = value;
   }
   renderPendingCount();
+  try { localStorage.setItem(PENDING_KEY, JSON.stringify({ ts: Date.now(), pending: Edit.pending })); }
+  catch {}
 }
 
 // Escape user-controlled strings before they land in HTML attributes or text.
@@ -3590,6 +3693,22 @@ function openMechPicker(addBtn) {
   if (wrap) wrap.style.display = 'flex';
   const cb = document.getElementById('edit-toggle-checkbox');
   if (cb) cb.addEventListener('change', (e) => setEditMode(e.target.checked));
+
+  // Restore unsaved edits from localStorage (only when the local edit server is available).
+  if (!Edit.original) return;
+  try {
+    const stored = JSON.parse(localStorage.getItem(PENDING_KEY) || 'null');
+    if (stored && stored.pending && Object.keys(stored.pending).length) {
+      const ago = Math.max(1, Math.round((Date.now() - stored.ts) / 60000));
+      const restore = window.confirm(`Unsaved BGG dashboard edits found from ${ago} min ago. Restore?`);
+      if (restore) {
+        Edit.pending = stored.pending;
+        renderPendingCount();
+      } else {
+        localStorage.removeItem(PENDING_KEY);
+      }
+    }
+  } catch {}
 })();
 </script>
 </body>
