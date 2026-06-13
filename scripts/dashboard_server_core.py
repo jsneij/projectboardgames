@@ -121,7 +121,12 @@ def commit_and_push(changed_games: list[str], scores_path: Path, repo_root: Path
 
     add = _run_git(["add", str(rel)], repo_root)
     if add.returncode != 0:
-        return {"status": "error", "message": f"git add failed: {add.stderr.strip()}"}
+        return {
+            "status": "error",
+            "commit": None,
+            "pushed": False,
+            "message": f"git add failed: {add.stderr.strip()}",
+        }
 
     diff = _run_git(["diff", "--cached", "--quiet"], repo_root)
     if diff.returncode == 0:
@@ -130,7 +135,12 @@ def commit_and_push(changed_games: list[str], scores_path: Path, repo_root: Path
     msg = _build_commit_message(changed_games)
     commit = _run_git(["commit", "-m", msg], repo_root)
     if commit.returncode != 0:
-        return {"status": "error", "message": f"git commit failed: {commit.stderr.strip()}"}
+        return {
+            "status": "error",
+            "commit": None,
+            "pushed": False,
+            "message": f"git commit failed: {commit.stderr.strip()}",
+        }
 
     sha = _run_git(["rev-parse", "HEAD"], repo_root).stdout.strip()
 
