@@ -859,6 +859,37 @@ nav::-webkit-scrollbar { display: none; }
 .edit-toggle input:checked + .edit-toggle-pill { background: #ffa94d; }
 .edit-toggle input:checked + .edit-toggle-pill::after { left: 18px; }
 .edit-toggle-label { font-size: 12px; opacity: .85; }
+/* MECHANISM PICKER (Edit mode) */
+.mech-pill {
+  display:inline-flex; align-items:center; gap:4px;
+  background:rgba(120,200,250,.18); color:#cce8ff;
+  border:1px solid rgba(120,200,250,.4); border-radius:999px;
+  padding:2px 8px; margin:2px 4px 2px 0; font-size:11px; cursor:default;
+}
+.mech-pill button {
+  background:none; border:0; color:#cce8ff; cursor:pointer;
+  font-size:12px; line-height:1; padding:0 0 0 2px;
+}
+.mech-add {
+  font-size:11px; padding:2px 8px; border:1px dashed #888; background:transparent;
+  color:#ccc; border-radius:999px; cursor:pointer;
+}
+.mech-picker {
+  position:absolute; background:#1a1a1a; border:1px solid #555; border-radius:6px;
+  padding:6px; z-index:100; max-height:280px; overflow:auto; min-width:260px;
+  box-shadow:0 8px 24px rgba(0,0,0,.5);
+}
+.mech-picker input {
+  width:100%; margin-bottom:6px; padding:4px 6px; background:#0f0f0f; color:#fff;
+  border:1px solid #444; border-radius:3px;
+}
+.mech-picker .mech-option {
+  padding:3px 6px; cursor:pointer; font-size:11px; border-radius:3px;
+}
+.mech-picker .mech-option:hover { background:rgba(120,200,250,.18); }
+.mech-picker .mech-cat {
+  font-size:10px; opacity:.6; text-transform:uppercase; padding:6px 6px 2px;
+}
 </style>
 </head>
 <body>
@@ -1211,6 +1242,55 @@ function renderTextInputCell(gameName, field, currentValue, opts = {}) {
 
 function renderCollection() {
   if (STATE.owned) renderTable(STATE);
+}
+
+// ============================================================
+// MECHANISM PICKER HELPERS
+// ============================================================
+// Flat searchable list of all mechanisms with their category context, for the Edit-mode picker.
+let MECH_OPTIONS = [];
+function buildMechOptions(mechSource) {
+  MECH_OPTIONS = [];
+  for (const cat of (mechSource?.categories || [])) {
+    for (const m of (cat.mechanisms || [])) {
+      MECH_OPTIONS.push({
+        code: m.code,
+        name: m.name,
+        label: `${m.code} ${m.name}`,
+        prefix: cat.prefix,
+        category: cat.name,
+      });
+    }
+  }
+}
+
+function currentMechs(gameObjOrName) {
+  // Accepts either a game object {name, mechs} or just a game-name string.
+  const name = typeof gameObjOrName === 'string' ? gameObjOrName : gameObjOrName.name;
+  const found = findGame(name);
+  if (!found) {
+    // No baseline (shouldn't happen for owned/wishlist/preordered games) — fall back to passed-in mechs
+    return (typeof gameObjOrName === 'object' && gameObjOrName.mechs) || [];
+  }
+  const pending = Edit.pending?.[found.collection]?.[name]?.mechs;
+  return pending ?? found.original.mechs ?? [];
+}
+
+function renderMechCell(gameName, mechs) {
+  if (!Edit.on) {
+    // View-mode: match the pre-task mech-tag appearance exactly
+    return (mechs || []).map(m => `<span class="mech-tag">${htmlEscape(m)}</span>`).join('');
+  }
+  const safe = htmlEscape(gameName);
+  const pills = (mechs || []).map(m => {
+    const ms = htmlEscape(m);
+    return `<span class="mech-pill" data-mech="${ms}">${ms}
+      <button class="mech-remove" data-game="${safe}" data-mech="${ms}">×</button>
+    </span>`;
+  }).join('');
+  return `<div class="mech-cell" data-game="${safe}">${pills}
+    <button class="mech-add" data-game="${safe}">+ add mechanism</button>
+  </div>`;
 }
 
 // ============================================================
@@ -1741,7 +1821,7 @@ function renderTable(state) {
     expandRow.style.display = 'none';
     const td = document.createElement('td');
     td.colSpan = 17;
-    const mechsHtml = (g.mechs || []).map(m => `<span class="mech-tag">${m}</span>`).join('');
+    const mechsHtml = renderMechCell(g.name, currentMechs(g));
     const desc = g.sc.description || '';
     const just = g.sc.justification || '';
     td.innerHTML = `<div class="expand-panel">
@@ -3318,6 +3398,8 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
 
     const { collection, scores, mechanisms } = await loadData();
     STATE = buildState(collection, scores, mechanisms);
+    // Build flat MECH_OPTIONS for the Edit-mode mechanism picker (Task 11).
+    buildMechOptions(mechanisms);
     // Snapshot for the Edit mode (Tasks 8-13). Deep clone so live mutations don't pollute the baseline.
     Edit.original = JSON.parse(JSON.stringify(scores));
 
@@ -3400,6 +3482,85 @@ document.addEventListener('input', (e) => {
   const found = findGame(game);
   if (found) recordEdit(found.collection, game, field, value);
 });
+
+// ============================================================
+// MECHANISM PICKER: CLICK DELEGATION
+// ============================================================
+document.addEventListener('click', (e) => {
+  // Remove a pill
+  const rm = e.target.closest && e.target.closest('.mech-remove');
+  if (rm) {
+    e.preventDefault();
+    const game = rm.getAttribute('data-game');
+    const mech = rm.getAttribute('data-mech');
+    const found = findGame(game);
+    if (!found) return;
+    const next = currentMechs(game).filter(m => m !== mech);
+    recordEdit(found.collection, game, 'mechs', next);
+    renderCollection();
+    return;
+  }
+  // Open the picker
+  const add = e.target.closest && e.target.closest('.mech-add');
+  if (add) {
+    e.preventDefault();
+    openMechPicker(add);
+    return;
+  }
+  // Close picker when clicking outside
+  if (!(e.target.closest && e.target.closest('.mech-picker'))) {
+    document.querySelectorAll('.mech-picker').forEach(p => p.remove());
+  }
+});
+
+function openMechPicker(addBtn) {
+  document.querySelectorAll('.mech-picker').forEach(p => p.remove());
+  const game = addBtn.getAttribute('data-game');
+  const found = findGame(game);
+  if (!found) return;
+  const current = new Set(currentMechs(game));
+
+  const picker = document.createElement('div');
+  picker.className = 'mech-picker';
+  picker.innerHTML = `<input type="text" placeholder="Search mechanisms…" autofocus><div class="mech-list"></div>`;
+  document.body.appendChild(picker);
+
+  const rect = addBtn.getBoundingClientRect();
+  picker.style.left = `${rect.left + window.scrollX}px`;
+  picker.style.top  = `${rect.bottom + window.scrollY + 4}px`;
+
+  const list = picker.querySelector('.mech-list');
+  const input = picker.querySelector('input');
+
+  function renderPickerList(query) {
+    const q = query.trim().toLowerCase();
+    const filtered = MECH_OPTIONS.filter(o =>
+      !current.has(o.label) && (q === '' || o.label.toLowerCase().includes(q))
+    );
+    const byCat = {};
+    for (const o of filtered) {
+      (byCat[o.category] ||= []).push(o);
+    }
+    const html = Object.entries(byCat).map(([cat, items]) =>
+      `<div class="mech-cat">${htmlEscape(cat)}</div>` +
+      items.map(o => `<div class="mech-option" data-label="${htmlEscape(o.label)}">${htmlEscape(o.label)}</div>`).join('')
+    ).join('') || `<div class="mech-cat">No matches</div>`;
+    list.innerHTML = html;
+  }
+  renderPickerList('');
+  input.addEventListener('input', (e) => renderPickerList(e.target.value));
+  list.addEventListener('click', (e) => {
+    const opt = e.target.closest('.mech-option');
+    if (!opt) return;
+    const label = opt.getAttribute('data-label');
+    const next = [...currentMechs(game), label];
+    current.add(label);
+    recordEdit(found.collection, game, 'mechs', next);
+    renderCollection();
+    renderPickerList(input.value);
+    input.focus();
+  });
+}
 
 // ============================================================
 // EDIT MODE DETECTION (runs after dashboard init)
