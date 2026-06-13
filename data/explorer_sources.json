@@ -6,10 +6,10 @@
     "(local server) or via GitHub Contents API (online).",
     "Add curated solo-focused BGG GeekList IDs in bgg_geeklists."
   ],
-  "bgg_geeklists": [
-    335712
+  "bgg_geeklists": [],
+  "custom_urls": [
+    "https://boardgamegeek.com/hotness"
   ],
-  "custom_urls": [],
   "enabled": {
     "bgg_hot": true,
     "bgg_geeklists": true,
