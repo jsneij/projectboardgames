@@ -10,7 +10,7 @@ SCORE_FIELDS = ("M", "T", "G", "F", "Ar")
 TEXT_FIELDS = ("name", "type", "feeling", "description", "justification")
 
 
-def validate_scores(payload: Any, existing: dict) -> list[dict]:
+def validate_scores(payload: Any, existing: Any) -> list[dict]:
     """Return a list of {field, problem} errors. Empty list = valid.
 
     Rules:
@@ -27,6 +27,11 @@ def validate_scores(payload: Any, existing: dict) -> list[dict]:
     if not isinstance(payload, dict):
         return [{"field": "<root>", "problem": "must be an object"}]
 
+    # Defensive: a malformed on-disk scores file could give us None or a non-dict here;
+    # treat it as "no games known yet" and let the per-game unknown-game rule report.
+    if not isinstance(existing, dict):
+        existing = {}
+
     for collection, games in payload.items():
         if collection not in COLLECTIONS:
             errors.append({"field": collection, "problem": "unknown collection"})
@@ -34,7 +39,7 @@ def validate_scores(payload: Any, existing: dict) -> list[dict]:
         if not isinstance(games, dict):
             errors.append({"field": collection, "problem": "must be an object"})
             continue
-        existing_games = existing.get(collection, {})
+        existing_games = existing.get(collection) or {}
         for name, entry in games.items():
             prefix = f"{collection}.{name}"
             if name not in existing_games:
