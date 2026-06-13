@@ -8,7 +8,9 @@
   ],
   "bgg_geeklists": [],
   "custom_urls": [
-    "https://boardgamegeek.com/hotness"
+    "https://boardgamegeek.com/hotness",
+    "https://boardgamegeek.com/trends/mostplayed",
+    "https://boardgamegeek.com/browse/boardgamehonor"
   ],
   "enabled": {
     "bgg_hot": true,
