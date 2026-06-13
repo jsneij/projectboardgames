@@ -1545,7 +1545,11 @@ async function saveViaGitHubAPI(pending, changedGames, token) {
   // 1. Fetch current file → SHA + content
   let getResp;
   try {
-    getResp = await fetch(`${baseUrl}?ref=${GH_BRANCH}`, { headers });
+    // Same cache-buster as the sources save — the browser / CDN can hold a
+    // stale GET that yields a stale SHA, breaking the PUT with a 409.
+    const cb = Date.now();
+    getResp = await fetch(`${baseUrl}?ref=${GH_BRANCH}&_cb=${cb}`,
+                          { headers, cache: 'no-store' });
   } catch {
     return { status: 'error', message: 'Network error reaching GitHub. Check your connection.' };
   }
@@ -3901,7 +3905,12 @@ async function saveSourcesViaGitHubAPI(newSources, token) {
   const baseUrl = `https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${path}`;
   let getResp;
   try {
-    getResp = await fetch(`${baseUrl}?ref=${GH_BRANCH}`, { headers });
+    // Cache-bust the GET — both the browser and GitHub's CDN can serve a
+    // stale ETag-keyed response, which gives us an old SHA, which makes
+    // the PUT 409. The query string forces a fresh round-trip.
+    const cb = Date.now();
+    getResp = await fetch(`${baseUrl}?ref=${GH_BRANCH}&_cb=${cb}`,
+                          { headers, cache: 'no-store' });
   } catch (e) {
     return {
       status: 'error',
