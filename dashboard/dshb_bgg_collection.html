@@ -369,6 +369,88 @@ nav::-webkit-scrollbar { display: none; }
 }
 .explorer-sources-panel button:hover { filter: brightness(1.15); }
 .explorer-sources-panel button:disabled { opacity: 0.4; cursor: not-allowed; }
+
+/* ─── Awards tab ─────────────────────────────────────────────────────── */
+.award-program-pill {
+  display: inline-block; font-size: 11px;
+  padding: 5px 12px; border-radius: 14px;
+  background: rgba(255,255,255,0.04); color: var(--text2);
+  border: 1px solid #444; cursor: pointer; user-select: none;
+  font-family: 'JetBrains Mono', monospace;
+  transition: all 0.15s;
+}
+.award-program-pill:hover { color: var(--text); border-color: var(--text3); }
+.award-program-pill.active {
+  background: rgba(96,165,250,0.15); color: var(--blue);
+  border-color: var(--blue);
+}
+.award-card {
+  background: rgba(255,255,255,0.025);
+  border: 1px solid var(--border); border-radius: 10px;
+  padding: 20px 22px; display: flex; flex-direction: column; gap: 14px;
+}
+.award-card .award-header {
+  display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap;
+  border-bottom: 1px solid rgba(255,255,255,0.06); padding-bottom: 12px;
+}
+.award-card .award-year {
+  font-size: 22px; font-weight: 700; color: var(--text);
+  font-family: 'JetBrains Mono', monospace;
+}
+.award-card .award-program {
+  font-size: 14px; color: var(--accent); font-weight: 600;
+}
+.award-card .award-stats {
+  font-size: 11px; color: var(--text3); margin-left: auto;
+  font-family: 'JetBrains Mono', monospace;
+}
+.award-section { display: flex; flex-direction: column; gap: 8px; }
+.award-section-title {
+  font-size: 11px; font-weight: 700; letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.award-section-title.winners { color: #fbbf24; }
+.award-section-title.nominees { color: var(--text3); }
+.award-section-title.recommended { color: #c084fc; }
+.award-tiles {
+  display: grid; gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+}
+.award-tile {
+  background: #0f0f0f; border: 1px solid var(--border); border-radius: 8px;
+  overflow: hidden; cursor: pointer; text-decoration: none; color: inherit;
+  display: flex; flex-direction: column;
+  transition: border-color 0.15s, transform 0.15s;
+}
+.award-tile:hover { border-color: var(--blue); transform: translateY(-2px); }
+.award-tile.winner { border-color: rgba(251,191,36,0.5); box-shadow: 0 0 0 1px rgba(251,191,36,0.15); }
+.award-tile-cover {
+  aspect-ratio: 1 / 1; background: #1a1a1a;
+  display: flex; align-items: center; justify-content: center;
+  overflow: hidden; position: relative;
+}
+.award-tile-cover img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+}
+.award-tile-cover .no-cover {
+  font-size: 10px; color: var(--text3); padding: 12px; text-align: center;
+}
+.award-tile-body { padding: 10px 12px; min-height: 64px; }
+.award-tile-name {
+  font-size: 12px; font-weight: 600; line-height: 1.3;
+  color: var(--text); margin-bottom: 4px;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.award-tile-meta {
+  font-size: 10px; color: var(--text3);
+  font-family: 'JetBrains Mono', monospace;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.award-tile-rating { color: var(--amber); }
+.award-tile.unresolved .award-tile-cover { background: #0f0f0f; }
+.award-tile.unresolved { opacity: 0.55; cursor: default; }
+.award-tile.unresolved:hover { transform: none; border-color: var(--border); }
 .expand-panel {
   padding: 16px 20px; display: flex; gap: 20px; align-items: center;
 }
@@ -1127,6 +1209,7 @@ nav::-webkit-scrollbar { display: none; }
     <button class="tab-btn" data-tab="patterns">Patterns</button>
     <button class="tab-btn" data-tab="insights">Insights</button>
     <button class="tab-btn" data-tab="explorer">Explorer</button>
+    <button class="tab-btn" data-tab="awards">Awards</button>
   </nav>
 </div>
 
@@ -1388,6 +1471,28 @@ nav::-webkit-scrollbar { display: none; }
         <button id="explorer-sources-save" class="primary" disabled>Save sources</button>
       </div>
     </div>
+  </div>
+
+  <!-- TAB: AWARDS — board game awards browser sourced from Wikipedia + BGG -->
+  <div id="tab-awards" class="tab-pane">
+    <div style="font-size:12px;color:var(--text3);margin-bottom:14px;line-height:1.5">
+      Major board game awards from <strong>Wikipedia</strong> enriched with BGG covers.
+      Each card shows the winner(s) plus nominees, with a direct link to BoardGameGeek.
+      <span id="awards-meta" style="display:block;opacity:0.6;font-size:11px;margin-top:6px"></span>
+    </div>
+    <div id="awards-controls" class="sort-bar" style="flex-wrap:wrap;gap:8px">
+      <span style="font-size:11px;color:var(--text3);margin-right:4px">Award:</span>
+      <div id="awards-program-pills" style="display:inline-flex;flex-wrap:wrap;gap:6px"></div>
+      <span style="font-size:11px;color:var(--text3);margin-left:12px;margin-right:4px">Year:</span>
+      <select id="awards-year-select" style="background:#1a1a1a;color:#fff;border:1px solid #555;border-radius:4px;padding:4px 8px;font-family:'JetBrains Mono',monospace;font-size:12px"></select>
+      <div class="search-wrap" style="margin:0 0 0 auto">
+        <input type="text" id="awards-search" placeholder="Search games or awards...">
+      </div>
+    </div>
+    <div id="awards-empty" style="display:none;padding:30px;text-align:center;color:var(--text3);font-size:13px">
+      No awards yet — run <code>python scripts/fetch_bgg_awards.py</code> or wait for the periodic refresh.
+    </div>
+    <div id="awards-container" style="display:flex;flex-direction:column;gap:24px;margin-top:18px"></div>
   </div>
 
 </div><!-- /content -->
@@ -2103,12 +2208,13 @@ function langDepHtml(g) {
 let STATE = {};
 
 async function loadData() {
-  const [colResp, scResp, mechResp, expResp, srcResp] = await Promise.all([
+  const [colResp, scResp, mechResp, expResp, srcResp, awardsResp] = await Promise.all([
     fetch('../data/bgg_collection.json'),
     fetch('../data/bgg_collection_scores.json'),
     fetch('../data/mechanisms.json'),
     fetch('../data/explorer_candidates.json').catch(() => null),
     fetch('../data/explorer_sources.json').catch(() => null),
+    fetch('../data/bgg_awards.json').catch(() => null),
   ]);
   if (!colResp.ok) throw new Error('Could not load bgg_collection.json');
   if (!scResp.ok) throw new Error('Could not load bgg_collection_scores.json');
@@ -2124,7 +2230,11 @@ async function loadData() {
   if (srcResp && srcResp.ok) {
     try { explorerSources = await srcResp.json(); } catch { /* keep null */ }
   }
-  return { collection, scores, mechanisms, explorer, explorerSources };
+  let awards = { metadata: {}, awards: [] };
+  if (awardsResp && awardsResp.ok) {
+    try { awards = await awardsResp.json(); } catch { /* default empty */ }
+  }
+  return { collection, scores, mechanisms, explorer, explorerSources, awards };
 }
 
 function mergeGame(game, scoreObj) {
@@ -3450,6 +3560,179 @@ function renderMechanisms(state) {
 }
 
 // ============================================================
+// TAB: AWARDS — major board game awards from Wikipedia + BGG enrichment
+// ============================================================
+const Awards = {
+  programs: [],
+  selectedProgram: 'all',
+  selectedYear: 'all',
+  search: '',
+};
+
+function _normalizeAwardName(s) {
+  // Strip the parenthetical English title from German entries:
+  //   "Die magischen Schlüssel (Magic Keys)" → main: "Die magischen Schlüssel", alt: "Magic Keys"
+  if (!s) return { display: '', alt: null };
+  const m = s.match(/^(.+?)\s*\(([^)]+)\)\s*$/);
+  if (m && /[A-Za-z]/.test(m[2]) && m[2].length > 2) {
+    return { display: m[1].trim(), alt: m[2].trim() };
+  }
+  return { display: s.trim(), alt: null };
+}
+
+function renderAwards(state) {
+  const container = document.getElementById('awards-container');
+  const empty = document.getElementById('awards-empty');
+  const meta = document.getElementById('awards-meta');
+  if (!container || !empty) return;
+
+  const all = (state.awards && Array.isArray(state.awards.awards)) ? state.awards.awards : [];
+  const m = (state.awards && state.awards.metadata) || {};
+
+  // Meta line
+  if (meta) {
+    if (m.generated_at) {
+      const d = new Date(m.generated_at);
+      const when = isNaN(d) ? m.generated_at : d.toLocaleDateString();
+      meta.textContent = `Refreshed ${when} · ${m.total_awards || 0} awards · ${m.resolved_games || 0} of ${m.total_entries || 0} games linked to BGG`;
+    } else {
+      meta.textContent = '';
+    }
+  }
+
+  if (!all.length) {
+    container.innerHTML = '';
+    empty.style.display = 'block';
+    renderAwardsProgramPills([]);
+    renderAwardsYearOptions([]);
+    return;
+  }
+  empty.style.display = 'none';
+
+  // Cache programs + years
+  const programs = [...new Set(all.map(a => a.program))].sort();
+  const years    = [...new Set(all.map(a => a.year))].sort((a, b) => b - a);
+  Awards.programs = programs;
+  renderAwardsProgramPills(programs);
+  renderAwardsYearOptions(years);
+
+  // Filter
+  const q = (Awards.search || '').trim().toLowerCase();
+  const filtered = all.filter(a => {
+    if (Awards.selectedProgram !== 'all' && a.program !== Awards.selectedProgram) return false;
+    if (Awards.selectedYear !== 'all' && String(a.year) !== String(Awards.selectedYear)) return false;
+    if (q) {
+      const inName = (g) => (g.name || '').toLowerCase().includes(q);
+      const matchProgram = a.program.toLowerCase().includes(q);
+      const matchYear = String(a.year) === q;
+      const matchGame = (a.winners || []).some(inName) || (a.nominees || []).some(inName) || (a.recommended || []).some(inName);
+      if (!matchProgram && !matchYear && !matchGame) return false;
+    }
+    return true;
+  });
+
+  filtered.sort((a, b) => {
+    if (a.year !== b.year) return b.year - a.year;
+    return a.program.localeCompare(b.program);
+  });
+
+  container.innerHTML = filtered.map(renderAwardCard).join('') || `
+    <div style="padding:24px;text-align:center;color:var(--text3);font-size:13px">
+      No awards match the current filter.
+    </div>`;
+}
+
+function renderAwardsProgramPills(programs) {
+  const el = document.getElementById('awards-program-pills');
+  if (!el) return;
+  const items = [{ key: 'all', label: 'All' }, ...programs.map(p => ({ key: p, label: p }))];
+  el.innerHTML = items.map(it => {
+    const active = Awards.selectedProgram === it.key ? ' active' : '';
+    return `<span class="award-program-pill${active}" data-program="${htmlEscape(it.key)}">${htmlEscape(it.label)}</span>`;
+  }).join('');
+}
+
+function renderAwardsYearOptions(years) {
+  const el = document.getElementById('awards-year-select');
+  if (!el) return;
+  const items = ['<option value="all">All years</option>',
+                 ...years.map(y => `<option value="${y}">${y}</option>`)];
+  el.innerHTML = items.join('');
+  el.value = Awards.selectedYear;
+}
+
+function renderAwardCard(a) {
+  const winners = (a.winners || []);
+  const nominees = (a.nominees || []);
+  const recommended = (a.recommended || []);
+  const total = winners.length + nominees.length + recommended.length;
+  const renderTiles = (list, isWinner) => {
+    if (!list.length) return '';
+    return `<div class="award-tiles">${list.map(g => renderAwardTile(g, isWinner)).join('')}</div>`;
+  };
+  return `<div class="award-card">
+    <div class="award-header">
+      <span class="award-year">${a.year}</span>
+      <span class="award-program">${htmlEscape(a.program)}</span>
+      <span class="award-stats">${total} games · ${winners.length} winner${winners.length !== 1 ? 's' : ''}</span>
+    </div>
+    ${winners.length ? `<div class="award-section">
+      <div class="award-section-title winners">★ Winner${winners.length > 1 ? 's' : ''}</div>
+      ${renderTiles(winners, true)}
+    </div>` : ''}
+    ${recommended.length ? `<div class="award-section">
+      <div class="award-section-title recommended">Recommended</div>
+      ${renderTiles(recommended, false)}
+    </div>` : ''}
+    ${nominees.length ? `<div class="award-section">
+      <div class="award-section-title nominees">Nominees</div>
+      ${renderTiles(nominees, false)}
+    </div>` : ''}
+  </div>`;
+}
+
+function renderAwardTile(g, isWinner) {
+  const nameInfo = _normalizeAwardName(g.name);
+  const winnerClass = isWinner ? ' winner' : '';
+  const cover = g.thumbnail || g.image;
+  const linked = !!g.bgg_id;
+  const tag = linked ? 'a' : 'div';
+  const href = linked ? ` href="${BGG_URL(g.bgg_id)}" target="_blank" rel="noopener"` : '';
+  const unresClass = linked ? '' : ' unresolved';
+  const ratingHtml = g.bayes_rating
+    ? `<span class="award-tile-rating">★ ${g.bayes_rating.toFixed(2)}</span>`
+    : '';
+  const yrHtml = g.year_published ? `<span>${g.year_published}</span>` : '<span></span>';
+  return `<${tag} class="award-tile${winnerClass}${unresClass}"${href}>
+    <div class="award-tile-cover">
+      ${cover ? `<img src="${cover}" alt="${htmlEscape(nameInfo.display)}" loading="lazy">`
+              : `<div class="no-cover">no cover</div>`}
+    </div>
+    <div class="award-tile-body">
+      <div class="award-tile-name">${htmlEscape(nameInfo.display)}</div>
+      ${nameInfo.alt ? `<div style="font-size:10px;color:var(--text3);margin-bottom:4px;font-style:italic">${htmlEscape(nameInfo.alt)}</div>` : ''}
+      <div class="award-tile-meta">${yrHtml}${ratingHtml}</div>
+    </div>
+  </${tag}>`;
+}
+
+// Awards: wire control events (delegated, so they survive re-renders)
+document.addEventListener('click', (e) => {
+  const pill = e.target.closest && e.target.closest('.award-program-pill');
+  if (!pill) return;
+  Awards.selectedProgram = pill.getAttribute('data-program');
+  if (STATE && STATE.awards) renderAwards(STATE);
+});
+document.getElementById('awards-year-select')?.addEventListener('change', (e) => {
+  Awards.selectedYear = e.target.value;
+  if (STATE && STATE.awards) renderAwards(STATE);
+});
+document.getElementById('awards-search')?.addEventListener('input', (e) => {
+  Awards.search = e.target.value;
+  if (STATE && STATE.awards) renderAwards(STATE);
+});
+
+// ============================================================
 // TAB: EXPLORER — unowned solo candidates predicted Total / Immersive
 // ============================================================
 let explorerSortField = 'IS';
@@ -4606,6 +4889,9 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
     if (tab === 'explorer' && STATE) {
       renderExplorer(STATE);
     }
+    if (tab === 'awards' && STATE) {
+      renderAwards(STATE);
+    }
   });
 });
 
@@ -4624,9 +4910,10 @@ const initReady = new Promise(res => { _initReady = res; });
     const headerH = hdr ? hdr.offsetHeight : 78;
     document.documentElement.style.setProperty('--header-h', headerH + 'px');
 
-    const { collection, scores, mechanisms, explorer, explorerSources } = await loadData();
+    const { collection, scores, mechanisms, explorer, explorerSources, awards } = await loadData();
     STATE = buildState(collection, scores, mechanisms, explorer);
     STATE.explorerSources = explorerSources;
+    STATE.awards = awards;
     buildMechOptions(mechanisms);
     Edit.original = JSON.parse(JSON.stringify(scores));
     _initReady();
@@ -4653,6 +4940,7 @@ const initReady = new Promise(res => { _initReady = res; });
     renderExplorer(STATE);
     renderExplorerMeta(STATE);
     initSourcesEditor();
+    renderAwards(STATE);
 
     // Measure sort bar to position table headers below it
     const sortBar = document.querySelector('.sort-bar');

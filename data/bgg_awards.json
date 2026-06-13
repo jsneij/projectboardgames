@@ -1,0 +1,2674 @@
+{
+  "metadata": {
+    "generated_at": "2026-06-13T20:07:51+00:00",
+    "programs": [
+      "Spiel des Jahres",
+      "Kennerspiel des Jahres",
+      "Kinderspiel des Jahres",
+      "Golden Geek Awards",
+      "Origins Awards",
+      "As d'Or"
+    ],
+    "total_awards": 33,
+    "total_entries": 296,
+    "resolved_games": 76
+  },
+  "awards": [
+    {
+      "program": "As d'Or",
+      "year": 2026,
+      "winners": [],
+      "nominees": [
+        {
+          "bgg_id": 434654,
+          "name": "Toy Battle",
+          "image": "https://cf.geekdo-images.com/GuhpuTKFteZEIhPTFvEpJw__original/img/g4qgGJr7qvkSCTArazRXhkDVYQA=/0x0/filters:format(jpeg)/pic8589750.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/GuhpuTKFteZEIhPTFvEpJw__small/img/2Gft8rEmdaQW1YJX5DyPX0uWyoM=/fit-in/200x150/filters:strip_icc()/pic8589750.jpg",
+          "year_published": 2025,
+          "bayes_rating": 7.144
+        },
+        {
+          "bgg_id": 400602,
+          "name": "Civolution",
+          "image": "https://cf.geekdo-images.com/DahMIPzUpexvhUPAG3dGbA__original/img/P01WNfQ0kOF9n7FFNXpGCo-tueE=/0x0/filters:format(jpeg)/pic8303209.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/DahMIPzUpexvhUPAG3dGbA__small/img/uzogBNlLw3GBuGa1T6_8oQbADnY=/fit-in/200x150/filters:strip_icc()/pic8303209.jpg",
+          "year_published": 2024,
+          "bayes_rating": 7.403
+        },
+        {
+          "bgg_id": 435346,
+          "name": "L'île des Mookies",
+          "image": "https://cf.geekdo-images.com/ZW3tDJsRWJK5ONSDOWm34g__original/img/H76qdNea6KnSO2wpZHT9NMThlJw=/0x0/filters:format(jpeg)/pic8679533.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/ZW3tDJsRWJK5ONSDOWm34g__small/img/wwyKTZU3xZiUYSCns-RdzNVoqPg=/fit-in/200x150/filters:strip_icc()/pic8679533.jpg",
+          "year_published": 2025,
+          "bayes_rating": 5.588
+        },
+        {
+          "bgg_id": 61522,
+          "name": "Zenith",
+          "image": "https://cf.geekdo-images.com/lGwJPUnK10hWEtSuDW2YxA__original/img/Jwmppt_nFGHRRbj_I1kazE1Bg64=/0x0/filters:format(jpeg)/pic2595198.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/lGwJPUnK10hWEtSuDW2YxA__small/img/Y82WHpHCwH3_qHDz8NSy8QM5HhU=/fit-in/200x150/filters:strip_icc()/pic2595198.jpg",
+          "year_published": 2009,
+          "bayes_rating": 5.496
+        }
+      ],
+      "recommended": []
+    },
+    {
+      "program": "As d'Or",
+      "year": 2025,
+      "winners": [],
+      "nominees": [
+        {
+          "bgg_id": 406854,
+          "name": "Odin",
+          "image": "https://cf.geekdo-images.com/hh5YOk9OQ3e0uJbMOfvT2g__original/img/pq_dOY_tC4Owv3RnTIlYEcsDHrs=/0x0/filters:format(jpeg)/pic7921978.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/hh5YOk9OQ3e0uJbMOfvT2g__small/img/bYaPoCwSz2lq-tAtb_60fPqiNzA=/fit-in/200x150/filters:strip_icc()/pic7921978.jpg",
+          "year_published": 2024,
+          "bayes_rating": 6.291
+        },
+        {
+          "bgg_id": 385610,
+          "name": "Kutna Hora",
+          "image": "https://cf.geekdo-images.com/ar_YhktX6VcXBLcEfnu_dw__original/img/QyKTmZomxKVYO_uY5OjaojFQNUk=/0x0/filters:format(png)/pic7464921.png",
+          "thumbnail": "https://cf.geekdo-images.com/ar_YhktX6VcXBLcEfnu_dw__small/img/XlZo63iHoNfh7yKZdJiJj2Wfglo=/fit-in/200x150/filters:strip_icc()/pic7464921.png",
+          "year_published": 2023,
+          "bayes_rating": 7.024
+        },
+        {
+          "bgg_id": 440295,
+          "name": "Operation Noisette",
+          "image": "https://cf.geekdo-images.com/zTpRE9R5qDR92k5_Tfoupw__original/img/ILmj31POnCAPLthA0BNd4ZwhPRk=/0x0/filters:format(jpeg)/pic8744380.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/zTpRE9R5qDR92k5_Tfoupw__small/img/7MP7vCrRqiGdaglrx7REDk2DAQU=/fit-in/200x150/filters:strip_icc()/pic8744380.jpg",
+          "year_published": 2025,
+          "bayes_rating": 0.0
+        },
+        {
+          "bgg_id": 10890,
+          "name": "Behind",
+          "image": "https://cf.geekdo-images.com/fPT2IGZnXy6twtv3OQWuPA__original/img/ZmSTyjyhbYdkzMloqRy1bBcK-ik=/0x0/filters:format(jpeg)/pic45475.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/fPT2IGZnXy6twtv3OQWuPA__small/img/nM-mFGkhoTnVU88xlBZqdqr84-o=/fit-in/200x150/filters:strip_icc()/pic45475.jpg",
+          "year_published": 2003,
+          "bayes_rating": 5.538
+        }
+      ],
+      "recommended": []
+    },
+    {
+      "program": "As d'Or",
+      "year": 2024,
+      "winners": [],
+      "nominees": [
+        {
+          "bgg_id": 8148,
+          "name": "Trio",
+          "image": "https://cf.geekdo-images.com/dd2XS_mQk6T9Tis8LteiyQ__original/img/8iKF1b5p7hHxNHCLu3TpNh4ajlc=/0x0/filters:format(jpeg)/pic33770.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/dd2XS_mQk6T9Tis8LteiyQ__small/img/KHXSJd0053vesoin4c6rgy3kdhM=/fit-in/200x150/filters:strip_icc()/pic33770.jpg",
+          "year_published": 1972,
+          "bayes_rating": 0.0
+        },
+        {
+          "bgg_id": 367517,
+          "name": "La Famiglia: The Great Mafia War",
+          "image": "https://cf.geekdo-images.com/zM3cPLHv2smrTSDI565a3A__original/img/uMqWKO2eqgAWfa4DU7P7Zo8wOhE=/0x0/filters:format(jpeg)/pic7322524.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/zM3cPLHv2smrTSDI565a3A__small/img/k2gvTqIvCffscucHD-uJ65dfQYA=/fit-in/200x150/filters:strip_icc()/pic7322524.jpg",
+          "year_published": 2023,
+          "bayes_rating": 6.531
+        },
+        {
+          "bgg_id": 401002,
+          "name": "Mon Puzzle Aventure - Dragon",
+          "image": "https://cf.geekdo-images.com/ZlSjV8b4LVmPt_g5bIfugA__original/img/-WyRPQHt9ujG8Cc_5Ht-bpQZwII=/0x0/filters:format(jpeg)/pic8012900.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/ZlSjV8b4LVmPt_g5bIfugA__small/img/Hs23JUb1ZXVf137LjTW_SdfJLqk=/fit-in/200x150/filters:strip_icc()/pic8012900.jpg",
+          "year_published": 2023,
+          "bayes_rating": 5.529
+        },
+        {
+          "bgg_id": 168949,
+          "name": "Faraway",
+          "image": "https://cf.geekdo-images.com/dqDwx05r7Hgc66Hda2JKvA__original/img/v8E1dpB3wnUh1xHkktC_-LuWB0g=/0x0/filters:format(png)/pic2532802.png",
+          "thumbnail": "https://cf.geekdo-images.com/dqDwx05r7Hgc66Hda2JKvA__small/img/dhW-NZGjA6lgWBLhQO-Nr9K7fro=/fit-in/200x150/filters:strip_icc()/pic2532802.png",
+          "year_published": 2016,
+          "bayes_rating": 0.0
+        }
+      ],
+      "recommended": []
+    },
+    {
+      "program": "As d'Or",
+      "year": 2023,
+      "winners": [],
+      "nominees": [
+        {
+          "bgg_id": 16108,
+          "name": "Akropolis",
+          "image": "https://cf.geekdo-images.com/ilIs-ObTZp8zp1_jyEkT2A__original/img/TWZovt4kijjY94mZLXv-ITeaPBI=/0x0/filters:format(jpeg)/pic481874.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/ilIs-ObTZp8zp1_jyEkT2A__small/img/txt7dNZL_4ZDtCmbeH0KiF8D0WU=/fit-in/200x150/filters:strip_icc()/pic481874.jpg",
+          "year_published": 1981,
+          "bayes_rating": 0.0
+        },
+        {
+          "bgg_id": 342942,
+          "name": "Ark Nova",
+          "image": "https://cf.geekdo-images.com/SoU8p28Sk1s8MSvoM4N8pQ__original/img/g4S18szTdrXCdIwVKzMKrZrYAcM=/0x0/filters:format(jpeg)/pic6293412.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/SoU8p28Sk1s8MSvoM4N8pQ__small/img/4KuHNTWSMPf8vTNDKSRMMI3oOv8=/fit-in/200x150/filters:strip_icc()/pic6293412.jpg",
+          "year_published": 2021,
+          "bayes_rating": 8.354
+        },
+        {
+          "bgg_id": 364942,
+          "name": "Flashback: Zombie Kidz",
+          "image": "https://cf.geekdo-images.com/sNuUBj4EYuwqOc9k4v9CMA__original/img/Ryv5b4TTMPOWakINYTETBvwF2mc=/0x0/filters:format(png)/pic7052613.png",
+          "thumbnail": "https://cf.geekdo-images.com/sNuUBj4EYuwqOc9k4v9CMA__small/img/vTHfRIsKpYPPWQoLDluLkIVrwrg=/fit-in/200x150/filters:strip_icc()/pic7052613.png",
+          "year_published": 2022,
+          "bayes_rating": 5.725
+        },
+        {
+          "bgg_id": 359970,
+          "name": "Challengers!",
+          "image": "https://cf.geekdo-images.com/GtLESZ4ZjqikK12bjBTmig__original/img/CHUtcmSXFs8LYKRHyUaeio2ra4U=/0x0/filters:format(jpeg)/pic7040521.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/GtLESZ4ZjqikK12bjBTmig__small/img/66Emb1wn1JD_5_9XdsYY2DgMVMA=/fit-in/200x150/filters:strip_icc()/pic7040521.jpg",
+          "year_published": 2022,
+          "bayes_rating": 6.675
+        }
+      ],
+      "recommended": []
+    },
+    {
+      "program": "As d'Or",
+      "year": 2022,
+      "winners": [],
+      "nominees": [
+        {
+          "bgg_id": 346703,
+          "name": "7 Wonders: Architects",
+          "image": "https://cf.geekdo-images.com/BGtYtHbLgYhYyNMoyOm1RA__original/img/05P7xaW8B4ueCvItryBjO5wVA5s=/0x0/filters:format(jpeg)/pic7416525.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/BGtYtHbLgYhYyNMoyOm1RA__small/img/Qml2TbcN2IyaA-PtHKcIrhnELd4=/fit-in/200x150/filters:strip_icc()/pic7416525.jpg",
+          "year_published": 2021,
+          "bayes_rating": 6.762
+        },
+        {
+          "bgg_id": 316554,
+          "name": "Dune: Imperium",
+          "image": "https://cf.geekdo-images.com/PhjygpWSo-0labGrPBMyyg__original/img/mZzaBAEEJpMlHWWmC0R6Su0OibQ=/0x0/filters:format(jpeg)/pic5666597.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/PhjygpWSo-0labGrPBMyyg__small/img/JGgY-nBmkyB8WRp8vcoBLlNMQ5U=/fit-in/200x150/filters:strip_icc()/pic5666597.jpg",
+          "year_published": 2020,
+          "bayes_rating": 8.222
+        },
+        {
+          "bgg_id": 341178,
+          "name": "Bubble Stories",
+          "image": "https://cf.geekdo-images.com/AFscd4PVnMrRklhK3tgJ0A__original/img/CX3whCQJbaEHpiNAT43K8eVyTRA=/0x0/filters:format(png)/pic6256905.png",
+          "thumbnail": "https://cf.geekdo-images.com/AFscd4PVnMrRklhK3tgJ0A__small/img/PWmQApEHX5QD2leKbnCPSIEdjvY=/fit-in/200x150/filters:strip_icc()/pic6256905.png",
+          "year_published": 2021,
+          "bayes_rating": 5.552
+        },
+        {
+          "bgg_id": 328479,
+          "name": "Living Forest",
+          "image": "https://cf.geekdo-images.com/fPhdfZX9UTLr4-SVgK0zoQ__original/img/ZPdxDPt1jSRQMNnVgn-qIPhNv0E=/0x0/filters:format(jpeg)/pic5899025.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/fPhdfZX9UTLr4-SVgK0zoQ__small/img/v8irnVxaCdK29XPtqEbtlKkLY4c=/fit-in/200x150/filters:strip_icc()/pic5899025.jpg",
+          "year_published": 2021,
+          "bayes_rating": 6.795
+        }
+      ],
+      "recommended": []
+    },
+    {
+      "program": "As d'Or",
+      "year": 2021,
+      "winners": [],
+      "nominees": [
+        {
+          "bgg_id": 318977,
+          "name": "MicroMacro: Crime City",
+          "image": "https://cf.geekdo-images.com/bLL3P-G25nIUkFjHxfJfnw__original/img/HBEhgjfb0QcF9pFrdJ8VYhBapoU=/0x0/filters:format(jpeg)/pic7632081.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/bLL3P-G25nIUkFjHxfJfnw__small/img/XY_Z5rRJe3IPLRfOvWp70OM2B68=/fit-in/200x150/filters:strip_icc()/pic7632081.jpg",
+          "year_published": 2020,
+          "bayes_rating": 7.212
+        },
+        {
+          "bgg_id": 284083,
+          "name": "The Crew",
+          "image": "https://cf.geekdo-images.com/98LnQShydr11OBKS46xY-Q__original/img/Q-ZkgnuBu9OTBr7J3qnqPjqamAE=/0x0/filters:format(jpeg)/pic5687013.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/98LnQShydr11OBKS46xY-Q__small/img/et-fnuozyOdBOVL-5kSS3_7I8fw=/fit-in/200x150/filters:strip_icc()/pic5687013.jpg",
+          "year_published": 2019,
+          "bayes_rating": 7.615
+        },
+        {
+          "bgg_id": 300010,
+          "name": "Dragomino",
+          "image": "https://cf.geekdo-images.com/S_Cpk3j3Z3ceNJBPNg4l7w__original/img/2g1g35Rp3u1tF_8fX3YLpmjIPj8=/0x0/filters:format(png)/pic5212561.png",
+          "thumbnail": "https://cf.geekdo-images.com/S_Cpk3j3Z3ceNJBPNg4l7w__small/img/yyYrzwIVoBwTJ0U3TI6oZWvkgS0=/fit-in/200x150/filters:strip_icc()/pic5212561.png",
+          "year_published": 2020,
+          "bayes_rating": 6.342
+        }
+      ],
+      "recommended": []
+    },
+    {
+      "program": "As d'Or",
+      "year": 2020,
+      "winners": [],
+      "nominees": [
+        {
+          "bgg_id": 287084,
+          "name": "Oriflamme",
+          "image": "https://cf.geekdo-images.com/8MpTeqlzyIupMpSSxP3PAw__original/img/XoqLo4dQlXvFHZBAcKbZheA8NHA=/0x0/filters:format(jpeg)/pic4949335.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/8MpTeqlzyIupMpSSxP3PAw__small/img/NACmpm6Pzd2IrmAq9teXwLlmKqA=/fit-in/200x150/filters:strip_icc()/pic4949335.jpg",
+          "year_published": 2019,
+          "bayes_rating": 6.548
+        },
+        {
+          "bgg_id": 262712,
+          "name": "Res Arcana",
+          "image": "https://cf.geekdo-images.com/gcALy45JfcjyKUn6T3mBIQ__original/img/YLSAurBSWEGi3PHsuQWi8St_0Yg=/0x0/filters:format(jpeg)/pic4422847.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/gcALy45JfcjyKUn6T3mBIQ__small/img/5cPMxq_X6VIO8l2t1_6H7C_KqrU=/fit-in/200x150/filters:strip_icc()/pic4422847.jpg",
+          "year_published": 2019,
+          "bayes_rating": 7.388
+        },
+        {
+          "bgg_id": null,
+          "name": "Attrape Rêves",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        }
+      ],
+      "recommended": []
+    },
+    {
+      "program": "As d'Or",
+      "year": 2019,
+      "winners": [],
+      "nominees": [
+        {
+          "bgg_id": 244992,
+          "name": "The Mind",
+          "image": "https://cf.geekdo-images.com/q_JGK291hrhnhiRB0667oA__original/img/8VjZEG278faO9JZwzce3v3EKssI=/0x0/filters:format(png)/pic3979766.png",
+          "thumbnail": "https://cf.geekdo-images.com/q_JGK291hrhnhiRB0667oA__small/img/PUrzEmTo5kOcK5BOb4cbOOcH86I=/fit-in/200x150/filters:strip_icc()/pic3979766.png",
+          "year_published": 2018,
+          "bayes_rating": 6.591
+        },
+        {
+          "bgg_id": 63918,
+          "name": "Detective",
+          "image": "https://cf.geekdo-images.com/fMoA1WZNS-k1mYWDu3Udig__original/img/r0-ITkxMfbumVYAJ5FCX_Ks_Yyk=/0x0/filters:format(jpeg)/pic628820.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/fMoA1WZNS-k1mYWDu3Udig__small/img/11y9y5pBOhWq1uKdCw4yJX1jmno=/fit-in/200x150/filters:strip_icc()/pic628820.jpg",
+          "year_published": 2009,
+          "bayes_rating": 0.0
+        },
+        {
+          "bgg_id": 406145,
+          "name": "Mr. Wolf",
+          "image": "https://cf.geekdo-images.com/TMk8jhW6i6cT0Bz1SVVihQ__original/img/AFrdF8saaxVFPRhza2UJEFS9VnM=/0x0/filters:format(jpeg)/pic7856659.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/TMk8jhW6i6cT0Bz1SVVihQ__small/img/co8k-vjbQRICoY8FVcnHt9m9AV4=/fit-in/200x150/filters:strip_icc()/pic7856659.jpg",
+          "year_published": 2021,
+          "bayes_rating": 0.0
+        }
+      ],
+      "recommended": []
+    },
+    {
+      "program": "As d'Or",
+      "year": 2018,
+      "winners": [],
+      "nominees": [
+        {
+          "bgg_id": 230802,
+          "name": "Azul",
+          "image": "https://cf.geekdo-images.com/aPSHJO0d0XOpQR5X-wJonw__original/img/AkbtYVc6xXJF3c9EUrakklcclKw=/0x0/filters:format(png)/pic6973671.png",
+          "thumbnail": "https://cf.geekdo-images.com/aPSHJO0d0XOpQR5X-wJonw__small/img/ccsXKrdGJw-YSClWwzVUwk5Nh9Y=/fit-in/200x150/filters:strip_icc()/pic6973671.png",
+          "year_published": 2017,
+          "bayes_rating": 7.605
+        },
+        {
+          "bgg_id": 167791,
+          "name": "Terraforming Mars",
+          "image": "https://cf.geekdo-images.com/wg9oOLcsKvDesSUdZQ4rxw__original/img/thIqWDnH9utKuoKVEUqveDixprI=/0x0/filters:format(jpeg)/pic3536616.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/wg9oOLcsKvDesSUdZQ4rxw__small/img/BTxqxgYay5tHJfVoJ2NF5g43_gA=/fit-in/200x150/filters:strip_icc()/pic3536616.jpg",
+          "year_published": 2016,
+          "bayes_rating": 8.183
+        },
+        {
+          "bgg_id": 172931,
+          "name": "Nom d'un renard !",
+          "image": "https://cf.geekdo-images.com/v0FCI-wY8YlPn39XKd3F8w__original/img/vppUmOYk1ZFqprmgN_1-htcXa-s=/0x0/filters:format(jpeg)/pic2401324.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/v0FCI-wY8YlPn39XKd3F8w__small/img/lgy2HBtB0l2m-XknC9fGn-qakXc=/fit-in/200x150/filters:strip_icc()/pic2401324.jpg",
+          "year_published": 2014,
+          "bayes_rating": 6.607
+        }
+      ],
+      "recommended": []
+    },
+    {
+      "program": "Kennerspiel des Jahres",
+      "year": 2025,
+      "winners": [
+        {
+          "bgg_id": 413246,
+          "name": "Bomb Busters",
+          "image": "https://cf.geekdo-images.com/HpGXIlt5i6T-0jbiQRReOg__original/img/2uApg8IOYjNVSzbUIwJUa-Z8eL8=/0x0/filters:format(png)/pic8303080.png",
+          "thumbnail": "https://cf.geekdo-images.com/HpGXIlt5i6T-0jbiQRReOg__small/img/8wfQelnNsbXCykJWMjD8UAjhleU=/fit-in/200x150/filters:strip_icc()/pic8303080.png",
+          "year_published": 2024,
+          "bayes_rating": 7.622
+        },
+        {
+          "bgg_id": null,
+          "name": "Endeavor: Die Tiefsee (Deep Sea)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": 330653,
+          "name": "Top the cake",
+          "image": "https://cf.geekdo-images.com/wFwQ-MEGf6BLIyV77hQvHQ__original/img/jGDJHygR3da__4gT0pMzKAD1SQU=/0x0/filters:format(png)/pic5982841.png",
+          "thumbnail": "https://cf.geekdo-images.com/wFwQ-MEGf6BLIyV77hQvHQ__small/img/hBn-T03NV6qYDYiaUMfP5-dJdz8=/fit-in/200x150/filters:strip_icc()/pic5982841.png",
+          "year_published": 2021,
+          "bayes_rating": 0.0
+        }
+      ],
+      "nominees": [
+        {
+          "bgg_id": 420087,
+          "name": "Flip 7",
+          "image": "https://cf.geekdo-images.com/YrQxEB9Ef0kQorRApzG5vQ__original/img/hK6k-x_GYfooemrkkRuF0bTvKxE=/0x0/filters:format(jpeg)/pic8780246.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/YrQxEB9Ef0kQorRApzG5vQ__small/img/_dNNsSelyw9qUEOIXBRt6PE_1us=/fit-in/200x150/filters:strip_icc()/pic8780246.jpg",
+          "year_published": 2024,
+          "bayes_rating": 6.989
+        },
+        {
+          "bgg_id": 419639,
+          "name": "Krakel Orakel",
+          "image": "https://cf.geekdo-images.com/iSXZ4NR52el43WXTTnUgOA__original/img/8XZHQjDO_r6cRgf3LRPdGbK7Ps8=/0x0/filters:format(png)/pic9435212.png",
+          "thumbnail": "https://cf.geekdo-images.com/iSXZ4NR52el43WXTTnUgOA__small/img/oF5fAgqX4CVYrAXTK_7GdNJQ9D0=/fit-in/200x150/filters:strip_icc()/pic9435212.png",
+          "year_published": 2024,
+          "bayes_rating": 6.086
+        },
+        {
+          "bgg_id": 168949,
+          "name": "Faraway",
+          "image": "https://cf.geekdo-images.com/dqDwx05r7Hgc66Hda2JKvA__original/img/v8E1dpB3wnUh1xHkktC_-LuWB0g=/0x0/filters:format(png)/pic2532802.png",
+          "thumbnail": "https://cf.geekdo-images.com/dqDwx05r7Hgc66Hda2JKvA__small/img/dhW-NZGjA6lgWBLhQO-Nr9K7fro=/fit-in/200x150/filters:strip_icc()/pic2532802.png",
+          "year_published": 2016,
+          "bayes_rating": 0.0
+        },
+        {
+          "bgg_id": null,
+          "name": "Neuland (Looot)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": 433007,
+          "name": "Cascadia Junior",
+          "image": "https://cf.geekdo-images.com/U-azZcnB7jLSIfiIbCRj2w__original/img/ZUyw28V-m3_yf0qoH1BO-7jyrwM=/0x0/filters:format(jpeg)/pic8542666.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/U-azZcnB7jLSIfiIbCRj2w__small/img/IQmtOlwviHL6LFDGtg3L2Jbb0z4=/fit-in/200x150/filters:strip_icc()/pic8542666.jpg",
+          "year_published": 2025,
+          "bayes_rating": 5.705
+        },
+        {
+          "bgg_id": null,
+          "name": "The Mice Gang (Le Clan des Souris)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": 367966,
+          "name": "Endeavor: Deep Sea",
+          "image": "https://cf.geekdo-images.com/wIbevITv9W79ELP8rEZoKA__original/img/41fYEG_IYb9ECcCO24Dk4dZUNT0=/0x0/filters:format(jpeg)/pic6996584.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/wIbevITv9W79ELP8rEZoKA__small/img/7_DqsUgdrpbeLfkA2ko8bXhgpGw=/fit-in/200x150/filters:strip_icc()/pic6996584.jpg",
+          "year_published": 2024,
+          "bayes_rating": 7.675
+        },
+        {
+          "bgg_id": null,
+          "name": "Topp die Torte! (English title: Top the Cake!)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        }
+      ],
+      "recommended": []
+    },
+    {
+      "program": "Kennerspiel des Jahres",
+      "year": 2024,
+      "winners": [
+        {
+          "bgg_id": 373106,
+          "name": "Sky Team",
+          "image": "https://cf.geekdo-images.com/uXMeQzNenHb3zK7Hoa6b2w__original/img/mWOQnkpyYBorh_Y1-0Y2o-ew17k=/0x0/filters:format(jpeg)/pic7398904.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/uXMeQzNenHb3zK7Hoa6b2w__small/img/WyPClajMWU9lV5BdCXiZnqdZgmU=/fit-in/200x150/filters:strip_icc()/pic7398904.jpg",
+          "year_published": 2023,
+          "bayes_rating": 7.889
+        },
+        {
+          "bgg_id": null,
+          "name": "e-Mission (Daybreak)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": null,
+          "name": "Die magischen Schlüssel (Magic Keys)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        }
+      ],
+      "nominees": [
+        {
+          "bgg_id": null,
+          "name": "Auf den Wegen von Darwin (In the Footsteps of Darwin)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": 393325,
+          "name": "Captain Flip",
+          "image": "https://cf.geekdo-images.com/7vSkMR7exNsU7ZfRgJKodQ__original/img/CEF2zr_yUhqZrc0NP6NnBoXGGPc=/0x0/filters:format(png)/pic7784394.png",
+          "thumbnail": "https://cf.geekdo-images.com/7vSkMR7exNsU7ZfRgJKodQ__small/img/SzzzJKDO1wvj9YWfCg-mOnjC_lQ=/fit-in/200x150/filters:strip_icc()/pic7784394.png",
+          "year_published": 2024,
+          "bayes_rating": 6.713
+        },
+        {
+          "bgg_id": null,
+          "name": "Die Gilde der fahrenden Händler (The Guild of Merchant Explorers)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": null,
+          "name": "Zug um Zug Legacy: Legenden des Westens (Ticket to Ride Legacy: Legends of the West)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": 409498,
+          "name": "Große kleine Edelsteine",
+          "image": "https://cf.geekdo-images.com/dqtqtGBSD0zI48DrWZiH6A__original/img/LVckII57DBxV7Ka1aC0dyBDTahk=/0x0/filters:format(jpeg)/pic7917756.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/dqtqtGBSD0zI48DrWZiH6A__small/img/Qi0eWg69byhxeTnADRryP5wKfgM=/fit-in/200x150/filters:strip_icc()/pic7917756.jpg",
+          "year_published": 2024,
+          "bayes_rating": 5.55
+        },
+        {
+          "bgg_id": null,
+          "name": "Taco Katze Pizza Junior (Taco Kitten Pizza)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": 334986,
+          "name": "Daybreak",
+          "image": "https://cf.geekdo-images.com/YU8rm_FMnKHS2GPDFvLb6g__original/img/6umYavtw4Iw41gTtBZhNS7LrKIA=/0x0/filters:format(png)/pic7068528.png",
+          "thumbnail": "https://cf.geekdo-images.com/YU8rm_FMnKHS2GPDFvLb6g__small/img/7Y2W9IVJ3_YmOQfaoZz8XVPoUM0=/fit-in/200x150/filters:strip_icc()/pic7068528.png",
+          "year_published": 2023,
+          "bayes_rating": 7.057
+        },
+        {
+          "bgg_id": null,
+          "name": "Die magischen Schlüssel (English title: Magic Keys)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        }
+      ],
+      "recommended": []
+    },
+    {
+      "program": "Kennerspiel des Jahres",
+      "year": 2023,
+      "winners": [
+        {
+          "bgg_id": null,
+          "name": "Dorfromantik: Das Brettspiel (Dorfromantik: The Board Game)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": 359970,
+          "name": "Challengers!",
+          "image": "https://cf.geekdo-images.com/GtLESZ4ZjqikK12bjBTmig__original/img/CHUtcmSXFs8LYKRHyUaeio2ra4U=/0x0/filters:format(jpeg)/pic7040521.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/GtLESZ4ZjqikK12bjBTmig__small/img/66Emb1wn1JD_5_9XdsYY2DgMVMA=/fit-in/200x150/filters:strip_icc()/pic7040521.jpg",
+          "year_published": 2022,
+          "bayes_rating": 6.675
+        },
+        {
+          "bgg_id": 367206,
+          "name": "Mysterium Kids",
+          "image": "https://cf.geekdo-images.com/3PLNZOg5ZEVf9u121faEbw__original/img/J_D8TkWJfM4xFoWdoEmKKpXANck=/0x0/filters:format(jpeg)/pic7075722.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/3PLNZOg5ZEVf9u121faEbw__small/img/cRxQAJfpp54chQduFPedHYn245Q=/fit-in/200x150/filters:strip_icc()/pic7075722.jpg",
+          "year_published": 2022,
+          "bayes_rating": 5.673
+        }
+      ],
+      "nominees": [
+        {
+          "bgg_id": 370164,
+          "name": "Fun Facts",
+          "image": "https://cf.geekdo-images.com/wkj9lur-J5Bxun09mnI2rQ__original/img/4qUgF74h0l6EMn-HPzGI4Nydszk=/0x0/filters:format(jpeg)/pic7070521.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/wkj9lur-J5Bxun09mnI2rQ__small/img/WD6rjSm3DZS3JD2Bb4EXM9fL5bk=/fit-in/200x150/filters:strip_icc()/pic7070521.jpg",
+          "year_published": 2022,
+          "bayes_rating": 6.367
+        },
+        {
+          "bgg_id": 353545,
+          "name": "Next Station London",
+          "image": "https://cf.geekdo-images.com/T-eq9Ux4gkmqfEXry8HC1w__original/img/FgPzhjwC0X0-6ZNLhowN8iccREA=/0x0/filters:format(jpeg)/pic9018430.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/T-eq9Ux4gkmqfEXry8HC1w__small/img/6OG1_bmI_3NkAeD-IT9dJnFHmmc=/fit-in/200x150/filters:strip_icc()/pic9018430.jpg",
+          "year_published": 2022,
+          "bayes_rating": 6.936
+        },
+        {
+          "bgg_id": 177478,
+          "name": "Iki",
+          "image": "https://cf.geekdo-images.com/ypE6HrTY1Xvpt1XCpKlMBw__original/img/G4-gFXe9tKgnkgJOFTVO2A-Wbm4=/0x0/filters:format(png)/pic5960068.png",
+          "thumbnail": "https://cf.geekdo-images.com/ypE6HrTY1Xvpt1XCpKlMBw__small/img/25aN_TPIrOU6S7_1V31lVwsr3iA=/fit-in/200x150/filters:strip_icc()/pic5960068.png",
+          "year_published": 2015,
+          "bayes_rating": 7.025
+        },
+        {
+          "bgg_id": 258779,
+          "name": "Planet Unknown",
+          "image": "https://cf.geekdo-images.com/3HkjDovk8Yr2wMumcSUGog__original/img/hl_WEzG4mKaEW_7qrZf-sPxXMpI=/0x0/filters:format(jpeg)/pic4843622.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/3HkjDovk8Yr2wMumcSUGog__small/img/4pF1oDpvn1VR3rbvW88xLK86xmA=/fit-in/200x150/filters:strip_icc()/pic4843622.jpg",
+          "year_published": 2022,
+          "bayes_rating": 7.414
+        },
+        {
+          "bgg_id": 351937,
+          "name": "Carla Caramel",
+          "image": "https://cf.geekdo-images.com/xqu4JwxRuLxL3yQAOXVpeA__original/img/YCc2gSIvYR5kUNN6RJgu2fJo8tw=/0x0/filters:format(jpeg)/pic6754887.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/xqu4JwxRuLxL3yQAOXVpeA__small/img/kobHsKrYWjG-mEyBC6twI8L73g4=/fit-in/200x150/filters:strip_icc()/pic6754887.jpg",
+          "year_published": 2022,
+          "bayes_rating": 5.533
+        },
+        {
+          "bgg_id": 170969,
+          "name": "Gigamon (Gigamons)",
+          "image": "https://cf.geekdo-images.com/Fhb5SUHL2-Y59CD9h9ElTw__original/img/Qcmx5hHDKp5DXIjfOxMDWI9yq58=/0x0/filters:format(jpeg)/pic3944242.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/Fhb5SUHL2-Y59CD9h9ElTw__small/img/GjCX_FqrVB0tE6WJ4RYhQTEML3A=/fit-in/200x150/filters:strip_icc()/pic3944242.jpg",
+          "year_published": 2014,
+          "bayes_rating": 5.664
+        },
+        {
+          "bgg_id": 350636,
+          "name": "Unlock! Game Adventures",
+          "image": "https://cf.geekdo-images.com/A6-wiP1KFOpTmNNAJ9kizQ__original/img/GlWrcmu24HFZbKqXt7-sFodOsus=/0x0/filters:format(jpeg)/pic6498928.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/A6-wiP1KFOpTmNNAJ9kizQ__small/img/A7fr1EN2RcO4cNRbV9kt-vvwNgA=/fit-in/200x150/filters:strip_icc()/pic6498928.jpg",
+          "year_published": 2021,
+          "bayes_rating": 6.543
+        },
+        {
+          "bgg_id": null,
+          "name": "Unlock! Kids: Detektivgeschichten (Unlock! Kids: Detective Stories)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": 406315,
+          "name": "Dorfromantik",
+          "image": "https://cf.geekdo-images.com/fJQIwxJgtLlM0MiM-QwSLg__original/img/xTyoySFSix-RJZwyBwOceyAyQLs=/0x0/filters:format(jpeg)/pic8020250.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/fJQIwxJgtLlM0MiM-QwSLg__small/img/qxyR1EMSpFvNSRKjk25p-rBnCJ8=/fit-in/200x150/filters:strip_icc()/pic8020250.jpg",
+          "year_published": 2023,
+          "bayes_rating": 5.527
+        },
+        {
+          "bgg_id": null,
+          "name": "Unlock! Game Adventures and Unlock! Kids: Detective Stories",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        }
+      ],
+      "recommended": []
+    },
+    {
+      "program": "Kennerspiel des Jahres",
+      "year": 2022,
+      "winners": [
+        {
+          "bgg_id": 295947,
+          "name": "Cascadia",
+          "image": "https://cf.geekdo-images.com/MjeJZfulbsM1DSV3DrGJYA__original/img/B374C04Eip7fmQBGJzgiOTp-jyQ=/0x0/filters:format(jpeg)/pic5100691.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/MjeJZfulbsM1DSV3DrGJYA__small/img/tVSFjSxYEcw7sKj3unIIQV8kxoc=/fit-in/200x150/filters:strip_icc()/pic5100691.jpg",
+          "year_published": 2021,
+          "bayes_rating": 7.734
+        },
+        {
+          "bgg_id": 328479,
+          "name": "Living Forest",
+          "image": "https://cf.geekdo-images.com/fPhdfZX9UTLr4-SVgK0zoQ__original/img/ZPdxDPt1jSRQMNnVgn-qIPhNv0E=/0x0/filters:format(jpeg)/pic5899025.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/fPhdfZX9UTLr4-SVgK0zoQ__small/img/v8irnVxaCdK29XPtqEbtlKkLY4c=/fit-in/200x150/filters:strip_icc()/pic5899025.jpg",
+          "year_published": 2021,
+          "bayes_rating": 6.795
+        },
+        {
+          "bgg_id": null,
+          "name": "Zauberberg (Magic Mountain)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        }
+      ],
+      "nominees": [
+        {
+          "bgg_id": 26681,
+          "name": "Scout",
+          "image": "https://cf.geekdo-images.com/bpbkU9dPYc100p15Su36_g__original/img/b1qnKpDHO8IZFxg4Embw5o0m_WQ=/0x0/filters:format(jpeg)/pic200411.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/bpbkU9dPYc100p15Su36_g__small/img/LVogRviWw8cfogWcE0yJoOY05yg=/fit-in/200x150/filters:strip_icc()/pic200411.jpg",
+          "year_published": 1985,
+          "bayes_rating": 0.0
+        },
+        {
+          "bgg_id": 300905,
+          "name": "Top Ten",
+          "image": "https://cf.geekdo-images.com/0LVOOyXtNNyFhyj7tFaKCQ__original/img/P8h6npX36CQrxXua-8UWYocpc44=/0x0/filters:format(jpeg)/pic5212719.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/0LVOOyXtNNyFhyj7tFaKCQ__small/img/a-klyIgrojswCIe3KKOmJrCOgOw=/fit-in/200x150/filters:strip_icc()/pic5212719.jpg",
+          "year_published": 2020,
+          "bayes_rating": 6.773
+        },
+        {
+          "bgg_id": 246784,
+          "name": "Cryptid",
+          "image": "https://cf.geekdo-images.com/qrPLpAnhFgc470ZRuXlvbg__original/img/QenUCVaFRry4-wlimHmeLn226Bo=/0x0/filters:format(jpeg)/pic4037705.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/qrPLpAnhFgc470ZRuXlvbg__small/img/ZFL0o-lhnuWE21Sa9YS8qi8ayGU=/fit-in/200x150/filters:strip_icc()/pic4037705.jpg",
+          "year_published": 2018,
+          "bayes_rating": 7.161
+        },
+        {
+          "bgg_id": 316554,
+          "name": "Dune: Imperium",
+          "image": "https://cf.geekdo-images.com/PhjygpWSo-0labGrPBMyyg__original/img/mZzaBAEEJpMlHWWmC0R6Su0OibQ=/0x0/filters:format(jpeg)/pic5666597.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/PhjygpWSo-0labGrPBMyyg__small/img/JGgY-nBmkyB8WRp8vcoBLlNMQ5U=/fit-in/200x150/filters:strip_icc()/pic5666597.jpg",
+          "year_published": 2020,
+          "bayes_rating": 8.222
+        },
+        {
+          "bgg_id": null,
+          "name": "Auch schon clever (Ganz Schön Clever Kids)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": null,
+          "name": "Mit Quacks & Co. nach Quedlinburg (Quacks & Co. Quedlinburg Dash)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": null,
+          "name": "Zauberberg (English title: Magic Mountain)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        }
+      ],
+      "recommended": []
+    },
+    {
+      "program": "Kennerspiel des Jahres",
+      "year": 2021,
+      "winners": [
+        {
+          "bgg_id": 318977,
+          "name": "MicroMacro: Crime City",
+          "image": "https://cf.geekdo-images.com/bLL3P-G25nIUkFjHxfJfnw__original/img/HBEhgjfb0QcF9pFrdJ8VYhBapoU=/0x0/filters:format(jpeg)/pic7632081.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/bLL3P-G25nIUkFjHxfJfnw__small/img/XY_Z5rRJe3IPLRfOvWp70OM2B68=/fit-in/200x150/filters:strip_icc()/pic7632081.jpg",
+          "year_published": 2020,
+          "bayes_rating": 7.212
+        },
+        {
+          "bgg_id": 38865,
+          "name": "Paleo",
+          "image": "https://cf.geekdo-images.com/wBWTzu8t1yXDwbE54NxCog__original/img/S3rpXPwc_04EQjVcvlwYr464Ne8=/0x0/filters:format(jpeg)/pic381660.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/wBWTzu8t1yXDwbE54NxCog__small/img/4m6fjksMLakDo9MTyF6myWVv5yk=/fit-in/200x150/filters:strip_icc()/pic381660.jpg",
+          "year_published": 2008,
+          "bayes_rating": 5.515
+        },
+        {
+          "bgg_id": 300010,
+          "name": "Dragomino",
+          "image": "https://cf.geekdo-images.com/S_Cpk3j3Z3ceNJBPNg4l7w__original/img/2g1g35Rp3u1tF_8fX3YLpmjIPj8=/0x0/filters:format(png)/pic5212561.png",
+          "thumbnail": "https://cf.geekdo-images.com/S_Cpk3j3Z3ceNJBPNg4l7w__small/img/yyYrzwIVoBwTJ0U3TI6oZWvkgS0=/fit-in/200x150/filters:strip_icc()/pic5212561.png",
+          "year_published": 2020,
+          "bayes_rating": 6.342
+        }
+      ],
+      "nominees": [
+        {
+          "bgg_id": null,
+          "name": "Die Abenteuer des Robin Hood (The Adventures of Robin Hood)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": 310448,
+          "name": "Zombie Teenz Evolution",
+          "image": "https://cf.geekdo-images.com/elS-EEtVF92Vk-YBqnJKeA__original/img/Zr5Q4VUehMBvib7M48FyaAa9Gss=/0x0/filters:format(png)/pic5733331.png",
+          "thumbnail": "https://cf.geekdo-images.com/elS-EEtVF92Vk-YBqnJKeA__small/img/ZWbcOy6SjMcwsmeYe7Y42Nfk174=/fit-in/200x150/filters:strip_icc()/pic5733331.png",
+          "year_published": 2020,
+          "bayes_rating": 6.529
+        },
+        {
+          "bgg_id": null,
+          "name": "Die verlorenen Ruinen von Arnak (Lost Ruins of Arnak)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": null,
+          "name": "Fantastische Reiche (Fantasy Realms)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": null,
+          "name": "Fabelwelten (Storytailors)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": 302417,
+          "name": "Mia London",
+          "image": "https://cf.geekdo-images.com/vUeJ2wQ5WHvf4cTTNvhdpw__original/img/nYdRzOWicUPnt6zAFAGRYXxOR38=/0x0/filters:format(png)/pic5241229.png",
+          "thumbnail": "https://cf.geekdo-images.com/vUeJ2wQ5WHvf4cTTNvhdpw__small/img/0x_fpGjdVBFOl29s_1qhsou0FxA=/fit-in/200x150/filters:strip_icc()/pic5241229.png",
+          "year_published": 2020,
+          "bayes_rating": 5.559
+        }
+      ],
+      "recommended": []
+    },
+    {
+      "program": "Kennerspiel des Jahres",
+      "year": 2020,
+      "winners": [
+        {
+          "bgg_id": 98026,
+          "name": "Pictures",
+          "image": "https://cf.geekdo-images.com/2ksVi_M5sLws57Y5dmZVOA__original/img/dw5rRxZSW8vk-9Sb-rIOEaBbj24=/0x0/filters:format(jpeg)/pic991829.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/2ksVi_M5sLws57Y5dmZVOA__small/img/Ytcky0xrJF3bHzfIWmhZolI97RQ=/fit-in/200x150/filters:strip_icc()/pic991829.jpg",
+          "year_published": 1994,
+          "bayes_rating": 0.0
+        },
+        {
+          "bgg_id": null,
+          "name": "Die Crew: Reist gemeinsam zum 9. Planeten (The Crew: The Quest for Planet Nine)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": null,
+          "name": "Speedy Roll (Hedgehog Roll)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        }
+      ],
+      "nominees": [
+        {
+          "bgg_id": 36453,
+          "name": "My City",
+          "image": "https://cf.geekdo-images.com/uBrFgbfCr5sRCImlNGknYQ__original/img/o6TiSxBIUuWrAbLl7ro6g4ENTzQ=/0x0/filters:format(jpeg)/pic331936.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/uBrFgbfCr5sRCImlNGknYQ__small/img/Kjd1rE64PSFVVPXMGy0gGQ6466I=/fit-in/200x150/filters:strip_icc()/pic331936.jpg",
+          "year_published": 2007,
+          "bayes_rating": 0.0
+        },
+        {
+          "bgg_id": 284435,
+          "name": "Nova Luna",
+          "image": "https://cf.geekdo-images.com/k8OZeKYMN2vVSVCl5FD-UA__original/img/XiytG0d5nHtdoN4Kq3pCM6VcSac=/0x0/filters:format(jpeg)/pic5382418.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/k8OZeKYMN2vVSVCl5FD-UA__small/img/lRMeiFcB9C3ivyZlCoPRQe5xKNU=/fit-in/200x150/filters:strip_icc()/pic5382418.jpg",
+          "year_published": 2019,
+          "bayes_rating": 6.891
+        },
+        {
+          "bgg_id": null,
+          "name": "Der Kartograph (Cartographers)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": 245655,
+          "name": "The King's Dilemma",
+          "image": "https://cf.geekdo-images.com/FJlTdSMkK5hMNtCympJFmg__original/img/pr_jKPa74JjBBm30Mo9Uj9Jq1-w=/0x0/filters:format(jpeg)/pic5429837.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/FJlTdSMkK5hMNtCympJFmg__small/img/WqPUfQOfiIe5FnBXz-EAavw5jCs=/fit-in/200x150/filters:strip_icc()/pic5429837.jpg",
+          "year_published": 2019,
+          "bayes_rating": 7.094
+        },
+        {
+          "bgg_id": 291550,
+          "name": "Foto Fish",
+          "image": "https://cf.geekdo-images.com/2Kd_Ja9x5SBwV4XqR3Q2GA__original/img/OH7VIaBapzzpXU9pXxnEsU2PaeI=/0x0/filters:format(jpeg)/pic5476706.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/2Kd_Ja9x5SBwV4XqR3Q2GA__small/img/uBMkcmlswzJebqsRuGpDswikyoI=/fit-in/200x150/filters:strip_icc()/pic5476706.jpg",
+          "year_published": 2020,
+          "bayes_rating": 5.53
+        },
+        {
+          "bgg_id": null,
+          "name": "Wir sind die Roboter (Robots)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": 284083,
+          "name": "The Crew: The Quest for Planet Nine",
+          "image": "https://cf.geekdo-images.com/98LnQShydr11OBKS46xY-Q__original/img/Q-ZkgnuBu9OTBr7J3qnqPjqamAE=/0x0/filters:format(jpeg)/pic5687013.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/98LnQShydr11OBKS46xY-Q__small/img/et-fnuozyOdBOVL-5kSS3_7I8fw=/fit-in/200x150/filters:strip_icc()/pic5687013.jpg",
+          "year_published": 2019,
+          "bayes_rating": 7.615
+        },
+        {
+          "bgg_id": null,
+          "name": "Speedy Roll (Alternate title: Hedgehog Roll)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        }
+      ],
+      "recommended": []
+    },
+    {
+      "program": "Kennerspiel des Jahres",
+      "year": 2019,
+      "winners": [
+        {
+          "bgg_id": 254640,
+          "name": "Just One",
+          "image": "https://cf.geekdo-images.com/74haNunMBn85beBi-yIKwA__original/img/hA22qL6nZxchA8FMTIfhLMcI53I=/0x0/filters:format(png)/pic8669313.png",
+          "thumbnail": "https://cf.geekdo-images.com/74haNunMBn85beBi-yIKwA__small/img/feIV-gqMeza43ycvxh6PGx4lA_w=/fit-in/200x150/filters:strip_icc()/pic8669313.png",
+          "year_published": 2018,
+          "bayes_rating": 7.437
+        },
+        {
+          "bgg_id": null,
+          "name": "Flügelschlag (Wingspan)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": null,
+          "name": "Tal der Wikinger (Valley of the Vikings)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        }
+      ],
+      "nominees": [
+        {
+          "bgg_id": 325853,
+          "name": "L.A.M.A. (L.L.A.M.A.)",
+          "image": "https://cf.geekdo-images.com/HyuiLSbeKn_aap3kIa4mNA__original/img/oNMAhXR0BK-lIG4-8BOiEa6EDCk=/0x0/filters:format(jpeg)/pic6937668.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/HyuiLSbeKn_aap3kIa4mNA__small/img/B4lERqIjRLz-KWPZvOHZEWgMO8k=/fit-in/200x150/filters:strip_icc()/pic6937668.jpg",
+          "year_published": 2021,
+          "bayes_rating": 5.95
+        },
+        {
+          "bgg_id": null,
+          "name": "Werwörter (Werewords)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": 245934,
+          "name": "Carpe Diem",
+          "image": "https://cf.geekdo-images.com/fsjopscDFCVArzU7fzhVxA__original/img/JJXwLsCeWj_8FOurLToKpdQuvpc=/0x0/filters:format(jpeg)/pic6183704.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/fsjopscDFCVArzU7fzhVxA__small/img/6Yu-lVdkDTrICD1y5ZqNmzHZEsc=/fit-in/200x150/filters:strip_icc()/pic6183704.jpg",
+          "year_published": 2018,
+          "bayes_rating": 7.048
+        },
+        {
+          "bgg_id": null,
+          "name": "Detective: Ein Krimi-Brettspiel (Detective: A Modern Crime Board Game)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": 264295,
+          "name": "Fabulantica",
+          "image": "https://cf.geekdo-images.com/Y8rIsYKqGUhXcpkAO-EI8w__original/img/xjmzZ38YiVstr22-dMw8B2J45WA=/0x0/filters:format(jpeg)/pic4959947.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/Y8rIsYKqGUhXcpkAO-EI8w__small/img/5mYCCSG2Ynalc6HNxHHlYEBDzyQ=/fit-in/200x150/filters:strip_icc()/pic4959947.jpg",
+          "year_published": 2018,
+          "bayes_rating": 5.598
+        },
+        {
+          "bgg_id": 270140,
+          "name": "Go Gecko Go!",
+          "image": "https://cf.geekdo-images.com/Mkj4bNlFxfHq0gnIoCjEEA__original/img/Hnf1bp1UvGNMdTTVwQF79-hNVgk=/0x0/filters:format(jpeg)/pic4535117.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/Mkj4bNlFxfHq0gnIoCjEEA__small/img/5whc3LC2uOo-oUdN8i4Ew0B1Vzg=/fit-in/200x150/filters:strip_icc()/pic4535117.jpg",
+          "year_published": 2019,
+          "bayes_rating": 5.55
+        },
+        {
+          "bgg_id": 266192,
+          "name": "Wingspan",
+          "image": "https://cf.geekdo-images.com/yLZJCVLlIx4c7eJEWUNJ7w__original/img/cI782Zis9cT66j2MjSHKJGnFPNw=/0x0/filters:format(jpeg)/pic4458123.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/yLZJCVLlIx4c7eJEWUNJ7w__small/img/VNToqgS2-pOGU6MuvIkMPKn_y-s=/fit-in/200x150/filters:strip_icc()/pic4458123.jpg",
+          "year_published": 2019,
+          "bayes_rating": 7.845
+        },
+        {
+          "bgg_id": null,
+          "name": "Tal der Wikinger (English title: Valley of the Vikings)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        }
+      ],
+      "recommended": []
+    },
+    {
+      "program": "Kennerspiel des Jahres",
+      "year": 2018,
+      "winners": [
+        {
+          "bgg_id": 230802,
+          "name": "Azul",
+          "image": "https://cf.geekdo-images.com/aPSHJO0d0XOpQR5X-wJonw__original/img/AkbtYVc6xXJF3c9EUrakklcclKw=/0x0/filters:format(png)/pic6973671.png",
+          "thumbnail": "https://cf.geekdo-images.com/aPSHJO0d0XOpQR5X-wJonw__small/img/ccsXKrdGJw-YSClWwzVUwk5Nh9Y=/fit-in/200x150/filters:strip_icc()/pic6973671.png",
+          "year_published": 2017,
+          "bayes_rating": 7.605
+        },
+        {
+          "bgg_id": null,
+          "name": "Die Quacksalber von Quedlinburg (The Quacks of Quedlinburg)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": null,
+          "name": "Funkelschatz (Dragon's Breath)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        }
+      ],
+      "nominees": [
+        {
+          "bgg_id": 1205,
+          "name": "Luxor",
+          "image": "https://cf.geekdo-images.com/PbDFaQebBo7Ygb2yVZtetw__original/img/CvRHdoCTw03-RNJ6haBdF-_fPvQ=/0x0/filters:format(jpeg)/pic172278.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/PbDFaQebBo7Ygb2yVZtetw__small/img/77rbu47ebW9WRFy-pCZ5nUdUW2I=/fit-in/200x150/filters:strip_icc()/pic172278.jpg",
+          "year_published": 2001,
+          "bayes_rating": 5.572
+        },
+        {
+          "bgg_id": 244992,
+          "name": "The Mind",
+          "image": "https://cf.geekdo-images.com/q_JGK291hrhnhiRB0667oA__original/img/8VjZEG278faO9JZwzce3v3EKssI=/0x0/filters:format(png)/pic3979766.png",
+          "thumbnail": "https://cf.geekdo-images.com/q_JGK291hrhnhiRB0667oA__small/img/PUrzEmTo5kOcK5BOb4cbOOcH86I=/fit-in/200x150/filters:strip_icc()/pic3979766.png",
+          "year_published": 2018,
+          "bayes_rating": 6.591
+        },
+        {
+          "bgg_id": 244522,
+          "name": "Ganz Schön Clever",
+          "image": "https://cf.geekdo-images.com/u1EZSUC5n8k4g4OFPkn3ow__original/img/e4QJiofBkd18ZffIURPyqNWrhxk=/0x0/filters:format(jpeg)/pic8014078.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/u1EZSUC5n8k4g4OFPkn3ow__small/img/mOfaidSnvnq2gHEQuAsYTLyIQQQ=/fit-in/200x150/filters:strip_icc()/pic8014078.jpg",
+          "year_published": 2018,
+          "bayes_rating": 7.36
+        },
+        {
+          "bgg_id": 227789,
+          "name": "Heaven & Ale",
+          "image": "https://cf.geekdo-images.com/P0B68R2CLFTuiD8M9lCYPQ__original/img/3tMVOxYhmuL3fpqW2256qUXqWxE=/0x0/filters:format(jpeg)/pic3563904.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/P0B68R2CLFTuiD8M9lCYPQ__small/img/1Omy3H6zspL0HKrUjgdolrGxmwk=/fit-in/200x150/filters:strip_icc()/pic3563904.jpg",
+          "year_published": 2017,
+          "bayes_rating": 7.098
+        },
+        {
+          "bgg_id": 192283,
+          "name": "Emojito!",
+          "image": "https://cf.geekdo-images.com/vS_kW-sA3ucX0_l8rjiR-Q__original/img/YoVF-FmQovJBZy88MQGGGeWd7ok=/0x0/filters:format(jpeg)/pic3196017.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/vS_kW-sA3ucX0_l8rjiR-Q__small/img/-83eFWueuzRljOcwZYyYMGOr5Fo=/fit-in/200x150/filters:strip_icc()/pic3196017.jpg",
+          "year_published": 2016,
+          "bayes_rating": 5.518
+        },
+        {
+          "bgg_id": 232045,
+          "name": "Panic Mansion",
+          "image": "https://cf.geekdo-images.com/JMRNKUsXPMbIZAuCh3PPtQ__original/img/iveN-yZCLz3B8vhL5Ipw1O6-xKU=/0x0/filters:format(jpeg)/pic3915286.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/JMRNKUsXPMbIZAuCh3PPtQ__small/img/6mR--R_aSWsfVtRz2dqRmeoR3_w=/fit-in/200x150/filters:strip_icc()/pic3915286.jpg",
+          "year_published": 2017,
+          "bayes_rating": 5.684
+        },
+        {
+          "bgg_id": 221107,
+          "name": "Pandemic Legacy: Season 2",
+          "image": "https://cf.geekdo-images.com/Qtkb-UTvHa0-kxt_MK1nKw__original/img/wJiRr7lBmWSKcRS3lPpvKIPMgQQ=/0x0/filters:format(jpeg)/pic3763549.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/Qtkb-UTvHa0-kxt_MK1nKw__small/img/MfKsnJUTx9IQV-o12Fahxx5IaDQ=/fit-in/200x150/filters:strip_icc()/pic3763549.jpg",
+          "year_published": 2017,
+          "bayes_rating": 7.688
+        },
+        {
+          "bgg_id": 244521,
+          "name": "The Quacks of Quedlinburg",
+          "image": "https://cf.geekdo-images.com/B1bLRWzTASZ-xx9NoAE79A__original/img/HulJk6gFzp_bxl0wzc2XEMq8NLM=/0x0/filters:format(png)/pic8780293.png",
+          "thumbnail": "https://cf.geekdo-images.com/B1bLRWzTASZ-xx9NoAE79A__small/img/deG3pr-ORZ3JrGvQA-oQNrwh0l0=/fit-in/200x150/filters:strip_icc()/pic8780293.png",
+          "year_published": 2018,
+          "bayes_rating": 7.667
+        },
+        {
+          "bgg_id": null,
+          "name": "Funkelschatz (English title: Dragon's Breath)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        }
+      ],
+      "recommended": []
+    },
+    {
+      "program": "Kinderspiel des Jahres",
+      "year": 2025,
+      "winners": [
+        {
+          "bgg_id": 413246,
+          "name": "Bomb Busters",
+          "image": "https://cf.geekdo-images.com/HpGXIlt5i6T-0jbiQRReOg__original/img/2uApg8IOYjNVSzbUIwJUa-Z8eL8=/0x0/filters:format(png)/pic8303080.png",
+          "thumbnail": "https://cf.geekdo-images.com/HpGXIlt5i6T-0jbiQRReOg__small/img/8wfQelnNsbXCykJWMjD8UAjhleU=/fit-in/200x150/filters:strip_icc()/pic8303080.png",
+          "year_published": 2024,
+          "bayes_rating": 7.622
+        },
+        {
+          "bgg_id": null,
+          "name": "Endeavor: Die Tiefsee (Deep Sea)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": 330653,
+          "name": "Top the cake",
+          "image": "https://cf.geekdo-images.com/wFwQ-MEGf6BLIyV77hQvHQ__original/img/jGDJHygR3da__4gT0pMzKAD1SQU=/0x0/filters:format(png)/pic5982841.png",
+          "thumbnail": "https://cf.geekdo-images.com/wFwQ-MEGf6BLIyV77hQvHQ__small/img/hBn-T03NV6qYDYiaUMfP5-dJdz8=/fit-in/200x150/filters:strip_icc()/pic5982841.png",
+          "year_published": 2021,
+          "bayes_rating": 0.0
+        }
+      ],
+      "nominees": [
+        {
+          "bgg_id": 420087,
+          "name": "Flip 7",
+          "image": "https://cf.geekdo-images.com/YrQxEB9Ef0kQorRApzG5vQ__original/img/hK6k-x_GYfooemrkkRuF0bTvKxE=/0x0/filters:format(jpeg)/pic8780246.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/YrQxEB9Ef0kQorRApzG5vQ__small/img/_dNNsSelyw9qUEOIXBRt6PE_1us=/fit-in/200x150/filters:strip_icc()/pic8780246.jpg",
+          "year_published": 2024,
+          "bayes_rating": 6.989
+        },
+        {
+          "bgg_id": 419639,
+          "name": "Krakel Orakel",
+          "image": "https://cf.geekdo-images.com/iSXZ4NR52el43WXTTnUgOA__original/img/8XZHQjDO_r6cRgf3LRPdGbK7Ps8=/0x0/filters:format(png)/pic9435212.png",
+          "thumbnail": "https://cf.geekdo-images.com/iSXZ4NR52el43WXTTnUgOA__small/img/oF5fAgqX4CVYrAXTK_7GdNJQ9D0=/fit-in/200x150/filters:strip_icc()/pic9435212.png",
+          "year_published": 2024,
+          "bayes_rating": 6.086
+        },
+        {
+          "bgg_id": 168949,
+          "name": "Faraway",
+          "image": "https://cf.geekdo-images.com/dqDwx05r7Hgc66Hda2JKvA__original/img/v8E1dpB3wnUh1xHkktC_-LuWB0g=/0x0/filters:format(png)/pic2532802.png",
+          "thumbnail": "https://cf.geekdo-images.com/dqDwx05r7Hgc66Hda2JKvA__small/img/dhW-NZGjA6lgWBLhQO-Nr9K7fro=/fit-in/200x150/filters:strip_icc()/pic2532802.png",
+          "year_published": 2016,
+          "bayes_rating": 0.0
+        },
+        {
+          "bgg_id": null,
+          "name": "Neuland (Looot)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": 433007,
+          "name": "Cascadia Junior",
+          "image": "https://cf.geekdo-images.com/U-azZcnB7jLSIfiIbCRj2w__original/img/ZUyw28V-m3_yf0qoH1BO-7jyrwM=/0x0/filters:format(jpeg)/pic8542666.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/U-azZcnB7jLSIfiIbCRj2w__small/img/IQmtOlwviHL6LFDGtg3L2Jbb0z4=/fit-in/200x150/filters:strip_icc()/pic8542666.jpg",
+          "year_published": 2025,
+          "bayes_rating": 5.705
+        },
+        {
+          "bgg_id": null,
+          "name": "The Mice Gang (Le Clan des Souris)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": 367966,
+          "name": "Endeavor: Deep Sea",
+          "image": "https://cf.geekdo-images.com/wIbevITv9W79ELP8rEZoKA__original/img/41fYEG_IYb9ECcCO24Dk4dZUNT0=/0x0/filters:format(jpeg)/pic6996584.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/wIbevITv9W79ELP8rEZoKA__small/img/7_DqsUgdrpbeLfkA2ko8bXhgpGw=/fit-in/200x150/filters:strip_icc()/pic6996584.jpg",
+          "year_published": 2024,
+          "bayes_rating": 7.675
+        },
+        {
+          "bgg_id": null,
+          "name": "Topp die Torte! (English title: Top the Cake!)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        }
+      ],
+      "recommended": []
+    },
+    {
+      "program": "Kinderspiel des Jahres",
+      "year": 2024,
+      "winners": [
+        {
+          "bgg_id": 373106,
+          "name": "Sky Team",
+          "image": "https://cf.geekdo-images.com/uXMeQzNenHb3zK7Hoa6b2w__original/img/mWOQnkpyYBorh_Y1-0Y2o-ew17k=/0x0/filters:format(jpeg)/pic7398904.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/uXMeQzNenHb3zK7Hoa6b2w__small/img/WyPClajMWU9lV5BdCXiZnqdZgmU=/fit-in/200x150/filters:strip_icc()/pic7398904.jpg",
+          "year_published": 2023,
+          "bayes_rating": 7.889
+        },
+        {
+          "bgg_id": null,
+          "name": "e-Mission (Daybreak)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": null,
+          "name": "Die magischen Schlüssel (Magic Keys)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        }
+      ],
+      "nominees": [
+        {
+          "bgg_id": null,
+          "name": "Auf den Wegen von Darwin (In the Footsteps of Darwin)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": 393325,
+          "name": "Captain Flip",
+          "image": "https://cf.geekdo-images.com/7vSkMR7exNsU7ZfRgJKodQ__original/img/CEF2zr_yUhqZrc0NP6NnBoXGGPc=/0x0/filters:format(png)/pic7784394.png",
+          "thumbnail": "https://cf.geekdo-images.com/7vSkMR7exNsU7ZfRgJKodQ__small/img/SzzzJKDO1wvj9YWfCg-mOnjC_lQ=/fit-in/200x150/filters:strip_icc()/pic7784394.png",
+          "year_published": 2024,
+          "bayes_rating": 6.713
+        },
+        {
+          "bgg_id": null,
+          "name": "Die Gilde der fahrenden Händler (The Guild of Merchant Explorers)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": null,
+          "name": "Zug um Zug Legacy: Legenden des Westens (Ticket to Ride Legacy: Legends of the West)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": 409498,
+          "name": "Große kleine Edelsteine",
+          "image": "https://cf.geekdo-images.com/dqtqtGBSD0zI48DrWZiH6A__original/img/LVckII57DBxV7Ka1aC0dyBDTahk=/0x0/filters:format(jpeg)/pic7917756.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/dqtqtGBSD0zI48DrWZiH6A__small/img/Qi0eWg69byhxeTnADRryP5wKfgM=/fit-in/200x150/filters:strip_icc()/pic7917756.jpg",
+          "year_published": 2024,
+          "bayes_rating": 5.55
+        },
+        {
+          "bgg_id": null,
+          "name": "Taco Katze Pizza Junior (Taco Kitten Pizza)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": 334986,
+          "name": "Daybreak",
+          "image": "https://cf.geekdo-images.com/YU8rm_FMnKHS2GPDFvLb6g__original/img/6umYavtw4Iw41gTtBZhNS7LrKIA=/0x0/filters:format(png)/pic7068528.png",
+          "thumbnail": "https://cf.geekdo-images.com/YU8rm_FMnKHS2GPDFvLb6g__small/img/7Y2W9IVJ3_YmOQfaoZz8XVPoUM0=/fit-in/200x150/filters:strip_icc()/pic7068528.png",
+          "year_published": 2023,
+          "bayes_rating": 7.057
+        },
+        {
+          "bgg_id": null,
+          "name": "Die magischen Schlüssel (English title: Magic Keys)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        }
+      ],
+      "recommended": []
+    },
+    {
+      "program": "Kinderspiel des Jahres",
+      "year": 2023,
+      "winners": [
+        {
+          "bgg_id": null,
+          "name": "Dorfromantik: Das Brettspiel (Dorfromantik: The Board Game)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": 359970,
+          "name": "Challengers!",
+          "image": "https://cf.geekdo-images.com/GtLESZ4ZjqikK12bjBTmig__original/img/CHUtcmSXFs8LYKRHyUaeio2ra4U=/0x0/filters:format(jpeg)/pic7040521.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/GtLESZ4ZjqikK12bjBTmig__small/img/66Emb1wn1JD_5_9XdsYY2DgMVMA=/fit-in/200x150/filters:strip_icc()/pic7040521.jpg",
+          "year_published": 2022,
+          "bayes_rating": 6.675
+        },
+        {
+          "bgg_id": 367206,
+          "name": "Mysterium Kids",
+          "image": "https://cf.geekdo-images.com/3PLNZOg5ZEVf9u121faEbw__original/img/J_D8TkWJfM4xFoWdoEmKKpXANck=/0x0/filters:format(jpeg)/pic7075722.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/3PLNZOg5ZEVf9u121faEbw__small/img/cRxQAJfpp54chQduFPedHYn245Q=/fit-in/200x150/filters:strip_icc()/pic7075722.jpg",
+          "year_published": 2022,
+          "bayes_rating": 5.673
+        }
+      ],
+      "nominees": [
+        {
+          "bgg_id": 370164,
+          "name": "Fun Facts",
+          "image": "https://cf.geekdo-images.com/wkj9lur-J5Bxun09mnI2rQ__original/img/4qUgF74h0l6EMn-HPzGI4Nydszk=/0x0/filters:format(jpeg)/pic7070521.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/wkj9lur-J5Bxun09mnI2rQ__small/img/WD6rjSm3DZS3JD2Bb4EXM9fL5bk=/fit-in/200x150/filters:strip_icc()/pic7070521.jpg",
+          "year_published": 2022,
+          "bayes_rating": 6.367
+        },
+        {
+          "bgg_id": 353545,
+          "name": "Next Station London",
+          "image": "https://cf.geekdo-images.com/T-eq9Ux4gkmqfEXry8HC1w__original/img/FgPzhjwC0X0-6ZNLhowN8iccREA=/0x0/filters:format(jpeg)/pic9018430.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/T-eq9Ux4gkmqfEXry8HC1w__small/img/6OG1_bmI_3NkAeD-IT9dJnFHmmc=/fit-in/200x150/filters:strip_icc()/pic9018430.jpg",
+          "year_published": 2022,
+          "bayes_rating": 6.936
+        },
+        {
+          "bgg_id": 177478,
+          "name": "Iki",
+          "image": "https://cf.geekdo-images.com/ypE6HrTY1Xvpt1XCpKlMBw__original/img/G4-gFXe9tKgnkgJOFTVO2A-Wbm4=/0x0/filters:format(png)/pic5960068.png",
+          "thumbnail": "https://cf.geekdo-images.com/ypE6HrTY1Xvpt1XCpKlMBw__small/img/25aN_TPIrOU6S7_1V31lVwsr3iA=/fit-in/200x150/filters:strip_icc()/pic5960068.png",
+          "year_published": 2015,
+          "bayes_rating": 7.025
+        },
+        {
+          "bgg_id": 258779,
+          "name": "Planet Unknown",
+          "image": "https://cf.geekdo-images.com/3HkjDovk8Yr2wMumcSUGog__original/img/hl_WEzG4mKaEW_7qrZf-sPxXMpI=/0x0/filters:format(jpeg)/pic4843622.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/3HkjDovk8Yr2wMumcSUGog__small/img/4pF1oDpvn1VR3rbvW88xLK86xmA=/fit-in/200x150/filters:strip_icc()/pic4843622.jpg",
+          "year_published": 2022,
+          "bayes_rating": 7.414
+        },
+        {
+          "bgg_id": 351937,
+          "name": "Carla Caramel",
+          "image": "https://cf.geekdo-images.com/xqu4JwxRuLxL3yQAOXVpeA__original/img/YCc2gSIvYR5kUNN6RJgu2fJo8tw=/0x0/filters:format(jpeg)/pic6754887.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/xqu4JwxRuLxL3yQAOXVpeA__small/img/kobHsKrYWjG-mEyBC6twI8L73g4=/fit-in/200x150/filters:strip_icc()/pic6754887.jpg",
+          "year_published": 2022,
+          "bayes_rating": 5.533
+        },
+        {
+          "bgg_id": 170969,
+          "name": "Gigamon (Gigamons)",
+          "image": "https://cf.geekdo-images.com/Fhb5SUHL2-Y59CD9h9ElTw__original/img/Qcmx5hHDKp5DXIjfOxMDWI9yq58=/0x0/filters:format(jpeg)/pic3944242.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/Fhb5SUHL2-Y59CD9h9ElTw__small/img/GjCX_FqrVB0tE6WJ4RYhQTEML3A=/fit-in/200x150/filters:strip_icc()/pic3944242.jpg",
+          "year_published": 2014,
+          "bayes_rating": 5.664
+        },
+        {
+          "bgg_id": 350636,
+          "name": "Unlock! Game Adventures",
+          "image": "https://cf.geekdo-images.com/A6-wiP1KFOpTmNNAJ9kizQ__original/img/GlWrcmu24HFZbKqXt7-sFodOsus=/0x0/filters:format(jpeg)/pic6498928.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/A6-wiP1KFOpTmNNAJ9kizQ__small/img/A7fr1EN2RcO4cNRbV9kt-vvwNgA=/fit-in/200x150/filters:strip_icc()/pic6498928.jpg",
+          "year_published": 2021,
+          "bayes_rating": 6.543
+        },
+        {
+          "bgg_id": null,
+          "name": "Unlock! Kids: Detektivgeschichten (Unlock! Kids: Detective Stories)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": 406315,
+          "name": "Dorfromantik",
+          "image": "https://cf.geekdo-images.com/fJQIwxJgtLlM0MiM-QwSLg__original/img/xTyoySFSix-RJZwyBwOceyAyQLs=/0x0/filters:format(jpeg)/pic8020250.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/fJQIwxJgtLlM0MiM-QwSLg__small/img/qxyR1EMSpFvNSRKjk25p-rBnCJ8=/fit-in/200x150/filters:strip_icc()/pic8020250.jpg",
+          "year_published": 2023,
+          "bayes_rating": 5.527
+        },
+        {
+          "bgg_id": null,
+          "name": "Unlock! Game Adventures and Unlock! Kids: Detective Stories",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        }
+      ],
+      "recommended": []
+    },
+    {
+      "program": "Kinderspiel des Jahres",
+      "year": 2022,
+      "winners": [
+        {
+          "bgg_id": 295947,
+          "name": "Cascadia",
+          "image": "https://cf.geekdo-images.com/MjeJZfulbsM1DSV3DrGJYA__original/img/B374C04Eip7fmQBGJzgiOTp-jyQ=/0x0/filters:format(jpeg)/pic5100691.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/MjeJZfulbsM1DSV3DrGJYA__small/img/tVSFjSxYEcw7sKj3unIIQV8kxoc=/fit-in/200x150/filters:strip_icc()/pic5100691.jpg",
+          "year_published": 2021,
+          "bayes_rating": 7.734
+        },
+        {
+          "bgg_id": 328479,
+          "name": "Living Forest",
+          "image": "https://cf.geekdo-images.com/fPhdfZX9UTLr4-SVgK0zoQ__original/img/ZPdxDPt1jSRQMNnVgn-qIPhNv0E=/0x0/filters:format(jpeg)/pic5899025.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/fPhdfZX9UTLr4-SVgK0zoQ__small/img/v8irnVxaCdK29XPtqEbtlKkLY4c=/fit-in/200x150/filters:strip_icc()/pic5899025.jpg",
+          "year_published": 2021,
+          "bayes_rating": 6.795
+        },
+        {
+          "bgg_id": null,
+          "name": "Zauberberg (Magic Mountain)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        }
+      ],
+      "nominees": [
+        {
+          "bgg_id": 26681,
+          "name": "Scout",
+          "image": "https://cf.geekdo-images.com/bpbkU9dPYc100p15Su36_g__original/img/b1qnKpDHO8IZFxg4Embw5o0m_WQ=/0x0/filters:format(jpeg)/pic200411.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/bpbkU9dPYc100p15Su36_g__small/img/LVogRviWw8cfogWcE0yJoOY05yg=/fit-in/200x150/filters:strip_icc()/pic200411.jpg",
+          "year_published": 1985,
+          "bayes_rating": 0.0
+        },
+        {
+          "bgg_id": 300905,
+          "name": "Top Ten",
+          "image": "https://cf.geekdo-images.com/0LVOOyXtNNyFhyj7tFaKCQ__original/img/P8h6npX36CQrxXua-8UWYocpc44=/0x0/filters:format(jpeg)/pic5212719.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/0LVOOyXtNNyFhyj7tFaKCQ__small/img/a-klyIgrojswCIe3KKOmJrCOgOw=/fit-in/200x150/filters:strip_icc()/pic5212719.jpg",
+          "year_published": 2020,
+          "bayes_rating": 6.773
+        },
+        {
+          "bgg_id": 246784,
+          "name": "Cryptid",
+          "image": "https://cf.geekdo-images.com/qrPLpAnhFgc470ZRuXlvbg__original/img/QenUCVaFRry4-wlimHmeLn226Bo=/0x0/filters:format(jpeg)/pic4037705.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/qrPLpAnhFgc470ZRuXlvbg__small/img/ZFL0o-lhnuWE21Sa9YS8qi8ayGU=/fit-in/200x150/filters:strip_icc()/pic4037705.jpg",
+          "year_published": 2018,
+          "bayes_rating": 7.161
+        },
+        {
+          "bgg_id": 316554,
+          "name": "Dune: Imperium",
+          "image": "https://cf.geekdo-images.com/PhjygpWSo-0labGrPBMyyg__original/img/mZzaBAEEJpMlHWWmC0R6Su0OibQ=/0x0/filters:format(jpeg)/pic5666597.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/PhjygpWSo-0labGrPBMyyg__small/img/JGgY-nBmkyB8WRp8vcoBLlNMQ5U=/fit-in/200x150/filters:strip_icc()/pic5666597.jpg",
+          "year_published": 2020,
+          "bayes_rating": 8.222
+        },
+        {
+          "bgg_id": null,
+          "name": "Auch schon clever (Ganz Schön Clever Kids)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": null,
+          "name": "Mit Quacks & Co. nach Quedlinburg (Quacks & Co. Quedlinburg Dash)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": null,
+          "name": "Zauberberg (English title: Magic Mountain)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        }
+      ],
+      "recommended": []
+    },
+    {
+      "program": "Kinderspiel des Jahres",
+      "year": 2021,
+      "winners": [
+        {
+          "bgg_id": 318977,
+          "name": "MicroMacro: Crime City",
+          "image": "https://cf.geekdo-images.com/bLL3P-G25nIUkFjHxfJfnw__original/img/HBEhgjfb0QcF9pFrdJ8VYhBapoU=/0x0/filters:format(jpeg)/pic7632081.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/bLL3P-G25nIUkFjHxfJfnw__small/img/XY_Z5rRJe3IPLRfOvWp70OM2B68=/fit-in/200x150/filters:strip_icc()/pic7632081.jpg",
+          "year_published": 2020,
+          "bayes_rating": 7.212
+        },
+        {
+          "bgg_id": 38865,
+          "name": "Paleo",
+          "image": "https://cf.geekdo-images.com/wBWTzu8t1yXDwbE54NxCog__original/img/S3rpXPwc_04EQjVcvlwYr464Ne8=/0x0/filters:format(jpeg)/pic381660.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/wBWTzu8t1yXDwbE54NxCog__small/img/4m6fjksMLakDo9MTyF6myWVv5yk=/fit-in/200x150/filters:strip_icc()/pic381660.jpg",
+          "year_published": 2008,
+          "bayes_rating": 5.515
+        },
+        {
+          "bgg_id": 300010,
+          "name": "Dragomino",
+          "image": "https://cf.geekdo-images.com/S_Cpk3j3Z3ceNJBPNg4l7w__original/img/2g1g35Rp3u1tF_8fX3YLpmjIPj8=/0x0/filters:format(png)/pic5212561.png",
+          "thumbnail": "https://cf.geekdo-images.com/S_Cpk3j3Z3ceNJBPNg4l7w__small/img/yyYrzwIVoBwTJ0U3TI6oZWvkgS0=/fit-in/200x150/filters:strip_icc()/pic5212561.png",
+          "year_published": 2020,
+          "bayes_rating": 6.342
+        }
+      ],
+      "nominees": [
+        {
+          "bgg_id": null,
+          "name": "Die Abenteuer des Robin Hood (The Adventures of Robin Hood)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": 310448,
+          "name": "Zombie Teenz Evolution",
+          "image": "https://cf.geekdo-images.com/elS-EEtVF92Vk-YBqnJKeA__original/img/Zr5Q4VUehMBvib7M48FyaAa9Gss=/0x0/filters:format(png)/pic5733331.png",
+          "thumbnail": "https://cf.geekdo-images.com/elS-EEtVF92Vk-YBqnJKeA__small/img/ZWbcOy6SjMcwsmeYe7Y42Nfk174=/fit-in/200x150/filters:strip_icc()/pic5733331.png",
+          "year_published": 2020,
+          "bayes_rating": 6.529
+        },
+        {
+          "bgg_id": null,
+          "name": "Die verlorenen Ruinen von Arnak (Lost Ruins of Arnak)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": null,
+          "name": "Fantastische Reiche (Fantasy Realms)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": null,
+          "name": "Fabelwelten (Storytailors)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": 302417,
+          "name": "Mia London",
+          "image": "https://cf.geekdo-images.com/vUeJ2wQ5WHvf4cTTNvhdpw__original/img/nYdRzOWicUPnt6zAFAGRYXxOR38=/0x0/filters:format(png)/pic5241229.png",
+          "thumbnail": "https://cf.geekdo-images.com/vUeJ2wQ5WHvf4cTTNvhdpw__small/img/0x_fpGjdVBFOl29s_1qhsou0FxA=/fit-in/200x150/filters:strip_icc()/pic5241229.png",
+          "year_published": 2020,
+          "bayes_rating": 5.559
+        }
+      ],
+      "recommended": []
+    },
+    {
+      "program": "Kinderspiel des Jahres",
+      "year": 2020,
+      "winners": [
+        {
+          "bgg_id": 98026,
+          "name": "Pictures",
+          "image": "https://cf.geekdo-images.com/2ksVi_M5sLws57Y5dmZVOA__original/img/dw5rRxZSW8vk-9Sb-rIOEaBbj24=/0x0/filters:format(jpeg)/pic991829.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/2ksVi_M5sLws57Y5dmZVOA__small/img/Ytcky0xrJF3bHzfIWmhZolI97RQ=/fit-in/200x150/filters:strip_icc()/pic991829.jpg",
+          "year_published": 1994,
+          "bayes_rating": 0.0
+        },
+        {
+          "bgg_id": null,
+          "name": "Die Crew: Reist gemeinsam zum 9. Planeten (The Crew: The Quest for Planet Nine)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": null,
+          "name": "Speedy Roll (Hedgehog Roll)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        }
+      ],
+      "nominees": [
+        {
+          "bgg_id": 36453,
+          "name": "My City",
+          "image": "https://cf.geekdo-images.com/uBrFgbfCr5sRCImlNGknYQ__original/img/o6TiSxBIUuWrAbLl7ro6g4ENTzQ=/0x0/filters:format(jpeg)/pic331936.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/uBrFgbfCr5sRCImlNGknYQ__small/img/Kjd1rE64PSFVVPXMGy0gGQ6466I=/fit-in/200x150/filters:strip_icc()/pic331936.jpg",
+          "year_published": 2007,
+          "bayes_rating": 0.0
+        },
+        {
+          "bgg_id": 284435,
+          "name": "Nova Luna",
+          "image": "https://cf.geekdo-images.com/k8OZeKYMN2vVSVCl5FD-UA__original/img/XiytG0d5nHtdoN4Kq3pCM6VcSac=/0x0/filters:format(jpeg)/pic5382418.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/k8OZeKYMN2vVSVCl5FD-UA__small/img/lRMeiFcB9C3ivyZlCoPRQe5xKNU=/fit-in/200x150/filters:strip_icc()/pic5382418.jpg",
+          "year_published": 2019,
+          "bayes_rating": 6.891
+        },
+        {
+          "bgg_id": null,
+          "name": "Der Kartograph (Cartographers)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": 245655,
+          "name": "The King's Dilemma",
+          "image": "https://cf.geekdo-images.com/FJlTdSMkK5hMNtCympJFmg__original/img/pr_jKPa74JjBBm30Mo9Uj9Jq1-w=/0x0/filters:format(jpeg)/pic5429837.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/FJlTdSMkK5hMNtCympJFmg__small/img/WqPUfQOfiIe5FnBXz-EAavw5jCs=/fit-in/200x150/filters:strip_icc()/pic5429837.jpg",
+          "year_published": 2019,
+          "bayes_rating": 7.094
+        },
+        {
+          "bgg_id": 291550,
+          "name": "Foto Fish",
+          "image": "https://cf.geekdo-images.com/2Kd_Ja9x5SBwV4XqR3Q2GA__original/img/OH7VIaBapzzpXU9pXxnEsU2PaeI=/0x0/filters:format(jpeg)/pic5476706.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/2Kd_Ja9x5SBwV4XqR3Q2GA__small/img/uBMkcmlswzJebqsRuGpDswikyoI=/fit-in/200x150/filters:strip_icc()/pic5476706.jpg",
+          "year_published": 2020,
+          "bayes_rating": 5.53
+        },
+        {
+          "bgg_id": null,
+          "name": "Wir sind die Roboter (Robots)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": 284083,
+          "name": "The Crew: The Quest for Planet Nine",
+          "image": "https://cf.geekdo-images.com/98LnQShydr11OBKS46xY-Q__original/img/Q-ZkgnuBu9OTBr7J3qnqPjqamAE=/0x0/filters:format(jpeg)/pic5687013.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/98LnQShydr11OBKS46xY-Q__small/img/et-fnuozyOdBOVL-5kSS3_7I8fw=/fit-in/200x150/filters:strip_icc()/pic5687013.jpg",
+          "year_published": 2019,
+          "bayes_rating": 7.615
+        },
+        {
+          "bgg_id": null,
+          "name": "Speedy Roll (Alternate title: Hedgehog Roll)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        }
+      ],
+      "recommended": []
+    },
+    {
+      "program": "Kinderspiel des Jahres",
+      "year": 2019,
+      "winners": [
+        {
+          "bgg_id": 254640,
+          "name": "Just One",
+          "image": "https://cf.geekdo-images.com/74haNunMBn85beBi-yIKwA__original/img/hA22qL6nZxchA8FMTIfhLMcI53I=/0x0/filters:format(png)/pic8669313.png",
+          "thumbnail": "https://cf.geekdo-images.com/74haNunMBn85beBi-yIKwA__small/img/feIV-gqMeza43ycvxh6PGx4lA_w=/fit-in/200x150/filters:strip_icc()/pic8669313.png",
+          "year_published": 2018,
+          "bayes_rating": 7.437
+        },
+        {
+          "bgg_id": null,
+          "name": "Flügelschlag (Wingspan)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": null,
+          "name": "Tal der Wikinger (Valley of the Vikings)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        }
+      ],
+      "nominees": [
+        {
+          "bgg_id": 325853,
+          "name": "L.A.M.A. (L.L.A.M.A.)",
+          "image": "https://cf.geekdo-images.com/HyuiLSbeKn_aap3kIa4mNA__original/img/oNMAhXR0BK-lIG4-8BOiEa6EDCk=/0x0/filters:format(jpeg)/pic6937668.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/HyuiLSbeKn_aap3kIa4mNA__small/img/B4lERqIjRLz-KWPZvOHZEWgMO8k=/fit-in/200x150/filters:strip_icc()/pic6937668.jpg",
+          "year_published": 2021,
+          "bayes_rating": 5.95
+        },
+        {
+          "bgg_id": null,
+          "name": "Werwörter (Werewords)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": 245934,
+          "name": "Carpe Diem",
+          "image": "https://cf.geekdo-images.com/fsjopscDFCVArzU7fzhVxA__original/img/JJXwLsCeWj_8FOurLToKpdQuvpc=/0x0/filters:format(jpeg)/pic6183704.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/fsjopscDFCVArzU7fzhVxA__small/img/6Yu-lVdkDTrICD1y5ZqNmzHZEsc=/fit-in/200x150/filters:strip_icc()/pic6183704.jpg",
+          "year_published": 2018,
+          "bayes_rating": 7.048
+        },
+        {
+          "bgg_id": null,
+          "name": "Detective: Ein Krimi-Brettspiel (Detective: A Modern Crime Board Game)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": 264295,
+          "name": "Fabulantica",
+          "image": "https://cf.geekdo-images.com/Y8rIsYKqGUhXcpkAO-EI8w__original/img/xjmzZ38YiVstr22-dMw8B2J45WA=/0x0/filters:format(jpeg)/pic4959947.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/Y8rIsYKqGUhXcpkAO-EI8w__small/img/5mYCCSG2Ynalc6HNxHHlYEBDzyQ=/fit-in/200x150/filters:strip_icc()/pic4959947.jpg",
+          "year_published": 2018,
+          "bayes_rating": 5.598
+        },
+        {
+          "bgg_id": 270140,
+          "name": "Go Gecko Go!",
+          "image": "https://cf.geekdo-images.com/Mkj4bNlFxfHq0gnIoCjEEA__original/img/Hnf1bp1UvGNMdTTVwQF79-hNVgk=/0x0/filters:format(jpeg)/pic4535117.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/Mkj4bNlFxfHq0gnIoCjEEA__small/img/5whc3LC2uOo-oUdN8i4Ew0B1Vzg=/fit-in/200x150/filters:strip_icc()/pic4535117.jpg",
+          "year_published": 2019,
+          "bayes_rating": 5.55
+        },
+        {
+          "bgg_id": 266192,
+          "name": "Wingspan",
+          "image": "https://cf.geekdo-images.com/yLZJCVLlIx4c7eJEWUNJ7w__original/img/cI782Zis9cT66j2MjSHKJGnFPNw=/0x0/filters:format(jpeg)/pic4458123.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/yLZJCVLlIx4c7eJEWUNJ7w__small/img/VNToqgS2-pOGU6MuvIkMPKn_y-s=/fit-in/200x150/filters:strip_icc()/pic4458123.jpg",
+          "year_published": 2019,
+          "bayes_rating": 7.845
+        },
+        {
+          "bgg_id": null,
+          "name": "Tal der Wikinger (English title: Valley of the Vikings)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        }
+      ],
+      "recommended": []
+    },
+    {
+      "program": "Kinderspiel des Jahres",
+      "year": 2018,
+      "winners": [
+        {
+          "bgg_id": 230802,
+          "name": "Azul",
+          "image": "https://cf.geekdo-images.com/aPSHJO0d0XOpQR5X-wJonw__original/img/AkbtYVc6xXJF3c9EUrakklcclKw=/0x0/filters:format(png)/pic6973671.png",
+          "thumbnail": "https://cf.geekdo-images.com/aPSHJO0d0XOpQR5X-wJonw__small/img/ccsXKrdGJw-YSClWwzVUwk5Nh9Y=/fit-in/200x150/filters:strip_icc()/pic6973671.png",
+          "year_published": 2017,
+          "bayes_rating": 7.605
+        },
+        {
+          "bgg_id": null,
+          "name": "Die Quacksalber von Quedlinburg (The Quacks of Quedlinburg)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": null,
+          "name": "Funkelschatz (Dragon's Breath)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        }
+      ],
+      "nominees": [
+        {
+          "bgg_id": 1205,
+          "name": "Luxor",
+          "image": "https://cf.geekdo-images.com/PbDFaQebBo7Ygb2yVZtetw__original/img/CvRHdoCTw03-RNJ6haBdF-_fPvQ=/0x0/filters:format(jpeg)/pic172278.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/PbDFaQebBo7Ygb2yVZtetw__small/img/77rbu47ebW9WRFy-pCZ5nUdUW2I=/fit-in/200x150/filters:strip_icc()/pic172278.jpg",
+          "year_published": 2001,
+          "bayes_rating": 5.572
+        },
+        {
+          "bgg_id": 244992,
+          "name": "The Mind",
+          "image": "https://cf.geekdo-images.com/q_JGK291hrhnhiRB0667oA__original/img/8VjZEG278faO9JZwzce3v3EKssI=/0x0/filters:format(png)/pic3979766.png",
+          "thumbnail": "https://cf.geekdo-images.com/q_JGK291hrhnhiRB0667oA__small/img/PUrzEmTo5kOcK5BOb4cbOOcH86I=/fit-in/200x150/filters:strip_icc()/pic3979766.png",
+          "year_published": 2018,
+          "bayes_rating": 6.591
+        },
+        {
+          "bgg_id": 244522,
+          "name": "Ganz Schön Clever",
+          "image": "https://cf.geekdo-images.com/u1EZSUC5n8k4g4OFPkn3ow__original/img/e4QJiofBkd18ZffIURPyqNWrhxk=/0x0/filters:format(jpeg)/pic8014078.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/u1EZSUC5n8k4g4OFPkn3ow__small/img/mOfaidSnvnq2gHEQuAsYTLyIQQQ=/fit-in/200x150/filters:strip_icc()/pic8014078.jpg",
+          "year_published": 2018,
+          "bayes_rating": 7.36
+        },
+        {
+          "bgg_id": 227789,
+          "name": "Heaven & Ale",
+          "image": "https://cf.geekdo-images.com/P0B68R2CLFTuiD8M9lCYPQ__original/img/3tMVOxYhmuL3fpqW2256qUXqWxE=/0x0/filters:format(jpeg)/pic3563904.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/P0B68R2CLFTuiD8M9lCYPQ__small/img/1Omy3H6zspL0HKrUjgdolrGxmwk=/fit-in/200x150/filters:strip_icc()/pic3563904.jpg",
+          "year_published": 2017,
+          "bayes_rating": 7.098
+        },
+        {
+          "bgg_id": 192283,
+          "name": "Emojito!",
+          "image": "https://cf.geekdo-images.com/vS_kW-sA3ucX0_l8rjiR-Q__original/img/YoVF-FmQovJBZy88MQGGGeWd7ok=/0x0/filters:format(jpeg)/pic3196017.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/vS_kW-sA3ucX0_l8rjiR-Q__small/img/-83eFWueuzRljOcwZYyYMGOr5Fo=/fit-in/200x150/filters:strip_icc()/pic3196017.jpg",
+          "year_published": 2016,
+          "bayes_rating": 5.518
+        },
+        {
+          "bgg_id": 232045,
+          "name": "Panic Mansion",
+          "image": "https://cf.geekdo-images.com/JMRNKUsXPMbIZAuCh3PPtQ__original/img/iveN-yZCLz3B8vhL5Ipw1O6-xKU=/0x0/filters:format(jpeg)/pic3915286.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/JMRNKUsXPMbIZAuCh3PPtQ__small/img/6mR--R_aSWsfVtRz2dqRmeoR3_w=/fit-in/200x150/filters:strip_icc()/pic3915286.jpg",
+          "year_published": 2017,
+          "bayes_rating": 5.684
+        },
+        {
+          "bgg_id": 221107,
+          "name": "Pandemic Legacy: Season 2",
+          "image": "https://cf.geekdo-images.com/Qtkb-UTvHa0-kxt_MK1nKw__original/img/wJiRr7lBmWSKcRS3lPpvKIPMgQQ=/0x0/filters:format(jpeg)/pic3763549.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/Qtkb-UTvHa0-kxt_MK1nKw__small/img/MfKsnJUTx9IQV-o12Fahxx5IaDQ=/fit-in/200x150/filters:strip_icc()/pic3763549.jpg",
+          "year_published": 2017,
+          "bayes_rating": 7.688
+        },
+        {
+          "bgg_id": 244521,
+          "name": "The Quacks of Quedlinburg",
+          "image": "https://cf.geekdo-images.com/B1bLRWzTASZ-xx9NoAE79A__original/img/HulJk6gFzp_bxl0wzc2XEMq8NLM=/0x0/filters:format(png)/pic8780293.png",
+          "thumbnail": "https://cf.geekdo-images.com/B1bLRWzTASZ-xx9NoAE79A__small/img/deG3pr-ORZ3JrGvQA-oQNrwh0l0=/fit-in/200x150/filters:strip_icc()/pic8780293.png",
+          "year_published": 2018,
+          "bayes_rating": 7.667
+        },
+        {
+          "bgg_id": null,
+          "name": "Funkelschatz (English title: Dragon's Breath)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        }
+      ],
+      "recommended": []
+    },
+    {
+      "program": "Spiel des Jahres",
+      "year": 2025,
+      "winners": [
+        {
+          "bgg_id": 413246,
+          "name": "Bomb Busters",
+          "image": "https://cf.geekdo-images.com/HpGXIlt5i6T-0jbiQRReOg__original/img/2uApg8IOYjNVSzbUIwJUa-Z8eL8=/0x0/filters:format(png)/pic8303080.png",
+          "thumbnail": "https://cf.geekdo-images.com/HpGXIlt5i6T-0jbiQRReOg__small/img/8wfQelnNsbXCykJWMjD8UAjhleU=/fit-in/200x150/filters:strip_icc()/pic8303080.png",
+          "year_published": 2024,
+          "bayes_rating": 7.622
+        },
+        {
+          "bgg_id": null,
+          "name": "Endeavor: Die Tiefsee (Deep Sea)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": 330653,
+          "name": "Top the cake",
+          "image": "https://cf.geekdo-images.com/wFwQ-MEGf6BLIyV77hQvHQ__original/img/jGDJHygR3da__4gT0pMzKAD1SQU=/0x0/filters:format(png)/pic5982841.png",
+          "thumbnail": "https://cf.geekdo-images.com/wFwQ-MEGf6BLIyV77hQvHQ__small/img/hBn-T03NV6qYDYiaUMfP5-dJdz8=/fit-in/200x150/filters:strip_icc()/pic5982841.png",
+          "year_published": 2021,
+          "bayes_rating": 0.0
+        }
+      ],
+      "nominees": [
+        {
+          "bgg_id": 420087,
+          "name": "Flip 7",
+          "image": "https://cf.geekdo-images.com/YrQxEB9Ef0kQorRApzG5vQ__original/img/hK6k-x_GYfooemrkkRuF0bTvKxE=/0x0/filters:format(jpeg)/pic8780246.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/YrQxEB9Ef0kQorRApzG5vQ__small/img/_dNNsSelyw9qUEOIXBRt6PE_1us=/fit-in/200x150/filters:strip_icc()/pic8780246.jpg",
+          "year_published": 2024,
+          "bayes_rating": 6.989
+        },
+        {
+          "bgg_id": 419639,
+          "name": "Krakel Orakel",
+          "image": "https://cf.geekdo-images.com/iSXZ4NR52el43WXTTnUgOA__original/img/8XZHQjDO_r6cRgf3LRPdGbK7Ps8=/0x0/filters:format(png)/pic9435212.png",
+          "thumbnail": "https://cf.geekdo-images.com/iSXZ4NR52el43WXTTnUgOA__small/img/oF5fAgqX4CVYrAXTK_7GdNJQ9D0=/fit-in/200x150/filters:strip_icc()/pic9435212.png",
+          "year_published": 2024,
+          "bayes_rating": 6.086
+        },
+        {
+          "bgg_id": 168949,
+          "name": "Faraway",
+          "image": "https://cf.geekdo-images.com/dqDwx05r7Hgc66Hda2JKvA__original/img/v8E1dpB3wnUh1xHkktC_-LuWB0g=/0x0/filters:format(png)/pic2532802.png",
+          "thumbnail": "https://cf.geekdo-images.com/dqDwx05r7Hgc66Hda2JKvA__small/img/dhW-NZGjA6lgWBLhQO-Nr9K7fro=/fit-in/200x150/filters:strip_icc()/pic2532802.png",
+          "year_published": 2016,
+          "bayes_rating": 0.0
+        },
+        {
+          "bgg_id": null,
+          "name": "Neuland (Looot)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": 433007,
+          "name": "Cascadia Junior",
+          "image": "https://cf.geekdo-images.com/U-azZcnB7jLSIfiIbCRj2w__original/img/ZUyw28V-m3_yf0qoH1BO-7jyrwM=/0x0/filters:format(jpeg)/pic8542666.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/U-azZcnB7jLSIfiIbCRj2w__small/img/IQmtOlwviHL6LFDGtg3L2Jbb0z4=/fit-in/200x150/filters:strip_icc()/pic8542666.jpg",
+          "year_published": 2025,
+          "bayes_rating": 5.705
+        },
+        {
+          "bgg_id": null,
+          "name": "The Mice Gang (Le Clan des Souris)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": 367966,
+          "name": "Endeavor: Deep Sea",
+          "image": "https://cf.geekdo-images.com/wIbevITv9W79ELP8rEZoKA__original/img/41fYEG_IYb9ECcCO24Dk4dZUNT0=/0x0/filters:format(jpeg)/pic6996584.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/wIbevITv9W79ELP8rEZoKA__small/img/7_DqsUgdrpbeLfkA2ko8bXhgpGw=/fit-in/200x150/filters:strip_icc()/pic6996584.jpg",
+          "year_published": 2024,
+          "bayes_rating": 7.675
+        },
+        {
+          "bgg_id": null,
+          "name": "Topp die Torte! (English title: Top the Cake!)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        }
+      ],
+      "recommended": []
+    },
+    {
+      "program": "Spiel des Jahres",
+      "year": 2024,
+      "winners": [
+        {
+          "bgg_id": 373106,
+          "name": "Sky Team",
+          "image": "https://cf.geekdo-images.com/uXMeQzNenHb3zK7Hoa6b2w__original/img/mWOQnkpyYBorh_Y1-0Y2o-ew17k=/0x0/filters:format(jpeg)/pic7398904.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/uXMeQzNenHb3zK7Hoa6b2w__small/img/WyPClajMWU9lV5BdCXiZnqdZgmU=/fit-in/200x150/filters:strip_icc()/pic7398904.jpg",
+          "year_published": 2023,
+          "bayes_rating": 7.889
+        },
+        {
+          "bgg_id": null,
+          "name": "e-Mission (Daybreak)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": null,
+          "name": "Die magischen Schlüssel (Magic Keys)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        }
+      ],
+      "nominees": [
+        {
+          "bgg_id": null,
+          "name": "Auf den Wegen von Darwin (In the Footsteps of Darwin)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": 393325,
+          "name": "Captain Flip",
+          "image": "https://cf.geekdo-images.com/7vSkMR7exNsU7ZfRgJKodQ__original/img/CEF2zr_yUhqZrc0NP6NnBoXGGPc=/0x0/filters:format(png)/pic7784394.png",
+          "thumbnail": "https://cf.geekdo-images.com/7vSkMR7exNsU7ZfRgJKodQ__small/img/SzzzJKDO1wvj9YWfCg-mOnjC_lQ=/fit-in/200x150/filters:strip_icc()/pic7784394.png",
+          "year_published": 2024,
+          "bayes_rating": 6.713
+        },
+        {
+          "bgg_id": null,
+          "name": "Die Gilde der fahrenden Händler (The Guild of Merchant Explorers)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": null,
+          "name": "Zug um Zug Legacy: Legenden des Westens (Ticket to Ride Legacy: Legends of the West)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": 409498,
+          "name": "Große kleine Edelsteine",
+          "image": "https://cf.geekdo-images.com/dqtqtGBSD0zI48DrWZiH6A__original/img/LVckII57DBxV7Ka1aC0dyBDTahk=/0x0/filters:format(jpeg)/pic7917756.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/dqtqtGBSD0zI48DrWZiH6A__small/img/Qi0eWg69byhxeTnADRryP5wKfgM=/fit-in/200x150/filters:strip_icc()/pic7917756.jpg",
+          "year_published": 2024,
+          "bayes_rating": 5.55
+        },
+        {
+          "bgg_id": null,
+          "name": "Taco Katze Pizza Junior (Taco Kitten Pizza)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": 334986,
+          "name": "Daybreak",
+          "image": "https://cf.geekdo-images.com/YU8rm_FMnKHS2GPDFvLb6g__original/img/6umYavtw4Iw41gTtBZhNS7LrKIA=/0x0/filters:format(png)/pic7068528.png",
+          "thumbnail": "https://cf.geekdo-images.com/YU8rm_FMnKHS2GPDFvLb6g__small/img/7Y2W9IVJ3_YmOQfaoZz8XVPoUM0=/fit-in/200x150/filters:strip_icc()/pic7068528.png",
+          "year_published": 2023,
+          "bayes_rating": 7.057
+        },
+        {
+          "bgg_id": null,
+          "name": "Die magischen Schlüssel (English title: Magic Keys)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        }
+      ],
+      "recommended": []
+    },
+    {
+      "program": "Spiel des Jahres",
+      "year": 2023,
+      "winners": [
+        {
+          "bgg_id": null,
+          "name": "Dorfromantik: Das Brettspiel (Dorfromantik: The Board Game)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": 359970,
+          "name": "Challengers!",
+          "image": "https://cf.geekdo-images.com/GtLESZ4ZjqikK12bjBTmig__original/img/CHUtcmSXFs8LYKRHyUaeio2ra4U=/0x0/filters:format(jpeg)/pic7040521.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/GtLESZ4ZjqikK12bjBTmig__small/img/66Emb1wn1JD_5_9XdsYY2DgMVMA=/fit-in/200x150/filters:strip_icc()/pic7040521.jpg",
+          "year_published": 2022,
+          "bayes_rating": 6.675
+        },
+        {
+          "bgg_id": 367206,
+          "name": "Mysterium Kids",
+          "image": "https://cf.geekdo-images.com/3PLNZOg5ZEVf9u121faEbw__original/img/J_D8TkWJfM4xFoWdoEmKKpXANck=/0x0/filters:format(jpeg)/pic7075722.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/3PLNZOg5ZEVf9u121faEbw__small/img/cRxQAJfpp54chQduFPedHYn245Q=/fit-in/200x150/filters:strip_icc()/pic7075722.jpg",
+          "year_published": 2022,
+          "bayes_rating": 5.673
+        }
+      ],
+      "nominees": [
+        {
+          "bgg_id": 370164,
+          "name": "Fun Facts",
+          "image": "https://cf.geekdo-images.com/wkj9lur-J5Bxun09mnI2rQ__original/img/4qUgF74h0l6EMn-HPzGI4Nydszk=/0x0/filters:format(jpeg)/pic7070521.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/wkj9lur-J5Bxun09mnI2rQ__small/img/WD6rjSm3DZS3JD2Bb4EXM9fL5bk=/fit-in/200x150/filters:strip_icc()/pic7070521.jpg",
+          "year_published": 2022,
+          "bayes_rating": 6.367
+        },
+        {
+          "bgg_id": 353545,
+          "name": "Next Station London",
+          "image": "https://cf.geekdo-images.com/T-eq9Ux4gkmqfEXry8HC1w__original/img/FgPzhjwC0X0-6ZNLhowN8iccREA=/0x0/filters:format(jpeg)/pic9018430.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/T-eq9Ux4gkmqfEXry8HC1w__small/img/6OG1_bmI_3NkAeD-IT9dJnFHmmc=/fit-in/200x150/filters:strip_icc()/pic9018430.jpg",
+          "year_published": 2022,
+          "bayes_rating": 6.936
+        },
+        {
+          "bgg_id": 177478,
+          "name": "Iki",
+          "image": "https://cf.geekdo-images.com/ypE6HrTY1Xvpt1XCpKlMBw__original/img/G4-gFXe9tKgnkgJOFTVO2A-Wbm4=/0x0/filters:format(png)/pic5960068.png",
+          "thumbnail": "https://cf.geekdo-images.com/ypE6HrTY1Xvpt1XCpKlMBw__small/img/25aN_TPIrOU6S7_1V31lVwsr3iA=/fit-in/200x150/filters:strip_icc()/pic5960068.png",
+          "year_published": 2015,
+          "bayes_rating": 7.025
+        },
+        {
+          "bgg_id": 258779,
+          "name": "Planet Unknown",
+          "image": "https://cf.geekdo-images.com/3HkjDovk8Yr2wMumcSUGog__original/img/hl_WEzG4mKaEW_7qrZf-sPxXMpI=/0x0/filters:format(jpeg)/pic4843622.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/3HkjDovk8Yr2wMumcSUGog__small/img/4pF1oDpvn1VR3rbvW88xLK86xmA=/fit-in/200x150/filters:strip_icc()/pic4843622.jpg",
+          "year_published": 2022,
+          "bayes_rating": 7.414
+        },
+        {
+          "bgg_id": 351937,
+          "name": "Carla Caramel",
+          "image": "https://cf.geekdo-images.com/xqu4JwxRuLxL3yQAOXVpeA__original/img/YCc2gSIvYR5kUNN6RJgu2fJo8tw=/0x0/filters:format(jpeg)/pic6754887.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/xqu4JwxRuLxL3yQAOXVpeA__small/img/kobHsKrYWjG-mEyBC6twI8L73g4=/fit-in/200x150/filters:strip_icc()/pic6754887.jpg",
+          "year_published": 2022,
+          "bayes_rating": 5.533
+        },
+        {
+          "bgg_id": 170969,
+          "name": "Gigamon (Gigamons)",
+          "image": "https://cf.geekdo-images.com/Fhb5SUHL2-Y59CD9h9ElTw__original/img/Qcmx5hHDKp5DXIjfOxMDWI9yq58=/0x0/filters:format(jpeg)/pic3944242.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/Fhb5SUHL2-Y59CD9h9ElTw__small/img/GjCX_FqrVB0tE6WJ4RYhQTEML3A=/fit-in/200x150/filters:strip_icc()/pic3944242.jpg",
+          "year_published": 2014,
+          "bayes_rating": 5.664
+        },
+        {
+          "bgg_id": 350636,
+          "name": "Unlock! Game Adventures",
+          "image": "https://cf.geekdo-images.com/A6-wiP1KFOpTmNNAJ9kizQ__original/img/GlWrcmu24HFZbKqXt7-sFodOsus=/0x0/filters:format(jpeg)/pic6498928.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/A6-wiP1KFOpTmNNAJ9kizQ__small/img/A7fr1EN2RcO4cNRbV9kt-vvwNgA=/fit-in/200x150/filters:strip_icc()/pic6498928.jpg",
+          "year_published": 2021,
+          "bayes_rating": 6.543
+        },
+        {
+          "bgg_id": null,
+          "name": "Unlock! Kids: Detektivgeschichten (Unlock! Kids: Detective Stories)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": 406315,
+          "name": "Dorfromantik",
+          "image": "https://cf.geekdo-images.com/fJQIwxJgtLlM0MiM-QwSLg__original/img/xTyoySFSix-RJZwyBwOceyAyQLs=/0x0/filters:format(jpeg)/pic8020250.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/fJQIwxJgtLlM0MiM-QwSLg__small/img/qxyR1EMSpFvNSRKjk25p-rBnCJ8=/fit-in/200x150/filters:strip_icc()/pic8020250.jpg",
+          "year_published": 2023,
+          "bayes_rating": 5.527
+        },
+        {
+          "bgg_id": null,
+          "name": "Unlock! Game Adventures and Unlock! Kids: Detective Stories",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        }
+      ],
+      "recommended": []
+    },
+    {
+      "program": "Spiel des Jahres",
+      "year": 2022,
+      "winners": [
+        {
+          "bgg_id": 295947,
+          "name": "Cascadia",
+          "image": "https://cf.geekdo-images.com/MjeJZfulbsM1DSV3DrGJYA__original/img/B374C04Eip7fmQBGJzgiOTp-jyQ=/0x0/filters:format(jpeg)/pic5100691.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/MjeJZfulbsM1DSV3DrGJYA__small/img/tVSFjSxYEcw7sKj3unIIQV8kxoc=/fit-in/200x150/filters:strip_icc()/pic5100691.jpg",
+          "year_published": 2021,
+          "bayes_rating": 7.734
+        },
+        {
+          "bgg_id": 328479,
+          "name": "Living Forest",
+          "image": "https://cf.geekdo-images.com/fPhdfZX9UTLr4-SVgK0zoQ__original/img/ZPdxDPt1jSRQMNnVgn-qIPhNv0E=/0x0/filters:format(jpeg)/pic5899025.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/fPhdfZX9UTLr4-SVgK0zoQ__small/img/v8irnVxaCdK29XPtqEbtlKkLY4c=/fit-in/200x150/filters:strip_icc()/pic5899025.jpg",
+          "year_published": 2021,
+          "bayes_rating": 6.795
+        },
+        {
+          "bgg_id": null,
+          "name": "Zauberberg (Magic Mountain)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        }
+      ],
+      "nominees": [
+        {
+          "bgg_id": 26681,
+          "name": "Scout",
+          "image": "https://cf.geekdo-images.com/bpbkU9dPYc100p15Su36_g__original/img/b1qnKpDHO8IZFxg4Embw5o0m_WQ=/0x0/filters:format(jpeg)/pic200411.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/bpbkU9dPYc100p15Su36_g__small/img/LVogRviWw8cfogWcE0yJoOY05yg=/fit-in/200x150/filters:strip_icc()/pic200411.jpg",
+          "year_published": 1985,
+          "bayes_rating": 0.0
+        },
+        {
+          "bgg_id": 300905,
+          "name": "Top Ten",
+          "image": "https://cf.geekdo-images.com/0LVOOyXtNNyFhyj7tFaKCQ__original/img/P8h6npX36CQrxXua-8UWYocpc44=/0x0/filters:format(jpeg)/pic5212719.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/0LVOOyXtNNyFhyj7tFaKCQ__small/img/a-klyIgrojswCIe3KKOmJrCOgOw=/fit-in/200x150/filters:strip_icc()/pic5212719.jpg",
+          "year_published": 2020,
+          "bayes_rating": 6.773
+        },
+        {
+          "bgg_id": 246784,
+          "name": "Cryptid",
+          "image": "https://cf.geekdo-images.com/qrPLpAnhFgc470ZRuXlvbg__original/img/QenUCVaFRry4-wlimHmeLn226Bo=/0x0/filters:format(jpeg)/pic4037705.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/qrPLpAnhFgc470ZRuXlvbg__small/img/ZFL0o-lhnuWE21Sa9YS8qi8ayGU=/fit-in/200x150/filters:strip_icc()/pic4037705.jpg",
+          "year_published": 2018,
+          "bayes_rating": 7.161
+        },
+        {
+          "bgg_id": 316554,
+          "name": "Dune: Imperium",
+          "image": "https://cf.geekdo-images.com/PhjygpWSo-0labGrPBMyyg__original/img/mZzaBAEEJpMlHWWmC0R6Su0OibQ=/0x0/filters:format(jpeg)/pic5666597.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/PhjygpWSo-0labGrPBMyyg__small/img/JGgY-nBmkyB8WRp8vcoBLlNMQ5U=/fit-in/200x150/filters:strip_icc()/pic5666597.jpg",
+          "year_published": 2020,
+          "bayes_rating": 8.222
+        },
+        {
+          "bgg_id": null,
+          "name": "Auch schon clever (Ganz Schön Clever Kids)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": null,
+          "name": "Mit Quacks & Co. nach Quedlinburg (Quacks & Co. Quedlinburg Dash)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": null,
+          "name": "Zauberberg (English title: Magic Mountain)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        }
+      ],
+      "recommended": []
+    },
+    {
+      "program": "Spiel des Jahres",
+      "year": 2021,
+      "winners": [
+        {
+          "bgg_id": 318977,
+          "name": "MicroMacro: Crime City",
+          "image": "https://cf.geekdo-images.com/bLL3P-G25nIUkFjHxfJfnw__original/img/HBEhgjfb0QcF9pFrdJ8VYhBapoU=/0x0/filters:format(jpeg)/pic7632081.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/bLL3P-G25nIUkFjHxfJfnw__small/img/XY_Z5rRJe3IPLRfOvWp70OM2B68=/fit-in/200x150/filters:strip_icc()/pic7632081.jpg",
+          "year_published": 2020,
+          "bayes_rating": 7.212
+        },
+        {
+          "bgg_id": 38865,
+          "name": "Paleo",
+          "image": "https://cf.geekdo-images.com/wBWTzu8t1yXDwbE54NxCog__original/img/S3rpXPwc_04EQjVcvlwYr464Ne8=/0x0/filters:format(jpeg)/pic381660.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/wBWTzu8t1yXDwbE54NxCog__small/img/4m6fjksMLakDo9MTyF6myWVv5yk=/fit-in/200x150/filters:strip_icc()/pic381660.jpg",
+          "year_published": 2008,
+          "bayes_rating": 5.515
+        },
+        {
+          "bgg_id": 300010,
+          "name": "Dragomino",
+          "image": "https://cf.geekdo-images.com/S_Cpk3j3Z3ceNJBPNg4l7w__original/img/2g1g35Rp3u1tF_8fX3YLpmjIPj8=/0x0/filters:format(png)/pic5212561.png",
+          "thumbnail": "https://cf.geekdo-images.com/S_Cpk3j3Z3ceNJBPNg4l7w__small/img/yyYrzwIVoBwTJ0U3TI6oZWvkgS0=/fit-in/200x150/filters:strip_icc()/pic5212561.png",
+          "year_published": 2020,
+          "bayes_rating": 6.342
+        }
+      ],
+      "nominees": [
+        {
+          "bgg_id": null,
+          "name": "Die Abenteuer des Robin Hood (The Adventures of Robin Hood)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": 310448,
+          "name": "Zombie Teenz Evolution",
+          "image": "https://cf.geekdo-images.com/elS-EEtVF92Vk-YBqnJKeA__original/img/Zr5Q4VUehMBvib7M48FyaAa9Gss=/0x0/filters:format(png)/pic5733331.png",
+          "thumbnail": "https://cf.geekdo-images.com/elS-EEtVF92Vk-YBqnJKeA__small/img/ZWbcOy6SjMcwsmeYe7Y42Nfk174=/fit-in/200x150/filters:strip_icc()/pic5733331.png",
+          "year_published": 2020,
+          "bayes_rating": 6.529
+        },
+        {
+          "bgg_id": null,
+          "name": "Die verlorenen Ruinen von Arnak (Lost Ruins of Arnak)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": null,
+          "name": "Fantastische Reiche (Fantasy Realms)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": null,
+          "name": "Fabelwelten (Storytailors)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": 302417,
+          "name": "Mia London",
+          "image": "https://cf.geekdo-images.com/vUeJ2wQ5WHvf4cTTNvhdpw__original/img/nYdRzOWicUPnt6zAFAGRYXxOR38=/0x0/filters:format(png)/pic5241229.png",
+          "thumbnail": "https://cf.geekdo-images.com/vUeJ2wQ5WHvf4cTTNvhdpw__small/img/0x_fpGjdVBFOl29s_1qhsou0FxA=/fit-in/200x150/filters:strip_icc()/pic5241229.png",
+          "year_published": 2020,
+          "bayes_rating": 5.559
+        }
+      ],
+      "recommended": []
+    },
+    {
+      "program": "Spiel des Jahres",
+      "year": 2020,
+      "winners": [
+        {
+          "bgg_id": 98026,
+          "name": "Pictures",
+          "image": "https://cf.geekdo-images.com/2ksVi_M5sLws57Y5dmZVOA__original/img/dw5rRxZSW8vk-9Sb-rIOEaBbj24=/0x0/filters:format(jpeg)/pic991829.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/2ksVi_M5sLws57Y5dmZVOA__small/img/Ytcky0xrJF3bHzfIWmhZolI97RQ=/fit-in/200x150/filters:strip_icc()/pic991829.jpg",
+          "year_published": 1994,
+          "bayes_rating": 0.0
+        },
+        {
+          "bgg_id": null,
+          "name": "Die Crew: Reist gemeinsam zum 9. Planeten (The Crew: The Quest for Planet Nine)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": null,
+          "name": "Speedy Roll (Hedgehog Roll)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        }
+      ],
+      "nominees": [
+        {
+          "bgg_id": 36453,
+          "name": "My City",
+          "image": "https://cf.geekdo-images.com/uBrFgbfCr5sRCImlNGknYQ__original/img/o6TiSxBIUuWrAbLl7ro6g4ENTzQ=/0x0/filters:format(jpeg)/pic331936.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/uBrFgbfCr5sRCImlNGknYQ__small/img/Kjd1rE64PSFVVPXMGy0gGQ6466I=/fit-in/200x150/filters:strip_icc()/pic331936.jpg",
+          "year_published": 2007,
+          "bayes_rating": 0.0
+        },
+        {
+          "bgg_id": 284435,
+          "name": "Nova Luna",
+          "image": "https://cf.geekdo-images.com/k8OZeKYMN2vVSVCl5FD-UA__original/img/XiytG0d5nHtdoN4Kq3pCM6VcSac=/0x0/filters:format(jpeg)/pic5382418.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/k8OZeKYMN2vVSVCl5FD-UA__small/img/lRMeiFcB9C3ivyZlCoPRQe5xKNU=/fit-in/200x150/filters:strip_icc()/pic5382418.jpg",
+          "year_published": 2019,
+          "bayes_rating": 6.891
+        },
+        {
+          "bgg_id": null,
+          "name": "Der Kartograph (Cartographers)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": 245655,
+          "name": "The King's Dilemma",
+          "image": "https://cf.geekdo-images.com/FJlTdSMkK5hMNtCympJFmg__original/img/pr_jKPa74JjBBm30Mo9Uj9Jq1-w=/0x0/filters:format(jpeg)/pic5429837.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/FJlTdSMkK5hMNtCympJFmg__small/img/WqPUfQOfiIe5FnBXz-EAavw5jCs=/fit-in/200x150/filters:strip_icc()/pic5429837.jpg",
+          "year_published": 2019,
+          "bayes_rating": 7.094
+        },
+        {
+          "bgg_id": 291550,
+          "name": "Foto Fish",
+          "image": "https://cf.geekdo-images.com/2Kd_Ja9x5SBwV4XqR3Q2GA__original/img/OH7VIaBapzzpXU9pXxnEsU2PaeI=/0x0/filters:format(jpeg)/pic5476706.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/2Kd_Ja9x5SBwV4XqR3Q2GA__small/img/uBMkcmlswzJebqsRuGpDswikyoI=/fit-in/200x150/filters:strip_icc()/pic5476706.jpg",
+          "year_published": 2020,
+          "bayes_rating": 5.53
+        },
+        {
+          "bgg_id": null,
+          "name": "Wir sind die Roboter (Robots)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": 284083,
+          "name": "The Crew: The Quest for Planet Nine",
+          "image": "https://cf.geekdo-images.com/98LnQShydr11OBKS46xY-Q__original/img/Q-ZkgnuBu9OTBr7J3qnqPjqamAE=/0x0/filters:format(jpeg)/pic5687013.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/98LnQShydr11OBKS46xY-Q__small/img/et-fnuozyOdBOVL-5kSS3_7I8fw=/fit-in/200x150/filters:strip_icc()/pic5687013.jpg",
+          "year_published": 2019,
+          "bayes_rating": 7.615
+        },
+        {
+          "bgg_id": null,
+          "name": "Speedy Roll (Alternate title: Hedgehog Roll)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        }
+      ],
+      "recommended": []
+    },
+    {
+      "program": "Spiel des Jahres",
+      "year": 2019,
+      "winners": [
+        {
+          "bgg_id": 254640,
+          "name": "Just One",
+          "image": "https://cf.geekdo-images.com/74haNunMBn85beBi-yIKwA__original/img/hA22qL6nZxchA8FMTIfhLMcI53I=/0x0/filters:format(png)/pic8669313.png",
+          "thumbnail": "https://cf.geekdo-images.com/74haNunMBn85beBi-yIKwA__small/img/feIV-gqMeza43ycvxh6PGx4lA_w=/fit-in/200x150/filters:strip_icc()/pic8669313.png",
+          "year_published": 2018,
+          "bayes_rating": 7.437
+        },
+        {
+          "bgg_id": null,
+          "name": "Flügelschlag (Wingspan)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": null,
+          "name": "Tal der Wikinger (Valley of the Vikings)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        }
+      ],
+      "nominees": [
+        {
+          "bgg_id": 325853,
+          "name": "L.A.M.A. (L.L.A.M.A.)",
+          "image": "https://cf.geekdo-images.com/HyuiLSbeKn_aap3kIa4mNA__original/img/oNMAhXR0BK-lIG4-8BOiEa6EDCk=/0x0/filters:format(jpeg)/pic6937668.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/HyuiLSbeKn_aap3kIa4mNA__small/img/B4lERqIjRLz-KWPZvOHZEWgMO8k=/fit-in/200x150/filters:strip_icc()/pic6937668.jpg",
+          "year_published": 2021,
+          "bayes_rating": 5.95
+        },
+        {
+          "bgg_id": null,
+          "name": "Werwörter (Werewords)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": 245934,
+          "name": "Carpe Diem",
+          "image": "https://cf.geekdo-images.com/fsjopscDFCVArzU7fzhVxA__original/img/JJXwLsCeWj_8FOurLToKpdQuvpc=/0x0/filters:format(jpeg)/pic6183704.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/fsjopscDFCVArzU7fzhVxA__small/img/6Yu-lVdkDTrICD1y5ZqNmzHZEsc=/fit-in/200x150/filters:strip_icc()/pic6183704.jpg",
+          "year_published": 2018,
+          "bayes_rating": 7.048
+        },
+        {
+          "bgg_id": null,
+          "name": "Detective: Ein Krimi-Brettspiel (Detective: A Modern Crime Board Game)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": 264295,
+          "name": "Fabulantica",
+          "image": "https://cf.geekdo-images.com/Y8rIsYKqGUhXcpkAO-EI8w__original/img/xjmzZ38YiVstr22-dMw8B2J45WA=/0x0/filters:format(jpeg)/pic4959947.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/Y8rIsYKqGUhXcpkAO-EI8w__small/img/5mYCCSG2Ynalc6HNxHHlYEBDzyQ=/fit-in/200x150/filters:strip_icc()/pic4959947.jpg",
+          "year_published": 2018,
+          "bayes_rating": 5.598
+        },
+        {
+          "bgg_id": 270140,
+          "name": "Go Gecko Go!",
+          "image": "https://cf.geekdo-images.com/Mkj4bNlFxfHq0gnIoCjEEA__original/img/Hnf1bp1UvGNMdTTVwQF79-hNVgk=/0x0/filters:format(jpeg)/pic4535117.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/Mkj4bNlFxfHq0gnIoCjEEA__small/img/5whc3LC2uOo-oUdN8i4Ew0B1Vzg=/fit-in/200x150/filters:strip_icc()/pic4535117.jpg",
+          "year_published": 2019,
+          "bayes_rating": 5.55
+        },
+        {
+          "bgg_id": 266192,
+          "name": "Wingspan",
+          "image": "https://cf.geekdo-images.com/yLZJCVLlIx4c7eJEWUNJ7w__original/img/cI782Zis9cT66j2MjSHKJGnFPNw=/0x0/filters:format(jpeg)/pic4458123.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/yLZJCVLlIx4c7eJEWUNJ7w__small/img/VNToqgS2-pOGU6MuvIkMPKn_y-s=/fit-in/200x150/filters:strip_icc()/pic4458123.jpg",
+          "year_published": 2019,
+          "bayes_rating": 7.845
+        },
+        {
+          "bgg_id": null,
+          "name": "Tal der Wikinger (English title: Valley of the Vikings)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        }
+      ],
+      "recommended": []
+    },
+    {
+      "program": "Spiel des Jahres",
+      "year": 2018,
+      "winners": [
+        {
+          "bgg_id": 230802,
+          "name": "Azul",
+          "image": "https://cf.geekdo-images.com/aPSHJO0d0XOpQR5X-wJonw__original/img/AkbtYVc6xXJF3c9EUrakklcclKw=/0x0/filters:format(png)/pic6973671.png",
+          "thumbnail": "https://cf.geekdo-images.com/aPSHJO0d0XOpQR5X-wJonw__small/img/ccsXKrdGJw-YSClWwzVUwk5Nh9Y=/fit-in/200x150/filters:strip_icc()/pic6973671.png",
+          "year_published": 2017,
+          "bayes_rating": 7.605
+        },
+        {
+          "bgg_id": null,
+          "name": "Die Quacksalber von Quedlinburg (The Quacks of Quedlinburg)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": null,
+          "name": "Funkelschatz (Dragon's Breath)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        }
+      ],
+      "nominees": [
+        {
+          "bgg_id": 1205,
+          "name": "Luxor",
+          "image": "https://cf.geekdo-images.com/PbDFaQebBo7Ygb2yVZtetw__original/img/CvRHdoCTw03-RNJ6haBdF-_fPvQ=/0x0/filters:format(jpeg)/pic172278.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/PbDFaQebBo7Ygb2yVZtetw__small/img/77rbu47ebW9WRFy-pCZ5nUdUW2I=/fit-in/200x150/filters:strip_icc()/pic172278.jpg",
+          "year_published": 2001,
+          "bayes_rating": 5.572
+        },
+        {
+          "bgg_id": 244992,
+          "name": "The Mind",
+          "image": "https://cf.geekdo-images.com/q_JGK291hrhnhiRB0667oA__original/img/8VjZEG278faO9JZwzce3v3EKssI=/0x0/filters:format(png)/pic3979766.png",
+          "thumbnail": "https://cf.geekdo-images.com/q_JGK291hrhnhiRB0667oA__small/img/PUrzEmTo5kOcK5BOb4cbOOcH86I=/fit-in/200x150/filters:strip_icc()/pic3979766.png",
+          "year_published": 2018,
+          "bayes_rating": 6.591
+        },
+        {
+          "bgg_id": 244522,
+          "name": "Ganz Schön Clever",
+          "image": "https://cf.geekdo-images.com/u1EZSUC5n8k4g4OFPkn3ow__original/img/e4QJiofBkd18ZffIURPyqNWrhxk=/0x0/filters:format(jpeg)/pic8014078.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/u1EZSUC5n8k4g4OFPkn3ow__small/img/mOfaidSnvnq2gHEQuAsYTLyIQQQ=/fit-in/200x150/filters:strip_icc()/pic8014078.jpg",
+          "year_published": 2018,
+          "bayes_rating": 7.36
+        },
+        {
+          "bgg_id": 227789,
+          "name": "Heaven & Ale",
+          "image": "https://cf.geekdo-images.com/P0B68R2CLFTuiD8M9lCYPQ__original/img/3tMVOxYhmuL3fpqW2256qUXqWxE=/0x0/filters:format(jpeg)/pic3563904.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/P0B68R2CLFTuiD8M9lCYPQ__small/img/1Omy3H6zspL0HKrUjgdolrGxmwk=/fit-in/200x150/filters:strip_icc()/pic3563904.jpg",
+          "year_published": 2017,
+          "bayes_rating": 7.098
+        },
+        {
+          "bgg_id": 192283,
+          "name": "Emojito!",
+          "image": "https://cf.geekdo-images.com/vS_kW-sA3ucX0_l8rjiR-Q__original/img/YoVF-FmQovJBZy88MQGGGeWd7ok=/0x0/filters:format(jpeg)/pic3196017.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/vS_kW-sA3ucX0_l8rjiR-Q__small/img/-83eFWueuzRljOcwZYyYMGOr5Fo=/fit-in/200x150/filters:strip_icc()/pic3196017.jpg",
+          "year_published": 2016,
+          "bayes_rating": 5.518
+        },
+        {
+          "bgg_id": 232045,
+          "name": "Panic Mansion",
+          "image": "https://cf.geekdo-images.com/JMRNKUsXPMbIZAuCh3PPtQ__original/img/iveN-yZCLz3B8vhL5Ipw1O6-xKU=/0x0/filters:format(jpeg)/pic3915286.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/JMRNKUsXPMbIZAuCh3PPtQ__small/img/6mR--R_aSWsfVtRz2dqRmeoR3_w=/fit-in/200x150/filters:strip_icc()/pic3915286.jpg",
+          "year_published": 2017,
+          "bayes_rating": 5.684
+        },
+        {
+          "bgg_id": 221107,
+          "name": "Pandemic Legacy: Season 2",
+          "image": "https://cf.geekdo-images.com/Qtkb-UTvHa0-kxt_MK1nKw__original/img/wJiRr7lBmWSKcRS3lPpvKIPMgQQ=/0x0/filters:format(jpeg)/pic3763549.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/Qtkb-UTvHa0-kxt_MK1nKw__small/img/MfKsnJUTx9IQV-o12Fahxx5IaDQ=/fit-in/200x150/filters:strip_icc()/pic3763549.jpg",
+          "year_published": 2017,
+          "bayes_rating": 7.688
+        },
+        {
+          "bgg_id": 244521,
+          "name": "The Quacks of Quedlinburg",
+          "image": "https://cf.geekdo-images.com/B1bLRWzTASZ-xx9NoAE79A__original/img/HulJk6gFzp_bxl0wzc2XEMq8NLM=/0x0/filters:format(png)/pic8780293.png",
+          "thumbnail": "https://cf.geekdo-images.com/B1bLRWzTASZ-xx9NoAE79A__small/img/deG3pr-ORZ3JrGvQA-oQNrwh0l0=/fit-in/200x150/filters:strip_icc()/pic8780293.png",
+          "year_published": 2018,
+          "bayes_rating": 7.667
+        },
+        {
+          "bgg_id": null,
+          "name": "Funkelschatz (English title: Dragon's Breath)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        }
+      ],
+      "recommended": []
+    }
+  ]
+}

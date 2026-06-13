@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
   workflow_run:
-    workflows: ["Fetch BGG Collection", "Discover Explorer Candidates"]
+    workflows: ["Fetch BGG Collection", "Discover Explorer Candidates", "Refresh BGG Awards"]
     types: [completed]
     branches: [main]
 
