@@ -41,11 +41,12 @@ def _get(
     accept: str = "application/xml",
     ua: str = DEFAULT_UA,
 ) -> requests.Response | None:
-    """GET with retry + redirect following + BGG's 202-queued protocol."""
+    """GET with retry + redirect following + BGG's 202-queued + 429 backoff."""
     headers = {"User-Agent": ua, "Accept": accept}
     if bearer_token:
         headers["Authorization"] = f"Bearer {bearer_token}"
-    for _ in range(MAX_RETRIES):
+    backoff_429 = 15  # seconds, doubled on each 429
+    for attempt in range(MAX_RETRIES):
         try:
             resp = requests.get(
                 url, params=params, headers=headers,
@@ -58,6 +59,18 @@ def _get(
             return resp
         if resp.status_code == 202:
             time.sleep(RETRY_DELAY_SECONDS)
+            continue
+        if resp.status_code == 429:
+            # Honor Retry-After if present, else exponential backoff
+            ra = resp.headers.get("Retry-After", "")
+            try:
+                wait = int(ra) if ra.isdigit() else backoff_429
+            except Exception:
+                wait = backoff_429
+            print(f"  [explorer_sources] HTTP 429 from {url} — backing off {wait}s "
+                  f"(attempt {attempt + 1}/{MAX_RETRIES})")
+            time.sleep(wait)
+            backoff_429 = min(backoff_429 * 2, 120)
             continue
         print(f"  [explorer_sources] HTTP {resp.status_code} from {url}")
         return None

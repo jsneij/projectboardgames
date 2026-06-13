@@ -56,7 +56,8 @@ def _get_xml(url: str, params: dict, bearer_token: str) -> ET.Element | None:
         "Accept": "application/xml",
         "Authorization": f"Bearer {bearer_token}",
     }
-    for _ in range(MAX_RETRIES):
+    backoff_429 = 15
+    for attempt in range(MAX_RETRIES):
         try:
             resp = requests.get(url, params=params, headers=headers,
                                 timeout=HTTP_TIMEOUT, allow_redirects=True)
@@ -71,6 +72,17 @@ def _get_xml(url: str, params: dict, bearer_token: str) -> ET.Element | None:
                 return None
         if resp.status_code == 202:
             time.sleep(RETRY_DELAY_SECONDS)
+            continue
+        if resp.status_code == 429:
+            ra = resp.headers.get("Retry-After", "")
+            try:
+                wait = int(ra) if ra.isdigit() else backoff_429
+            except Exception:
+                wait = backoff_429
+            print(f"  [resolve] HTTP 429 for {params.get('query')!r} — backing off {wait}s "
+                  f"(attempt {attempt + 1}/{MAX_RETRIES})")
+            time.sleep(wait)
+            backoff_429 = min(backoff_429 * 2, 120)
             continue
         print(f"  [resolve] HTTP {resp.status_code} for {params.get('query')!r}")
         return None

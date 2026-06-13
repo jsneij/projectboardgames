@@ -63,7 +63,8 @@ def _get_thing_xml(ids_chunk: list[int], bearer_token: str) -> ET.Element | None
         "Authorization": f"Bearer {bearer_token}",
     }
     params = {"id": ",".join(str(i) for i in ids_chunk), "stats": "1"}
-    for _ in range(MAX_RETRIES):
+    backoff_429 = 30  # /thing batches are heavier — start at 30s
+    for attempt in range(MAX_RETRIES):
         try:
             resp = requests.get(f"{BGG_API_BASE}/thing", params=params,
                                 headers=headers, timeout=HTTP_TIMEOUT)
@@ -78,6 +79,16 @@ def _get_thing_xml(ids_chunk: list[int], bearer_token: str) -> ET.Element | None
                 return None
         if resp.status_code == 202:
             time.sleep(RETRY_DELAY_SECONDS)
+            continue
+        if resp.status_code == 429:
+            ra = resp.headers.get("Retry-After", "")
+            try:
+                wait = int(ra) if ra.isdigit() else backoff_429
+            except Exception:
+                wait = backoff_429
+            print(f"  [thing] HTTP 429 — backing off {wait}s (attempt {attempt + 1}/{MAX_RETRIES})")
+            time.sleep(wait)
+            backoff_429 = min(backoff_429 * 2, 240)
             continue
         print(f"  [thing] HTTP {resp.status_code}")
         return None
@@ -356,11 +367,18 @@ def main(argv: list[str] | None = None) -> int:
     print(f"  Remaining: {len(by_id)}")
 
     # ── 5. Split cache vs new ─────────────────────────────────────────────
+    # Treat _unavailable entries as new — they failed on a transient error
+    # (HTTP 429, network blip) and should be retried.
     print("\n[5/8] Cache lookup")
     cache = load_cache()
-    new_ids = [bid for bid in by_id if str(bid) not in cache]
-    cached_ids = [bid for bid in by_id if str(bid) in cache]
-    print(f"  Cached:  {len(cached_ids)}   New: {len(new_ids)}")
+    def _needs_rescore(bid):
+        c = cache.get(str(bid))
+        if c is None:
+            return True
+        return bool(c.get("_unavailable"))
+    new_ids = [bid for bid in by_id if _needs_rescore(bid)]
+    cached_ids = [bid for bid in by_id if not _needs_rescore(bid)]
+    print(f"  Cached:  {len(cached_ids)}   New/retry: {len(new_ids)}")
 
     # ── 6. Enrich the NEW ones via /thing ──────────────────────────────────
     new_things: dict[int, dict] = {}
