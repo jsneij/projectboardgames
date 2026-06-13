@@ -39,7 +39,8 @@ def repo(tmp_path: Path) -> Path:
         json.dumps(SAMPLE_SCORES, indent=2), encoding="utf-8"
     )
 
-    _run(["git", "init", "-q", "-b", "main"], cwd=work)
+    _run(["git", "init", "-q"], cwd=work)
+    _run(["git", "symbolic-ref", "HEAD", "refs/heads/main"], cwd=work)
     _run(["git", "config", "user.email", "test@example.com"], cwd=work)
     _run(["git", "config", "user.name", "Test"], cwd=work)
     _run(["git", "add", "."], cwd=work)
