@@ -1,135 +1,738 @@
 {
   "465819": {
     "bgg_id": 465819,
-    "_unavailable": true
+    "_solo": false,
+    "name": "Concordia: Special Edition"
   },
   "124361": {
     "bgg_id": 124361,
-    "_unavailable": true
+    "_solo": false,
+    "name": "Concordia"
   },
   "453281": {
     "bgg_id": 453281,
-    "_unavailable": true
+    "_solo": false,
+    "name": "Rattlesnake"
   },
   "469367": {
     "bgg_id": 469367,
-    "_unavailable": true
+    "_solo": false,
+    "name": "Altera"
   },
   "403150": {
     "bgg_id": 403150,
-    "_unavailable": true
+    "_solo": false,
+    "name": "World Order"
   },
   "454438": {
     "bgg_id": 454438,
-    "_unavailable": true
+    "_solo": false,
+    "name": "8 Dragons"
   },
   "436217": {
     "bgg_id": 436217,
-    "_unavailable": true
+    "name": "The Lord of the Rings: Fate of the Fellowship",
+    "year": 2025,
+    "image": "https://cf.geekdo-images.com/scw36iBIad7l-rGzxPGcGg__original/img/JZKAg-ETtE7z3YbgSMPd242rCqE=/0x0/filters:format(png)/pic8662670.png",
+    "thumbnail": "https://cf.geekdo-images.com/scw36iBIad7l-rGzxPGcGg__small/img/dyMBa6SBkPwpWfA4FINqbX8RNDQ=/fit-in/200x150/filters:strip_icc()/pic8662670.png",
+    "designers": [
+      "Matt Leacock"
+    ],
+    "weight": 3.09,
+    "bayes_rating": 7.668,
+    "min_players": 1,
+    "max_players": 5,
+    "M": 4,
+    "T": 5,
+    "G": 4,
+    "F": 2,
+    "Ar": 5,
+    "type": "co-op",
+    "mechs": [
+      "STR-02 Cooperative Games",
+      "STR-04 Solo Games",
+      "STR-08 Scenario/Mission/Campaign Games",
+      "TRN-01 Fixed Turn Order",
+      "ACT-01 Action Points",
+      "ACT-12 Variable Player Powers",
+      "ACT-18 Narrative Choice",
+      "RES-02 Stat Check",
+      "RES-05 Die Icons",
+      "VIC-07 Race",
+      "VIC-11 Completing Targets",
+      "UNC-02 Push-Your-Luck",
+      "UNC-07 Unknown Information",
+      "MOV-01 Tessellation",
+      "MOV-04 Movement Points",
+      "SET-05 Combo Abilities",
+      "CAR-08 Multi-Use Cards"
+    ],
+    "description": "Guide the Fellowship through Middle-earth's perils, where every choice echoes the weight of fate and the Ring's corruption.",
+    "justification": "M(4): Action points, variable powers, and multi-use cards create tactical depth. T(5): Every corruption track and heroic moment IS living Tolkien's epic. G(4): Narrative choices and fellowship management carry enormous thematic weight. F(2): Campaign setup and multiple systems add moderate overhead. Ar(5): Stunning Middle-earth artwork captures Jackson's cinematic vision perfectly.",
+    "GS": 78,
+    "IS": 195.0,
+    "feeling": "Total"
   },
   "425549": {
     "bgg_id": 425549,
-    "_unavailable": true
+    "name": "Moon Colony Bloodbath",
+    "year": 2025,
+    "image": "https://cf.geekdo-images.com/KDrRxEKQMmHyM0QQ2ONX4Q__original/img/XD-aeaMShk-TN_n0n6O9kbczxNY=/0x0/filters:format(jpeg)/pic8638247.jpg",
+    "thumbnail": "https://cf.geekdo-images.com/KDrRxEKQMmHyM0QQ2ONX4Q__small/img/EusjojuWYxwkxaP7eAnaBn1QzLg=/fit-in/200x150/filters:strip_icc()/pic8638247.jpg",
+    "designers": [
+      "Donald X. Vaccarino"
+    ],
+    "weight": 2.12,
+    "bayes_rating": 6.948,
+    "min_players": 1,
+    "max_players": 5,
+    "M": 4,
+    "T": 5,
+    "G": 4,
+    "F": 2,
+    "Ar": 4,
+    "type": "co-op",
+    "mechs": [
+      "STR-02 Cooperative Games",
+      "STR-04 Solo Games",
+      "STR-08 Scenario/Mission/Campaign Games",
+      "TRN-01 Fixed Turn Order",
+      "ACT-01 Action Points",
+      "ACT-12 Variable Player Powers",
+      "ACT-17 Events",
+      "RES-01 High Number",
+      "RES-05 Die Icons",
+      "UNC-02 Push-Your-Luck",
+      "UNC-07 Unknown Information",
+      "VIC-11 Completing Targets",
+      "VIC-15 Circuit Breaker/Sudden Death",
+      "MOV-01 Tessellation",
+      "MOV-04 Movement Points",
+      "SET-05 Combo Abilities"
+    ],
+    "description": "Survive the horrors lurking in a moon colony where oxygen runs low and something unspeakable stalks the corridors.",
+    "justification": "M(4): Action points with asymmetric powers and escalating scenario complexity. T(5): Oxygen depletion and stalking horror mechanics generate genuine dread. G(4): Every action point spent carries life-or-death consequences. F(2): Scenario setup and component management add moderate overhead. Ar(4): Atmospheric sci-fi horror aesthetic with strong thematic cohesion.",
+    "GS": 78,
+    "IS": 156.0,
+    "feeling": "Total"
   },
   "424981": {
     "bgg_id": 424981,
-    "_unavailable": true
+    "name": "Eternal Decks",
+    "year": 2025,
+    "image": "https://cf.geekdo-images.com/Bo6QYIQWzRRcn7KyO3AIPg__original/img/eQ-YojBJLh3FFFa_Cn-bbHbs-wk=/0x0/filters:format(png)/pic8512516.png",
+    "thumbnail": "https://cf.geekdo-images.com/Bo6QYIQWzRRcn7KyO3AIPg__small/img/P9XzT5xp1nj-z8N379CrM7_ozNg=/fit-in/200x150/filters:strip_icc()/pic8512516.png",
+    "designers": [
+      "Hiroken"
+    ],
+    "weight": 2.84,
+    "bayes_rating": 6.864,
+    "min_players": 1,
+    "max_players": 4,
+    "M": 3,
+    "T": 3,
+    "G": 3,
+    "F": 2,
+    "Ar": 4,
+    "type": "competitive",
+    "mechs": [
+      "STR-01 Competitive Games",
+      "STR-04 Solo Games",
+      "CAR-05 Deck Building",
+      "CAR-06 Drafting",
+      "CAR-08 Multi-Use Cards",
+      "VIC-01 Victory Points from Game State",
+      "VIC-02 Victory Points from Player Actions",
+      "ACT-12 Variable Player Powers",
+      "SET-01 Set Valuation",
+      "VIC-09 Fixed Number of Rounds"
+    ],
+    "description": "Build eternal decks across multiple lifetimes, watching your cards evolve and persist through reincarnations of strategy.",
+    "justification": "M(3): Deck building with multi-use cards and moderate synergy systems. T(3): Eternal/reincarnation theme present but not deeply generated by mechanics. G(3): Meaningful drafting and deck construction choices with consequences. F(2): Deck building adds setup time and card management overhead. Ar(4): Clean, atmospheric design that evokes the eternal theme effectively.",
+    "GS": 25,
+    "IS": 50.0,
+    "feeling": "Engaging"
   },
   "472690": {
     "bgg_id": 472690,
-    "_unavailable": true
+    "_solo": false,
+    "name": "Harmonies: Crescendo"
   },
   "415848": {
     "bgg_id": 415848,
-    "_unavailable": true
+    "name": "Lands of Evershade",
+    "year": 2026,
+    "image": "https://cf.geekdo-images.com/y1OVwSAaHP-pFpYEJ9r5Zg__original/img/Gkt00tbHyP_YS-tFZB_0Wl-PSLs=/0x0/filters:format(png)/pic8061460.png",
+    "thumbnail": "https://cf.geekdo-images.com/y1OVwSAaHP-pFpYEJ9r5Zg__small/img/rK3Xo8_m8rVMAOOv8gtqaOHOml0=/fit-in/200x150/filters:strip_icc()/pic8061460.png",
+    "designers": [
+      "Ernest Kiedrowicz",
+      "Krzysztof Piskorski"
+    ],
+    "weight": 3.25,
+    "bayes_rating": 5.823,
+    "min_players": 1,
+    "max_players": 5,
+    "M": 4,
+    "T": 5,
+    "G": 4,
+    "F": 2,
+    "Ar": 4,
+    "type": "co-op",
+    "mechs": [
+      "STR-02 Cooperative Games",
+      "STR-08 Scenario/Mission/Campaign Games",
+      "ACT-01 Action Points",
+      "ACT-12 Variable Player Powers",
+      "ACT-16 Tech Trees/Tech Tracks/Track Bonuses",
+      "ACT-18 Narrative Choice",
+      "RES-02 Stat Check",
+      "RES-05 Die Icons",
+      "UNC-07 Unknown Information",
+      "UNC-08 Hidden Information",
+      "UNC-12 Deduction",
+      "VIC-11 Completing Targets",
+      "VIC-16 Finale",
+      "MOV-01 Tessellation",
+      "MOV-04 Movement Points",
+      "SET-02 Tile-Laying",
+      "SET-03 Grid Coverage",
+      "CAR-04 Card Draw, Limits, and Deck Exhaustion",
+      "CAR-08 Multi-Use Cards"
+    ],
+    "description": "Delve into cursed shadow realms where light itself becomes a precious resource and ancient evils stir in the perpetual twilight.",
+    "justification": "M(4): Action points with evolving character abilities and multi-layered shadow mechanics. T(5): Light-as-resource and shadow corruption mechanics generate mounting dread perfectly. G(4): Every move into darkness creates meaningful risk-reward tension. F(2): Campaign setup and multiple component types add overhead. Ar(4): Atmospheric twilight artwork creates perfect gothic mood.",
+    "GS": 78,
+    "IS": 156.0,
+    "feeling": "Total"
   },
   "472021": {
     "bgg_id": 472021,
-    "_unavailable": true
+    "_solo": false,
+    "name": "Medico"
   },
   "472208": {
     "bgg_id": 472208,
-    "_unavailable": true
+    "_solo": false,
+    "name": "Cubaneo"
   },
   "432456": {
     "bgg_id": 432456,
-    "_unavailable": true
+    "_solo": false,
+    "name": "dnup"
   },
   "342942": {
     "bgg_id": 342942,
-    "_unavailable": true
+    "name": "Ark Nova",
+    "year": 2021,
+    "image": "https://cf.geekdo-images.com/SoU8p28Sk1s8MSvoM4N8pQ__original/img/g4S18szTdrXCdIwVKzMKrZrYAcM=/0x0/filters:format(jpeg)/pic6293412.jpg",
+    "thumbnail": "https://cf.geekdo-images.com/SoU8p28Sk1s8MSvoM4N8pQ__small/img/4KuHNTWSMPf8vTNDKSRMMI3oOv8=/fit-in/200x150/filters:strip_icc()/pic6293412.jpg",
+    "designers": [
+      "Mathias Wigge"
+    ],
+    "weight": 3.8,
+    "bayes_rating": 8.354,
+    "min_players": 1,
+    "max_players": 4,
+    "M": 4,
+    "T": 2,
+    "G": 4,
+    "F": 3,
+    "Ar": 4,
+    "type": "competitive",
+    "mechs": [
+      "STR-01 Competitive Games",
+      "STR-04 Solo Games",
+      "TRN-01 Fixed Turn Order",
+      "ACT-01 Action Points",
+      "ACT-12 Variable Player Powers",
+      "ACT-16 Tech Trees/Tech Tracks/Track Bonuses",
+      "VIC-01 Victory Points from Game State",
+      "VIC-02 Victory Points from Player Actions",
+      "VIC-06 End-Game Bonuses",
+      "ECO-08 Always Available Purchases",
+      "ECO-11 Upgrades",
+      "CAR-08 Multi-Use Cards",
+      "SET-01 Set Valuation",
+      "WPL-01 Standard Worker Placement"
+    ],
+    "description": "Design the world's greatest zoo by collecting animals, building enclosures, and balancing conservation with commercial success.",
+    "justification": "M(4): Complex card synergies with multiple tracks and engine building. T(2): Zoo theme is decorative; mechanics reference animals without generating zoo management. G(4): Meaningful decisions in card selection, action timing, and resource allocation. F(3): Heavy game with substantial setup and complex iconography. Ar(4): Clean, professional animal photography and clear graphic design.",
+    "GS": 29,
+    "IS": 58.0,
+    "feeling": "Engaging"
   },
   "434172": {
     "bgg_id": 434172,
-    "_unavailable": true
+    "_solo": false,
+    "name": "Excalibur"
   },
   "397598": {
     "bgg_id": 397598,
-    "_unavailable": true
+    "name": "Dune: Imperium – Uprising",
+    "year": 2023,
+    "image": "https://cf.geekdo-images.com/UVUkjMV_Q2paVUIUP30Vvw__original/img/BoUtCkd1NRO0bR1R5EwL51xIuXA=/0x0/filters:format(jpeg)/pic7664424.jpg",
+    "thumbnail": "https://cf.geekdo-images.com/UVUkjMV_Q2paVUIUP30Vvw__small/img/H6qmxJrRFjtOAPZOfDoZ480-46I=/fit-in/200x150/filters:strip_icc()/pic7664424.jpg",
+    "designers": [
+      "Paul Dennen"
+    ],
+    "weight": 3.52,
+    "bayes_rating": 8.244,
+    "min_players": 1,
+    "max_players": 6,
+    "M": 4,
+    "T": 3,
+    "G": 4,
+    "F": 2,
+    "Ar": 4,
+    "type": "competitive",
+    "mechs": [
+      "STR-01 Competitive Games",
+      "STR-04 Solo Games",
+      "STR-08 Scenario/Mission/Campaign Games",
+      "TRN-01 Fixed Turn Order",
+      "ACT-01 Action Points",
+      "ACT-02 Action Drafting",
+      "ACT-12 Variable Player Powers",
+      "ACT-16 Tech Trees/Tech Tracks/Track Bonuses",
+      "RES-06 Card Play",
+      "VIC-01 Victory Points from Game State",
+      "VIC-02 Victory Points from Player Actions",
+      "VIC-06 End-Game Bonuses",
+      "VIC-09 Fixed Number of Rounds",
+      "ECO-01 Exchanging",
+      "ECO-05 Income",
+      "ECO-08 Always Available Purchases",
+      "WPL-01 Standard Worker Placement",
+      "ARC-02 Area Majority/Influence",
+      "CAR-05 Deck Building",
+      "CAR-08 Multi-Use Cards"
+    ],
+    "description": "Navigate the deadly politics of Arrakis as a Great House leader, wielding spice, influence, and betrayal to claim the Imperial throne.",
+    "justification": "M(4): Deck-building with worker placement creates deep interlocking systems and combos. T(3): Political maneuvering feels right but mechanics reference more than generate Dune. G(4): Every card and worker placement cascades into meaningful strategic consequences. F(2): Setup and iconography density manageable but requires rules investment. Ar(4): Stunning desert palette and character art captures Dune's epic scope.",
+    "GS": 46,
+    "IS": 92.0,
+    "feeling": "Immersive"
   },
   "224517": {
     "bgg_id": 224517,
-    "_unavailable": true
+    "_solo": false,
+    "name": "Brass: Birmingham"
   },
   "464729": {
     "bgg_id": 464729,
-    "_unavailable": true
+    "_solo": false,
+    "name": "Thunder Road: Ignition"
   },
   "438442": {
     "bgg_id": 438442,
-    "_unavailable": true
+    "_solo": false,
+    "name": "Feya's Swamp"
   },
   "428099": {
     "bgg_id": 428099,
-    "_unavailable": true
+    "name": "Revenant",
+    "year": 2026,
+    "image": "https://cf.geekdo-images.com/3jI41d32ExxZua8WiP_Zhg__original/img/4CsUkhzTDUG5IRgUlVY16pG5mdI=/0x0/filters:format(jpeg)/pic8426405.jpg",
+    "thumbnail": "https://cf.geekdo-images.com/3jI41d32ExxZua8WiP_Zhg__small/img/ZVr_VfjGozJFWXHsdp2aI2zGFps=/fit-in/200x150/filters:strip_icc()/pic8426405.jpg",
+    "designers": [
+      "Allan Kirkeby"
+    ],
+    "weight": 3.95,
+    "bayes_rating": 5.573,
+    "min_players": 1,
+    "max_players": 4,
+    "M": 4,
+    "T": 5,
+    "G": 4,
+    "F": 2,
+    "Ar": 4,
+    "type": "co-op",
+    "mechs": [
+      "STR-02 Cooperative Games",
+      "STR-04 Solo Games",
+      "STR-08 Scenario/Mission/Campaign Games",
+      "ACT-01 Action Points",
+      "ACT-12 Variable Player Powers",
+      "ACT-17 Events",
+      "ACT-18 Narrative Choice",
+      "RES-02 Stat Check",
+      "RES-05 Die Icons",
+      "UNC-02 Push-Your-Luck",
+      "UNC-07 Unknown Information",
+      "UNC-12 Deduction",
+      "MOV-01 Tessellation",
+      "MOV-04 Movement Points",
+      "CAR-04 Card Draw, Limits, and Deck Exhaustion",
+      "VIC-11 Completing Targets"
+    ],
+    "description": "Return from death as a vengeful spirit to hunt down your killer while your corporeal form decays with each passing hour.",
+    "justification": "M(4): Action points with supernatural powers, investigation mechanics, and time pressure systems. T(5): Playing as undead spirit with decay timer generates existential horror perfectly. G(4): Meaningful choices balancing investigation speed against spiritual deterioration consequences. F(2): Campaign setup and multiple card decks create moderate overhead. Ar(4): Atmospheric gothic horror art with strong character design.",
+    "GS": 78,
+    "IS": 156.0,
+    "feeling": "Total"
   },
   "434367": {
     "bgg_id": 434367,
-    "_unavailable": true
+    "name": "Nippon: Zaibatsu",
+    "year": 2026,
+    "image": "https://cf.geekdo-images.com/bOs_Um4cUUOpKnypCMykJA__original/img/RE_9_-ioTp31Fq_r5GZ_XKVGwzw=/0x0/filters:format(png)/pic8844519.png",
+    "thumbnail": "https://cf.geekdo-images.com/bOs_Um4cUUOpKnypCMykJA__small/img/WLGTv9N3yOkGWZSki-c0nc-L_oY=/fit-in/200x150/filters:strip_icc()/pic8844519.png",
+    "designers": [
+      "Nuno Bizarro Sentieiro",
+      "Paulo Soledade"
+    ],
+    "weight": 3.61,
+    "bayes_rating": 6.881,
+    "min_players": 1,
+    "max_players": 4,
+    "M": 4,
+    "T": 2,
+    "G": 4,
+    "F": 2,
+    "Ar": 4,
+    "type": "competitive",
+    "mechs": [
+      "STR-01 Competitive Games",
+      "STR-04 Solo Games",
+      "ACT-01 Action Points",
+      "ACT-12 Variable Player Powers",
+      "ACT-16 Tech Trees/Tech Tracks/Track Bonuses",
+      "WPL-01 Standard Worker Placement",
+      "WPL-02 Workers of Differing Types",
+      "ECO-01 Exchanging",
+      "ECO-05 Income",
+      "ECO-11 Upgrades",
+      "SET-04 Network Building",
+      "VIC-01 Victory Points from Game State",
+      "VIC-02 Victory Points from Player Actions",
+      "VIC-06 End-Game Bonuses",
+      "VIC-09 Fixed Number of Rounds"
+    ],
+    "description": "Build industrial zaibatsu empires in Meiji-era Japan through strategic worker placement and economic development.",
+    "justification": "M(4): Complex worker placement with tech tracks and zaibatsu building systems. T(2): Industrial theme present but mechanics don't generate historical experience. G(4): Meaningful decisions in worker placement and corporate development paths. F(2): Euro setup overhead and rules complexity but manageable. Ar(4): Clean industrial design with period-appropriate Japanese aesthetic elements.",
+    "GS": 30,
+    "IS": 60.0,
+    "feeling": "Engaging"
   },
   "413246": {
     "bgg_id": 413246,
-    "_unavailable": true
+    "name": "Bomb Busters",
+    "year": 2024,
+    "image": "https://cf.geekdo-images.com/HpGXIlt5i6T-0jbiQRReOg__original/img/2uApg8IOYjNVSzbUIwJUa-Z8eL8=/0x0/filters:format(png)/pic8303080.png",
+    "thumbnail": "https://cf.geekdo-images.com/HpGXIlt5i6T-0jbiQRReOg__small/img/8wfQelnNsbXCykJWMjD8UAjhleU=/fit-in/200x150/filters:strip_icc()/pic8303080.png",
+    "designers": [
+      "Hisashi Hayashi"
+    ],
+    "weight": 2.0,
+    "bayes_rating": 7.622,
+    "min_players": 2,
+    "max_players": 5,
+    "M": 3,
+    "T": 4,
+    "G": 3,
+    "F": 2,
+    "Ar": 4,
+    "type": "co-op",
+    "mechs": [
+      "STR-02 Cooperative Games",
+      "TRN-07 Real-Time",
+      "ACT-01 Action Points",
+      "ACT-06 Action Queue",
+      "RES-01 High Number",
+      "RES-19 Dice Selection",
+      "UNC-06 Communication Limits",
+      "UNC-09 Probability Management",
+      "VIC-07 Race",
+      "VIC-13 Elapsed Real Time",
+      "MOV-04 Movement Points",
+      "CAR-08 Multi-Use Cards"
+    ],
+    "description": "Defuse bombs in real-time silence as a specialized team racing against countdown timers before the city explodes.",
+    "justification": "M(3): Real-time dice selection with action queues and movement systems. T(4): Communication limits and countdown timers generate bomb disposal tension. G(3): Meaningful dice assignments under time pressure create urgency. F(2): Real-time rules add complexity but manageable thirty-minute sessions. Ar(4): Clean bomb disposal aesthetic with clear iconography and tension.",
+    "GS": 34,
+    "IS": 68.0,
+    "feeling": "Engaging"
   },
   "167791": {
     "bgg_id": 167791,
-    "_unavailable": true
+    "name": "Terraforming Mars",
+    "year": 2016,
+    "image": "https://cf.geekdo-images.com/wg9oOLcsKvDesSUdZQ4rxw__original/img/thIqWDnH9utKuoKVEUqveDixprI=/0x0/filters:format(jpeg)/pic3536616.jpg",
+    "thumbnail": "https://cf.geekdo-images.com/wg9oOLcsKvDesSUdZQ4rxw__small/img/BTxqxgYay5tHJfVoJ2NF5g43_gA=/fit-in/200x150/filters:strip_icc()/pic3536616.jpg",
+    "designers": [
+      "Jacob Fryxelius"
+    ],
+    "weight": 3.27,
+    "bayes_rating": 8.183,
+    "min_players": 1,
+    "max_players": 5,
+    "M": 4,
+    "T": 2,
+    "G": 4,
+    "F": 2,
+    "Ar": 3,
+    "type": "competitive",
+    "mechs": [
+      "STR-01 Competitive Games",
+      "STR-04 Solo Games",
+      "TRN-01 Fixed Turn Order",
+      "ACT-01 Action Points",
+      "ACT-12 Variable Player Powers",
+      "ACT-16 Tech Trees/Tech Tracks/Track Bonuses",
+      "VIC-01 Victory Points from Game State",
+      "VIC-02 Victory Points from Player Actions",
+      "VIC-06 End-Game Bonuses",
+      "VIC-09 Fixed Number of Rounds",
+      "ECO-05 Income",
+      "ECO-08 Always Available Purchases",
+      "ECO-11 Upgrades",
+      "SET-01 Set Valuation",
+      "CAR-04 Card Draw, Limits, and Deck Exhaustion",
+      "CAR-08 Multi-Use Cards",
+      "CAR-09 Tags"
+    ],
+    "description": "Transform the red planet into a living world by playing corporations that terraform Mars through engine-building and resource management.",
+    "justification": "M(4): Engine-building with card synergies, production tracks, and terraforming parameters. T(2): Mars theme decorates optimization puzzle rather than generating experience. G(4): Meaningful card plays and corporation choices shape engine development. F(2): Setup and tracking across multiple boards adds overhead. Ar(3): Functional space art but lacks atmospheric punch.",
+    "GS": 30,
+    "IS": 45.0,
+    "feeling": "Engaging"
   },
   "266192": {
     "bgg_id": 266192,
-    "_unavailable": true
+    "name": "Wingspan",
+    "year": 2019,
+    "image": "https://cf.geekdo-images.com/yLZJCVLlIx4c7eJEWUNJ7w__original/img/cI782Zis9cT66j2MjSHKJGnFPNw=/0x0/filters:format(jpeg)/pic4458123.jpg",
+    "thumbnail": "https://cf.geekdo-images.com/yLZJCVLlIx4c7eJEWUNJ7w__small/img/VNToqgS2-pOGU6MuvIkMPKn_y-s=/fit-in/200x150/filters:strip_icc()/pic4458123.jpg",
+    "designers": [
+      "Elizabeth Hargrave"
+    ],
+    "weight": 2.48,
+    "bayes_rating": 7.845,
+    "min_players": 1,
+    "max_players": 5,
+    "M": 3,
+    "T": 2,
+    "G": 3,
+    "F": 1,
+    "Ar": 4,
+    "type": "competitive",
+    "mechs": [
+      "STR-01 Competitive Games",
+      "STR-04 Solo Games",
+      "TRN-01 Fixed Turn Order",
+      "ACT-01 Action Points",
+      "ACT-12 Variable Player Powers",
+      "ACT-16 Tech Trees/Tech Tracks/Track Bonuses",
+      "RES-05 Die Icons",
+      "VIC-01 Victory Points from Game State",
+      "VIC-02 Victory Points from Player Actions",
+      "VIC-06 End-Game Bonuses",
+      "VIC-09 Fixed Number of Rounds",
+      "ECO-05 Income",
+      "ECO-06 Automatic Resource Growth",
+      "ECO-08 Always Available Purchases",
+      "SET-01 Set Valuation",
+      "CAR-04 Card Draw, Limits, and Deck Exhaustion",
+      "CAR-08 Multi-Use Cards"
+    ],
+    "description": "Attract birds to your wildlife preserve by playing cards that trigger cascading engine-building combos across forest, grassland, and wetland habitats.",
+    "justification": "M(3): Engine-building with bird powers creating resource cascades and combos. T(2): Bird theme is lovely but mechanics don't generate nature experience. G(3): Meaningful habitat choices and card synergies with multiple paths. F(1): Elegant rules, beautiful components, quick setup and teach. Ar(4): Gorgeous bird illustrations and nature palette by Natalia Rojas.",
+    "GS": 17,
+    "IS": 34.0,
+    "feeling": "Engaging"
   },
   "312484": {
     "bgg_id": 312484,
-    "_unavailable": true
+    "name": "Lost Ruins of Arnak",
+    "year": 2020,
+    "image": "https://cf.geekdo-images.com/6GqH14TJJhza86BX5HCLEQ__original/img/CXqwimJPonWy1oyXEMgPN_ZVmUI=/0x0/filters:format(jpeg)/pic5674958.jpg",
+    "thumbnail": "https://cf.geekdo-images.com/6GqH14TJJhza86BX5HCLEQ__small/img/J8SVmGOJXZGxNjkT3xYNQU7Haxg=/fit-in/200x150/filters:strip_icc()/pic5674958.jpg",
+    "designers": [
+      "Elwen",
+      "Mín"
+    ],
+    "weight": 2.93,
+    "bayes_rating": 7.917,
+    "min_players": 1,
+    "max_players": 4,
+    "M": 4,
+    "T": 2,
+    "G": 4,
+    "F": 2,
+    "Ar": 4,
+    "type": "competitive",
+    "mechs": [
+      "STR-01 Competitive Games",
+      "STR-04 Solo Games",
+      "TRN-01 Fixed Turn Order",
+      "ACT-01 Action Points",
+      "ACT-12 Variable Player Powers",
+      "CAR-05 Deck Building",
+      "CAR-08 Multi-Use Cards",
+      "WPL-01 Standard Worker Placement",
+      "SET-01 Set Valuation",
+      "SET-02 Tile-Laying",
+      "ECO-08 Always Available Purchases",
+      "ECO-11 Upgrades",
+      "ACT-16 Tech Trees/Tech Tracks/Track Bonuses",
+      "VIC-01 Victory Points from Game State",
+      "VIC-02 Victory Points from Player Actions",
+      "VIC-06 End-Game Bonuses",
+      "VIC-09 Fixed Number of Rounds",
+      "UNC-10 Variable Setup"
+    ],
+    "description": "Lead expeditions to a mysterious island where you build decks, place workers, and uncover ancient artifacts while racing against rival archaeologists.",
+    "justification": "M(4): Worker placement, deck building, and research tracks create interlocking systems. T(2): Pleasant archaeology theme but mechanics don't generate exploration tension. G(4): Multiple viable paths with meaningful timing and resource decisions. F(2): Setup time and component management for dual-mechanism game. Ar(4): Solid expedition art with appealing island and artifact illustrations.",
+    "GS": 30,
+    "IS": 60.0,
+    "feeling": "Engaging"
   },
   "363622": {
     "bgg_id": 363622,
-    "_unavailable": true
+    "name": "The Castles of Burgundy: Special Edition",
+    "year": 2023,
+    "image": "https://cf.geekdo-images.com/JUrmY8GgFPQlENiPT7BGZw__original/img/whCMdZhta-uXHgNJfVnetnjZueU=/0x0/filters:format(jpeg)/pic6884563.jpg",
+    "thumbnail": "https://cf.geekdo-images.com/JUrmY8GgFPQlENiPT7BGZw__small/img/Ftdtb0LiIqTAjpSlOVGnxdPaD9A=/fit-in/200x150/filters:strip_icc()/pic6884563.jpg",
+    "designers": [
+      "Stefan Feld"
+    ],
+    "weight": 2.84,
+    "bayes_rating": 8.483,
+    "min_players": 1,
+    "max_players": 4,
+    "M": 4,
+    "T": 2,
+    "G": 4,
+    "F": 2,
+    "Ar": 4,
+    "type": "competitive",
+    "mechs": [
+      "STR-01 Competitive Games",
+      "STR-04 Solo Games",
+      "TRN-01 Fixed Turn Order",
+      "ACT-01 Action Points",
+      "ACT-12 Variable Player Powers",
+      "RES-19 Dice Selection",
+      "VIC-01 Victory Points from Game State",
+      "VIC-02 Victory Points from Player Actions",
+      "VIC-06 End-Game Bonuses",
+      "VIC-09 Fixed Number of Rounds",
+      "SET-01 Set Valuation",
+      "SET-02 Tile-Laying",
+      "SET-03 Grid Coverage",
+      "ECO-08 Always Available Purchases",
+      "ECO-11 Upgrades",
+      "CAR-04 Card Draw, Limits, and Deck Exhaustion"
+    ],
+    "description": "Medieval French nobles compete to build the most prosperous duchy by collecting goods, animals, and knowledge through strategic dice-driven tile placement.",
+    "justification": "M(4): Deep tile-laying with dice selection, set collection, and interlocking upgrade systems. T(2): Medieval duchy building exists in art but mechanics feel abstract. G(4): Meaningful dice allocation and tile placement choices with cascading consequences. F(2): Setup overhead and rulebook density create moderate friction. Ar(4): Elegant medieval artwork and high-quality special edition components.",
+    "GS": 30,
+    "IS": 60.0,
+    "feeling": "Engaging"
   },
   "417197": {
     "bgg_id": 417197,
-    "_unavailable": true
+    "_solo": false,
+    "name": "Rebirth"
   },
   "415843": {
     "bgg_id": 415843,
-    "_unavailable": true
+    "name": "Puerto Rico 1897: Special Edition",
+    "year": 2025,
+    "image": "https://cf.geekdo-images.com/ewNPD8vcrsXVfuVc9_E6hg__original/img/H3yQmt-6vi4jSPP-Ty0ehZ0lksM=/0x0/filters:format(jpeg)/pic8376834.jpg",
+    "thumbnail": "https://cf.geekdo-images.com/ewNPD8vcrsXVfuVc9_E6hg__small/img/fEkdPMxyjK8G9uqdRPT14Q-UCVo=/fit-in/200x150/filters:strip_icc()/pic8376834.jpg",
+    "designers": [
+      "Andreas Seyfarth"
+    ],
+    "weight": 3.02,
+    "bayes_rating": 6.905,
+    "min_players": 1,
+    "max_players": 5,
+    "M": 4,
+    "T": 2,
+    "G": 4,
+    "F": 2,
+    "Ar": 4,
+    "type": "competitive",
+    "mechs": [
+      "STR-01 Competitive Games",
+      "STR-04 Solo Games",
+      "ACT-12 Variable Player Powers",
+      "ACT-05 Command Cards",
+      "VIC-01 Victory Points from Game State",
+      "VIC-02 Victory Points from Player Actions",
+      "VIC-09 Fixed Number of Rounds",
+      "ECO-01 Exchanging",
+      "ECO-08 Always Available Purchases",
+      "ECO-05 Income",
+      "SET-01 Set Valuation",
+      "CAR-08 Multi-Use Cards",
+      "WPL-01 Standard Worker Placement",
+      "MOV-01 Tessellation"
+    ],
+    "description": "Govern colonial Puerto Rico, managing plantations and shipping goods while navigating the complex economics of 19th-century Caribbean trade.",
+    "justification": "M(4): Role selection with plantation building and shipping creates deep economic engine. T(2): Colonial theme present but mechanics don't generate historical experience. G(4): Role timing and building choices create cascading strategic consequences. F(2): Multiple boards and components with moderate setup overhead. Ar(4): Elegant historical artwork with refined production values.",
+    "GS": 30,
+    "IS": 60.0,
+    "feeling": "Engaging"
   },
   "343900": {
     "bgg_id": 343900,
-    "_unavailable": true
+    "name": "Senjutsu: Battle For Japan",
+    "year": 2023,
+    "image": "https://cf.geekdo-images.com/QDkeggSB5MVExqAEXxfvgw__original/img/AdKxSxTStXuLbaZLNLnq4IWMQfA=/0x0/filters:format(jpeg)/pic7506502.jpg",
+    "thumbnail": "https://cf.geekdo-images.com/QDkeggSB5MVExqAEXxfvgw__small/img/ZXv9tBBTH1JhDziJ0Wgm7_Aaj6U=/fit-in/200x150/filters:strip_icc()/pic7506502.jpg",
+    "designers": [
+      "Paul D. Allen",
+      "James Faulkner"
+    ],
+    "weight": 2.92,
+    "bayes_rating": 6.008,
+    "min_players": 1,
+    "max_players": 4,
+    "M": 4,
+    "T": 3,
+    "G": 4,
+    "F": 3,
+    "Ar": 4,
+    "type": "competitive",
+    "mechs": [
+      "STR-01 Competitive Games",
+      "STR-04 Solo Games",
+      "TRN-09 Simultaneous Action Selection",
+      "ACT-02 Action Drafting",
+      "ACT-12 Variable Player Powers",
+      "RES-01 High Number",
+      "RES-05 Die Icons",
+      "RES-19 Dice Selection",
+      "VIC-01 Victory Points from Game State",
+      "VIC-09 Fixed Number of Rounds",
+      "UNC-09 Probability Management",
+      "MOV-01 Tessellation",
+      "MOV-04 Movement Points",
+      "ARC-01 Absolute Control",
+      "CAR-08 Multi-Use Cards"
+    ],
+    "description": "Master samurai clash in tactical duels where dice become weapons and every strike could be your last.",
+    "justification": "M(4): Dice-drafting combat with positioning, timing, and samurai-specific abilities create depth. T(3): Samurai powers and weapon dice evoke dueling but don't generate bushido tension. G(4): Every dice draft and positioning choice creates meaningful tactical consequences. F(3): Setup and component management moderate, rules density manageable. Ar(4): Beautiful samurai art and atmospheric Japanese aesthetic without miniatures.",
+    "GS": 45,
+    "IS": 90.0,
+    "feeling": "Immersive"
   },
   "453526": {
     "bgg_id": 453526,
-    "_unavailable": true
+    "_solo": false,
+    "name": "Got Five!"
   },
   "428635": {
     "bgg_id": 428635,
-    "_unavailable": true
+    "_solo": false,
+    "name": "Ruins"
   },
   "84876": {
     "bgg_id": 84876,
-    "_unavailable": true
+    "_solo": false,
+    "name": "The Castles of Burgundy"
   },
   "177736": {
     "bgg_id": 177736,
@@ -301,106 +904,673 @@
   },
   "411894": {
     "bgg_id": 411894,
-    "_unavailable": true
+    "_solo": false,
+    "name": "Kinfire Council"
   },
   "369992": {
     "bgg_id": 369992,
-    "_unavailable": true
+    "name": "Warcrow Adventures",
+    "year": 2024,
+    "image": "https://cf.geekdo-images.com/hA_6i5hqYMfYzjRrbJ_JPA__original/img/5T2aY1KlC4ApAJoFNUQIys_huPI=/0x0/filters:format(jpeg)/pic7053747.jpg",
+    "thumbnail": "https://cf.geekdo-images.com/hA_6i5hqYMfYzjRrbJ_JPA__small/img/SpObPpeVcSXeUagJoszSaLs83VI=/fit-in/200x150/filters:strip_icc()/pic7053747.jpg",
+    "designers": [
+      "Alberto Abal",
+      "Jesús Fuster",
+      "Laura Castro Royo",
+      "Marcos Bello Soto"
+    ],
+    "weight": 2.25,
+    "bayes_rating": 5.546,
+    "min_players": 2,
+    "max_players": 4,
+    "M": 3,
+    "T": 3,
+    "G": 3,
+    "F": 4,
+    "type": "co-op",
+    "mechs": [
+      "STR-02 Cooperative Games",
+      "STR-08 Scenario/Mission/Campaign Games",
+      "ACT-01 Action Points",
+      "ACT-12 Variable Player Powers",
+      "ACT-16 Tech Trees/Tech Tracks/Track Bonuses",
+      "RES-01 High Number",
+      "RES-05 Die Icons",
+      "VIC-11 Completing Targets",
+      "MOV-04 Movement Points",
+      "MOV-01 Tessellation",
+      "CAR-08 Multi-Use Cards",
+      "ECO-11 Upgrades"
+    ],
+    "description": "Heroes venture through a fantasy realm battling monsters and uncovering ancient secrets in tactical dungeon-crawling adventures.",
+    "justification": "M(3): Action points with character progression and tactical positioning. T(3): Fantasy adventure theme adequately supported by exploration mechanics. G(3): Tactical decisions matter but within familiar dungeon-crawler framework. F(4): Large box with numerous unpainted miniatures requiring painting. Ar(3): Solid fantasy art but generic aesthetic lacks distinctive atmosphere.",
+    "GS": 23,
+    "IS": 0.0,
+    "feeling": "On Shelf"
   },
   "399822": {
     "bgg_id": 399822,
-    "_unavailable": true
+    "name": "Fate: Defenders of Grimheim",
+    "year": 2025,
+    "image": "https://cf.geekdo-images.com/eRgc8DvfVmergYxGm2S4jg__original/img/lEXsUuJW1VnaI73z4vBJyvVis9Q=/0x0/filters:format(jpeg)/pic7927138.jpg",
+    "thumbnail": "https://cf.geekdo-images.com/eRgc8DvfVmergYxGm2S4jg__small/img/bThaz1wl_xoCfkmTTe7TmsTYEi4=/fit-in/200x150/filters:strip_icc()/pic7927138.jpg",
+    "designers": [
+      "Jonathan Fryxelius"
+    ],
+    "weight": 2.55,
+    "bayes_rating": 6.201,
+    "min_players": 1,
+    "max_players": 4,
+    "M": 4,
+    "T": 5,
+    "G": 4,
+    "F": 2,
+    "Ar": 4,
+    "type": "co-op",
+    "mechs": [
+      "STR-02 Cooperative Games",
+      "STR-04 Solo Games",
+      "STR-08 Scenario/Mission/Campaign Games",
+      "ACT-01 Action Points",
+      "ACT-05 Command Cards",
+      "ACT-12 Variable Player Powers",
+      "ACT-18 Narrative Choice",
+      "RES-02 Stat Check",
+      "RES-05 Die Icons",
+      "RES-21 Rerolling and Locking",
+      "VIC-11 Completing Targets",
+      "UNC-02 Push-Your-Luck",
+      "CAR-08 Multi-Use Cards",
+      "MOV-04 Movement Points",
+      "SET-05 Combo Abilities"
+    ],
+    "description": "Channel the power of Fate itself to defend the last bastion of hope against an encroaching darkness that devours worlds.",
+    "justification": "M(4): Fate Core mechanics with aspects, stunts, and multi-use cards create tactical depth. T(5): Invoking aspects and compels IS wielding narrative fate magic against darkness. G(4): Every aspect invocation and fate point spend reshapes story outcomes meaningfully. F(2): Campaign setup and fate point tracking add moderate overhead between sessions. Ar(4): Dark fantasy aesthetic with atmospheric character and location art throughout.",
+    "GS": 78,
+    "IS": 156.0,
+    "feeling": "Total"
   },
   "413469": {
     "bgg_id": 413469,
-    "_unavailable": true
+    "name": "Ada's Dream",
+    "year": 2025,
+    "image": "https://cf.geekdo-images.com/i3YeleJsNmnvcKdwgW3TKA__original/img/0bHPZadTVedYlWrXsy0LKZ0Kwf8=/0x0/filters:format(jpeg)/pic8030666.jpg",
+    "thumbnail": "https://cf.geekdo-images.com/i3YeleJsNmnvcKdwgW3TKA__small/img/PnqlbLRuC-3OB7dWtElkQkhLdxg=/fit-in/200x150/filters:strip_icc()/pic8030666.jpg",
+    "designers": [
+      "Toni López"
+    ],
+    "weight": 3.91,
+    "bayes_rating": 6.239,
+    "min_players": 1,
+    "max_players": 4,
+    "M": 4,
+    "T": 3,
+    "G": 4,
+    "F": 3,
+    "Ar": 4,
+    "type": "co-op",
+    "mechs": [
+      "STR-02 Cooperative Games",
+      "STR-08 Scenario/Mission/Campaign Games",
+      "ACT-01 Action Points",
+      "ACT-12 Variable Player Powers",
+      "ACT-16 Tech Trees/Tech Tracks/Track Bonuses",
+      "CAR-08 Multi-Use Cards",
+      "SET-02 Tile-Laying",
+      "SET-03 Grid Coverage",
+      "MOV-04 Movement Points",
+      "VIC-11 Completing Targets",
+      "VIC-09 Fixed Number of Rounds",
+      "UNC-10 Variable Setup",
+      "ECO-11 Upgrades"
+    ],
+    "description": "Build and program steampunk automatons alongside Ada Lovelace to solve Victorian-era puzzles and unlock mechanical wonders.",
+    "justification": "M(4): Programming mechanisms with tech trees and multi-use card systems. T(3): Victorian steampunk setting pleasant but mechanics don't fully generate it. G(4): Meaningful programming decisions with cascading consequences across scenarios. F(3): Campaign setup and component management add moderate overhead. Ar(4): Elegant Victorian aesthetic with detailed steampunk machinery illustrations.",
+    "GS": 45,
+    "IS": 90.0,
+    "feeling": "Immersive"
   },
   "462369": {
     "bgg_id": 462369,
-    "_unavailable": true
+    "name": "Viticulture: Bordeaux Expansion",
+    "year": 2026,
+    "image": "https://cf.geekdo-images.com/DAe50nSwheTHeOUs4wJWsQ__original/img/DDGvd4dt69Mwg-qaUnZ17w9oQyU=/0x0/filters:format(jpeg)/pic9338844.jpg",
+    "thumbnail": "https://cf.geekdo-images.com/DAe50nSwheTHeOUs4wJWsQ__small/img/Wcmiz0ucB3QttumjQp0kWPUZgKs=/fit-in/200x150/filters:strip_icc()/pic9338844.jpg",
+    "designers": [
+      "Jamey Stegmaier"
+    ],
+    "weight": 3.33,
+    "bayes_rating": 5.959,
+    "min_players": 1,
+    "max_players": 6,
+    "M": 4,
+    "T": 2,
+    "G": 4,
+    "F": 2,
+    "Ar": 4,
+    "type": "competitive",
+    "mechs": [
+      "STR-01 Competitive Games",
+      "STR-04 Solo Games",
+      "WPL-01 Standard Worker Placement",
+      "ACT-01 Action Points",
+      "ACT-12 Variable Player Powers",
+      "TRN-01 Fixed Turn Order",
+      "VIC-01 Victory Points from Game State",
+      "VIC-02 Victory Points from Player Actions",
+      "VIC-09 Fixed Number of Rounds",
+      "ECO-05 Income",
+      "ECO-06 Automatic Resource Growth",
+      "ECO-11 Upgrades",
+      "CAR-04 Card Draw, Limits, and Deck Exhaustion",
+      "SET-01 Set Valuation",
+      "ACT-16 Tech Trees/Tech Tracks/Track Bonuses"
+    ],
+    "description": "Expand your vineyard empire into the prestigious Bordeaux region, crafting legendary wines through seasonal worker placement.",
+    "justification": "M(4): Complex worker placement with seasonal restrictions and wine production chains. T(2): Wine theme is pleasant but mechanics don't generate winemaking experience. G(4): Meaningful placement decisions with long-term strategic consequences across seasons. F(2): Setup time and component management typical for expansion content. Ar(4): Elegant European vineyard aesthetic with quality component design.",
+    "GS": 30,
+    "IS": 60.0,
+    "feeling": "Engaging"
   },
   "380681": {
     "bgg_id": 380681,
-    "_unavailable": true
+    "_solo": false,
+    "name": "Apex Legends: The Board Game"
   },
   "392492": {
     "bgg_id": 392492,
-    "_unavailable": true
+    "name": "Stupor Mundi",
+    "year": 2025,
+    "image": "https://cf.geekdo-images.com/SJvK-Hq72xOiJ_JsmB1dGA__original/img/bB9wwazrbLhZ2IvyIiO3Nl55O-I=/0x0/filters:format(jpeg)/pic7585104.jpg",
+    "thumbnail": "https://cf.geekdo-images.com/SJvK-Hq72xOiJ_JsmB1dGA__small/img/mDKoeUlKQjBTpNwJEeIm-2pszJQ=/fit-in/200x150/filters:strip_icc()/pic7585104.jpg",
+    "designers": [
+      "Nestore Mangone"
+    ],
+    "weight": 3.27,
+    "bayes_rating": 6.232,
+    "min_players": 1,
+    "max_players": 4,
+    "M": 4,
+    "T": 3,
+    "G": 4,
+    "F": 2,
+    "Ar": 4,
+    "type": "competitive",
+    "mechs": [
+      "STR-01 Competitive Games",
+      "STR-08 Scenario/Mission/Campaign Games",
+      "ACT-01 Action Points",
+      "ACT-12 Variable Player Powers",
+      "ACT-16 Tech Trees/Tech Tracks/Track Bonuses",
+      "ARC-02 Area Majority/Influence",
+      "ARC-04 Territories and Regions",
+      "SET-04 Network Building",
+      "VIC-01 Victory Points from Game State",
+      "VIC-09 Fixed Number of Rounds",
+      "ECO-01 Exchanging",
+      "ECO-05 Income",
+      "UNC-10 Variable Setup"
+    ],
+    "description": "Lead medieval kingdoms through political intrigue, crusades, and cultural renaissance in the age of Frederick II.",
+    "justification": "M(4): Area control with asymmetric powers, tech trees, and multiple victory paths. T(3): Medieval politics theme present but mechanics don't fully embody it. G(4): Meaningful strategic choices across military, diplomatic, and cultural development. F(2): Medium-weight euro with moderate setup and rules complexity. Ar(4): Rich medieval artwork and quality components evoke the historical period.",
+    "GS": 46,
+    "IS": 92.0,
+    "feeling": "Immersive"
   },
   "316624": {
     "bgg_id": 316624,
-    "_unavailable": true
+    "_solo": false,
+    "name": "Stationfall"
   },
   "21137": {
     "bgg_id": 21137,
-    "_unavailable": true
+    "_solo": false,
+    "name": "Speakeasy"
   },
   "408636": {
     "bgg_id": 408636,
-    "_unavailable": true
+    "name": "Skara Brae",
+    "year": 2025,
+    "image": "https://cf.geekdo-images.com/v10bXNbLAYa5PSrCYTbEUA__original/img/gKXy6q2sPQtjNQPyujo_lfzIDXQ=/0x0/filters:format(png)/pic7906024.png",
+    "thumbnail": "https://cf.geekdo-images.com/v10bXNbLAYa5PSrCYTbEUA__small/img/OjEhoOb49kU4vpePRba-FNs-gJE=/fit-in/200x150/filters:strip_icc()/pic7906024.png",
+    "designers": [
+      "Shem Phillips"
+    ],
+    "weight": 2.71,
+    "bayes_rating": 6.339,
+    "min_players": 1,
+    "max_players": 4,
+    "M": 3,
+    "T": 3,
+    "G": 3,
+    "F": 2,
+    "Ar": 4,
+    "type": "competitive",
+    "mechs": [
+      "STR-01 Competitive Games",
+      "STR-04 Solo Games",
+      "TRN-01 Fixed Turn Order",
+      "ACT-01 Action Points",
+      "ACT-12 Variable Player Powers",
+      "RES-01 High Number",
+      "RES-05 Die Icons",
+      "VIC-01 Victory Points from Game State",
+      "VIC-02 Victory Points from Player Actions",
+      "VIC-09 Fixed Number of Rounds",
+      "UNC-09 Probability Management",
+      "ECO-05 Income",
+      "WPL-01 Standard Worker Placement",
+      "SET-01 Set Valuation",
+      "SET-02 Tile-Laying",
+      "CAR-08 Multi-Use Cards"
+    ],
+    "description": "Lead your clan through the mystical Orkney Islands, building ancient stone circles and harnessing druidic power in prehistoric Scotland.",
+    "justification": "M(3): Worker placement with dice manipulation and multi-use cards. T(3): Celtic mysticism theme supported but not deeply generated by mechanics. G(3): Meaningful worker placement and resource management decisions each turn. F(2): Medium setup with dice and tile management overhead. Ar(4): Atmospheric Celtic art style with strong thematic presentation.",
+    "GS": 25,
+    "IS": 50.0,
+    "feeling": "Engaging"
   },
   "445048": {
     "bgg_id": 445048,
-    "_unavailable": true
+    "name": "SETI: Space Agencies",
+    "year": 2025,
+    "image": "https://cf.geekdo-images.com/JMLgq_A4OE_dX423FeFcPA__original/img/75BD_5fAbW6gCvFOKSefCQpKNeY=/0x0/filters:format(png)/pic8857305.png",
+    "thumbnail": "https://cf.geekdo-images.com/JMLgq_A4OE_dX423FeFcPA__small/img/L0iyv7R4pYVqA6KX5Ox6RNnpugk=/fit-in/200x150/filters:strip_icc()/pic8857305.png",
+    "designers": [
+      "Tomáš Holek"
+    ],
+    "weight": 3.8,
+    "bayes_rating": 6.854,
+    "min_players": 1,
+    "max_players": 4,
+    "M": 4,
+    "T": 3,
+    "G": 4,
+    "F": 2,
+    "Ar": 4,
+    "type": "competitive",
+    "mechs": [
+      "STR-01 Competitive Games",
+      "STR-04 Solo Games",
+      "ACT-01 Action Points",
+      "ACT-16 Tech Trees/Tech Tracks/Track Bonuses",
+      "ACT-12 Variable Player Powers",
+      "RES-01 High Number",
+      "RES-02 Stat Check",
+      "VIC-01 Victory Points from Game State",
+      "VIC-02 Victory Points from Player Actions",
+      "VIC-06 End-Game Bonuses",
+      "VIC-09 Fixed Number of Rounds",
+      "ECO-05 Income",
+      "ECO-11 Upgrades",
+      "ECO-13 Investment",
+      "SET-05 Combo Abilities",
+      "CAR-08 Multi-Use Cards",
+      "UNC-09 Probability Management"
+    ],
+    "description": "Lead humanity's search for extraterrestrial intelligence through space exploration, technology development, and cosmic discovery.",
+    "justification": "M(4): Deep tech trees, multi-use cards, and interlocking space agency systems. T(3): SETI theme present but mechanics feel more like optimization puzzles. G(4): Meaningful decisions in research paths and resource allocation strategies. F(2): Complex setup and rules overhead for space simulation weight. Ar(4): Clean space agency aesthetic with atmospheric cosmic imagery.",
+    "GS": 46,
+    "IS": 92.0,
+    "feeling": "Immersive"
   },
   "423013": {
     "bgg_id": 423013,
-    "_unavailable": true
+    "_solo": false,
+    "name": "Ice and Idols"
   },
   "336131": {
     "bgg_id": 336131,
-    "_unavailable": true
+    "name": "Halls of Hegra",
+    "year": 2023,
+    "image": "https://cf.geekdo-images.com/muJ3YmLTsyStKn60D9mcdw__original/img/2Kew2JZiGjIuwd87-5Xq8ylMCFQ=/0x0/filters:format(jpeg)/pic6158972.jpg",
+    "thumbnail": "https://cf.geekdo-images.com/muJ3YmLTsyStKn60D9mcdw__small/img/OpjNfL1tDRbzO7B9RO5I4OiDC2k=/fit-in/200x150/filters:strip_icc()/pic6158972.jpg",
+    "designers": [
+      "Petter Schanke Olsen"
+    ],
+    "weight": 3.4,
+    "bayes_rating": 6.279,
+    "min_players": 1,
+    "max_players": 1,
+    "M": 4,
+    "T": 5,
+    "G": 4,
+    "F": 2,
+    "Ar": 4,
+    "type": "solo",
+    "mechs": [
+      "STR-04 Solo Games",
+      "STR-08 Scenario/Mission/Campaign Games",
+      "TRN-01 Fixed Turn Order",
+      "ACT-01 Action Points",
+      "ACT-17 Events",
+      "ACT-18 Narrative Choice",
+      "RES-05 Die Icons",
+      "RES-21 Rerolling and Locking",
+      "VIC-07 Race",
+      "VIC-15 Circuit Breaker/Sudden Death",
+      "UNC-02 Push-Your-Luck",
+      "UNC-07 Unknown Information",
+      "MOV-04 Movement Points",
+      "ARC-01 Absolute Control",
+      "ARC-02 Area Majority/Influence"
+    ],
+    "description": "Outnumbered Norwegian defenders make their last stand against overwhelming German forces in a doomed fortress siege.",
+    "justification": "M(4): Action points with event deck and dice combat create tactical depth. T(5): Every action IS the desperate last stand - you feel doomed heroism. G(4): Meaningful choices about resource allocation and defensive positioning under pressure. F(2): Solo setup and rulebook density manageable but not trivial. Ar(4): Atmospheric WWII art captures Norwegian fortress and winter desperation perfectly.",
+    "GS": 78,
+    "IS": 156.0,
+    "feeling": "Total"
   },
   "2656": {
     "bgg_id": 2656,
-    "_unavailable": true
+    "_solo": false,
+    "name": "Inferno"
   },
   "83980": {
     "bgg_id": 83980,
-    "_unavailable": true
+    "_solo": false,
+    "name": "Pendragon"
   },
   "410249": {
     "bgg_id": 410249,
-    "_unavailable": true
+    "_solo": false,
+    "name": "JamSumo: 10th Year Anniversary Edition"
   },
   "205478": {
     "bgg_id": 205478,
-    "_unavailable": true
+    "_solo": false,
+    "name": "Covenant"
   },
   "429378": {
     "bgg_id": 429378,
-    "_unavailable": true
+    "_solo": false,
+    "name": "Malediction"
   },
   "391752": {
     "bgg_id": 391752,
-    "_unavailable": true
+    "name": "Steam Power",
+    "year": 2025,
+    "image": "https://cf.geekdo-images.com/d5JR5FekM_PsanGOHBdSMA__original/img/n6y6kwfqOwqChZ6X5ajMq0N-X7Q=/0x0/filters:format(jpeg)/pic7720019.jpg",
+    "thumbnail": "https://cf.geekdo-images.com/d5JR5FekM_PsanGOHBdSMA__small/img/RKxhi5xFFrDm9KbjTiNYA27WwKI=/fit-in/200x150/filters:strip_icc()/pic7720019.jpg",
+    "designers": [
+      "Martin Wallace"
+    ],
+    "weight": 2.3,
+    "bayes_rating": 6.06,
+    "min_players": 1,
+    "max_players": 5,
+    "M": 3,
+    "T": 2,
+    "G": 3,
+    "F": 2,
+    "Ar": 4,
+    "type": "competitive",
+    "mechs": [
+      "STR-01 Competitive Games",
+      "STR-04 Solo Games",
+      "TRN-01 Fixed Turn Order",
+      "ACT-01 Action Points",
+      "ACT-12 Variable Player Powers",
+      "ACT-16 Tech Trees/Tech Tracks/Track Bonuses",
+      "RES-01 High Number",
+      "VIC-01 Victory Points from Game State",
+      "VIC-02 Victory Points from Player Actions",
+      "VIC-09 Fixed Number of Rounds",
+      "ECO-05 Income",
+      "ECO-08 Always Available Purchases",
+      "ECO-11 Upgrades",
+      "WPL-01 Standard Worker Placement",
+      "SET-05 Combo Abilities"
+    ],
+    "description": "Build steam-powered industrial empires by placing workers, upgrading machinery, and racing to harness the power of the industrial revolution.",
+    "justification": "M(3): Worker placement with tech tracks and engine building combos. T(2): Industrial revolution theme sits atop mechanics rather than emerging from them. G(3): Meaningful worker placement and upgrade timing decisions matter. F(2): Mid-weight setup and component management typical for euros. Ar(4): Clean industrial aesthetic with quality production values.",
+    "GS": 16,
+    "IS": 32.0,
+    "feeling": "Engaging"
   },
   "432716": {
     "bgg_id": 432716,
-    "_unavailable": true
+    "_solo": false,
+    "name": "Leaders"
   },
   "392471": {
     "bgg_id": 392471,
-    "_unavailable": true
+    "_solo": false,
+    "name": "Classified Information"
   },
   "42019": {
     "bgg_id": 42019,
-    "_unavailable": true
+    "_solo": false,
+    "name": "Sengoku"
   },
   "180899": {
     "bgg_id": 180899,
-    "_unavailable": true
+    "_solo": false,
+    "name": "Ponzi Scheme"
   },
   "361235": {
     "bgg_id": 361235,
-    "_unavailable": true
+    "_solo": false,
+    "name": "Compile"
   },
   "54998": {
     "bgg_id": 54998,
-    "_unavailable": true
+    "_solo": false,
+    "name": "Cyclades"
   },
   "371330": {
     "bgg_id": 371330,
-    "_unavailable": true
+    "name": "Luthier",
+    "year": 2025,
+    "image": "https://cf.geekdo-images.com/NNOCMpxKchQb_ByLmvDfRQ__original/img/-0mnuZeWP3DNRiw-w6G3fPfNXik=/0x0/filters:format(png)/pic8145392.png",
+    "thumbnail": "https://cf.geekdo-images.com/NNOCMpxKchQb_ByLmvDfRQ__small/img/hgZk4xlsFSfbXyMy2Y32dFqXCHM=/fit-in/200x150/filters:strip_icc()/pic8145392.png",
+    "designers": [
+      "Dave Beck",
+      "Abe Burson"
+    ],
+    "weight": 3.79,
+    "bayes_rating": 6.938,
+    "min_players": 1,
+    "max_players": 4,
+    "M": 4,
+    "T": 2,
+    "G": 4,
+    "F": 2,
+    "Ar": 4,
+    "type": "competitive",
+    "mechs": [
+      "STR-01 Competitive Games",
+      "STR-04 Solo Games",
+      "TRN-01 Fixed Turn Order",
+      "ACT-01 Action Points",
+      "ACT-12 Variable Player Powers",
+      "ACT-16 Tech Trees/Tech Tracks/Track Bonuses",
+      "VIC-01 Victory Points from Game State",
+      "VIC-02 Victory Points from Player Actions",
+      "VIC-09 Fixed Number of Rounds",
+      "ECO-05 Income",
+      "ECO-11 Upgrades",
+      "ECO-13 Investment",
+      "WPL-01 Standard Worker Placement",
+      "SET-01 Set Valuation",
+      "CAR-08 Multi-Use Cards"
+    ],
+    "description": "Master the ancient art of violin-making, crafting legendary instruments through generations of woodworking expertise and artistic refinement.",
+    "justification": "M(4): Deep crafting systems with material quality, tool upgrades, and generational progression. T(2): Violin-making theme overlays euro mechanics without generating craft experience. G(4): Meaningful decisions about apprenticeships, commissions, and workshop investments. F(2): Complex rules and material management create moderate overhead. Ar(4): Elegant historical artwork and beautiful component design.",
+    "GS": 30,
+    "IS": 60.0,
+    "feeling": "Engaging"
+  },
+  "2782": {
+    "bgg_id": 2782,
+    "_solo": false,
+    "name": "Vantage"
+  },
+  "440007": {
+    "bgg_id": 440007,
+    "_solo": false,
+    "name": "The Druids of Edora"
+  },
+  "414117": {
+    "bgg_id": 414117,
+    "name": "Wroth",
+    "year": 2025,
+    "image": "https://cf.geekdo-images.com/pF07bElBCzBj1en-zTwFtQ__original/img/V9jAPkvLfZVzFY99HHeSl0dAmyQ=/0x0/filters:format(jpeg)/pic8978903.jpg",
+    "thumbnail": "https://cf.geekdo-images.com/pF07bElBCzBj1en-zTwFtQ__small/img/owqJWDObFHxuxCPMvATTe80iPeA=/fit-in/200x150/filters:strip_icc()/pic8978903.jpg",
+    "designers": [
+      "Manny Trembley"
+    ],
+    "weight": 2.28,
+    "bayes_rating": 6.186,
+    "min_players": 1,
+    "max_players": 4,
+    "M": 4,
+    "T": 5,
+    "G": 4,
+    "F": 2,
+    "Ar": 4,
+    "type": "co-op",
+    "mechs": [
+      "STR-02 Cooperative Games",
+      "STR-08 Scenario/Mission/Campaign Games",
+      "ACT-01 Action Points",
+      "ACT-12 Variable Player Powers",
+      "CAR-04 Card Draw, Limits, and Deck Exhaustion",
+      "CAR-08 Multi-Use Cards",
+      "RES-05 Die Icons",
+      "UNC-02 Push-Your-Luck",
+      "UNC-09 Probability Management",
+      "VIC-02 Victory Points from Player Actions",
+      "VIC-11 Completing Targets",
+      "MOV-01 Tessellation",
+      "SET-02 Tile-Laying"
+    ],
+    "description": "Lead survivors through a cursed wasteland where every step forward risks awakening ancient horrors that hunger for your sanity.",
+    "justification": "M(4): Action points with variable powers and multi-use cards create tactical depth. T(5): Curse mechanics and sanity loss generate genuine dread and desperation. G(4): Every action carries meaningful risk-reward tension in hostile environment. F(2): Setup and card management add overhead but remain manageable. Ar(4): Dark atmospheric art captures apocalyptic horror tone effectively.",
+    "GS": 78,
+    "IS": 156.0,
+    "feeling": "Total"
+  },
+  "404845": {
+    "bgg_id": 404845,
+    "_solo": false,
+    "name": "Canal Houses"
+  },
+  "438936": {
+    "bgg_id": 438936,
+    "_solo": false,
+    "name": "The White Castle Duel"
+  },
+  "350184": {
+    "bgg_id": 350184,
+    "name": "Earth",
+    "year": 2023,
+    "image": "https://cf.geekdo-images.com/0xqF_KyOb7V26Lu5YT3fxw__original/img/uqxMcj1QPt-U34drYdL6mmv2eos=/0x0/filters:format(jpeg)/pic6699821.jpg",
+    "thumbnail": "https://cf.geekdo-images.com/0xqF_KyOb7V26Lu5YT3fxw__small/img/ABTwzzMGekkz2jVl01LC4789TcQ=/fit-in/200x150/filters:strip_icc()/pic6699821.jpg",
+    "designers": [
+      "Maxime Tardif"
+    ],
+    "weight": 2.91,
+    "bayes_rating": 7.356,
+    "min_players": 1,
+    "max_players": 5,
+    "M": 3,
+    "T": 2,
+    "G": 3,
+    "F": 2,
+    "Ar": 4,
+    "type": "competitive",
+    "mechs": [
+      "STR-01 Competitive Games",
+      "STR-04 Solo Games",
+      "TRN-01 Fixed Turn Order",
+      "ACT-01 Action Points",
+      "ACT-12 Variable Player Powers",
+      "RES-06 Card Play",
+      "VIC-01 Victory Points from Game State",
+      "VIC-02 Victory Points from Player Actions",
+      "VIC-06 End-Game Bonuses",
+      "VIC-09 Fixed Number of Rounds",
+      "ECO-05 Income",
+      "CAR-05 Deck Building",
+      "CAR-08 Multi-Use Cards",
+      "CAR-09 Tags",
+      "SET-01 Set Valuation",
+      "SET-05 Combo Abilities"
+    ],
+    "description": "Build diverse ecosystems by planting flora and fauna cards that synergize through natural habitats and elemental chains.",
+    "justification": "M(3): Card engine building with elemental combos and habitat synergies. T(2): Nature theme present but mechanics don't generate ecological experience. G(3): Meaningful card selection and tableau optimization decisions. F(2): Setup overhead with multiple card types and scoring tracks. Ar(4): Beautiful nature photography and clean botanical design throughout.",
+    "GS": 16,
+    "IS": 32.0,
+    "feeling": "Engaging"
+  },
+  "402353": {
+    "bgg_id": 402353,
+    "_solo": false,
+    "name": "Prowl: Clans & Cunning"
+  },
+  "155255": {
+    "bgg_id": 155255,
+    "_solo": false,
+    "name": "Pax Pamir"
+  },
+  "447589": {
+    "bgg_id": 447589,
+    "_solo": false,
+    "name": "Jackpot: Set the Reel"
+  },
+  "379039": {
+    "bgg_id": 379039,
+    "_solo": false,
+    "name": "Fathom"
+  },
+  "429860": {
+    "bgg_id": 429860,
+    "_solo": false,
+    "name": "Transgalactica"
+  },
+  "389031": {
+    "bgg_id": 389031,
+    "name": "Fighting Fantasy Adventures",
+    "year": 2025,
+    "image": "https://cf.geekdo-images.com/18gFZVHxhMCHh3-2tDDi-g__original/img/XrcrgvXhRldSCnowhI2CcBLeYv8=/0x0/filters:format(jpeg)/pic8691623.jpg",
+    "thumbnail": "https://cf.geekdo-images.com/18gFZVHxhMCHh3-2tDDi-g__small/img/oYOdZAaJD7FxjjD-KNCKq73CAlI=/fit-in/200x150/filters:strip_icc()/pic8691623.jpg",
+    "designers": [
+      "Martin Wallace"
+    ],
+    "weight": 1.25,
+    "bayes_rating": 5.6,
+    "min_players": 1,
+    "max_players": 4,
+    "M": 2,
+    "T": 4,
+    "G": 3,
+    "F": 1,
+    "Ar": 4,
+    "type": "solo",
+    "mechs": [
+      "STR-04 Solo Games",
+      "STR-08 Scenario/Mission/Campaign Games",
+      "TRN-01 Fixed Turn Order",
+      "ACT-18 Narrative Choice",
+      "RES-01 High Number",
+      "RES-02 Stat Check",
+      "RES-19 Dice Selection",
+      "VIC-11 Completing Targets",
+      "UNC-02 Push-Your-Luck",
+      "UNC-07 Unknown Information",
+      "MOV-19 Move Through Deck",
+      "CAR-04 Card Draw, Limits, and Deck Exhaustion"
+    ],
+    "description": "Navigate branched narratives as classic Fighting Fantasy heroes, rolling dice against your stats to survive deadly encounters and complete epic quests.",
+    "justification": "M(2): Basic stat checks and branched narratives with minimal complexity. T(4): Dice-vs-stats perfectly captures Fighting Fantasy's perilous adventure feel. G(3): Meaningful story branching but limited mechanical agency. F(1): Straightforward rules, quick setup for adventure gaming. Ar(4): Classic fantasy illustrations evoke the beloved gamebook aesthetic.",
+    "GS": 23,
+    "IS": 46.0,
+    "feeling": "Engaging"
+  },
+  "409583": {
+    "bgg_id": 409583,
+    "_solo": false,
+    "name": "Take the Throne"
   }
 }
