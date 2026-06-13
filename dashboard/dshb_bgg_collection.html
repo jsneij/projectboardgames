@@ -1159,12 +1159,21 @@ function recordEdit(collection, name, field, value) {
   renderPendingCount();
 }
 
+// Escape user-controlled strings before they land in HTML attributes or text.
+// Game names with `&` (e.g. "Sea Salt & Paper") would otherwise produce invalid HTML.
+function htmlEscape(s) {
+  return String(s ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
 function renderScoreCell(gameName, field, currentValue) {
   if (!Edit.on) return String(currentValue ?? 0);
   const v = currentValue ?? 0;
-  const safe = gameName.replace(/"/g, '&quot;');
   return `<input type="number" min="0" max="5" step="1" value="${v}"
-    class="edit-score" data-game="${safe}" data-field="${field}"
+    class="edit-score" data-game="${htmlEscape(gameName)}" data-field="${field}"
     style="width:36px;padding:2px 4px;background:#1a1a1a;color:#fff;border:1px solid #555;border-radius:3px;text-align:center">`;
 }
 
@@ -1180,27 +1189,23 @@ function uniqueValuesFor(field) {
 }
 
 function renderSelectCell(gameName, field, currentValue) {
-  if (!Edit.on) return String(currentValue ?? '');
-  const safe = gameName.replace(/"/g, '&quot;');
+  if (!Edit.on) return currentValue ? htmlEscape(currentValue) : '—';
   const opts = uniqueValuesFor(field).map(v => {
     const sel = v === currentValue ? ' selected' : '';
-    const val = String(v).replace(/"/g, '&quot;');
-    return `<option value="${val}"${sel}>${v}</option>`;
+    return `<option value="${htmlEscape(v)}"${sel}>${htmlEscape(v)}</option>`;
   }).join('');
-  return `<select class="edit-select" data-game="${safe}" data-field="${field}"
+  return `<select class="edit-select" data-game="${htmlEscape(gameName)}" data-field="${field}"
     style="background:#1a1a1a;color:#fff;border:1px solid #555;border-radius:3px;padding:2px 4px;font-size:11px">
     <option value=""${currentValue ? '' : ' selected'}>—</option>${opts}
   </select>`;
 }
 
 function renderTextInputCell(gameName, field, currentValue, opts = {}) {
-  if (!Edit.on) return String(currentValue ?? '');
-  const safe = gameName.replace(/"/g, '&quot;');
-  const val = String(currentValue ?? '').replace(/"/g, '&quot;');
+  if (!Edit.on) return htmlEscape(currentValue ?? '');
   const widthStyle = opts.width ? `width:${opts.width};` : '';
   const type = opts.type || 'text';
-  return `<input type="${type}" value="${val}"
-    class="edit-text" data-game="${safe}" data-field="${field}"
+  return `<input type="${type}" value="${htmlEscape(currentValue ?? '')}"
+    class="edit-text" data-game="${htmlEscape(gameName)}" data-field="${field}"
     style="${widthStyle}padding:2px 4px;background:#1a1a1a;color:#fff;border:1px solid #555;border-radius:3px;font-size:11px">`;
 }
 
@@ -1716,7 +1721,7 @@ function renderTable(state) {
       <td>${typeIcon(g.type)}</td>
       <td style="min-width:180px">${Edit.on ? renderTextInputCell(g.name, 'name', g.name, { width: '160px' }) : a(g.bgg_id, g.name)}</td>
       <td>${srcBadge}</td>
-      <td style="color:var(--text2)">${renderSelectCell(g.name, 'type', g.type)}</td>
+      <td style="color:var(--text2)">${Edit.on ? renderSelectCell(g.name, 'type', g.type) : (g.type || '—')}</td>
       <td class="mono">${g.hasScores ? renderScoreCell(g.name, 'M', g.M) : '—'}</td>
       <td class="mono"${tHi}>${g.hasScores ? renderScoreCell(g.name, 'T', g.T) : '—'}</td>
       <td class="mono">${g.hasScores ? renderScoreCell(g.name, 'G', g.G) : '—'}</td>
