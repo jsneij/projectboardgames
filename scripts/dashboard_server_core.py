@@ -76,17 +76,22 @@ def validate_scores(payload: Any, existing: Any) -> list[dict]:
 
 
 def atomic_write_json(path: Path, data: Any) -> None:
-    """Write JSON to `path` atomically: write to .tmp, fsync, rename over real file."""
+    """Write JSON to `path` atomically: write to .tmp, fsync, rename over real file.
+
+    Requires `path.parent` to exist. Cleans up the temp file if json.dump or
+    fsync raises before the rename completes.
+    """
     path = Path(path)
-    fd, tmp_name = tempfile.mkstemp(prefix=path.name + ".", suffix=".tmp", dir=str(path.parent))
-    tmp_path = Path(tmp_name)
+    tmp_path: Path | None = None
     try:
+        fd, tmp_name = tempfile.mkstemp(prefix=path.name + ".", suffix=".tmp", dir=str(path.parent))
+        tmp_path = Path(tmp_name)
         with os.fdopen(fd, "w", encoding="utf-8") as f:
             json.dump(data, f, indent=2, ensure_ascii=False)
             f.flush()
             os.fsync(f.fileno())
         os.replace(tmp_path, path)
     except Exception:
-        if tmp_path.exists():
-            tmp_path.unlink()
+        if tmp_path is not None:
+            tmp_path.unlink(missing_ok=True)
         raise
