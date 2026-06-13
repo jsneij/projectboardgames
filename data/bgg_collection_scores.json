@@ -123,7 +123,7 @@
       "G": 1,
       "F": 1,
       "Ar": 1,
-      "feeling": "",
+      "feeling": null,
       "mechs": [
         "STR-01 Competitive Games",
         "TRN-04 Progressive Turn Order",
@@ -1059,7 +1059,7 @@
       "G": 1,
       "F": 1,
       "Ar": 1,
-      "feeling": "",
+      "feeling": null,
       "mechs": [
         "STR-01 Competitive Games",
         "TRN-04 Progressive Turn Order",
@@ -4842,7 +4842,7 @@
       "G": 1,
       "F": 1,
       "Ar": 2,
-      "feeling": "",
+      "feeling": null,
       "mechs": [
         "STR-01 Competitive Games",
         "TRN-04 Progressive Turn Order",
