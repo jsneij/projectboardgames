@@ -41,8 +41,8 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         super().__init__(*args, directory=str(REPO_ROOT), **kwargs)
 
     # ── Logging: keep server output tidy ────────────────────────────────
-    def log_message(self, fmt, *args):
-        sys.stderr.write("[dashboard_server] " + fmt % args + "\n")
+    def log_message(self, format, *args):  # noqa: A002 — matches BaseHTTPRequestHandler signature
+        sys.stderr.write("[dashboard_server] " + format % args + "\n")
 
     # ── Helpers ─────────────────────────────────────────────────────────
     def _send_json(self, code: int, body: dict) -> None:
