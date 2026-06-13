@@ -11,15 +11,22 @@ ProjectBoardGames/
 ├── CLAUDE.md                          ← you are here
 ├── .claude/commands/                  ← slash commands
 │   ├── dashboard_BGG.md               ← /dashboard_BGG
-│   └── refresh_BGG.md                 ← /refresh_BGG
+│   ├── refresh_BGG.md                 ← /refresh_BGG
+│   └── refresh_explorer.md            ← /refresh_explorer
 ├── .github/workflows/
 │   ├── fetch-bgg.yml                  ← nightly BGG fetch (02:00 UTC)
+│   ├── discover-explorer.yml          ← weekly Explorer discovery (Mon 04:00 UTC)
 │   └── deploy-pages.yml               ← GitHub Pages deploy
 ├── scripts/
 │   ├── fetch_bgg_collection.py        ← BGG fetcher
 │   ├── sync_scores.py                 ← scores sync
 │   ├── score_new_games.py             ← auto-scoring via Claude API
-│   └── parse_encyclopedia.py          ← encyclopedia markdown → mechanisms.json
+│   ├── parse_encyclopedia.py          ← encyclopedia markdown → mechanisms.json
+│   ├── explorer_sources.py            ← discovery sources (BGG, Polyhedron Collider, …)
+│   ├── explorer_resolve.py            ← name → BGG ID resolution
+│   ├── explorer_discover.py           ← Explorer pipeline orchestrator
+│   ├── dashboard_server.py            ← local edit-mode HTTP server
+│   └── dashboard_server_core.py       ← validation + atomic write + git ops
 ├── dashboard/
 │   └── dshb_bgg_collection.html       ← HTML dashboard (single file)
 ├── data/                              ← all data files
@@ -27,7 +34,10 @@ ProjectBoardGames/
 │   ├── bgg_collection_scores.json     ← personal scores + mechanisms (source of truth)
 │   ├── bgg_collection_compact.json
 │   ├── mechanisms.json                ← 203-mechanism encyclopedia
-│   └── fetch_log.json
+│   ├── fetch_log.json
+│   ├── explorer_sources.json          ← Explorer pipeline config (geeklist IDs, scrapers)
+│   ├── explorer_candidates.json       ← Explorer output (read by dashboard)
+│   └── explorer_cache.json            ← LLM-scored-results cache (incremental cost)
 ├── docs/
 │   ├── immersion_score.md             ← scoring framework + user profile
 │   └── tabletop mechanics/            ← mechanism encyclopedias
@@ -78,12 +88,39 @@ Single self-contained HTML file with inline CSS and JS. No build step, no framew
   - Owned vs Wishlist DNA comparison (radar)
   - Mechanism Pairs co-occurrence (bar chart with click-to-expand game lists)
   - Priority Queue (ranked wishlist with Immersion Score weighting)
+- **Explorer tab** — Unowned solo games predicted Total / Immersive by the framework. Fed by `data/explorer_candidates.json` (see Explorer pipeline below). Reads gracefully when the file is absent.
 - Mobile-responsive: flex-wrap tabs, bottom-sheet tooltips, tap-to-toggle interactions
+
+### Explorer Pipeline — `scripts/explorer_discover.py`
+
+Discovers solo board games not in the collection that the Immersion Score
+framework predicts as Total or Immersive.
+
+Sources (modular, fail-soft — each can break independently):
+- BGG `/hot` (top trending; always works with the bearer token)
+- BGG GeekLists by ID (configurable in `data/explorer_sources.json` — pin curated reviewer lists here)
+- Polyhedron Collider (Blogger RSS — episode titles parsed as CSV of games covered)
+- Solitaire Times (WordPress RSS — currently empty but kept as plumbing)
+
+Pipeline:
+1. Run all sources → flat list of candidates (some with BGG ids, some with just names).
+2. Resolve unresolved names via `/xmlapi2/search` + difflib fuzzy match.
+3. Dedup by BGG id; merge `sources` lists.
+4. Drop ids already in the collection (any of `owned` / `wishlist` / `preordered` / `previously_owned` / `want_to_play` / `want_to_buy` / `for_trade`).
+5. Enrich remaining ids with BGG `/thing` (designers, mechanics, weight, bayes rating, players poll).
+6. Filter for solo capability: BGG mechanic 2023, or `min_players == 1` with a positive poll.
+7. Check `data/explorer_cache.json` — skip already-scored ids.
+8. Score new ones via `scripts/score_new_games.py::score_game()` (reused directly).
+9. Compute IS = (M × T × G − F) × (Ar / 2); keep `feeling ∈ {Total, Immersive}`.
+10. Write `data/explorer_candidates.json` + update cache.
+
+Cache is the key efficiency lever — only newly-seen BGG ids cost Claude tokens.
 
 ### GitHub Actions
 
 - **`fetch-bgg.yml`** — Runs nightly at 02:00 UTC, fetches latest BGG data, commits changes
-- **`deploy-pages.yml`** — Deploys to GitHub Pages on push or after successful fetch workflow (uses `workflow_run` trigger since bot pushes don't fire `on: push`)
+- **`discover-explorer.yml`** — Runs Mondays at 04:00 UTC, refreshes Explorer candidates
+- **`deploy-pages.yml`** — Deploys to GitHub Pages on push or after either of the above workflows complete
 
 ## Key Configuration (hardcoded in script)
 

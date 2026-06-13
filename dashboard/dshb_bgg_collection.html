@@ -1003,6 +1003,7 @@ nav::-webkit-scrollbar { display: none; }
     <button class="tab-btn" data-tab="wishlist">Wishlist</button>
     <button class="tab-btn" data-tab="patterns">Patterns</button>
     <button class="tab-btn" data-tab="insights">Insights</button>
+    <button class="tab-btn" data-tab="explorer">Explorer</button>
   </nav>
 </div>
 
@@ -1181,6 +1182,53 @@ nav::-webkit-scrollbar { display: none; }
 
   <!-- TAB 8: IS FRAMEWORK -->
   <div id="tab-is-framework" class="tab-pane"></div>
+
+  <!-- TAB: EXPLORER — unowned solo games scored Total / Immersive by the framework -->
+  <div id="tab-explorer" class="tab-pane">
+    <div style="font-size:12px;color:var(--text3);margin-bottom:12px;line-height:1.5">
+      Solo games <strong>not</strong> in your collection that the Immersion-Score framework predicts as
+      <span style="color:var(--red);font-weight:600">Total</span> or
+      <span style="color:var(--amber);font-weight:600">Immersive</span>.
+      Sourced weekly from BGG hot, curated GeekLists, Polyhedron Collider, and Solitaire Times.
+    </div>
+    <div class="sort-bar">
+      <span style="font-size:11px;color:var(--text3);margin-right:4px">Show:</span>
+      <button class="sort-btn active" data-explorer-filter="all">All</button>
+      <button class="sort-btn" data-explorer-filter="Total">Total</button>
+      <button class="sort-btn" data-explorer-filter="Immersive">Immersive</button>
+      <span style="font-size:11px;color:var(--text3);margin-left:12px;margin-right:4px">Sort:</span>
+      <button class="sort-btn active" data-explorer-sort="IS">IS <span class="dir">↓</span></button>
+      <button class="sort-btn" data-explorer-sort="GS">GS <span class="dir">↓</span></button>
+      <button class="sort-btn" data-explorer-sort="weight">Weight <span class="dir">↓</span></button>
+      <button class="sort-btn" data-explorer-sort="year">Year <span class="dir">↓</span></button>
+      <button class="sort-btn" data-explorer-sort="bayes_rating">BGG★ <span class="dir">↓</span></button>
+      <button class="sort-btn" data-explorer-sort="name">Name <span class="dir">↑</span></button>
+      <div class="search-wrap" style="margin:0 0 0 auto">
+        <input type="text" id="explorer-search" placeholder="Search candidates...">
+      </div>
+    </div>
+    <div id="explorer-empty" style="display:none;padding:30px;text-align:center;color:var(--text3);font-size:13px">
+      No candidates yet — run <code>python scripts/explorer_discover.py</code> or wait for the weekly cron.
+    </div>
+    <div>
+      <table id="explorer-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Name</th>
+            <th>Year</th>
+            <th>Type</th>
+            <th>M</th><th style="color:var(--red)">T</th><th>G</th><th>F</th><th>Ar</th>
+            <th>GS</th><th style="color:var(--amber)">IS</th>
+            <th>Wt</th><th>BGG★</th>
+            <th>Sources</th>
+            <th>Feeling</th>
+          </tr>
+        </thead>
+        <tbody id="explorer-tbody"></tbody>
+      </table>
+    </div>
+  </div>
 
 </div><!-- /content -->
 
@@ -1891,10 +1939,12 @@ function langDepHtml(g) {
 let STATE = {};
 
 async function loadData() {
-  const [colResp, scResp, mechResp] = await Promise.all([
+  const [colResp, scResp, mechResp, expResp] = await Promise.all([
     fetch('../data/bgg_collection.json'),
     fetch('../data/bgg_collection_scores.json'),
-    fetch('../data/mechanisms.json')
+    fetch('../data/mechanisms.json'),
+    // Explorer is optional — pre-discovery, the file may not exist yet.
+    fetch('../data/explorer_candidates.json').catch(() => null),
   ]);
   if (!colResp.ok) throw new Error('Could not load bgg_collection.json');
   if (!scResp.ok) throw new Error('Could not load bgg_collection_scores.json');
@@ -1902,7 +1952,11 @@ async function loadData() {
   const collection = await colResp.json();
   const scores = await scResp.json();
   const mechanisms = await mechResp.json();
-  return { collection, scores, mechanisms };
+  let explorer = { metadata: {}, candidates: [] };
+  if (expResp && expResp.ok) {
+    try { explorer = await expResp.json(); } catch { /* keep default empty */ }
+  }
+  return { collection, scores, mechanisms, explorer };
 }
 
 function mergeGame(game, scoreObj) {
@@ -1928,7 +1982,7 @@ function mergeGame(game, scoreObj) {
   };
 }
 
-function buildState(collection, scores, mechanisms) {
+function buildState(collection, scores, mechanisms, explorer) {
   const ownedScores = scores.owned || {};
   const wlScores = scores.wishlist || {};
   const preScores = scores.preordered || {};
@@ -1967,7 +2021,17 @@ function buildState(collection, scores, mechanisms) {
     }))
   }));
 
-  return { owned, wishlist, preordered, prevOwned, collection, mechData };
+  // Explorer: list of unowned solo candidates predicted Total / Immersive.
+  // Optional — may be absent on first run / before the discovery pipeline writes its output.
+  const explorerCandidates = (explorer && Array.isArray(explorer.candidates))
+    ? explorer.candidates
+    : [];
+  const explorerMeta = (explorer && explorer.metadata) || {};
+
+  return {
+    owned, wishlist, preordered, prevOwned, collection, mechData,
+    explorer: explorerCandidates, explorerMeta,
+  };
 }
 
 // ============================================================
@@ -3214,6 +3278,165 @@ function renderMechanisms(state) {
   });
 }
 
+// ============================================================
+// TAB: EXPLORER — unowned solo candidates predicted Total / Immersive
+// ============================================================
+let explorerSortField = 'IS';
+let explorerSortDir = -1;
+let explorerFilter = 'all';
+let explorerSearch = '';
+let explorerExpanded = null;
+
+const _explorerSortKey = {
+  IS: g => g.IS ?? 0,
+  GS: g => g.GS ?? 0,
+  weight: g => g.weight ?? 0,
+  year: g => g.year ?? 0,
+  bayes_rating: g => g.bayes_rating ?? 0,
+  name: g => (g.name || '').toLowerCase(),
+};
+
+function renderExplorer(state) {
+  const tbody = document.getElementById('explorer-tbody');
+  const empty = document.getElementById('explorer-empty');
+  if (!tbody || !empty) return;
+  const all = state.explorer || [];
+  if (!all.length) {
+    tbody.innerHTML = '';
+    empty.style.display = 'block';
+    return;
+  }
+  empty.style.display = 'none';
+
+  // Filter
+  const q = explorerSearch.trim().toLowerCase();
+  const filtered = all.filter(g => {
+    if (explorerFilter !== 'all' && g.feeling !== explorerFilter) return false;
+    if (q && !(g.name || '').toLowerCase().includes(q)) return false;
+    return true;
+  });
+
+  // Sort
+  const keyFn = _explorerSortKey[explorerSortField] || _explorerSortKey.IS;
+  filtered.sort((a, b) => {
+    const ka = keyFn(a), kb = keyFn(b);
+    if (ka < kb) return -1 * explorerSortDir;
+    if (ka > kb) return  1 * explorerSortDir;
+    return 0;
+  });
+
+  tbody.innerHTML = '';
+  explorerExpanded = null;
+
+  filtered.forEach((g, i) => {
+    const row = document.createElement('tr');
+    row.className = 'game-row';
+    const tHi = (g.T ?? 0) >= 4 ? ' class="t-hi"' : '';
+    const isCol = g.IS !== null && g.IS !== undefined ? isColor(g.IS) : 'var(--text3)';
+    const isVal = g.IS !== null && g.IS !== undefined ? fmt1(g.IS) : '—';
+    const srcBadges = (g.sources || []).map(s => {
+      const label = s.replace('bgg_', '').replace('_', ' ');
+      return `<span style="display:inline-block;font-size:10px;padding:1px 6px;margin-right:4px;border-radius:4px;background:rgba(120,200,250,0.12);color:#cce8ff;border:1px solid rgba(120,200,250,0.25)">${htmlEscape(label)}</span>`;
+    }).join('');
+    row.innerHTML = `
+      <td>${typeIcon(g.type)}</td>
+      <td style="min-width:200px"><span class="game-title" title="Show details">${htmlEscape(g.name)}</span></td>
+      <td class="mono" style="color:var(--text3)">${g.year ?? '—'}</td>
+      <td style="color:var(--text2)">${g.type || '—'}</td>
+      <td class="mono">${g.M ?? '—'}</td>
+      <td class="mono"${tHi}>${g.T ?? '—'}</td>
+      <td class="mono">${g.G ?? '—'}</td>
+      <td class="mono" style="color:var(--amber)">${g.F ?? '—'}</td>
+      <td class="mono">${g.Ar ?? '—'}</td>
+      <td class="mono">${g.GS ?? '—'}</td>
+      <td class="mono" style="color:${isCol}"><strong>${isVal}</strong></td>
+      <td class="mono" style="color:var(--text2)">${g.weight ? g.weight.toFixed(2) : '—'}</td>
+      <td class="mono" style="color:var(--text2)">${g.bayes_rating ? g.bayes_rating.toFixed(2) : '—'}</td>
+      <td>${srcBadges || '—'}</td>
+      <td>${FEELING_BADGE(g.feeling)}</td>`;
+
+    const expandRow = document.createElement('tr');
+    expandRow.className = 'expand-row';
+    expandRow.style.display = 'none';
+    const td = document.createElement('td');
+    td.colSpan = 15;
+    const desc = g.description || '';
+    const just = g.justification || '';
+    const mechsHtml = (g.mechs || []).map(m => `<span class="mech-tag">${htmlEscape(m)}</span>`).join('');
+    const designers = (g.designers || []).join(', ');
+    const playerRange = (g.min_players && g.max_players)
+      ? `${g.min_players}–${g.max_players} players`
+      : '';
+    td.innerHTML = `<div class="expand-panel">
+      ${radarSVG(g, 160)}
+      <div style="flex:1;min-width:0">
+        ${designers ? `<div style="font-size:11px;color:var(--text3);margin-bottom:6px">${htmlEscape(designers)}${playerRange ? ' · ' + playerRange : ''}</div>` : ''}
+        ${desc ? `<div style="font-size:13px;color:var(--accent);margin-bottom:10px;line-height:1.4">${htmlEscape(desc)}</div>` : ''}
+        ${just ? `<div style="font-size:11px;color:var(--text3);margin-bottom:4px">PREDICTED JUSTIFICATION</div><div style="font-size:12px;color:var(--text2);line-height:1.5;margin-bottom:10px">${htmlEscape(just).replace(/([MTGF]|Ar)\(\d\):/g, '<span style="color:var(--accent);font-weight:600">$&</span>')}</div>` : ''}
+        ${mechsHtml ? `<div style="font-size:11px;color:var(--text3);margin-bottom:4px">PREDICTED MECHANISMS</div><div class="expand-mechs">${mechsHtml}</div>` : ''}
+        <div style="margin-top:14px">
+          <a href="${BGG_URL(g.bgg_id)}" target="_blank" rel="noopener" style="font-size:12px;color:var(--accent);text-decoration:underline;text-underline-offset:3px">View on BoardGameGeek →</a>
+        </div>
+      </div>
+      ${g.image ? `<a href="${BGG_URL(g.bgg_id)}" target="_blank" rel="noopener" onclick="event.stopPropagation()"><img src="${g.image}" alt="" class="expand-cover" loading="lazy"></a>` : ''}
+    </div>`;
+    expandRow.appendChild(td);
+
+    const titleEl = row.querySelector('.game-title');
+    if (titleEl) {
+      titleEl.addEventListener('click', () => {
+        if (explorerExpanded === expandRow) {
+          expandRow.style.display = 'none';
+          explorerExpanded = null;
+        } else {
+          if (explorerExpanded) explorerExpanded.style.display = 'none';
+          expandRow.style.display = '';
+          explorerExpanded = expandRow;
+        }
+      });
+    }
+
+    tbody.appendChild(row);
+    tbody.appendChild(expandRow);
+  });
+}
+
+// BGG URL helper (the existing `a()` no longer returns a link)
+function BGG_URL(id) { return `https://boardgamegeek.com/boardgame/${id}`; }
+
+// Explorer sort/filter button wiring
+document.querySelectorAll('[data-explorer-sort]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const field = btn.dataset.explorerSort;
+    if (explorerSortField === field) {
+      explorerSortDir *= -1;
+    } else {
+      explorerSortField = field;
+      explorerSortDir = field === 'name' ? 1 : -1;
+    }
+    document.querySelectorAll('[data-explorer-sort]').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const arrow = btn.querySelector('.dir');
+    if (arrow) arrow.textContent = explorerSortDir === 1 ? '↑' : '↓';
+    if (STATE.explorer) renderExplorer(STATE);
+  });
+});
+document.querySelectorAll('[data-explorer-filter]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    explorerFilter = btn.dataset.explorerFilter;
+    document.querySelectorAll('[data-explorer-filter]').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    if (STATE.explorer) renderExplorer(STATE);
+  });
+});
+const explorerSearchEl = document.getElementById('explorer-search');
+if (explorerSearchEl) {
+  explorerSearchEl.addEventListener('input', (e) => {
+    explorerSearch = e.target.value;
+    if (STATE.explorer) renderExplorer(STATE);
+  });
+}
+
 const IS_ZONES = [
   { label: 'On Shelf', min: -Infinity, max: 30, color: '#3b82f6', text: '#60a5fa' },
   { label: 'Engaging', min: 30, max: 87, color: '#f59e0b', text: '#fbbf24' },
@@ -3850,6 +4073,9 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
       renderISFramework(STATE);
       isFrameworkRendered = true;
     }
+    if (tab === 'explorer' && STATE) {
+      renderExplorer(STATE);
+    }
   });
 });
 
@@ -3868,8 +4094,8 @@ const initReady = new Promise(res => { _initReady = res; });
     const headerH = hdr ? hdr.offsetHeight : 78;
     document.documentElement.style.setProperty('--header-h', headerH + 'px');
 
-    const { collection, scores, mechanisms } = await loadData();
-    STATE = buildState(collection, scores, mechanisms);
+    const { collection, scores, mechanisms, explorer } = await loadData();
+    STATE = buildState(collection, scores, mechanisms, explorer);
     buildMechOptions(mechanisms);
     Edit.original = JSON.parse(JSON.stringify(scores));
     _initReady();
@@ -3893,6 +4119,7 @@ const initReady = new Promise(res => { _initReady = res; });
     renderPatterns(STATE);
     renderInsights();
     renderMechanisms(STATE);
+    renderExplorer(STATE);
 
     // Measure sort bar to position table headers below it
     const sortBar = document.querySelector('.sort-bar');
