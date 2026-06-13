@@ -1184,7 +1184,7 @@ async function setEditMode(on) {
       document.body.classList.remove('edit-mode');
       if (banner) banner.style.display = 'none';
       showToast('No changes', 'info', 1500);
-      if (typeof renderCollection === 'function') renderCollection();
+      renderCollection();
       return;
     }
 
@@ -1200,7 +1200,7 @@ async function setEditMode(on) {
       });
       const j = await r.json();
 
-      if (j.status === 'ok' || j.status === 'noop') {
+      if (j.status === 'ok' || j.status === 'noop' || j.status === 'committed_not_pushed') {
         Edit.original = updated;
         Edit.pending = {};
         localStorage.removeItem(PENDING_KEY);
@@ -1208,19 +1208,13 @@ async function setEditMode(on) {
         document.body.classList.remove('edit-mode');
         if (banner) banner.style.display = 'none';
         renderPendingCount();
-        if (typeof renderCollection === 'function') renderCollection();
-        showToast(j.message || `Saved ${changed_games.length} game(s)`, 'info');
-
-      } else if (j.status === 'committed_not_pushed') {
-        Edit.original = updated;
-        Edit.pending = {};
-        localStorage.removeItem(PENDING_KEY);
-        Edit.on = false;
-        document.body.classList.remove('edit-mode');
-        if (banner) banner.style.display = 'none';
-        renderPendingCount();
-        if (typeof renderCollection === 'function') renderCollection();
-        showToast(j.message || 'Committed locally; push failed', 'warn', 6000);
+        renderCollection();
+        const isWarn = j.status === 'committed_not_pushed';
+        showToast(
+          j.message || (isWarn ? 'Committed locally; push failed' : `Saved ${changed_games.length} game(s)`),
+          isWarn ? 'warn' : 'info',
+          isWarn ? 6000 : 4000,
+        );
 
       } else if (j.status === 'validation_error') {
         if (cb) cb.checked = true;
@@ -1251,17 +1245,13 @@ async function setEditMode(on) {
   if (banner) banner.style.display = on ? 'block' : 'none';
   document.body.classList.toggle('edit-mode', on);
   renderPendingCount();
-  if (typeof renderCollection === 'function') renderCollection();
+  renderCollection();
 }
 
 function renderPendingCount() {
-  let n = 0;
-  for (const c of Object.values(Edit.pending)) n += Object.keys(c).length;
   const el = document.getElementById('edit-pending-count');
-  if (el) el.textContent = String(n);
+  if (el) el.textContent = String(pendingChangeCount());
 }
-
-const SCORE_FIELDS = ['M', 'T', 'G', 'F', 'Ar'];
 
 function findGame(name) {
   for (const collection of ['owned', 'wishlist', 'preordered']) {
@@ -1312,7 +1302,12 @@ function renderScoreCell(gameName, field, currentValue) {
     style="width:36px;padding:2px 4px;background:#1a1a1a;color:#fff;border:1px solid #555;border-radius:3px;text-align:center">`;
 }
 
+// Per-render cache for uniqueValuesFor — reset by renderCollection() so each
+// render pass computes each field at most once instead of once per game row.
+let _uniqueValuesCache = {};
+
 function uniqueValuesFor(field) {
+  if (_uniqueValuesCache[field]) return _uniqueValuesCache[field];
   const set = new Set();
   for (const c of ['owned', 'wishlist', 'preordered']) {
     const games = Edit.original?.[c] || {};
@@ -1320,7 +1315,8 @@ function uniqueValuesFor(field) {
       if (g[field] != null && g[field] !== '') set.add(g[field]);
     }
   }
-  return [...set].sort();
+  _uniqueValuesCache[field] = [...set].sort();
+  return _uniqueValuesCache[field];
 }
 
 function renderSelectCell(gameName, field, currentValue) {
@@ -1345,6 +1341,7 @@ function renderTextInputCell(gameName, field, currentValue, opts = {}) {
 }
 
 function renderCollection() {
+  _uniqueValuesCache = {};
   if (STATE.owned) renderTable(STATE);
 }
 
@@ -3501,6 +3498,11 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
 // ============================================================
 // INIT
 // ============================================================
+// Exposed so the edit-detection IIFE can await data being ready before
+// attempting a localStorage restore (Edit.original must be set first).
+let _initReady;
+const initReady = new Promise(res => { _initReady = res; });
+
 (async () => {
   try {
     // Measure sticky header height for CSS sticky offsets
@@ -3510,10 +3512,9 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
 
     const { collection, scores, mechanisms } = await loadData();
     STATE = buildState(collection, scores, mechanisms);
-    // Build flat MECH_OPTIONS for the Edit-mode mechanism picker (Task 11).
     buildMechOptions(mechanisms);
-    // Snapshot for the Edit mode (Tasks 8-13). Deep clone so live mutations don't pollute the baseline.
     Edit.original = JSON.parse(JSON.stringify(scores));
+    _initReady();
 
     // Populate last fetch timestamp
     const fetchedAt = collection.metadata?.fetched_at;
@@ -3551,6 +3552,9 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
         If port is busy: <code>pkill -f "python3 -m http.server"</code>
       </div>
     </div>`;
+  } finally {
+    // Always resolve so the edit-detection IIFE doesn't hang when data load fails.
+    _initReady();
   }
 })();
 
@@ -3695,8 +3699,9 @@ function openMechPicker(addBtn) {
   const cb = document.getElementById('edit-toggle-checkbox');
   if (cb) cb.addEventListener('change', (e) => setEditMode(e.target.checked));
 
-  // Restore unsaved edits from localStorage (only when the local edit server is available).
-  if (!Edit.original) return;
+  // Wait for the data init to complete so Edit.original is guaranteed to be set
+  // before we attempt to restore pending edits from localStorage.
+  await initReady;
   try {
     const stored = JSON.parse(localStorage.getItem(PENDING_KEY) || 'null');
     if (stored && stored.pending && Object.keys(stored.pending).length) {
