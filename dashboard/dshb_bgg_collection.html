@@ -1412,7 +1412,9 @@ function openTokenModal() {
   const backdrop = document.getElementById('token-modal-backdrop');
   const input = document.getElementById('token-input');
   if (!backdrop || !input) return;
-  input.value = TokenStore.get() || '';
+  // Always open blank — never echo back the stored token so a screen-share
+  // or shoulder-surfer can't read it even briefly.
+  input.value = '';
   backdrop.classList.add('open');
   setTimeout(() => input.focus(), 50);
 }
@@ -1425,7 +1427,7 @@ function updateTokenIndicator() {
   if (!link) return;
   const has = !!TokenStore.get();
   link.classList.toggle('has-token', has);
-  link.textContent = has ? '🔑 Token set' : '🔑 Set token';
+  link.textContent = has ? '🔑 Reset token' : '🔑 Set token';
 }
 
 (function wireTokenModal() {
