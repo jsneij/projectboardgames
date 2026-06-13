@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-13T21:30:44+00:00",
+    "generated_at": "2026-06-13T21:46:02+00:00",
     "programs": [
       "Spiel des Jahres",
       "Golden Geek Awards",
@@ -9,12 +9,15 @@
     ],
     "total_awards": 152,
     "total_entries": 368,
-    "resolved_games": 264
+    "resolved_games": 264,
+    "scored_games": 0,
+    "honor_ids_resolved": 151
   },
   "awards": [
     {
       "program": "As d'Or",
       "year": 2026,
+      "honor_ids": {},
       "winners": [],
       "nominees": [
         {
@@ -55,6 +58,9 @@
     {
       "program": "As d'Or",
       "year": 2025,
+      "honor_ids": {
+        "Nominee": 110289
+      },
       "winners": [],
       "nominees": [
         {
@@ -95,6 +101,9 @@
     {
       "program": "As d'Or",
       "year": 2024,
+      "honor_ids": {
+        "Nominee": 102009
+      },
       "winners": [],
       "nominees": [
         {
@@ -135,6 +144,9 @@
     {
       "program": "As d'Or",
       "year": 2023,
+      "honor_ids": {
+        "Nominee": 78984
+      },
       "winners": [],
       "nominees": [
         {
@@ -175,6 +187,9 @@
     {
       "program": "As d'Or",
       "year": 2022,
+      "honor_ids": {
+        "Nominee": 74912
+      },
       "winners": [],
       "nominees": [
         {
@@ -215,6 +230,9 @@
     {
       "program": "As d'Or",
       "year": 2021,
+      "honor_ids": {
+        "Nominee": 70819
+      },
       "winners": [],
       "nominees": [
         {
@@ -247,6 +265,9 @@
     {
       "program": "As d'Or",
       "year": 2020,
+      "honor_ids": {
+        "Nominee": 60550
+      },
       "winners": [],
       "nominees": [
         {
@@ -279,6 +300,9 @@
     {
       "program": "As d'Or",
       "year": 2019,
+      "honor_ids": {
+        "Nominee": 56570
+      },
       "winners": [],
       "nominees": [
         {
@@ -311,6 +335,9 @@
     {
       "program": "As d'Or",
       "year": 2018,
+      "honor_ids": {
+        "Nominee": 47068
+      },
       "winners": [],
       "nominees": [
         {
@@ -343,6 +370,9 @@
     {
       "program": "As d'Or",
       "year": 2017,
+      "honor_ids": {
+        "Nominee": 40507
+      },
       "winners": [],
       "nominees": [
         {
@@ -375,6 +405,9 @@
     {
       "program": "As d'Or",
       "year": 2016,
+      "honor_ids": {
+        "Nominee": 35424
+      },
       "winners": [],
       "nominees": [
         {
@@ -407,6 +440,9 @@
     {
       "program": "As d'Or",
       "year": 2015,
+      "honor_ids": {
+        "Nominee": 35438
+      },
       "winners": [],
       "nominees": [
         {
@@ -447,6 +483,9 @@
     {
       "program": "As d'Or",
       "year": 2014,
+      "honor_ids": {
+        "Nominee": 24377
+      },
       "winners": [],
       "nominees": [
         {
@@ -487,6 +526,9 @@
     {
       "program": "As d'Or",
       "year": 2013,
+      "honor_ids": {
+        "Nominee": 22587
+      },
       "winners": [],
       "nominees": [
         {
@@ -527,6 +569,9 @@
     {
       "program": "As d'Or",
       "year": 2012,
+      "honor_ids": {
+        "Nominee": 20145
+      },
       "winners": [],
       "nominees": [
         {
@@ -567,6 +612,9 @@
     {
       "program": "As d'Or",
       "year": 2011,
+      "honor_ids": {
+        "Nominee": 20154
+      },
       "winners": [],
       "nominees": [
         {
@@ -599,6 +647,9 @@
     {
       "program": "As d'Or",
       "year": 2010,
+      "honor_ids": {
+        "Nominee": 20331
+      },
       "winners": [],
       "nominees": [
         {
@@ -631,6 +682,9 @@
     {
       "program": "As d'Or",
       "year": 2009,
+      "honor_ids": {
+        "Nominee": 20330
+      },
       "winners": [],
       "nominees": [
         {
@@ -663,6 +717,9 @@
     {
       "program": "As d'Or",
       "year": 2008,
+      "honor_ids": {
+        "Nominee": 20328
+      },
       "winners": [],
       "nominees": [
         {
@@ -695,6 +752,9 @@
     {
       "program": "As d'Or",
       "year": 2007,
+      "honor_ids": {
+        "Nominee": 20327
+      },
       "winners": [],
       "nominees": [
         {
@@ -719,6 +779,9 @@
     {
       "program": "As d'Or",
       "year": 2006,
+      "honor_ids": {
+        "Nominee": 20329
+      },
       "winners": [],
       "nominees": [
         {
@@ -743,6 +806,7 @@
     {
       "program": "As d'Or",
       "year": 2004,
+      "honor_ids": {},
       "winners": [],
       "nominees": [
         {
@@ -759,6 +823,7 @@
     {
       "program": "As d'Or",
       "year": 2003,
+      "honor_ids": {},
       "winners": [],
       "nominees": [
         {
@@ -775,6 +840,7 @@
     {
       "program": "As d'Or",
       "year": 2002,
+      "honor_ids": {},
       "winners": [],
       "nominees": [
         {
@@ -791,6 +857,7 @@
     {
       "program": "As d'Or",
       "year": 2001,
+      "honor_ids": {},
       "winners": [],
       "nominees": [
         {
@@ -807,6 +874,7 @@
     {
       "program": "As d'Or",
       "year": 2000,
+      "honor_ids": {},
       "winners": [],
       "nominees": [
         {
@@ -823,6 +891,7 @@
     {
       "program": "As d'Or",
       "year": 1999,
+      "honor_ids": {},
       "winners": [],
       "nominees": [
         {
@@ -839,6 +908,7 @@
     {
       "program": "As d'Or",
       "year": 1998,
+      "honor_ids": {},
       "winners": [],
       "nominees": [
         {
@@ -855,6 +925,7 @@
     {
       "program": "As d'Or",
       "year": 1997,
+      "honor_ids": {},
       "winners": [],
       "nominees": [
         {
@@ -871,6 +942,7 @@
     {
       "program": "As d'Or",
       "year": 1996,
+      "honor_ids": {},
       "winners": [],
       "nominees": [
         {
@@ -887,6 +959,7 @@
     {
       "program": "As d'Or",
       "year": 1995,
+      "honor_ids": {},
       "winners": [],
       "nominees": [
         {
@@ -903,6 +976,7 @@
     {
       "program": "As d'Or",
       "year": 1994,
+      "honor_ids": {},
       "winners": [],
       "nominees": [
         {
@@ -919,6 +993,7 @@
     {
       "program": "As d'Or",
       "year": 1993,
+      "honor_ids": {},
       "winners": [],
       "nominees": [
         {
@@ -935,6 +1010,7 @@
     {
       "program": "As d'Or",
       "year": 1992,
+      "honor_ids": {},
       "winners": [],
       "nominees": [
         {
@@ -951,6 +1027,7 @@
     {
       "program": "As d'Or",
       "year": 1990,
+      "honor_ids": {},
       "winners": [],
       "nominees": [
         {
@@ -967,6 +1044,7 @@
     {
       "program": "As d'Or",
       "year": 1989,
+      "honor_ids": {},
       "winners": [],
       "nominees": [
         {
@@ -983,6 +1061,7 @@
     {
       "program": "As d'Or",
       "year": 1988,
+      "honor_ids": {},
       "winners": [],
       "nominees": [
         {
@@ -999,6 +1078,7 @@
     {
       "program": "Golden Geek Awards",
       "year": 2014,
+      "honor_ids": {},
       "winners": [],
       "nominees": [
         {
@@ -1015,6 +1095,7 @@
     {
       "program": "Golden Geek Awards",
       "year": 2013,
+      "honor_ids": {},
       "winners": [],
       "nominees": [
         {
@@ -1031,6 +1112,7 @@
     {
       "program": "Golden Geek Awards",
       "year": 2012,
+      "honor_ids": {},
       "winners": [],
       "nominees": [
         {
@@ -1047,6 +1129,7 @@
     {
       "program": "Golden Geek Awards",
       "year": 2011,
+      "honor_ids": {},
       "winners": [],
       "nominees": [
         {
@@ -1063,6 +1146,7 @@
     {
       "program": "Golden Geek Awards",
       "year": 2010,
+      "honor_ids": {},
       "winners": [],
       "nominees": [
         {
@@ -1079,6 +1163,7 @@
     {
       "program": "Golden Geek Awards",
       "year": 2009,
+      "honor_ids": {},
       "winners": [],
       "nominees": [
         {
@@ -1095,6 +1180,7 @@
     {
       "program": "Golden Geek Awards",
       "year": 2008,
+      "honor_ids": {},
       "winners": [],
       "nominees": [
         {
@@ -1111,6 +1197,7 @@
     {
       "program": "Golden Geek Awards",
       "year": 2007,
+      "honor_ids": {},
       "winners": [],
       "nominees": [
         {
@@ -1127,6 +1214,7 @@
     {
       "program": "Golden Geek Awards",
       "year": 2006,
+      "honor_ids": {},
       "winners": [],
       "nominees": [
         {
@@ -1143,6 +1231,7 @@
     {
       "program": "Golden Geek Awards",
       "year": 2005,
+      "honor_ids": {},
       "winners": [],
       "nominees": [
         {
@@ -1159,6 +1248,7 @@
     {
       "program": "Golden Geek Awards",
       "year": 2004,
+      "honor_ids": {},
       "winners": [],
       "nominees": [
         {
@@ -1175,6 +1265,7 @@
     {
       "program": "Golden Geek Awards",
       "year": 2003,
+      "honor_ids": {},
       "winners": [],
       "nominees": [
         {
@@ -1191,6 +1282,7 @@
     {
       "program": "Golden Geek Awards",
       "year": 2002,
+      "honor_ids": {},
       "winners": [],
       "nominees": [
         {
@@ -1207,6 +1299,7 @@
     {
       "program": "Golden Geek Awards",
       "year": 2001,
+      "honor_ids": {},
       "winners": [],
       "nominees": [
         {
@@ -1223,6 +1316,7 @@
     {
       "program": "Golden Geek Awards",
       "year": 2000,
+      "honor_ids": {},
       "winners": [],
       "nominees": [
         {
@@ -1239,6 +1333,7 @@
     {
       "program": "Golden Geek Awards",
       "year": 1999,
+      "honor_ids": {},
       "winners": [],
       "nominees": [
         {
@@ -1255,6 +1350,7 @@
     {
       "program": "Golden Geek Awards",
       "year": 1998,
+      "honor_ids": {},
       "winners": [],
       "nominees": [
         {
@@ -1271,6 +1367,7 @@
     {
       "program": "Golden Geek Awards",
       "year": 1997,
+      "honor_ids": {},
       "winners": [],
       "nominees": [
         {
@@ -1287,6 +1384,7 @@
     {
       "program": "Golden Geek Awards",
       "year": 1995,
+      "honor_ids": {},
       "winners": [],
       "nominees": [
         {
@@ -1303,6 +1401,7 @@
     {
       "program": "Golden Geek Awards",
       "year": 1994,
+      "honor_ids": {},
       "winners": [],
       "nominees": [
         {
@@ -1319,6 +1418,7 @@
     {
       "program": "Golden Geek Awards",
       "year": 1993,
+      "honor_ids": {},
       "winners": [],
       "nominees": [
         {
@@ -1335,6 +1435,7 @@
     {
       "program": "Golden Geek Awards",
       "year": 1992,
+      "honor_ids": {},
       "winners": [],
       "nominees": [
         {
@@ -1351,6 +1452,7 @@
     {
       "program": "Golden Geek Awards",
       "year": 1991,
+      "honor_ids": {},
       "winners": [],
       "nominees": [
         {
@@ -1367,6 +1469,10 @@
     {
       "program": "Kennerspiel des Jahres",
       "year": 2025,
+      "honor_ids": {
+        "Winner": 112339,
+        "Nominee": 111383
+      },
       "winners": [
         {
           "bgg_id": null,
@@ -1400,6 +1506,10 @@
     {
       "program": "Kennerspiel des Jahres",
       "year": 2024,
+      "honor_ids": {
+        "Winner": 106854,
+        "Nominee": 104461
+      },
       "winners": [
         {
           "bgg_id": null,
@@ -1433,6 +1543,10 @@
     {
       "program": "Kennerspiel des Jahres",
       "year": 2023,
+      "honor_ids": {
+        "Winner": 81210,
+        "Nominee": 80329
+      },
       "winners": [
         {
           "bgg_id": 359970,
@@ -1466,6 +1580,10 @@
     {
       "program": "Kennerspiel des Jahres",
       "year": 2022,
+      "honor_ids": {
+        "Winner": 76498,
+        "Nominee": 75832
+      },
       "winners": [
         {
           "bgg_id": 328479,
@@ -1499,6 +1617,10 @@
     {
       "program": "Kennerspiel des Jahres",
       "year": 2021,
+      "honor_ids": {
+        "Winner": 71452,
+        "Nominee": 70795
+      },
       "winners": [
         {
           "bgg_id": 38865,
@@ -1532,6 +1654,10 @@
     {
       "program": "Kennerspiel des Jahres",
       "year": 2020,
+      "honor_ids": {
+        "Winner": 63051,
+        "Nominee": 62466
+      },
       "winners": [
         {
           "bgg_id": null,
@@ -1565,6 +1691,10 @@
     {
       "program": "Kennerspiel des Jahres",
       "year": 2019,
+      "honor_ids": {
+        "Winner": 56968,
+        "Nominee": 56348
+      },
       "winners": [
         {
           "bgg_id": null,
@@ -1598,6 +1728,10 @@
     {
       "program": "Kennerspiel des Jahres",
       "year": 2018,
+      "honor_ids": {
+        "Winner": 49381,
+        "Nominee": 48401
+      },
       "winners": [
         {
           "bgg_id": null,
@@ -1631,6 +1765,10 @@
     {
       "program": "Kennerspiel des Jahres",
       "year": 2017,
+      "honor_ids": {
+        "Winner": 42730,
+        "Nominee": 41953
+      },
       "winners": [
         {
           "bgg_id": null,
@@ -1664,6 +1802,10 @@
     {
       "program": "Kennerspiel des Jahres",
       "year": 2016,
+      "honor_ids": {
+        "Winner": 36966,
+        "Nominee": 35994
+      },
       "winners": [
         {
           "bgg_id": null,
@@ -1697,6 +1839,10 @@
     {
       "program": "Kennerspiel des Jahres",
       "year": 2015,
+      "honor_ids": {
+        "Winner": 27749,
+        "Nominee": 27376
+      },
       "winners": [
         {
           "bgg_id": 172308,
@@ -1730,6 +1876,10 @@
     {
       "program": "Kennerspiel des Jahres",
       "year": 2014,
+      "honor_ids": {
+        "Winner": 25490,
+        "Nominee": 25144
+      },
       "winners": [
         {
           "bgg_id": 148949,
@@ -1763,6 +1913,10 @@
     {
       "program": "Kennerspiel des Jahres",
       "year": 2013,
+      "honor_ids": {
+        "Winner": 22854,
+        "Nominee": 22570
+      },
       "winners": [
         {
           "bgg_id": null,
@@ -1796,6 +1950,9 @@
     {
       "program": "Kennerspiel des Jahres",
       "year": 2012,
+      "honor_ids": {
+        "Winner": 18504
+      },
       "winners": [
         {
           "bgg_id": 104006,
@@ -1829,6 +1986,9 @@
     {
       "program": "Kennerspiel des Jahres",
       "year": 2011,
+      "honor_ids": {
+        "Winner": 11078
+      },
       "winners": [
         {
           "bgg_id": 68448,
@@ -1862,6 +2022,10 @@
     {
       "program": "Kinderspiel des Jahres",
       "year": 2025,
+      "honor_ids": {
+        "Winner": 112341,
+        "Nominee": 111384
+      },
       "winners": [
         {
           "bgg_id": 330653,
@@ -1895,6 +2059,10 @@
     {
       "program": "Kinderspiel des Jahres",
       "year": 2024,
+      "honor_ids": {
+        "Winner": 106853,
+        "Nominee": 104462
+      },
       "winners": [
         {
           "bgg_id": null,
@@ -1928,6 +2096,10 @@
     {
       "program": "Kinderspiel des Jahres",
       "year": 2023,
+      "honor_ids": {
+        "Winner": 81211,
+        "Nominee": 80330
+      },
       "winners": [
         {
           "bgg_id": 367206,
@@ -1961,6 +2133,10 @@
     {
       "program": "Kinderspiel des Jahres",
       "year": 2022,
+      "honor_ids": {
+        "Winner": 76238,
+        "Nominee": 75833
+      },
       "winners": [
         {
           "bgg_id": null,
@@ -1994,6 +2170,10 @@
     {
       "program": "Kinderspiel des Jahres",
       "year": 2021,
+      "honor_ids": {
+        "Winner": 71185,
+        "Nominee": 70796
+      },
       "winners": [
         {
           "bgg_id": 300010,
@@ -2027,6 +2207,10 @@
     {
       "program": "Kinderspiel des Jahres",
       "year": 2020,
+      "honor_ids": {
+        "Winner": 62470,
+        "Nominee": 62465
+      },
       "winners": [
         {
           "bgg_id": null,
@@ -2060,6 +2244,10 @@
     {
       "program": "Kinderspiel des Jahres",
       "year": 2019,
+      "honor_ids": {
+        "Winner": 56709,
+        "Nominee": 56349
+      },
       "winners": [
         {
           "bgg_id": null,
@@ -2093,6 +2281,10 @@
     {
       "program": "Kinderspiel des Jahres",
       "year": 2018,
+      "honor_ids": {
+        "Winner": 49382,
+        "Nominee": 48400
+      },
       "winners": [
         {
           "bgg_id": null,
@@ -2126,6 +2318,10 @@
     {
       "program": "Kinderspiel des Jahres",
       "year": 2017,
+      "honor_ids": {
+        "Winner": 42731,
+        "Nominee": 41952
+      },
       "winners": [
         {
           "bgg_id": 177524,
@@ -2159,6 +2355,10 @@
     {
       "program": "Kinderspiel des Jahres",
       "year": 2016,
+      "honor_ids": {
+        "Winner": 39094,
+        "Nominee": 35992
+      },
       "winners": [
         {
           "bgg_id": null,
@@ -2192,6 +2392,10 @@
     {
       "program": "Kinderspiel des Jahres",
       "year": 2015,
+      "honor_ids": {
+        "Winner": 27750,
+        "Nominee": 27374
+      },
       "winners": [
         {
           "bgg_id": 171129,
@@ -2225,6 +2429,10 @@
     {
       "program": "Kinderspiel des Jahres",
       "year": 2014,
+      "honor_ids": {
+        "Winner": 25344,
+        "Nominee": 25143
+      },
       "winners": [
         {
           "bgg_id": null,
@@ -2258,6 +2466,10 @@
     {
       "program": "Kinderspiel des Jahres",
       "year": 2013,
+      "honor_ids": {
+        "Winner": 22855,
+        "Nominee": 22569
+      },
       "winners": [
         {
           "bgg_id": null,
@@ -2291,6 +2503,7 @@
     {
       "program": "Kinderspiel des Jahres",
       "year": 2012,
+      "honor_ids": {},
       "winners": [
         {
           "bgg_id": 92644,
@@ -2324,6 +2537,7 @@
     {
       "program": "Kinderspiel des Jahres",
       "year": 2011,
+      "honor_ids": {},
       "winners": [
         {
           "bgg_id": 91671,
@@ -2357,6 +2571,7 @@
     {
       "program": "Kinderspiel des Jahres",
       "year": 2010,
+      "honor_ids": {},
       "winners": [
         {
           "bgg_id": 59223,
@@ -2406,6 +2621,7 @@
     {
       "program": "Kinderspiel des Jahres",
       "year": 2009,
+      "honor_ids": {},
       "winners": [
         {
           "bgg_id": null,
@@ -2455,6 +2671,7 @@
     {
       "program": "Kinderspiel des Jahres",
       "year": 2008,
+      "honor_ids": {},
       "winners": [
         {
           "bgg_id": null,
@@ -2504,6 +2721,7 @@
     {
       "program": "Kinderspiel des Jahres",
       "year": 2007,
+      "honor_ids": {},
       "winners": [
         {
           "bgg_id": 27948,
@@ -2553,6 +2771,7 @@
     {
       "program": "Kinderspiel des Jahres",
       "year": 2006,
+      "honor_ids": {},
       "winners": [
         {
           "bgg_id": 23890,
@@ -2602,6 +2821,7 @@
     {
       "program": "Kinderspiel des Jahres",
       "year": 2005,
+      "honor_ids": {},
       "winners": [
         {
           "bgg_id": 16369,
@@ -2651,6 +2871,7 @@
     {
       "program": "Kinderspiel des Jahres",
       "year": 2004,
+      "honor_ids": {},
       "winners": [
         {
           "bgg_id": null,
@@ -2700,6 +2921,7 @@
     {
       "program": "Kinderspiel des Jahres",
       "year": 2003,
+      "honor_ids": {},
       "winners": [
         {
           "bgg_id": 8195,
@@ -2733,6 +2955,7 @@
     {
       "program": "Kinderspiel des Jahres",
       "year": 2002,
+      "honor_ids": {},
       "winners": [
         {
           "bgg_id": 4522,
@@ -2766,6 +2989,7 @@
     {
       "program": "Kinderspiel des Jahres",
       "year": 2001,
+      "honor_ids": {},
       "winners": [
         {
           "bgg_id": 1702,
@@ -2799,6 +3023,10 @@
     {
       "program": "Spiel des Jahres",
       "year": 2025,
+      "honor_ids": {
+        "Winner": 112340,
+        "Nominee": 111385
+      },
       "winners": [
         {
           "bgg_id": 413246,
@@ -2832,6 +3060,10 @@
     {
       "program": "Spiel des Jahres",
       "year": 2024,
+      "honor_ids": {
+        "Winner": 106852,
+        "Nominee": 104460
+      },
       "winners": [
         {
           "bgg_id": 373106,
@@ -2865,6 +3097,10 @@
     {
       "program": "Spiel des Jahres",
       "year": 2023,
+      "honor_ids": {
+        "Winner": 81209,
+        "Nominee": 80328
+      },
       "winners": [
         {
           "bgg_id": null,
@@ -2898,6 +3134,10 @@
     {
       "program": "Spiel des Jahres",
       "year": 2022,
+      "honor_ids": {
+        "Winner": 76497,
+        "Nominee": 75834
+      },
       "winners": [
         {
           "bgg_id": 295947,
@@ -2931,6 +3171,10 @@
     {
       "program": "Spiel des Jahres",
       "year": 2021,
+      "honor_ids": {
+        "Winner": 71453,
+        "Nominee": 70794
+      },
       "winners": [
         {
           "bgg_id": 318977,
@@ -2964,6 +3208,10 @@
     {
       "program": "Spiel des Jahres",
       "year": 2020,
+      "honor_ids": {
+        "Winner": 63050,
+        "Nominee": 62464
+      },
       "winners": [
         {
           "bgg_id": 98026,
@@ -2997,6 +3245,10 @@
     {
       "program": "Spiel des Jahres",
       "year": 2019,
+      "honor_ids": {
+        "Winner": 56969,
+        "Nominee": 56346
+      },
       "winners": [
         {
           "bgg_id": 254640,
@@ -3030,6 +3282,10 @@
     {
       "program": "Spiel des Jahres",
       "year": 2018,
+      "honor_ids": {
+        "Winner": 48406,
+        "Nominee": 48399
+      },
       "winners": [
         {
           "bgg_id": 230802,
@@ -3063,6 +3319,10 @@
     {
       "program": "Spiel des Jahres",
       "year": 2017,
+      "honor_ids": {
+        "Winner": 42729,
+        "Nominee": 41951
+      },
       "winners": [
         {
           "bgg_id": 204583,
@@ -3096,6 +3356,10 @@
     {
       "program": "Spiel des Jahres",
       "year": 2016,
+      "honor_ids": {
+        "Winner": 36965,
+        "Nominee": 35990
+      },
       "winners": [
         {
           "bgg_id": 178900,
@@ -3129,6 +3393,10 @@
     {
       "program": "Spiel des Jahres",
       "year": 2015,
+      "honor_ids": {
+        "Winner": 27748,
+        "Nominee": 27370
+      },
       "winners": [
         {
           "bgg_id": 158899,
@@ -3162,6 +3430,10 @@
     {
       "program": "Spiel des Jahres",
       "year": 2014,
+      "honor_ids": {
+        "Winner": 25489,
+        "Nominee": 25142
+      },
       "winners": [
         {
           "bgg_id": 153938,
@@ -3195,6 +3467,10 @@
     {
       "program": "Spiel des Jahres",
       "year": 2013,
+      "honor_ids": {
+        "Winner": 22854,
+        "Nominee": 22570
+      },
       "winners": [
         {
           "bgg_id": 98778,
@@ -3228,6 +3504,10 @@
     {
       "program": "Spiel des Jahres",
       "year": 2012,
+      "honor_ids": {
+        "Winner": 18504,
+        "Nominee": 18372
+      },
       "winners": [
         {
           "bgg_id": 107529,
@@ -3261,6 +3541,10 @@
     {
       "program": "Spiel des Jahres",
       "year": 2011,
+      "honor_ids": {
+        "Winner": 11078,
+        "Nominee": 18521
+      },
       "winners": [
         {
           "bgg_id": 25669,
@@ -3294,6 +3578,10 @@
     {
       "program": "Spiel des Jahres",
       "year": 2010,
+      "honor_ids": {
+        "Winner": 19384,
+        "Nominee": 19373
+      },
       "winners": [
         {
           "bgg_id": 39856,
@@ -3343,6 +3631,10 @@
     {
       "program": "Spiel des Jahres",
       "year": 2009,
+      "honor_ids": {
+        "Winner": 8841,
+        "Nominee": 19372
+      },
       "winners": [
         {
           "bgg_id": 36218,
@@ -3392,6 +3684,10 @@
     {
       "program": "Spiel des Jahres",
       "year": 2008,
+      "honor_ids": {
+        "Winner": 8839,
+        "Nominee": 19371
+      },
       "winners": [
         {
           "bgg_id": 34585,
@@ -3441,6 +3737,10 @@
     {
       "program": "Spiel des Jahres",
       "year": 2007,
+      "honor_ids": {
+        "Winner": 19381,
+        "Nominee": 19370
+      },
       "winners": [
         {
           "bgg_id": 27588,
@@ -3490,6 +3790,10 @@
     {
       "program": "Spiel des Jahres",
       "year": 2006,
+      "honor_ids": {
+        "Winner": 8838,
+        "Nominee": 19369
+      },
       "winners": [
         {
           "bgg_id": 21790,
@@ -3539,6 +3843,10 @@
     {
       "program": "Spiel des Jahres",
       "year": 2005,
+      "honor_ids": {
+        "Winner": 19379,
+        "Nominee": 19368
+      },
       "winners": [
         {
           "bgg_id": 13308,
@@ -3588,6 +3896,10 @@
     {
       "program": "Spiel des Jahres",
       "year": 2004,
+      "honor_ids": {
+        "Winner": 19378,
+        "Nominee": 19367
+      },
       "winners": [
         {
           "bgg_id": null,
@@ -3637,6 +3949,10 @@
     {
       "program": "Spiel des Jahres",
       "year": 2003,
+      "honor_ids": {
+        "Winner": 19377,
+        "Nominee": 19366
+      },
       "winners": [
         {
           "bgg_id": 6249,
@@ -3670,6 +3986,10 @@
     {
       "program": "Spiel des Jahres",
       "year": 2002,
+      "honor_ids": {
+        "Winner": 19376,
+        "Nominee": 19365
+      },
       "winners": [
         {
           "bgg_id": 2596,
@@ -3703,6 +4023,10 @@
     {
       "program": "Spiel des Jahres",
       "year": 2001,
+      "honor_ids": {
+        "Winner": 8836,
+        "Nominee": 19364
+      },
       "winners": [
         {
           "bgg_id": 822,
@@ -3736,6 +4060,10 @@
     {
       "program": "Spiel des Jahres",
       "year": 2000,
+      "honor_ids": {
+        "Winner": 8825,
+        "Nominee": 8667
+      },
       "winners": [
         {
           "bgg_id": 88,
@@ -3769,6 +4097,10 @@
     {
       "program": "Spiel des Jahres",
       "year": 1999,
+      "honor_ids": {
+        "Winner": 8824,
+        "Nominee": 8670
+      },
       "winners": [
         {
           "bgg_id": 54,
@@ -3802,6 +4134,9 @@
     {
       "program": "Spiel des Jahres",
       "year": 1998,
+      "honor_ids": {
+        "Winner": 8818
+      },
       "winners": [
         {
           "bgg_id": 10,
@@ -3818,6 +4153,9 @@
     {
       "program": "Spiel des Jahres",
       "year": 1985,
+      "honor_ids": {
+        "Winner": 8799
+      },
       "winners": [
         {
           "bgg_id": 195332,
@@ -3834,6 +4172,9 @@
     {
       "program": "Spiel des Jahres",
       "year": 1984,
+      "honor_ids": {
+        "Winner": 8798
+      },
       "winners": [
         {
           "bgg_id": 460,
@@ -3850,6 +4191,9 @@
     {
       "program": "Spiel des Jahres",
       "year": 1983,
+      "honor_ids": {
+        "Winner": 8797
+      },
       "winners": [
         {
           "bgg_id": 438,
@@ -3866,6 +4210,9 @@
     {
       "program": "Spiel des Jahres",
       "year": 1982,
+      "honor_ids": {
+        "Winner": 8796
+      },
       "winners": [
         {
           "bgg_id": 938,
@@ -3882,6 +4229,9 @@
     {
       "program": "Spiel des Jahres",
       "year": 1981,
+      "honor_ids": {
+        "Winner": 8795
+      },
       "winners": [
         {
           "bgg_id": 789,
@@ -3898,6 +4248,9 @@
     {
       "program": "Spiel des Jahres",
       "year": 1980,
+      "honor_ids": {
+        "Winner": 8794
+      },
       "winners": [
         {
           "bgg_id": 811,
@@ -3914,6 +4267,9 @@
     {
       "program": "Spiel des Jahres",
       "year": 1979,
+      "honor_ids": {
+        "Winner": 8793
+      },
       "winners": [
         {
           "bgg_id": 451334,
@@ -3930,6 +4286,7 @@
     {
       "program": "Spiel des Jahres — Special Prize",
       "year": 2023,
+      "honor_ids": {},
       "winners": [],
       "nominees": [
         {
@@ -3954,6 +4311,9 @@
     {
       "program": "Spiel des Jahres — Special Prize",
       "year": 2018,
+      "honor_ids": {
+        "Special Prize": 48406
+      },
       "winners": [],
       "nominees": [
         {
@@ -3970,6 +4330,9 @@
     {
       "program": "Spiel des Jahres — Special Prize",
       "year": 2010,
+      "honor_ids": {
+        "Game of the Year Plus": 22463
+      },
       "winners": [],
       "nominees": [
         {
@@ -3986,6 +4349,9 @@
     {
       "program": "Spiel des Jahres — Special Prize",
       "year": 2009,
+      "honor_ids": {
+        "Party Game": 8840
+      },
       "winners": [],
       "nominees": [
         {
@@ -4010,6 +4376,9 @@
     {
       "program": "Spiel des Jahres — Special Prize",
       "year": 2008,
+      "honor_ids": {
+        "Complex Game": 8839
+      },
       "winners": [],
       "nominees": [
         {
@@ -4026,6 +4395,10 @@
     {
       "program": "Spiel des Jahres — Special Prize",
       "year": 2006,
+      "honor_ids": {
+        "Fantasy Game": 8837,
+        "Complex Game": 8838
+      },
       "winners": [],
       "nominees": [
         {
@@ -4050,6 +4423,10 @@
     {
       "program": "Spiel des Jahres — Special Prize",
       "year": 2001,
+      "honor_ids": {
+        "Historical Game": 8836,
+        "Literary Game": 8835
+      },
       "winners": [],
       "nominees": [
         {
@@ -4074,6 +4451,7 @@
     {
       "program": "Spiel des Jahres — Special Prize",
       "year": 2000,
+      "honor_ids": {},
       "winners": [],
       "nominees": [
         {
@@ -4090,6 +4468,7 @@
     {
       "program": "Spiel des Jahres — Special Prize",
       "year": 1999,
+      "honor_ids": {},
       "winners": [],
       "nominees": [
         {
@@ -4106,6 +4485,7 @@
     {
       "program": "Spiel des Jahres — Special Prize",
       "year": 1998,
+      "honor_ids": {},
       "winners": [],
       "nominees": [
         {
@@ -4122,6 +4502,9 @@
     {
       "program": "Spiel des Jahres — Special Prize",
       "year": 1985,
+      "honor_ids": {
+        "Beautiful Game": 8799
+      },
       "winners": [],
       "nominees": [
         {
@@ -4138,6 +4521,9 @@
     {
       "program": "Spiel des Jahres — Special Prize",
       "year": 1984,
+      "honor_ids": {
+        "Winner": 8798
+      },
       "winners": [
         {
           "bgg_id": 11421,
@@ -4154,6 +4540,9 @@
     {
       "program": "Spiel des Jahres — Special Prize",
       "year": 1983,
+      "honor_ids": {
+        "Beautiful Game": 8797
+      },
       "winners": [],
       "nominees": [
         {
@@ -4170,6 +4559,9 @@
     {
       "program": "Spiel des Jahres — Special Prize",
       "year": 1982,
+      "honor_ids": {
+        "Beautiful Game": 8796
+      },
       "winners": [],
       "nominees": [
         {
@@ -4186,6 +4578,9 @@
     {
       "program": "Spiel des Jahres — Special Prize",
       "year": 1981,
+      "honor_ids": {
+        "Beautiful Game": 8795
+      },
       "winners": [],
       "nominees": [
         {
@@ -4202,6 +4597,9 @@
     {
       "program": "Spiel des Jahres — Special Prize",
       "year": 1980,
+      "honor_ids": {
+        "Beautiful Game": 8794
+      },
       "winners": [],
       "nominees": [
         {
@@ -4226,6 +4624,9 @@
     {
       "program": "Spiel des Jahres — Special Prize",
       "year": 1979,
+      "honor_ids": {
+        "Beautiful Game": 8793
+      },
       "winners": [],
       "nominees": [
         {
