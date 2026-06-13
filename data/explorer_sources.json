@@ -1,4 +1,11 @@
 {
+  "_README": [
+    "Configuration for scripts/explorer_discover.py.",
+    "Edit live from the dashboard's Explorer tab (Sources panel at the bottom),",
+    "or hand-edit this file. The dashboard saves via POST /api/explorer/sources",
+    "(local server) or via GitHub Contents API (online).",
+    "Add curated solo-focused BGG GeekList IDs in bgg_geeklists."
+  ],
   "bgg_geeklists": [
     335712
   ],
@@ -7,5 +14,10 @@
     "bgg_geeklists": true,
     "polyhedron_collider": true,
     "solitaire_times": true
+  },
+  "feeling_thresholds": {
+    "_comment": "From scripts/score_new_games.py — match those constants",
+    "Total": 150,
+    "Immersive": 87
   }
 }
