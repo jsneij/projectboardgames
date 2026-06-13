@@ -37,7 +37,10 @@ DASHBOARD_HTML = REPO_ROOT / "dashboard" / "dshb_bgg_collection.html"
 ALLOWED_DIRS = ("dashboard", "data")
 HOST = "127.0.0.1"
 PORT = int(os.environ.get("DASHBOARD_PORT", "8765"))
-KNOWN_SCRAPER_KEYS = {"bgg_hot", "bgg_geeklists", "polyhedron_collider", "solitaire_times"}
+KNOWN_SCRAPER_KEYS = {
+    "bgg_hot", "bgg_geeklists", "polyhedron_collider",
+    "solitaire_times", "custom_urls",
+}
 
 
 class Handler(http.server.SimpleHTTPRequestHandler):
@@ -190,6 +193,13 @@ class Handler(http.server.SimpleHTTPRequestHandler):
                 not isinstance(x, int) or x < 1 for x in gl):
             self._send_json(400, {"status": "validation_error",
                                   "message": "bgg_geeklists must be a list of positive ints"})
+            return
+        cu = payload.get("custom_urls", [])
+        if not isinstance(cu, list) or any(
+                not isinstance(x, str) or not x.startswith(("http://", "https://"))
+                for x in cu):
+            self._send_json(400, {"status": "validation_error",
+                                  "message": "custom_urls must be a list of http(s) URLs"})
             return
         enabled = payload.get("enabled", {})
         if not isinstance(enabled, dict):

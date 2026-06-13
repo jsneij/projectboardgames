@@ -322,6 +322,35 @@ nav::-webkit-scrollbar { display: none; }
   border: 1px solid #444; border-radius: 3px; padding: 2px 6px;
   font-family: 'JetBrains Mono', monospace; font-size: 12px;
 }
+.url-chip {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: rgba(168,85,247,0.10); color: #d8b4fe;
+  border: 1px solid rgba(168,85,247,0.30); border-radius: 6px;
+  padding: 4px 10px; margin: 3px 6px 3px 0; font-size: 12px;
+  font-family: 'JetBrains Mono', monospace; max-width: 100%;
+}
+.url-chip a {
+  color: inherit; text-decoration: underline; text-underline-offset: 2px;
+  max-width: 320px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  display: inline-block; vertical-align: middle;
+}
+.url-chip button {
+  background: none; border: 0; color: inherit; cursor: pointer;
+  font-size: 13px; padding: 0 0 0 2px;
+}
+.url-add-row {
+  display: flex; gap: 6px; margin-top: 6px;
+}
+.url-add-row input {
+  flex: 1; max-width: 480px; background: #0f0f0f; color: #fff;
+  border: 1px solid #444; border-radius: 4px; padding: 5px 10px;
+  font-family: 'JetBrains Mono', monospace; font-size: 12px;
+}
+.url-add-row button {
+  font-size: 12px; padding: 5px 14px; background: #222;
+  border: 1px solid #555; color: #fff; border-radius: 4px; cursor: pointer;
+}
+.url-add-row button:hover { filter: brightness(1.15); }
 .scraper-toggle-row {
   display: flex; align-items: center; gap: 8px; margin-bottom: 6px; font-size: 12px;
 }
@@ -1341,6 +1370,14 @@ nav::-webkit-scrollbar { display: none; }
       <div class="source-section">
         <div class="source-section-title">Curated BGG GeekLists</div>
         <div id="geeklist-chips"></div>
+      </div>
+      <div class="source-section">
+        <div class="source-section-title">Custom URLs</div>
+        <div style="font-size:11px;color:var(--text3);margin-bottom:6px;line-height:1.5">
+          Any review site, blog, or RSS/Atom feed. The pipeline tries the URL as a feed first,
+          then looks for an RSS autodiscovery link, then scrapes <code>&lt;h1&gt;</code>/<code>&lt;h2&gt;</code>/<code>&lt;h3&gt;</code> headings.
+        </div>
+        <div id="custom-url-chips"></div>
       </div>
       <div class="source-section">
         <div class="source-section-title">External scrapers</div>
@@ -3549,6 +3586,10 @@ function renderSourceBadge(source) {
   if (source === 'solitaire_times') {
     return `<span class="source-badge"><a href="https://solitairetimes.com/" target="_blank" rel="noopener">Solitaire Times</a></span>`;
   }
+  if (source.startsWith('custom:')) {
+    const host = source.slice('custom:'.length);
+    return `<span class="source-badge">${htmlEscape(host)}</span>`;
+  }
   return `<span class="source-badge">${htmlEscape(source)}</span>`;
 }
 
@@ -3665,7 +3706,7 @@ document.getElementById('explorer-refresh-btn')?.addEventListener('click', refre
 const SourcesEditor = {
   original: null,    // last-saved snapshot
   working: null,     // in-flight edits
-  scraperKeys: ['polyhedron_collider', 'solitaire_times'], // bgg_hot / bgg_geeklists always-on
+  scraperKeys: ['polyhedron_collider', 'solitaire_times', 'custom_urls'],
 };
 
 function initSourcesEditor() {
@@ -3700,6 +3741,22 @@ function renderSourcesEditor() {
       </span>`;
   }
 
+  // Custom URLs
+  const urlChipsEl = document.getElementById('custom-url-chips');
+  if (urlChipsEl) {
+    const urls = w.custom_urls || [];
+    urlChipsEl.innerHTML = urls.map(u =>
+      `<span class="url-chip">
+        <a href="${htmlEscape(u)}" target="_blank" rel="noopener" title="${htmlEscape(u)}">${htmlEscape(u)}</a>
+        <button class="url-remove" data-url="${htmlEscape(u)}" title="Remove">×</button>
+      </span>`
+    ).join('') + `
+      <div class="url-add-row">
+        <input type="url" id="url-add-input" placeholder="https://example.com/feed/ — RSS, Atom, or HTML page">
+        <button id="url-add-btn">+ Add URL</button>
+      </div>`;
+  }
+
   // Scraper toggles
   const togglesEl = document.getElementById('scraper-toggles');
   if (togglesEl) {
@@ -3707,7 +3764,8 @@ function renderSourcesEditor() {
     togglesEl.innerHTML = SourcesEditor.scraperKeys.map(k => {
       const on = enabled[k] !== false;
       const friendly = k === 'polyhedron_collider' ? 'Polyhedron Collider'
-                     : k === 'solitaire_times' ? 'Solitaire Times' : k;
+                     : k === 'solitaire_times' ? 'Solitaire Times'
+                     : k === 'custom_urls' ? 'Custom URLs (master switch)' : k;
       return `<div class="scraper-toggle-row">
         <label class="edit-toggle" title="Toggle ${friendly}">
           <input type="checkbox" class="scraper-checkbox" data-scraper="${k}"${on ? ' checked' : ''}>
@@ -3748,6 +3806,32 @@ document.addEventListener('click', (e) => {
       return;
     }
     SourcesEditor.working.bgg_geeklists = [...list, v];
+    inp.value = '';
+    renderSourcesEditor();
+    return;
+  }
+  // Remove a custom URL
+  const urlRm = e.target.closest && e.target.closest('.url-remove');
+  if (urlRm) {
+    const url = urlRm.getAttribute('data-url');
+    SourcesEditor.working.custom_urls = (SourcesEditor.working.custom_urls || []).filter(u => u !== url);
+    renderSourcesEditor();
+    return;
+  }
+  if (e.target && e.target.id === 'url-add-btn') {
+    const inp = document.getElementById('url-add-input');
+    const v = (inp.value || '').trim();
+    if (!v) { showToast('Paste a URL', 'warn', 2500); return; }
+    if (!/^https?:\/\//i.test(v)) {
+      showToast('URL must start with http:// or https://', 'warn', 3500);
+      return;
+    }
+    const list = SourcesEditor.working.custom_urls || [];
+    if (list.includes(v)) {
+      showToast('URL already in the list', 'warn', 2500);
+      return;
+    }
+    SourcesEditor.working.custom_urls = [...list, v];
     inp.value = '';
     renderSourcesEditor();
   }

@@ -257,6 +257,121 @@ def solitaire_times() -> list[dict[str, Any]]:
     ]
 
 
+# ─── Custom URLs (user-defined) ────────────────────────────────────────────
+
+_FEED_AUTODISCOVERY_RE = re.compile(
+    r'<link[^>]+rel=["\']alternate["\'][^>]*type=["\']application/'
+    r'(?:rss\+xml|atom\+xml|xml)["\'][^>]*>',
+    re.IGNORECASE,
+)
+_HREF_RE = re.compile(r'href=["\']([^"\']+)["\']', re.IGNORECASE)
+_HEADING_RE = re.compile(
+    r'<h[1-3][^>]*>(?:<a[^>]*>)?\s*([^<]{4,200}?)\s*(?:</a>)?</h[1-3]>',
+    re.IGNORECASE,
+)
+_TAG_STRIP_RE = re.compile(r"<[^>]+>")
+
+
+def _absolutize(base: str, href: str) -> str:
+    """Resolve a possibly-relative URL against base."""
+    if href.startswith(("http://", "https://")):
+        return href
+    if href.startswith("//"):
+        scheme = "https" if base.startswith("https") else "http"
+        return f"{scheme}:{href}"
+    try:
+        from urllib.parse import urljoin
+        return urljoin(base, href)
+    except Exception:
+        return href
+
+
+def _autodiscover_feed_url(html_text: str, base_url: str) -> str | None:
+    m = _FEED_AUTODISCOVERY_RE.search(html_text)
+    if not m:
+        return None
+    href = _HREF_RE.search(m.group(0))
+    if not href:
+        return None
+    return _absolutize(base_url, href.group(1))
+
+
+def _scrape_html_headings(html_text: str) -> list[str]:
+    out = []
+    for m in _HEADING_RE.finditer(html_text):
+        text = _TAG_STRIP_RE.sub("", m.group(1)).strip()
+        # cheap entity decode for the common ones
+        text = (text.replace("&amp;", "&").replace("&#39;", "'")
+                    .replace("&quot;", '"').replace("&nbsp;", " "))
+        if text and len(text) >= 4:
+            out.append(text)
+    # Dedup while preserving order
+    seen, deduped = set(), []
+    for t in out:
+        if t.lower() in seen:
+            continue
+        seen.add(t.lower())
+        deduped.append(t)
+    return deduped
+
+
+def _host_label(url: str) -> str:
+    try:
+        from urllib.parse import urlparse
+        host = (urlparse(url).hostname or "").lower()
+        if host.startswith("www."):
+            host = host[4:]
+        return host or url
+    except Exception:
+        return url
+
+
+def custom_url(url: str) -> list[dict[str, Any]]:
+    """Scrape one user-provided URL. Tries feed → autodiscovery → HTML headings."""
+    if not url or not url.startswith(("http://", "https://")):
+        return []
+
+    # 1. Try direct feed parse
+    titles = _fetch_feed_titles(url)
+
+    # 2. If no titles, fetch as HTML and look for autodiscovery link
+    if not titles:
+        try:
+            resp = _get(url, accept="text/html, application/rss+xml, */*")
+            if resp is not None:
+                feed_url = _autodiscover_feed_url(resp.text, url)
+                if feed_url:
+                    titles = _fetch_feed_titles(feed_url)
+                if not titles:
+                    # 3. Last-resort: scrape <h1>/<h2>/<h3> headings
+                    titles = _scrape_html_headings(resp.text)
+        except Exception as e:
+            print(f"  [custom_url] {url}: {e}")
+            return []
+
+    if not titles:
+        return []
+
+    names = _extract_game_names_from_titles(titles)
+    host = _host_label(url)
+    label = f"custom:{host}"
+    return [
+        {"bgg_id": None, "name": n, "source": label,
+         "raw_title": titles[i] if i < len(titles) else None}
+        for i, n in enumerate(names)
+    ]
+
+
+def custom_urls(urls: list[str]) -> list[dict[str, Any]]:
+    """Run custom_url on each user-provided URL with a small politeness gap."""
+    out: list[dict[str, Any]] = []
+    for i, url in enumerate(urls or []):
+        out.extend(custom_url(url))
+        if i + 1 < len(urls):
+            time.sleep(0.5)
+    return out
+
+
 # NOTE: r/soloboardgaming top-of-year RSS was investigated as a source but its
 # titles are dominated by discussion posts, memes, photos of collections, and
 # "what did you play this week" threads — game-name signal is too low to be

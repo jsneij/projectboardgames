@@ -288,6 +288,7 @@ def main(argv: list[str] | None = None) -> int:
     config = json.loads(SOURCES_CONFIG.read_text(encoding="utf-8"))
     enabled = config.get("enabled", {})
     geeklist_ids = config.get("bgg_geeklists", [])
+    custom_url_list = [u for u in config.get("custom_urls", []) if isinstance(u, str)]
 
     # ── 1. Discover from sources ───────────────────────────────────────────
     print("\n[1/8] Discovery")
@@ -308,6 +309,10 @@ def main(argv: list[str] | None = None) -> int:
         if enabled.get("solitaire_times", True):
             c = explorer_sources.solitaire_times()
             print(f"  solitaire_times          → {len(c)}")
+            candidates.extend(c)
+        if enabled.get("custom_urls", True) and custom_url_list:
+            c = explorer_sources.custom_urls(custom_url_list)
+            print(f"  custom_urls ({len(custom_url_list)})         → {len(c)}")
             candidates.extend(c)
 
     # ── 2. Resolve names → BGG ids ──────────────────────────────────────────
