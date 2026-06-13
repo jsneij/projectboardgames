@@ -845,9 +845,29 @@ nav::-webkit-scrollbar { display: none; }
   .is-scale-end, .is-scale-end:first-child { text-align: center; }
   .is-hero-title { font-size: 24px; }
 }
+/* EDIT MODE TOGGLE */
+.edit-toggle { display:inline-flex; align-items:center; gap:6px; cursor:pointer; user-select:none; }
+.edit-toggle input { display:none; }
+.edit-toggle-pill {
+  width: 34px; height: 18px; background: #444; border-radius: 999px; position: relative;
+  transition: background .15s ease;
+}
+.edit-toggle-pill::after {
+  content: ""; width: 14px; height: 14px; background: #fff; border-radius: 50%;
+  position: absolute; top: 2px; left: 2px; transition: left .15s ease;
+}
+.edit-toggle input:checked + .edit-toggle-pill { background: #ffa94d; }
+.edit-toggle input:checked + .edit-toggle-pill::after { left: 18px; }
+.edit-toggle-label { font-size: 12px; opacity: .85; }
 </style>
 </head>
 <body>
+
+<div id="edit-banner" style="display:none;position:sticky;top:0;z-index:50;
+     background:linear-gradient(90deg,#ffdc78,#ffa94d);color:#1a1a1a;
+     padding:8px 14px;font-size:13px;font-weight:600;text-align:center">
+  Edit mode active — <span id="edit-pending-count">0</span> changes pending
+</div>
 
 <div id="loading">
   <div class="spinner"></div>
@@ -866,6 +886,14 @@ nav::-webkit-scrollbar { display: none; }
     <span id="last-fetch"></span>
     <span id="deploy-sep" style="display:none">|</span>
     <span id="deploy-ts"><!-- __DEPLOY_TS__ --></span>
+    </div>
+    <!-- Edit mode toggle: only visible when served by scripts/dashboard_server.py -->
+    <div id="edit-mode-wrap" style="display:none;align-items:center;gap:8px;margin-left:auto">
+      <label class="edit-toggle" title="Toggle edit mode">
+        <input type="checkbox" id="edit-toggle-checkbox">
+        <span class="edit-toggle-pill"></span>
+        <span class="edit-toggle-label">Edit mode</span>
+      </label>
     </div>
   </div>
   <nav>
@@ -1062,6 +1090,44 @@ nav::-webkit-scrollbar { display: none; }
 <div id="scatter-tooltip" class="scatter-tooltip"></div>
 
 <script>
+// ============================================================
+// EDIT MODE STATE & HELPERS
+// ============================================================
+const Edit = {
+  available: false,
+  on: false,
+  pending: {},        // { collection: { gameName: { field: value } } }
+  original: null,     // snapshot of scores at load time
+};
+
+async function detectEditServer() {
+  try {
+    const r = await fetch('/api/status', { cache: 'no-store' });
+    if (!r.ok) return false;
+    const j = await r.json();
+    return j.mode === 'edit';
+  } catch {
+    return false;
+  }
+}
+
+function setEditMode(on) {
+  Edit.on = on;
+  const banner = document.getElementById('edit-banner');
+  if (banner) banner.style.display = on ? 'block' : 'none';
+  document.body.classList.toggle('edit-mode', on);
+  renderPendingCount();
+  // Re-render the collection table (function added in later tasks)
+  if (typeof renderCollection === 'function') renderCollection();
+}
+
+function renderPendingCount() {
+  let n = 0;
+  for (const c of Object.values(Edit.pending)) n += Object.keys(c).length;
+  const el = document.getElementById('edit-pending-count');
+  if (el) el.textContent = String(n);
+}
+
 // ============================================================
 // CONSTANTS & HELPERS
 // ============================================================
@@ -3205,6 +3271,18 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
       </div>
     </div>`;
   }
+})();
+
+// ============================================================
+// EDIT MODE DETECTION (runs after dashboard init)
+// ============================================================
+(async () => {
+  Edit.available = await detectEditServer();
+  if (!Edit.available) return;
+  const wrap = document.getElementById('edit-mode-wrap');
+  if (wrap) wrap.style.display = 'flex';
+  const cb = document.getElementById('edit-toggle-checkbox');
+  if (cb) cb.addEventListener('change', (e) => setEditMode(e.target.checked));
 })();
 </script>
 </body>
