@@ -1,14 +1,14 @@
 {
   "metadata": {
     "username": "jsneij",
-    "fetched_at": "2026-06-13T15:43:06.189761+00:00",
-    "total_items": 177,
+    "fetched_at": "2026-06-13T18:12:46.093633+00:00",
+    "total_items": 178,
     "counts": {
       "owned": 46,
-      "wishlist_total": 122,
+      "wishlist_total": 123,
       "wishlist_p1": 4,
       "wishlist_p2": 24,
-      "wishlist_p3": 31,
+      "wishlist_p3": 32,
       "wishlist_p4": 56,
       "wishlist_p5": 7,
       "preordered": 0,
@@ -6238,6 +6238,53 @@
         "private_info": null,
         "plays": [],
         "language_dependence": "Moderate in-game text - needs crib sheet or paste ups"
+      },
+      {
+        "bgg_id": 466234,
+        "type": "boardgame",
+        "collection_id": 146456835,
+        "name": "Harmonies: Pulse",
+        "year": 2026,
+        "image": "https://cf.geekdo-images.com/Hqd0FaAe4GH4rCVX7GqO0g__original/img/XDQS-cHKQ6qdYoRlk6rPGU8n5lw=/0x0/filters:format(png)/pic9451549.png",
+        "thumbnail": "https://cf.geekdo-images.com/Hqd0FaAe4GH4rCVX7GqO0g__small/img/wwEABXpJK7h0UjAvibfV3AOfbhs=/fit-in/200x150/filters:strip_icc()/pic9451549.png",
+        "status": {
+          "own": false,
+          "previously_owned": false,
+          "for_trade": false,
+          "want": false,
+          "want_to_play": false,
+          "want_to_buy": false,
+          "wishlist": true,
+          "preordered": false,
+          "last_modified": "2026-06-13 13:11:26"
+        },
+        "wishlist_priority": 3,
+        "num_plays": 0,
+        "comment": null,
+        "stats": {
+          "min_players": 1,
+          "max_players": 4,
+          "min_playtime": 30,
+          "max_playtime": 45,
+          "playing_time": 45,
+          "user_rating": null,
+          "usersrated": 8.0,
+          "average": 8.9375,
+          "bayesaverage": 0.0,
+          "stddev": 0.949918,
+          "median": 0.0,
+          "avg_weight": null,
+          "ranks": [
+            {
+              "type": "subtype",
+              "name": "boardgame",
+              "friendly_name": "Board Game Rank",
+              "value": null
+            }
+          ]
+        },
+        "private_info": null,
+        "plays": []
       }
     ],
     "priority_4_thinking_about": [

@@ -5231,6 +5231,33 @@
       ],
       "description": "Command unstoppable killing machines in brutal mech combat where every decision could be your last against relentless opposition.",
       "justification": "M(4): Complex mech customization with interlocking weapon systems and tactical positioning. T(5): Every damage roll and system failure IS piloting a war machine. G(4): High-stakes tactical decisions with cascading consequences across battle phases. F(2): Moderate setup with dice and card management overhead. Ar(4): Striking mech designs with atmospheric battlefield art and strong visual hierarchy."
+    },
+    "Harmonies: Pulse": {
+      "name": "Harmonies: Pulse",
+      "type": "competitive",
+      "weight": 2.3,
+      "M": 3,
+      "T": 2,
+      "G": 3,
+      "F": 1,
+      "Ar": 4,
+      "feeling": "Engaging",
+      "mechs": [
+        "STR-01 Competitive Games",
+        "STR-04 Solo Games",
+        "TRN-01 Fixed Turn Order",
+        "ACT-23 Drawing",
+        "CAR-06 Drafting",
+        "SET-02 Tile-Laying",
+        "SET-03 Grid Coverage",
+        "ACT-22 Matching",
+        "VIC-01 Victory Points from Game State",
+        "VIC-02 Victory Points from Player Actions",
+        "VIC-09 Fixed Number of Rounds",
+        "UNC-10 Variable Setup"
+      ],
+      "description": "Expand the serene world of Harmonies with new landscapes and evolved animal behaviors in this standalone sequel.",
+      "justification": "M(3): Drafting and spatial stacking with enhanced pattern matching mechanics. T(2): Nature theme remains pleasant but doesn't generate thematic experience. G(3): Meaningful draft choices and placement optimization with expanded decisions. F(1): Harmonies design philosophy means simple rules and elegant flow. Ar(4): Continuation of beautiful pastel palette and calming visual design."
     }
   },
   "preordered": {}
