@@ -2,6 +2,10 @@
 
 from __future__ import annotations
 
+import json
+import os
+import tempfile
+from pathlib import Path
 from typing import Any
 
 
@@ -69,3 +73,20 @@ def validate_scores(payload: Any, existing: Any) -> list[dict]:
                     errors.append({"field": f"{prefix}.{tf}", "problem": "must be a string"})
 
     return errors
+
+
+def atomic_write_json(path: Path, data: Any) -> None:
+    """Write JSON to `path` atomically: write to .tmp, fsync, rename over real file."""
+    path = Path(path)
+    fd, tmp_name = tempfile.mkstemp(prefix=path.name + ".", suffix=".tmp", dir=str(path.parent))
+    tmp_path = Path(tmp_name)
+    try:
+        with os.fdopen(fd, "w", encoding="utf-8") as f:
+            json.dump(data, f, indent=2, ensure_ascii=False)
+            f.flush()
+            os.fsync(f.fileno())
+        os.replace(tmp_path, path)
+    except Exception:
+        if tmp_path.exists():
+            tmp_path.unlink()
+        raise

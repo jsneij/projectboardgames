@@ -78,3 +78,15 @@ def test_validate_scores_rejects_non_string_text_field(scores_path):
     payload = {"owned": {"Burgle Bros.": {"feeling": 99}}}
     errors = validate_scores(payload, existing)
     assert {"field": "owned.Burgle Bros..feeling", "problem": "must be a string"} in errors
+
+
+from scripts.dashboard_server_core import atomic_write_json
+
+
+def test_atomic_write_json_replaces_file_and_leaves_no_tmp(tmp_path):
+    target = tmp_path / "out.json"
+    target.write_text('{"old": true}', encoding="utf-8")
+    atomic_write_json(target, {"new": 42})
+    assert json.loads(target.read_text(encoding="utf-8")) == {"new": 42}
+    leftovers = [p for p in tmp_path.iterdir() if p.suffix == ".tmp"]
+    assert leftovers == []
