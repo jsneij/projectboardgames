@@ -9,11 +9,13 @@
   "bgg_geeklists": [
     335712
   ],
+  "custom_urls": [],
   "enabled": {
     "bgg_hot": true,
     "bgg_geeklists": true,
     "polyhedron_collider": true,
-    "solitaire_times": true
+    "solitaire_times": true,
+    "custom_urls": true
   },
   "feeling_thresholds": {
     "_comment": "From scripts/score_new_games.py — match those constants",
