@@ -865,6 +865,43 @@ nav::-webkit-scrollbar { display: none; }
 .edit-toggle input:checked + .edit-toggle-pill { background: #ffa94d; }
 .edit-toggle input:checked + .edit-toggle-pill::after { left: 18px; }
 .edit-toggle-label { font-size: 12px; opacity: .85; }
+.edit-mode-key {
+  font-size: 11px; color: var(--text3); cursor: pointer; text-decoration: underline;
+  text-decoration-style: dotted; text-underline-offset: 3px;
+}
+.edit-mode-key:hover { color: var(--accent); }
+.edit-mode-key.has-token { color: #4ade80; }
+.token-modal-backdrop {
+  position: fixed; inset: 0; background: rgba(0,0,0,0.65);
+  display: none; align-items: center; justify-content: center;
+  z-index: 250;
+}
+.token-modal-backdrop.open { display: flex; }
+.token-modal {
+  background: #181818; border: 1px solid #444; border-radius: 8px;
+  padding: 22px; max-width: 540px; width: 92vw; max-height: 86vh; overflow: auto;
+  box-shadow: 0 16px 48px rgba(0,0,0,0.6); color: var(--text);
+}
+.token-modal h3 { margin: 0 0 6px; font-size: 16px; }
+.token-modal p, .token-modal li { font-size: 13px; line-height: 1.5; color: var(--text2); }
+.token-modal ol { padding-left: 18px; margin: 8px 0 12px; }
+.token-modal a { color: var(--accent); }
+.token-modal input[type="password"], .token-modal input[type="text"] {
+  width: 100%; padding: 8px 10px; margin-top: 8px;
+  background: #0f0f0f; color: #fff;
+  border: 1px solid #555; border-radius: 4px;
+  font-family: 'JetBrains Mono', monospace; font-size: 12px;
+}
+.token-modal .token-actions {
+  display: flex; gap: 8px; justify-content: flex-end; margin-top: 14px;
+}
+.token-modal button {
+  padding: 7px 14px; border: 1px solid #555; background: #222; color: #fff;
+  border-radius: 4px; font-size: 12px; cursor: pointer;
+}
+.token-modal button.primary { background: #1f4a2a; border-color: #2e6a3d; }
+.token-modal button.danger { background: #5a2222; border-color: #7a2222; }
+.token-modal button:hover { filter: brightness(1.2); }
 /* MECHANISM PICKER (Edit mode) */
 .mech-pill {
   display:inline-flex; align-items:center; gap:4px;
@@ -915,13 +952,35 @@ nav::-webkit-scrollbar { display: none; }
   <div style="display:flex;align-items:center;margin-bottom:10px;gap:16px;flex-wrap:wrap">
     <h1 style="margin-bottom:0">BGG Dashboard &mdash; <span id="username-label">jsneij</span></h1>
     <div style="margin-left:auto;display:flex;align-items:center;gap:16px;flex-wrap:wrap">
-      <!-- Edit mode toggle: only visible when served by scripts/dashboard_server.py -->
-      <div id="edit-mode-wrap" style="display:none;align-items:center;gap:8px">
+      <!-- Edit mode toggle: visible when served by scripts/dashboard_server.py OR when running on GitHub Pages (online mode via GitHub API). -->
+      <div id="edit-mode-wrap" style="display:none;align-items:center;gap:10px">
         <label class="edit-toggle" title="Toggle edit mode">
           <input type="checkbox" id="edit-toggle-checkbox">
           <span class="edit-toggle-pill"></span>
           <span class="edit-toggle-label">Edit mode</span>
         </label>
+        <span id="edit-mode-key-link" class="edit-mode-key" style="display:none" title="Set or update the GitHub token used to save edits online">🔑 Token</span>
+      </div>
+
+      <!-- Token setup modal (only used on github.io / online mode). -->
+      <div id="token-modal-backdrop" class="token-modal-backdrop" role="dialog" aria-modal="true">
+        <div class="token-modal">
+          <h3>GitHub Personal Access Token</h3>
+          <p>Required to save edits directly to the repo from this page. Stored only in this browser's <code>localStorage</code>.</p>
+          <ol>
+            <li>Open <a href="https://github.com/settings/personal-access-tokens" target="_blank" rel="noopener">github.com/settings/personal-access-tokens</a> → <em>Generate new token</em> → <em>Fine-grained</em>.</li>
+            <li>Resource owner: <strong>jsneij</strong>. Repository access: <em>Only select repositories</em> → <strong>projectboardgames</strong>.</li>
+            <li>Permissions → Repository → <strong>Contents: Read and write</strong>. Leave everything else off.</li>
+            <li>Set an expiration (e.g. 90 days), generate, copy the token (starts with <code>github_pat_…</code>).</li>
+          </ol>
+          <input type="password" id="token-input" autocomplete="off" spellcheck="false" placeholder="github_pat_…">
+          <p style="font-size:11px;opacity:.7;margin-top:8px">You can revoke this token any time from the same GitHub page. Click <em>Forget token</em> below to remove it from this browser.</p>
+          <div class="token-actions">
+            <button id="token-clear" class="danger">Forget token</button>
+            <button id="token-cancel">Cancel</button>
+            <button id="token-save" class="primary">Save token</button>
+          </div>
+        </div>
       </div>
       <div style="display:flex;align-items:center;gap:12px;font-size:10px;font-family:'JetBrains Mono',monospace;color:var(--text3)">
         <a href="https://github.com/jsneij/projectboardgames/actions/workflows/fetch-bgg.yml"
@@ -1135,20 +1194,275 @@ nav::-webkit-scrollbar { display: none; }
 const Edit = {
   available: false,
   on: false,
+  mode: 'none',       // 'local' (Python server) | 'online' (GitHub API) | 'none'
   pending: {},        // { collection: { gameName: { field: value } } }
   original: null,     // snapshot of scores at load time
 };
 
-async function detectEditServer() {
+// =============================================================
+// Online save path — GitHub Contents API
+// =============================================================
+const GH_OWNER = 'jsneij';
+const GH_REPO = 'projectboardgames';
+const GH_BRANCH = 'main';
+const GH_FILE_PATH = 'data/bgg_collection_scores.json';
+const TOKEN_KEY = 'bgg_dashboard_github_token_v1';
+
+const TokenStore = {
+  get() { try { return localStorage.getItem(TOKEN_KEY) || null; } catch { return null; } },
+  set(t) { try { localStorage.setItem(TOKEN_KEY, t); return true; } catch { return false; } },
+  clear() { try { localStorage.removeItem(TOKEN_KEY); } catch {} },
+};
+
+function isOnPagesOrigin() {
+  return location.host === 'jsneij.github.io';
+}
+
+// Detect whether to enable edit mode and which save path to use.
+// Order: try local Python server first, then fall back to online (GitHub API)
+// on Pages. Returns 'local', 'online', or 'none'.
+async function detectEditMode() {
   try {
     const r = await fetch('/api/status', { cache: 'no-store' });
-    if (!r.ok) return false;
-    const j = await r.json();
-    return j.mode === 'edit';
-  } catch {
-    return false;
-  }
+    if (r.ok) {
+      const j = await r.json();
+      if (j.mode === 'edit') return 'local';
+    }
+  } catch {}
+  if (isOnPagesOrigin()) return 'online';
+  return 'none';
 }
+
+// Validation port of scripts/dashboard_server_core.py::validate_scores.
+// Keep both in sync if the rules change.
+const VS_COLLECTIONS = ['owned', 'wishlist', 'preordered'];
+const VS_SCORE_FIELDS = ['M', 'T', 'G', 'F', 'Ar'];
+const VS_TEXT_FIELDS = ['name', 'type', 'feeling', 'description', 'justification'];
+
+function clientValidateScores(payload, existing) {
+  const errors = [];
+  if (!payload || typeof payload !== 'object' || Array.isArray(payload)) {
+    return [{ field: '<root>', problem: 'must be an object' }];
+  }
+  if (!existing || typeof existing !== 'object') existing = {};
+  for (const [collection, games] of Object.entries(payload)) {
+    if (!VS_COLLECTIONS.includes(collection)) {
+      errors.push({ field: collection, problem: 'unknown collection' });
+      continue;
+    }
+    if (!games || typeof games !== 'object' || Array.isArray(games)) {
+      errors.push({ field: collection, problem: 'must be an object' });
+      continue;
+    }
+    const existingGames = existing[collection] || {};
+    for (const [name, entry] of Object.entries(games)) {
+      const prefix = `${collection}.${name}`;
+      if (!(name in existingGames)) {
+        errors.push({ field: prefix, problem: 'unknown game; add/remove entries via sync_scores.py' });
+        continue;
+      }
+      if (!entry || typeof entry !== 'object' || Array.isArray(entry)) {
+        errors.push({ field: prefix, problem: 'must be an object' });
+        continue;
+      }
+      for (const f of VS_SCORE_FIELDS) {
+        if (f in entry) {
+          const v = entry[f];
+          if (typeof v !== 'number' || !Number.isInteger(v) || v < 0 || v > 5) {
+            errors.push({ field: `${prefix}.${f}`, problem: 'must be int 0..5' });
+          }
+        }
+      }
+      if ('weight' in entry) {
+        const w = entry.weight;
+        if (typeof w !== 'number' || !Number.isFinite(w)) {
+          errors.push({ field: `${prefix}.weight`, problem: 'must be numeric' });
+        }
+      }
+      if ('mechs' in entry) {
+        if (!Array.isArray(entry.mechs) || entry.mechs.some(m => typeof m !== 'string')) {
+          errors.push({ field: `${prefix}.mechs`, problem: 'must be array of strings' });
+        }
+      }
+      for (const tf of VS_TEXT_FIELDS) {
+        if (tf in entry && entry[tf] !== null && typeof entry[tf] !== 'string') {
+          errors.push({ field: `${prefix}.${tf}`, problem: 'must be a string or null' });
+        }
+      }
+    }
+  }
+  return errors;
+}
+
+function buildCommitMessage(changedGames) {
+  const shown = changedGames.slice(0, 5);
+  const extra = changedGames.length > 5 ? ` (+${changedGames.length - 5} more)` : '';
+  return `Update collection scores: ${shown.join(', ')}${extra}`;
+}
+
+// Unicode-safe UTF-8 → base64 (atob/btoa alone would mangle non-ASCII names).
+function utf8ToBase64(str) {
+  const bytes = new TextEncoder().encode(str);
+  let bin = '';
+  for (const b of bytes) bin += String.fromCharCode(b);
+  return btoa(bin);
+}
+function base64ToUtf8(b64) {
+  const bin = atob(b64.replace(/\s/g, ''));
+  const bytes = new Uint8Array(bin.length);
+  for (let i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+  return new TextDecoder('utf-8').decode(bytes);
+}
+
+// Apply pending edits to a fresh "existing" baseline (from the API) rather
+// than to Edit.original. This preserves any games the nightly BGG bot added
+// between page load and save.
+function applyPendingTo(existing, pending) {
+  const out = JSON.parse(JSON.stringify(existing));
+  for (const [collection, games] of Object.entries(pending)) {
+    for (const [name, fields] of Object.entries(games)) {
+      if (out[collection]?.[name]) Object.assign(out[collection][name], fields);
+    }
+  }
+  return out;
+}
+
+async function saveViaGitHubAPI(pending, changedGames, token) {
+  const headers = {
+    'Accept': 'application/vnd.github+json',
+    'Authorization': `Bearer ${token}`,
+    'X-GitHub-Api-Version': '2022-11-28',
+  };
+  const baseUrl = `https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${GH_FILE_PATH}`;
+
+  // 1. Fetch current file → SHA + content
+  let getResp;
+  try {
+    getResp = await fetch(`${baseUrl}?ref=${GH_BRANCH}`, { headers });
+  } catch {
+    return { status: 'error', message: 'Network error reaching GitHub. Check your connection.' };
+  }
+  if (getResp.status === 401) return { status: 'auth_error', message: 'GitHub token rejected. Re-enter your token.' };
+  if (getResp.status === 403) return { status: 'error', message: 'GitHub denied access. Token may lack Contents: Read/Write permission.' };
+  if (getResp.status === 404) return { status: 'error', message: 'Scores file not found in the repo. Did the path change?' };
+  if (!getResp.ok) return { status: 'error', message: `GitHub API ${getResp.status} on read.` };
+
+  const file = await getResp.json();
+  let existing;
+  try {
+    existing = JSON.parse(base64ToUtf8(file.content));
+  } catch (e) {
+    return { status: 'error', message: 'Could not decode current scores file.' };
+  }
+
+  // 2. Apply pending to fresh existing + validate
+  const updated = applyPendingTo(existing, pending);
+  const errors = clientValidateScores(updated, existing);
+  if (errors.length) {
+    return { status: 'validation_error', errors, message: 'Validation failed.' };
+  }
+
+  // 3. Encode + PUT
+  const newJsonString = JSON.stringify(updated, null, 2) + '\n';
+  const newBase64 = utf8ToBase64(newJsonString);
+
+  if (newBase64.replace(/\s/g, '') === file.content.replace(/\s/g, '')) {
+    return { status: 'noop', message: 'No changes to commit.', pushed: false, commit: null };
+  }
+
+  let putResp;
+  try {
+    putResp = await fetch(baseUrl, {
+      method: 'PUT',
+      headers: { ...headers, 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        message: buildCommitMessage(changedGames),
+        content: newBase64,
+        sha: file.sha,
+        branch: GH_BRANCH,
+      }),
+    });
+  } catch {
+    return { status: 'error', message: 'Network error during commit. Your edits are kept in this browser.' };
+  }
+  if (putResp.status === 401) return { status: 'auth_error', message: 'GitHub token rejected mid-save. Re-enter your token.' };
+  if (putResp.status === 403) return { status: 'error', message: 'Permission denied. Token may lack Contents: Read/Write.' };
+  if (putResp.status === 409) return { status: 'error', message: 'Repo changed since you opened the page. Reload and try again.' };
+  if (putResp.status === 422) {
+    const body = await putResp.json().catch(() => ({}));
+    return { status: 'error', message: `GitHub rejected the commit: ${body.message || 'unprocessable'}` };
+  }
+  if (!putResp.ok) {
+    const body = await putResp.text();
+    return { status: 'error', message: `GitHub API ${putResp.status}: ${body.slice(0, 200)}` };
+  }
+  const result = await putResp.json();
+  return {
+    status: 'ok',
+    pushed: true,
+    commit: result.commit?.sha || null,
+    message: `Saved & pushed ${changedGames.length} game(s) — Pages will redeploy in ~30s.`,
+  };
+}
+
+// =============================================================
+// Token modal wiring
+// =============================================================
+function openTokenModal() {
+  const backdrop = document.getElementById('token-modal-backdrop');
+  const input = document.getElementById('token-input');
+  if (!backdrop || !input) return;
+  input.value = TokenStore.get() || '';
+  backdrop.classList.add('open');
+  setTimeout(() => input.focus(), 50);
+}
+function closeTokenModal() {
+  const backdrop = document.getElementById('token-modal-backdrop');
+  if (backdrop) backdrop.classList.remove('open');
+}
+function updateTokenIndicator() {
+  const link = document.getElementById('edit-mode-key-link');
+  if (!link) return;
+  const has = !!TokenStore.get();
+  link.classList.toggle('has-token', has);
+  link.textContent = has ? '🔑 Token set' : '🔑 Set token';
+}
+
+(function wireTokenModal() {
+  // Wait until the DOM is parsed (this script lives at end of body but defend against ordering surprises).
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', wireTokenModal);
+    return;
+  }
+  const backdrop = document.getElementById('token-modal-backdrop');
+  if (!backdrop) return;
+  document.getElementById('edit-mode-key-link')?.addEventListener('click', openTokenModal);
+  document.getElementById('token-cancel')?.addEventListener('click', closeTokenModal);
+  document.getElementById('token-clear')?.addEventListener('click', () => {
+    TokenStore.clear();
+    updateTokenIndicator();
+    closeTokenModal();
+    showToast('Token forgotten', 'info', 2000);
+  });
+  document.getElementById('token-save')?.addEventListener('click', () => {
+    const v = document.getElementById('token-input').value.trim();
+    if (!v) { showToast('Paste a token first', 'error', 3000); return; }
+    if (!v.startsWith('github_pat_') && !v.startsWith('ghp_')) {
+      showToast('Token format looks wrong — expected github_pat_… or ghp_…', 'error', 4000);
+      return;
+    }
+    TokenStore.set(v);
+    updateTokenIndicator();
+    closeTokenModal();
+    showToast('Token saved', 'info', 2000);
+  });
+  // Click backdrop (outside modal) to close
+  backdrop.addEventListener('click', (e) => { if (e.target === backdrop) closeTokenModal(); });
+  // Escape to close
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && backdrop.classList.contains('open')) closeTokenModal();
+  });
+})();
 
 const PENDING_KEY = 'bgg_pending_edits_v1';
 
@@ -1182,11 +1496,19 @@ function applyPendingToOriginal() {
 }
 
 async function setEditMode(on) {
+  const cb = document.getElementById('edit-toggle-checkbox');
+  const banner = document.getElementById('edit-banner');
+
+  // Turning ON in online mode without a token → block and open the modal.
+  if (on && !Edit.on && Edit.mode === 'online' && !TokenStore.get()) {
+    if (cb) cb.checked = false;
+    showToast('Set a GitHub token first to enable online editing.', 'warn', 3500);
+    openTokenModal();
+    return;
+  }
+
   if (Edit.on && !on) {
     // ── Turning OFF ────────────────────────────────────────────────────
-    const cb = document.getElementById('edit-toggle-checkbox');
-    const banner = document.getElementById('edit-banner');
-
     if (pendingChangeCount() === 0) {
       Edit.on = false;
       document.body.classList.remove('edit-mode');
@@ -1200,56 +1522,75 @@ async function setEditMode(on) {
     const changed_games = Object.values(Edit.pending).flatMap(c => Object.keys(c));
     showToast(`Saving ${changed_games.length} game(s)…`, 'info', 1500);
 
+    // Dispatch by mode. Both paths produce the same result-shape:
+    //   { status, message, pushed?, commit?, errors? }
+    let j;
     try {
-      const r = await fetch('/api/save', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ scores: updated, changed_games }),
-      });
-      const j = await r.json();
-
-      if (j.status === 'ok' || j.status === 'noop' || j.status === 'committed_not_pushed') {
-        Edit.original = updated;
-        Edit.pending = {};
-        localStorage.removeItem(PENDING_KEY);
-        Edit.on = false;
-        document.body.classList.remove('edit-mode');
-        if (banner) banner.style.display = 'none';
-        renderPendingCount();
-        renderCollection();
-        const isWarn = j.status === 'committed_not_pushed';
-        showToast(
-          j.message || (isWarn ? 'Committed locally; push failed' : `Saved ${changed_games.length} game(s)`),
-          isWarn ? 'warn' : 'info',
-          isWarn ? 6000 : 4000,
-        );
-
-      } else if (j.status === 'validation_error') {
-        if (cb) cb.checked = true;
-        Edit.on = true;
-        const e0 = j.errors?.[0];
-        const detail = e0 ? `${e0.field || ''} ${e0.problem || ''}`.trim() : '';
-        showToast(`Validation error${detail ? ': ' + detail : ''}`, 'error', 6000);
-
+      if (Edit.mode === 'online') {
+        const token = TokenStore.get();
+        if (!token) {
+          if (cb) cb.checked = true;
+          Edit.on = true;
+          openTokenModal();
+          showToast('No GitHub token — paste one to save.', 'error', 5000);
+          return;
+        }
+        j = await saveViaGitHubAPI(Edit.pending, changed_games, token);
       } else {
-        // status === 'error' or unknown
-        if (cb) cb.checked = true;
-        Edit.on = true;
-        showToast(`Save failed: ${j.message || 'unknown error'}`, 'error', 6000);
+        const r = await fetch('/api/save', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ scores: updated, changed_games }),
+        });
+        j = await r.json();
       }
-
     } catch (err) {
-      // Server unreachable — leave Edit mode ON so the edits aren't lost.
+      // Network failure on either path — leave Edit mode ON so edits aren't lost.
       if (cb) cb.checked = true;
       Edit.on = true;
-      showToast("Can't reach local server. Your edits are kept in this browser. Restart /dashboard_BGG and try again.", 'error', 8000);
+      const msg = Edit.mode === 'online'
+        ? "Couldn't reach GitHub. Your edits are kept in this browser."
+        : "Can't reach local server. Your edits are kept in this browser. Restart /dashboard_BGG and try again.";
+      showToast(msg, 'error', 8000);
+      return;
+    }
+
+    if (j.status === 'ok' || j.status === 'noop' || j.status === 'committed_not_pushed') {
+      Edit.original = updated;
+      Edit.pending = {};
+      localStorage.removeItem(PENDING_KEY);
+      Edit.on = false;
+      document.body.classList.remove('edit-mode');
+      if (banner) banner.style.display = 'none';
+      renderPendingCount();
+      renderCollection();
+      const isWarn = j.status === 'committed_not_pushed';
+      showToast(
+        j.message || (isWarn ? 'Committed locally; push failed' : `Saved ${changed_games.length} game(s)`),
+        isWarn ? 'warn' : 'info',
+        isWarn ? 6000 : 4000,
+      );
+    } else if (j.status === 'validation_error') {
+      if (cb) cb.checked = true;
+      Edit.on = true;
+      const e0 = j.errors?.[0];
+      const detail = e0 ? `${e0.field || ''} ${e0.problem || ''}`.trim() : '';
+      showToast(`Validation error${detail ? ': ' + detail : ''}`, 'error', 6000);
+    } else if (j.status === 'auth_error') {
+      if (cb) cb.checked = true;
+      Edit.on = true;
+      openTokenModal();
+      showToast(j.message || 'Token rejected', 'error', 6000);
+    } else {
+      if (cb) cb.checked = true;
+      Edit.on = true;
+      showToast(`Save failed: ${j.message || 'unknown error'}`, 'error', 6000);
     }
     return;
   }
 
   // ── Turning ON (or no-op same-state) ──────────────────────────────────
   Edit.on = on;
-  const banner = document.getElementById('edit-banner');
   if (banner) banner.style.display = on ? 'block' : 'none';
   document.body.classList.toggle('edit-mode', on);
   renderPendingCount();
@@ -3708,12 +4049,21 @@ function openMechPicker(addBtn) {
 // EDIT MODE DETECTION (runs after dashboard init)
 // ============================================================
 (async () => {
-  Edit.available = await detectEditServer();
+  Edit.mode = await detectEditMode();
+  Edit.available = Edit.mode !== 'none';
   if (!Edit.available) return;
+
   const wrap = document.getElementById('edit-mode-wrap');
   if (wrap) wrap.style.display = 'flex';
   const cb = document.getElementById('edit-toggle-checkbox');
   if (cb) cb.addEventListener('change', (e) => setEditMode(e.target.checked));
+
+  // In online mode, expose the token link + its status badge.
+  if (Edit.mode === 'online') {
+    const keyLink = document.getElementById('edit-mode-key-link');
+    if (keyLink) keyLink.style.display = 'inline';
+    updateTokenIndicator();
+  }
 
   // Wait for the data init to complete so Edit.original is guaranteed to be set
   // before we attempt to restore pending edits from localStorage.
