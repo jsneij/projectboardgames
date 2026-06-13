@@ -3531,6 +3531,7 @@ function openMechPicker(addBtn) {
 
   const list = picker.querySelector('.mech-list');
   const input = picker.querySelector('input');
+  input.focus(); // `autofocus` doesn't fire on dynamically-inserted elements
 
   function renderPickerList(query) {
     const q = query.trim().toLowerCase();
