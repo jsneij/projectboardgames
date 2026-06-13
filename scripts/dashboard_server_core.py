@@ -70,8 +70,10 @@ def validate_scores(payload: Any, existing: Any) -> list[dict]:
                 if not isinstance(mechs, list) or any(not isinstance(m, str) for m in mechs):
                     errors.append({"field": f"{prefix}.mechs", "problem": "must be array of strings"})
             for tf in TEXT_FIELDS:
-                if tf in entry and not isinstance(entry[tf], str):
-                    errors.append({"field": f"{prefix}.{tf}", "problem": "must be a string"})
+                # null is allowed — sync_scores.py creates placeholder entries
+                # with feeling=None for games that haven't been personally rated yet.
+                if tf in entry and entry[tf] is not None and not isinstance(entry[tf], str):
+                    errors.append({"field": f"{prefix}.{tf}", "problem": "must be a string or null"})
 
     return errors
 

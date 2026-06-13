@@ -80,7 +80,16 @@ def test_validate_scores_rejects_non_string_text_field(scores_path):
     existing = _load(scores_path)
     payload = {"owned": {"Burgle Bros.": {"feeling": 99}}}
     errors = validate_scores(payload, existing)
-    assert {"field": "owned.Burgle Bros..feeling", "problem": "must be a string"} in errors
+    assert {"field": "owned.Burgle Bros..feeling", "problem": "must be a string or null"} in errors
+
+
+def test_validate_scores_allows_null_text_field(scores_path):
+    # sync_scores.py creates placeholder entries with feeling=None for games
+    # that haven't been personally rated yet. The validator must accept that.
+    existing = _load(scores_path)
+    payload = {"owned": {"Burgle Bros.": {"feeling": None}}}
+    errors = validate_scores(payload, existing)
+    assert errors == []
 
 
 def test_atomic_write_json_replaces_file_and_leaves_no_tmp(tmp_path):
