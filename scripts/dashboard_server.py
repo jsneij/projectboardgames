@@ -17,7 +17,7 @@ import os
 import sys
 import webbrowser
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import unquote, urlparse
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 
@@ -54,7 +54,9 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         self.wfile.write(payload)
 
     def _safe_static_path(self, raw_path: str) -> bool:
-        path = urlparse(raw_path).path.lstrip("/")
+        # Decode percent-encoding first so encoded slashes like %2F can't smuggle
+        # `..` segments past the split-and-check below.
+        path = unquote(urlparse(raw_path).path).lstrip("/")
         if not path:
             return False
         # Block directory listings — require a non-empty filename after the dir
@@ -98,8 +100,17 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         scores = body.get("scores")
         changed_games = body.get("changed_games") or []
 
-        with open(SCORES_PATH, encoding="utf-8") as f:
-            existing = json.load(f)
+        try:
+            with open(SCORES_PATH, encoding="utf-8") as f:
+                existing = json.load(f)
+        except (OSError, json.JSONDecodeError) as e:
+            self._send_json(500, {
+                "status": "error",
+                "commit": None,
+                "pushed": False,
+                "message": f"Could not read scores file: {e}",
+            })
+            return
 
         errors = validate_scores(scores, existing)
         if errors:
