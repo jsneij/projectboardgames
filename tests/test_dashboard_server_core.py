@@ -12,3 +12,45 @@ def test_validate_scores_accepts_unchanged_payload(scores_path):
     existing = _load(scores_path)
     errors = validate_scores(existing, existing)
     assert errors == []
+
+
+def test_validate_scores_rejects_non_object_root():
+    errors = validate_scores("not a dict", {})
+    assert errors == [{"field": "<root>", "problem": "must be an object"}]
+
+
+def test_validate_scores_rejects_unknown_collection(scores_path):
+    existing = _load(scores_path)
+    errors = validate_scores({"junk": {}}, existing)
+    assert {"field": "junk", "problem": "unknown collection"} in errors
+
+
+def test_validate_scores_rejects_unknown_game(scores_path):
+    existing = _load(scores_path)
+    payload = {"owned": {"Made Up Game": {"M": 3}}}
+    errors = validate_scores(payload, existing)
+    assert errors == [{
+        "field": "owned.Made Up Game",
+        "problem": "unknown game; add/remove entries via sync_scores.py",
+    }]
+
+
+def test_validate_scores_rejects_out_of_range_score(scores_path):
+    existing = _load(scores_path)
+    payload = {"owned": {"Burgle Bros.": {"M": 9}}}
+    errors = validate_scores(payload, existing)
+    assert {"field": "owned.Burgle Bros..M", "problem": "must be int 0..5"} in errors
+
+
+def test_validate_scores_rejects_non_int_score(scores_path):
+    existing = _load(scores_path)
+    payload = {"owned": {"Burgle Bros.": {"T": "five"}}}
+    errors = validate_scores(payload, existing)
+    assert {"field": "owned.Burgle Bros..T", "problem": "must be int 0..5"} in errors
+
+
+def test_validate_scores_rejects_mechs_not_array_of_strings(scores_path):
+    existing = _load(scores_path)
+    payload = {"owned": {"Burgle Bros.": {"mechs": ["ok", 42]}}}
+    errors = validate_scores(payload, existing)
+    assert {"field": "owned.Burgle Bros..mechs", "problem": "must be array of strings"} in errors
