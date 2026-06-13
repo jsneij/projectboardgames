@@ -373,7 +373,7 @@ nav::-webkit-scrollbar { display: none; }
 /* ─── Awards tab ─────────────────────────────────────────────────────── */
 .award-program-pill {
   display: inline-block; font-size: 11px;
-  padding: 5px 12px; border-radius: 14px;
+  padding: 4px 10px; border-radius: 12px;
   background: rgba(255,255,255,0.04); color: var(--text2);
   border: 1px solid #444; cursor: pointer; user-select: none;
   font-family: 'JetBrains Mono', monospace;
@@ -384,6 +384,37 @@ nav::-webkit-scrollbar { display: none; }
   background: rgba(96,165,250,0.15); color: var(--blue);
   border-color: var(--blue);
 }
+#awards-table { border-collapse: separate; border-spacing: 0; width: 100%; }
+#awards-table th {
+  padding: 7px 10px; text-align: left; font-weight: 600;
+  font-size: 11px; color: var(--text3);
+  font-family: 'JetBrains Mono', monospace; letter-spacing: 0.05em;
+  border-bottom: 1px solid var(--border); white-space: nowrap;
+  position: sticky; top: var(--table-th-top, 118px); z-index: 9; background: var(--bg);
+}
+#awards-table td {
+  padding: 6px 10px; border-bottom: 1px solid rgba(51,65,85,0.5);
+  font-size: 12px; vertical-align: middle;
+}
+#awards-table tr.award-row:hover td { background: var(--bg-hover); }
+.award-status-badge {
+  display: inline-block; font-size: 10px; padding: 1px 8px;
+  border-radius: 4px; font-family: 'JetBrains Mono', monospace;
+  letter-spacing: 0.04em; text-transform: uppercase;
+}
+.award-status-badge.winner    { background: rgba(251,191,36,0.18); color: #fbbf24; border: 1px solid rgba(251,191,36,0.3); }
+.award-status-badge.nominee   { background: rgba(156,163,175,0.10); color: var(--text2); border: 1px solid rgba(156,163,175,0.20); }
+.award-status-badge.recommended { background: rgba(168,85,247,0.12); color: #c084fc; border: 1px solid rgba(168,85,247,0.25); }
+.award-honor-link {
+  color: var(--accent); text-decoration: underline; text-decoration-style: dotted;
+  text-underline-offset: 3px;
+}
+.award-honor-link:hover { color: var(--blue); }
+.awards-name-link {
+  color: var(--text); text-decoration: none;
+  border-bottom: 1px dotted rgba(255,255,255,0.18);
+}
+.awards-name-link:hover { color: var(--blue); border-bottom-color: var(--blue); }
 .award-card {
   background: rgba(255,255,255,0.025);
   border: 1px solid var(--border); border-radius: 10px;
@@ -1306,6 +1337,7 @@ nav::-webkit-scrollbar { display: none; }
             <th>Name</th>
             <th>Source</th>
             <th>Type</th>
+            <th>Year</th>
             <th>M</th><th style="color:var(--red)">T</th><th>G</th><th>F</th><th>Ar</th>
             <th>GS</th><th style="color:var(--amber)">IS</th>
             <th>Wt</th><th title="Language Dependence"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--text3)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></th><th>BGG#</th><th>BGG★</th><th>Plays</th><th>Feeling</th>
@@ -1473,26 +1505,49 @@ nav::-webkit-scrollbar { display: none; }
     </div>
   </div>
 
-  <!-- TAB: AWARDS — board game awards browser sourced from Wikipedia + BGG -->
+  <!-- TAB: AWARDS — compact board game awards table sourced from Wikipedia + BGG -->
   <div id="tab-awards" class="tab-pane">
-    <div style="font-size:12px;color:var(--text3);margin-bottom:14px;line-height:1.5">
-      Major board game awards from <strong>Wikipedia</strong> enriched with BGG covers.
-      Each card shows the winner(s) plus nominees, with a direct link to BoardGameGeek.
-      <span id="awards-meta" style="display:block;opacity:0.6;font-size:11px;margin-top:6px"></span>
+    <div style="font-size:11px;color:var(--text3);margin-bottom:10px;line-height:1.4">
+      Major board game awards. Each row = one game × award × year. Click the award name to open its BGG honor page; click a game to open its BGG page.
+      <span id="awards-meta" style="display:block;opacity:0.6;font-size:11px;margin-top:4px"></span>
     </div>
-    <div id="awards-controls" class="sort-bar" style="flex-wrap:wrap;gap:8px">
+    <div class="sort-bar" style="flex-wrap:wrap;gap:6px">
       <span style="font-size:11px;color:var(--text3);margin-right:4px">Award:</span>
-      <div id="awards-program-pills" style="display:inline-flex;flex-wrap:wrap;gap:6px"></div>
-      <span style="font-size:11px;color:var(--text3);margin-left:12px;margin-right:4px">Year:</span>
-      <select id="awards-year-select" style="background:#1a1a1a;color:#fff;border:1px solid #555;border-radius:4px;padding:4px 8px;font-family:'JetBrains Mono',monospace;font-size:12px"></select>
+      <div id="awards-program-pills" style="display:inline-flex;flex-wrap:wrap;gap:4px"></div>
+      <span style="font-size:11px;color:var(--text3);margin-left:8px;margin-right:4px">Status:</span>
+      <button class="sort-btn active" data-awards-status="all">All</button>
+      <button class="sort-btn" data-awards-status="Winner">Winners</button>
+      <button class="sort-btn" data-awards-status="Nominee">Nominees</button>
+      <span style="font-size:11px;color:var(--text3);margin-left:8px;margin-right:4px">Sort:</span>
+      <button class="sort-btn active" data-awards-sort="year">Year <span class="dir">↓</span></button>
+      <button class="sort-btn" data-awards-sort="IS">IS <span class="dir">↓</span></button>
+      <button class="sort-btn" data-awards-sort="GS">GS <span class="dir">↓</span></button>
+      <button class="sort-btn" data-awards-sort="bayes_rating">BGG★ <span class="dir">↓</span></button>
+      <button class="sort-btn" data-awards-sort="name">Name <span class="dir">↑</span></button>
       <div class="search-wrap" style="margin:0 0 0 auto">
         <input type="text" id="awards-search" placeholder="Search games or awards...">
       </div>
     </div>
     <div id="awards-empty" style="display:none;padding:30px;text-align:center;color:var(--text3);font-size:13px">
-      No awards yet — run <code>python scripts/fetch_bgg_awards.py</code> or wait for the periodic refresh.
+      No awards yet — wait for the next <code>refresh-awards</code> workflow run.
     </div>
-    <div id="awards-container" style="display:flex;flex-direction:column;gap:24px;margin-top:18px"></div>
+    <div>
+      <table id="awards-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Game</th>
+            <th>Award</th>
+            <th>Year</th>
+            <th>Status</th>
+            <th>M</th><th style="color:var(--red)">T</th><th>G</th><th>F</th><th>Ar</th>
+            <th>GS</th><th style="color:var(--amber)">IS</th>
+            <th>Wt</th><th>BGG★</th><th>Feeling</th>
+          </tr>
+        </thead>
+        <tbody id="awards-tbody"></tbody>
+      </table>
+    </div>
   </div>
 
 </div><!-- /content -->
@@ -2609,6 +2664,7 @@ function renderTable(state) {
       <td style="min-width:180px"><span class="game-title" title="Show details">${htmlEscape(g.name)}</span></td>
       <td>${srcBadge}</td>
       <td style="color:var(--text2)">${Edit.on ? renderSelectCell(g.name, 'type', g.type) : (g.type || '—')}</td>
+      <td class="mono" style="color:var(--text3)">${g.year ?? '—'}</td>
       <td class="mono">${g.hasScores ? renderScoreCell(g.name, 'M', g.M) : '—'}</td>
       <td class="mono"${tHi}>${g.hasScores ? renderScoreCell(g.name, 'T', g.T) : '—'}</td>
       <td class="mono">${g.hasScores ? renderScoreCell(g.name, 'G', g.G) : '—'}</td>
@@ -2627,7 +2683,7 @@ function renderTable(state) {
     expandRow.className = 'expand-row';
     expandRow.style.display = 'none';
     const td = document.createElement('td');
-    td.colSpan = 17;
+    td.colSpan = 18;
     const mechsHtml = renderMechCell(g.name, currentMechs(g));
     const desc = g.sc.description || '';
     const just = g.sc.justification || '';
@@ -3563,10 +3619,11 @@ function renderMechanisms(state) {
 // TAB: AWARDS — major board game awards from Wikipedia + BGG enrichment
 // ============================================================
 const Awards = {
-  programs: [],
   selectedProgram: 'all',
-  selectedYear: 'all',
+  selectedStatus: 'all',
   search: '',
+  sortField: 'year',
+  sortDir: -1,
 };
 
 function _normalizeAwardName(s) {
@@ -3580,66 +3637,136 @@ function _normalizeAwardName(s) {
   return { display: s.trim(), alt: null };
 }
 
+function BGG_HONOR_URL(id) { return `https://boardgamegeek.com/boardgamehonor/${id}`; }
+
+function _flattenAwards(awardsList) {
+  // One row per (award × game × status)
+  const out = [];
+  for (const a of awardsList) {
+    const hids = a.honor_ids || {};
+    for (const [status, key] of [['Winner', 'winners'], ['Nominee', 'nominees'], ['Recommended', 'recommended']]) {
+      for (const g of (a[key] || [])) {
+        out.push({
+          ...g,
+          program: a.program,
+          award_year: a.year,
+          status,
+          honor_id: hids[status] ?? null,
+        });
+      }
+    }
+  }
+  return out;
+}
+
+const _awardsSortKey = {
+  year:         r => r.award_year ?? 0,
+  IS:           r => r.IS ?? -1,
+  GS:           r => r.GS ?? -1,
+  bayes_rating: r => r.bayes_rating ?? -1,
+  name:         r => (r.name || '').toLowerCase(),
+};
+
 function renderAwards(state) {
-  const container = document.getElementById('awards-container');
+  const tbody = document.getElementById('awards-tbody');
   const empty = document.getElementById('awards-empty');
   const meta = document.getElementById('awards-meta');
-  if (!container || !empty) return;
+  if (!tbody || !empty) return;
 
   const all = (state.awards && Array.isArray(state.awards.awards)) ? state.awards.awards : [];
   const m = (state.awards && state.awards.metadata) || {};
 
-  // Meta line
   if (meta) {
     if (m.generated_at) {
       const d = new Date(m.generated_at);
       const when = isNaN(d) ? m.generated_at : d.toLocaleDateString();
-      meta.textContent = `Refreshed ${when} · ${m.total_awards || 0} awards · ${m.resolved_games || 0} of ${m.total_entries || 0} games linked to BGG`;
+      const honorPart = m.honor_ids_resolved ? ` · ${m.honor_ids_resolved} honor IDs` : '';
+      const scorePart = m.scored_games ? ` · ${m.scored_games} games scored` : '';
+      meta.textContent = `Refreshed ${when} · ${m.total_awards || 0} awards · ${m.resolved_games || 0}/${m.total_entries || 0} games linked${honorPart}${scorePart}`;
     } else {
       meta.textContent = '';
     }
   }
 
   if (!all.length) {
-    container.innerHTML = '';
+    tbody.innerHTML = '';
     empty.style.display = 'block';
     renderAwardsProgramPills([]);
-    renderAwardsYearOptions([]);
     return;
   }
   empty.style.display = 'none';
 
-  // Cache programs + years
   const programs = [...new Set(all.map(a => a.program))].sort();
-  const years    = [...new Set(all.map(a => a.year))].sort((a, b) => b - a);
-  Awards.programs = programs;
   renderAwardsProgramPills(programs);
-  renderAwardsYearOptions(years);
 
-  // Filter
+  // Flatten + filter
+  let rows = _flattenAwards(all);
   const q = (Awards.search || '').trim().toLowerCase();
-  const filtered = all.filter(a => {
-    if (Awards.selectedProgram !== 'all' && a.program !== Awards.selectedProgram) return false;
-    if (Awards.selectedYear !== 'all' && String(a.year) !== String(Awards.selectedYear)) return false;
+  rows = rows.filter(r => {
+    if (Awards.selectedProgram !== 'all' && r.program !== Awards.selectedProgram) return false;
+    if (Awards.selectedStatus !== 'all' && r.status !== Awards.selectedStatus) return false;
     if (q) {
-      const inName = (g) => (g.name || '').toLowerCase().includes(q);
-      const matchProgram = a.program.toLowerCase().includes(q);
-      const matchYear = String(a.year) === q;
-      const matchGame = (a.winners || []).some(inName) || (a.nominees || []).some(inName) || (a.recommended || []).some(inName);
-      if (!matchProgram && !matchYear && !matchGame) return false;
+      const ln = (r.name || '').toLowerCase();
+      if (!ln.includes(q) && !r.program.toLowerCase().includes(q) && String(r.award_year) !== q) return false;
     }
     return true;
   });
 
-  filtered.sort((a, b) => {
-    if (a.year !== b.year) return b.year - a.year;
+  // Sort
+  const keyFn = _awardsSortKey[Awards.sortField] || _awardsSortKey.year;
+  rows.sort((a, b) => {
+    const ka = keyFn(a), kb = keyFn(b);
+    if (ka < kb) return -1 * Awards.sortDir;
+    if (ka > kb) return  1 * Awards.sortDir;
+    // Tie-break by year desc, then program
+    if (a.award_year !== b.award_year) return b.award_year - a.award_year;
     return a.program.localeCompare(b.program);
   });
 
-  container.innerHTML = filtered.map(renderAwardCard).join('') || `
-    <div style="padding:24px;text-align:center;color:var(--text3);font-size:13px">
-      No awards match the current filter.
-    </div>`;
+  tbody.innerHTML = rows.map(renderAwardRow).join('');
+}
+
+function renderAwardRow(r) {
+  const nameInfo = _normalizeAwardName(r.name);
+  const nameDisplay = nameInfo.display + (nameInfo.alt ? ` <span style="opacity:0.55;font-size:11px;font-style:italic">(${htmlEscape(nameInfo.alt)})</span>` : '');
+  // Name column
+  let nameCell;
+  if (r.bgg_id) {
+    nameCell = `<a class="awards-name-link" href="${BGG_URL(r.bgg_id)}" target="_blank" rel="noopener" title="Open on BGG">${htmlEscape(nameInfo.display)}</a>`
+             + (nameInfo.alt ? ` <span style="opacity:0.55;font-size:11px;font-style:italic">${htmlEscape(nameInfo.alt)}</span>` : '');
+  } else {
+    nameCell = `<span style="opacity:0.55">${htmlEscape(nameInfo.display)}</span>`;
+  }
+
+  // Award column with link to BGG honor page
+  const awardLabel = htmlEscape(r.program);
+  const awardCell = r.honor_id
+    ? `<a class="award-honor-link" href="${BGG_HONOR_URL(r.honor_id)}" target="_blank" rel="noopener" title="Open honor on BGG">${awardLabel}</a>`
+    : `<span>${awardLabel}</span>`;
+
+  const statusClass = r.status === 'Winner' ? 'winner' : r.status === 'Recommended' ? 'recommended' : 'nominee';
+
+  const tHi = (r.T ?? 0) >= 4 ? ' class="t-hi"' : '';
+  const isCol = (r.IS !== undefined && r.IS !== null) ? isColor(r.IS) : 'var(--text3)';
+  const isVal = (r.IS !== undefined && r.IS !== null) ? fmt1(r.IS) : '—';
+
+  return `<tr class="award-row">
+    <td>${typeIcon(r.type)}</td>
+    <td style="min-width:200px">${nameCell}</td>
+    <td>${awardCell}</td>
+    <td class="mono" style="color:var(--text3)">${r.award_year}</td>
+    <td><span class="award-status-badge ${statusClass}">${htmlEscape(r.status)}</span></td>
+    <td class="mono">${r.M ?? '—'}</td>
+    <td class="mono"${tHi}>${r.T ?? '—'}</td>
+    <td class="mono">${r.G ?? '—'}</td>
+    <td class="mono" style="color:var(--amber)">${r.F ?? '—'}</td>
+    <td class="mono">${r.Ar ?? '—'}</td>
+    <td class="mono">${r.GS ?? '—'}</td>
+    <td class="mono" style="color:${isCol}"><strong>${isVal}</strong></td>
+    <td class="mono" style="color:var(--text2)">${r.weight ? r.weight.toFixed(2) : '—'}</td>
+    <td class="mono" style="color:var(--text2)">${r.bayes_rating ? r.bayes_rating.toFixed(2) : '—'}</td>
+    <td>${FEELING_BADGE(r.feeling)}</td>
+  </tr>`;
 }
 
 function renderAwardsProgramPills(programs) {
@@ -3652,80 +3779,37 @@ function renderAwardsProgramPills(programs) {
   }).join('');
 }
 
-function renderAwardsYearOptions(years) {
-  const el = document.getElementById('awards-year-select');
-  if (!el) return;
-  const items = ['<option value="all">All years</option>',
-                 ...years.map(y => `<option value="${y}">${y}</option>`)];
-  el.innerHTML = items.join('');
-  el.value = Awards.selectedYear;
-}
-
-function renderAwardCard(a) {
-  const winners = (a.winners || []);
-  const nominees = (a.nominees || []);
-  const recommended = (a.recommended || []);
-  const total = winners.length + nominees.length + recommended.length;
-  const renderTiles = (list, isWinner) => {
-    if (!list.length) return '';
-    return `<div class="award-tiles">${list.map(g => renderAwardTile(g, isWinner)).join('')}</div>`;
-  };
-  return `<div class="award-card">
-    <div class="award-header">
-      <span class="award-year">${a.year}</span>
-      <span class="award-program">${htmlEscape(a.program)}</span>
-      <span class="award-stats">${total} games · ${winners.length} winner${winners.length !== 1 ? 's' : ''}</span>
-    </div>
-    ${winners.length ? `<div class="award-section">
-      <div class="award-section-title winners">★ Winner${winners.length > 1 ? 's' : ''}</div>
-      ${renderTiles(winners, true)}
-    </div>` : ''}
-    ${recommended.length ? `<div class="award-section">
-      <div class="award-section-title recommended">Recommended</div>
-      ${renderTiles(recommended, false)}
-    </div>` : ''}
-    ${nominees.length ? `<div class="award-section">
-      <div class="award-section-title nominees">Nominees</div>
-      ${renderTiles(nominees, false)}
-    </div>` : ''}
-  </div>`;
-}
-
-function renderAwardTile(g, isWinner) {
-  const nameInfo = _normalizeAwardName(g.name);
-  const winnerClass = isWinner ? ' winner' : '';
-  const cover = g.thumbnail || g.image;
-  const linked = !!g.bgg_id;
-  const tag = linked ? 'a' : 'div';
-  const href = linked ? ` href="${BGG_URL(g.bgg_id)}" target="_blank" rel="noopener"` : '';
-  const unresClass = linked ? '' : ' unresolved';
-  const ratingHtml = g.bayes_rating
-    ? `<span class="award-tile-rating">★ ${g.bayes_rating.toFixed(2)}</span>`
-    : '';
-  const yrHtml = g.year_published ? `<span>${g.year_published}</span>` : '<span></span>';
-  return `<${tag} class="award-tile${winnerClass}${unresClass}"${href}>
-    <div class="award-tile-cover">
-      ${cover ? `<img src="${cover}" alt="${htmlEscape(nameInfo.display)}" loading="lazy">`
-              : `<div class="no-cover">no cover</div>`}
-    </div>
-    <div class="award-tile-body">
-      <div class="award-tile-name">${htmlEscape(nameInfo.display)}</div>
-      ${nameInfo.alt ? `<div style="font-size:10px;color:var(--text3);margin-bottom:4px;font-style:italic">${htmlEscape(nameInfo.alt)}</div>` : ''}
-      <div class="award-tile-meta">${yrHtml}${ratingHtml}</div>
-    </div>
-  </${tag}>`;
-}
-
-// Awards: wire control events (delegated, so they survive re-renders)
+// Delegated controls (survive re-renders)
 document.addEventListener('click', (e) => {
   const pill = e.target.closest && e.target.closest('.award-program-pill');
-  if (!pill) return;
-  Awards.selectedProgram = pill.getAttribute('data-program');
-  if (STATE && STATE.awards) renderAwards(STATE);
-});
-document.getElementById('awards-year-select')?.addEventListener('change', (e) => {
-  Awards.selectedYear = e.target.value;
-  if (STATE && STATE.awards) renderAwards(STATE);
+  if (pill) {
+    Awards.selectedProgram = pill.getAttribute('data-program');
+    if (STATE && STATE.awards) renderAwards(STATE);
+    return;
+  }
+  const status = e.target.closest && e.target.closest('[data-awards-status]');
+  if (status) {
+    Awards.selectedStatus = status.getAttribute('data-awards-status');
+    document.querySelectorAll('[data-awards-status]').forEach(b => b.classList.remove('active'));
+    status.classList.add('active');
+    if (STATE && STATE.awards) renderAwards(STATE);
+    return;
+  }
+  const sort = e.target.closest && e.target.closest('[data-awards-sort]');
+  if (sort) {
+    const field = sort.getAttribute('data-awards-sort');
+    if (Awards.sortField === field) {
+      Awards.sortDir *= -1;
+    } else {
+      Awards.sortField = field;
+      Awards.sortDir = field === 'name' ? 1 : -1;
+    }
+    document.querySelectorAll('[data-awards-sort]').forEach(b => b.classList.remove('active'));
+    sort.classList.add('active');
+    const arrow = sort.querySelector('.dir');
+    if (arrow) arrow.textContent = Awards.sortDir === 1 ? '↑' : '↓';
+    if (STATE && STATE.awards) renderAwards(STATE);
+  }
 });
 document.getElementById('awards-search')?.addEventListener('input', (e) => {
   Awards.search = e.target.value;

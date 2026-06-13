@@ -283,6 +283,46 @@ class BGGClient:
             return None
         return None
 
+    def resolve_honor(self, year: int, program: str, status: str) -> int | None:
+        """(year, program, status) → BGG boardgamehonor id, cached.
+        BGG honor records have names like '2024 Spiel des Jahres Winner'."""
+        key = f"honor:{year}:{program.lower()}:{status.lower()}"
+        if key in self.cache:
+            return self.cache[key]
+        query = f"{year} {program}"
+        # SdJ Special Prize honors are listed under the SdJ search results
+        # too; strip the suffix for the BGG query.
+        query = re.sub(r"\s*—\s*Special Prize", "", query)
+        root = self._get(f"{BGG_API_BASE}/search",
+                         {"type": "boardgamehonor", "query": query})
+        if root is None:
+            self.cache[key] = None
+            return None
+        # Find the exact match by status suffix
+        want_status = status.lower()
+        # Map our internal status labels to BGG's name suffix tokens
+        want_tokens = {
+            "winner": ["winner"],
+            "nominee": ["nominee"],
+            "recommended": ["recommended"],
+        }.get(want_status, [want_status])
+        chosen: int | None = None
+        for item in root.findall("item"):
+            n = item.find("name")
+            full_name = (n.get("value") if n is not None else "") or ""
+            ln = full_name.lower()
+            if str(year) not in ln:
+                continue
+            if program.lower().split(" — ")[0] not in ln:
+                continue
+            if not any(t in ln for t in want_tokens):
+                continue
+            chosen = int(item.get("id"))
+            break
+        self.cache[key] = chosen
+        time.sleep(0.3)
+        return chosen
+
     def resolve(self, name: str) -> int | None:
         """name → bgg_id, cached."""
         key = f"resolve:{name.lower()}"
@@ -387,12 +427,20 @@ def main() -> int:
                     help="Drop awards before this year (default 0 = all history)")
     ap.add_argument("--programs", nargs="*",
                     help="Only scrape these programs (substring match on name)")
+    ap.add_argument("--score", action="store_true",
+                    help="Run Claude to assign M/T/G/F/Ar/feeling to each game. "
+                         "Costs ~$0.01 per new game; cached.")
+    ap.add_argument("--score-limit", type=int, default=0,
+                    help="Cap newly-scored games per run (0 = no cap)")
     args = ap.parse_args()
 
     load_env()
     token = os.environ.get("BGG_BEARER_TOKEN")
     if not token:
         print("ERROR: BGG_BEARER_TOKEN not set")
+        return 2
+    if args.score and not os.environ.get("ANTHROPIC_API_KEY"):
+        print("ERROR: --score requires ANTHROPIC_API_KEY")
         return 2
 
     # Cache survives across runs to avoid re-hitting BGG for known games.
@@ -435,6 +483,88 @@ def main() -> int:
     print(f"\n[Enrich] /thing for {len(resolved_ids)} games")
     things = client.fetch_things(resolved_ids)
 
+    # 3b. Resolve BGG honor IDs for each (program, year, status) triple
+    print("\n[Honors] Resolving BGG honor IDs")
+    unique_triples = sorted({(e["program"], e["year"], e["status"]) for e in all_entries})
+    honor_lookup: dict[tuple, int | None] = {}
+    for i, (p, y, s) in enumerate(unique_triples):
+        if i % 50 == 0:
+            print(f"  {i}/{len(unique_triples)}")
+        honor_lookup[(p, y, s)] = client.resolve_honor(y, p, s)
+    print(f"  Resolved {sum(1 for v in honor_lookup.values() if v)}/{len(unique_triples)}")
+
+    # 3c. Optional: Claude-score each unique BGG ID
+    scores_by_bgg_id: dict[int, dict] = {}
+    if args.score:
+        print("\n[Score] Loading framework + calibration")
+        from scripts.score_new_games import (
+            build_calibration_examples, build_mechanism_catalog, score_game,
+        )
+        framework_text = (ROOT / "docs" / "immersion_score.md").read_text(encoding="utf-8")
+        scores_json = json.loads((ROOT / "data" / "bgg_collection_scores.json").read_text(encoding="utf-8"))
+        calibration = build_calibration_examples(scores_json)
+        mechs_data = json.loads((ROOT / "data" / "mechanisms.json").read_text(encoding="utf-8"))
+        mech_catalog = build_mechanism_catalog(mechs_data)
+        import anthropic
+        claude = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
+
+        newly_scored = 0
+        for bid in resolved_ids:
+            key = f"score:{bid}"
+            cached = cache.get(key)
+            if cached:
+                scores_by_bgg_id[bid] = cached
+                continue
+            if args.score_limit and newly_scored >= args.score_limit:
+                print(f"  Hit --score-limit {args.score_limit}; stopping")
+                break
+            thing = things.get(bid)
+            if not thing:
+                continue
+            name = thing.get("name") or ""
+            bgg_data = {
+                "year": thing.get("year"),
+                "stats": {
+                    "min_players": None, "max_players": None,
+                    "min_playtime": None, "max_playtime": None,
+                    "avg_weight": None,
+                    "average": thing.get("bayes_rating"),
+                    "ranks": [],
+                },
+            }
+            try:
+                scored = score_game(claude, name, "award", bgg_data,
+                                    framework_text, calibration, mech_catalog)
+            except Exception as e:
+                print(f"  ERROR scoring {name!r}: {e}")
+                continue
+            M = scored.get("M") or 0; T = scored.get("T") or 0
+            G = scored.get("G") or 0; F = scored.get("F") or 0
+            Ar = scored.get("Ar") or 0
+            gs = M*T*G - F
+            is_val = gs * (Ar/2)
+            feeling = ("Total" if is_val >= 150
+                      else "Immersive" if is_val >= 87
+                      else "Engaging" if is_val >= 30 else "On Shelf")
+            entry = {**scored, "GS": gs, "IS": is_val, "feeling": feeling}
+            cache[key] = entry
+            scores_by_bgg_id[bid] = entry
+            newly_scored += 1
+            print(f"  [{newly_scored}] {name[:50]:50} IS={is_val:.0f} → {feeling}")
+            time.sleep(0.5)
+        # Also load any pre-cached scores not in this run's resolved set
+        for bid in resolved_ids:
+            if bid not in scores_by_bgg_id:
+                cached = cache.get(f"score:{bid}")
+                if cached:
+                    scores_by_bgg_id[bid] = cached
+    else:
+        # Even without --score, surface previously cached scores
+        for bid in resolved_ids:
+            cached = cache.get(f"score:{bid}")
+            if cached:
+                scores_by_bgg_id[bid] = cached
+
     # 4. Restructure for the dashboard
     # Shape: list of award entries grouped by program & year, with winner + nominees
     grouped: dict[tuple[str, int], dict] = {}
@@ -442,6 +572,7 @@ def main() -> int:
         key = (e["program"], e["year"])
         bid = name_to_bgg.get(e["name"])
         game_data = things.get(bid) if bid else None
+        score = scores_by_bgg_id.get(bid) if bid else None
         entry = {
             "bgg_id": bid,
             "name": e["name"],
@@ -450,10 +581,21 @@ def main() -> int:
             "year_published": game_data.get("year") if game_data else None,
             "bayes_rating": game_data.get("bayes_rating") if game_data else None,
         }
+        if score:
+            # Attach scoring fields the dashboard expects
+            for k in ("M", "T", "G", "F", "Ar", "GS", "IS", "feeling",
+                     "type", "weight", "description", "justification"):
+                if k in score:
+                    entry[k] = score[k]
         group = grouped.setdefault(key, {
             "program": e["program"], "year": e["year"],
+            "honor_ids": {},
             "winners": [], "nominees": [], "recommended": [],
         })
+        # Honor IDs (lazy: same honor_id for the (program, year, status))
+        hid = honor_lookup.get((e["program"], e["year"], e["status"]))
+        if hid:
+            group["honor_ids"][e["status"]] = hid
         if e["status"] == "Winner":
             group["winners"].append(entry)
         elif e["status"] == "Recommended":
@@ -471,6 +613,8 @@ def main() -> int:
             "total_awards": len(awards),
             "total_entries": len(all_entries),
             "resolved_games": resolved_count,
+            "scored_games": len(scores_by_bgg_id),
+            "honor_ids_resolved": sum(1 for v in honor_lookup.values() if v),
         },
         "awards": awards,
     }

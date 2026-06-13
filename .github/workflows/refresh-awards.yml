@@ -21,8 +21,11 @@ jobs:
       - name: Refresh awards
         env:
           BGG_BEARER_TOKEN: ${{ secrets.BGG_BEARER_TOKEN }}
-        # No --min-year: scrape full history (cache + 429 backoff keep it bounded)
-        run: python scripts/fetch_bgg_awards.py
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        # --score: assigns M/T/G/F/Ar/IS to each game via Claude (cached, so
+        # only newly-discovered games cost tokens). --score-limit caps cost
+        # per run; first run will need several passes to score all games.
+        run: python scripts/fetch_bgg_awards.py --score --score-limit 100
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
