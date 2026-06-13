@@ -222,8 +222,18 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         self.send_response(200)
         self.send_header("Content-Type", "text/html; charset=utf-8")
         self.send_header("Content-Length", str(len(data)))
+        # Never let the browser hold a stale dashboard locally — the file
+        # changes frequently and SimpleHTTPRequestHandler doesn't set ETag
+        # for our custom write path.
+        self.send_header("Cache-Control", "no-store, must-revalidate")
         self.end_headers()
         self.wfile.write(data)
+
+    def end_headers(self) -> None:  # noqa: D401 — used by static file path
+        # Add no-store to every locally-served static file too, so the
+        # JSONs under data/ never go stale in the browser cache.
+        self.send_header("Cache-Control", "no-store, must-revalidate")
+        super().end_headers()
 
 
 def main() -> None:
