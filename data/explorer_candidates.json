@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-06-13T19:37:07+00:00",
+    "generated_at": "2026-06-15T10:28:59+00:00",
     "sources_used": [
       "bgg_hot",
       "polyhedron_collider"
     ],
-    "total_evaluated": 72,
-    "newly_scored": 28,
-    "skipped_non_solo": 44,
+    "total_evaluated": 71,
+    "newly_scored": 3,
+    "skipped_non_solo": 1,
     "kept_immersive": 5,
     "kept_total": 7
   },
@@ -58,6 +58,52 @@
       "sources": [
         "bgg_hot",
         "polyhedron_collider"
+      ]
+    },
+    {
+      "bgg_id": 428099,
+      "name": "Revenant",
+      "year": 2026,
+      "image": "https://cf.geekdo-images.com/3jI41d32ExxZua8WiP_Zhg__original/img/4CsUkhzTDUG5IRgUlVY16pG5mdI=/0x0/filters:format(jpeg)/pic8426405.jpg",
+      "thumbnail": "https://cf.geekdo-images.com/3jI41d32ExxZua8WiP_Zhg__small/img/ZVr_VfjGozJFWXHsdp2aI2zGFps=/fit-in/200x150/filters:strip_icc()/pic8426405.jpg",
+      "designers": [
+        "Allan Kirkeby"
+      ],
+      "weight": 3.95,
+      "bayes_rating": 5.573,
+      "min_players": 1,
+      "max_players": 4,
+      "M": 4,
+      "T": 5,
+      "G": 4,
+      "F": 2,
+      "Ar": 4,
+      "type": "co-op",
+      "mechs": [
+        "STR-02 Cooperative Games",
+        "STR-04 Solo Games",
+        "STR-08 Scenario/Mission/Campaign Games",
+        "ACT-01 Action Points",
+        "ACT-12 Variable Player Powers",
+        "ACT-17 Events",
+        "ACT-18 Narrative Choice",
+        "RES-02 Stat Check",
+        "RES-05 Die Icons",
+        "UNC-02 Push-Your-Luck",
+        "UNC-07 Unknown Information",
+        "UNC-12 Deduction",
+        "MOV-01 Tessellation",
+        "MOV-04 Movement Points",
+        "CAR-04 Card Draw, Limits, and Deck Exhaustion",
+        "VIC-11 Completing Targets"
+      ],
+      "description": "Return from death as a vengeful spirit to hunt down your killer while your corporeal form decays with each passing hour.",
+      "justification": "M(4): Action points with supernatural powers, investigation mechanics, and time pressure systems. T(5): Playing as undead spirit with decay timer generates existential horror perfectly. G(4): Meaningful choices balancing investigation speed against spiritual deterioration consequences. F(2): Campaign setup and multiple card decks create moderate overhead. Ar(4): Atmospheric gothic horror art with strong character design.",
+      "GS": 78,
+      "IS": 156.0,
+      "feeling": "Total",
+      "sources": [
+        "bgg_hot"
       ]
     },
     {
@@ -149,52 +195,6 @@
       ],
       "description": "Delve into cursed shadow realms where light itself becomes a precious resource and ancient evils stir in the perpetual twilight.",
       "justification": "M(4): Action points with evolving character abilities and multi-layered shadow mechanics. T(5): Light-as-resource and shadow corruption mechanics generate mounting dread perfectly. G(4): Every move into darkness creates meaningful risk-reward tension. F(2): Campaign setup and multiple component types add overhead. Ar(4): Atmospheric twilight artwork creates perfect gothic mood.",
-      "GS": 78,
-      "IS": 156.0,
-      "feeling": "Total",
-      "sources": [
-        "bgg_hot"
-      ]
-    },
-    {
-      "bgg_id": 428099,
-      "name": "Revenant",
-      "year": 2026,
-      "image": "https://cf.geekdo-images.com/3jI41d32ExxZua8WiP_Zhg__original/img/4CsUkhzTDUG5IRgUlVY16pG5mdI=/0x0/filters:format(jpeg)/pic8426405.jpg",
-      "thumbnail": "https://cf.geekdo-images.com/3jI41d32ExxZua8WiP_Zhg__small/img/ZVr_VfjGozJFWXHsdp2aI2zGFps=/fit-in/200x150/filters:strip_icc()/pic8426405.jpg",
-      "designers": [
-        "Allan Kirkeby"
-      ],
-      "weight": 3.95,
-      "bayes_rating": 5.573,
-      "min_players": 1,
-      "max_players": 4,
-      "M": 4,
-      "T": 5,
-      "G": 4,
-      "F": 2,
-      "Ar": 4,
-      "type": "co-op",
-      "mechs": [
-        "STR-02 Cooperative Games",
-        "STR-04 Solo Games",
-        "STR-08 Scenario/Mission/Campaign Games",
-        "ACT-01 Action Points",
-        "ACT-12 Variable Player Powers",
-        "ACT-17 Events",
-        "ACT-18 Narrative Choice",
-        "RES-02 Stat Check",
-        "RES-05 Die Icons",
-        "UNC-02 Push-Your-Luck",
-        "UNC-07 Unknown Information",
-        "UNC-12 Deduction",
-        "MOV-01 Tessellation",
-        "MOV-04 Movement Points",
-        "CAR-04 Card Draw, Limits, and Deck Exhaustion",
-        "VIC-11 Completing Targets"
-      ],
-      "description": "Return from death as a vengeful spirit to hunt down your killer while your corporeal form decays with each passing hour.",
-      "justification": "M(4): Action points with supernatural powers, investigation mechanics, and time pressure systems. T(5): Playing as undead spirit with decay timer generates existential horror perfectly. G(4): Meaningful choices balancing investigation speed against spiritual deterioration consequences. F(2): Campaign setup and multiple card decks create moderate overhead. Ar(4): Atmospheric gothic horror art with strong character design.",
       "GS": 78,
       "IS": 156.0,
       "feeling": "Total",
@@ -336,6 +336,53 @@
       ]
     },
     {
+      "bgg_id": 465669,
+      "name": "Drillers",
+      "year": 2026,
+      "image": "https://cf.geekdo-images.com/Uz4rr8VRTss1PKSbxspV0Q__original/img/6p0BE5ScmaQAlpnowUy2yzn70R8=/0x0/filters:format(jpeg)/pic9628641.jpg",
+      "thumbnail": "https://cf.geekdo-images.com/Uz4rr8VRTss1PKSbxspV0Q__small/img/dsgH9yJYFydcwnyVSz4spJz0eIU=/fit-in/200x150/filters:strip_icc()/pic9628641.jpg",
+      "designers": [
+        "Roman Bednář",
+        "Adam Španěl"
+      ],
+      "weight": 3.0,
+      "bayes_rating": 5.523,
+      "min_players": 1,
+      "max_players": 4,
+      "M": 4,
+      "T": 3,
+      "G": 4,
+      "F": 2,
+      "Ar": 4,
+      "type": "competitive",
+      "mechs": [
+        "STR-01 Competitive Games",
+        "STR-04 Solo Games",
+        "TRN-01 Fixed Turn Order",
+        "ACT-01 Action Points",
+        "ACT-12 Variable Player Powers",
+        "ACT-16 Tech Trees/Tech Tracks/Track Bonuses",
+        "RES-01 High Number",
+        "RES-05 Die Icons",
+        "VIC-01 Victory Points from Game State",
+        "VIC-02 Victory Points from Player Actions",
+        "VIC-09 Fixed Number of Rounds",
+        "ECO-05 Income",
+        "ECO-11 Upgrades",
+        "WPL-01 Standard Worker Placement",
+        "SET-05 Combo Abilities",
+        "MOV-04 Movement Points"
+      ],
+      "description": "Drill deep into alien worlds, managing resources and tech upgrades while racing to extract valuable minerals before competitors.",
+      "justification": "M(4): Deep tech trees and resource management with interlocking drilling systems. T(3): Industrial drilling theme present but mechanics don't generate immersion. G(4): Meaningful choices in tech paths and drilling site selection. F(2): Medium complexity setup and rules overhead for weight 3.0. Ar(4): Clean industrial aesthetic with atmospheric alien world art.",
+      "GS": 46,
+      "IS": 92.0,
+      "feeling": "Immersive",
+      "sources": [
+        "bgg_hot"
+      ]
+    },
+    {
       "bgg_id": 397598,
       "name": "Dune: Imperium – Uprising",
       "year": 2023,
@@ -473,52 +520,6 @@
       "feeling": "Immersive",
       "sources": [
         "polyhedron_collider"
-      ]
-    },
-    {
-      "bgg_id": 343900,
-      "name": "Senjutsu: Battle For Japan",
-      "year": 2023,
-      "image": "https://cf.geekdo-images.com/QDkeggSB5MVExqAEXxfvgw__original/img/AdKxSxTStXuLbaZLNLnq4IWMQfA=/0x0/filters:format(jpeg)/pic7506502.jpg",
-      "thumbnail": "https://cf.geekdo-images.com/QDkeggSB5MVExqAEXxfvgw__small/img/ZXv9tBBTH1JhDziJ0Wgm7_Aaj6U=/fit-in/200x150/filters:strip_icc()/pic7506502.jpg",
-      "designers": [
-        "Paul D. Allen",
-        "James Faulkner"
-      ],
-      "weight": 2.92,
-      "bayes_rating": 6.008,
-      "min_players": 1,
-      "max_players": 4,
-      "M": 4,
-      "T": 3,
-      "G": 4,
-      "F": 3,
-      "Ar": 4,
-      "type": "competitive",
-      "mechs": [
-        "STR-01 Competitive Games",
-        "STR-04 Solo Games",
-        "TRN-09 Simultaneous Action Selection",
-        "ACT-02 Action Drafting",
-        "ACT-12 Variable Player Powers",
-        "RES-01 High Number",
-        "RES-05 Die Icons",
-        "RES-19 Dice Selection",
-        "VIC-01 Victory Points from Game State",
-        "VIC-09 Fixed Number of Rounds",
-        "UNC-09 Probability Management",
-        "MOV-01 Tessellation",
-        "MOV-04 Movement Points",
-        "ARC-01 Absolute Control",
-        "CAR-08 Multi-Use Cards"
-      ],
-      "description": "Master samurai clash in tactical duels where dice become weapons and every strike could be your last.",
-      "justification": "M(4): Dice-drafting combat with positioning, timing, and samurai-specific abilities create depth. T(3): Samurai powers and weapon dice evoke dueling but don't generate bushido tension. G(4): Every dice draft and positioning choice creates meaningful tactical consequences. F(3): Setup and component management moderate, rules density manageable. Ar(4): Beautiful samurai art and atmospheric Japanese aesthetic without miniatures.",
-      "GS": 45,
-      "IS": 90.0,
-      "feeling": "Immersive",
-      "sources": [
-        "bgg_hot"
       ]
     },
     {
