@@ -1696,5 +1696,50 @@
     "GS": -1,
     "IS": -1.0,
     "feeling": "On Shelf"
+  },
+  "459646": {
+    "bgg_id": 459646,
+    "_solo": false,
+    "name": "Survivalist"
+  },
+  "324711": {
+    "bgg_id": 324711,
+    "_solo": false,
+    "name": "Schadenfreude"
+  },
+  "359211": {
+    "bgg_id": 359211,
+    "_solo": false,
+    "name": "The Old Prince 1871"
+  },
+  "472579": {
+    "bgg_id": 472579,
+    "_solo": false,
+    "name": "Chivalry"
+  },
+  "352823": {
+    "bgg_id": 352823,
+    "_solo": false,
+    "name": "Galileo Project"
+  },
+  "457283": {
+    "bgg_id": 457283,
+    "_solo": false,
+    "name": "Bunny Kingdom Town"
+  },
+  "420087": {
+    "bgg_id": 420087,
+    "_solo": false,
+    "name": "Flip 7"
+  },
+  "427084": {
+    "bgg_id": 427084,
+    "_solo": false,
+    "name": "Superstore 3000"
+  },
+  "404936": {
+    "bgg_id": 404936,
+    "_solo": false,
+    "name": "Tap 4"
   }
 }
