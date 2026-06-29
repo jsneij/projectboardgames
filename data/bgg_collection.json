@@ -1,7 +1,7 @@
 {
   "metadata": {
     "username": "jsneij",
-    "fetched_at": "2026-06-28T06:16:59.015296+00:00",
+    "fetched_at": "2026-06-29T06:45:41.447435+00:00",
     "total_items": 178,
     "counts": {
       "owned": 46,
@@ -6273,7 +6273,7 @@
           "bayesaverage": 0.0,
           "stddev": 0.949918,
           "median": 0.0,
-          "avg_weight": null,
+          "avg_weight": 3.0,
           "ranks": [
             {
               "type": "subtype",
