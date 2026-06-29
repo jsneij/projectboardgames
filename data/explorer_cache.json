@@ -776,7 +776,8 @@
   },
   "217372": {
     "bgg_id": 217372,
-    "_unavailable": true
+    "_solo": false,
+    "name": "The Quest for El Dorado"
   },
   "353288": {
     "bgg_id": 353288,
@@ -1741,5 +1742,55 @@
     "bgg_id": 404936,
     "_solo": false,
     "name": "Tap 4"
+  },
+  "473061": {
+    "bgg_id": 473061,
+    "_solo": false,
+    "name": "Duel of Meloch"
+  },
+  "446949": {
+    "bgg_id": 446949,
+    "_solo": false,
+    "name": "The Glorious Guilds of Buttonville"
+  },
+  "451772": {
+    "bgg_id": 451772,
+    "_solo": false,
+    "name": "Shards of Creation"
+  },
+  "180901": {
+    "bgg_id": 180901,
+    "_solo": false,
+    "name": "Joraku"
+  },
+  "73439": {
+    "bgg_id": 73439,
+    "_solo": false,
+    "name": "Troyes"
+  },
+  "267907": {
+    "bgg_id": 267907,
+    "_solo": false,
+    "name": "18ZOO"
+  },
+  "416851": {
+    "bgg_id": 416851,
+    "_solo": false,
+    "name": "Castle Combo"
+  },
+  "233078": {
+    "bgg_id": 233078,
+    "_solo": false,
+    "name": "Twilight Imperium: Fourth Edition"
+  },
+  "358661": {
+    "bgg_id": 358661,
+    "_solo": false,
+    "name": "Andromeda's Edge"
+  },
+  "410179": {
+    "bgg_id": 410179,
+    "_solo": false,
+    "name": "Miskatonic Tales"
   }
 }
