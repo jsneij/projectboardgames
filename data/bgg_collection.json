@@ -1,7 +1,7 @@
 {
   "metadata": {
     "username": "jsneij",
-    "fetched_at": "2026-07-05T06:03:23.657502+00:00",
+    "fetched_at": "2026-07-06T06:27:19.189315+00:00",
     "total_items": 178,
     "counts": {
       "owned": 46,
@@ -6284,7 +6284,8 @@
           ]
         },
         "private_info": null,
-        "plays": []
+        "plays": [],
+        "language_dependence": "No necessary in-game text"
       }
     ],
     "priority_4_thinking_about": [
