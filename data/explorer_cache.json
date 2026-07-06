@@ -1792,5 +1792,40 @@
     "bgg_id": 410179,
     "_solo": false,
     "name": "Miskatonic Tales"
+  },
+  "471198": {
+    "bgg_id": 471198,
+    "_solo": false,
+    "name": "Defenders of Hogwarts"
+  },
+  "473508": {
+    "bgg_id": 473508,
+    "_solo": false,
+    "name": "Wingspan Pocket"
+  },
+  "440157": {
+    "bgg_id": 440157,
+    "_solo": false,
+    "name": "Quickdraw: Battle for Silver City"
+  },
+  "363058": {
+    "bgg_id": 363058,
+    "_solo": false,
+    "name": "Politik"
+  },
+  "397005": {
+    "bgg_id": 397005,
+    "_solo": false,
+    "name": "Yonder"
+  },
+  "4815": {
+    "bgg_id": 4815,
+    "_solo": false,
+    "name": "The Campaign for North Africa: The Desert War 1940-43"
+  },
+  "468446": {
+    "bgg_id": 468446,
+    "_solo": false,
+    "name": "Nippon: Genro"
   }
 }
