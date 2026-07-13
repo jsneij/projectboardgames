@@ -1,14 +1,14 @@
 {
   "metadata": {
-    "generated_at": "2026-07-06T08:25:56+00:00",
+    "generated_at": "2026-07-13T06:58:03+00:00",
     "sources_used": [
       "bgg_hot",
       "polyhedron_collider"
     ],
-    "total_evaluated": 72,
+    "total_evaluated": 70,
     "newly_scored": 0,
-    "skipped_non_solo": 7,
-    "kept_immersive": 4,
+    "skipped_non_solo": 8,
+    "kept_immersive": 5,
     "kept_total": 7
   },
   "candidates": [
@@ -378,6 +378,53 @@
       ],
       "description": "Navigate the deadly politics of Arrakis as a Great House leader, wielding spice, influence, and betrayal to claim the Imperial throne.",
       "justification": "M(4): Deck-building with worker placement creates deep interlocking systems and combos. T(3): Political maneuvering feels right but mechanics reference more than generate Dune. G(4): Every card and worker placement cascades into meaningful strategic consequences. F(2): Setup and iconography density manageable but requires rules investment. Ar(4): Stunning desert palette and character art captures Dune's epic scope.",
+      "GS": 46,
+      "IS": 92.0,
+      "feeling": "Immersive",
+      "sources": [
+        "bgg_hot"
+      ]
+    },
+    {
+      "bgg_id": 465669,
+      "name": "Drillers",
+      "year": 2026,
+      "image": "https://cf.geekdo-images.com/Uz4rr8VRTss1PKSbxspV0Q__original/img/6p0BE5ScmaQAlpnowUy2yzn70R8=/0x0/filters:format(jpeg)/pic9628641.jpg",
+      "thumbnail": "https://cf.geekdo-images.com/Uz4rr8VRTss1PKSbxspV0Q__small/img/dsgH9yJYFydcwnyVSz4spJz0eIU=/fit-in/200x150/filters:strip_icc()/pic9628641.jpg",
+      "designers": [
+        "Roman Bednář",
+        "Adam Španěl"
+      ],
+      "weight": 3.0,
+      "bayes_rating": 5.523,
+      "min_players": 1,
+      "max_players": 4,
+      "M": 4,
+      "T": 3,
+      "G": 4,
+      "F": 2,
+      "Ar": 4,
+      "type": "competitive",
+      "mechs": [
+        "STR-01 Competitive Games",
+        "STR-04 Solo Games",
+        "TRN-01 Fixed Turn Order",
+        "ACT-01 Action Points",
+        "ACT-12 Variable Player Powers",
+        "ACT-16 Tech Trees/Tech Tracks/Track Bonuses",
+        "RES-01 High Number",
+        "RES-05 Die Icons",
+        "VIC-01 Victory Points from Game State",
+        "VIC-02 Victory Points from Player Actions",
+        "VIC-09 Fixed Number of Rounds",
+        "ECO-05 Income",
+        "ECO-11 Upgrades",
+        "WPL-01 Standard Worker Placement",
+        "SET-05 Combo Abilities",
+        "MOV-04 Movement Points"
+      ],
+      "description": "Drill deep into alien worlds, managing resources and tech upgrades while racing to extract valuable minerals before competitors.",
+      "justification": "M(4): Deep tech trees and resource management with interlocking drilling systems. T(3): Industrial drilling theme present but mechanics don't generate immersion. G(4): Meaningful choices in tech paths and drilling site selection. F(2): Medium complexity setup and rules overhead for weight 3.0. Ar(4): Clean industrial aesthetic with atmospheric alien world art.",
       "GS": 46,
       "IS": 92.0,
       "feeling": "Immersive",

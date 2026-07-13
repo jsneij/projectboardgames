@@ -1827,5 +1827,45 @@
     "bgg_id": 468446,
     "_solo": false,
     "name": "Nippon: Genro"
+  },
+  "474024": {
+    "bgg_id": 474024,
+    "_solo": false,
+    "name": "The Resort"
+  },
+  "400495": {
+    "bgg_id": 400495,
+    "_solo": false,
+    "name": "JinxO"
+  },
+  "451676": {
+    "bgg_id": 451676,
+    "_solo": false,
+    "name": "Galileo's Truth"
+  },
+  "451298": {
+    "bgg_id": 451298,
+    "_solo": false,
+    "name": "Ringyō"
+  },
+  "471578": {
+    "bgg_id": 471578,
+    "_solo": false,
+    "name": "The Isle of Penguins"
+  },
+  "435346": {
+    "bgg_id": 435346,
+    "_solo": false,
+    "name": "Mooki Island"
+  },
+  "439561": {
+    "bgg_id": 439561,
+    "_solo": false,
+    "name": "Gruntz"
+  },
+  "467253": {
+    "bgg_id": 467253,
+    "_solo": false,
+    "name": "Green City"
   }
 }
