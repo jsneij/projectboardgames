@@ -1,17 +1,17 @@
 {
   "metadata": {
-    "generated_at": "2026-07-06T08:53:44+00:00",
+    "generated_at": "2026-07-13T07:59:56+00:00",
     "programs": [
       "Spiel des Jahres",
       "Golden Geek Awards",
       "Origins Awards",
       "As d'Or"
     ],
-    "total_awards": 152,
-    "total_entries": 368,
-    "resolved_games": 264,
+    "total_awards": 155,
+    "total_entries": 377,
+    "resolved_games": 269,
     "scored_games": 259,
-    "honor_ids_resolved": 151
+    "honor_ids_resolved": 154
   },
   "awards": [
     {
@@ -2644,6 +2644,42 @@
     },
     {
       "program": "Kennerspiel des Jahres",
+      "year": 2026,
+      "honor_ids": {
+        "Nominee": 117503
+      },
+      "winners": [
+        {
+          "bgg_id": 417197,
+          "name": "Rebirth",
+          "image": "https://cf.geekdo-images.com/tyv6lPMlyU7YIUztlILQYQ__original/img/KUY_vKJZenJVl0cv05Qkt-Gx-ao=/0x0/filters:format(png)/pic8587890.png",
+          "thumbnail": "https://cf.geekdo-images.com/tyv6lPMlyU7YIUztlILQYQ__small/img/_CXQQbXsewUlde4R22XCRApxZ5k=/fit-in/200x150/filters:strip_icc()/pic8587890.png",
+          "year_published": 2024,
+          "bayes_rating": 7.111
+        }
+      ],
+      "nominees": [
+        {
+          "bgg_id": 454672,
+          "name": "Boss Fighters QR",
+          "image": "https://cf.geekdo-images.com/Ugp-eulPaFzGBIjUL8Zd5g__original/img/bega8C0wpadSC4evPwLP5tP-ZTo=/0x0/filters:format(jpeg)/pic9114733.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/Ugp-eulPaFzGBIjUL8Zd5g__small/img/U5EIJrtI0hfy0nSECjsal0ux3vA=/fit-in/200x150/filters:strip_icc()/pic9114733.jpg",
+          "year_published": 2025,
+          "bayes_rating": 6.413
+        },
+        {
+          "bgg_id": 425549,
+          "name": "Moon Colony Bloodbath",
+          "image": "https://cf.geekdo-images.com/KDrRxEKQMmHyM0QQ2ONX4Q__original/img/XD-aeaMShk-TN_n0n6O9kbczxNY=/0x0/filters:format(jpeg)/pic8638247.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/KDrRxEKQMmHyM0QQ2ONX4Q__small/img/EusjojuWYxwkxaP7eAnaBn1QzLg=/fit-in/200x150/filters:strip_icc()/pic8638247.jpg",
+          "year_published": 2025,
+          "bayes_rating": 6.987
+        }
+      ],
+      "recommended": []
+    },
+    {
+      "program": "Kennerspiel des Jahres",
       "year": 2025,
       "honor_ids": {
         "Winner": 112339,
@@ -3503,6 +3539,42 @@
           "weight": 3.2,
           "description": "Navigate medieval English politics as a noble lord, deploying knights to court while managing conflicting loyalties between king and barons.",
           "justification": "M(4): Worker placement with variable knight values, conflict resolution, and area control layers. T(2): Medieval theme is decorative rather than mechanically integrated. G(4): Meaningful decisions about knight deployment, timing, and political allegiances. F(3): Setup complexity with multiple boards and phase management. Ar(3): Functional medieval artwork without distinctive visual identity."
+        }
+      ],
+      "recommended": []
+    },
+    {
+      "program": "Kinderspiel des Jahres",
+      "year": 2026,
+      "honor_ids": {
+        "Nominee": 117502
+      },
+      "winners": [
+        {
+          "bgg_id": null,
+          "name": "Die Insel der Mookies (Mooki Island)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        }
+      ],
+      "nominees": [
+        {
+          "bgg_id": null,
+          "name": "Buh Party (Boo Party)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        },
+        {
+          "bgg_id": null,
+          "name": "Verflixt Verzaubert (Mimose & Sam)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
         }
       ],
       "recommended": []
@@ -5176,6 +5248,42 @@
           "weight": 1.8,
           "description": "Navigate through a fairy tale forest collecting story cards to complete your magical adventure first.",
           "justification": "M(2): Roll-and-move with basic set collection lacks mechanical depth. T(2): Fairy tale theme is decorative, not mechanically generated. G(2): Dice-driven movement limits meaningful player agency significantly. F(2): Simple setup but older components may feel dated. Ar(2): Year 2000 production values likely show their age."
+        }
+      ],
+      "recommended": []
+    },
+    {
+      "program": "Spiel des Jahres",
+      "year": 2026,
+      "honor_ids": {
+        "Nominee": 117501
+      },
+      "winners": [
+        {
+          "bgg_id": null,
+          "name": "Dito! (JinxO)",
+          "image": null,
+          "thumbnail": null,
+          "year_published": null,
+          "bayes_rating": null
+        }
+      ],
+      "nominees": [
+        {
+          "bgg_id": 456440,
+          "name": "Cozy Stickerville",
+          "image": "https://cf.geekdo-images.com/tQn8UU3A_zsi730zNQyNzA__original/img/9ai5WpyU0jn1cCwAiRaGIQy-VqQ=/0x0/filters:format(png)/pic9171780.png",
+          "thumbnail": "https://cf.geekdo-images.com/tQn8UU3A_zsi730zNQyNzA__small/img/SRpAFFgh4mpyvCqzq8kc3B6_7F4=/fit-in/200x150/filters:strip_icc()/pic9171780.png",
+          "year_published": 2026,
+          "bayes_rating": 6.796
+        },
+        {
+          "bgg_id": 462742,
+          "name": "Morty Sorty Magic Shop",
+          "image": "https://cf.geekdo-images.com/jcaf3UgefVKOrIXt3ijpGA__original/img/t8_JD6Mbhevx9RVakmbph_A-cpE=/0x0/filters:format(jpeg)/pic9477824.jpg",
+          "thumbnail": "https://cf.geekdo-images.com/jcaf3UgefVKOrIXt3ijpGA__small/img/VT10NUDvLqJUn6RuGu9KMdwZ5uY=/fit-in/200x150/filters:strip_icc()/pic9477824.jpg",
+          "year_published": 2026,
+          "bayes_rating": 5.642
         }
       ],
       "recommended": []
