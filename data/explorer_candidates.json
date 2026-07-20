@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "generated_at": "2026-07-13T06:58:03+00:00",
+    "generated_at": "2026-07-20T06:51:38+00:00",
     "sources_used": [
       "bgg_hot",
       "polyhedron_collider"
     ],
     "total_evaluated": 70,
     "newly_scored": 0,
-    "skipped_non_solo": 8,
-    "kept_immersive": 5,
-    "kept_total": 7
+    "skipped_non_solo": 10,
+    "kept_immersive": 4,
+    "kept_total": 6
   },
   "candidates": [
     {
@@ -107,56 +107,6 @@
       ]
     },
     {
-      "bgg_id": 415848,
-      "name": "Lands of Evershade",
-      "year": 2026,
-      "image": "https://cf.geekdo-images.com/y1OVwSAaHP-pFpYEJ9r5Zg__original/img/Gkt00tbHyP_YS-tFZB_0Wl-PSLs=/0x0/filters:format(png)/pic8061460.png",
-      "thumbnail": "https://cf.geekdo-images.com/y1OVwSAaHP-pFpYEJ9r5Zg__small/img/rK3Xo8_m8rVMAOOv8gtqaOHOml0=/fit-in/200x150/filters:strip_icc()/pic8061460.png",
-      "designers": [
-        "Ernest Kiedrowicz",
-        "Krzysztof Piskorski"
-      ],
-      "weight": 3.25,
-      "bayes_rating": 5.823,
-      "min_players": 1,
-      "max_players": 5,
-      "M": 4,
-      "T": 5,
-      "G": 4,
-      "F": 2,
-      "Ar": 4,
-      "type": "co-op",
-      "mechs": [
-        "STR-02 Cooperative Games",
-        "STR-08 Scenario/Mission/Campaign Games",
-        "ACT-01 Action Points",
-        "ACT-12 Variable Player Powers",
-        "ACT-16 Tech Trees/Tech Tracks/Track Bonuses",
-        "ACT-18 Narrative Choice",
-        "RES-02 Stat Check",
-        "RES-05 Die Icons",
-        "UNC-07 Unknown Information",
-        "UNC-08 Hidden Information",
-        "UNC-12 Deduction",
-        "VIC-11 Completing Targets",
-        "VIC-16 Finale",
-        "MOV-01 Tessellation",
-        "MOV-04 Movement Points",
-        "SET-02 Tile-Laying",
-        "SET-03 Grid Coverage",
-        "CAR-04 Card Draw, Limits, and Deck Exhaustion",
-        "CAR-08 Multi-Use Cards"
-      ],
-      "description": "Delve into cursed shadow realms where light itself becomes a precious resource and ancient evils stir in the perpetual twilight.",
-      "justification": "M(4): Action points with evolving character abilities and multi-layered shadow mechanics. T(5): Light-as-resource and shadow corruption mechanics generate mounting dread perfectly. G(4): Every move into darkness creates meaningful risk-reward tension. F(2): Campaign setup and multiple component types add overhead. Ar(4): Atmospheric twilight artwork creates perfect gothic mood.",
-      "GS": 78,
-      "IS": 156.0,
-      "feeling": "Total",
-      "sources": [
-        "bgg_hot"
-      ]
-    },
-    {
       "bgg_id": 428099,
       "name": "Revenant",
       "year": 2026,
@@ -200,6 +150,50 @@
       "feeling": "Total",
       "sources": [
         "bgg_hot"
+      ]
+    },
+    {
+      "bgg_id": 414117,
+      "name": "Wroth",
+      "year": 2025,
+      "image": "https://cf.geekdo-images.com/pF07bElBCzBj1en-zTwFtQ__original/img/V9jAPkvLfZVzFY99HHeSl0dAmyQ=/0x0/filters:format(jpeg)/pic8978903.jpg",
+      "thumbnail": "https://cf.geekdo-images.com/pF07bElBCzBj1en-zTwFtQ__small/img/owqJWDObFHxuxCPMvATTe80iPeA=/fit-in/200x150/filters:strip_icc()/pic8978903.jpg",
+      "designers": [
+        "Manny Trembley"
+      ],
+      "weight": 2.28,
+      "bayes_rating": 6.186,
+      "min_players": 1,
+      "max_players": 4,
+      "M": 4,
+      "T": 5,
+      "G": 4,
+      "F": 2,
+      "Ar": 4,
+      "type": "co-op",
+      "mechs": [
+        "STR-02 Cooperative Games",
+        "STR-08 Scenario/Mission/Campaign Games",
+        "ACT-01 Action Points",
+        "ACT-12 Variable Player Powers",
+        "CAR-04 Card Draw, Limits, and Deck Exhaustion",
+        "CAR-08 Multi-Use Cards",
+        "RES-05 Die Icons",
+        "UNC-02 Push-Your-Luck",
+        "UNC-09 Probability Management",
+        "VIC-02 Victory Points from Player Actions",
+        "VIC-11 Completing Targets",
+        "MOV-01 Tessellation",
+        "SET-02 Tile-Laying"
+      ],
+      "description": "Lead survivors through a cursed wasteland where every step forward risks awakening ancient horrors that hunger for your sanity.",
+      "justification": "M(4): Action points with variable powers and multi-use cards create tactical depth. T(5): Curse mechanics and sanity loss generate genuine dread and desperation. G(4): Every action carries meaningful risk-reward tension in hostile environment. F(2): Setup and card management add overhead but remain manageable. Ar(4): Dark atmospheric art captures apocalyptic horror tone effectively.",
+      "GS": 78,
+      "IS": 156.0,
+      "feeling": "Total",
+      "sources": [
+        "bgg_hot",
+        "polyhedron_collider"
       ]
     },
     {
@@ -293,49 +287,6 @@
       ]
     },
     {
-      "bgg_id": 414117,
-      "name": "Wroth",
-      "year": 2025,
-      "image": "https://cf.geekdo-images.com/pF07bElBCzBj1en-zTwFtQ__original/img/V9jAPkvLfZVzFY99HHeSl0dAmyQ=/0x0/filters:format(jpeg)/pic8978903.jpg",
-      "thumbnail": "https://cf.geekdo-images.com/pF07bElBCzBj1en-zTwFtQ__small/img/owqJWDObFHxuxCPMvATTe80iPeA=/fit-in/200x150/filters:strip_icc()/pic8978903.jpg",
-      "designers": [
-        "Manny Trembley"
-      ],
-      "weight": 2.28,
-      "bayes_rating": 6.186,
-      "min_players": 1,
-      "max_players": 4,
-      "M": 4,
-      "T": 5,
-      "G": 4,
-      "F": 2,
-      "Ar": 4,
-      "type": "co-op",
-      "mechs": [
-        "STR-02 Cooperative Games",
-        "STR-08 Scenario/Mission/Campaign Games",
-        "ACT-01 Action Points",
-        "ACT-12 Variable Player Powers",
-        "CAR-04 Card Draw, Limits, and Deck Exhaustion",
-        "CAR-08 Multi-Use Cards",
-        "RES-05 Die Icons",
-        "UNC-02 Push-Your-Luck",
-        "UNC-09 Probability Management",
-        "VIC-02 Victory Points from Player Actions",
-        "VIC-11 Completing Targets",
-        "MOV-01 Tessellation",
-        "SET-02 Tile-Laying"
-      ],
-      "description": "Lead survivors through a cursed wasteland where every step forward risks awakening ancient horrors that hunger for your sanity.",
-      "justification": "M(4): Action points with variable powers and multi-use cards create tactical depth. T(5): Curse mechanics and sanity loss generate genuine dread and desperation. G(4): Every action carries meaningful risk-reward tension in hostile environment. F(2): Setup and card management add overhead but remain manageable. Ar(4): Dark atmospheric art captures apocalyptic horror tone effectively.",
-      "GS": 78,
-      "IS": 156.0,
-      "feeling": "Total",
-      "sources": [
-        "polyhedron_collider"
-      ]
-    },
-    {
       "bgg_id": 397598,
       "name": "Dune: Imperium – Uprising",
       "year": 2023,
@@ -378,53 +329,6 @@
       ],
       "description": "Navigate the deadly politics of Arrakis as a Great House leader, wielding spice, influence, and betrayal to claim the Imperial throne.",
       "justification": "M(4): Deck-building with worker placement creates deep interlocking systems and combos. T(3): Political maneuvering feels right but mechanics reference more than generate Dune. G(4): Every card and worker placement cascades into meaningful strategic consequences. F(2): Setup and iconography density manageable but requires rules investment. Ar(4): Stunning desert palette and character art captures Dune's epic scope.",
-      "GS": 46,
-      "IS": 92.0,
-      "feeling": "Immersive",
-      "sources": [
-        "bgg_hot"
-      ]
-    },
-    {
-      "bgg_id": 465669,
-      "name": "Drillers",
-      "year": 2026,
-      "image": "https://cf.geekdo-images.com/Uz4rr8VRTss1PKSbxspV0Q__original/img/6p0BE5ScmaQAlpnowUy2yzn70R8=/0x0/filters:format(jpeg)/pic9628641.jpg",
-      "thumbnail": "https://cf.geekdo-images.com/Uz4rr8VRTss1PKSbxspV0Q__small/img/dsgH9yJYFydcwnyVSz4spJz0eIU=/fit-in/200x150/filters:strip_icc()/pic9628641.jpg",
-      "designers": [
-        "Roman Bednář",
-        "Adam Španěl"
-      ],
-      "weight": 3.0,
-      "bayes_rating": 5.523,
-      "min_players": 1,
-      "max_players": 4,
-      "M": 4,
-      "T": 3,
-      "G": 4,
-      "F": 2,
-      "Ar": 4,
-      "type": "competitive",
-      "mechs": [
-        "STR-01 Competitive Games",
-        "STR-04 Solo Games",
-        "TRN-01 Fixed Turn Order",
-        "ACT-01 Action Points",
-        "ACT-12 Variable Player Powers",
-        "ACT-16 Tech Trees/Tech Tracks/Track Bonuses",
-        "RES-01 High Number",
-        "RES-05 Die Icons",
-        "VIC-01 Victory Points from Game State",
-        "VIC-02 Victory Points from Player Actions",
-        "VIC-09 Fixed Number of Rounds",
-        "ECO-05 Income",
-        "ECO-11 Upgrades",
-        "WPL-01 Standard Worker Placement",
-        "SET-05 Combo Abilities",
-        "MOV-04 Movement Points"
-      ],
-      "description": "Drill deep into alien worlds, managing resources and tech upgrades while racing to extract valuable minerals before competitors.",
-      "justification": "M(4): Deep tech trees and resource management with interlocking drilling systems. T(3): Industrial drilling theme present but mechanics don't generate immersion. G(4): Meaningful choices in tech paths and drilling site selection. F(2): Medium complexity setup and rules overhead for weight 3.0. Ar(4): Clean industrial aesthetic with atmospheric alien world art.",
       "GS": 46,
       "IS": 92.0,
       "feeling": "Immersive",

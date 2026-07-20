@@ -1867,5 +1867,55 @@
     "bgg_id": 467253,
     "_solo": false,
     "name": "Green City"
+  },
+  "474883": {
+    "bgg_id": 474883,
+    "_solo": false,
+    "name": "Old Ones Origins"
+  },
+  "175155": {
+    "bgg_id": 175155,
+    "_solo": false,
+    "name": "Forbidden Stars"
+  },
+  "474125": {
+    "bgg_id": 474125,
+    "_solo": false,
+    "name": "-60°"
+  },
+  "469458": {
+    "bgg_id": 469458,
+    "_solo": false,
+    "name": "The Lord of the Rings: The Two Towers – Ascension"
+  },
+  "42": {
+    "bgg_id": 42,
+    "_solo": false,
+    "name": "Tigris & Euphrates"
+  },
+  "447776": {
+    "bgg_id": 447776,
+    "_solo": false,
+    "name": "The Game Makers"
+  },
+  "470634": {
+    "bgg_id": 470634,
+    "_solo": false,
+    "name": "Wolfmoon"
+  },
+  "462541": {
+    "bgg_id": 462541,
+    "_solo": false,
+    "name": "Raindrops"
+  },
+  "466538": {
+    "bgg_id": 466538,
+    "_solo": false,
+    "name": "Kemet: The Gates of Thonis"
+  },
+  "69789": {
+    "bgg_id": 69789,
+    "_solo": false,
+    "name": "Ascension: Deckbuilding Game"
   }
 }
