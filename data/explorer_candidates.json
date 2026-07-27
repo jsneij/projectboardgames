@@ -1,14 +1,14 @@
 {
   "metadata": {
-    "generated_at": "2026-07-20T06:51:38+00:00",
+    "generated_at": "2026-07-27T07:37:11+00:00",
     "sources_used": [
       "bgg_hot",
       "polyhedron_collider"
     ],
-    "total_evaluated": 70,
+    "total_evaluated": 78,
     "newly_scored": 0,
-    "skipped_non_solo": 10,
-    "kept_immersive": 4,
+    "skipped_non_solo": 16,
+    "kept_immersive": 5,
     "kept_total": 6
   },
   "candidates": [
@@ -61,52 +61,6 @@
       ]
     },
     {
-      "bgg_id": 425549,
-      "name": "Moon Colony Bloodbath",
-      "year": 2025,
-      "image": "https://cf.geekdo-images.com/KDrRxEKQMmHyM0QQ2ONX4Q__original/img/XD-aeaMShk-TN_n0n6O9kbczxNY=/0x0/filters:format(jpeg)/pic8638247.jpg",
-      "thumbnail": "https://cf.geekdo-images.com/KDrRxEKQMmHyM0QQ2ONX4Q__small/img/EusjojuWYxwkxaP7eAnaBn1QzLg=/fit-in/200x150/filters:strip_icc()/pic8638247.jpg",
-      "designers": [
-        "Donald X. Vaccarino"
-      ],
-      "weight": 2.12,
-      "bayes_rating": 6.948,
-      "min_players": 1,
-      "max_players": 5,
-      "M": 4,
-      "T": 5,
-      "G": 4,
-      "F": 2,
-      "Ar": 4,
-      "type": "co-op",
-      "mechs": [
-        "STR-02 Cooperative Games",
-        "STR-04 Solo Games",
-        "STR-08 Scenario/Mission/Campaign Games",
-        "TRN-01 Fixed Turn Order",
-        "ACT-01 Action Points",
-        "ACT-12 Variable Player Powers",
-        "ACT-17 Events",
-        "RES-01 High Number",
-        "RES-05 Die Icons",
-        "UNC-02 Push-Your-Luck",
-        "UNC-07 Unknown Information",
-        "VIC-11 Completing Targets",
-        "VIC-15 Circuit Breaker/Sudden Death",
-        "MOV-01 Tessellation",
-        "MOV-04 Movement Points",
-        "SET-05 Combo Abilities"
-      ],
-      "description": "Survive the horrors lurking in a moon colony where oxygen runs low and something unspeakable stalks the corridors.",
-      "justification": "M(4): Action points with asymmetric powers and escalating scenario complexity. T(5): Oxygen depletion and stalking horror mechanics generate genuine dread. G(4): Every action point spent carries life-or-death consequences. F(2): Scenario setup and component management add moderate overhead. Ar(4): Atmospheric sci-fi horror aesthetic with strong thematic cohesion.",
-      "GS": 78,
-      "IS": 156.0,
-      "feeling": "Total",
-      "sources": [
-        "bgg_hot"
-      ]
-    },
-    {
       "bgg_id": 428099,
       "name": "Revenant",
       "year": 2026,
@@ -153,18 +107,18 @@
       ]
     },
     {
-      "bgg_id": 414117,
-      "name": "Wroth",
+      "bgg_id": 425549,
+      "name": "Moon Colony Bloodbath",
       "year": 2025,
-      "image": "https://cf.geekdo-images.com/pF07bElBCzBj1en-zTwFtQ__original/img/V9jAPkvLfZVzFY99HHeSl0dAmyQ=/0x0/filters:format(jpeg)/pic8978903.jpg",
-      "thumbnail": "https://cf.geekdo-images.com/pF07bElBCzBj1en-zTwFtQ__small/img/owqJWDObFHxuxCPMvATTe80iPeA=/fit-in/200x150/filters:strip_icc()/pic8978903.jpg",
+      "image": "https://cf.geekdo-images.com/KDrRxEKQMmHyM0QQ2ONX4Q__original/img/XD-aeaMShk-TN_n0n6O9kbczxNY=/0x0/filters:format(jpeg)/pic8638247.jpg",
+      "thumbnail": "https://cf.geekdo-images.com/KDrRxEKQMmHyM0QQ2ONX4Q__small/img/EusjojuWYxwkxaP7eAnaBn1QzLg=/fit-in/200x150/filters:strip_icc()/pic8638247.jpg",
       "designers": [
-        "Manny Trembley"
+        "Donald X. Vaccarino"
       ],
-      "weight": 2.28,
-      "bayes_rating": 6.186,
+      "weight": 2.12,
+      "bayes_rating": 6.948,
       "min_players": 1,
-      "max_players": 4,
+      "max_players": 5,
       "M": 4,
       "T": 5,
       "G": 4,
@@ -173,27 +127,29 @@
       "type": "co-op",
       "mechs": [
         "STR-02 Cooperative Games",
+        "STR-04 Solo Games",
         "STR-08 Scenario/Mission/Campaign Games",
+        "TRN-01 Fixed Turn Order",
         "ACT-01 Action Points",
         "ACT-12 Variable Player Powers",
-        "CAR-04 Card Draw, Limits, and Deck Exhaustion",
-        "CAR-08 Multi-Use Cards",
+        "ACT-17 Events",
+        "RES-01 High Number",
         "RES-05 Die Icons",
         "UNC-02 Push-Your-Luck",
-        "UNC-09 Probability Management",
-        "VIC-02 Victory Points from Player Actions",
+        "UNC-07 Unknown Information",
         "VIC-11 Completing Targets",
+        "VIC-15 Circuit Breaker/Sudden Death",
         "MOV-01 Tessellation",
-        "SET-02 Tile-Laying"
+        "MOV-04 Movement Points",
+        "SET-05 Combo Abilities"
       ],
-      "description": "Lead survivors through a cursed wasteland where every step forward risks awakening ancient horrors that hunger for your sanity.",
-      "justification": "M(4): Action points with variable powers and multi-use cards create tactical depth. T(5): Curse mechanics and sanity loss generate genuine dread and desperation. G(4): Every action carries meaningful risk-reward tension in hostile environment. F(2): Setup and card management add overhead but remain manageable. Ar(4): Dark atmospheric art captures apocalyptic horror tone effectively.",
+      "description": "Survive the horrors lurking in a moon colony where oxygen runs low and something unspeakable stalks the corridors.",
+      "justification": "M(4): Action points with asymmetric powers and escalating scenario complexity. T(5): Oxygen depletion and stalking horror mechanics generate genuine dread. G(4): Every action point spent carries life-or-death consequences. F(2): Scenario setup and component management add moderate overhead. Ar(4): Atmospheric sci-fi horror aesthetic with strong thematic cohesion.",
       "GS": 78,
       "IS": 156.0,
       "feeling": "Total",
       "sources": [
-        "bgg_hot",
-        "polyhedron_collider"
+        "bgg_hot"
       ]
     },
     {
@@ -283,6 +239,97 @@
       "IS": 156.0,
       "feeling": "Total",
       "sources": [
+        "polyhedron_collider"
+      ]
+    },
+    {
+      "bgg_id": 414117,
+      "name": "Wroth",
+      "year": 2025,
+      "image": "https://cf.geekdo-images.com/pF07bElBCzBj1en-zTwFtQ__original/img/V9jAPkvLfZVzFY99HHeSl0dAmyQ=/0x0/filters:format(jpeg)/pic8978903.jpg",
+      "thumbnail": "https://cf.geekdo-images.com/pF07bElBCzBj1en-zTwFtQ__small/img/owqJWDObFHxuxCPMvATTe80iPeA=/fit-in/200x150/filters:strip_icc()/pic8978903.jpg",
+      "designers": [
+        "Manny Trembley"
+      ],
+      "weight": 2.28,
+      "bayes_rating": 6.186,
+      "min_players": 1,
+      "max_players": 4,
+      "M": 4,
+      "T": 5,
+      "G": 4,
+      "F": 2,
+      "Ar": 4,
+      "type": "co-op",
+      "mechs": [
+        "STR-02 Cooperative Games",
+        "STR-08 Scenario/Mission/Campaign Games",
+        "ACT-01 Action Points",
+        "ACT-12 Variable Player Powers",
+        "CAR-04 Card Draw, Limits, and Deck Exhaustion",
+        "CAR-08 Multi-Use Cards",
+        "RES-05 Die Icons",
+        "UNC-02 Push-Your-Luck",
+        "UNC-09 Probability Management",
+        "VIC-02 Victory Points from Player Actions",
+        "VIC-11 Completing Targets",
+        "MOV-01 Tessellation",
+        "SET-02 Tile-Laying"
+      ],
+      "description": "Lead survivors through a cursed wasteland where every step forward risks awakening ancient horrors that hunger for your sanity.",
+      "justification": "M(4): Action points with variable powers and multi-use cards create tactical depth. T(5): Curse mechanics and sanity loss generate genuine dread and desperation. G(4): Every action carries meaningful risk-reward tension in hostile environment. F(2): Setup and card management add overhead but remain manageable. Ar(4): Dark atmospheric art captures apocalyptic horror tone effectively.",
+      "GS": 78,
+      "IS": 156.0,
+      "feeling": "Total",
+      "sources": [
+        "polyhedron_collider"
+      ]
+    },
+    {
+      "bgg_id": 465669,
+      "name": "Drillers",
+      "year": 2026,
+      "image": "https://cf.geekdo-images.com/Uz4rr8VRTss1PKSbxspV0Q__original/img/6p0BE5ScmaQAlpnowUy2yzn70R8=/0x0/filters:format(jpeg)/pic9628641.jpg",
+      "thumbnail": "https://cf.geekdo-images.com/Uz4rr8VRTss1PKSbxspV0Q__small/img/dsgH9yJYFydcwnyVSz4spJz0eIU=/fit-in/200x150/filters:strip_icc()/pic9628641.jpg",
+      "designers": [
+        "Roman Bednář",
+        "Adam Španěl"
+      ],
+      "weight": 3.0,
+      "bayes_rating": 5.523,
+      "min_players": 1,
+      "max_players": 4,
+      "M": 4,
+      "T": 3,
+      "G": 4,
+      "F": 2,
+      "Ar": 4,
+      "type": "competitive",
+      "mechs": [
+        "STR-01 Competitive Games",
+        "STR-04 Solo Games",
+        "TRN-01 Fixed Turn Order",
+        "ACT-01 Action Points",
+        "ACT-12 Variable Player Powers",
+        "ACT-16 Tech Trees/Tech Tracks/Track Bonuses",
+        "RES-01 High Number",
+        "RES-05 Die Icons",
+        "VIC-01 Victory Points from Game State",
+        "VIC-02 Victory Points from Player Actions",
+        "VIC-09 Fixed Number of Rounds",
+        "ECO-05 Income",
+        "ECO-11 Upgrades",
+        "WPL-01 Standard Worker Placement",
+        "SET-05 Combo Abilities",
+        "MOV-04 Movement Points"
+      ],
+      "description": "Drill deep into alien worlds, managing resources and tech upgrades while racing to extract valuable minerals before competitors.",
+      "justification": "M(4): Deep tech trees and resource management with interlocking drilling systems. T(3): Industrial drilling theme present but mechanics don't generate immersion. G(4): Meaningful choices in tech paths and drilling site selection. F(2): Medium complexity setup and rules overhead for weight 3.0. Ar(4): Clean industrial aesthetic with atmospheric alien world art.",
+      "GS": 46,
+      "IS": 92.0,
+      "feeling": "Immersive",
+      "sources": [
+        "bgg_hot",
         "polyhedron_collider"
       ]
     },

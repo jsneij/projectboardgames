@@ -1917,5 +1917,85 @@
     "bgg_id": 69789,
     "_solo": false,
     "name": "Ascension: Deckbuilding Game"
+  },
+  "462479": {
+    "bgg_id": 462479,
+    "_solo": false,
+    "name": "Timespan"
+  },
+  "459401": {
+    "bgg_id": 459401,
+    "_solo": false,
+    "name": "Greylune"
+  },
+  "474947": {
+    "bgg_id": 474947,
+    "_solo": false,
+    "name": "The White Castle: Boeki"
+  },
+  "450713": {
+    "bgg_id": 450713,
+    "_solo": false,
+    "name": "Hacienda"
+  },
+  "475323": {
+    "bgg_id": 475323,
+    "_solo": false,
+    "name": "An Infamous Traffic: Second Edition"
+  },
+  "465670": {
+    "bgg_id": 465670,
+    "_solo": false,
+    "name": "Rosalie"
+  },
+  "206490": {
+    "bgg_id": 206490,
+    "_solo": false,
+    "name": "An Infamous Traffic"
+  },
+  "437245": {
+    "bgg_id": 437245,
+    "_solo": false,
+    "name": "Kingdom Crossing"
+  },
+  "137269": {
+    "bgg_id": 137269,
+    "_solo": false,
+    "name": "Spyrium"
+  },
+  "402276": {
+    "bgg_id": 402276,
+    "_solo": false,
+    "name": "Avalon: The Riven Veil"
+  },
+  "428280": {
+    "bgg_id": 428280,
+    "_solo": false,
+    "name": "Final Titan"
+  },
+  "456236": {
+    "bgg_id": 456236,
+    "_solo": false,
+    "name": "Queen Alice"
+  },
+  "463297": {
+    "bgg_id": 463297,
+    "_solo": false,
+    "name": "King of Tokyo Godzilla"
+  },
+  "2955": {
+    "bgg_id": 2955,
+    "_solo": false,
+    "name": "Mexica"
+  },
+  "8190": {
+    "bgg_id": 8190,
+    "_solo": false,
+    "name": "The Bridges of Shangri-La"
+  },
+  "23463": {
+    "bgg_id": 23463,
+    "_solo": false,
+    "name": "Container"
   }
 }
