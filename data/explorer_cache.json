@@ -1997,5 +1997,40 @@
     "bgg_id": 23463,
     "_solo": false,
     "name": "Container"
+  },
+  "62219": {
+    "bgg_id": 62219,
+    "_solo": false,
+    "name": "Dominant Species"
+  },
+  "464931": {
+    "bgg_id": 464931,
+    "_solo": false,
+    "name": "CRAB RAGE!"
+  },
+  "475881": {
+    "bgg_id": 475881,
+    "_solo": false,
+    "name": "Mobius"
+  },
+  "467694": {
+    "bgg_id": 467694,
+    "_solo": false,
+    "name": "The Lord of the Rings: The King's Gambit"
+  },
+  "472822": {
+    "bgg_id": 472822,
+    "_solo": false,
+    "name": "Dune: Imperium – Conspiracy"
+  },
+  "91984": {
+    "bgg_id": 91984,
+    "_solo": false,
+    "name": "Québec"
+  },
+  "439826": {
+    "bgg_id": 439826,
+    "_solo": false,
+    "name": "Six Sojourns"
   }
 }

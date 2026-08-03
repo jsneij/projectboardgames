@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-07-27T07:37:11+00:00",
+    "generated_at": "2026-08-03T07:32:37+00:00",
     "sources_used": [
       "bgg_hot",
       "polyhedron_collider"
     ],
-    "total_evaluated": 78,
+    "total_evaluated": 77,
     "newly_scored": 0,
-    "skipped_non_solo": 16,
+    "skipped_non_solo": 7,
     "kept_immersive": 5,
     "kept_total": 6
   },
