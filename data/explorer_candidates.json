@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-08-03T07:32:37+00:00",
+    "generated_at": "2026-08-10T05:37:32+00:00",
     "sources_used": [
       "bgg_hot",
       "polyhedron_collider"
     ],
-    "total_evaluated": 77,
+    "total_evaluated": 76,
     "newly_scored": 0,
-    "skipped_non_solo": 7,
+    "skipped_non_solo": 3,
     "kept_immersive": 5,
     "kept_total": 6
   },
@@ -61,52 +61,6 @@
       ]
     },
     {
-      "bgg_id": 428099,
-      "name": "Revenant",
-      "year": 2026,
-      "image": "https://cf.geekdo-images.com/3jI41d32ExxZua8WiP_Zhg__original/img/4CsUkhzTDUG5IRgUlVY16pG5mdI=/0x0/filters:format(jpeg)/pic8426405.jpg",
-      "thumbnail": "https://cf.geekdo-images.com/3jI41d32ExxZua8WiP_Zhg__small/img/ZVr_VfjGozJFWXHsdp2aI2zGFps=/fit-in/200x150/filters:strip_icc()/pic8426405.jpg",
-      "designers": [
-        "Allan Kirkeby"
-      ],
-      "weight": 3.95,
-      "bayes_rating": 5.573,
-      "min_players": 1,
-      "max_players": 4,
-      "M": 4,
-      "T": 5,
-      "G": 4,
-      "F": 2,
-      "Ar": 4,
-      "type": "co-op",
-      "mechs": [
-        "STR-02 Cooperative Games",
-        "STR-04 Solo Games",
-        "STR-08 Scenario/Mission/Campaign Games",
-        "ACT-01 Action Points",
-        "ACT-12 Variable Player Powers",
-        "ACT-17 Events",
-        "ACT-18 Narrative Choice",
-        "RES-02 Stat Check",
-        "RES-05 Die Icons",
-        "UNC-02 Push-Your-Luck",
-        "UNC-07 Unknown Information",
-        "UNC-12 Deduction",
-        "MOV-01 Tessellation",
-        "MOV-04 Movement Points",
-        "CAR-04 Card Draw, Limits, and Deck Exhaustion",
-        "VIC-11 Completing Targets"
-      ],
-      "description": "Return from death as a vengeful spirit to hunt down your killer while your corporeal form decays with each passing hour.",
-      "justification": "M(4): Action points with supernatural powers, investigation mechanics, and time pressure systems. T(5): Playing as undead spirit with decay timer generates existential horror perfectly. G(4): Meaningful choices balancing investigation speed against spiritual deterioration consequences. F(2): Campaign setup and multiple card decks create moderate overhead. Ar(4): Atmospheric gothic horror art with strong character design.",
-      "GS": 78,
-      "IS": 156.0,
-      "feeling": "Total",
-      "sources": [
-        "bgg_hot"
-      ]
-    },
-    {
       "bgg_id": 425549,
       "name": "Moon Colony Bloodbath",
       "year": 2025,
@@ -150,6 +104,53 @@
       "feeling": "Total",
       "sources": [
         "bgg_hot"
+      ]
+    },
+    {
+      "bgg_id": 428099,
+      "name": "Revenant",
+      "year": 2026,
+      "image": "https://cf.geekdo-images.com/3jI41d32ExxZua8WiP_Zhg__original/img/4CsUkhzTDUG5IRgUlVY16pG5mdI=/0x0/filters:format(jpeg)/pic8426405.jpg",
+      "thumbnail": "https://cf.geekdo-images.com/3jI41d32ExxZua8WiP_Zhg__small/img/ZVr_VfjGozJFWXHsdp2aI2zGFps=/fit-in/200x150/filters:strip_icc()/pic8426405.jpg",
+      "designers": [
+        "Allan Kirkeby"
+      ],
+      "weight": 3.95,
+      "bayes_rating": 5.573,
+      "min_players": 1,
+      "max_players": 4,
+      "M": 4,
+      "T": 5,
+      "G": 4,
+      "F": 2,
+      "Ar": 4,
+      "type": "co-op",
+      "mechs": [
+        "STR-02 Cooperative Games",
+        "STR-04 Solo Games",
+        "STR-08 Scenario/Mission/Campaign Games",
+        "ACT-01 Action Points",
+        "ACT-12 Variable Player Powers",
+        "ACT-17 Events",
+        "ACT-18 Narrative Choice",
+        "RES-02 Stat Check",
+        "RES-05 Die Icons",
+        "UNC-02 Push-Your-Luck",
+        "UNC-07 Unknown Information",
+        "UNC-12 Deduction",
+        "MOV-01 Tessellation",
+        "MOV-04 Movement Points",
+        "CAR-04 Card Draw, Limits, and Deck Exhaustion",
+        "VIC-11 Completing Targets"
+      ],
+      "description": "Return from death as a vengeful spirit to hunt down your killer while your corporeal form decays with each passing hour.",
+      "justification": "M(4): Action points with supernatural powers, investigation mechanics, and time pressure systems. T(5): Playing as undead spirit with decay timer generates existential horror perfectly. G(4): Meaningful choices balancing investigation speed against spiritual deterioration consequences. F(2): Campaign setup and multiple card decks create moderate overhead. Ar(4): Atmospheric gothic horror art with strong character design.",
+      "GS": 78,
+      "IS": 156.0,
+      "feeling": "Total",
+      "sources": [
+        "bgg_hot",
+        "polyhedron_collider"
       ]
     },
     {
