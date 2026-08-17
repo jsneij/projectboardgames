@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generated_at": "2026-08-10T05:37:32+00:00",
+    "generated_at": "2026-08-17T04:46:35+00:00",
     "sources_used": [
       "bgg_hot",
       "polyhedron_collider"
     ],
-    "total_evaluated": 76,
+    "total_evaluated": 79,
     "newly_scored": 0,
-    "skipped_non_solo": 3,
+    "skipped_non_solo": 8,
     "kept_immersive": 5,
     "kept_total": 6
   },
@@ -61,52 +61,6 @@
       ]
     },
     {
-      "bgg_id": 425549,
-      "name": "Moon Colony Bloodbath",
-      "year": 2025,
-      "image": "https://cf.geekdo-images.com/KDrRxEKQMmHyM0QQ2ONX4Q__original/img/XD-aeaMShk-TN_n0n6O9kbczxNY=/0x0/filters:format(jpeg)/pic8638247.jpg",
-      "thumbnail": "https://cf.geekdo-images.com/KDrRxEKQMmHyM0QQ2ONX4Q__small/img/EusjojuWYxwkxaP7eAnaBn1QzLg=/fit-in/200x150/filters:strip_icc()/pic8638247.jpg",
-      "designers": [
-        "Donald X. Vaccarino"
-      ],
-      "weight": 2.12,
-      "bayes_rating": 6.948,
-      "min_players": 1,
-      "max_players": 5,
-      "M": 4,
-      "T": 5,
-      "G": 4,
-      "F": 2,
-      "Ar": 4,
-      "type": "co-op",
-      "mechs": [
-        "STR-02 Cooperative Games",
-        "STR-04 Solo Games",
-        "STR-08 Scenario/Mission/Campaign Games",
-        "TRN-01 Fixed Turn Order",
-        "ACT-01 Action Points",
-        "ACT-12 Variable Player Powers",
-        "ACT-17 Events",
-        "RES-01 High Number",
-        "RES-05 Die Icons",
-        "UNC-02 Push-Your-Luck",
-        "UNC-07 Unknown Information",
-        "VIC-11 Completing Targets",
-        "VIC-15 Circuit Breaker/Sudden Death",
-        "MOV-01 Tessellation",
-        "MOV-04 Movement Points",
-        "SET-05 Combo Abilities"
-      ],
-      "description": "Survive the horrors lurking in a moon colony where oxygen runs low and something unspeakable stalks the corridors.",
-      "justification": "M(4): Action points with asymmetric powers and escalating scenario complexity. T(5): Oxygen depletion and stalking horror mechanics generate genuine dread. G(4): Every action point spent carries life-or-death consequences. F(2): Scenario setup and component management add moderate overhead. Ar(4): Atmospheric sci-fi horror aesthetic with strong thematic cohesion.",
-      "GS": 78,
-      "IS": 156.0,
-      "feeling": "Total",
-      "sources": [
-        "bgg_hot"
-      ]
-    },
-    {
       "bgg_id": 428099,
       "name": "Revenant",
       "year": 2026,
@@ -151,6 +105,52 @@
       "sources": [
         "bgg_hot",
         "polyhedron_collider"
+      ]
+    },
+    {
+      "bgg_id": 425549,
+      "name": "Moon Colony Bloodbath",
+      "year": 2025,
+      "image": "https://cf.geekdo-images.com/KDrRxEKQMmHyM0QQ2ONX4Q__original/img/XD-aeaMShk-TN_n0n6O9kbczxNY=/0x0/filters:format(jpeg)/pic8638247.jpg",
+      "thumbnail": "https://cf.geekdo-images.com/KDrRxEKQMmHyM0QQ2ONX4Q__small/img/EusjojuWYxwkxaP7eAnaBn1QzLg=/fit-in/200x150/filters:strip_icc()/pic8638247.jpg",
+      "designers": [
+        "Donald X. Vaccarino"
+      ],
+      "weight": 2.12,
+      "bayes_rating": 6.948,
+      "min_players": 1,
+      "max_players": 5,
+      "M": 4,
+      "T": 5,
+      "G": 4,
+      "F": 2,
+      "Ar": 4,
+      "type": "co-op",
+      "mechs": [
+        "STR-02 Cooperative Games",
+        "STR-04 Solo Games",
+        "STR-08 Scenario/Mission/Campaign Games",
+        "TRN-01 Fixed Turn Order",
+        "ACT-01 Action Points",
+        "ACT-12 Variable Player Powers",
+        "ACT-17 Events",
+        "RES-01 High Number",
+        "RES-05 Die Icons",
+        "UNC-02 Push-Your-Luck",
+        "UNC-07 Unknown Information",
+        "VIC-11 Completing Targets",
+        "VIC-15 Circuit Breaker/Sudden Death",
+        "MOV-01 Tessellation",
+        "MOV-04 Movement Points",
+        "SET-05 Combo Abilities"
+      ],
+      "description": "Survive the horrors lurking in a moon colony where oxygen runs low and something unspeakable stalks the corridors.",
+      "justification": "M(4): Action points with asymmetric powers and escalating scenario complexity. T(5): Oxygen depletion and stalking horror mechanics generate genuine dread. G(4): Every action point spent carries life-or-death consequences. F(2): Scenario setup and component management add moderate overhead. Ar(4): Atmospheric sci-fi horror aesthetic with strong thematic cohesion.",
+      "GS": 78,
+      "IS": 156.0,
+      "feeling": "Total",
+      "sources": [
+        "bgg_hot"
       ]
     },
     {

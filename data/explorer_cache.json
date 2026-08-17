@@ -853,7 +853,8 @@
   },
   "391163": {
     "bgg_id": 391163,
-    "_unavailable": true
+    "_solo": false,
+    "name": "Forest Shuffle"
   },
   "254640": {
     "bgg_id": 254640,
@@ -2047,5 +2048,40 @@
     "bgg_id": 434906,
     "_solo": false,
     "name": "Tag Team"
+  },
+  "450830": {
+    "bgg_id": 450830,
+    "_solo": false,
+    "name": "Whisperwood"
+  },
+  "462932": {
+    "bgg_id": 462932,
+    "_solo": false,
+    "name": "Wildscape"
+  },
+  "462945": {
+    "bgg_id": 462945,
+    "_solo": false,
+    "name": "Dino Racer"
+  },
+  "463296": {
+    "bgg_id": 463296,
+    "_solo": false,
+    "name": "Forest Shuffle: Smoky Mountains"
+  },
+  "471903": {
+    "bgg_id": 471903,
+    "_solo": false,
+    "name": "Rebels Against Rebellion"
+  },
+  "365717": {
+    "bgg_id": 365717,
+    "_solo": false,
+    "name": "Clank!: Catacombs"
+  },
+  "436257": {
+    "bgg_id": 436257,
+    "_solo": false,
+    "name": "CATATAC"
   }
 }
