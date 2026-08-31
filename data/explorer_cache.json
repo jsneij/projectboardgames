@@ -2108,5 +2108,30 @@
     "bgg_id": 446825,
     "_solo": false,
     "name": "Eldertide: A Thousand Lights"
+  },
+  "449018": {
+    "bgg_id": 449018,
+    "_solo": false,
+    "name": "Gunsen: The Battle for Toshi Ranbo"
+  },
+  "439742": {
+    "bgg_id": 439742,
+    "_solo": false,
+    "name": "Dewan"
+  },
+  "469383": {
+    "bgg_id": 469383,
+    "_solo": false,
+    "name": "Greenwood"
+  },
+  "421611": {
+    "bgg_id": 421611,
+    "_solo": false,
+    "name": "Machi Koro: Life"
+  },
+  "421006": {
+    "bgg_id": 421006,
+    "_solo": false,
+    "name": "The Lord of the Rings: Duel for Middle-earth"
   }
 }
